@@ -1,0 +1,45 @@
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+
+/*******************************
+        Theme Selection
+*******************************/
+
+/* To override a theme for an individual element
+   specify theme name below
+*/
+
+/* Global */
+@site       : 'blue-sky';
+@reset      : 'default';
+
+/* Сontrols */
+@flexberry-objectlistview: 'blue-sky';
+@flexberry-dropdown: 'blue-sky';
+@flexberry-groupedit: 'blue-sky';
+
+/*******************************
+            Folders
+*******************************/
+
+/* Path to theme packages*/
+@themesFolder : '../../node_modules/ember-flexberry-theme/src/themes';
+
+/* Path to site override folder*/
+@siteFolder  : 'site';
+
+/*******************************
+         Import Theme
+*******************************/
+
+@import "app/styles/flexberry-theme.less";
+
+/* End Config */
