@@ -1,11 +1,4 @@
 {
   "name": "ember-flexberry-theme",
   "version": "1.0.0",
-  "dependencies": {
-    "semantic-ui": "git://github.com/Flexberry/Semantic-UI.git#fixed-abort",
-    "semantic-ui-daterangepicker": "git://github.com/BreadMaker/semantic-ui-daterangepicker.git#5d46ed2e6e5a0bf398bb6a5df82e06036dfc46be"
-  },
-  "resolutions": {
-    "semantic-ui": "fixed-abort"
-  }
 }

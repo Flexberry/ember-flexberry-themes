@@ -1,0 +1,107 @@
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+
+/*******************************
+        Theme Selection
+*******************************/
+
+/* To override a theme for an individual element
+   specify theme name below
+*/
+
+/* Global */
+@site       : 'blue-sky';
+@reset      : 'default';
+
+/* Elements */
+@button     : 'blue-sky';
+@container  : 'blue-sky';
+@divider    : 'default';
+@flag       : 'default';
+@header     : 'default';
+@icon       : 'blue-sky';
+@image      : 'blue-sky';
+@input      : 'blue-sky';
+@label      : 'blue-sky';
+@list       : 'default';
+@loader     : 'default';
+@rail       : 'default';
+@reveal     : 'default';
+@segment    : 'blue-sky';
+@step       : 'default';
+
+/* Collections */
+@breadcrumb : 'default';
+@form       : 'blue-sky';
+@grid       : 'default';
+@menu       : 'blue-sky';
+@message    : 'default';
+@table      : 'blue-sky';
+
+/* Modules */
+@accordion  : 'default';
+@checkbox   : 'blue-sky';
+@dimmer     : 'default';
+@dropdown   : 'blue-sky';
+@embed      : 'default';
+@modal      : 'blue-sky';
+@nag        : 'default';
+@popup      : 'default';
+@progress   : 'default';
+@rating     : 'default';
+@search     : 'default';
+@shape      : 'default';
+@sidebar    : 'blue-sky';
+@sticky     : 'default';
+@tab        : 'default';
+@transition : 'default';
+
+/* Views */
+@ad         : 'default';
+@card       : 'default';
+@comment    : 'default';
+@feed       : 'default';
+@item       : 'default';
+@statistic  : 'default';
+
+/*******************************
+      Ember flexberry theme
+*******************************/
+
+/* Сontrols */
+@flexberry-objectlistview: 'blue-sky';
+@flexberry-dropdown: 'blue-sky';
+@flexberry-groupedit: 'blue-sky';
+
+
+/*******************************
+            Folders
+*******************************/
+
+/* Path to theme packages */
+@themesFolder : 'src/themes';
+
+@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-theme/src/themes';
+
+
+/* Path to site override folder */
+@siteFolder  : 'site';
+
+/* Path to the dms-themes theme packages */
+@dmsThemesFolder : '../../app/styles/themes';
+
+/*******************************
+         Import Theme
+*******************************/
+
+@import "app/styles/theme.less";
+
+/* End Config */
