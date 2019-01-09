@@ -80,6 +80,12 @@
 @flexberry-objectlistview: 'blue-sky';
 @flexberry-dropdown: 'blue-sky';
 @flexberry-groupedit: 'blue-sky';
+@flexberry-field: 'blue-sky';
+@flexberry-lookup: 'blue-sky';
+
+/* Forms */
+@edit-form: 'blue-sky';
+@login-form: 'blue-sky';
 
 
 /*******************************
@@ -89,7 +95,7 @@
 /* Path to theme packages */
 @themesFolder : 'src/themes';
 
-@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-theme/src/themes';
+@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-themes/src/themes';
 
 
 /* Path to site override folder */
