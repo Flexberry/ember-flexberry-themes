@@ -54,3 +54,58 @@
 @footerHeight : 40px;
 @headerHeightMobile : 50px;
 @footerHeightMobile : 40px;
+
+
+
+// Association veriables
+@buttonBackgroundColor: @white;
+
+
+
+
+/*-------------------
+   GLOBAL BUTTONS
+--------------------*/
+
+@buttonBackgroundColor: @white;
+
+
+/*-------------------
+   Global Variables
+--------------------*/
+
+@pageFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@borderLeft: 1px solid @blue;
+@iconButtonOpacity: 1;
+@uiBorderColor: @blue;
+@uiHoveredPositiveBorderColor: @green;
+@uiHoveredPositiveBackgroundColor: @green;
+@uiHoveredPositiveTextColor: @green;
+@uiHoveredNegitveBorderColor: @red;
+@uiHoveredNegitveBackgroundColor: @red;
+@uiHoveredNegitveTextColor: @red;
+
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Basic */
+@basicBoxShadow: none;
+@basicDownBoxShadow: none;
+@basicDownBackground: @primaryColor;
+@basicTextColor: @primaryColor;
+@basicGroupBorder: none;
+
+@basicHoverBoxShadow: none;
+@basicHoverBackground: @primaryColor;
+@basicHoverTextColor: @red;
+
+@disabledOpacity: 0.5;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Attached */
+@attachedBoxShadow: none;

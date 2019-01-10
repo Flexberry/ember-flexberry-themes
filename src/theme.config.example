@@ -21,6 +21,9 @@
 @site       : 'blue-sky';
 @reset      : 'default';
 
+/* global ef */
+@common-button: 'blue-sky';
+
 /* Elements */
 @button     : 'blue-sky';
 @container  : 'blue-sky';
@@ -72,21 +75,19 @@
 @item       : 'default';
 @statistic  : 'default';
 
-/*******************************
-      Ember flexberry theme
-*******************************/
 
 /* Сontrols */
-@flexberry-objectlistview: 'blue-sky';
+@flexberry-button: 'blue-sky';
 @flexberry-dropdown: 'blue-sky';
-@flexberry-groupedit: 'blue-sky';
 @flexberry-field: 'blue-sky';
+@flexberry-file: 'blue-sky';
+@flexberry-groupedit: 'blue-sky';
 @flexberry-lookup: 'blue-sky';
+@flexberry-objectlistview: 'blue-sky';
 
 /* Forms */
 @edit-form: 'blue-sky';
 @login-form: 'blue-sky';
-
 
 /*******************************
             Folders
@@ -95,7 +96,7 @@
 /* Path to theme packages */
 @themesFolder : 'src/themes';
 
-@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-themes/src/themes';
+@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-themes/src/';
 
 
 /* Path to site override folder */

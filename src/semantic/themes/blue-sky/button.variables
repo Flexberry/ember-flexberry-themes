@@ -1,0 +1,42 @@
+/*-------------------
+   Button Variables
+--------------------*/
+
+@backgroundColor: @buttonBackgroundColor;
+@backgroundGreenColor: @green;
+@backgroundImage: linear-gradient(@white, @backgroundColor);
+@borderBoxShadowColor: #E1E8ED;
+@borderColor: 1px solid @blue;
+
+@textColor: #4f73b0;
+@textTransform: none;
+@fontWeight: 400;
+
+@horizontalPadding: 1.284em;
+@verticalPadding: 0.8571em;
+
+@activeBackgroundColor: rgba(0, 0, 0, 0.1);
+
+@primaryColor: @blue;
+@coloredBackgroundImage: @subtleGradient;
+
+
+/*-------------------
+        States
+--------------------*/
+
+@hoverBackgroundColor: @blue;
+@hoverGreenBackgroundColor: @green;
+@hoverBackgroundImage: none;
+@hoverColor: @white;
+@borderHover: 1px solid @green;
+
+@focusColor: @textColor;
+@focusBackgroundColor: @white;
+
+@downColor: @white;
+@downBackgroundColor: @blue;
+@downPressedShadow: none;
+
+@labeledIconBackgroundColor: rgba(85, 172, 238, 0.05);
+@labeledIconBorder: rgba(0, 0, 0, 0.1);

@@ -137,3 +137,41 @@ option {
 .flexberry-file-error-modal-dialog .flexberry-file-error-modal-dialog-button.ui.grid {
   padding-top: 20px;
 }
+
+/**************************************
+      Edit panel buttons section
+***************************************/
+
+.ui.button.save-button, .ui.button.save-close-button,
+.ui.button.save-del-button {
+    background: none;
+    border: 1px solid @uiBorderColor;
+    color: @textColor;
+}
+
+.ui.button.save-button:hover, .ui.button.save-close-button:hover {
+    background: @uiHoveredPositiveBackgroundColor;
+    border: 1px solid @uiHoveredPositiveBorderColor;
+    color: @white;
+}
+
+.ui.button.save-del-button:hover {
+    background-color: @uiHoveredNegitveBackgroundColor;
+    border: 1px solid @uiHoveredNegitveBorderColor;
+    color: @white;
+}
+
+.ui.button.close-button {
+    position: absolute;
+    border: none;
+    width: 43px;
+    height: 43px;
+    right: -2px;
+    top: -33px;
+    font-size: 0px;
+    background: url("@{imagePath}/close.png") center no-repeat;
+    &:hover {
+        background: url("@{imagePath}/close-hover.png") center no-repeat;
+        border: none;
+    }
+}
