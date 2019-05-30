@@ -93,17 +93,14 @@
             Folders
 *******************************/
 
-/* Path to theme packages */
-@themesFolder : 'src/themes';
+/* Path to semantic ui theme packages */
+@semanticUiThemesFolder : 'src/themes';
 
-@emberFlexberrythemesFolder : '../../node_modules/ember-flexberry-themes/src/';
-
+/* Path to ember flexberry theme packages */
+@emberFlexberryThemesFolder : '../../node_modules/ember-flexberry-themes/src/';
 
 /* Path to site override folder */
 @siteFolder  : 'site';
-
-/* Path to the dms-themes theme packages */
-@dmsThemesFolder : '../../app/styles/themes';
 
 /*******************************
          Import Theme

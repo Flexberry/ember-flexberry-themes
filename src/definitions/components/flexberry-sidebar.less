@@ -1,0 +1,11 @@
+@type    : 'component';
+@element : 'flexberry-sidebar';
+
+@import (multiple) '../../theme.config';
+
+/* Sidebar Menu */
+.inverted.vertical.main.menu.sidebar {
+  height: calc(~"100vh - @{headerHeight} - 40px") !important;
+  background: @sidebarInvertedBackground;
+  top: @headerHeight;
+}

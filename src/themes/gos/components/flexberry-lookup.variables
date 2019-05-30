@@ -1,0 +1,2 @@
+@inputBorderColor: @paleBlue;
+@uiHoveredNegitveTextColor: @red;

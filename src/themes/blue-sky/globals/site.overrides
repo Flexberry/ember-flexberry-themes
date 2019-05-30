@@ -1,0 +1,10 @@
+.background-logo a {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #3f65a4;
+  margin: 5px;
+}
+
+.page-header-caption a:hover{
+  color: #fff!important;
+}

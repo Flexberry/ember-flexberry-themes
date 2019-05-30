@@ -1,2 +1,75 @@
 /* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
+
+@pageFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// @borderLeft: 1px solid @blue; //not used
+@iconButtonOpacity: 1;
+
+/*-------------------
+   Button Variables
+--------------------*/
+
+@backgroundColor: #fff;
+// @backgroundGreenColor: @green; //not used
+@backgroundImage: linear-gradient(@white, @backgroundColor);
+@borderBoxShadowColor: #E1E8ED;
+@borderColor: 1px solid @blue;
+
+@textColor: #4f73b0;
+@textTransform: none;
+@fontWeight: 400;
+
+@horizontalPadding: 1.284em;
+@verticalPadding: 0.8571em;
+
+@activeBackgroundColor: rgba(0, 0, 0, 0.1);
+
+@primaryColor: @blue;
+@coloredBackgroundImage: @subtleGradient;
+
+
+/*-------------------
+        States
+--------------------*/
+
+@hoverBackgroundColor: @blue;
+// @hoverGreenBackgroundColor: @green; //not used
+@hoverBackgroundImage: none;
+@hoverColor: @white;
+// @borderHover: 1px solid @green; //not used
+
+@focusColor: @textColor;
+@focusBackgroundColor: @white;
+
+@downColor: @white;
+@downBackgroundColor: @blue;
+@downPressedShadow: none;
+
+@labeledIconBackgroundColor: rgba(85, 172, 238, 0.05);
+@labeledIconBorder: rgba(0, 0, 0, 0.1);
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Basic */
+@basicBoxShadow: none;
+@basicDownBoxShadow: none;
+@basicDownBackground: @primaryColor;
+@basicTextColor: @primaryColor;
+@basicGroupBorder: none;
+
+@basicHoverBoxShadow: none;
+@basicHoverBackground: @primaryColor;
+@basicHoverTextColor: @red;
+
+@disabledOpacity: 0.5;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Attached */
+@attachedBoxShadow: none;
+
+/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
 @flexberryButtonHoveredColor: @brightBlue;

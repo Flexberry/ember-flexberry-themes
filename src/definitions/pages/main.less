@@ -1,0 +1,89 @@
+@type    : 'page';
+@element : 'main';
+
+@import (multiple) '../../theme.config';
+
+// header
+.background-logo {
+  background: @headerColor;
+  box-shadow: @headerBoxShadow;
+  height: @headerHeight;
+  position: fixed;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+}
+
+.background-logo.mobile {
+  height: @headerHeightMobile;
+}
+
+.background-logo a img {
+  padding: 7px 0px;
+}
+
+.page-header-caption a {
+  background: none;
+  color: @pageHeaderCaptionColor;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.page-header-caption a:hover {
+  color: @pageHeaderCaptionColor !important;
+}
+
+.page-header-caption {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: @headerHeight;
+}
+
+// content
+.full.height {
+  height: calc(~"100vh - @{headerHeight} - @{footerHeight}");
+  overflow: auto;
+}
+
+.pushable {
+  overflow: hidden;
+}
+
+#example {
+  padding-top: @headerHeight;
+}
+
+.flexberry-content.ui.attached.segment {
+  width: 100%;
+  background: @pageBackgroundColor;
+}
+
+// footer
+.ui.vertical.footer.segment > .flex-container > .ui.text.menu {
+  margin: 0px;
+  padding: 0px 30px;
+  background-color: @footerBackground;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui.vertical.footer.segment > .flex-container {
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+  height: @footerHeight;
+  width: 100% !important;
+  margin: 0px !important;
+}

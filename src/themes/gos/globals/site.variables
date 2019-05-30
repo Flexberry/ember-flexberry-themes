@@ -27,6 +27,7 @@
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
 
+
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
 
@@ -49,7 +50,7 @@
         Heights
 --------------------*/
 
-@headerHeight : 80px;
+@headerHeight : 72px;
 @footerHeight : 40px;
 @headerHeightMobile : 50px;
 @footerHeightMobile : 40px;

@@ -1,16 +1,77 @@
+@semanticUI: "../../bower_components/semantic-ui/src";
 
+/* Global */
+& { @import "@{semanticUI}/definitions/globals/reset"; }
+& { @import "@{semanticUI}/definitions/globals/site"; }
+& { @import "definitions/globals/site"; }
 
-& { @import "definitions/globals/common-button"; }
+/* Elements */
+& { @import "@{semanticUI}/definitions/elements/button"; }
+& { @import "definitions/components/flexberry-button"; }
+
+/* Elements */
+& { @import "@{semanticUI}/definitions/elements/button"; }
+& { @import "@{semanticUI}/definitions/elements/container"; }
+& { @import "@{semanticUI}/definitions/elements/divider"; }
+& { @import "@{semanticUI}/definitions/elements/flag"; }
+& { @import "@{semanticUI}/definitions/elements/header"; }
+& { @import "@{semanticUI}/definitions/elements/icon"; }
+& { @import "@{semanticUI}/definitions/elements/image"; }
+& { @import "@{semanticUI}/definitions/elements/input"; }
+& { @import "@{semanticUI}/definitions/elements/label"; }
+& { @import "@{semanticUI}/definitions/elements/list"; }
+& { @import "@{semanticUI}/definitions/elements/loader"; }
+& { @import "@{semanticUI}/definitions/elements/rail"; }
+& { @import "@{semanticUI}/definitions/elements/reveal"; }
+& { @import "@{semanticUI}/definitions/elements/segment"; }
+& { @import "@{semanticUI}/definitions/elements/step"; }
+
+/* Collections */
+& { @import "@{semanticUI}/definitions/collections/breadcrumb"; }
+& { @import "@{semanticUI}/definitions/collections/form"; }
+& { @import "@{semanticUI}/definitions/collections/grid"; }
+& { @import "@{semanticUI}/definitions/collections/menu"; }
+& { @import "@{semanticUI}/definitions/collections/message"; }
+& { @import "@{semanticUI}/definitions/collections/table"; }
+
+/* Views */
+& { @import "@{semanticUI}/definitions/views/ad"; }
+& { @import "@{semanticUI}/definitions/views/card"; }
+& { @import "@{semanticUI}/definitions/views/comment"; }
+& { @import "@{semanticUI}/definitions/views/feed"; }
+& { @import "@{semanticUI}/definitions/views/item"; }
+& { @import "@{semanticUI}/definitions/views/statistic"; }
+
+/* Modules */
+& { @import "@{semanticUI}/definitions/modules/accordion"; }
+& { @import "@{semanticUI}/definitions/modules/checkbox"; }
+& { @import "@{semanticUI}/definitions/modules/dimmer"; }
+& { @import "@{semanticUI}/definitions/modules/dropdown"; }
+& { @import "@{semanticUI}/definitions/modules/embed"; }
+& { @import "@{semanticUI}/definitions/modules/modal"; }
+& { @import "@{semanticUI}/definitions/modules/nag"; }
+& { @import "@{semanticUI}/definitions/modules/popup"; }
+& { @import "@{semanticUI}/definitions/modules/progress"; }
+& { @import "@{semanticUI}/definitions/modules/rating"; }
+& { @import "@{semanticUI}/definitions/modules/search"; }
+& { @import "@{semanticUI}/definitions/modules/shape"; }
+& { @import "@{semanticUI}/definitions/modules/sidebar"; }
+& { @import "@{semanticUI}/definitions/modules/sticky"; }
+& { @import "@{semanticUI}/definitions/modules/tab"; }
+& { @import "@{semanticUI}/definitions/modules/transition"; }
+
 
 /* Components */
-& { @import "definitions/components/flexberry-button"; }
 & { @import "definitions/components/flexberry-dropdown"; }
 & { @import "definitions/components/flexberry-field"; }
 & { @import "definitions/components/flexberry-file"; }
 & { @import "definitions/components/flexberry-groupedit"; }
 & { @import "definitions/components/flexberry-lookup"; }
 & { @import "definitions/components/flexberry-objectlistview"; }
+& { @import "definitions/components/flexberry-sidebar"; }
+
 
 /* Pages */
 & { @import "definitions/pages/edit-form"; }
 & { @import "definitions/pages/login-form"; }
+& { @import "definitions/pages/main"; }

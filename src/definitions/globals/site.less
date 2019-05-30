@@ -1,3 +1,8 @@
+@type    : 'globals';
+@element : 'site';
+
+@import (multiple) '../../theme.config';
+
 /*******************************
         Global Overrides
 *******************************/
@@ -13,36 +18,6 @@
 .pushable .pusher.mobile {
   height: auto;
   min-height: auto;
-}
-
-.background-logo {
-  height: @headerHeight;
-  position: fixed;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: @headerColor;
-  z-index: 999;
-  width: 100%;
-}
-
-.background-logo.mobile {
-  height: @headerHeightMobile;
-}
-
-.background-logo a {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px #3f65a4;
-  margin: 5px;
-}
-
-.background-logo a img {
-  padding: 7px 0px;
 }
 
 #example-mobile, #example {
@@ -105,25 +80,94 @@
   box-shadow: none;
 }
 
-.page-header-caption a{
-  background: none;
-  color: #fff;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: 24px;
-  border-radius: 0px;
-  box-shadow: none;
-}
 
-.page-header-caption a:hover{
-  color: #fff!important;
-}
-
-.page-header-caption {
-  display: flex;
-  align-items: center;
-}
 
 lang {
   padding: 0px!important;
+}
+
+
+/**
+ * All ember-flexberry addon styles.
+ */
+
+/**
+ * Common styles.
+ */
+ .hidden {
+  display: none !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+/**
+ * Flexberry-colsconfig.
+ */
+.flexberry-colsconfig {
+  .show-columns {
+    width: 55px;
+  }
+  .columns-order {
+    width: 90px;
+  }
+  .column-width {
+    width: 85px;
+  }
+  .sort-direction {
+    width: 80px;
+  }
+  .sort-priority {
+    width: 70px;
+  }
+  .ui.table thead th {
+    text-align: center;
+  }
+  .sort-direction-cell {
+    overflow: visible !important;
+  }
+  .sort-direction-dropdown {
+    width: 100%;
+  }
+  td > .input {
+    width: 100%;
+    display: table-row;
+  }
+  th {
+    > .input {
+      input.setting-name {
+        width: 250px;
+      }
+    }
+    .ui.action.input .ui.button {
+      display: inline-flex;
+    }
+  }
+}
+
+/**
+ * Fix semantic-ui style for flexberry-menu.
+ */
+.flexberry-menu.ui.dropdown .menu .menu {
+  margin: 0 !important;
+}
+
+// Style for responsive
+@media only screen and (max-width: 767px) {
+  .ui.menu.container {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+  }
+  .flexberry-colsconfig {
+    .columns-order {
+      width: 50px;
+    }
+    .ui.right.button {
+      margin-top: 5px;
+    }
+    .ui.icon.button {
+      margin-bottom: 3px;
+    }
+  }
 }
