@@ -138,6 +138,7 @@ option {
   padding-top: 20px;
 }
 
+/* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
 /**************************************
       Edit panel buttons section
 ***************************************/
@@ -174,4 +175,46 @@ option {
         background: url("@{imagePath}/close-hover.png") center no-repeat;
         border: none;
     }
+}
+
+/* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\icon.overrides */
+/**************************************
+      Edit panel buttons icons
+***************************************/
+
+.save-button:before {
+  content: "\e80c";
+  font-family: 'Crimean';
+  color: @colorIcon;
+  font-size: 21px;
+  padding-right:10px;
+}
+.save-close-button:before {
+  content: "\e80d";
+  font-family: 'Crimean';
+  color: @colorIcon;
+  font-size: 21px;
+  padding-right: 10px;
+}
+.save-del-button:before {
+  content: "\e814";
+  font-family: 'Crimean';
+  color: @colorIcon;
+  font-size: 21px;
+  padding-right: 10px;
+}
+.delete-button {
+  &:before {
+      content: "\e814";
+      font-family: 'Crimean';
+      visibility: visible;
+      font-size: 21px;
+      color: @red;
+  }
+  &:hover:before {
+      color: @brightRed;
+  }
+  &.disabled:before {
+      color: #999;
+  }
 }

@@ -1,1 +1,2 @@
+/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
 @flexberryButtonHoveredColor: @brightBlue;

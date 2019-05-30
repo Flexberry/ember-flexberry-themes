@@ -57,26 +57,12 @@
 
 
 
-// Association veriables
-@buttonBackgroundColor: @white;
 
-
-
-
-/*-------------------
-   GLOBAL BUTTONS
---------------------*/
-
-@buttonBackgroundColor: @white;
-
-
+/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
 /*-------------------
    Global Variables
 --------------------*/
 
-@pageFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-@borderLeft: 1px solid @blue;
-@iconButtonOpacity: 1;
 @uiBorderColor: @blue;
 @uiHoveredPositiveBorderColor: @green;
 @uiHoveredPositiveBackgroundColor: @green;
@@ -85,27 +71,22 @@
 @uiHoveredNegitveBackgroundColor: @red;
 @uiHoveredNegitveTextColor: @red;
 
+@flexberryButtonHoveredColor: @brightBlue;
 
 /*-------------------
-        Types
+   Icon Variables
 --------------------*/
+@cornerIconInvertedShadow: @blue;
 
-/* Basic */
-@basicBoxShadow: none;
-@basicDownBoxShadow: none;
-@basicDownBackground: @primaryColor;
-@basicTextColor: @primaryColor;
-@basicGroupBorder: none;
+@colorIcon : @blue;
+@colorIconBorder: @blue;
 
-@basicHoverBoxShadow: none;
-@basicHoverBackground: @primaryColor;
-@basicHoverTextColor: @red;
+/*-------------------------------
+   GLOBAL ASSOCIATION VARIABLES
+--------------------------------*/
 
-@disabledOpacity: 0.5;
+@buttonBackgroundColor: @white;
 
-/*-------------------
-      Variations
---------------------*/
 
-/* Attached */
-@attachedBoxShadow: none;
+
+
