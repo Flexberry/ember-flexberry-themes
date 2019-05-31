@@ -1,0 +1,23 @@
+.inverted.vertical.main.menu.sidebar {
+  padding: @distanceM 0;
+}
+
+.launch.icon.item {
+  padding: 0px @distanceL 0px @distanceS;
+  font-size: 1.5rem;
+}
+
+.sitebar-footer {
+  position: absolute;
+  bottom: @distanceM;
+  width: 100%;
+}
+
+.title-item-menu {
+  display: flex;
+
+  .icon {
+    font-size: 1.2em;
+    margin-right: @distanceS;
+  }
+}

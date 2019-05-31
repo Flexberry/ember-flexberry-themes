@@ -3,14 +3,32 @@
 *******************************/
 
 /*-------------------
-       Loader
+      Base Sizes
+--------------------*/
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+
+/* The size of page text  */
+@fontSize : 16px;
+
+/*--------------
+  Page Heading
+---------------*/
+
+@headerFontWeight : bold;
+@headerLineHeight : unit((18 / 14), em);
+
+@h1 : unit((28 / 14), rem);
+@h2 : unit((24 / 14), rem);
+@h3 : 1.5rem;
+@h4 : unit((15 / 14), rem);
+@h5 : unit((14 / 14), rem);
+
+/*-------------------
+        Links
 --------------------*/
 
-@loaderFillColor         : #CCE2FF;
-@loaderLineColor         : @primaryColor;
-
-@invertedLoaderFillColor : @primaryColor;
-@invertedLoaderLineColor : #CCE2FF;
+@linkColor: @textColor;
 
 /*-------------------
       Site Colors
@@ -27,17 +45,8 @@
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
 
-
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
-
-/*-------------------
-        Paths
---------------------*/
-
-/* For source only. Modified in gulp for dist */
-@imagePath : 'themes/blue-sky/assets/images';
-@fontPath  : 'themes/default/assets/fonts';
 
 /*-------------------
         Hover
@@ -47,18 +56,40 @@
 @dropdownHoveredItemColor: #dcebfc;
 
 /*-------------------
+        Grid
+--------------------*/
+
+@columnCount: 12;
+
+/*-------------------
+    Scroll Bars
+--------------------*/
+
+@useCustomScrollbars: false;
+
+
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+@imagePath : 'themes/gos/assets/images';
+@fontPath  : 'themes/default/assets/fonts';
+
+/*-------------------
         Heights
 --------------------*/
 
-@headerHeight : 72px;
-@footerHeight : 40px;
+@headerHeight: 72px;
+@footerHeight: 0px;
 @headerHeightMobile : 50px;
-@footerHeightMobile : 40px;
+@footerHeightMobile : 0px;
+
+@distanceL: 2rem;
+@distanceM: 1.5rem;
+@distanceS: 1rem;
 
 
-
-
-/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
 /*-------------------
    Global Variables
 --------------------*/
@@ -81,12 +112,9 @@
 @colorIcon : @blue;
 @colorIconBorder: @blue;
 
-/*-------------------------------
-   GLOBAL ASSOCIATION VARIABLES
---------------------------------*/
+/*-------------------
+        Page
+--------------------*/
 
-@buttonBackgroundColor: @white;
-
-
-
-
+@pageBackground      : #f4f7fb;
+@textColor           : #3B4256;

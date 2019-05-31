@@ -38,50 +38,6 @@
   background-color: #dcebfc;
 }
 
-/**ScrollBar**/
-::-webkit-scrollbar {
-  height: 8px;
-  width: 9px;
-  /*background: #dcebfc!important;*/
-  cursor: pointer !important;
-  /*border:1px solid rgba(34, 36, 38, 0.1);*/
-  -webkit-border-radius: 1ex;
-}
-
-::-webkit-scrollbar-thumb {
-  background: @blue;
-  -webkit-border-radius: 1ex;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: @blue;
-  -webkit-border-radius: 1ex;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar-corner {
-  background: white;
-  cursor: pointer;
-}
-
-.page-header-userbar {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  align-items: center;
-  font-size: 14px;
-  color: #fff;
-}
-
-.page-header-userbar a{
-  background: none;
-  color: #fff;
-  box-shadow: none;
-}
-
-
-
 lang {
   padding: 0px!important;
 }
@@ -171,3 +127,5 @@ lang {
     }
   }
 }
+
+.loadUIOverrides();

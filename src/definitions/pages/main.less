@@ -7,6 +7,8 @@
 .background-logo {
   background: @headerColor;
   box-shadow: @headerBoxShadow;
+  color: @headerTextColor;
+  font-size: @headerFontSize;
   height: @headerHeight;
   position: fixed;
   display: -webkit-flex;
@@ -42,13 +44,21 @@
   color: @pageHeaderCaptionColor !important;
 }
 
-.page-header-caption {
+.logo {
+  width: @headerHeight;
+}
+
+.page-header-userbar {
   display: flex;
+  position: absolute;
+  right: 0px;
   align-items: center;
 }
 
-.logo {
-  height: @headerHeight;
+.page-header-userbar a {
+  background: none;
+  color: @headerTextColor;
+  box-shadow: none;
 }
 
 // content
@@ -68,6 +78,7 @@
 .flexberry-content.ui.attached.segment {
   width: 100%;
   background: @pageBackgroundColor;
+  padding: @flexberryContentPadding;
 }
 
 // footer
@@ -87,3 +98,5 @@
   width: 100% !important;
   margin: 0px !important;
 }
+
+.loadUIOverrides();

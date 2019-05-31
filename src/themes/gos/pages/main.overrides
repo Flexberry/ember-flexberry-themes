@@ -1,3 +1,44 @@
+.background-logo {
+  padding-right: @distanceL;
+}
+
 .text_menu {
   font-size: 0;
+}
+
+.page-header-caption {
+  color: @pageHeaderCaptionColor;
+
+  &:hover {
+    color: @pageHeaderCaptionColor;
+  }
+
+  > * {
+    display: block;
+  }
+}
+
+.page-header-caption-app-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.logo {
+  margin-right: @distanceM;
+}
+
+.page-header-userbar {
+  position: relative;
+  display: block;
+}
+
+.page-header-actions {
+  margin: 0 @distanceL 0 auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ui.main.container {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
 }

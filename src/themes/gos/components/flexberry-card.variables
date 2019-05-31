@@ -1,0 +1,6 @@
+@width: 380px;
+@contentPadding: @distanceL;
+@boxShadow: none;
+@headerColor: @textColor;
+@descriptionColor: @textColor;
+@descriptionDistance: @distanceS;
