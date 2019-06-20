@@ -14,3 +14,27 @@
     }
   }
 }
+
+.ui.card.big {
+  width: @widthBig;
+
+ .content {
+    .header {
+      margin-bottom: 1em;
+    }
+
+    .ui.form {
+      .ui.field:last-child {
+        margin-bottom: 10em;
+      }
+
+      .ui.checkbox {
+        margin-left: 1em;
+      }
+
+      .ui.button.blue {
+        margin-top: 1em;
+      }
+    }
+ }
+}
