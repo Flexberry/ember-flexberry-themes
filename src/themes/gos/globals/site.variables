@@ -44,6 +44,13 @@
 @brightBlue       : #3c87dc;
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
+@white            : #FFFFFF;
+@aliceBlue        : #F4F7FB;
+@mayaBlue         : #62B0FF;
+@hawkesBlue       : #DDE1E6;
+@chambray         : #B3BBC3;
+@cinnabar         : #E53935;
+
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -118,3 +125,18 @@
 
 @pageBackground      : #f4f7fb;
 @textColor           : #3B4256;
+
+
+/*-------------------
+        Input
+--------------------*/
+
+@inputBorderWidth: 1px;
+@inputBorderStyle: solid;
+@inputBorderRadius: 4px;
+@inputBorderColor: @aliceBlue;
+
+@inputPaddingTop: 13px;
+@inputPaddingRight: 16px;
+@inputPaddingBottom: 11px;
+@inputPaddingLeft: 16px;
