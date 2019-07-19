@@ -1,11 +1,4 @@
-@inputBackground: @aliceBlue;
-@inputPadding: @inputPaddingTop @inputPaddingRight @inputPaddingBottom @inputPaddingLeft;
-@inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
-
-@inputFocusBackground: @white;
-@inputFocusBorderColor: @mayaBlue;
-
-@inputDisabledBackground: @hawkesBlue;
-@inputDisabledBorderColor: @hawkesBlue;
-
 @inputHoverBorderColor: @chambray;
+
+@inputReadonlyBackground: @hawkesBlue;
+@inputReadonlyBorderColor: @hawkesBlue;

@@ -1,7 +1,14 @@
-/* Input */
-@inputBackground: @aliceBlue;
+/*-------------------
+        Input
+--------------------*/
+
+@inputBackground: @inputBackgroundColor;
 @inputPadding: @inputPaddingTop @inputPaddingRight @inputPaddingBottom @inputPaddingLeft;
 @inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
 
 @inputFocusBackground: @white;
+@inputFocusBorderColor: @mayaBlue;
 
+@labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
+@labelFontWeight: @defaultFontWeight;
+@labelFontSize: @fontSize;

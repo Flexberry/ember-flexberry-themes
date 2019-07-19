@@ -1,8 +1,8 @@
-.flexberry-field > .flexberry-textbox > input:hover {
+.ui.form input:hover {
     border-color: @inputHoverBorderColor;
 }
 
-.flexberry-field > .flexberry-textbox.disabled > input {
-  border-color: @inputDisabledBorderColor;
-  background: @inputDisabledBackground;
+.ui.form input[readonly="readonly"] {
+    background: @inputReadonlyBackground;
+    border-color: @inputReadonlyBorderColor;
 }

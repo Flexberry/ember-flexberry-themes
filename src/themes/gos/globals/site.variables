@@ -54,6 +54,7 @@
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
+@lightGrayishblue : #848E99;
 
 /*-------------------
         Hover
@@ -135,8 +136,19 @@
 @inputBorderStyle: solid;
 @inputBorderRadius: 4px;
 @inputBorderColor: @aliceBlue;
+@inputBackgroundColor: @aliceBlue;
 
-@inputPaddingTop: 13px;
-@inputPaddingRight: 16px;
-@inputPaddingBottom: 11px;
-@inputPaddingLeft: 16px;
+@inputPaddingTop: 0.625em;
+@inputPaddingRight: 0.75em;
+@inputPaddingBottom: 0.625em;
+@inputPaddingLeft: 0.75em;
+
+@inputPlaceholderColor : @lightGrayishblue;
+@inputPlaceholderFocusColor: @lightGrayishblue;
+
+@labelMarginTop: 0em;
+@labelMarginRight: 0em;
+@labelMarginBottom: 0.25em;
+@labelMarginLeft: 0em;
+
+@defaultFontWeight: normal;
