@@ -24,15 +24,12 @@
     }
 
     .ui.form {
-      .ui.field:last-child {
-        margin-bottom: 10em;
-      }
 
       .ui.checkbox {
         margin-left: 1em;
       }
 
-      .ui.button.blue {
+      .ui.button {
         margin-top: 1em;
       }
     }
