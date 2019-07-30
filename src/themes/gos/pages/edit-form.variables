@@ -7,7 +7,7 @@
 --------------------*/
 
 /* Input */
-@inputBorderColor: @paleBlue;
+@inputBorderColor: none;
 @inputBorder: 1px solid @inputBorderColor;
 @inputBackground: transparent;
 
