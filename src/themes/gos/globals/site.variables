@@ -11,6 +11,8 @@
 /* The size of page text  */
 @fontSize : 16px;
 
+@remSize: 16px;
+
 /*--------------
   Page Heading
 ---------------*/
@@ -35,7 +37,7 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColor     : @blue;
+@primaryColor     : @cobaltBlue;
 
 @red              : #FF7500;
 @brightRed        : #FF4800;
@@ -50,7 +52,8 @@
 @hawkesBlue       : #DDE1E6;
 @chambray         : #B3BBC3;
 @cinnabar         : #E53935;
-
+@cobaltBlue       : #0C49CD;
+@blueZodiak       : #3B4256;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -128,13 +131,29 @@
 @textColor           : #3B4256;
 
 
+/*---------------------
+        Defaults
+----------------------*/
+
+@defaultFontWeight: @defaultNormalFontWeight;
+@defaultNormalFontWeight: normal;
+@defaultBoldFontWeight: bold;
+
+@defaultSmallFontSize: 12px;
+
+@defaultBorderRadius: 4px;
+@defaultBorderWidth: 1px;
+@defaultBorderStyle: solid;
+
+
 /*-------------------
         Input
 --------------------*/
 
-@inputBorderWidth: 1px;
-@inputBorderStyle: solid;
-@inputBorderRadius: 4px;
+@inputBorderWidth: @defaultBorderWidth;
+@inputBorderStyle: @defaultBorderStyle;
+@inputBorderRadius: @defaultBorderRadius;
+
 @inputBorderColor: @aliceBlue;
 @inputBackgroundColor: @aliceBlue;
 
@@ -151,4 +170,21 @@
 @labelMarginBottom: 0.25em;
 @labelMarginLeft: 0em;
 
-@defaultFontWeight: normal;
+/*---------------------
+        Checkbox
+----------------------*/
+
+@defaultCheckboxSize: 24px;
+@defaultRadioButtonSize: 24px;
+@defaultBulletScale: 1 / 3;
+
+@defaultToggleWidth: 40px;
+@defaultToggleHeight: 24px;
+
+@defaultToggleHandleSize: 16px;
+@defaultToggleHandleOffset: 4px;
+
+@defaultVerticalOffset: 0;
+
+@defaultBoxShadow: none;
+@defaultToggleOnBorder: none;
