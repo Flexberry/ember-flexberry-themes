@@ -60,6 +60,7 @@
 @cinnabar         : #E53935;
 @cobaltBlue       : #0C49CD;
 @blueZodiak       : #3B4256;
+@linkWater        : #C7CCD1;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -143,6 +144,7 @@
 
 @defaultFontWeight: @defaultNormalFontWeight;
 @defaultNormalFontWeight: normal;
+@defaultMediumFontWeight: 500;
 @defaultBoldFontWeight: bold;
 
 @defaultSmallFontSize: 12px;
