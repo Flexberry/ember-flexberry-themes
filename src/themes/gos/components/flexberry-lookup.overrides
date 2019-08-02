@@ -1,0 +1,32 @@
+.flexberry-lookup>.ui.input>input {
+    width: 100%;
+    border-radius: 4px;
+    background: @aliceBlue;
+    border: 1px solid @aliceBlue;
+    padding-right: 150px;
+}
+
+.flexberry-lookup>.ui.input>input:hover {
+    border: 1px solid @chambray;
+}
+
+.flexberry-lookup>.ui.input>input:focus {
+    border: 1px solid @mayaBlue;
+}
+
+.flexberry-lookup>.ui.input>button.ui-clear {
+    position: relative;
+    right: 120px;
+    background: transparent;
+}
+
+.flexberry-lookup>.ui.input>button.ui-change {
+    position: relative;
+    right: 150px;
+    background: transparent;
+}
+
+.flexberry-lookup>.ui.input>input.disabled {
+    background: @hawkesBlue;
+    border-color: @hawkesBlue;
+}
