@@ -44,6 +44,7 @@
 
 /*---  Colors  ---*/
 @primaryColor     : @cobaltBlue;
+@secondaryColor   : @lightGrayishBlue;
 
 @red              : #FF7500;
 @brightRed        : #FF4800;
@@ -60,10 +61,13 @@
 @cinnabar         : #E53935;
 @cobaltBlue       : #0C49CD;
 @blueZodiak       : #3B4256;
+@linkWater        : #C7CCD1;
+@navyBlue         : #0962AF;
+@gray             : #EBEBEB;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
-@lightGrayishblue : #848E99;
+@lightGrayishBlue : #848E99;
 
 /*-------------------
         Hover
@@ -143,6 +147,7 @@
 
 @defaultFontWeight: @defaultNormalFontWeight;
 @defaultNormalFontWeight: normal;
+@defaultMediumFontWeight: 500;
 @defaultBoldFontWeight: bold;
 
 @defaultSmallFontSize: 12px;
@@ -150,6 +155,8 @@
 @defaultBorderRadius: 4px;
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
+
+@defaultFocusBorderColor: @mayaBlue;
 
 
 /*-------------------
@@ -168,8 +175,8 @@
 @inputPaddingBottom: 0.625em;
 @inputPaddingLeft: 0.75em;
 
-@inputPlaceholderColor : @lightGrayishblue;
-@inputPlaceholderFocusColor: @lightGrayishblue;
+@inputPlaceholderColor : @lightGrayishBlue;
+@inputPlaceholderFocusColor: @lightGrayishBlue;
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;

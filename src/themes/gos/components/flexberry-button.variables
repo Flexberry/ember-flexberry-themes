@@ -1,1 +1,145 @@
-@textColor: @pageBackground;
+// Primary
+
+@buttonPrimaryBackground: @primaryColor;
+@primaryBackgroundImage: none;
+@primaryTextColor: @aliceBlue;
+@lightPrimaryTextColor: @aliceBlue;
+@primaryTextShadow: none;
+@primaryBoxShadow: none;
+
+@buttonPrimaryHoverBackground: shade(@primaryColor, 10%);
+@buttonPrimaryActiveBackground: shade(@primaryColor, 20%);
+
+@buttonPrimaryFocusBackground: @primaryColor;
+@buttonPrimaryFocusBorder: @buttonFocusBorderWidth @buttonFocusBorderStyle @buttonFocusBorderColor;
+
+@buttonPrimaryDisabledBackground: @gray;
+@buttonPrimaryDisabledColor: @lightGrayishBlue;
+
+// Secondary
+
+@secondaryBackgroundImage: none;
+@secondaryTextColor: @blueZodiak;
+@secondaryTextShadow: none;
+@lightSecondaryTextColor: @blueZodiak;
+@secondaryBoxShadow: none;
+@buttonSecondaryBackground: @aliceBlue;
+
+@buttonSecondaryHoverBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
+@buttonSecondaryHoverBackground: @aliceBlue;
+
+@buttonSecondaryActiveBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
+@buttonSecondaryActiveBackground: @aliceBlue;
+
+@buttonSecondaryFocusBackground: @aliceBlue;
+@buttonSecondaryFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+
+@buttonSecondaryDisabledBackground: @gray;
+@buttonSecondaryDisabledBorder: none;
+@buttonSecondaryDisabledColor: @lightGrayishBlue;
+
+
+// Basic
+
+@basicBorderRadius: @defaultBorderRadius;
+@basicBorderSize: @defaultBorderWidth;
+@basicTextColor: @blueZodiak;
+@basicFontWeight: @defaultNormalFontWeight;
+@basicColoredBorderSize: @defaultBorderWidth;
+
+@basicBackground: @aliceBlue;
+@basicBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+@basicBoxShadow: none;
+@basicLoadingColor: @offWhite;
+@basicTextTransform: none;
+
+@basicHoverBackground: @aliceBlue;
+@basicHoverTextColor: @blueZodiak;
+@basicHoverBoxShadow: none;
+@buttonBasicHoverBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
+
+@basicFocusBackground: @aliceBlue;
+@basicFocusTextColor: @blueZodiak;
+@basicFocusBoxShadow: none;
+@buttonBasicFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+
+@basicDownBackground: @aliceBlue;
+@basicDownTextColor: @blueZodiak;
+@basicDownBoxShadow: none;
+
+@basicActiveBackground: @aliceBlue;
+@basicActiveBoxShadow: none;
+@basicActiveTextColor: @blueZodiak;
+@buttonBasicActiveBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
+
+@buttonBasicDisabledBackground: @gray;
+@buttonBasicDisabledColor: @lightGrayishBlue;
+@buttonBasicDisableBorder: @defaultBorderWidth @defaultBorderStyle @linkWater;
+
+
+// Standart
+
+@backgroundColor: @aliceBlue;
+@backgroundImage: none;
+@background: @backgroundColor @backgroundImage;
+
+@textColor: @secondaryColor;
+@fontWeight: @defaultNormalFontWeight;
+@lineHeight: 1.25rem;
+
+@verticalMargin: 0em;
+@horizontalMargin: 0em;
+
+@iconOpacity: 1;
+
+@hoverBackgroundColor: @aliceBlue;
+@hoverColor: @blueZodiak;
+@iconHoverOpacity: 1;
+
+@downBackgroundColor: @aliceBlue;
+@downBackgroundImage: none;
+@downPressedShadow: none;
+@downBoxShadow: none;
+@downColor: @blueZodiak;
+
+@activeBackgroundColor: @aliceBlue;
+@activeBackgroundImage: none;
+@activeColor: @blueZodiak;
+@activeBoxShadow: none;
+
+@focusBackgroundColor: @aliceBlue;
+@focusBackgroundImage: none;
+@focusBoxShadow: none;
+@focusColor: @blueZodiak;
+@iconFocusOpacity: 1;
+
+@buttonFocusBorderWidth: @defaultBorderWidth;
+@buttonFocusBorderStyle: @defaultBorderStyle;
+@buttonFocusBorderColor: @defaultFocusBorderColor;
+@buttonFocusBorder: @buttonFocusBorderWidth @buttonFocusBorderStyle @buttonFocusBorderColor;
+
+@buttonDisabledBackground: @gray;
+@buttonDisabledColor: @lightGrayishBlue;
+
+
+// Sizes
+
+@buttonTinyFontSize: 0.875rem;
+@buttonTinyPadding: 0.25rem 0.5rem;
+@buttonTinyLineHeight: 1.25rem;
+@buttonSmallFontSize: 0.875rem;
+@buttonSmallPadding: 0.375rem 0.625rem;
+@buttonSmallLineHeight: 1.25rem;
+@buttonMediumFontSize: 0.875rem;
+@buttonMediumPadding: 0.625rem 0.75rem;
+@buttonMediumLineHeight: 1.25rem;
+@buttonLargeFontSize: 1rem;
+@buttonLargePadding: 0.75rem 1rem;
+@buttonLargeLineHeight: 1.5rem;
+@buttonBigFontSize: 1rem;
+@buttonBigPadding: 1.0625rem 1.25rem;
+@buttonBigLineHeight: 1.375rem;
+@buttonHugeFontSize: 1.125rem;
+@buttonHugePadding: 1.1875rem 1.5rem;
+@buttonHugeLineHeight: 1.625rem;
+
