@@ -44,7 +44,6 @@
 
 /*---  Colors  ---*/
 @primaryColor     : @cobaltBlue;
-@secondaryColor   : @lightGrayishBlue;
 
 @red              : #FF7500;
 @brightRed        : #FF4800;
@@ -62,12 +61,10 @@
 @cobaltBlue       : #0C49CD;
 @blueZodiak       : #3B4256;
 @linkWater        : #C7CCD1;
-@navyBlue         : #0962AF;
-@gray             : #EBEBEB;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
-@lightGrayishBlue : #848E99;
+@lightGrayishblue : #848E99;
 
 /*-------------------
         Hover
@@ -156,8 +153,6 @@
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
 
-@defaultFocusBorderColor: @mayaBlue;
-
 
 /*-------------------
         Input
@@ -175,8 +170,8 @@
 @inputPaddingBottom: 0.625em;
 @inputPaddingLeft: 0.75em;
 
-@inputPlaceholderColor : @lightGrayishBlue;
-@inputPlaceholderFocusColor: @lightGrayishBlue;
+@inputPlaceholderColor : @lightGrayishblue;
+@inputPlaceholderFocusColor: @lightGrayishblue;
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
