@@ -1,5 +1,18 @@
 .inverted.vertical.main.menu.sidebar {
   padding: @distanceM 0;
+  overflow: visible ! important;
+  .item {
+    padding: @distanceS;
+    &::before {
+      display: none;
+    }
+  }
+
+  .dropdown.item .menu {
+    height: 100%;
+    padding: @distanceM 0;
+    position: fixed;
+  }
 }
 
 .launch.icon.item {
@@ -20,4 +33,17 @@
     font-size: 1.2em;
     margin-right: @distanceS;
   }
+}
+
+.ui.vertical.inverted.menu .menu .item,
+.ui.vertical.inverted.menu .menu .item a:not(.ui) {
+  color: @textColor;
+  font-size: 1em;
+  // padding: @distanceS;
+}
+
+.ui.vertical.inverted.menu .item .menu a.item:hover,
+.ui.vertical.inverted.menu .item .menu .link.item:hover {
+  color: @textColor;
+  background: rgba(0, 0, 0, 0.1);
 }

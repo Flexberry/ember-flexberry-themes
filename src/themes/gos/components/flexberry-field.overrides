@@ -3,6 +3,7 @@
 }
 
 .ui.form input[readonly="readonly"] {
+    pointer-events: none;
     background: @inputReadonlyBackground;
     border-color: @inputReadonlyBorderColor;
 }
