@@ -5,12 +5,12 @@
 @checkboxBackground: @checkboxBackgroundColor;
 @checkboxBorderWidth: @defaultBorderWidth;
 @checkboxBorderStyle: @defaultBorderStyle;
-@checkboxBorderColor: @hawkesBlue;
+@checkboxBorderColor: @chambray;
 @checkboxBorder: @checkboxBorderWidth @checkboxBorderStyle @checkboxBorderColor;
 @checkboxBorderRadius: @defaultBorderRadius;
 @labelColor: @blueZodiak;
 @labelDistance: @checkboxSize + @distanceS * @remSize;
-@labelFontWeight: @defaultBoldFontWeight;
+@labelFontWeight: @defaultMediumFontWeight;
 
 @checkboxHoverBackground: @aliceBlue;
 @checkboxHoverBorderColor: @primaryColor;
@@ -27,11 +27,11 @@
 @checkboxActiveFocusBorderColor: @mayaBlue;
 @checkboxActiveFocusCheckColor: @white;
 
-@checkboxReadonlyBackgroundColor: @hawkesBlue;
+@checkboxReadonlyBackgroundColor: @linkWater;
 @checkboxReadonlyBackground: @checkboxReadonlyBackgroundColor;
 @checkboxReadonlyBorderWidth: @checkboxBorderWidth;
 @checkboxReadonlyBorderStyle: @checkboxBorderStyle;
-@checkboxReadonlyBorderColor: @hawkesBlue;
+@checkboxReadonlyBorderColor: @linkWater;
 @checkboxReadonlyBorder: @checkboxReadonlyBorderWidth @checkboxReadonlyBorderStyle @checkboxReadonlyBorderColor;
 @checkboxReadonlyLabelColor: @lightGrayishBlue;
 
@@ -61,17 +61,17 @@
 @toggleLaneVerticalOffset: @defaultVerticalOffset;
 @toggleLaneBorderWidth: @defaultBorderWidth;
 @toggleLaneBorderStyle: @defaultBorderStyle;
-@toggleLaneBorderColor: @hawkesBlue;
+@toggleLaneBorderColor: @chambray;
 @toggleLaneBorder: @toggleLaneBorderWidth @toggleLaneBorderStyle @toggleLaneBorderColor;
 
 @toggleHandleSize: @defaultToggleHandleSize;
 @toggleHandleRadius: @circularRadius;
 @toggleHandleOffset: @defaultToggleHandleOffset;
-@toggleHandleBackgroundColor: @white;
+@toggleHandleBackgroundColor: @chambray;
 @toggleHandleBackground: @toggleHandleBackgroundColor;
 @toggleHandleBorderWidth:@defaultBorderWidth;
 @toggleHandleBorderStyle: @defaultBorderStyle;
-@toggleHandleBorderColor: @hawkesBlue;
+@toggleHandleBorderColor: @chambray;
 @toggleHandleBorder: @toggleHandleBorderWidth @toggleHandleBorderStyle @toggleHandleBorderColor;
 
 @toggleOffOffset: @defaultToggleHandleOffset;
@@ -106,7 +106,7 @@
 @toggleHoverLaneBorderColor: @primaryColor;
 @toggleHoverLaneBorder: @toggleHoverLaneBorderWidth @toggleHoverLaneBorderStyle @toggleHoverLaneBorderColor;
 
-@toggleHoverHandleBackgroundColor: @white;
+@toggleHoverHandleBackgroundColor: @primaryColor;
 @toggleHoverHandleBackground: @toggleHoverHandleBackgroundColor;
 @toggleHoverHandleBorderWidth: @defaultBorderWidth;
 @toggleHoverHandleBorderStyle: @defaultBorderStyle;
@@ -114,3 +114,17 @@
 @toggleHoverHandleBorder: @toggleHoverHandleBorderWidth @toggleHoverHandleBorderStyle @toggleHoverHandleBorderColor;
 
 @toggleHoverLabelColor: @primaryColor;
+
+@toggleReadonlyLaneBackgroundColor: @linkWater;
+@toggleReadonlyLaneBackground: @toggleReadonlyLaneBackgroundColor;
+@toggleReadonlyLaneBorderWidth: @defaultBorderWidth;
+@toggleReadonlyLaneBorderStyle: @defaultBorderStyle;
+@toggleReadonlyLaneBorderColor: @linkWater;
+@toggleReadonlyLaneBorder: @toggleReadonlyLaneBorderWidth @toggleReadonlyLaneBorderStyle @toggleReadonlyLaneBorderColor;
+
+@toggleReadonlyHandleBackgroundColor: @white;
+@toggleReadonlyHandleBackground: @toggleReadonlyHandleBackgroundColor;
+@toggleReadonlyHandleBorderWidth: @defaultBorderWidth;
+@toggleReadonlyHandleBorderStyle: @defaultBorderStyle;
+@toggleReadonlyHandleBorderColor: @white;
+@toggleReadonlyHandleBorder: @toggleReadonlyHandleBorderWidth @toggleReadonlyHandleBorderStyle @toggleReadonlyHandleBorderColor;
