@@ -82,3 +82,17 @@
 .ui.toggle.checkbox.checked input:focus~label:before {
     border: @toggleFocusLaneBorder;
 }
+
+// Lane readonly
+.ui.toggle.checkbox.read-only .box:before,
+.ui.toggle.checkbox.read-only label:before {
+    background: @toggleReadonlyLaneBackground;
+    border: @toggleReadonlyLaneBorder;
+}
+
+// Handle readonly
+.ui.toggle.checkbox.read-only .box:after,
+.ui.toggle.checkbox.read-only label:after {
+    background: @toggleReadonlyHandleBackground;
+    border: @toggleReadonlyHandleBorder;
+}
