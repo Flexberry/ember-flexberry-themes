@@ -1,0 +1,52 @@
+@lookupFieldBorderRadius: @defaultBorderRadius;
+@lookupFieldBackground: @aliceBlue;
+@lookupFieldBorder: @defaultBorderWidth @defaultBorderStyle @aliceBlue;
+@lookupFieldRightPadding: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin * 2 + @lookupHorizontalPadding;
+
+@lookupFieldHoverBorder: @defaultBorderWidth @defaultBorderStyle @chambray;
+
+@lookupFieldFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+
+@lookupFieldDisabledBackground: @hawkesBlue;
+@lookupFieldDisabledBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+
+@lookupButtonBackground: transparent;
+@lookupButtonVerticalMargin: 10px;
+@lookupButtonWidth: 20px;
+@lookupButtonHeight: 20px;
+
+@lookupButtonHorizontalMargin: 12px;
+@lookupHorizontalPadding: 12px;
+@lookupClearButtonRight: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
+@lookupChangeButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding;
+
+@lookupIconWidth: 20px;
+@lookupIconHeight: 20px;
+@lookupIconMargin: 0px;
+
+@lookupBeforeIconTop: 1px;
+@lookupBeforeIconFontSize: 14px;
+
+
+// Autocomplete
+
+@autocompleteResultsMargin: 0px;
+@autocompleteResultsTopPadding: 40px;
+@autocompleteResultsTop: 0px;
+@autocompleteResultsWidth: 100%;
+@autocompleteResultsBackground: @white;
+@autocompleteResultsBorder: none;
+
+@autocompleteResultBottomPadding: 0px;
+@autocompleteResultBackground: @white;
+@autocompleteResultBorderRadius: @defaultBorderRadius;
+@autocompleteResultBorder: none;
+
+@autocompleteResultHoverBackground: @aliceBlue;
+
+@autocompleteResultContentBottomPadding: 10px;
+@autocompleteResultContentBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+
+@autocompleteResultTitleFont: @fontName;
+@autocompleteResultTitleFontSize: 14px;
+@autocompleteResultTitleFontWeight: @defaultMediumFontWeight;
