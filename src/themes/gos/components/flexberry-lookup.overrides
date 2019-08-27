@@ -30,7 +30,7 @@
 .flexberry-lookup>.ui.input>.ui.button {
     position: relative;
     z-index: 3;
-    padding: 0px;
+    padding: @lookupButtonPadding;
     background: @lookupButtonBackground;
     margin-top: @lookupButtonVerticalMargin;
     margin-bottom: @lookupButtonVerticalMargin;
@@ -44,19 +44,13 @@
     border: none;
 }
 
-// Clear
-
 .flexberry-lookup>.ui.input>.ui-clear {
     right: @lookupClearButtonRight;
 }
 
-// Change
-
 .flexberry-lookup>.ui.input>.ui-change {
     right: @lookupChangeButtonRight;
 }
-
-// Icons
 
 .flexberry-lookup>.ui.input>.ui.button>.icon {
     margin: @lookupIconMargin;

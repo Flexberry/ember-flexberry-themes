@@ -170,8 +170,8 @@
 @inputBorderColor: @aliceBlue;
 @inputBackgroundColor: @aliceBlue;
 
-@inputPlaceholderColor : @lightGrayishblue;
-@inputPlaceholderFocusColor: @lightGrayishblue;
+@inputPlaceholderColor : @lightGrayishBlue;
+@inputPlaceholderFocusColor: @lightGrayishBlue;
 
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
