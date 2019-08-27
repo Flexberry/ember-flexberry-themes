@@ -7,22 +7,3 @@
     background: @inputReadonlyBackground;
     border-color: @inputReadonlyBorderColor;
 }
-
-.ui.field > label {
-    line-height: @fieldLabelLineHeight;
-}
-
-
-// Large
-
-.ui.large.input > input {
-    font-size: @inputLargeFontSize;
-    line-height: @inputLargeLineHeight;
-    padding: @inputLargePadding;
-}
-
-.ui.large.field > label {
-    font-size: @fieldLargeLabelFontSize;
-    line-height: @fieldLargeLabelLineHeight;
-    margin: @fieldLargeLabelMargin;
-}

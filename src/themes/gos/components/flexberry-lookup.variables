@@ -10,43 +10,44 @@
 @lookupFieldDisabledBackground: @hawkesBlue;
 @lookupFieldDisabledBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
 
+@lookupButtonPadding: 0em;
 @lookupButtonBackground: transparent;
-@lookupButtonVerticalMargin: 10px;
-@lookupButtonWidth: 20px;
-@lookupButtonHeight: 20px;
+@lookupButtonVerticalMargin: unit(9 / 14, em);
+@lookupButtonWidth: unit(20 / 14, em);
+@lookupButtonHeight: unit(20 / 14, em);
 
-@lookupButtonHorizontalMargin: 12px;
-@lookupHorizontalPadding: 12px;
+@lookupButtonHorizontalMargin: unit(11 / 14, em);
+@lookupHorizontalPadding: unit(11 / 14, em);
 @lookupClearButtonRight: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
 @lookupChangeButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding;
 
-@lookupIconWidth: 20px;
-@lookupIconHeight: 20px;
-@lookupIconMargin: 0px;
+@lookupIconWidth: unit(20 / 14, em);
+@lookupIconHeight: unit(20 / 14, em);
+@lookupIconMargin: 0em;
 
-@lookupBeforeIconTop: 1px;
-@lookupBeforeIconFontSize: 14px;
+@lookupBeforeIconTop: 0em;
+@lookupBeforeIconFontSize: 1em;
 
 
 // Autocomplete
 
-@autocompleteResultsMargin: 0px;
-@autocompleteResultsTopPadding: 40px;
-@autocompleteResultsTop: 0px;
+@autocompleteResultsMargin: 0em;
+@autocompleteResultsTopPadding: @inputVerticalPadding * 2 + @inputLineHeight;
+@autocompleteResultsTop: 0em;
 @autocompleteResultsWidth: 100%;
 @autocompleteResultsBackground: @white;
 @autocompleteResultsBorder: none;
 
-@autocompleteResultBottomPadding: 0px;
+@autocompleteResultBottomPadding: 0em;
 @autocompleteResultBackground: @white;
 @autocompleteResultBorderRadius: @defaultBorderRadius;
 @autocompleteResultBorder: none;
 
 @autocompleteResultHoverBackground: @aliceBlue;
 
-@autocompleteResultContentBottomPadding: 10px;
+@autocompleteResultContentBottomPadding: unit(10 / 14, em);
 @autocompleteResultContentBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
 
 @autocompleteResultTitleFont: @fontName;
-@autocompleteResultTitleFontSize: 14px;
+@autocompleteResultTitleFontSize: 0.875em;
 @autocompleteResultTitleFontWeight: @defaultMediumFontWeight;

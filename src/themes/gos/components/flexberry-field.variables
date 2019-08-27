@@ -2,25 +2,3 @@
 
 @inputReadonlyBackground: @hawkesBlue;
 @inputReadonlyBorderColor: @hawkesBlue;
-
-@fieldLabelLineHeight: unit(20 / 14, em);
-
-// Large
-
-@inputLargeFontSize: unit(16 / 18, em);
-@inputLargeLineHeight: 1.5em;
-
-@inputLargeVerticalPadding: unit(11 / 16, em);
-@inputLargeHorizontalPadding: unit(15 / 16, em);
-
-@inputLargePadding: @inputLargeVerticalPadding @inputLargeHorizontalPadding;
-
-@fieldLargeLabelFontSize: 1em;
-@fieldLargeLabelLineHeight: 1.5em;
-
-@fieldLargeLabelMarginTop: 0em;
-@fieldLargeLabelMarginRight: 0em;
-@fieldLargeLabelMarginBottom: 0.5em;
-@fieldLargeLabelMarginLeft: 0em;
-
-@fieldLargeLabelMargin: @fieldLargeLabelMarginTop @fieldLargeLabelMarginRight @fieldLargeLabelMarginBottom @fieldLargeLabelMarginLeft;

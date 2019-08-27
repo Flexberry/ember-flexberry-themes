@@ -170,17 +170,17 @@
 @inputBorderColor: @aliceBlue;
 @inputBackgroundColor: @aliceBlue;
 
-@inputPlaceholderColor : @lightGrayishblue;
-@inputPlaceholderFocusColor: @lightGrayishblue;
+@inputPaddingTop: 0.625em;
+@inputPaddingRight: 0.75em;
+@inputPaddingBottom: 0.625em;
+@inputPaddingLeft: 0.75em;
 
-@inputVerticalPadding: unit((9 / 14), em);
-@inputHorizontalPadding: unit((11 / 14), em);
-
-@inputLineHeight: unit((20 / 14), em);
+@inputPlaceholderColor : @lightGrayishBlue;
+@inputPlaceholderFocusColor: @lightGrayishBlue;
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
-@labelMarginBottom: unit(4 / 14, em);
+@labelMarginBottom: 0.25em;
 @labelMarginLeft: 0em;
 
 /*---------------------
