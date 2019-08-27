@@ -6,6 +6,7 @@
 @lightPrimaryTextColor: @aliceBlue;
 @primaryTextShadow: none;
 @primaryBoxShadow: none;
+@buttonPrimaryBorder: @defaultBorderWidth @defaultBorderStyle transparent;
 
 @buttonPrimaryHoverBackground: shade(@primaryColor, 10%);
 @buttonPrimaryActiveBackground: shade(@primaryColor, 20%);
@@ -24,6 +25,7 @@
 @lightSecondaryTextColor: @blueZodiak;
 @secondaryBoxShadow: none;
 @buttonSecondaryBackground: @aliceBlue;
+@buttonSecondaryBorder: @defaultBorderWidth @defaultBorderStyle transparent;
 
 @buttonSecondaryHoverBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
 @buttonSecondaryHoverBackground: @aliceBlue;
@@ -83,6 +85,8 @@
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
 
+@buttonBorder: @defaultBorderWidth @defaultBorderStyle transparent;
+
 @textColor: @secondaryColor;
 @fontWeight: @defaultNormalFontWeight;
 @lineHeight: 1.25rem;
@@ -124,22 +128,22 @@
 
 // Sizes
 
-@buttonTinyFontSize: 0.875rem;
-@buttonTinyPadding: 0.25rem 0.5rem;
-@buttonTinyLineHeight: 1.25rem;
-@buttonSmallFontSize: 0.875rem;
-@buttonSmallPadding: 0.375rem 0.625rem;
-@buttonSmallLineHeight: 1.25rem;
-@buttonMediumFontSize: 0.875rem;
-@buttonMediumPadding: 0.625rem 0.75rem;
-@buttonMediumLineHeight: 1.25rem;
-@buttonLargeFontSize: 1rem;
-@buttonLargePadding: 0.75rem 1rem;
-@buttonLargeLineHeight: 1.5rem;
-@buttonBigFontSize: 1rem;
-@buttonBigPadding: 1.0625rem 1.25rem;
-@buttonBigLineHeight: 1.375rem;
-@buttonHugeFontSize: 1.125rem;
-@buttonHugePadding: 1.1875rem 1.5rem;
-@buttonHugeLineHeight: 1.625rem;
+@buttonTinyFontSize: 0.875em;
+@buttonTinyPadding: unit(3 / 14, em) unit(7 / 14, em);
+@buttonTinyLineHeight: unit(20 / 14, em);
+@buttonSmallFontSize: 0.875em;
+@buttonSmallPadding: unit(5 / 14, em) unit(9 / 14, em);
+@buttonSmallLineHeight: unit(20 / 14, em);
+@buttonMediumFontSize: 0.875em;
+@buttonMediumPadding: unit(9 / 14, em) unit(11 / 14, em);
+@buttonMediumLineHeight: unit(20 / 14, em);
+@buttonLargeFontSize: 1em;
+@buttonLargePadding: 0.6875em 0.9375em;
+@buttonLargeLineHeight: 1.5em;
+@buttonBigFontSize: 1em;
+@buttonBigPadding: 1em 1.1875em;
+@buttonBigLineHeight: 1.375em;
+@buttonHugeFontSize: 1.125em;
+@buttonHugePadding: 1em unit(23 / 18, em);
+@buttonHugeLineHeight: unit(26 / 18, em);
 

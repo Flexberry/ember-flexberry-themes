@@ -2,6 +2,7 @@
 
 .ui.primary.button {
     background: @buttonPrimaryBackground;
+    border: @buttonPrimaryBorder;
 }
 
 .ui.primary.button:hover {
@@ -28,6 +29,7 @@
 
 .ui.secondary.button {
     background: @buttonSecondaryBackground;
+    border: @buttonSecondaryBorder;
 }
 
 .ui.secondary.button:hover {
@@ -80,6 +82,10 @@
 
 
 // Standart
+
+.ui.button {
+    border: @buttonBorder;
+}
 
 .ui.button:focus {
     border: @buttonFocusBorder;
