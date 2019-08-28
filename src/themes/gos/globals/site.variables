@@ -1,6 +1,12 @@
 /*******************************
          Site Settings
 *******************************/
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'GOSTUI2';
+@googleFontName    : 'Lato';
 
 /*-------------------
       Base Sizes
@@ -42,7 +48,7 @@
 @red              : #FF7500;
 @brightRed        : #FF4800;
 @green            : #7dd4b4;
-@blue             : #7ba7d9;
+@blue             : #0C49CD;
 @brightBlue       : #3c87dc;
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
@@ -54,6 +60,7 @@
 @cinnabar         : #E53935;
 @cobaltBlue       : #0C49CD;
 @blueZodiak       : #3B4256;
+@linkWater        : #C7CCD1;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -137,6 +144,7 @@
 
 @defaultFontWeight: @defaultNormalFontWeight;
 @defaultNormalFontWeight: normal;
+@defaultMediumFontWeight: 500;
 @defaultBoldFontWeight: bold;
 
 @defaultSmallFontSize: 12px;

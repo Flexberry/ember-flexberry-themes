@@ -1,6 +1,24 @@
+/* Card */
 @width: 380px;
-@contentPadding: @distanceL;
+@widthBig: 510px;
 @boxShadow: none;
+
+/* Content */
+@contentPadding: @distanceL;
+
+/* Header */
 @headerColor: @textColor;
-@descriptionColor: @textColor;
+@headerFontSize: 1.5em;
+@headerFontWeight: 500;
+
+/* Description */
 @descriptionDistance: @distanceS;
+@descriptionColor: @textColor;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Link */
+@linkHoverBoxShadow: 0px 2px 4px rgba(0, 7, 123, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.06);
+@linkHoverTransform: none;
