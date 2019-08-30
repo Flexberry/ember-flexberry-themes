@@ -178,9 +178,14 @@
 @inputPlaceholderColor : @lightGrayishBlue;
 @inputPlaceholderFocusColor: @lightGrayishBlue;
 
+@inputVerticalPadding: unit((9 / 14), em);
+@inputHorizontalPadding: unit((11 / 14), em);
+
+@inputLineHeight: unit((20 / 14), em);
+
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
-@labelMarginBottom: 0.25em;
+@labelMarginBottom: unit(4 / 14, em);
 @labelMarginLeft: 0em;
 
 /*---------------------
