@@ -43,6 +43,7 @@
     position: relative;
     z-index: 3;
     pointer-events: none;
+    color: @fieldLabeledInsideLabelColor;
     transition: @fieldLabeledInsideLabelTransition;
     font-size: @fieldLabeledInsideLabelFontSize;
     line-height: @fieldLabeledInsideLabelLineHeight;
@@ -52,7 +53,6 @@
 
 .ui.labeled-inside.label-away.field > label,
 .ui.labeled-inside.field:focus-within > label {
-    color: @fieldLabeledInsideLabelAwayColor;
     font-size: @fieldLabeledInsideLabelAwayFontSize;
     line-height: @fieldLabeledInsideLabelAwayLineHeight;
     top: @fieldLabeledInsideLabelAwayTop;

@@ -38,6 +38,7 @@
     @fieldLabeledInsidePaddingBottom
     @fieldLabeledInsidePaddingLeft;
 
+@fieldLabeledInsideLabelColor: @lightGrayishBlue;
 @fieldLabeledInsideLabelFontSize: 0.875em;
 @fieldLabeledInsideLabelLineHeight: @inputLineHeight;
 @fieldLabeledInsideLabelTop: unit(26 / 14, em);;
@@ -52,7 +53,6 @@
     @fieldLabeledInsideLabelMarginBottom
     @fieldLabeledInsideLabelMarginLeft;
 
-@fieldLabeledInsideLabelAwayColor: @lightGrayishBlue;
 @fieldLabeledInsideLabelAwayFontSize: 0.75em;
 @fieldLabeledInsideLabelAwayLineHeight: unit(16 / 12, em);
 @fieldLabeledInsideLabelAwayTop: unit(10 / 12, em);
