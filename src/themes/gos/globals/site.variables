@@ -64,7 +64,7 @@
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
-@lightGrayishblue : #848E99;
+@lightGrayishBlue : #848E99;
 
 /*-------------------
         Hover
@@ -153,6 +153,10 @@
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
 
+@defaultTransitionProperty: all;
+@defaultTransitionDuration: 0.3s;
+@defaultTransitionTimingFunction: ease;
+@defaultTransitionDelay: 0s;
 
 /*-------------------
         Input
@@ -165,8 +169,8 @@
 @inputBorderColor: @aliceBlue;
 @inputBackgroundColor: @aliceBlue;
 
-@inputPlaceholderColor : @lightGrayishblue;
-@inputPlaceholderFocusColor: @lightGrayishblue;
+@inputPlaceholderColor : @lightGrayishBlue;
+@inputPlaceholderFocusColor: @lightGrayishBlue;
 
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);

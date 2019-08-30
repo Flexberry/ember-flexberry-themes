@@ -26,3 +26,58 @@
     line-height: @fieldLargeLabelLineHeight;
     margin: @fieldLargeLabelMargin;
 }
+
+
+// Labeled inside
+
+.ui.labeled-inside.field > .ui.input > input {
+    padding: @fieldLabeledInsidePadding;
+}
+
+.ui.labeled-inside.field > .ui.input > input::placeholder {
+   color: transparent;
+}
+
+.ui.labeled-inside.field > label {
+    height: 0px;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+    transition: @fieldLabeledInsideLabelTransition;
+    font-size: @fieldLabeledInsideLabelFontSize;
+    line-height: @fieldLabeledInsideLabelLineHeight;
+    top: @fieldLabeledInsideLabelTop;
+    margin: @fieldLabeledInsideLabelMargin;
+}
+
+.ui.labeled-inside.label-away.field > label,
+.ui.labeled-inside.field:focus-within > label {
+    color: @fieldLabeledInsideLabelAwayColor;
+    font-size: @fieldLabeledInsideLabelAwayFontSize;
+    line-height: @fieldLabeledInsideLabelAwayLineHeight;
+    top: @fieldLabeledInsideLabelAwayTop;
+    margin: @fieldLabeledInsideLabelAwayMargin;
+}
+
+
+// Large labeled inside 
+
+.ui.large.labeled-inside.field > .ui.input > input {
+    padding: @fieldLargeLabeledInsidePadding;
+}
+
+.ui.large.labeled-inside.field > label {
+    font-size: @fieldLargeLabeledInsideLabelFontSize;
+    line-height: @fieldLargeLabeledInsideLabelLineHeight;
+    top: @fieldLargeLabeledInsideLabelTop;
+    margin: @fieldLargeLabeledInsideLabelMargin;
+}
+
+.ui.large.labeled-inside.label-away.field > label,
+.ui.large.labeled-inside.field:focus-within > label {
+    font-size: @fieldLargeLabeledInsideLabelAwayFontSize;
+    line-height: @fieldLargeLabeledInsideLabelAwayLineHeight;
+    top: @fieldLargeLabeledInsideLabelAwayTop;
+    margin: @fieldLargeLabeledInsideLabelAwayMargin;
+}
+
