@@ -25,6 +25,27 @@
     border: @lookupFieldDisabledBorder;
 }
 
+// Workaround for old themes compatibility
+// Overriding "action" class
+
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field {
+    border-top-right-radius: @lookupFieldBorderRadius !important;
+    border-bottom-right-radius: @lookupFieldBorderRadius !important;
+    border-right-color: @lookupFieldBorderColor !important;
+}
+
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:hover {
+    border-right-color: @lookupFieldHoverBorderColor !important;
+}
+
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:focus {
+    border-right-color: @lookupFieldFocusBorderColor !important;
+}
+
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field.disabled {
+    border-right-color: @lookupFieldDisabledBorderColor !important;
+}
+
 // Buttons
 
 .flexberry-lookup>.ui.input>.ui.button {
@@ -61,6 +82,7 @@
 .flexberry-lookup>.ui.input>.ui.button>.icon::before {
     top: @lookupBeforeIconTop;
     font-size: @lookupBeforeIconFontSize;
+    position: relative;
 }
 
 

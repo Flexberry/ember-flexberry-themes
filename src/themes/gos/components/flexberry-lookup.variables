@@ -1,14 +1,26 @@
 @lookupFieldBorderRadius: @defaultBorderRadius;
 @lookupFieldBackground: @aliceBlue;
-@lookupFieldBorder: @defaultBorderWidth @defaultBorderStyle @aliceBlue;
+@lookupFieldBorderWidth: @defaultBorderWidth;
+@lookupFieldBorderStyle: @defaultBorderStyle;
+@lookupFieldBorderColor: @aliceBlue;
+@lookupFieldBorder: @lookupFieldBorderWidth @lookupFieldBorderStyle @lookupFieldBorderColor;
 @lookupFieldRightPadding: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin * 2 + @lookupHorizontalPadding;
 
-@lookupFieldHoverBorder: @defaultBorderWidth @defaultBorderStyle @chambray;
+@lookupFieldHoverBorderWidth: @defaultBorderWidth;
+@lookupFieldHoverBorderStyle: @defaultBorderStyle;
+@lookupFieldHoverBorderColor: @chambray;
+@lookupFieldHoverBorder: @lookupFieldHoverBorderWidth @lookupFieldHoverBorderStyle @lookupFieldHoverBorderColor;
 
-@lookupFieldFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+@lookupFieldFocusBorderWidth: @defaultBorderWidth;
+@lookupFieldFocusBorderStyle: @defaultBorderStyle;
+@lookupFieldFocusBorderColor: @mayaBlue;
+@lookupFieldFocusBorder: @lookupFieldFocusBorderWidth @lookupFieldFocusBorderStyle @lookupFieldFocusBorderColor;
 
 @lookupFieldDisabledBackground: @hawkesBlue;
-@lookupFieldDisabledBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+@lookupFieldDisabledBorderWidth: @defaultBorderWidth;
+@lookupFieldDisabledBorderStyle: @defaultBorderStyle;
+@lookupFieldDisabledBorderColor: @hawkesBlue;
+@lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
 
 @lookupButtonPadding: 0em;
 @lookupButtonBackground: transparent;
@@ -18,8 +30,8 @@
 
 @lookupButtonHorizontalMargin: unit(11 / 14, em);
 @lookupHorizontalPadding: unit(11 / 14, em);
-@lookupClearButtonRight: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
-@lookupChangeButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding;
+@lookupClearButtonRight:  @lookupButtonWidth * 3 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
+@lookupChangeButtonRight:  @lookupButtonWidth + @lookupHorizontalPadding;
 
 @lookupIconWidth: unit(20 / 14, em);
 @lookupIconHeight: unit(20 / 14, em);
