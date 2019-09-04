@@ -51,7 +51,7 @@
     margin: @fieldLabeledInsideLabelMargin;
 }
 
-.ui.labeled-inside.label-away.field > label,
+.ui.labeled-inside.has-text.field > label,
 .ui.labeled-inside.field:focus-within > label {
     font-size: @fieldLabeledInsideLabelAwayFontSize;
     line-height: @fieldLabeledInsideLabelAwayLineHeight;
@@ -73,7 +73,7 @@
     margin: @fieldLargeLabeledInsideLabelMargin;
 }
 
-.ui.large.labeled-inside.label-away.field > label,
+.ui.large.labeled-inside.has-text.field > label,
 .ui.large.labeled-inside.field:focus-within > label {
     font-size: @fieldLargeLabeledInsideLabelAwayFontSize;
     line-height: @fieldLargeLabeledInsideLabelAwayLineHeight;
