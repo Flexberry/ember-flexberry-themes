@@ -22,7 +22,6 @@
 @fieldLargeLabelMarginRight: 0em;
 @fieldLargeLabelMarginBottom: 0.5em;
 @fieldLargeLabelMarginLeft: 0em;
-
 @fieldLargeLabelMargin: @fieldLargeLabelMarginTop @fieldLargeLabelMarginRight @fieldLargeLabelMarginBottom @fieldLargeLabelMarginLeft;
 
 
