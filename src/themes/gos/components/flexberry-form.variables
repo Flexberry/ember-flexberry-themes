@@ -2,7 +2,7 @@
         Input
 --------------------*/
 
-@inputFontSize: 0.875em;
+@inputFontSize: @defaultInputFontSize;
 @inputBackground: @inputBackgroundColor;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
 @inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
@@ -12,4 +12,4 @@
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
-@labelFontSize: 0.875em;
+@labelFontSize: @defaultInputLabelFontSize;

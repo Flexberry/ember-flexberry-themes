@@ -160,7 +160,7 @@
 
 @defaultTransitionProperty: all;
 @defaultTransitionDuration: 0.3s;
-@defaultTransitionTimingFunction: ease;
+@defaultTransitionTimingFunction: ease-in-out;
 @defaultTransitionDelay: 0s;
 
 
@@ -168,28 +168,22 @@
         Input
 --------------------*/
 
-@inputBorderWidth: @defaultBorderWidth;
-@inputBorderStyle: @defaultBorderStyle;
-@inputBorderRadius: @defaultBorderRadius;
+@defaultInputFontSize: 0.875em;
+@defaultInputLabelFontSize: 0.875em;
+@inputLineHeight: unit((20 / 14), em);
 
-@inputBorderColor: @aliceBlue;
 @inputBackgroundColor: @aliceBlue;
 
 @inputPlaceholderColor : @lightGrayishBlue;
 @inputPlaceholderFocusColor: @lightGrayishBlue;
 
-@inputVerticalPadding: unit((9 / 14), em);
-@inputHorizontalPadding: unit((11 / 14), em);
-
-@inputLineHeight: unit((20 / 14), em);
-
-@inputPlaceholderColor : @lightGrayishBlue;
-@inputPlaceholderFocusColor: @lightGrayishBlue;
+@inputBorderWidth: @defaultBorderWidth;
+@inputBorderStyle: @defaultBorderStyle;
+@inputBorderRadius: @defaultBorderRadius;
+@inputBorderColor: @aliceBlue;
 
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
-
-@inputLineHeight: unit((20 / 14), em);
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;

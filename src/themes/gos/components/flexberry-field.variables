@@ -53,18 +53,8 @@
     @fieldLabeledInsideLabelMarginLeft;
 
 @fieldLabeledInsideLabelAwayFontSize: 0.75em;
-@fieldLabeledInsideLabelAwayLineHeight: unit(16 / 12, em);
-@fieldLabeledInsideLabelAwayTop: unit(10 / 12, em);
-
-@fieldLabeledInsideLabelAwayMarginTop: 0em;
-@fieldLabeledInsideLabelAwayMarginRight: 0em;
-@fieldLabeledInsideLabelAwayMarginBottom: 0em;
-@fieldLabeledInsideLabelAwayMarginLeft: 1em;
-@fieldLabeledInsideLabelAwayMargin:
-    @fieldLabeledInsideLabelAwayMarginTop
-    @fieldLabeledInsideLabelAwayMarginRight
-    @fieldLabeledInsideLabelAwayMarginBottom
-    @fieldLabeledInsideLabelAwayMarginLeft;
+@fieldLabeledInsideLabelAwayTransform: scale(unit(@fieldLabeledInsideLabelAwayFontSize / @defaultInputFontSize)) translateY(-@inputLineHeight);
+@fieldLabeledInsideLabelAwayTransformOrigin: left bottom;
 
 @fieldLabeledInsideLabelTransitionProperty: @defaultTransitionProperty;
 @fieldLabeledInsideLabelTransitionDuration: @defaultTransitionDuration;
@@ -104,15 +94,6 @@
     @fieldLargeLabeledInsideLabelMarginLeft;
 
 @fieldLargeLabeledInsideLabelAwayFontSize: 0.875em;
-@fieldLargeLabeledInsideLabelAwayLineHeight: unit(20 / 14, em);
-@fieldLargeLabeledInsideLabelAwayTop: unit(9 / 14, em);
-
-@fieldLargeLabeledInsideLabelAwayMarginTop: 0px;
-@fieldLargeLabeledInsideLabelAwayMarginRight: 0px;
-@fieldLargeLabeledInsideLabelAwayMarginBottom: 0px;
-@fieldLargeLabeledInsideLabelAwayMarginLeft: unit(16 / 14, em);
-@fieldLargeLabeledInsideLabelAwayMargin:
-    @fieldLargeLabeledInsideLabelAwayMarginTop
-    @fieldLargeLabeledInsideLabelAwayMarginRight
-    @fieldLargeLabeledInsideLabelAwayMarginBottom
-    @fieldLargeLabeledInsideLabelAwayMarginLeft;
+@fieldLargeLabeledInsideLabelAwayTransform:
+    scale(unit(@fieldLargeLabeledInsideLabelAwayFontSize / @fieldLargeLabelFontSize))
+    translateY(-@inputLargeLineHeight);
