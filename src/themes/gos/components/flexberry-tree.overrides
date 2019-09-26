@@ -1,6 +1,6 @@
 // Main
 .flexberry-treenode-header.title:hover {
-    background: @pageBackground;
+    background: @treeHeaderColor;
 }
 
 .ui.accordion:not(.styled) .title ~ .content:not(.ui), 
@@ -26,6 +26,6 @@
 
 .ui.accordion .title .dropdown.icon, 
 .ui.accordion .accordion .title .dropdown.icon{
-    color: @lightGrayishBlue;
+    color: @treeIconColor;
 }
  

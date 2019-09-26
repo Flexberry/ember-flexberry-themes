@@ -1,0 +1,3 @@
+// Primary
+@treeIconColor: @darkGrayishBlue;
+@treeHeaderColor: @pageBackground;
