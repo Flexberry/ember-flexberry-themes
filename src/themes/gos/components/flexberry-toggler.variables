@@ -1,6 +1,4 @@
 // Primary
 
-@togglerPrimaryBackground: @primaryColor;
-@primaryBackgroundImage: @primaryColor;
-@primaryTextColor: @primaryColor;
-@titleColor: @primaryColor;
+@accordionTitleColor: @secondaryColor;
+@accordionBackgroundColor: @white;

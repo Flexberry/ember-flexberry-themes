@@ -1,11 +1,11 @@
 //Primary
 
 .ui.fluid.accordion {
-    background-color: @white;
+    background-color: @accordionBackgroundColor;
 }
 
 .ui.accordion .title:not(.ui) {
-    color: @secondaryColor;
+    color: @accordionTitleColor;
 }
 
 .ui.accordion .title .dropdown.icon:before,
