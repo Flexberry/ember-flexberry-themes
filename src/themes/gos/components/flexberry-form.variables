@@ -3,12 +3,10 @@
 --------------------*/
 
 @inputFontSize: 0.875em;
-@inputBackground: @inputBackgroundColor;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
 @inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
 
 @inputFocusBackground: @white;
-@inputFocusBorderColor: @mayaBlue;
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;

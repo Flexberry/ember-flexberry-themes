@@ -137,8 +137,8 @@
         Page
 --------------------*/
 
-@pageBackground      : #f4f7fb;
-@textColor           : #3B4256;
+@pageBackground      : @aliceBlue;
+@textColor           : @blueZodiak;
 
 
 /*---------------------
@@ -156,8 +156,6 @@
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
 
-@defaultFocusBorderColor: @mayaBlue;
-
 
 /*-------------------
         Input
@@ -168,7 +166,7 @@
 @inputBorderRadius: @defaultBorderRadius;
 
 @inputBorderColor: @aliceBlue;
-@inputBackgroundColor: @aliceBlue;
+@inputBackground: @aliceBlue;
 
 @inputPaddingTop: 0.625em;
 @inputPaddingRight: 0.75em;
@@ -206,3 +204,33 @@
 
 @defaultBoxShadow: none;
 @defaultToggleOnBorder: none;
+
+
+/*------------------------
+        COLOR SCHEME
+-------------------------*/
+// main
+@primaryColor          : @cobaltBlue;
+@accentColor           : @mayaBlue;
+@secondaryColor        : @lightGrayishBlue;
+
+// Sidebar
+@sidebarBackgroundColor: @textColor;
+
+// Page
+@pageBackground        : @aliceBlue;
+@textColor             : @blueZodiak;
+
+// Input
+@inputBorderColor      : @aliceBlue;
+@inputBackground       : @aliceBlue;
+
+@inputFocusBackground   : @white;
+@focusedFormBorderColor : @accentColor;
+
+// Buttons
+
+/*------------------------
+        PGMU
+-------------------------*/
+@primaryColor           : #E14059;

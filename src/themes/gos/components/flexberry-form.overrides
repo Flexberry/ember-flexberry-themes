@@ -1,0 +1,4 @@
+.ui.form.flexberry-vertical-form {
+  background: #fff;
+  padding: 1em;
+}
