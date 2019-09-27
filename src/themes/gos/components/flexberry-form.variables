@@ -18,12 +18,9 @@
 @editBackground: #fff;
 @flexEditFormPadding: 0 2em;
 
-
 // Buttons
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @blueZodiak;
-@editAcceptButtonsBorder: @defaultBorderWidth @defaultBorderStyle @green; 
-@editCancelButtonsBorder: @defaultBorderWidth @defaultBorderStyle @cinnabar;
 //Icons
 @iconFontFamily: guideline-icons;
 @saveIcon: "\f0c7";
