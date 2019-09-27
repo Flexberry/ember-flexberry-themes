@@ -12,7 +12,7 @@
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
-@labelFontSize: @defaultInputLabelFontSize;
+@labelFontSize: 0.875em;
 
 // General
 @editBackground: #fff;
