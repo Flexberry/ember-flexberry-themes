@@ -1,7 +1,6 @@
 /*-------------------
         Input
 --------------------*/
-
 @inputFontSize: 0.875em;
 @inputBackground: @inputBackgroundColor;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
@@ -13,3 +12,22 @@
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: 0.875em;
+
+// General
+@editBackground: #fff;
+@flexEditFormPadding: 0 2em;
+
+
+// Buttons
+@buttonFontWeight: @defaultMediumFontWeight;
+@editButtonsColor: @blueZodiak;
+@editAcceptButtonsBorder: @defaultBorderWidth @defaultBorderStyle @green; 
+@editCancelButtonsBorder: @defaultBorderWidth @defaultBorderStyle @cinnabar;
+//Icons
+@iconFontFamily: guideline-icons;
+@saveIcon: "\f0c7";
+@successIcon: "\e92d";
+@deleteIcon: "\e911";
+@errorIcon: "\e915";
+@iconPadding: 10px;
+@iconFontSize: 16px;

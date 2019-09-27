@@ -1,0 +1,86 @@
+// Main
+.ui.form.flexberry-vertical-form {
+    background: @editBackground;
+    padding: @flexEditFormPadding;
+}
+
+.flexberry-content.ui.attached.segment {
+    padding-top: 1.5rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+// Header
+.ui.header {
+    padding-left: 1.5em;
+    font-weight: 400;
+}
+
+// Buttons
+.flexberry-edit-panel {
+    padding-top: 1em;
+}
+
+.flexberry-edit-panel
+.ui.button.save-button,
+.flexberry-edit-panel
+.ui.button.save-close-button,
+.flexberry-edit-panel
+.ui.button.save-del-button,
+.flexberry-edit-panel
+.ui.button.close-button {
+    background: @editBackground;
+    font-weight: @buttonFontWeight; 
+    color: @editButtonsColor;
+}
+
+// .flexberry-edit-panel
+// .ui.button.save-button:hover,
+// .flexberry-edit-panel
+// .ui.button.save-close-button:hover {
+//     border: @editAcceptButtonsBorder;
+// }
+
+// .flexberry-edit-panel
+// .ui.button.save-del-button:hover {
+//     border: @editCancelButtonsBorder;
+// }
+
+
+
+// Icons
+
+.ui.button.save-button::before {
+    content: @saveIcon;
+    font-family: Icons;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.save-close-button::before {
+    content: "\f0c7";
+    font-family: outline-icons;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.save-del-button::before {
+    content: @deleteIcon;
+    font-family: @iconFontFamily;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.close-button {
+    font-size: 0;
+    float: right;
+}
+
+.ui.button.close-button::before {
+    content: @errorIcon;
+    font-family: @iconFontFamily;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
