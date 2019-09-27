@@ -1,6 +1,7 @@
 /*-------------------
         Input
 --------------------*/
+
 @inputFontSize: 0.875em;
 @inputBackground: @inputBackgroundColor;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
