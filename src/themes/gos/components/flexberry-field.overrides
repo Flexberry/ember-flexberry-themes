@@ -41,6 +41,7 @@
 .ui.labeled-inside.field > label {
     height: 0px;
     width: 0px;
+    white-space: nowrap;
     position: relative;
     z-index: 3;
     pointer-events: none;
