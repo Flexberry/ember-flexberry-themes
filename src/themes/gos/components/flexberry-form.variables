@@ -12,6 +12,7 @@
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
+
 @labelFontSize: 0.875em;
 
 // General
