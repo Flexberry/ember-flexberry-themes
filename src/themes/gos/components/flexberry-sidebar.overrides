@@ -76,8 +76,13 @@
 }
 
 
-.full.height{
-  width: calc(~'100% - @{width}');
+.full.height {
+  // transition: margin-left 0.45s ease;
+  margin-left: @width;
+
+  &.content-opened {
+    margin-left: @width-s;
+  }
 }
 
 .ui.sidebar.main.menu {
@@ -117,14 +122,14 @@
 
 // Костыль для семантика
 .ui.visible.left.sidebar ~ .pusher {
-  .transform(translate3d(@width, 0, 0)) !important;
+  .transform(translate3d(0, 0, 0)) !important;
 }
 
 // Little sidebar in 56px
-.ui.left.sidebar ~ .fixed,
-.ui.left.sidebar ~ .pusher {
-  .transform(translate3d(@width-s, 0, 0));
-}
+// .ui.left.sidebar ~ .fixed,
+// .ui.left.sidebar ~ .pusher {
+//   .transform(translate3d(0, 0, 0));
+// }
 
 .ui.uncover.sidebar {
   z-index: 10;
