@@ -1,30 +1,29 @@
 /* Checkbox */
 @checkboxSize: @defaultCheckboxSize;
 @checkboxCheckFontSize: @defaultSmallFontSize;
-@checkboxBackgroundColor: @aliceBlue;
-@checkboxBackground: @checkboxBackgroundColor;
+@checkboxBackground: @inputBackground;
 @checkboxBorderWidth: @defaultBorderWidth;
 @checkboxBorderStyle: @defaultBorderStyle;
 @checkboxBorderColor: @chambray;
 @checkboxBorder: @checkboxBorderWidth @checkboxBorderStyle @checkboxBorderColor;
 @checkboxBorderRadius: @defaultBorderRadius;
-@labelColor: @blueZodiak;
+@labelColor: @textColor;
 @labelDistance: @checkboxSize + @distanceS * @remSize;
 @labelFontWeight: @defaultMediumFontWeight;
 
-@checkboxHoverBackground: @aliceBlue;
+@checkboxHoverBackground: @inputBackground;
 @checkboxHoverBorderColor: @primaryColor;
 @labelHoverColor: @primaryColor;
 
-@checkboxFocusBackground: @aliceBlue;
-@checkboxFocusBorderColor: @mayaBlue;
-@labelFocusColor: @blueZodiak;
+@checkboxFocusBackground: @inputBackground;
+@checkboxFocusBorderColor: @focusedFormBorderColor;
+@labelFocusColor: @textColor;
 
 @checkboxActiveBackground: @primaryColor;
 @checkboxActiveCheckColor: @white;
 
 @checkboxActiveFocusBackground: @primaryColor;
-@checkboxActiveFocusBorderColor: @mayaBlue;
+@checkboxActiveFocusBorderColor: @focusedFormBorderColor;
 @checkboxActiveFocusCheckColor: @white;
 
 @checkboxReadonlyBackgroundColor: @linkWater;
@@ -41,7 +40,7 @@
 @bulletScale: @defaultBulletScale;
 @radioLabelDistance: @radioSize + @distanceS * @remSize;
 
-@radioFocusBackground: @aliceBlue;
+@radioFocusBackground: @inputBackground;
 @radioFocusBulletColor: @white;
 
 @radioActiveBackground: @primaryColor;
@@ -80,10 +79,10 @@
 @toggleLabelDistance: @toggleLaneWidth + @distanceS * @remSize;
 @toggleLabelOffset: @defaultVerticalOffset;
 
-@toggleOffLabelColor: @blueZodiak;
+@toggleOffLabelColor: @textColor;
 @toggleOffHandleBoxShadow: @defaultBoxShadow;
 
-@toggleOnLabelColor: @blueZodiak;
+@toggleOnLabelColor: @textColor;
 @toggleOnLaneColor: @primaryColor;
 @toggleOnLaneBorder: @defaultToggleOnBorder;
 @toggleOnHandleBoxShadow: @defaultBoxShadow;
@@ -94,11 +93,11 @@
 @toggleFocusColor: @white;
 @toggleFocusLaneBorderWidth: @defaultBorderWidth;
 @toggleFocusLaneBorderStyle: @defaultBorderStyle;
-@toggleFocusLaneBorderColor: @mayaBlue;
+@toggleFocusLaneBorderColor: @focusedFormBorderColor;
 @toggleFocusLaneBorder: @toggleFocusLaneBorderWidth @toggleFocusLaneBorderStyle @toggleFocusLaneBorderColor;
 
 @toggleOnFocusLaneColor: @primaryColor;
-@toggleOnFocusLabelColor: @blueZodiak;
+@toggleOnFocusLabelColor: @textColor;
 
 @toggleHoverColor: @white;
 @toggleHoverLaneBorderWidth: @defaultBorderWidth;

@@ -3,12 +3,10 @@
 --------------------*/
 
 @inputFontSize: @defaultInputFontSize;
-@inputBackground: @inputBackgroundColor;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
 @inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
 
 @inputFocusBackground: @white;
-@inputFocusBorderColor: @mayaBlue;
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
@@ -17,11 +15,14 @@
 // General
 @editBackground: #fff;
 @flexEditFormPadding: 0 @distanceL;
+@flexberryContentPadding: @distanceM 0 0 0;
+@headerFontWeight: 400;
 
-// Buttons
+// Toolbar buttons
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @textColor;
-@closeButtonPadding: 0.64285714rem 0.78571429rem;
+@closeButtonPaddingTop: unit(9 / 14, em);
+@toolbarButtonFocusBorder: none;
 
 //Icons
 @iconFontFamily: guideline-icons;
@@ -31,4 +32,5 @@
 @errorIcon: "\e915";
 @iconPadding: 10px;
 @iconFontSize: 16px;
+@closeButtonFontSize: 40px;
 
