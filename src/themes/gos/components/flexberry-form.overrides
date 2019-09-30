@@ -8,8 +8,14 @@
     padding: @distanceM 0 0 0;
 }
 
-// Header
+// Headers
 .ui.header {
+    padding-left: @distanceM;
+    font-weight: 400;
+}
+
+.stackable.grid.container h3{
+    margin-top: 0;
     padding-left: @distanceM;
     font-weight: 400;
 }

@@ -24,3 +24,8 @@
 
 /* Selectable */
 @selectableBackground: #f5f8ff;
+
+/* Buttons */
+@createButtonColor: #E14059;
+@filterButtonBorderStyle: @defaultBorderWidth @defaultBorderStyle transparent;
+@buttonFontWeight: @defaultMediumFontWeight;

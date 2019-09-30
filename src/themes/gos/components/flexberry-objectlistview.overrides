@@ -1,0 +1,26 @@
+// Buttons
+.ui.refresh-button.button,
+.ui.delete-button.button,
+.ui.icon.button.config-button.settings-enabled,
+.flexberry-menu.ui.icon.dropdown.button,
+.ui.button,
+.ui.button.icon.export-button {
+    background: @white;
+}
+
+.ui.create-button.button {
+    background: @createButtonColor;
+    color: @white;
+    margin-left: @distanceS;
+    font-weight: @buttonFontWeight;
+}
+
+.ui.buttons.filter-active{
+    border: @filterButtonBorderStyle;
+}
+
+// Menu 
+.ui.secondary.menu.no-margin {
+    padding-top: @distanceS;
+    margin-bottom: 0;
+}
