@@ -1,4 +1,65 @@
+// Main
 .ui.form.flexberry-vertical-form {
-  background: #fff;
-  padding: 1em;
+    background: @editBackground;
+    padding: @flexEditFormPadding;
+}
+
+.flexberry-content.ui.attached.segment {
+    padding: @distanceM 0 0 0;
+}
+
+// Header
+.ui.header {
+    padding-left: @distanceM;
+    font-weight: 400;
+}
+
+// Buttons
+.flexberry-edit-panel {
+    padding-top: @distanceS;
+}
+
+.flexberry-edit-panel .ui.button.save-button,
+.flexberry-edit-panel .ui.button.save-close-button,
+.flexberry-edit-panel .ui.button.save-del-button,
+.flexberry-edit-panel .ui.button.close-button {
+    background: @editBackground;
+    font-weight: @buttonFontWeight; 
+    color: @editButtonsColor;
+}
+
+// Icons
+
+.ui.button.save-button::before {
+    content: @saveIcon;
+    font-family: Icons;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.save-close-button::before {
+    content: "\f0c7";
+    font-family: outline-icons;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.save-del-button::before {
+    content: @deleteIcon;
+    font-family: @iconFontFamily;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.close-button {
+    font-size: 0;
+    float: right;
+    line-height: @distanceM;
+    padding: @closeButtonPadding;
+}
+
+.ui.button.close-button::before {
+    content: @errorIcon;
+    font-family: @iconFontFamily;
+    font-size: 40px;
 }
