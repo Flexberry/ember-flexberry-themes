@@ -36,6 +36,28 @@
   margin: 0 @distanceL 0 auto;
 }
 
+.flexberry-container {
+  padding: @flexberryContainerPadding;
+}
+// TODO: Узнать, как должно быть норм и настроить нормально.
+.loading-message {
+  color: #aaa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  text-align: center;
+  transform: translateX(-50%) translateY(-250%);
+}
+
+.ui.inverted.dimmer.loading-pane {
+  .ui.loader {
+    color: #aaa;
+    display: flex;
+    transform: translateX(-50%) translateY(-30%);
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .ui.main.container {
     width: 100% !important;

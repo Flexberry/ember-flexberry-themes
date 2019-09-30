@@ -1,11 +1,16 @@
-@type    : 'pages';
+@type    : 'page';
 @element : 'login-form';
 
 @import (multiple) '../../theme.config';
 
 .login-form-inner {
-  background: #fff;
-  padding: 1rem;
+  background: @loginFormInnerBackground;
+  box-shadow: @loginFormInnerBoxShadow;
+  border-radius: @loginFormInnerBorderRadius;
+  height: @loginFormInnerHeight;
+  margin: auto;
+  padding: @distanceL;
+  width: @loginFormInnerWidth;
 }
 
 .loadUIOverrides();
