@@ -16,11 +16,13 @@
 
 // General
 @editBackground: #fff;
-@flexEditFormPadding: 0 2em;
+@flexEditFormPadding: 0 @distanceL;
 
 // Buttons
 @buttonFontWeight: @defaultMediumFontWeight;
-@editButtonsColor: @blueZodiak;
+@editButtonsColor: @textColor;
+@closeButtonPadding: 0.64285714rem 0.78571429rem;
+
 //Icons
 @iconFontFamily: guideline-icons;
 @saveIcon: "\f0c7";

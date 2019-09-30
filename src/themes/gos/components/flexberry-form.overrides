@@ -5,49 +5,28 @@
 }
 
 .flexberry-content.ui.attached.segment {
-    padding-top: 1.5rem;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    padding: @distanceM 0 0 0;
 }
 
 // Header
 .ui.header {
-    padding-left: 1.5em;
+    padding-left: @distanceM;
     font-weight: 400;
 }
 
 // Buttons
 .flexberry-edit-panel {
-    padding-top: 1em;
+    padding-top: @distanceS;
 }
 
-.flexberry-edit-panel
-.ui.button.save-button,
-.flexberry-edit-panel
-.ui.button.save-close-button,
-.flexberry-edit-panel
-.ui.button.save-del-button,
-.flexberry-edit-panel
-.ui.button.close-button {
+.flexberry-edit-panel .ui.button.save-button,
+.flexberry-edit-panel .ui.button.save-close-button,
+.flexberry-edit-panel .ui.button.save-del-button,
+.flexberry-edit-panel .ui.button.close-button {
     background: @editBackground;
     font-weight: @buttonFontWeight; 
     color: @editButtonsColor;
 }
-
-// .flexberry-edit-panel
-// .ui.button.save-button:hover,
-// .flexberry-edit-panel
-// .ui.button.save-close-button:hover {
-//     border: @editAcceptButtonsBorder;
-// }
-
-// .flexberry-edit-panel
-// .ui.button.save-del-button:hover {
-//     border: @editCancelButtonsBorder;
-// }
-
-
 
 // Icons
 
@@ -75,12 +54,12 @@
 .ui.button.close-button {
     font-size: 0;
     float: right;
+    line-height: @distanceM;
+    padding: @closeButtonPadding;
 }
 
 .ui.button.close-button::before {
     content: @errorIcon;
     font-family: @iconFontFamily;
     font-size: 40px;
-    position: relative;
-    top: 20px;
 }
