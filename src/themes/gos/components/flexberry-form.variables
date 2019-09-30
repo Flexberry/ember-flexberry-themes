@@ -13,3 +13,22 @@
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
+
+// General
+@editBackground: #fff;
+@flexEditFormPadding: 0 @distanceL;
+
+// Buttons
+@buttonFontWeight: @defaultMediumFontWeight;
+@editButtonsColor: @textColor;
+@closeButtonPadding: 0.64285714rem 0.78571429rem;
+
+//Icons
+@iconFontFamily: guideline-icons;
+@saveIcon: "\f0c7";
+@successIcon: "\e92d";
+@deleteIcon: "\e911";
+@errorIcon: "\e915";
+@iconPadding: 10px;
+@iconFontSize: 16px;
+
