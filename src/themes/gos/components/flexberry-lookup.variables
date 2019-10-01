@@ -1,2 +1,65 @@
-@inputBorderColor: @paleBlue;
-@uiHoveredNegitveTextColor: @red;
+@lookupFieldBorderRadius: @defaultBorderRadius;
+@lookupFieldBackground: @inputBackground;
+@lookupFieldBorderWidth: @defaultBorderWidth;
+@lookupFieldBorderStyle: @defaultBorderStyle;
+@lookupFieldBorderColor: @inputBorderColor;
+@lookupFieldBorder: @lookupFieldBorderWidth @lookupFieldBorderStyle @lookupFieldBorderColor;
+@lookupFieldRightPadding: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin * 2 + @lookupHorizontalPadding;
+
+@lookupFieldHoverBorderWidth: @defaultBorderWidth;
+@lookupFieldHoverBorderStyle: @defaultBorderStyle;
+@lookupFieldHoverBorderColor: @chambray;
+@lookupFieldHoverBorder: @lookupFieldHoverBorderWidth @lookupFieldHoverBorderStyle @lookupFieldHoverBorderColor;
+
+@lookupFieldFocusBorderWidth: @defaultBorderWidth;
+@lookupFieldFocusBorderStyle: @defaultBorderStyle;
+@lookupFieldFocusBorderColor: @focusedFormBorderColor;
+@lookupFieldFocusBorder: @lookupFieldFocusBorderWidth @lookupFieldFocusBorderStyle @lookupFieldFocusBorderColor;
+
+@lookupFieldDisabledBackground: @hawkesBlue;
+@lookupFieldDisabledBorderWidth: @defaultBorderWidth;
+@lookupFieldDisabledBorderStyle: @defaultBorderStyle;
+@lookupFieldDisabledBorderColor: @hawkesBlue;
+@lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
+
+@lookupButtonPadding: 0em;
+@lookupButtonBackground: transparent;
+@lookupButtonVerticalMargin: unit(9 / 14, em);
+@lookupButtonWidth: unit(20 / 14, em);
+@lookupButtonHeight: unit(20 / 14, em);
+
+@lookupButtonHorizontalMargin: unit(11 / 14, em);
+@lookupHorizontalPadding: unit(11 / 14, em);
+@lookupClearButtonRight:  @lookupButtonWidth * 3 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
+@lookupChangeButtonRight:  @lookupButtonWidth + @lookupHorizontalPadding;
+
+@lookupIconWidth: unit(20 / 14, em);
+@lookupIconHeight: unit(20 / 14, em);
+@lookupIconMargin: 0em;
+
+@lookupBeforeIconTop: 0em;
+@lookupBeforeIconFontSize: 1em;
+
+
+// Autocomplete
+
+@autocompleteResultsMargin: 0em;
+@autocompleteResultsTopPadding: @inputVerticalPadding * 2 + @inputLineHeight;
+@autocompleteResultsTop: 0em;
+@autocompleteResultsWidth: 100%;
+@autocompleteResultsBackground: @white;
+@autocompleteResultsBorder: none;
+
+@autocompleteResultBottomPadding: 0em;
+@autocompleteResultBackground: @white;
+@autocompleteResultBorderRadius: @defaultBorderRadius;
+@autocompleteResultBorder: none;
+
+@autocompleteResultHoverBackground: @inputBackground;
+
+@autocompleteResultContentBottomPadding: unit(10 / 14, em);
+@autocompleteResultContentBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+
+@autocompleteResultTitleFont: @fontName;
+@autocompleteResultTitleFontSize: 0.875em;
+@autocompleteResultTitleFontWeight: @defaultMediumFontWeight;

@@ -2,8 +2,8 @@
 
 @buttonPrimaryBackground: @primaryColor;
 @primaryBackgroundImage: none;
-@primaryTextColor: @aliceBlue;
-@lightPrimaryTextColor: @aliceBlue;
+@primaryTextColor: @pageBackground;
+@lightPrimaryTextColor: @pageBackground;
 @primaryTextShadow: none;
 @primaryBoxShadow: none;
 @buttonPrimaryBorder: @defaultBorderWidth @defaultBorderStyle transparent;
@@ -20,9 +20,9 @@
 // Secondary
 
 @secondaryBackgroundImage: none;
-@secondaryTextColor: @blueZodiak;
+@secondaryTextColor: @textColor;
 @secondaryTextShadow: none;
-@lightSecondaryTextColor: @blueZodiak;
+@lightSecondaryTextColor: @textColor;
 @secondaryBoxShadow: none;
 @buttonSecondaryBackground: @aliceBlue;
 @buttonSecondaryBorder: @defaultBorderWidth @defaultBorderStyle transparent;
@@ -34,7 +34,7 @@
 @buttonSecondaryActiveBackground: @aliceBlue;
 
 @buttonSecondaryFocusBackground: @aliceBlue;
-@buttonSecondaryFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+@buttonSecondaryFocusBorder: @defaultBorderWidth @defaultBorderStyle @focusedFormBorderColor;
 
 @buttonSecondaryDisabledBackground: @gray;
 @buttonSecondaryDisabledBorder: none;
@@ -45,7 +45,7 @@
 
 @basicBorderRadius: @defaultBorderRadius;
 @basicBorderSize: @defaultBorderWidth;
-@basicTextColor: @blueZodiak;
+@basicTextColor: @textColor;
 @basicFontWeight: @defaultNormalFontWeight;
 @basicColoredBorderSize: @defaultBorderWidth;
 
@@ -56,22 +56,22 @@
 @basicTextTransform: none;
 
 @basicHoverBackground: @aliceBlue;
-@basicHoverTextColor: @blueZodiak;
+@basicHoverTextColor: @textColor;
 @basicHoverBoxShadow: none;
 @buttonBasicHoverBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
 
 @basicFocusBackground: @aliceBlue;
-@basicFocusTextColor: @blueZodiak;
+@basicFocusTextColor: @textColor;
 @basicFocusBoxShadow: none;
-@buttonBasicFocusBorder: @defaultBorderWidth @defaultBorderStyle @mayaBlue;
+@buttonBasicFocusBorder: @defaultBorderWidth @defaultBorderStyle @focusedFormBorderColor;
 
 @basicDownBackground: @aliceBlue;
-@basicDownTextColor: @blueZodiak;
+@basicDownTextColor: @textColor;
 @basicDownBoxShadow: none;
 
 @basicActiveBackground: @aliceBlue;
 @basicActiveBoxShadow: none;
-@basicActiveTextColor: @blueZodiak;
+@basicActiveTextColor: @textColor;
 @buttonBasicActiveBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
 
 @buttonBasicDisabledBackground: @gray;
@@ -119,7 +119,7 @@
 
 @buttonFocusBorderWidth: @defaultBorderWidth;
 @buttonFocusBorderStyle: @defaultBorderStyle;
-@buttonFocusBorderColor: @defaultFocusBorderColor;
+@buttonFocusBorderColor: @focusedFormBorderColor;
 @buttonFocusBorder: @buttonFocusBorderWidth @buttonFocusBorderStyle @buttonFocusBorderColor;
 
 @buttonDisabledBackground: @gray;
