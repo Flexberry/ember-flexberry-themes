@@ -1,8 +1,8 @@
 @lookupFieldBorderRadius: @defaultBorderRadius;
-@lookupFieldBackground: @aliceBlue;
+@lookupFieldBackground: @inputBackground;
 @lookupFieldBorderWidth: @defaultBorderWidth;
 @lookupFieldBorderStyle: @defaultBorderStyle;
-@lookupFieldBorderColor: @aliceBlue;
+@lookupFieldBorderColor: @inputBorderColor;
 @lookupFieldBorder: @lookupFieldBorderWidth @lookupFieldBorderStyle @lookupFieldBorderColor;
 @lookupFieldRightPadding: @lookupButtonWidth * 2 + @lookupButtonHorizontalMargin * 2 + @lookupHorizontalPadding;
 
@@ -13,7 +13,7 @@
 
 @lookupFieldFocusBorderWidth: @defaultBorderWidth;
 @lookupFieldFocusBorderStyle: @defaultBorderStyle;
-@lookupFieldFocusBorderColor: @mayaBlue;
+@lookupFieldFocusBorderColor: @focusedFormBorderColor;
 @lookupFieldFocusBorder: @lookupFieldFocusBorderWidth @lookupFieldFocusBorderStyle @lookupFieldFocusBorderColor;
 
 @lookupFieldDisabledBackground: @hawkesBlue;
@@ -55,7 +55,7 @@
 @autocompleteResultBorderRadius: @defaultBorderRadius;
 @autocompleteResultBorder: none;
 
-@autocompleteResultHoverBackground: @aliceBlue;
+@autocompleteResultHoverBackground: @inputBackground;
 
 @autocompleteResultContentBottomPadding: unit(10 / 14, em);
 @autocompleteResultContentBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
