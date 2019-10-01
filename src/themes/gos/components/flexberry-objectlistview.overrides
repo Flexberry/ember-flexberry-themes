@@ -19,6 +19,35 @@
     border: @filterButtonBorderStyle;
 }
 
+.ui.icon.buttons.filter-active button{
+    padding: 0 0.5em;
+}
+
+i.icon.filter:before {
+    font-family: @iconFontFamily;
+    content: @editFilterIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.file.excel.outline:before {
+    font-family: @iconFontFamily;
+    content: @editExcelIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.table::before {
+    font-family: @iconFontFamily;
+    content: @editColumnsIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.flask::before {
+    color: @editIconColor;
+}
+
 // Menu 
 .ui.secondary.menu.no-margin {
     padding-top: @distanceS;
