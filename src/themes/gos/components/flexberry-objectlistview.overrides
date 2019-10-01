@@ -9,7 +9,7 @@
 }
 
 .ui.create-button.button {
-    background: @primaryColor;
+    background: @createButtonColor;
     color: @white;
     margin-left: @distanceS;
     font-weight: @buttonFontWeight;

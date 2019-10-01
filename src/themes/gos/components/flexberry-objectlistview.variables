@@ -27,6 +27,6 @@
 
 /* Buttons */
 @defaultEditButtonColor: transparent;
-@createButtonColor: #E14059;
+@createButtonColor: @primaryColor;
 @filterButtonBorderStyle: @defaultBorderWidth @defaultBorderStyle transparent;
 @buttonFontWeight: @defaultMediumFontWeight;

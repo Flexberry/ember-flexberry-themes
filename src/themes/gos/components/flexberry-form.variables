@@ -17,9 +17,6 @@
 @flexEditFormPadding: 0 @distanceL;
 
 // Buttons
-@buttonFontWeight: @defaultMediumFontWeight;
-@editButtonsColor: @textColor;
-@closeButtonPadding: 0.64285714rem 0.78571429rem;
 @flexberryContentPadding: @distanceM 0 0 0;
 @headerFontWeight: 400;
 
@@ -35,6 +32,7 @@
 @successIcon: "\e92d";
 @deleteIcon: "\e911";
 @errorIcon: "\e915";
+@closeIcon: "\e806";
 @iconPadding: 10px;
 @iconFontSize: 16px;
 @closeButtonFontSize: 40px;

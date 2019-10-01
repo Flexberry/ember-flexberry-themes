@@ -5,29 +5,15 @@
 }
 
 .flexberry-content.ui.attached.segment {
-    padding: @distanceM 0 0 0;
-}
-
-// Headers
-.ui.header {
-    padding-left: @distanceM;
-    font-weight: 400;
-}
-
-.stackable.grid.container h3{
-    margin-top: 0;
-    padding-left: @distanceM;
-    font-weight: 400;
-
     padding: @flexberryContentPadding;
 }
 
-// TODO: вот это нужно добавлять только к заголовку на форме редактирвоания, 
-// убрать, после того, как можно будет однозначно определить форму.
-// Header
-.ui.header {
-    padding-left: @distanceL;
+// Headers
+.ui.main.container > .stackable.grid.container h3{
+    margin-top: 0;
     font-weight: @headerFontWeight;
+    padding: @flexberryContentPadding;
+    padding-left: @distanceM;
 }
 
 // Buttons
@@ -61,17 +47,11 @@
     font-size: @iconFontSize;
     padding-right: @iconPadding;
 }
-
-.ui.button.save-close-button::before {
-    content: "\f0c7";
-    font-family: outline-icons;
-    font-size: @iconFontSize;
-    padding-right: @iconPadding;
     
 .ui.button.save-close-button {
     position: relative;
     &::before {
-        content: "\f0c7";
+        content: @saveIcon;
         font-family: outline-icons;
         font-size: @iconFontSize;
         padding-right: @iconPadding;
@@ -79,7 +59,7 @@
 
     // Убрать, когда появится иконка Сохранить и закрыть
     &::after {
-        content: "\e915";
+        content: @successIcon;
         font-family: @iconFontFamily;
         font-size: @iconFontSize;
         position: absolute;
@@ -99,20 +79,14 @@
     font-size: 0;
     float: right;
     line-height: @distanceM;
-    padding: @closeButtonPadding;
 }
 
 .ui.button.close-button::before {
-    content: @errorIcon;
-    font-family: @iconFontFamily;
-    font-size: 40px;
     padding-top: @closeButtonPaddingTop;
 
-    &::before {
-        // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
-        content: "\e806";
-        font-family: 'Crimean';
-        font-size: 12px;
-        font-weight: 700;
-    }
+    // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
+    content: @closeIcon;
+    font-family: 'Crimean';
+    font-size: 12px;
+    font-weight: 700;
 }
