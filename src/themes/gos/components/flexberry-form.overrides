@@ -1,0 +1,91 @@
+// Main
+.ui.form.flexberry-vertical-form {
+    background: @editBackground;
+    padding: @flexEditFormPadding;
+}
+
+.flexberry-content.ui.attached.segment {
+    padding: @flexberryContentPadding;
+}
+
+// TODO: вот это нужно добавлять только к заголовку на форме редактирвоания, 
+// убрать, после того, как можно будет однозначно определить форму.
+// Header
+.ui.header {
+    padding-left: @distanceL;
+    font-weight: @headerFontWeight;
+}
+
+// Buttons
+.flexberry-edit-panel {
+    padding-top: @distanceS;
+    .ui.button:first-child {
+        padding-left: 0;
+    }
+}
+
+.flexberry-edit-panel .ui.button.save-button,
+.flexberry-edit-panel .ui.button.save-close-button,
+.flexberry-edit-panel .ui.button.save-del-button,
+.flexberry-edit-panel .ui.button.close-button {
+    background: @editBackground;
+    font-weight: @buttonFontWeight; 
+    color: @editButtonsColor;
+
+    &:focus {
+        border: @toolbarButtonFocusBorder;
+    }
+}
+
+// Icons
+
+.ui.button.save-button::before {
+    // TODO: Добавить иконку дискеты с макета
+    content: @saveIcon;
+    font-family: outline-icons;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.save-close-button {
+    position: relative;
+
+    &::before {
+        content: "\f0c7";
+        font-family: outline-icons;
+        font-size: @iconFontSize;
+        padding-right: @iconPadding;
+    }
+
+    // Убрать, когда появится иконка Сохранить и закрыть
+    &::after {
+        content: "\e915";
+        font-family: @iconFontFamily;
+        font-size: @iconFontSize;
+        position: absolute;
+        left: 1.2em;
+        top: 0.2em;
+    }
+}
+
+.ui.button.save-del-button::before {
+    content: @deleteIcon;
+    font-family: @iconFontFamily;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+}
+
+.ui.button.close-button {
+    font-size: 0;
+    float: right;
+    line-height: @distanceM;
+    padding-top: @closeButtonPaddingTop;
+
+    &::before {
+        // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
+        content: "\e806";
+        font-family: 'Crimean';
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
