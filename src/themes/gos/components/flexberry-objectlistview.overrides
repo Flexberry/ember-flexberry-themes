@@ -5,11 +5,11 @@
 .flexberry-menu.ui.icon.dropdown.button,
 .ui.button,
 .ui.button.icon.export-button {
-    background: @white;
+    background: @defaultEditButtonColor;
 }
 
 .ui.create-button.button {
-    background: @createButtonColor;
+    background: @primaryColor;
     color: @white;
     margin-left: @distanceS;
     font-weight: @buttonFontWeight;
