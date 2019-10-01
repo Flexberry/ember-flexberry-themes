@@ -35,7 +35,7 @@
 }
 
 .object-list-view-container.groupedit-container {
-overflow: visible;
+  overflow: auto;
 }
 
 table.object-list-view.selectable tbody,
@@ -201,19 +201,6 @@ div.ui.secondary.menu.no-margin {
   background: @white;
 }
 
-.ui.ui-delete.button {
-  padding: 0px;
-  height: 30px;
-  width: 30px;
-  border: 1px solid @uiBorderColor;
-  &:hover {
-      border: 1px solid @uiHoveredNegitveBorderColor;
-      background: @white;
-      & i.icon.minus:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
 
 .ui.check-all-at-page-button.button {
   padding: 0px;
@@ -342,31 +329,6 @@ div.ui.secondary.menu.no-margin {
       & i.icon.edit:before {
           color: @uiHoveredNegitveTextColor;
       }
-  }
-}
-
-.ui.ui-add.button {
-  padding: 0px;
-  height: 30px;
-  width: 30px;
-  border: 1px solid @uiBorderColor;
-  &:hover {
-      border: 1px solid @uiHoveredPositiveBorderColor;
-      background: @white;
-      & i.icon.plus:before {
-          color: @uiHoveredPositiveTextColor;
-      }
-  }
-}
-
-.ui.ui-clear-settings.button {
-  padding: 0px;
-  height: 30px;
-  width: 30px;
-  border: 1px solid @uiBorderColor;
-  text-align: right;
-  &:hover {
-      background: @white;
   }
 }
 

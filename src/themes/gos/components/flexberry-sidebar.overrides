@@ -1,17 +1,50 @@
 .inverted.vertical.main.menu.sidebar {
-  padding: @distanceM 0;
   overflow: visible ! important;
+  padding: @sidebarPadding;
+
   .item {
-    padding: @distanceS;
-    &::before {
-      display: none;
-    }
+    padding: @itemPadding;
   }
 
+  // submenu
   .dropdown.item .menu {
+    .border-radius(@subMenuBordetRadius);
+    border-top: 0;
     height: 100%;
-    padding: @distanceM 0;
+    padding: @sidebarPadding;
     position: fixed;
+  }
+
+  // main menu only
+  > div {
+    > .active.item {
+      background: @itemHoveredBackground;
+
+      &:hover,
+      &:active {
+        background: @itemHoveredBackground;
+      }
+    }
+
+    > .item {
+      .title-item-menu .icon {
+        .opacity(@itemIconOpacity);
+        .transition(opacity 0.3s);
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &:hover,
+      &:active {
+        background: @itemHoveredBackground;
+
+        .title-item-menu .icon {
+          .opacity(1);
+        }
+      }
+    }
   }
 }
 
@@ -20,30 +53,92 @@
   font-size: 1.5rem;
 }
 
-.sitebar-footer {
-  position: absolute;
-  bottom: @distanceM;
-  width: 100%;
-}
-
 .title-item-menu {
-  display: flex;
+  .display-flex();
 
   .icon {
-    font-size: 1.2em;
+    font-size: @itemIconFontSize;
     margin-right: @distanceS;
   }
 }
 
+// Submenu items
 .ui.vertical.inverted.menu .menu .item,
 .ui.vertical.inverted.menu .menu .item a:not(.ui) {
   color: @textColor;
-  font-size: 1em;
-  // padding: @distanceS;
+  font-size: @subMenuItemFontSize;
 }
 
 .ui.vertical.inverted.menu .item .menu a.item:hover,
 .ui.vertical.inverted.menu .item .menu .link.item:hover {
   color: @textColor;
-  background: rgba(0, 0, 0, 0.1);
+  background: @subMenuItemHoveredBackground;
+}
+
+
+.full.height {
+  // transition: margin-left 0.45s ease;
+  margin-left: @width;
+
+  &.content-opened {
+    margin-left: @width-s;
+  }
+}
+
+.ui.sidebar.main.menu {
+  .transform(translate3d(0, 0, 0));
+  visibility: visible;
+
+  > div > .item > .dropdown.icon {
+    display: @itemDropDownIconDisplay;
+  }
+
+  //icon-guideline-arrow-short-right-l
+  .ui.dropdown .menu .item .dropdown.icon:before {
+    content: "\e907";
+    font-family: 'guideline-icons';
+  }
+
+  &.sidebar-mini {
+    width: @width-s;
+
+    > div > .item {
+      font-size: 0;
+
+      .menu.transition {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .ui.dropdown .menu > .item {
+    padding: @subMenuItemPadding;
+
+    .title-item-menu {
+      margin-right: 1.5em;
+    }
+  }
+}
+
+// Костыль для семантика
+.ui.visible.left.sidebar ~ .pusher {
+  .transform(translate3d(0, 0, 0)) !important;
+}
+
+// Little sidebar in 56px
+// .ui.left.sidebar ~ .fixed,
+// .ui.left.sidebar ~ .pusher {
+//   .transform(translate3d(0, 0, 0));
+// }
+
+.ui.uncover.sidebar {
+  z-index: 10;
+}
+
+
+// Footer
+.sitebar-footer {
+  position: absolute;
+  bottom: @distanceM;
+  width: 100%;
 }

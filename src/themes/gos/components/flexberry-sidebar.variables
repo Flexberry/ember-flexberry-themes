@@ -1,1 +1,21 @@
-@sidebarInvertedBackground: #3B4256;
+@sidebarInvertedBackground: @sidebarBackgroundColor;
+
+@width: 240px;
+@width-s: 56px;
+
+@sidebarPadding: @distanceM 0;
+
+// items
+@itemPadding: @distanceS;
+@itemHoveredBackground: none;
+@itemIconOpacity: 0.2;
+@itemIconFontSize: 1.2rem;
+@itemDropDownIconDisplay: none;
+
+// submenu
+@subMenuBordetRadius: 0;
+
+// submenu item
+@subMenuItemHoveredBackground: rgba(0, 0, 0, 0.1);
+@subMenuItemFontSize: 1em;
+@subMenuItemPadding: 1em 0.5em 1em 1em !important;

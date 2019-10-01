@@ -23,7 +23,6 @@
 
 @activeBackgroundColor: rgba(0, 0, 0, 0.1);
 
-@primaryColor: @blue;
 @coloredBackgroundImage: @subtleGradient;
 
 
@@ -32,10 +31,8 @@
 --------------------*/
 
 @hoverBackgroundColor: @blue;
-// @hoverGreenBackgroundColor: @green; //not used
 @hoverBackgroundImage: none;
 @hoverColor: @white;
-// @borderHover: 1px solid @green; //not used
 
 @focusColor: @textColor;
 @focusBackgroundColor: @white;
