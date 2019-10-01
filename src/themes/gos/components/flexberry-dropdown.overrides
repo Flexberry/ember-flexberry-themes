@@ -1,0 +1,6 @@
+.ui.dropdown > .dropdown.icon:before {
+    font-family: 'guideline-icons';
+    font-size: 2em;
+    color: @blueZodiak;
+    content: "\e904";
+  }

@@ -1,48 +1,17 @@
-/*******************************
-            Dropdown
-*******************************/
-/*---------
-   Colors overrides
------------*/
+@selectionBackground: @aliceBlue;
 
-@borderColor: @paleBlue;
-@dropdownBorder: none;
-@dropdownBorderBottom: 1px solid @borderColor;
-@borderRadius: 0px;
+@selectionBorder: 1px solid transparent;
+@selectionBorderRadius: 4px;
 
-/*------------
-   Selection
---------------*/
-@selectionBackground: none;
+@selectionHoverBorderColor: @chambray;
 
-/* Border */
-@selectBorder: @borderColor;
-@focusedFormMutedBorderColor: @borderColor;
+@selectionFocusBorderColor: @mayaBlue;
 
-/* Hover */
-@selectionHoverBorderColor: @borderColor;
+@selectBorder: none;
 
-/* Visible Hover */
-@selectionActiveHoverBorderColor: @borderColor;
+@selectionVisibleBorderColor: transparent;
 
-/* Hovered */
-@hoveredItemBackground: @dropdownHoveredItemColor;
+@defaultTextColor: @blueZodiak;
+@defaultTextFocusColor: @blueZodiak;
 
-/* Selected */
-@selectedBackground: @whiteBlue;
-
-/* Visible */
-@selectionVisibleBorderColor: @borderColor;
-@selectionVisibleBoxShadow: none;
-@selectionVisibleMenuBoxShadow: none;
-
-/* Focus */
-@selectionFocusMenuBoxShadow: none;
-
-/*-------------------
-       Content
---------------------*/
-
-/* Menu */
-@menuBorderColor: #dedede;
-@menuBoxShadow: 0px 2px 3px 0px @menuBorderColor;
+@menuBorder: none;
