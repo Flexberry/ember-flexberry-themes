@@ -1,3 +1,61 @@
+// Buttons
+.ui.refresh-button.button,
+.ui.delete-button.button,
+.ui.icon.button.config-button.settings-enabled,
+.flexberry-menu.ui.icon.dropdown.button,
+.ui.button,
+.ui.button.icon.export-button {
+    background: @defaultEditButtonColor;
+}
+
+.ui.create-button.button {
+    background: @createButtonColor;
+    color: @white;
+    margin-left: @distanceS;
+    font-weight: @buttonFontWeight;
+}
+
+.ui.buttons.filter-active{
+    border: @filterButtonBorderStyle;
+}
+
+.ui.icon.buttons.filter-active button{
+    padding: 0 0.5em;
+}
+
+i.icon.filter:before {
+    font-family: @iconFontFamily;
+    content: @editFilterIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.file.excel.outline:before {
+    font-family: @iconFontFamily;
+    content: @editExcelIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.table::before {
+    font-family: @iconFontFamily;
+    content: @editColumnsIcon;
+    font-size: @editIconFontSize;
+    color: @editIconColor;
+}
+
+i.icon.flask::before {
+    color: @editIconColor;
+}
+
+
+// Menu 
+.ui.secondary.menu.no-margin {
+    padding-top: @distanceS;
+    margin-bottom: 0;
+}
+
+
 // Header
 
 .ui.table.object-list-view {
@@ -66,6 +124,7 @@
 .ui.striped.table.object-list-view tbody tr:nth-child(2n) {
      background: @aliceBlue !important;
 }
+
 
 // Navigation bar
 
