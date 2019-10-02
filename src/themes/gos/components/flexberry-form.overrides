@@ -2,6 +2,7 @@
 .ui.form.flexberry-vertical-form {
     background: @editBackground;
     padding: @flexEditFormPadding;
+    padding-bottom: @distanceL;
 }
 
 .flexberry-content.ui.attached.segment {
