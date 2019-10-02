@@ -24,3 +24,17 @@
 
 /* Selectable */
 @selectableBackground: #f5f8ff;
+
+/* Buttons */
+@defaultEditButtonColor: transparent;
+@createButtonColor: @primaryColor;
+@filterButtonBorderStyle: @defaultBorderWidth @defaultBorderStyle transparent;
+@buttonFontWeight: @defaultMediumFontWeight;
+
+/* Icons */
+@iconFontFamily: guideline-icons;
+@editIconFontSize: 25px;
+@editFilterIcon: "\e91a";
+@editExcelIcon: "\e916";
+@editColumnsIcon: "\e90d";
+@editIconColor: @textColor;
