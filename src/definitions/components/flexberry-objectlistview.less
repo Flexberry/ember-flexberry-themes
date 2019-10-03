@@ -4,333 +4,333 @@
 @import (multiple) '../../theme.config';
 
 
-/**************************************************
-  Styles for flexberry-objectlistview component
-***************************************************/
+// /**************************************************
+//   Styles for flexberry-objectlistview component
+// ***************************************************/
 
-.oveflow-text {
-  overflow: hidden;
-}
+// .oveflow-text {
+//   overflow: hidden;
+// }
 
-.ui.table.object-list-view tr td {
-  overflow-x: hidden;
-  overflow-y: visible;
-}
+// .ui.table.object-list-view tr td {
+//   overflow-x: hidden;
+//   overflow-y: visible;
+// }
 
-.ui.table.object-list-view tr td.overflowed-cell,
-.ui.table.object-list-view tr td.object-list-view-menu {
-  overflow: visible;
-}
+// .ui.table.object-list-view tr td.overflowed-cell,
+// .ui.table.object-list-view tr td.object-list-view-menu {
+//   overflow: visible;
+// }
 
-.object-list-view-container {
-  margin: @olvContainerMargin;
-  max-width: 100%;
-  overflow: auto;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent;
+// .object-list-view-container {
+//   margin: @olvContainerMargin;
+//   max-width: 100%;
+//   overflow: auto;
+//   -webkit-tap-highlight-color: rgba(0,0,0,0);
+//   -webkit-tap-highlight-color: transparent;
 
-  .object-list-view {
-    margin: @olvMargin;
-  }
-}
+//   .object-list-view {
+//     margin: @olvMargin;
+//   }
+// }
 
 .object-list-view-container.groupedit-container {
   overflow: auto;
 }
 
-table.object-list-view.selectable tbody,
-table.object-list-view.selectable thead {
-cursor: pointer;
-}
+// table.object-list-view.selectable tbody,
+// table.object-list-view.selectable thead {
+// cursor: pointer;
+// }
 
-.object-list-view-helper-column-cell div.cell {
-  float: left;
-}
+// .object-list-view-helper-column-cell div.cell {
+//   float: left;
+// }
 
-.object-list-view-helper-column  {
-  padding: 0px 7px!important;
-}
+// .object-list-view-helper-column  {
+//   padding: 0px 7px!important;
+// }
 
-.ui.fixed.table th.object-list-view-operations {
-  text-overflow: clip;
-  white-space: normal;
-}
+// .ui.fixed.table th.object-list-view-operations {
+//   text-overflow: clip;
+//   white-space: normal;
+// }
 
-.ui.celled.table.object-list-view tr td.object-list-view-helper-column.hidden + td {
-  border-left: none;
-}
+// .ui.celled.table.object-list-view tr td.object-list-view-helper-column.hidden + td {
+//   border-left: none;
+// }
 
-.inline.fields.filter .filter-operation {
-  width: 70px;
-}
+// .inline.fields.filter .filter-operation {
+//   width: 70px;
+// }
 
-.inline.fields.filter .filter-value {
-  width: 100%-5px;
-  padding-left:5px;
-}
+// .inline.fields.filter .filter-value {
+//   width: 100%-5px;
+//   padding-left:5px;
+// }
 
-.inline.fields.filter .ui {
-  width: 100%;
-}
+// .inline.fields.filter .ui {
+//   width: 100%;
+// }
 
-/* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
-/**************************************
-        Toolbar buttons section
-***************************************/
+// /* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
+// /**************************************
+//         Toolbar buttons section
+// ***************************************/
 
-div.ui.secondary.menu.no-margin {
-  display: flex;
-  align-items: center;
-  min-height: 0em;
-}
+// div.ui.secondary.menu.no-margin {
+//   display: flex;
+//   align-items: center;
+//   min-height: 0em;
+// }
 
-.ui.button.refresh-button {
-  border: none;
-  font-size: 0px;
-  width: 25px;
-  padding: 10px 20px 0px 0px;
-  height: 25px;
-  &:hover {
-      border: none;
-      background: none;
-  }
-}
+// .ui.button.refresh-button {
+//   border: none;
+//   font-size: 0px;
+//   width: 25px;
+//   padding: 10px 20px 0px 0px;
+//   height: 25px;
+//   &:hover {
+//       border: none;
+//       background: none;
+//   }
+// }
 
-.ui.button.create-button:hover {
-  color: @white;
-  background: @uiHoveredPositiveBackgroundColor;
-  border-color: @uiHoveredPositiveBorderColor;
-}
+// .ui.button.create-button:hover {
+//   color: @white;
+//   background: @uiHoveredPositiveBackgroundColor;
+//   border-color: @uiHoveredPositiveBorderColor;
+// }
 
-.ui.button.delete-button {
-  border: none;
-  font-size: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  height: 25px;
-  &:hover {
-      background: none;
-      border :none;
-  }
-}
+// .ui.button.delete-button {
+//   border: none;
+//   font-size: 0px;
+//   padding-top: 10px;
+//   padding-left: 10px;
+//   height: 25px;
+//   &:hover {
+//       background: none;
+//       border :none;
+//   }
+// }
 
-.ui.button.icon.hierarchical-button {
-  border: 0px;
-  &:hover {
-      background: @white;
-  }
-  &.active {
-      background: none;
-  }
-}
+// .ui.button.icon.hierarchical-button {
+//   border: 0px;
+//   &:hover {
+//       background: @white;
+//   }
+//   &.active {
+//       background: none;
+//   }
+// }
 
-.hierarchical-button:hover {
-  background-color: @white;
-  background: none;
-  border: none;
-}
+// .hierarchical-button:hover {
+//   background-color: @white;
+//   background: none;
+//   border: none;
+// }
 
-.ui.button.collexp-button {
-  border: 0px;
-}
+// .ui.button.collexp-button {
+//   border: 0px;
+// }
 
-.ui.buttons.filter-active {
-  border: 1px solid @uiBorderColor;
-  height: 35px;
-  border-radius: 5px;
-}
+// .ui.buttons.filter-active {
+//   border: 1px solid @uiBorderColor;
+//   height: 35px;
+//   border-radius: 5px;
+// }
 
-.ui.buttons.removeFilter-button {
-  border-left: 1px solid @uiBorderColor;
-  height: 33px ;
-}
+// .ui.buttons.removeFilter-button {
+//   border-left: 1px solid @uiBorderColor;
+//   height: 33px ;
+// }
 
-.ui.button.icon.remove-button:hover {
-  border-color: @uiHoveredNegitveBorderColor;
-}
+// .ui.button.icon.remove-button:hover {
+//   border-color: @uiHoveredNegitveBorderColor;
+// }
 
-.ui.secondary.menu > .ui.action.input > .search-button {
-  position: absolute;
-  right: 25px;
-  border: none;
-}
-.ui.secondary.menu > .ui.action.input > .clear-search-button {
-  position: absolute;
-  right: -5px;
-  border: none;
-}
+// .ui.secondary.menu > .ui.action.input > .search-button {
+//   position: absolute;
+//   right: 25px;
+//   border: none;
+// }
+// .ui.secondary.menu > .ui.action.input > .clear-search-button {
+//   position: absolute;
+//   right: -5px;
+//   border: none;
+// }
 
-.ui.button.all-del-user-button {
-  border: 1px solid @uiBorderColor;
-  color: @textColor;
-}
+// .ui.button.all-del-user-button {
+//   border: 1px solid @uiBorderColor;
+//   color: @textColor;
+// }
 
-.ui.button.all-del-user-button:hover {
-  background-color: @uiHoveredNegitveBackgroundColor;
-  border: 1px solid @uiHoveredNegitveBorderColor;
-  color: @white;
-}
-
-
-/* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
-/******************************************
-          Page navigation buttons
-*******************************************/
-
-.ui.secondary.menu.no-margin > .ui.basic.buttons > .ui.disabled {
-  opacity: 1 !important;
-
-  & > i.icon.prev-page,
-  i.icon.next-page {
-      &:before {
-          color: #999;
-      }
-  }
-}
-
-.ui.secondary.menu.no-margin > .ui.basic.buttons > .ui.active.button {
-  cursor: default;
-}
-
-/* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
-/******************************************
-          Table cell buttons
-*******************************************/
-
-.cell .button:hover{
-  background: @white;
-}
+// .ui.button.all-del-user-button:hover {
+//   background-color: @uiHoveredNegitveBackgroundColor;
+//   border: 1px solid @uiHoveredNegitveBorderColor;
+//   color: @white;
+// }
 
 
-.ui.check-all-at-page-button.button {
-  padding: 0px;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:hover {
-      border: 0px;
-      background: none;
-      & i.icon.check-square-o:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// /* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
+// /******************************************
+//           Page navigation buttons
+// *******************************************/
 
-.ui.check-all-button.button {
-  padding: 0px;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:hover {
-      border: 0px;
-      background: none;
-      & i.icon.check-all-square-o:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// .ui.secondary.menu.no-margin > .ui.basic.buttons > .ui.disabled {
+//   opacity: 1 !important;
 
-.ui.check-all-button.button.activated {
-& i.icon.check-all-square-o:before {
-  color: @uiHoveredNegitveTextColor;
-}
-}
+//   & > i.icon.prev-page,
+//   i.icon.next-page {
+//       &:before {
+//           color: #999;
+//       }
+//   }
+// }
 
-.ui.clear-sorting-button.button {
-  padding: 0px;
-  height: 25px;
-  width: 10px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:hover {
-      border: 0px;
-      background: none;
-      & i.icon.sort:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// .ui.secondary.menu.no-margin > .ui.basic.buttons > .ui.active.button {
+//   cursor: default;
+// }
+
+// /* styles from ember-flexberry\addon\styles\themes\blue-sky\elements\button.overrides */
+// /******************************************
+//           Table cell buttons
+// *******************************************/
+
+// .cell .button:hover{
+//   background: @white;
+// }
 
 
-.ui.check-all-at-page-button-mobile.button {
-  padding: 0px;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:active {
-      border: 0px;
-      background: none;
-      & i.icon.check-square-o:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// .ui.check-all-at-page-button.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 25px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:hover {
+//       border: 0px;
+//       background: none;
+//       & i.icon.check-square-o:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
 
-.ui.check-all-button-mobile.button {
-  padding: 0px;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:active {
-      border: 0px;
-      background: none;
-      & i.icon.check-all-square-o:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// .ui.check-all-button.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 25px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:hover {
+//       border: 0px;
+//       background: none;
+//       & i.icon.check-all-square-o:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
 
-.ui.check-all-button-mobile.button.activated {
-& i.icon.check-all-square-o:before {
-  color: @uiHoveredNegitveTextColor;
-}
-}
+// .ui.check-all-button.button.activated {
+// & i.icon.check-all-square-o:before {
+//   color: @uiHoveredNegitveTextColor;
+// }
+// }
 
-.ui.clear-sorting-button-mobile.button {
-  padding: 0px;
-  height: 25px;
-  width: 10px;
-  text-align: center;
-  border: 0px;
-  background: none;
-  margin: 0 0 0 0px;
-  &:active {
-      border: 0px;
-      background: none;
-      & i.icon.sort:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+// .ui.clear-sorting-button.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 10px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:hover {
+//       border: 0px;
+//       background: none;
+//       & i.icon.sort:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
 
-.ui.ui-edit.button {
-  padding: 0px;
-  height: 30px;
-  width: 30px;
-  border: 1px solid @uiBorderColor;
-  text-align: right;
-  &:hover {
-      border: 1px solid @uiHoveredNegitveBorderColor;
-      background: @white;
-      & i.icon.edit:before {
-          color: @uiHoveredNegitveTextColor;
-      }
-  }
-}
+
+// .ui.check-all-at-page-button-mobile.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 25px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:active {
+//       border: 0px;
+//       background: none;
+//       & i.icon.check-square-o:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
+
+// .ui.check-all-button-mobile.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 25px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:active {
+//       border: 0px;
+//       background: none;
+//       & i.icon.check-all-square-o:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
+
+// .ui.check-all-button-mobile.button.activated {
+// & i.icon.check-all-square-o:before {
+//   color: @uiHoveredNegitveTextColor;
+// }
+// }
+
+// .ui.clear-sorting-button-mobile.button {
+//   padding: 0px;
+//   height: 25px;
+//   width: 10px;
+//   text-align: center;
+//   border: 0px;
+//   background: none;
+//   margin: 0 0 0 0px;
+//   &:active {
+//       border: 0px;
+//       background: none;
+//       & i.icon.sort:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
+
+// .ui.ui-edit.button {
+//   padding: 0px;
+//   height: 30px;
+//   width: 30px;
+//   border: 1px solid @uiBorderColor;
+//   text-align: right;
+//   &:hover {
+//       border: 1px solid @uiHoveredNegitveBorderColor;
+//       background: @white;
+//       & i.icon.edit:before {
+//           color: @uiHoveredNegitveTextColor;
+//       }
+//   }
+// }
 
 .right.pointing.ui.icon.dropdown.button:hover i.icon.list.layout:before {
   color: @white;
@@ -345,64 +345,5 @@ div.ui.secondary.menu.no-margin {
         Toolbar buttons icons
 ***************************************/
 
-i.icon.refresh:before {
-  font-family: 'Crimean';
-  content: "\e807";
-  font-size: 21px;
-  color: @green;
-}
-.create-button {
-  color: #fff;
-  background: @green;
-  border: 1px solid @green;
-}
-i.icon.trash:before {
-  font-family: 'Crimean';
-  content: "\e814";
-  opacity: 1;
-}
-i.icon.table:before {
-  font-family: 'Crimean';
-  content: "\e819";
-}
-i.icon.file.excel.outline:before {
-  font-family: 'Crimean';
-  content: "\e80a";
-  font-size:20px;
-}
-i.icon.filter:before {
-  font-family: 'Crimean';
-  content: "\e809";
-  font-size: 19.5px;
-}
-i.icon.search:before {
-  font-family: 'Crimean';
-  content: "\e803";
-  font-size: 20px;
-}
-i.icon.remove:before {
-  font-family: 'Crimean';
-  content: "\e806";
-  font-size: 17px;
-  position: relative;
-  top: -1px;
-  opacity: 1;
-  &:hover {
-      color: @red;
-  }
-}
-
-i.icon.change:before {
-  font-family: 'Crimean';
-  content: "";
-  font-size: 17px;
-  position: relative;
-  top: -1px;
-  opacity: 1;
-  &:hover {
-      color: @brightBlue;
-      opacity: 1;
-  }
-}
 
 .loadUIOverrides();
