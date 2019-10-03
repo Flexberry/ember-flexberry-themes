@@ -34,7 +34,3 @@
     border-radius: @defaultBorderRadius;
     border: @flexberryMenuBorder;
 }
-
-// Добавить стрелочки для подменю
-
-// Убрать бордеры в горизонтальном положении
