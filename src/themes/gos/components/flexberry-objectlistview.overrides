@@ -48,6 +48,21 @@ i.icon.flask::before {
     color: @editIconColor;
 }
 
+i.icon.refresh:before {
+  content: "\e925";
+  font-family: @iconFontFamily;
+  font-size: @editIconFontSize;
+  color: @editIconColor;
+}
+
+.ui.secondary.menu.no-margin:not(.nav-bar) > .buttons {
+  .flexberry-menu {
+    padding-left: 0;
+  }
+  .button {
+    padding-right: 0;
+  }
+}
 
 // Menu 
 .ui.secondary.menu.no-margin {

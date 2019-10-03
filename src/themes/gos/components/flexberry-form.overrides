@@ -2,6 +2,7 @@
 .ui.form.flexberry-vertical-form {
     background: @editBackground;
     padding: @flexEditFormPadding;
+    padding-bottom: @distanceL;
 }
 
 .flexberry-content.ui.attached.segment {
@@ -9,11 +10,10 @@
 }
 
 // Headers
-.ui.main.container > .stackable.grid.container h3{
+.ui.main.container > .stackable.grid.container > h3{
     margin-top: 0;
     font-weight: @headerFontWeight;
-    padding: @flexberryContentPadding;
-    padding-left: @distanceM;
+    padding-left: @distanceL;
 }
 
 // Buttons
@@ -39,8 +39,6 @@
 // Icons
 
 .ui.button.save-button::before {
-    content: @saveIcon;
-    font-family: Icons;
     // TODO: Добавить иконку дискеты с макета
     content: @saveIcon;
     font-family: outline-icons;
@@ -79,14 +77,12 @@
     font-size: 0;
     float: right;
     line-height: @distanceM;
-}
-
-.ui.button.close-button::before {
     padding-top: @closeButtonPaddingTop;
-
-    // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
-    content: @closeIcon;
-    font-family: 'Crimean';
-    font-size: 12px;
-    font-weight: 700;
+    &::before {
+        // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
+        content: @closeIcon;
+        font-family: 'Crimean';
+        font-size: 12px;
+        font-weight: 700;
+    }
 }
