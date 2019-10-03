@@ -1,39 +1,46 @@
 // Main
 .ui.form.flexberry-vertical-form {
-    background: @editBackground;
-    padding: @flexEditFormPadding;
-    padding-bottom: @distanceL;
+  background: @editBackground;
+  padding: @flexEditFormPadding;
+  padding-bottom: @distanceL;
+  // TODO: Сделать нормально
+  min-height: calc(~'100% - 30px - 1em');
 }
 
 .flexberry-content.ui.attached.segment {
-    padding: @flexberryContentPadding;
+  padding: @flexberryContentPadding;
+}
+
+.ui.main.container,
+.stackable.grid.container {
+  height: 100%
 }
 
 // Headers
 .ui.main.container > .stackable.grid.container > h3{
-    margin-top: 0;
-    font-weight: @headerFontWeight;
-    padding-left: @distanceL;
+  margin-top: 0;
+  font-weight: @headerFontWeight;
+  padding-left: @distanceL;
 }
 
 // Buttons
 .flexberry-edit-panel {
-    padding-top: @distanceS;
-    .ui.button:first-child {
-        padding-left: 0;
-    }
+  padding-top: @distanceS;
+  .ui.button:first-child {
+    padding-left: 0;
+  }
 }
 
 .flexberry-edit-panel .ui.button.save-button,
 .flexberry-edit-panel .ui.button.save-close-button,
 .flexberry-edit-panel .ui.button.save-del-button,
 .flexberry-edit-panel .ui.button.close-button {
-    background: @editBackground;
-    font-weight: @buttonFontWeight; 
-    color: @editButtonsColor;
-    &:focus {
-        border: @toolbarButtonFocusBorder;
-    }
+  background: @editBackground;
+  font-weight: @buttonFontWeight; 
+  color: @editButtonsColor;
+  &:focus {
+    border: @toolbarButtonFocusBorder;
+  }
 }
 
 // Icons
