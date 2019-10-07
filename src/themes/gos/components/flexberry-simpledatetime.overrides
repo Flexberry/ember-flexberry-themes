@@ -1,0 +1,29 @@
+.ui.fluid.action.input.flatpickr > .ui.ui-clear.button {
+    position: relative;
+    z-index: 3;
+
+    padding: 0em;
+    margin-top: @clearButtonMarginLength;
+    margin-bottom: @clearButtonMarginLength;
+    
+    min-width: @clearButtonWidthHeightLength;
+    width: @clearButtonWidthHeightLength;
+    min-height: @clearButtonWidthHeightLength;
+    height: @clearButtonWidthHeightLength;
+
+    right: 2.21em;
+
+    background: transparent;
+}
+
+.ui.action.input:not([class*="left action"]) > input,
+.ui.action.input:not([class*="left action"]) > input:active{
+    border-top-right-radius: @dateTimeInputRightBorderRadius;
+    border-bottom-right-radius: @dateTimeInputRightBorderRadius;
+}
+
+.ui.action.input:not([class*="left action"]) > input:hover {
+    border-right-color: @dateTimeInputRightBorderColor;
+    border-top-right-radius: @dateTimeInputRightBorderRadius;
+    border-bottom-right-radius: @dateTimeInputRightBorderRadius;
+}
