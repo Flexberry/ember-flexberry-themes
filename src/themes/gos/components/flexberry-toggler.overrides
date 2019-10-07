@@ -1,0 +1,20 @@
+//Primary
+
+.ui.fluid.accordion {
+    background-color: @accordionBackgroundColor;
+}
+
+.ui.accordion .title:not(.ui) {
+    color: @accordionTitleColor;
+}
+
+.ui.accordion .title .dropdown.icon:before,
+.ui.accordion .accordion .title .dropdown.icon:before {
+  content: @accordionIcon;
+  font-family: Icons;
+}
+
+.ui.accordion .active.title .dropdown.icon, 
+.ui.accordion .accordion .active.title .dropdown.icon {
+    transform: @accordionIconRotate;
+}

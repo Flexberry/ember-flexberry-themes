@@ -64,6 +64,8 @@
 @linkWater        : #C7CCD1;
 @navyBlue         : #0962AF;
 @gray             : #EBEBEB;
+@solitude         : #E4EDF9;
+@whisper          : #E5E5E5;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
