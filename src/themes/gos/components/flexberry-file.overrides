@@ -1,0 +1,62 @@
+.flexberry-file input.flexberry-file-filename-input[readonly="readonly"] {
+    background: @fileBackgroundColor;
+    border-color: @fileBorderColor;
+    width: @fileInputWidth;
+}
+
+.flexberry-file .ui.action.input:not([class*="left action"]) > input {
+    border-radius: @defaultBorderRadius !important;
+}
+
+.flexberry-file .ui.action.input > .button.flexberry-file-remove-button.disabled {
+    display: @fileRemoveControlDisplay;
+}
+
+.flexberry-file .ui.icon.button {
+    margin-top: @fileControlMarginTop;
+    padding-top: @fileControlPaddingTop;
+    padding-bottom: @fileControlPaddingBottom;
+    border-radius: @defaultBorderRadius !important;
+    background: @fileBackgroundColor;
+    border-color: @fileBorderColor;
+    :hover {
+        color: @fileControlColorHover;
+    }
+}
+
+.flexberry-file .ui.icon.button.disabled {
+    color: @fileControlDisabledColor;
+}
+
+.flexberry-file .ui.flexberry-file-add-button,
+.flexberry-file .ui.flexberry-file-remove-button:not([class*="disabled"]) {
+    position: @fileInnerControlPosition;
+    top: @fileInnerControlPositionTop;
+    left: @fileInnerControlPositionLeft;
+}
+
+.flexberry-file .ui.action.input > .button.flexberry-file-upload-button,
+.flexberry-file .ui.action.input > .button.flexberry-file-download-button {
+    margin-left: @fileControlMarginLeft;
+}
+
+.flexberry-file .ui .ui.icon.button .icon {
+    font-family: @iconFontName;
+    font-size: @iconFontSize;
+}
+
+.flexberry-file .ui.flexberry-file-add-button .icon:before {
+    content: @fileAddIcon;
+}
+
+.flexberry-file .ui.flexberry-file-remove-button .icon:before {
+    content: @fileRemoveIcon;
+}
+
+.flexberry-file .ui.flexberry-file-upload-button .icon:before {
+    content: @fileUploadIcon;
+}
+
+.flexberry-file .flexberry-file-download-button .icon:before {
+    content: @fileDownloadIcon;
+}
