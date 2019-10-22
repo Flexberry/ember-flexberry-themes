@@ -64,6 +64,8 @@
 @linkWater        : #C7CCD1;
 @navyBlue         : #0962AF;
 @gray             : #EBEBEB;
+@solitude         : #E4EDF9;
+@whisper          : #E5E5E5;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -137,8 +139,8 @@
         Page
 --------------------*/
 
-@pageBackground      : #f4f7fb;
-@textColor           : #3B4256;
+@pageBackground      : @aliceBlue;
+@textColor           : @blueZodiak;
 
 
 /*---------------------
@@ -158,30 +160,33 @@
 
 @defaultFocusBorderColor: @mayaBlue;
 
+@defaultTransitionProperty: all;
+@defaultTransitionDuration: 0.3s;
+@defaultTransitionTimingFunction: ease-in-out;
+@defaultTransitionDelay: 0s;
+
 
 /*-------------------
         Input
 --------------------*/
 
-@inputBorderWidth: @defaultBorderWidth;
-@inputBorderStyle: @defaultBorderStyle;
-@inputBorderRadius: @defaultBorderRadius;
+@defaultInputFontSize: 0.875em;
+@defaultInputLabelFontSize: 0.875em;
+@inputLineHeight: unit((20 / 14), em);
 
 @inputBorderColor: @aliceBlue;
-@inputBackgroundColor: @aliceBlue;
-
-@inputPaddingTop: 0.625em;
-@inputPaddingRight: 0.75em;
-@inputPaddingBottom: 0.625em;
-@inputPaddingLeft: 0.75em;
+@inputBackground: @aliceBlue;
 
 @inputPlaceholderColor : @lightGrayishBlue;
 @inputPlaceholderFocusColor: @lightGrayishBlue;
 
+@inputBorderWidth: @defaultBorderWidth;
+@inputBorderStyle: @defaultBorderStyle;
+@inputBorderRadius: @defaultBorderRadius;
+@inputBorderColor: @aliceBlue;
+
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
-
-@inputLineHeight: unit((20 / 14), em);
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
@@ -206,3 +211,33 @@
 
 @defaultBoxShadow: none;
 @defaultToggleOnBorder: none;
+
+
+/*------------------------
+        COLOR SCHEME
+-------------------------*/
+// main
+@primaryColor          : @cobaltBlue;
+@accentColor           : @mayaBlue;
+@secondaryColor        : @lightGrayishBlue;
+
+// Sidebar
+@sidebarBackgroundColor: @textColor;
+
+// Page
+@pageBackground        : @aliceBlue;
+@textColor             : @blueZodiak;
+
+// Input
+@inputBorderColor      : @aliceBlue;
+@inputBackground       : @aliceBlue;
+
+@inputFocusBackground   : @white;
+@focusedFormBorderColor : @accentColor;
+
+// Buttons
+
+/*------------------------
+        PGMU
+-------------------------*/
+// @primaryColor           : #E14059;
