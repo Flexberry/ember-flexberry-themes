@@ -24,12 +24,15 @@
 }
 
 //Dropdown menu 
-.ui.menu .right.menu .dropdown:last-child .menu, .ui.menu .right.dropdown.item .menu, .ui.buttons > .ui.dropdown:last-child .menu {
-	left: auto;
-	right: -11.2em;
+.ui.menu .right.menu .dropdown:last-child .menu, 
+.ui.menu .right.dropdown.item .menu, 
+.ui.buttons > .ui.dropdown:last-child .menu {
+	 left: 100%;
+	 right: auto; 
 }
-
-.menu.transition.visible{
+.menu.transition.visible,
+.menu.transition.animating.slide.down.in,
+.menu.transition.visible.animating.slide.down.out {
     box-shadow: @flexberryMenuBoxShadow;
     border-radius: @defaultBorderRadius;
     border: @flexberryMenuBorder;

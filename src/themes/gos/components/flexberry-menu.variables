@@ -4,4 +4,4 @@
 @flexberryMenuTextFontWeight: 450;
 
 @flexberryMenuButtonHover: @aliceBlue !important;
-@flexberryMenuBoxShadow: 1px 1px 9px @gray;
+@flexberryMenuBoxShadow: 0px 4px 12px @gray;
