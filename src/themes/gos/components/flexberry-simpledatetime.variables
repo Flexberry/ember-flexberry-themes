@@ -1,7 +1,10 @@
 // Border variables
-@dateTimeInputRightBorderRadius: 0.25rem !important;
-@dateTimeInputRightBorderColor: #B3BBC3 !important;
+@dateTimeInputRightBorderRadius: @defaultBorderRadius !important;
+@dateTimeInputRightBorderColor: @chambray !important;
 
 // Clear button width-height
-@clearButtonWidthHeightLength: 1.42857143em;
-@clearButtonMarginLength: 0.64285714em;
+@clearButtonWidthHeight: 1.42857143em;
+@clearButtonPadding: 1em 0 0 0;
+
+@readOnlyDateTimeInputColor: @hawkesBlue;
+@readOnlyDateTimeInputBorder: 1px solid @aliceBlue;

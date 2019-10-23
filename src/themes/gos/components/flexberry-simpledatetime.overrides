@@ -1,29 +1,43 @@
-.ui.fluid.action.input.flatpickr > .ui.ui-clear.button {
+// Clear button
+.flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.ui-clear.button {
     position: relative;
     z-index: 3;
 
-    padding: 0em;
-    margin-top: @clearButtonMarginLength;
-    margin-bottom: @clearButtonMarginLength;
+    padding: @clearButtonPadding;
+    margin: 0;
     
-    min-width: @clearButtonWidthHeightLength;
-    width: @clearButtonWidthHeightLength;
-    min-height: @clearButtonWidthHeightLength;
-    height: @clearButtonWidthHeightLength;
+    min-width: @clearButtonWidthHeight;
+    width: @clearButtonWidthHeight;
+    min-height: @clearButtonWidthHeight;
+    height: @clearButtonWidthHeight;
 
     right: 2.21em;
 
     background: transparent;
 }
 
-.ui.action.input:not([class*="left action"]) > input,
-.ui.action.input:not([class*="left action"]) > input:active{
-    border-top-right-radius: @dateTimeInputRightBorderRadius;
-    border-bottom-right-radius: @dateTimeInputRightBorderRadius;
+.flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.ui-clear.button:focus {
+    border: 0px solid transparent;
 }
 
-.ui.action.input:not([class*="left action"]) > input:hover {
+// Date input
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input,
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input:active {
+    border-radius: @dateTimeInputRightBorderRadius;
+}
+
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input:hover {
     border-right-color: @dateTimeInputRightBorderColor;
-    border-top-right-radius: @dateTimeInputRightBorderRadius;
-    border-bottom-right-radius: @dateTimeInputRightBorderRadius;
+    border-radius: @dateTimeInputRightBorderRadius;
+}
+
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input[readonly=""] {
+    background: @readOnlyDateTimeInputColor;
+     &:hover, &:focus, &:active {
+        border: 1px solid @aliceBlue;
+        border-right-color: @aliceBlue !important;
+        border-radius: @dateTimeInputRightBorderRadius;
+        cursor: default;
+
+     }
 }
