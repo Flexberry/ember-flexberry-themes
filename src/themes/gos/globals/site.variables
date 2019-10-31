@@ -127,6 +127,8 @@
 
 @flexberryButtonHoveredColor: @brightBlue;
 
+@disabledOpacity: 1;
+
 /*-------------------
    Icon Variables
 --------------------*/
