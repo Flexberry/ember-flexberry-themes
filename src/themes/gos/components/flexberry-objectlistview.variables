@@ -28,8 +28,10 @@
 
 /* Buttons */
 @defaultEditButtonColor: transparent;
-@createButtonColor: @primaryColor;
-@filterButtonBorderStyle: @defaultBorderWidth @defaultBorderStyle transparent;
+@filterButtonsBorderWidth: @defaultBorderWidth;
+@filterButtonsBorderStyle: @defaultBorderStyle;
+@filterButtonsBorderColor: transparent;
+@filterButtonsBorder: @filterButtonsBorderWidth @filterButtonsBorderStyle @filterButtonsBorderColor;
 @buttonFontWeight: @defaultMediumFontWeight;
 
 /* Icons */
@@ -39,3 +41,34 @@
 @editExcelIcon: "\e916";
 @editColumnsIcon: "\e90d";
 @editIconColor: @textColor;
+@refreshButtonIcon: "\e925";
+@deleteButtonIcon: "\e911";
+
+@createButtonBackgroundColor: @primaryColor;
+@createButtonBackground: @createButtonBackgroundColor;
+@createButtonColor: @white;
+@createButtonMargin: 0 @distanceS;
+
+@filterButtonVerticalPadding: 0em;
+@filterButtonHorizontalPadding: 0.5em;
+@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+
+@toolbarButtonFocusBorder: none;
+@toolbarButtonHoverBackground: none;
+
+@buttonsFontSize: 0px;
+
+@buttonIconsFontSize: 1rem;
+@buttonIconsLineHeight: unit(16 / 14, rem);
+@buttonPaddingRight: 0;
+
+@dropdownIconFontSize: 1em;
+@dropdownIconLineHeight: 1.5rem;
+
+@menuPaddingTop: @distanceS;
+@menuMarginBottom: 0;
+
+@olvContainerBorder: 1px solid @whisper;
+@olvContainerBorderRadius: @defaultBorderRadius;
+@olvContainerBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+

@@ -10,38 +10,38 @@
 
 .ui.button.refresh-button,
 .ui.button.delete-button {
-  font-size: 0px;
+  font-size: @buttonsFontSize;
 }
 
 .ui.create-button.button {
-  background: @createButtonColor;
-  color: @white;
-  margin: 0 @distanceS;
+  background: @createButtonBackground;
+  color: @createButtonColor;
+  margin: @createButtonMargin;
   font-weight: @buttonFontWeight;
 }
 
 .ui.buttons.filter-active {
-  border: @filterButtonBorderStyle;
+  border: @filterButtonsBorder;
 }
 
 .ui.icon.buttons.filter-active button {
-  padding: 0 0.5em;
+  padding: @filterButtonPadding;
 }
 
 .ui.secondary.menu.no-margin:not(.nav-bar) {
   .ui.button:focus {
-    border: none;
+    border: @toolbarButtonFocusBorder;
   }
 
   .ui.buttons .ui.button:hover {
-    background: none;
+    background: @toolbarButtonHoverBackground;
   }
 
   .ui.button.refresh-button,
   .ui.button.delete-button {
     i.icon {
-      font-size: 1rem;
-      line-height: 1.42857143rem;
+      font-size: @buttonIconsFontSize;
+      line-height: @buttonIconsLineHeight;
     }
   }
 
@@ -67,14 +67,14 @@
   }
 
   i.icon.refresh:before {
-    content: "\e925";
+    content: @refreshButtonIcon;
     color: @editIconColor;
     font-family: @iconFontFamily;
     font-size: @editIconFontSize;
   }
 
   i.icon.delete:before {
-    content: "\e911";
+    content: @deleteButtonIcon;
     color: @editIconColor;
     font-family: @iconFontFamily;
     font-size: @editIconFontSize;
@@ -89,27 +89,27 @@
       padding-left: 0;
       > .dropdown.icon {
         color: @editIconColor;
-        font-size: 1em;
-        line-height: 1.5rem;
+        font-size: @dropdownIconFontSize;
+        line-height: @dropdownIconLineHeight;
       }
     }
     .button {
-      padding-right: 0;
+      padding-right: @buttonPaddingRight;
     }
   }
 }
 
 // Menu 
 .ui.secondary.menu.no-margin {
-  padding-top: @distanceS;
-  margin-bottom: 0;
+  padding-top: @menuPaddingTop;
+  margin-bottom: @menuMarginBottom;
 }
 
 // Header
 .object-list-view-container {
-  border: 1px solid @whisper;
-  border-radius: @defaultBorderRadius;
-  box-shadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+  border: @olvContainerBorder;
+  border-radius: @olvContainerBorderRadius;
+  box-shadow: @olvContainerBoxShadow;
 }
 
 .ui.table.object-list-view {
@@ -187,6 +187,8 @@
 .ui.table.object-list-view td.active {
   background: @solitude !important;
 }
+
+
 // Navigation bar
 
 .ui.secondary.menu.nav-bar .ui.basic.buttons {
