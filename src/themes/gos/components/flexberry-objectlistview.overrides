@@ -113,46 +113,46 @@
 }
 
 .ui.table.object-list-view {
-  border: none;
+  border: @olvBorder;
 }
 
 .ui.table.object-list-view thead tr th {
-  background: white;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid @whisper;
-  border-left: none;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  background: @olvHeaderBackground;
+  border-top: @olvHeaderBorderTop;
+  border-right: @olvHeaderBorderRight;
+  border-bottom: @olvHeaderBorderBottom;
+  border-left: @olvHeaderBorderLeft;
+  padding: @olvHeaderPadding;
 }
 
 .ui.table.object-list-view thead tr th:first-child {
-  padding-left: 10px;
+  padding: @olvFirstHeaderPadding;
 }
 
 .ui.table.object-list-view thead tr th.object-list-view-operations button {
-  background: transparent;
-  padding: 0px;
+  background: @olvOperationsBackground;
+  padding: @olvOperationsPadding;
 }
 
 .ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button {
-  padding-top: 10px;
+  padding: @olvOperationCheckAllAtPagePadding;
 }
 
 .ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button::before {
-  font-family: 'guideline-icons';
-  font-size: 2em;
-  content: "\e928";
+  font-family: @olvOperationCheckAllAtPageBeforeFontFamily;
+  font-size: @olvOperationCheckAllAtPageBeforeFontSize;
+  content: @olvOperationCheckAllAtPageBeforeContent;
 }
 
 .ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page::before {
-  content: none;
+  content: @olvOperationCheckAllBeforeContent;
 }
 
 .ui.table.object-list-view thead tr th div span {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  padding: @olvHeaderTextPadding;
+  font-size: @olvHeaderTextFontSize;
+  font-weight: @olvHeaderTextFontWeight;
+  line-height: @olvHeaderTextLineHeight;
   color: @lightGrayishBlue;
 }
 

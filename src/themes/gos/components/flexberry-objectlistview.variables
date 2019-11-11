@@ -68,7 +68,47 @@
 @menuPaddingTop: @distanceS;
 @menuMarginBottom: 0;
 
-@olvContainerBorder: 1px solid @whisper;
+@olvContainerBorderWidth: @defaultBorderWidth;
+@olvContainerBorderStyle: @defaultBorderStyle;
+@olvContainerBorderColor: @whisper;
+
+@olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
 @olvContainerBorderRadius: @defaultBorderRadius;
 @olvContainerBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+
+@olvBorder: none;
+
+@olvHeaderBackground: @white;
+
+@olvHeaderBorderWidth: @defaultBorderWidth;
+@olvHeaderBorderStyle: @defaultBorderStyle;
+@olvHeaderBorderColor: @whisper;
+
+@olvHeaderBorderTop: none;
+@olvHeaderBorderRight: none;
+@olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
+@olvHeaderBorderLeft: none;
+
+@olvHeaderVerticalPadding: 0.75em;
+@olvHeaderHorizontalPadding: 0;
+@olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
+
+@olvFirstHeaderPadding: 0 0 0 10px;
+
+@olvOperationsBackground: transparent;
+@olvOperationsPadding: 0;
+
+@olvOperationCheckAllAtPagePadding: 10px 0 0 0;
+
+@olvOperationCheckAllAtPageBeforeFontFamily: 'guideline-icons';
+@olvOperationCheckAllAtPageBeforeFontSize: 2em;
+@olvOperationCheckAllAtPageBeforeContent: '\e928';
+
+@olvOperationCheckAllBeforeContent: none;
+
+@olvHeaderTextPadding: 0 0 0 10px;
+@olvHeaderTextFontSize: 16px;
+@olvHeaderTextFontWeight: 500;
+@olvHeaderTextLineHeight: 24px;
+@olvHeaderTextColor: @lightGrayishBlue;
 
