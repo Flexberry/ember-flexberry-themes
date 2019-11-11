@@ -12,6 +12,15 @@
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
 
+/*-------------------
+        Textarea
+--------------------*/
+
+@textareaLineHeight:  1.42857143em;
+@textareaHoverBorderColor: @chambray;
+@textareaReadonlyBackground: @hawkesBlue;
+@textareaReadonlyBorderColor: @hawkesBlue;
+
 // General
 @editBackground: #fff;
 @flexEditFormPadding: 0 @distanceL;
