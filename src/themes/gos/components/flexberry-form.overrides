@@ -89,6 +89,7 @@
 
 .ui.input textarea {
     line-height: @textareaLineHeight;
+    font-family: @pageFont;
 }
 
 .ui.input textarea:hover {

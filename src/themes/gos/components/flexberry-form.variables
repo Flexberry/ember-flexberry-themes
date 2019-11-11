@@ -16,7 +16,7 @@
         Textarea
 --------------------*/
 
-@textareaLineHeight: 20px;
+@textareaLineHeight:  1.42857143em;
 @textareaHoverBorderColor: @chambray;
 @textareaReadonlyBackground: @hawkesBlue;
 @textareaReadonlyBorderColor: @hawkesBlue;
