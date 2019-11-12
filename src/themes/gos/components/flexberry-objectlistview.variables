@@ -112,3 +112,48 @@
 @olvHeaderTextLineHeight: 24px;
 @olvHeaderTextColor: @lightGrayishBlue;
 
+@olvRowBackground: @white;
+
+@olvRowHoverBackground: @solitude;
+
+@olvRowStrippedBackground: @aliceBlue;
+
+@olvCellVerticalPadding: 0.75em;
+@olvCellHorizontalPadding: 0;
+@olvCellPadding: @olvCellVerticalPadding @olvCellHorizontalPadding;
+@olvCellBorder: none;
+
+@olvHelperCellLineHeight: 0;
+
+@olvRowActiveBackground: @solitude;
+
+@navBarButtonsMargin: 0 0 0 1px;
+@navBarButtonsBorder: none;
+
+@navBarButtonSize: 40px;
+@navBarButtonWidth: @navBarButtonSize;
+@navBarButtonHeight: @navBarButtonSize;
+@navBarButtonMargin: 0 0 0 4px;
+@navBarButtonVerticalPadding: 10px;
+@navBarButtonPaddingHorizontal: 12px;
+@navBarButtonPadding: @navBarButtonVerticalPadding @navBarButtonPaddingHorizontal;
+@navBarButtonFontSize: 0.875rem;
+@navBarButtonBorder: none;
+@navBarButtonBorderRadius: @defaultBorderRadius;
+
+@navBarPrevNextButtonsVerticalPadding: 0;
+@navBarPrevNextButtonsHorizontalPadding: 4px;
+@navBarPrevNextButtonsPadding: @navBarPrevNextButtonsVerticalPadding @navBarPrevNextButtonsHorizontalPadding;
+
+@navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
+@navBarPrevNextButtonsBeforeFontSize: 1.25rem;
+@navBarPrevNextButtonsBeforeTop: 2px;
+
+@navBarPrevButtonBeforeContent: "\e906";
+@navBarNextButtonBeforeContent: "\e908";
+
+@navBarShowingEntriesPadding: 10px;
+
+@navBarRowsPerPageDropdownHeight: 40px;
+@navBarRowsPerPageDropdownMinHeight: 40px;
+
