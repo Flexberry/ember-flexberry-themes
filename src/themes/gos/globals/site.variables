@@ -66,6 +66,10 @@
 @gray             : #EBEBEB;
 @solitude         : #E4EDF9;
 @whisper          : #E5E5E5;
+@davysGray        : #555555;
+@grimmysGray      : #777777;
+@anotherAliceBlue : #F5F8FF;
+
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;

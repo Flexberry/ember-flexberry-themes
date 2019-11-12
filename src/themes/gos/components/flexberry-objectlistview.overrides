@@ -1,3 +1,49 @@
+// Legacy
+
+.oveflow-text {
+  overflow: hidden;
+}
+
+.ui.table.object-list-view tr td {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.ui.table.object-list-view tr td.overflowed-cell,
+.ui.table.object-list-view tr td.object-list-view-menu {
+  overflow: visible;
+}
+
+.object-list-view-container {
+  margin: @olvContainerMargin;
+  max-width: @olvContainerMaxWidth;
+  overflow: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+  .object-list-view {
+    margin: @olvMargin;
+  }
+}
+
+.object-list-view-container.groupedit-container {
+  overflow: auto;
+}
+
+table.object-list-view.selectable tbody,
+table.object-list-view.selectable thead {
+  cursor: pointer;
+}
+
+.right.pointing.ui.icon.dropdown.button:hover i.icon.list.layout:before {
+  color: @olvDropdownMenuHoverBeforeColor;
+}
+
+.right.pointing.ui.icon.dropdown.button.active:hover i.icon.list.layout:before {
+  color: @olvDropdownMenuActiveHoverBeforeColor;
+}
+
+
 // Buttons
 .ui.refresh-button.button,
 .ui.delete-button.button,

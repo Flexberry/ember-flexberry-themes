@@ -1,32 +1,23 @@
+@olvContainerVerticalMargin: 1em;
+@olvContainerHorizontalMargin: 0;
+@olvContainerMargin: @olvContainerVerticalMargin @olvContainerHorizontalMargin;
 
-@olvContainerMargin: 1em 0;
+@olvContainerMaxWidth: 100%;
+
 @olvMargin: 0;
 
-/*******************************
-             Table
-*******************************/
-
-/*-------------------
-       Element
---------------------*/
+@olvDropdownMenuHoverBeforeColor: @white;
+@olvDropdownMenuActiveHoverBeforeColor: @primaryColor;
 
 @background: @white;
-@color: #555;
+@color: @davysGray;
 
-/* Table Header */
-@headerColor: #777;
+@headerColor: @grimmysGray;
 
-/*--------------
-     States
----------------*/
-
-/* Active */
 @activeBackgroundColor: @whiteBlue;
 
-/* Selectable */
-@selectableBackground: #f5f8ff;
+@selectableBackground: @anotherAliceBlue;
 
-/* Buttons */
 @defaultEditButtonColor: transparent;
 @filterButtonsBorderWidth: @defaultBorderWidth;
 @filterButtonsBorderStyle: @defaultBorderStyle;
@@ -34,13 +25,13 @@
 @filterButtonsBorder: @filterButtonsBorderWidth @filterButtonsBorderStyle @filterButtonsBorderColor;
 @buttonFontWeight: @defaultMediumFontWeight;
 
-/* Icons */
 @iconFontFamily: guideline-icons;
 @editIconFontSize: 25px;
+@editIconColor: @textColor;
+
 @editFilterIcon: "\e91a";
 @editExcelIcon: "\e916";
 @editColumnsIcon: "\e90d";
-@editIconColor: @textColor;
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
 
