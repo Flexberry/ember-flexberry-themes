@@ -53,6 +53,8 @@
 @buttonIconsLineHeight: unit(16 / 14, rem);
 @buttonPaddingRight: 0;
 
+@buttonsDropdownPaddingLeft: 0;
+
 @dropdownIconFontSize: 1em;
 @dropdownIconLineHeight: 1.5rem;
 

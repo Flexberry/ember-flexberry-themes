@@ -7,148 +7,142 @@
 .ui.table.object-list-view tr td {
   overflow-x: hidden;
   overflow-y: visible;
-}
 
-.ui.table.object-list-view tr td.overflowed-cell,
-.ui.table.object-list-view tr td.object-list-view-menu {
-  overflow: visible;
+  &.overflowed-cell, &.object-list-view-menu {
+    overflow: visible;
+  }
 }
 
 .object-list-view-container {
   margin: @olvContainerMargin;
   max-width: @olvContainerMaxWidth;
   overflow: auto;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 
   .object-list-view {
     margin: @olvMargin;
   }
+
+  &.groupedit-container {
+    overflow: auto;
+  }
 }
 
-.object-list-view-container.groupedit-container {
-  overflow: auto;
+table.object-list-view.selectable {
+  thead, tbody {
+    cursor: pointer;
+  }
 }
 
-table.object-list-view.selectable tbody,
-table.object-list-view.selectable thead {
-  cursor: pointer;
-}
+.right.pointing.ui.icon.dropdown {
+  &:hover i.icon.list.layout:before {
+    color: @olvDropdownMenuHoverBeforeColor;
+  }
 
-.right.pointing.ui.icon.dropdown.button:hover i.icon.list.layout:before {
-  color: @olvDropdownMenuHoverBeforeColor;
+  &.active:hover i.icon.list.layout:before {
+    color: @olvDropdownMenuActiveHoverBeforeColor;
+  }
 }
-
-.right.pointing.ui.icon.dropdown.button.active:hover i.icon.list.layout:before {
-  color: @olvDropdownMenuActiveHoverBeforeColor;
-}
-
 
 // Buttons
-.ui.refresh-button.button,
-.ui.delete-button.button,
-.ui.icon.button.config-button.settings-enabled,
-.flexberry-menu.ui.icon.dropdown.button,
-.ui.button,
-.ui.button.icon.export-button {
-  background: @defaultEditButtonColor;
+.ui.button {
+  &,
+  &.refresh-button,
+  &.delete-button,
+  &.icon.export-button,
+  &.icon.flexberry-menu.dropdown,
+  &.icon.config-button.settings-enabled {
+    background: @defaultEditButtonColor;
+  }
+
+  &.refresh-button,
+  &.delete-button {
+    font-size: @buttonsFontSize;
+  }
+
+  &.create-button {
+    background: @createButtonBackground;
+    color: @createButtonColor;
+    margin: @createButtonMargin;
+    font-weight: @buttonFontWeight;
+  }
 }
 
-.ui.button.refresh-button,
-.ui.button.delete-button {
-  font-size: @buttonsFontSize;
-}
+.ui.buttons {
+  &.filter-active {
+    border: @filterButtonsBorder;
 
-.ui.create-button.button {
-  background: @createButtonBackground;
-  color: @createButtonColor;
-  margin: @createButtonMargin;
-  font-weight: @buttonFontWeight;
-}
-
-.ui.buttons.filter-active {
-  border: @filterButtonsBorder;
-}
-
-.ui.icon.buttons.filter-active button {
-  padding: @filterButtonPadding;
+    &.icon button {
+      padding: @filterButtonPadding;
+    }
+  }
 }
 
 .ui.secondary.menu.no-margin:not(.nav-bar) {
-  .ui.button:focus {
-    border: @toolbarButtonFocusBorder;
-  }
+  padding-top: @menuPaddingTop;
+  margin-bottom: @menuMarginBottom;
 
-  .ui.buttons .ui.button:hover {
-    background: @toolbarButtonHoverBackground;
-  }
-
-  .ui.button.refresh-button,
-  .ui.button.delete-button {
-    i.icon {
-      font-size: @buttonIconsFontSize;
-      line-height: @buttonIconsLineHeight;
+  .ui.button {
+    &:focus {
+      border: @toolbarButtonFocusBorder;
+    }
+    &.refresh-button,
+    &.delete-button {
+      i.icon {
+        font-size: @buttonIconsFontSize;
+        line-height: @buttonIconsLineHeight;
+      }
     }
   }
 
-  i.icon.filter:before {
-    content: @editFilterIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+  i.icon {
+    &:not(.flask):before {
+      color: @editIconColor;
+      font-family: @iconFontFamily;
+      font-size: @editIconFontSize;
+    }
 
-  i.icon.file.excel.outline:before {
-    content: @editExcelIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+    &.filter:before {
+      content: @editFilterIcon;
+    }
 
-  i.icon.table::before {
-    content: @editColumnsIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+    &.file.excel.outline:before {
+      content: @editExcelIcon;
+    }
 
-  i.icon.refresh:before {
-    content: @refreshButtonIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+    &.table:before {
+      content: @editColumnsIcon;
+    }
 
-  i.icon.delete:before {
-    content: @deleteButtonIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+    &.refresh:before {
+      content: @refreshButtonIcon;
+    }
 
-  i.icon.flask::before {
-    color: @editIconColor;
+    &.delete:before {
+      content: @deleteButtonIcon;
+    }
+
+    &.flask:before {
+      color: @editIconColor;
+    }
   }
 
   > .buttons {
     .flexberry-menu.ui.dropdown {
-      padding-left: 0;
-      > .dropdown.icon {
-        color: @editIconColor;
+      padding-left: @buttonsDropdownPaddingLeft;
+
+      > .dropdown.icon:before {
         font-size: @dropdownIconFontSize;
         line-height: @dropdownIconLineHeight;
+        content: "\e904";
       }
     }
+
     .button {
       padding-right: @buttonPaddingRight;
     }
   }
-}
-
-// Menu 
-.ui.secondary.menu.no-margin {
-  padding-top: @menuPaddingTop;
-  margin-bottom: @menuMarginBottom;
 }
 
 // Header
@@ -160,46 +154,46 @@ table.object-list-view.selectable thead {
 
 .ui.table.object-list-view {
   border: @olvBorder;
-}
 
-.ui.table.object-list-view thead tr th {
-  background: @olvHeaderBackground;
-  border-top: @olvHeaderBorderTop;
-  border-right: @olvHeaderBorderRight;
-  border-bottom: @olvHeaderBorderBottom;
-  border-left: @olvHeaderBorderLeft;
-  padding: @olvHeaderPadding;
-}
+  thead tr th {
+    background: @olvHeaderBackground;
+    border-top: @olvHeaderBorderTop;
+    border-right: @olvHeaderBorderRight;
+    border-bottom: @olvHeaderBorderBottom;
+    border-left: @olvHeaderBorderLeft;
+    padding: @olvHeaderPadding;
 
-.ui.table.object-list-view thead tr th:first-child {
-  padding: @olvFirstHeaderPadding;
-}
+    &:first-child {
+      padding: @olvFirstHeaderPadding;
+    }
 
-.ui.table.object-list-view thead tr th.object-list-view-operations button {
-  background: @olvOperationsBackground;
-  padding: @olvOperationsPadding;
-}
+    &.object-list-view-operations button {
+      background: @olvOperationsBackground;
+      padding: @olvOperationsPadding;
 
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button {
-  padding: @olvOperationCheckAllAtPagePadding;
-}
+      &.check-all-at-page-button {
+        padding: @olvOperationCheckAllAtPagePadding;
 
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button::before {
-  font-family: @olvOperationCheckAllAtPageBeforeFontFamily;
-  font-size: @olvOperationCheckAllAtPageBeforeFontSize;
-  content: @olvOperationCheckAllAtPageBeforeContent;
-}
+        &:before {
+          font-family: @olvOperationCheckAllAtPageBeforeFontFamily;
+          font-size: @olvOperationCheckAllAtPageBeforeFontSize;
+          content: @olvOperationCheckAllAtPageBeforeContent;
+        }
+      }
 
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page::before {
-  content: @olvOperationCheckAllBeforeContent;
-}
+      &.check-all-at-page::before {
+        content: @olvOperationCheckAllBeforeContent;
+      }
+    }
 
-.ui.table.object-list-view thead tr th div span {
-  padding: @olvHeaderTextPadding;
-  font-size: @olvHeaderTextFontSize;
-  font-weight: @olvHeaderTextFontWeight;
-  line-height: @olvHeaderTextLineHeight;
-  color: @lightGrayishBlue;
+    div span {
+      padding: @olvHeaderTextPadding;
+      font-size: @olvHeaderTextFontSize;
+      font-weight: @olvHeaderTextFontWeight;
+      line-height: @olvHeaderTextLineHeight;
+      color: @lightGrayishBlue;
+    }
+  }
 }
 
 
