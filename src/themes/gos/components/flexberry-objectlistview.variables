@@ -26,7 +26,7 @@
 @buttonFontWeight: @defaultMediumFontWeight;
 
 @iconFontFamily: guideline-icons;
-@editIconFontSize: 25px;
+@editIconFontSize: 1.5rem;
 @editIconColor: @textColor;
 
 @editFilterIcon: "\e91a";
@@ -84,12 +84,12 @@
 @olvHeaderHorizontalPadding: 0;
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
-@olvFirstHeaderPadding: 0 0 0 10px;
+@olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 
-@olvOperationCheckAllAtPagePadding: 10px 0 0 0;
+@olvOperationCheckAllAtPagePadding: unit(10 / 14, em) 0 0 0;
 
 @olvOperationCheckAllAtPageBeforeFontFamily: 'guideline-icons';
 @olvOperationCheckAllAtPageBeforeFontSize: 2em;
@@ -97,10 +97,10 @@
 
 @olvOperationCheckAllBeforeContent: none;
 
-@olvHeaderTextPadding: 0 0 0 10px;
-@olvHeaderTextFontSize: 16px;
-@olvHeaderTextFontWeight: 500;
-@olvHeaderTextLineHeight: 24px;
+@olvHeaderTextPadding: 0 0 0 0.625em;
+@olvHeaderTextFontSize: 1em;
+@olvHeaderTextFontWeight: @defaultMediumFontWeight;
+@olvHeaderTextLineHeight: 1.5em;
 @olvHeaderTextColor: @lightGrayishBlue;
 
 @olvRowBackground: @white;
@@ -124,26 +124,26 @@
 @navBarButtonSize: 40px;
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonHeight: @navBarButtonSize;
-@navBarButtonMargin: 0 0 0 4px;
-@navBarButtonVerticalPadding: 10px;
-@navBarButtonPaddingHorizontal: 12px;
+@navBarButtonMargin: 0 0 0 unit(4 / 14, em);
+@navBarButtonVerticalPadding: unit(10 / 14, em);
+@navBarButtonPaddingHorizontal: unit(12 / 14, em);
 @navBarButtonPadding: @navBarButtonVerticalPadding @navBarButtonPaddingHorizontal;
 @navBarButtonFontSize: 0.875rem;
 @navBarButtonBorder: none;
 @navBarButtonBorderRadius: @defaultBorderRadius;
 
 @navBarPrevNextButtonsVerticalPadding: 0;
-@navBarPrevNextButtonsHorizontalPadding: 4px;
+@navBarPrevNextButtonsHorizontalPadding: unit(4 / 14, em);
 @navBarPrevNextButtonsPadding: @navBarPrevNextButtonsVerticalPadding @navBarPrevNextButtonsHorizontalPadding;
 
 @navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
-@navBarPrevNextButtonsBeforeFontSize: 1.25rem;
-@navBarPrevNextButtonsBeforeTop: 2px;
+@navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
+@navBarPrevNextButtonsBeforeTop: 0.1em;
 
 @navBarPrevButtonBeforeContent: "\e906";
 @navBarNextButtonBeforeContent: "\e908";
 
-@navBarShowingEntriesPadding: 10px;
+@navBarShowingEntriesPadding: 0.625em;
 
 @navBarRowsPerPageDropdownHeight: 40px;
 @navBarRowsPerPageDropdownMinHeight: 40px;
