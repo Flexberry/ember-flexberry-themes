@@ -54,7 +54,9 @@
 @headerHeightMobile : 50px;
 @footerHeightMobile : 40px;
 
-
+@distanceL: 2rem;
+@distanceM: 1.5rem;
+@distanceS: 1rem;
 
 
 /* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
@@ -88,4 +90,5 @@
 
 
 
-
+// Sidebar
+@sidebarBackgroundColor: @textColor;
