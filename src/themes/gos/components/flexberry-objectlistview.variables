@@ -1,41 +1,152 @@
+@olvContainerVerticalMargin: 1em;
+@olvContainerHorizontalMargin: 0;
+@olvContainerMargin: @olvContainerVerticalMargin @olvContainerHorizontalMargin;
 
-@olvContainerMargin: 1em 0;
+@olvContainerMaxWidth: 100%;
+
 @olvMargin: 0;
 
-/*******************************
-             Table
-*******************************/
-
-/*-------------------
-       Element
---------------------*/
+@olvDropdownMenuHoverBeforeColor: @white;
+@olvDropdownMenuActiveHoverBeforeColor: @primaryColor;
 
 @background: @white;
-@color: #555;
+@color: @davysGray;
 
-/* Table Header */
-@headerColor: #777;
+@headerColor: @grimmysGray;
 
-/*--------------
-     States
----------------*/
-
-/* Active */
 @activeBackgroundColor: @whiteBlue;
 
-/* Selectable */
-@selectableBackground: #f5f8ff;
+@selectableBackground: @anotherAliceBlue;
 
-/* Buttons */
 @defaultEditButtonColor: transparent;
-@createButtonColor: @primaryColor;
-@filterButtonBorderStyle: @defaultBorderWidth @defaultBorderStyle transparent;
+@filterButtonsBorderWidth: @defaultBorderWidth;
+@filterButtonsBorderStyle: @defaultBorderStyle;
+@filterButtonsBorderColor: transparent;
+@filterButtonsBorder: @filterButtonsBorderWidth @filterButtonsBorderStyle @filterButtonsBorderColor;
 @buttonFontWeight: @defaultMediumFontWeight;
 
-/* Icons */
 @iconFontFamily: guideline-icons;
-@editIconFontSize: 25px;
+@editIconFontSize: 1.5rem;
+@editIconColor: @textColor;
+
 @editFilterIcon: "\e91a";
 @editExcelIcon: "\e916";
 @editColumnsIcon: "\e90d";
-@editIconColor: @textColor;
+@refreshButtonIcon: "\e925";
+@deleteButtonIcon: "\e911";
+
+@createButtonBackgroundColor: @primaryColor;
+@createButtonBackground: @createButtonBackgroundColor;
+@createButtonColor: @white;
+@createButtonMargin: 0 @distanceS;
+
+@filterButtonVerticalPadding: 0em;
+@filterButtonHorizontalPadding: 0.5em;
+@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+
+@toolbarButtonFocusBorder: none;
+@toolbarButtonHoverBackground: none;
+
+@buttonsFontSize: 0px;
+
+@buttonIconsFontSize: 1rem;
+@buttonIconsLineHeight: unit(16 / 14, rem);
+@buttonPaddingRight: 0;
+
+@buttonsDropdownPaddingLeft: 0;
+
+@dropdownIconFontSize: 1em;
+@dropdownIconLineHeight: 1.5rem;
+
+@menuPaddingTop: @distanceS;
+@menuMarginBottom: 0;
+
+@olvContainerBorderWidth: @defaultBorderWidth;
+@olvContainerBorderStyle: @defaultBorderStyle;
+@olvContainerBorderColor: @whisper;
+
+@olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
+@olvContainerBorderRadius: @defaultBorderRadius;
+@olvContainerBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+
+@olvBorder: none;
+
+@olvHeaderBackground: @white;
+
+@olvHeaderBorderWidth: @defaultBorderWidth;
+@olvHeaderBorderStyle: @defaultBorderStyle;
+@olvHeaderBorderColor: @whisper;
+
+@olvHeaderBorderTop: none;
+@olvHeaderBorderRight: none;
+@olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
+@olvHeaderBorderLeft: none;
+
+@olvHeaderVerticalPadding: 0.75em;
+@olvHeaderHorizontalPadding: 0;
+@olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
+
+@olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
+
+@olvOperationsBackground: transparent;
+@olvOperationsPadding: 0;
+
+@olvOperationCheckAllAtPagePadding: unit(10 / 14, em) 0 0 0;
+
+@olvOperationCheckAllAtPageBeforeFontFamily: 'guideline-icons';
+@olvOperationCheckAllAtPageBeforeFontSize: 2em;
+@olvOperationCheckAllAtPageBeforeContent: '\e928';
+
+@olvOperationCheckAllBeforeContent: none;
+
+@olvHeaderTextPadding: 0 0 0 0.625em;
+@olvHeaderTextFontSize: 1em;
+@olvHeaderTextFontWeight: @defaultMediumFontWeight;
+@olvHeaderTextLineHeight: 1.5em;
+@olvHeaderTextColor: @lightGrayishBlue;
+
+@olvRowBackground: @white;
+
+@olvRowHoverBackground: @solitude;
+
+@olvRowStrippedBackground: @aliceBlue;
+
+@olvCellVerticalPadding: 0.75em;
+@olvCellHorizontalPadding: 0;
+@olvCellPadding: @olvCellVerticalPadding @olvCellHorizontalPadding;
+@olvCellBorder: none;
+
+@olvHelperCellLineHeight: 0;
+
+@olvRowActiveBackground: @solitude;
+
+@navBarButtonsMargin: 0 0 0 1px;
+@navBarButtonsBorder: none;
+
+@navBarButtonSize: 40px;
+@navBarButtonWidth: @navBarButtonSize;
+@navBarButtonHeight: @navBarButtonSize;
+@navBarButtonMargin: 0 0 0 unit(4 / 14, em);
+@navBarButtonVerticalPadding: unit(10 / 14, em);
+@navBarButtonPaddingHorizontal: unit(12 / 14, em);
+@navBarButtonPadding: @navBarButtonVerticalPadding @navBarButtonPaddingHorizontal;
+@navBarButtonFontSize: 0.875rem;
+@navBarButtonBorder: none;
+@navBarButtonBorderRadius: @defaultBorderRadius;
+
+@navBarPrevNextButtonsVerticalPadding: 0;
+@navBarPrevNextButtonsHorizontalPadding: unit(4 / 14, em);
+@navBarPrevNextButtonsPadding: @navBarPrevNextButtonsVerticalPadding @navBarPrevNextButtonsHorizontalPadding;
+
+@navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
+@navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
+@navBarPrevNextButtonsBeforeTop: 0.1em;
+
+@navBarPrevButtonBeforeContent: "\e906";
+@navBarNextButtonBeforeContent: "\e908";
+
+@navBarShowingEntriesPadding: 0.625em;
+
+@navBarRowsPerPageDropdownHeight: 40px;
+@navBarRowsPerPageDropdownMinHeight: 40px;
+
