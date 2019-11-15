@@ -1,0 +1,6 @@
+// Primary
+
+@accordionBackgroundColor: transparent;
+@accordionTitleColor: @secondaryColor;
+@accordionIcon: "\f107";
+@accordionIconRotate: rotate(180deg);

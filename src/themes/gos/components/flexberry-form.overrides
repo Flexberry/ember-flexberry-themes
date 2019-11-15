@@ -1,40 +1,46 @@
 // Main
 .ui.form.flexberry-vertical-form {
-    background: @editBackground;
-    padding: @flexEditFormPadding;
+  background: @editBackground;
+  padding: @flexEditFormPadding;
+  padding-bottom: @distanceL;
+  // TODO: Сделать нормально
+  min-height: calc(~'100% - 30px - 1em');
 }
 
 .flexberry-content.ui.attached.segment {
-    padding: @flexberryContentPadding;
+  padding: @flexberryContentPadding;
 }
 
-// TODO: вот это нужно добавлять только к заголовку на форме редактирвоания, 
-// убрать, после того, как можно будет однозначно определить форму.
-// Header
-.ui.header {
-    padding-left: @distanceL;
-    font-weight: @headerFontWeight;
+.ui.main.container,
+.stackable.grid.container {
+  height: 100%
+}
+
+// Headers
+.ui.main.container > .stackable.grid.container > h3{
+  margin-top: 0;
+  font-weight: @headerFontWeight;
+  padding-left: @distanceL;
 }
 
 // Buttons
 .flexberry-edit-panel {
-    padding-top: @distanceS;
-    .ui.button:first-child {
-        padding-left: 0;
-    }
+  padding-top: @distanceS;
+  .ui.button:first-child {
+    padding-left: 0;
+  }
 }
 
 .flexberry-edit-panel .ui.button.save-button,
 .flexberry-edit-panel .ui.button.save-close-button,
 .flexberry-edit-panel .ui.button.save-del-button,
 .flexberry-edit-panel .ui.button.close-button {
-    background: @editBackground;
-    font-weight: @buttonFontWeight; 
-    color: @editButtonsColor;
-
-    &:focus {
-        border: @toolbarButtonFocusBorder;
-    }
+  background: @editBackground;
+  font-weight: @buttonFontWeight; 
+  color: @editButtonsColor;
+  &:focus {
+    border: @toolbarButtonFocusBorder;
+  }
 }
 
 // Icons
@@ -46,12 +52,11 @@
     font-size: @iconFontSize;
     padding-right: @iconPadding;
 }
-
+    
 .ui.button.save-close-button {
     position: relative;
-
     &::before {
-        content: "\f0c7";
+        content: @saveIcon;
         font-family: outline-icons;
         font-size: @iconFontSize;
         padding-right: @iconPadding;
@@ -59,7 +64,7 @@
 
     // Убрать, когда появится иконка Сохранить и закрыть
     &::after {
-        content: "\e915";
+        content: @successIcon;
         font-family: @iconFontFamily;
         font-size: @iconFontSize;
         position: absolute;
@@ -80,12 +85,32 @@
     float: right;
     line-height: @distanceM;
     padding-top: @closeButtonPaddingTop;
-
     &::before {
         // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
-        content: "\e806";
+        content: @closeIcon;
         font-family: 'Crimean';
         font-size: 12px;
         font-weight: 700;
     }
+}
+
+.ui.input textarea {
+    line-height: @textareaLineHeight;
+    font-family: @pageFont;
+}
+
+.ui.input textarea:hover {
+    border-color: @textareaHoverBorderColor;
+}
+
+.ui.input textarea[readonly],
+.ui.input textarea[disabled] {
+    pointer-events: none;
+    background: @textareaReadonlyBackground;
+    border-color: @textareaReadonlyBorderColor;
+}
+
+.ui.input textarea:focus,
+.ui.input textarea:active {
+    border-color: @defaultFocusBorderColor;
 }

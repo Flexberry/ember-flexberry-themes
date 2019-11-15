@@ -12,9 +12,20 @@
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
 
+/*-------------------
+        Textarea
+--------------------*/
+
+@textareaLineHeight:  1.42857143em;
+@textareaHoverBorderColor: @chambray;
+@textareaReadonlyBackground: @hawkesBlue;
+@textareaReadonlyBorderColor: @hawkesBlue;
+
 // General
 @editBackground: #fff;
 @flexEditFormPadding: 0 @distanceL;
+
+// Buttons
 @flexberryContentPadding: @distanceM 0 0 0;
 @headerFontWeight: 400;
 
@@ -30,6 +41,7 @@
 @successIcon: "\e92d";
 @deleteIcon: "\e911";
 @errorIcon: "\e915";
+@closeIcon: "\e806";
 @iconPadding: 10px;
 @iconFontSize: 16px;
 @closeButtonFontSize: 40px;
