@@ -59,7 +59,7 @@
 @hoveredItemBackground: @selectionBackground;
 
 /* Active Menu Item */
-@activeItemFontWeight: @normal;
+@activeItemFontWeight: @defaultNormalFontWeight;
 /* Selected */
 @selectedBackground: @selectionBackground;
 

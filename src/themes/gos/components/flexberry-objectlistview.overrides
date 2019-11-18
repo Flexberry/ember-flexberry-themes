@@ -87,6 +87,7 @@ table.object-list-view.selectable {
     &:focus {
       border: @toolbarButtonFocusBorder;
     }
+
     &.refresh-button,
     &.delete-button {
       i.icon {
@@ -201,76 +202,86 @@ table.object-list-view.selectable {
 
 .ui.table.object-list-view tbody tr {
   background: @olvRowBackground;
-}
 
-.ui.table.object-list-view tbody tr td {
-  padding: @olvCellPadding;
-  border: @olvCellBorder;
-}
-
-.ui.table.object-list-view tbody tr:hover,
-.ui.striped.table.object-list-view tbody tr:nth-child(2n):hover,
-.ui.striped.selectable.selectable.selectable.table tbody tr.active:hover {
-  background: @olvRowHoverBackground !important;
-}
-
-.ui.striped.table.object-list-view tbody tr:nth-child(2n) {
-  background: @olvRowStrippedBackground;
+  td {
+    padding: @olvCellPadding;
+    border: @olvCellBorder;
+  }
 }
 
 .object-list-view-helper-column-cell {
   line-height: @olvHelperCellLineHeight;
 }
 
-.ui.table.object-list-view tr.active,
-.ui.table.object-list-view td.active {
-  background: @olvRowActiveBackground !important;
+// Hover
+.ui.table.object-list-view tbody tr,
+.ui.striped.table.object-list-view tbody tr:nth-child(2n),
+.ui.striped.selectable.selectable.selectable.table tbody tr.active {
+  &:hover {
+    background: @olvRowHoverBackground !important;
+  }
+}
+
+// Striped
+.ui.striped.table.object-list-view tbody tr:nth-child(2n) {
+  background: @olvRowStrippedBackground;
+}
+
+// Active
+.ui.table.object-list-view {
+  tr.active,
+  td.active {
+    background: @olvRowActiveBackground !important;
+  }
 }
 
 
 // Navigation bar
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons {
-  margin: @navBarButtonsMargin;
-  border: @navBarButtonsBorder;
-}
+.ui.secondary.menu.nav-bar {
+  .ui.basic.buttons {
+    margin: @navBarButtonsMargin;
+    border: @navBarButtonsBorder;
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button {
-  width: @navBarButtonWidth;
-  height: @navBarButtonHeight;
-  margin: @navBarButtonMargin;
-  padding: @navBarButtonPadding;
-  font-size: @navBarButtonFontSize;
-  border: @navBarButtonBorder;
-  border-radius: @navBarButtonBorderRadius;
-}
+    .ui.button {
+      width: @navBarButtonWidth;
+      height: @navBarButtonHeight;
+      margin: @navBarButtonMargin;
+      padding: @navBarButtonPadding;
+      font-size: @navBarButtonFontSize;
+      border: @navBarButtonBorder;
+      border-radius: @navBarButtonBorderRadius;
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.prev-page-button,
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.next-page-button {
-  padding: @navBarPrevNextButtonsPadding;
-}
+      &.prev-page-button,
+      &.next-page-button {
+        padding: @navBarPrevNextButtonsPadding;
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.prev-page-button::before,
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.next-page-button::before {
-  font-family: @navBarPrevNextButtonsBeforeFontFamily;
-  font-size: @navBarPrevNextButtonsBeforeFontSize;
-  position: relative;
-  top: @navBarPrevNextButtonsBeforeTop;
-}
+        &:before {
+          position: relative;
+          top: @navBarPrevNextButtonsBeforeTop;
+          font-family: @navBarPrevNextButtonsBeforeFontFamily;
+          font-size: @navBarPrevNextButtonsBeforeFontSize
+        }
+      }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.prev-page-button::before {
-  content: @navBarPrevButtonBeforeContent;
-}
+      &.prev-page-button::before {
+        content: @navBarPrevButtonBeforeContent;
+      }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.next-page-button::before {
-  content: @navBarNextButtonBeforeContent;
-}
+      &.next-page-button::before {
+        content: @navBarNextButtonBeforeContent;
+      }
+    }
+  }
 
-.ui.secondary.menu.nav-bar .right.menu .showing-entries {
-  padding: @navBarShowingEntriesPadding;
-}
+  .right.menu {
+    .showing-entries {
+      padding: @navBarShowingEntriesPadding;
+    }
 
-.ui.secondary.menu.nav-bar .right.menu .flexberry-dropdown {
-  min-height: @navBarRowsPerPageDropdownMinHeight;
-  height: @navBarRowsPerPageDropdownHeight;
+    .flexberry-dropdown {
+      min-height: @navBarRowsPerPageDropdownMinHeight;
+      height: @navBarRowsPerPageDropdownHeight;
+    }
+  }
 }
