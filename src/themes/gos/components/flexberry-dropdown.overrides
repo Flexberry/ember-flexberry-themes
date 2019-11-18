@@ -1,6 +1,36 @@
-.ui.dropdown > .dropdown.icon:before {
-    font-family: 'guideline-icons';
-    font-size: 2em;
-    color: @blueZodiak;
-    content: "\e904";
+.ui.selection.dropdown {
+  line-height: @textLineHeight;
+
+  &.active {
+    background: @selectionVisibleBackground;
   }
+
+  &.disabled {
+    background: @selectionReadonlyBackground;
+    border-color: @selectionReadonlyBorderColor;
+  }
+}
+
+.ui.dropdown.flexberry-dropdown {
+  font-size: @fontSize;
+
+  > .dropdown.icon {
+    font-family: @dropdownIconFontFamily;
+
+    &::before {
+      content: @dropdownIcon;
+    }
+  }
+}
+
+/* Focus */
+.ui.selection.active.dropdown:focus {
+  box-shadow: @selectionActiveFocusBoxShadow;
+}
+.ui.upward.selection.active.dropdown:focus {
+  box-shadow: @upwardSelectionVisibleBoxShadow;
+}
+
+.ui.selection.dropdown.compact > .dropdown.icon {
+  padding-right: 0;
+}

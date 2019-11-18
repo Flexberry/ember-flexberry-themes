@@ -8,7 +8,7 @@
 
 @lookupFieldHoverBorderWidth: @defaultBorderWidth;
 @lookupFieldHoverBorderStyle: @defaultBorderStyle;
-@lookupFieldHoverBorderColor: @chambray;
+@lookupFieldHoverBorderColor: @inputHoverBorderColor;
 @lookupFieldHoverBorder: @lookupFieldHoverBorderWidth @lookupFieldHoverBorderStyle @lookupFieldHoverBorderColor;
 
 @lookupFieldFocusBorderWidth: @defaultBorderWidth;
@@ -17,10 +17,10 @@
 @lookupFieldFocusBorder: @lookupFieldFocusBorderWidth @lookupFieldFocusBorderStyle @lookupFieldFocusBorderColor;
 @autocompleteFocusBackground: @white;
 
-@lookupFieldDisabledBackground: @hawkesBlue;
+@lookupFieldDisabledBackground: @inputReadonlyBackground;
 @lookupFieldDisabledBorderWidth: @defaultBorderWidth;
 @lookupFieldDisabledBorderStyle: @defaultBorderStyle;
-@lookupFieldDisabledBorderColor: @hawkesBlue;
+@lookupFieldDisabledBorderColor: @inputReadonlyBorderColor;
 @lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
 
 @lookupButtonPadding: 0em;

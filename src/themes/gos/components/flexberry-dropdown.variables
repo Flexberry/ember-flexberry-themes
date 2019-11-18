@@ -1,17 +1,75 @@
-@selectionBackground: @aliceBlue;
+/*******************************
+            Dropdown
+*******************************/
+@fontSize: @defaultInputFontSize;
 
-@selectionBorder: 1px solid transparent;
-@selectionBorderRadius: 4px;
-
-@selectionHoverBorderColor: @chambray;
-
-@selectionFocusBorderColor: @mayaBlue;
-
-@selectBorder: none;
-
-@selectionVisibleBorderColor: transparent;
-
-@defaultTextColor: @blueZodiak;
-@defaultTextFocusColor: @blueZodiak;
+/* Text */
+@textLineHeight: @inputLineHeight;
+@defaultTextColor: @textColor;
+@defaultTextFocusColor: @textColor;
 
 @menuBorder: none;
+
+/*-------------------
+       Content
+--------------------*/
+/* Icon */
+@dropdownIconSize: 1.5em;
+@dropdownIconFontFamily: 'guideline-icons';
+@dropdownIcon: "\e904";
+
+/* Menu Item */
+@itemFontSize: 1em;
+@itemHorizontalPadding: @inputHorizontalPadding;
+
+/*------------
+   Selection
+--------------*/
+@selectionBackground: @inputBackground;
+@selectionBorder: @defaultInputBorder;
+@selectionBorderRadius: @inputBorderRadius;
+@selectionItemDivider: none;
+@selectBorder: none;
+/* Hover */
+@selectionHoverBorderColor: @inputHoverBorderColor;
+/* Focus */
+@selectionFocusBorderColor: none;
+@selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
+/* Visible */
+@selectionVisibleBorderColor: transparent;
+@selectionVisibleBackground: @defaultInputFocusBackground;
+@selectionVisibleBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@selectionVisibleMenuBoxShadow: 0px 9px 12px rgba(95, 95, 95, 0.153646);
+/* Visible Hover */
+@selectionActiveHoverBorderColor: @selectionVisibleBorderColor;
+// Visible Focus
+@selectionActiveFocusBoxShadow: @selectionVisibleBoxShadow;
+
+@selectionReadonlyBackground: @inputReadonlyBackground;
+@selectionReadonlyBorderColor: @inputReadonlyBorderColor;
+/*--------------
+     Search
+--------------*/
+@searchSelectionLineHeight: 1;
+
+/*-------------------
+       States
+--------------------*/
+/* Hovered */
+@hoveredItemBackground: @selectionBackground;
+
+/* Active Menu Item */
+@activeItemFontWeight: @normal;
+/* Selected */
+@selectedBackground: @selectionBackground;
+
+@defaultTextColor: @inputPlaceholderColor;
+
+/*-------------------
+      Variations
+--------------------*/
+/* Upward */
+@upwardSelectionMenuBoxShadow: 0px -9px 12px rgba(95, 95, 95, 0.153646);
+@upwardSelectionVisibleBoxShadow: 0px -4px 12px rgba(95, 95, 95, 0.153646);
+@upwardSelectionActiveHoverBoxShadow: @upwardSelectionVisibleBoxShadow;
+@upwardSelectionActiveHoverMenuBoxShadow: @upwardSelectionMenuBoxShadow;
