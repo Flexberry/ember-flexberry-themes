@@ -4,13 +4,22 @@
 
 @inputFontSize: @defaultInputFontSize;
 @inputPadding: @inputVerticalPadding @inputHorizontalPadding;
-@inputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
+@inputBorder: @defaultInputBorder;
 
-@inputFocusBackground: @white;
+@inputFocusBackground: @defaultInputFocusBackground;
 
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
+
+/*-------------------
+        Textarea
+--------------------*/
+
+@textareaLineHeight: @inputLineHeight;
+@textareaHoverBorderColor: @inputHoverBorderColor;
+@textareaReadonlyBackground: @inputReadonlyBackground;
+@textareaReadonlyBorderColor: @inputReadonlyBorderColor;
 
 // General
 @editBackground: #fff;
@@ -36,4 +45,3 @@
 @iconPadding: 10px;
 @iconFontSize: 16px;
 @closeButtonFontSize: 40px;
-

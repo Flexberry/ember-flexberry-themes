@@ -11,12 +11,18 @@
     border: @lookupFieldBorder;
 }
 
-.flexberry-lookup>.ui.input>.lookup-field:hover {
-    border: @lookupFieldHoverBorder;
+.flexberry-lookup>.ui.input>.lookup-field:focus {
+    border: @lookupFieldBorder;
+    background: @lookupFieldBackground;
 }
 
-.flexberry-lookup>.ui.input>.lookup-field:focus {
+.flexberry-lookup.search>.ui.input>.lookup-field.prompt:focus {
     border: @lookupFieldFocusBorder;
+    background: @autocompleteFocusBackground;
+}
+
+.flexberry-lookup>.ui.input>.lookup-field:hover {
+    border: @lookupFieldHoverBorder;
 }
 
 .flexberry-lookup>.ui.input>.lookup-field.disabled {
@@ -34,12 +40,16 @@
     border-right-color: @lookupFieldBorderColor !important;
 }
 
-.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:hover {
-    border-right-color: @lookupFieldHoverBorderColor !important;
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:focus {
+    border-right-color: @lookupFieldBorderColor !important;
 }
 
-.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:focus {
+.flexberry-lookup.search>.ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
     border-right-color: @lookupFieldFocusBorderColor !important;
+}
+
+.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:hover {
+    border-right-color: @lookupFieldHoverBorderColor !important;
 }
 
 .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field.disabled {
@@ -73,6 +83,18 @@
     right: @lookupChangeButtonRight;
 }
 
+.flexberry-lookup>.ui.input>.ui-preview {
+    right: @lookupPreviewButtonRight;
+}
+
+.flexberry-lookup>.ui.input>.ui-preview~.ui-clear {
+    right: @lookupClearButtonRightWithPreview;
+}
+
+.flexberry-lookup>.ui.input>.ui-preview~.ui-change {
+    right: @lookupChangeButtonRightWithPreview;
+}
+
 .flexberry-lookup>.ui.input>.ui.button>.icon {
     margin: @lookupIconMargin;
     width: @lookupIconWidth;
@@ -81,10 +103,22 @@
 
 .flexberry-lookup>.ui.input>.ui.button>.icon::before {
     top: @lookupBeforeIconTop;
+    font-family: 'guideline-icons';
     font-size: @lookupBeforeIconFontSize;
     position: relative;
 }
 
+.flexberry-lookup>.ui.input>.ui-clear>.icon::before {
+    content: "\e90e";
+}
+
+.flexberry-lookup>.ui.input>.ui-change>.icon::before {
+    content: "\e91d";
+}
+
+.flexberry-lookup>.ui.input>.ui-preview>.icon::before {
+    content: "\e917";
+}
 
 // Autocomplete
 
