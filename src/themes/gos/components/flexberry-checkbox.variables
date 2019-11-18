@@ -4,7 +4,7 @@
 @checkboxBackground: @inputBackground;
 @checkboxBorderWidth: @defaultBorderWidth;
 @checkboxBorderStyle: @defaultBorderStyle;
-@checkboxBorderColor: @chambray;
+@checkboxBorderColor: @inputHoverBorderColor;
 @checkboxBorder: @checkboxBorderWidth @checkboxBorderStyle @checkboxBorderColor;
 @checkboxBorderRadius: @defaultBorderRadius;
 @labelColor: @textColor;
@@ -60,17 +60,17 @@
 @toggleLaneVerticalOffset: @defaultVerticalOffset;
 @toggleLaneBorderWidth: @defaultBorderWidth;
 @toggleLaneBorderStyle: @defaultBorderStyle;
-@toggleLaneBorderColor: @chambray;
+@toggleLaneBorderColor: @inputHoverBorderColor;
 @toggleLaneBorder: @toggleLaneBorderWidth @toggleLaneBorderStyle @toggleLaneBorderColor;
 
 @toggleHandleSize: @defaultToggleHandleSize;
 @toggleHandleRadius: @circularRadius;
 @toggleHandleOffset: @defaultToggleHandleOffset;
-@toggleHandleBackgroundColor: @chambray;
+@toggleHandleBackgroundColor: @inputHoverBorderColor;
 @toggleHandleBackground: @toggleHandleBackgroundColor;
 @toggleHandleBorderWidth:@defaultBorderWidth;
 @toggleHandleBorderStyle: @defaultBorderStyle;
-@toggleHandleBorderColor: @chambray;
+@toggleHandleBorderColor: @inputHoverBorderColor;
 @toggleHandleBorder: @toggleHandleBorderWidth @toggleHandleBorderStyle @toggleHandleBorderColor;
 
 @toggleOffOffset: @defaultToggleHandleOffset;
