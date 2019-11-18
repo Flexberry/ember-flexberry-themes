@@ -1,3 +1,12 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.launch.icon.item {
+  font-size: @toggleButtonFontSize;
+  padding: @toggleButtonPadding;
+}
+
 .inverted.vertical.main.menu.sidebar {
   overflow: visible ! important;
   padding: @sidebarPadding;
@@ -6,16 +15,20 @@
     padding: @itemPadding;
   }
 
-  // submenu
-  .dropdown.item .menu {
-    .border-radius(@subMenuBordetRadius);
-    border-top: 0;
-    height: 100%;
-    padding: @sidebarPadding;
-    position: fixed;
+  .title-item-menu {
+    max-height: @itemFontSize;
   }
 
-  // main menu only
+  /* Sub Menu */
+  .dropdown.item .menu {
+    border-radius: @subMenuBordetRadius;
+    border-top: @subMenuBorderTop;
+    height: @subMenuHeight;
+    padding: @subMenuPadding;
+    position: @subMenuPosition;
+  }
+
+  /* main menu only */
   > div {
     > .active.item {
       background: @itemHoveredBackground;
@@ -27,35 +40,30 @@
     }
 
     > .item {
-      .title-item-menu .icon {
-        .opacity(@itemIconOpacity);
-        .transition(opacity 0.3s);
+      > .title-item-menu .icon,
+      > a > .title-item-menu .icon {
+        float: @itemIconFloat;
+        opacity: @itemIconOpacity;
+        transition: @itemIconTransition;
       }
 
       &::before {
         display: none;
       }
 
-      &:hover,
-      &:active {
+      &:active,
+      &:hover{
         background: @itemHoveredBackground;
 
         .title-item-menu .icon {
-          .opacity(1);
+          opacity: @itemIconHoverOpacity;
         }
       }
     }
   }
 }
 
-.launch.icon.item {
-  padding: 0px @distanceL 0px @distanceS;
-  font-size: 1.5rem;
-}
-
 .title-item-menu {
-  .display-flex();
-
   .icon {
     font-size: @itemIconFontSize;
     margin-right: @distanceS;
@@ -66,7 +74,14 @@
 .ui.vertical.inverted.menu .menu .item,
 .ui.vertical.inverted.menu .menu .item a:not(.ui) {
   color: @textColor;
+  display: block;
   font-size: @subMenuItemFontSize;
+  line-height: 1;
+}
+
+.ui.vertical.inverted.menu .menu .item a:not(.ui) {
+  padding: @subMenuItemPadding;
+  margin: @subMenuItemMargin;
 }
 
 .ui.vertical.inverted.menu .item .menu a.item:hover,
@@ -77,7 +92,6 @@
 
 
 .full.height {
-  // transition: margin-left 0.45s ease;
   margin-left: @width;
 
   &.content-opened {
@@ -86,7 +100,8 @@
 }
 
 .ui.sidebar.main.menu {
-  .transform(translate3d(0, 0, 0));
+  display: flex !important;
+  transform: translate3d(0, 0, 0);
   visibility: visible;
 
   > div > .item > .dropdown.icon {
@@ -95,8 +110,8 @@
 
   //icon-guideline-arrow-short-right-l
   .ui.dropdown .menu .item .dropdown.icon:before {
-    content: "\e907";
-    font-family: 'guideline-icons';
+    content: @itemDropdownIconContent;
+    font-family: @itemDropdownIconFont;
   }
 
   &.sidebar-mini {
@@ -105,8 +120,13 @@
     > div > .item {
       font-size: 0;
 
+      > .title-item-menu .icon,
+      > a > .title-item-menu .icon {
+        float: none;
+      }
+
       .menu.transition {
-        font-size: 1rem;
+        font-size: @subMenuItemFontSize;
       }
     }
   }
@@ -115,30 +135,24 @@
     padding: @subMenuItemPadding;
 
     .title-item-menu {
-      margin-right: 1.5em;
+      margin-right: @subMenuItemMarginRight;
     }
   }
 }
 
 // Костыль для семантика
 .ui.visible.left.sidebar ~ .pusher {
-  .transform(translate3d(0, 0, 0)) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
-
-// Little sidebar in 56px
-// .ui.left.sidebar ~ .fixed,
-// .ui.left.sidebar ~ .pusher {
-//   .transform(translate3d(0, 0, 0));
-// }
 
 .ui.uncover.sidebar {
   z-index: 10;
 }
 
-
+.flexberry-sitemap {
+  flex: 1 1 auto;
+}
 // Footer
 .sitebar-footer {
-  position: absolute;
-  bottom: @distanceM;
-  width: 100%;
+  flex: 0 1 auto;
 }
