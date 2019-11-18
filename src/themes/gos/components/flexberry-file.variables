@@ -6,19 +6,22 @@
 @fileBackgroundColor: @inputBackground;
 @fileBorderColor: @inputBorderColor;
 
-/*---All controls  ---*/
+/*--- All controls  ---*/
 @fileControlButtonPadding: 0.5714em 0.35714em;
 @fileControlMarginLeft: 0.5714em;
 @fileControlColorHover: @textColor;
 @fileControlDisabledColor: @linkWater;
 
+/*--- Error input ---*/
+@errorFileControlBackgroundColor: #FFF6F6;
+@errorFileControlBorderColor: #E0B4B4; 
+
 /*---  Inner controls (add, remove)   ---*/
-@fileInnerControlFluidPosition: inherit;
-@fileInnerControlPosition: absolute;
-@fileInnerControlPositionRight: 0;
+@fileInnerControlBorderRadius: 0;
 
 /*---  Remove control   ---*/
 @fileRemoveControlDisplay: none;
+@fileInnerControlPosition: relative;
 
 /*---  Control icons  ---*/
 @iconFontName: 'guideline-icons';
