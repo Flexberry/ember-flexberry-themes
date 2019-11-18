@@ -15,6 +15,7 @@
 @lookupFieldFocusBorderStyle: @defaultBorderStyle;
 @lookupFieldFocusBorderColor: @focusedFormBorderColor;
 @lookupFieldFocusBorder: @lookupFieldFocusBorderWidth @lookupFieldFocusBorderStyle @lookupFieldFocusBorderColor;
+@autocompleteFocusBackground: @white;
 
 @lookupFieldDisabledBackground: @hawkesBlue;
 @lookupFieldDisabledBorderWidth: @defaultBorderWidth;
@@ -32,13 +33,16 @@
 @lookupHorizontalPadding: unit(11 / 14, em);
 @lookupClearButtonRight:  @lookupButtonWidth * 3 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
 @lookupChangeButtonRight:  @lookupButtonWidth + @lookupHorizontalPadding;
+@lookupClearButtonRightWithPreview:  @lookupButtonWidth * 5 + @lookupHorizontalPadding + @lookupButtonHorizontalMargin * 2;
+@lookupChangeButtonRightWithPreview:  @lookupButtonWidth * 2 + @lookupHorizontalPadding;
+@lookupPreviewButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding + @lookupButtonHorizontalMargin;
 
 @lookupIconWidth: unit(20 / 14, em);
 @lookupIconHeight: unit(20 / 14, em);
 @lookupIconMargin: 0em;
 
 @lookupBeforeIconTop: 0em;
-@lookupBeforeIconFontSize: 1em;
+@lookupBeforeIconFontSize: 1.5em;
 
 
 // Autocomplete

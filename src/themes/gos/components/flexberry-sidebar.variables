@@ -1,3 +1,7 @@
+/*******************************
+        flexberry-sidebar
+*******************************/
+
 @sidebarInvertedBackground: @sidebarBackgroundColor;
 
 @width: 240px;
@@ -5,17 +9,40 @@
 
 @sidebarPadding: @distanceM 0;
 
-// items
+/* Items */
 @itemPadding: @distanceS;
 @itemHoveredBackground: none;
-@itemIconOpacity: 0.2;
+@itemFontSize: 1rem;
+
+/* Item icons */
 @itemIconFontSize: 1.2rem;
+@itemIconFloat: left;
+@itemIconOpacity: 0.2;
+@itemIconTransition: opacity 0.3s;
+@itemIconHoverOpacity: 1;
 @itemDropDownIconDisplay: none;
 
-// submenu
+/* Sub Menu */
 @subMenuBordetRadius: 0;
+@subMenuBorderTop: 0;
+@subMenuHeight: 100%;
+@subMenuPadding: @sidebarPadding;
+@subMenuPosition: fixed;
 
-// submenu item
+/* Sub Menu Items*/
 @subMenuItemHoveredBackground: rgba(0, 0, 0, 0.1);
-@subMenuItemFontSize: 1em;
-@subMenuItemPadding: 1em 0.5em 1em 1em !important;
+@subMenuItemFontSize: @itemFontSize;
+@subMenuItemTopPadding: 1em;
+@subMenuItemRightPadding: 0.5em;
+@subMenuItemBottomPadding: 1em;
+@subMenuItemLeftPadding: 1em;
+@subMenuItemPadding: @subMenuItemTopPadding @subMenuItemRightPadding @subMenuItemBottomPadding @subMenuItemLeftPadding !important;
+@subMenuItemMargin: -@subMenuItemTopPadding -@subMenuItemRightPadding -@subMenuItemBottomPadding -@subMenuItemLeftPadding;
+@subMenuItemMarginRight: 1.5em;
+
+/* Toggle button */
+@toggleButtonFontSize: 1.5rem;
+@toggleButtonPadding: 0px @distanceL 0px @distanceS;
+
+@itemDropdownIconContent: "\e907";
+@itemDropdownIconFont: 'guideline-icons';
