@@ -19,6 +19,7 @@
 
 /*---  Remove control   ---*/
 @fileRemoveControlDisplay: none;
+@fileInnerControlPosition: relative;
 
 /*---  Control icons  ---*/
 @iconFontName: 'guideline-icons';
