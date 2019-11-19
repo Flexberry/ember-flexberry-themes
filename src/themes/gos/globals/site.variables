@@ -112,6 +112,8 @@
 @distanceM: 1.5rem;
 @distanceS: 1rem;
 
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+@glyphWidth: 1.5em;
 
 /*-------------------
    Global Variables
@@ -126,6 +128,8 @@
 @uiHoveredNegitveTextColor: @red;
 
 @flexberryButtonHoveredColor: @brightBlue;
+
+@disabledOpacity: 1;
 
 /*-------------------
    Icon Variables
@@ -154,7 +158,7 @@
 
 @defaultSmallFontSize: 12px;
 
-@defaultBorderRadius: 4px;
+@defaultBorderRadius: 0.25rem;
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
 
@@ -184,9 +188,13 @@
 @inputBorderStyle: @defaultBorderStyle;
 @inputBorderRadius: @defaultBorderRadius;
 @inputBorderColor: @aliceBlue;
+@defaultInputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
 
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
+
+@inputReadonlyBackground: @hawkesBlue;
+@inputReadonlyBorderColor: @hawkesBlue;
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
@@ -231,8 +239,9 @@
 // Input
 @inputBorderColor      : @aliceBlue;
 @inputBackground       : @aliceBlue;
+@inputHoverBorderColor : @chambray;
 
-@inputFocusBackground   : @white;
+@defaultInputFocusBackground   : @white;
 @focusedFormBorderColor : @accentColor;
 
 // Buttons
