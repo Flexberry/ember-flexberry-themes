@@ -1,43 +1,45 @@
 // Clear button
 .flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.ui-clear.button {
-    position: relative;
-    z-index: 3;
+  background: transparent;
+  margin-left: @datetimeButtonMargin;
+  padding: @datetimeButtonPadding;
 
-    padding: @clearButtonPadding;
-    margin: 0;
-    
-    min-width: @clearButtonWidthHeight;
-    width: @clearButtonWidthHeight;
-    min-height: @clearButtonWidthHeight;
-    height: @clearButtonWidthHeight;
-
-    right: 2.21em;
-
-    background: transparent;
-}
-
-.flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.ui-clear.button:focus {
-    border: 0px solid transparent;
+  &:focus {
+    border-color: transparent;
+  }
 }
 
 // Date input
-.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input,
-.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input:active {
-    border-radius: @dateTimeInputRightBorderRadius;
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
+  border-radius: @dateTimeInputBorderRadius;
+  padding: @datetimeInputPadding;
+
+  &:hover {
+    border-right-color: @inputHoverBorderColor !important;
+  }
+
+  &:focus {
+    border-right-color: @focusedFormBorderColor !important;
+  }
+
+  &[readonly=""] {
+    background: @inputReadonlyBackground;
+    border-color: @inputReadonlyBorderColor;
+    cursor: default;
+    opacity: 1;
+    pointer-events: none;
+  }
 }
 
-.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input:hover {
-    border-right-color: @dateTimeInputRightBorderColor;
-    border-radius: @dateTimeInputRightBorderRadius;
+.flexberry-simpledatetime > .ui.input > .ui.button > .icon {
+  font-family: @clearButtonFont;
+  font-size: @inputIconFontSize;
+  height: @datetimeButtonIconHeight;
+  margin: @datetimeButtonIconMargin;
 }
 
-.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input[readonly=""] {
-    background: @readOnlyDateTimeInputColor;
-     &:hover, &:focus, &:active {
-        border: 1px solid @aliceBlue;
-        border-right-color: @aliceBlue !important;
-        border-radius: @dateTimeInputRightBorderRadius;
-        cursor: default;
-
-     }
+.flexberry-simpledatetime .ui-clear > .icon {
+  &::before {
+    content: @clearButtonIcon;
+  }
 }
