@@ -93,3 +93,24 @@
         font-weight: 700;
     }
 }
+
+.ui.input textarea {
+    line-height: @textareaLineHeight;
+    font-family: @pageFont;
+}
+
+.ui.input textarea:hover {
+    border-color: @textareaHoverBorderColor;
+}
+
+.ui.input textarea[readonly],
+.ui.input textarea[disabled] {
+    pointer-events: none;
+    background: @textareaReadonlyBackground;
+    border-color: @textareaReadonlyBorderColor;
+}
+
+.ui.input textarea:focus,
+.ui.input textarea:active {
+    border-color: @defaultFocusBorderColor;
+}

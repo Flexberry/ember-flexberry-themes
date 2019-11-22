@@ -1,0 +1,15 @@
+// Border variables
+@dateTimeInputBorderRadius: @defaultBorderRadius !important;
+
+// Clear button width-height
+@clearButtonIcon: "\e90e"; 
+@clearButtonFont: 'guideline-icons';
+@datetimeButtonMargin:-2.2em;
+@datetimeButtonPadding: 0;
+@datetimeButtonIconHeight:auto;
+@datetimeButtonIconMargin:0;
+
+@datetimeInputVerticalPadding: @inputVerticalPadding;
+@datetimeInputHorizontalPadding: @inputHorizontalPadding;
+@datetimeInputIconDistance: @inputHorizontalPadding + @glyphWidth;
+@datetimeInputPadding: @datetimeInputVerticalPadding @datetimeInputIconDistance @datetimeInputVerticalPadding @datetimeInputHorizontalPadding;

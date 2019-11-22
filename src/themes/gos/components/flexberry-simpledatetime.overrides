@@ -1,0 +1,45 @@
+// Clear button
+.flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.ui-clear.button {
+  background: transparent;
+  margin-left: @datetimeButtonMargin;
+  padding: @datetimeButtonPadding;
+
+  &:focus {
+    border-color: transparent;
+  }
+}
+
+// Date input
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
+  border-radius: @dateTimeInputBorderRadius;
+  padding: @datetimeInputPadding;
+
+  &:hover {
+    border-right-color: @inputHoverBorderColor !important;
+  }
+
+  &:focus {
+    border-right-color: @focusedFormBorderColor !important;
+  }
+
+  &[readonly=""] {
+    background: @inputReadonlyBackground;
+    border-color: @inputReadonlyBorderColor;
+    cursor: default;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.flexberry-simpledatetime > .ui.input > .ui.button > .icon {
+  font-family: @clearButtonFont;
+  font-size: @inputIconFontSize;
+  height: @datetimeButtonIconHeight;
+  margin: @datetimeButtonIconMargin;
+}
+
+.flexberry-simpledatetime .ui-clear > .icon {
+  &::before {
+    content: @clearButtonIcon;
+  }
+}

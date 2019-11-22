@@ -1,48 +1,75 @@
 /*******************************
             Dropdown
 *******************************/
-/*---------
-   Colors overrides
------------*/
+@fontSize: @defaultInputFontSize;
 
-@borderColor: @paleBlue;
-@dropdownBorder: none;
-@dropdownBorderBottom: 1px solid @borderColor;
-@borderRadius: 0px;
+/* Text */
+@textLineHeight: @inputLineHeight;
+@defaultTextColor: @textColor;
+@defaultTextFocusColor: @textColor;
 
-/*------------
-   Selection
---------------*/
-@selectionBackground: none;
-
-/* Border */
-@selectBorder: @borderColor;
-@focusedFormMutedBorderColor: @borderColor;
-
-/* Hover */
-@selectionHoverBorderColor: @borderColor;
-
-/* Visible Hover */
-@selectionActiveHoverBorderColor: @borderColor;
-
-/* Hovered */
-@hoveredItemBackground: @dropdownHoveredItemColor;
-
-/* Selected */
-@selectedBackground: @whiteBlue;
-
-/* Visible */
-@selectionVisibleBorderColor: @borderColor;
-@selectionVisibleBoxShadow: none;
-@selectionVisibleMenuBoxShadow: none;
-
-/* Focus */
-@selectionFocusMenuBoxShadow: none;
+@menuBorder: none;
 
 /*-------------------
        Content
 --------------------*/
+/* Icon */
+@dropdownIconSize: @inputIconFontSize;
+@dropdownIconFontFamily: 'guideline-icons';
+@dropdownIcon: "\e904";
 
-/* Menu */
-@menuBorderColor: #dedede;
-@menuBoxShadow: 0px 2px 3px 0px @menuBorderColor;
+/* Menu Item */
+@itemFontSize: 1em;
+@itemHorizontalPadding: @inputHorizontalPadding;
+
+/*------------
+   Selection
+--------------*/
+@selectionBackground: @inputBackground;
+@selectionBorder: @defaultInputBorder;
+@selectionBorderRadius: @inputBorderRadius;
+@selectionItemDivider: none;
+@selectBorder: none;
+/* Hover */
+@selectionHoverBorderColor: @inputHoverBorderColor;
+/* Focus */
+@selectionFocusBorderColor: none;
+@selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
+/* Visible */
+@selectionVisibleBorderColor: transparent;
+@selectionVisibleBackground: @defaultInputFocusBackground;
+@selectionVisibleBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@selectionVisibleMenuBoxShadow: 0px 9px 12px rgba(95, 95, 95, 0.153646);
+/* Visible Hover */
+@selectionActiveHoverBorderColor: @selectionVisibleBorderColor;
+// Visible Focus
+@selectionActiveFocusBoxShadow: @selectionVisibleBoxShadow;
+
+@selectionReadonlyBackground: @inputReadonlyBackground;
+@selectionReadonlyBorderColor: @inputReadonlyBorderColor;
+/*--------------
+     Search
+--------------*/
+@searchSelectionLineHeight: 1;
+
+/*-------------------
+       States
+--------------------*/
+/* Hovered */
+@hoveredItemBackground: @selectionBackground;
+
+/* Active Menu Item */
+@activeItemFontWeight: @defaultNormalFontWeight;
+/* Selected */
+@selectedBackground: @selectionBackground;
+
+@defaultTextColor: @inputPlaceholderColor;
+
+/*-------------------
+      Variations
+--------------------*/
+/* Upward */
+@upwardSelectionMenuBoxShadow: 0px -9px 12px rgba(95, 95, 95, 0.153646);
+@upwardSelectionVisibleBoxShadow: 0px -4px 12px rgba(95, 95, 95, 0.153646);
+@upwardSelectionActiveHoverBoxShadow: @upwardSelectionVisibleBoxShadow;
+@upwardSelectionActiveHoverMenuBoxShadow: @upwardSelectionMenuBoxShadow;

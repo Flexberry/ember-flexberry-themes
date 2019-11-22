@@ -1,7 +1,5 @@
-@inputHoverBorderColor: @chambray;
-
-@inputReadonlyBackground: @hawkesBlue;
-@inputReadonlyBorderColor: @hawkesBlue;
+@fieldReadonlyBackground: @inputReadonlyBackground;
+@fieldReadonlyBorderColor: @inputReadonlyBorderColor;
 
 @fieldLabelLineHeight: unit(20 / 14, em);
 

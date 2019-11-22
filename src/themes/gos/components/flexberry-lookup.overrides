@@ -1,121 +1,135 @@
 // Lookup field
 
 .flexberry-lookup>.ui.input>.lookup-field {
-    pointer-events: all;
-    z-index: 2;
-    position: relative;
-    width: 100% !important;
-    padding-right: @lookupFieldRightPadding;
-    border-radius: @lookupFieldBorderRadius;
+  background: @lookupFieldBackground;
+  border: @lookupFieldBorder;
+  border-radius: @lookupFieldBorderRadius;
+  padding-right: @lookupFieldRightPadding;
+  pointer-events: all;
+  width: 100% !important;
+
+  &:focus {
     background: @lookupFieldBackground;
     border: @lookupFieldBorder;
-}
+  }
 
-.flexberry-lookup>.ui.input>.lookup-field:hover {
+  &:hover {
     border: @lookupFieldHoverBorder;
-}
+  }
 
-.flexberry-lookup>.ui.input>.lookup-field:focus {
-    border: @lookupFieldFocusBorder;
-}
-
-.flexberry-lookup>.ui.input>.lookup-field.disabled {
-    pointer-events: none;
+  &.disabled {
     background: @lookupFieldDisabledBackground;
     border: @lookupFieldDisabledBorder;
+    pointer-events: none;
+  }
+
+  &.prompt:focus {
+    background: @autocompleteFocusBackground;
+    border: @lookupFieldFocusBorder;
+  }
 }
 
 // Workaround for old themes compatibility
 // Overriding "action" class
 
 .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field {
-    border-top-right-radius: @lookupFieldBorderRadius !important;
-    border-bottom-right-radius: @lookupFieldBorderRadius !important;
+  border-top-right-radius: @lookupFieldBorderRadius !important;
+  border-bottom-right-radius: @lookupFieldBorderRadius !important;
+  border-right-color: @lookupFieldBorderColor !important;
+  &:focus {
     border-right-color: @lookupFieldBorderColor !important;
+  }
+}
+
+.flexberry-lookup.search>.ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
+    border-right-color: @lookupFieldFocusBorderColor !important;
 }
 
 .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:hover {
     border-right-color: @lookupFieldHoverBorderColor !important;
 }
 
-.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:focus {
-    border-right-color: @lookupFieldFocusBorderColor !important;
-}
-
 .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field.disabled {
     border-right-color: @lookupFieldDisabledBorderColor !important;
 }
 
-// Buttons
-
+/* Buttons */
 .flexberry-lookup>.ui.input>.ui.button {
-    position: relative;
-    z-index: 3;
-    padding: @lookupButtonPadding;
-    background: @lookupButtonBackground;
-    margin-top: @lookupButtonVerticalMargin;
-    margin-bottom: @lookupButtonVerticalMargin;
-    min-width: @lookupButtonWidth;
-    width: @lookupButtonWidth;
-    min-height: @lookupButtonHeight;
-    height: @lookupButtonHeight;
-}
-
-.flexberry-lookup>.ui.input>.ui.button:focus {
-    border: none;
+  background: @lookupButtonBackground;
+  position: relative;
+  padding: @lookupButtonPadding;
+  width: @lookupButtonWidth;
+  &:focus {
+    border-color: transparent;
+  }
 }
 
 .flexberry-lookup>.ui.input>.ui-clear {
-    right: @lookupClearButtonRight;
+  right: @lookupClearButtonRight;
 }
 
 .flexberry-lookup>.ui.input>.ui-change {
-    right: @lookupChangeButtonRight;
+  right: @lookupChangeButtonRight;
+}
+
+.flexberry-lookup>.ui.input>.ui-preview {
+  right: @lookupPreviewButtonRight;
+}
+
+.flexberry-lookup>.ui.input>.ui-preview~.ui-clear {
+  right: @lookupClearButtonRightWithPreview;
+}
+
+.flexberry-lookup>.ui.input>.ui-preview~.ui-change {
+  right: @lookupChangeButtonRightWithPreview;
 }
 
 .flexberry-lookup>.ui.input>.ui.button>.icon {
-    margin: @lookupIconMargin;
-    width: @lookupIconWidth;
-    height: @lookupIconHeight;
+  font-family: 'guideline-icons';
+  font-size: @lookupBeforeIconFontSize;
+  margin: @lookupIconMargin;
+  height: @lookupIconHeight;
 }
 
-.flexberry-lookup>.ui.input>.ui.button>.icon::before {
-    top: @lookupBeforeIconTop;
-    font-size: @lookupBeforeIconFontSize;
-    position: relative;
+.flexberry-lookup>.ui.input>.ui-clear>.icon::before {
+  content: "\e90e";
 }
 
+.flexberry-lookup>.ui.input>.ui-change>.icon::before {
+  content: "\e91d";
+}
 
-// Autocomplete
+.flexberry-lookup>.ui.input>.ui-preview>.icon::before {
+  content: "\e917";
+}
 
+/* Autocomplete */
 .flexberry-lookup.ui.search>.results {
-    z-index: 1;
-    margin: @autocompleteResultsMargin;
-    padding-top: @autocompleteResultsTopPadding;
-    top: @autocompleteResultsTop;
-    width: @autocompleteResultsWidth;
-    background: @autocompleteResultsBackground;
-    border: @autocompleteResultsBorder;
+  z-index: 1;
+  margin: @autocompleteResultsMargin;
+  padding-top: @autocompleteResultsTopPadding;
+  top: @autocompleteResultsTop;
+  width: @autocompleteResultsWidth;
+  background: @autocompleteResultsBackground;
+  border: @autocompleteResultsBorder;
 }
 
 .flexberry-lookup.ui.search>.results>.result {
-    padding-bottom: @autocompleteResultBottomPadding;
-    background: @autocompleteResultBackground;
-    border-radius: @autocompleteResultBorderRadius;
-    border: @autocompleteResultBorder;
-}
-
-.flexberry-lookup.ui.search>.results>.result:hover {
+  background: @autocompleteResultBackground;
+  border-radius: @autocompleteResultBorderRadius;
+  border: @autocompleteResultBorder;
+  padding-bottom: @autocompleteResultBottomPadding;
+  &:hover {
     background: @autocompleteResultHoverBackground;
+  }
 }
 
 .flexberry-lookup.ui.search>.results>.result>.content {
-    padding-bottom: @autocompleteResultContentBottomPadding;
-    border-bottom: @autocompleteResultContentBottomBorder;
-}
-
-.flexberry-lookup.ui.search>.results>.result>.content>.title {
+  padding-bottom: @autocompleteResultContentBottomPadding;
+  border-bottom: @autocompleteResultContentBottomBorder;
+  > .title {
     font-family: @autocompleteResultTitleFont;
     font-size: @autocompleteResultTitleFontSize;
     font-weight: @autocompleteResultTitleFontWeight;
+  }
 }

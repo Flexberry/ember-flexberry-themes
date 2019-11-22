@@ -1,0 +1,38 @@
+.ui.selection.dropdown {
+  line-height: @textLineHeight;
+
+  &.active {
+    background: @selectionVisibleBackground;
+  }
+
+  &.disabled {
+    background: @selectionReadonlyBackground;
+    border-color: @selectionReadonlyBorderColor;
+  }
+}
+
+.ui.dropdown.flexberry-dropdown {
+  font-size: @fontSize;
+
+  > .dropdown.icon {
+    color: @secondaryColor;
+    font-family: @dropdownIconFontFamily;
+    right: 0.5em;
+
+    &::before {
+      content: @dropdownIcon;
+    }
+  }
+}
+
+/* Focus */
+.ui.selection.active.dropdown:focus {
+  box-shadow: @selectionActiveFocusBoxShadow;
+}
+.ui.upward.selection.active.dropdown:focus {
+  box-shadow: @upwardSelectionVisibleBoxShadow;
+}
+
+.ui.selection.dropdown.compact > .dropdown.icon {
+  padding-right: 0;
+}

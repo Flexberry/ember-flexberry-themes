@@ -1,0 +1,32 @@
+/*-------------------------
+        FileControl
+--------------------------*/
+
+/*---  Pseudo input  ---*/
+@fileBackgroundColor: @inputBackground;
+@fileBorderColor: @inputBorderColor;
+
+/*--- All controls  ---*/
+@fileControlButtonPadding: 0.5714em 0.35714em;
+@fileControlMarginLeft: 0.5714em;
+@fileControlColorHover: @textColor;
+@fileControlDisabledColor: @linkWater;
+
+/*--- Error input ---*/
+@errorFileControlBackgroundColor: #FFF6F6;
+@errorFileControlBorderColor: #E0B4B4; 
+
+/*---  Inner controls (add, remove)   ---*/
+@fileInnerControlBorderRadius: 0;
+
+/*---  Remove control   ---*/
+@fileRemoveControlDisplay: none;
+@fileInnerControlPosition: relative;
+
+/*---  Control icons  ---*/
+@iconFontName: 'guideline-icons';
+@iconFontSize: 1.714em;
+@fileAddIcon: "\e919";
+@fileRemoveIcon: "\e90e";
+@fileUploadIcon: "\e92e";
+@fileDownloadIcon: "\e912";
