@@ -1,6 +1,8 @@
 // Primary
+@accordionContentPaddingLeft: @inputIconFontSize;
 
 @accordionBackgroundColor: transparent;
 @accordionTitleColor: @secondaryColor;
 @accordionIcon: "\f107";
+@accordionIconFont: Icons;
 @accordionIconRotate: rotate(180deg);

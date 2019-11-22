@@ -32,7 +32,3 @@
 .ui.upward.selection.active.dropdown:focus {
   box-shadow: @upwardSelectionVisibleBoxShadow;
 }
-
-.ui.selection.dropdown.compact > .dropdown.icon {
-  padding-right: 0;
-}
