@@ -14,7 +14,7 @@
        Content
 --------------------*/
 /* Icon */
-@dropdownIconSize: 1.5em;
+@dropdownIconSize: @inputIconFontSize;
 @dropdownIconFontFamily: 'guideline-icons';
 @dropdownIcon: "\e904";
 
