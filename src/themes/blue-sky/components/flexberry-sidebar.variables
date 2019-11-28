@@ -1,1 +1,12 @@
-@sidebarInvertedBackground: @sidebarBackgroundColor;
+/*******************************
+             Sidebar
+*******************************/
+
+@canvasBackground: @white;
+
+@sidebarInvertedBackground: @whiteBlue;
+
+@textMenuColor: @white;
+@textMenuHideColor: #91a7cd;
+
+@headerColor      : #4f73b0;

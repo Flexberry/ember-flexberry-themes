@@ -4,27 +4,5 @@
 @import (multiple) '../../theme.config';
 
 /* Sidebar Menu */
-.inverted.vertical.main.menu.sidebar {
-  height: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
-  background: @sidebarInvertedBackground;
-  top: @headerHeight;
-}
-
-.ui.attached.menu:not(.tabular) {
-  border: none;
-}
-
-.ui.attached.menu > .flex-container > .launch.icon.item:hover {
-  background: none;
-}
-
-.launch.icon.item {
-  box-shadow: none;
-  padding: 0px;
-}
-
-.ui.menu .item:before {
-  background: none;
-}
 
 .loadUIOverrides();

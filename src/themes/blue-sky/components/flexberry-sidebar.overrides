@@ -1,0 +1,157 @@
+.inverted.vertical.main.menu.sidebar {
+    height: calc(~"100vh - @{headerHeight} - @{footerHeight}") !important;
+    background: @sidebarInvertedBackground;
+    top: @headerHeight;
+}
+
+.ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui) {
+    background: transparent;
+    color: #3f65a4;
+}
+
+.ui.vertical.inverted.menu .menu .item,
+.ui.vertical.inverted.menu .menu .item a:not(.ui) {
+    font-size:13px;;
+}
+
+.ui.vertical.inverted.menu .menu .item, .ui.vertical.inverted.menu .menu .item a:not(.ui) {
+    color: #7ba7d9;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.sidebar {
+    top: 90px;
+    float: left;
+    box-shadow: none!important;
+    border-radius: 5px !important;
+}
+
+.pushable {
+    overflow: hidden;
+}
+
+.pushable > .pusher:after {
+    background: none!important;
+}
+
+.background-logo .ui.top.attached {
+    margin: 20px 5px;
+    width: 250px;
+}
+
+.inverted.vertical.main.menu.sidebar {
+    height: calc(~"100vh - @{headerHeight} - @{footerHeight}") !important;
+    background: @sidebarInvertedBackground;
+    top: @headerHeight;
+}
+
+.mobile.inverted.vertical.menu.sidebar {
+    height: 87.6vh !important;
+    top: 4em;
+}
+
+.launch.icon.item {
+    box-shadow: none;
+    padding: 0px;
+    width: 150px;
+}
+
+.launch.icon.item.mobile {
+    width: 90px!important;
+}
+
+.ui.attached.menu:not(.tabular) {
+    border: none;
+}
+
+.ui.menu .item:before {
+    background: none;
+}
+
+.ui.attached.menu > .flex-container > .launch.icon.item:hover {
+    background: none;
+}
+
+.text-menu-hide span {
+    padding-left: 10px;
+    color: @textMenuHideColor;
+}
+
+.text_menu {
+    margin-left:15px;
+    color: @textMenuColor;
+    font-size: 15px;
+}
+
+img.item-plus {
+    width: 16px;
+    border-radius: 0px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+img.item-minus {
+    width: 16px;
+    border-radius: 0px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.item-menu{
+    cursor: pointer;
+}
+
+.ui.sidebar.menu .item {
+  padding: 0.7em 0.2em 0.7em 1em;
+}
+
+.ui.sidebar.menu > a.item {
+    padding-left: 41px;
+}
+
+.ui.sidebar.menu .menu .item {
+    padding-left: 50px;
+}
+
+.ui.sidebar.menu .menu .item-menu {
+    padding-left: 25px;
+}
+
+.ui.menu > .grid, .ui.menu > .container {
+    background: @headerColor !important;
+}
+
+.ui.vertical.inverted.menu .item .menu a.item:hover,
+.ui.vertical.inverted.menu .item .menu .link.item:hover {
+    background: transparent;
+    color: #FF7500;
+}
+
+.ui.inverted.menu .active.item {
+    background: #dcebfc;
+    color: #3f65a4 !important;
+}  
+
+.ui.inverted.menu .active.item:hover {
+    background: #dcebfc;
+    color: #FF7500 !important;
+}
+
+.ui.link.inverted.menu .item:hover, .ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #FF4800;
+}
+
+.ui.sidebar.menu a.item {
+    padding-left: 41px;
+}
+
+.ui.inverted.vertical.menu .item .menu .active.item {
+    background: #dcebfc !important;
+    color: #FFFFFF;
+}
