@@ -18,3 +18,97 @@
 @datetimeInputHorizontalPadding: @inputHorizontalPadding;
 @datetimeInputIconDistance: @inputHorizontalPadding + @glyphWidth + @datetimeButtonWidth * 2;
 @datetimeInputPadding: @datetimeInputVerticalPadding @datetimeInputIconDistance @datetimeInputVerticalPadding @datetimeInputHorizontalPadding;
+
+/*---------------
+    Calendar
+----------------*/
+
+// Months block
+@monthsBlockPaddingTop: 1.071em;
+@monthControlPaddingTop: 0.909em;
+@monthControlSvgDisplay: none;
+@monthControlDefaultColor: @textColor;
+@monthControlHoverColor:  @mayaBlue;
+@prevMonthControlPaddingLeft: 0.909em;
+@nextMonthControlPaddingRight: 0.909em;
+@currentMonthPaddingTop: 0.105em;
+@monthDropdownBackground: none;
+@yearBlockBackground: none;
+@yearControlColor: @lightGrayishBlue;
+@arrowBorderDefault: none;
+@arrowYearControlColor: @textColor;
+@arrowYearControlPaddingLeft: 0.263em;
+@arrowYearControlBackgroundHover: none;
+@arrowYearControlBorderRadius: @defaultBorderRadius;
+@arrowYearControlBorderWidth: 0.289em;
+@arrowYearControlBorderColor: @textColor;
+@arrowUpYearControlBorderBottomWidth: 0.316em;
+@arrowDownYearControlBorderTopWidth: 0.342em;
+@arrowDownYearControlTop: 40%;
+
+// Weekdays block
+@weekdaysBlockHeight: 2.143em;
+@weekdayContainerMargin: 1.857em;
+@weekdayContainerPaddingTop: 0.5em;
+@weekdayContainerPaddingBottom: 0.571em;
+@weekdayContainerBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+@weekdayColor: @lightGrayishBlue;
+@weekdayFontSize: 1em;
+@weekdayFontWeight: @defaultNormalFontWeight;
+@firstWeekdayMarginLeft: -0.714em;
+@lastWeekdayMarginRight: -0.714em;
+
+// Days block
+@daysBlockDisplay: block;
+@daysContainerDisplay: block;
+@daysContainerMargin: 0.571em 0 0.571em 1.071em;
+@dayColor: @textColor;
+@todayBorderColor: @linkWater;
+@dayBackgroundHover: @inputBackground;
+@dayBorderColorHover: @inputBorderColor;
+@prevAndNextMonthDayColor: @linkWater;
+@prevAndNextMonthDayColorHover: @textColor;
+@selectedDayColor: #FFFFFF;
+@selectedBackgroundColor: @defaultFocusBorderColor;
+@selectedBorderColor: @defaultFocusBorderColor;
+
+// Time block
+@timeBlockMargin: 0 1.786em;
+@timeBlockBorderTop: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
+@timeBlockHeight: 4em;
+@timeSeparatorHeight: 2.857em;
+@timeControlBorder: @defaultBorderWidth @defaultBorderStyle @inputBorderColor;
+@timeControlBackground: @inputBackground;
+@timeControlBorderRadius: @defaultBorderRadius;
+@timeControlFlex: none;
+@timeControlWidth: 5.786em;
+@timeControlMarginTop: 0.571em;
+@timeControlBackgroundHover: @inputBackground;
+@timeControlBorderHover: 0.071em @defaultBorderStyle @inputHoverBorderColor;
+@timeControlInputBackgroundHover: transparent;
+@arrowTimeControlBorderColor: @lightGrayishBlue;
+@arrowTimeControlBorderColorHover: @textColor;
+@hourTimeControlMarginLeft: 3.214em;
+@hourTimeControlMarginRight: 0.286em;
+@minuteTimeControlMarginLeft: 0.286em;
+@timeControlFontWeight: @defaultNormalFontWeight;
+@timeControlColor: @textColor;
+@timeControlBorderRadius: @defaultBorderRadius;
+@timeControlBorderFocus: @defaultBorderWidth @defaultBorderStyle @defaultFocusBorderColor;
+@timeControlBackgroundFocus: #FFFFFF;
+@arrowTimeControlRight: 0.286em;
+@arrowTimeControlBorder: none;
+@arrowTimeControlHeight: 0.571em;
+@arrowTimeControlBackgroundHover: none;
+@arrowTimeControlBorderRadius: @defaultBorderRadius;
+@arrowTimeControlBorderWidth: 0.393em;
+@arrowUpTimeControlTop: 0.571em;
+@arrowUpTimeControlBorderBottomWidth: 0.5em;
+@arrowDownTimeControlTop: 50%;
+@arrowDownTimeControlBorderTopWidth: 0.464em;
+
+// Calendar icons
+@iconFontName: guideline-icons;
+@iconFontSize: 1.571em;
+@prevMonthIcon: "\e906";
+@nextMonthIcon: "\e908";
