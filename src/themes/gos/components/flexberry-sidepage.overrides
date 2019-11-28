@@ -1,0 +1,28 @@
+.flexberry-sidepage {
+  height: 100vh;
+  left: auto;
+  right: 0%;
+  top: 0%;
+  margin-top: 0 !important;
+  border-radius: 0;
+
+  &.scrolling {
+    left: auto !important;
+    top: @sidepageScrollingTopOffset !important;
+    overflow-y: auto;
+  }
+
+  .close {
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: @sidepageCloseButtonMargin;
+    color: @sidepageCloseButtonColor;
+    font-size: @sidepageCloseButtonFontSize;
+    font-family: @sidepageCloseButtonFontName;
+    
+    &::before {
+      content: @sidepageCloseButtonIcon;
+    }
+  }
+}

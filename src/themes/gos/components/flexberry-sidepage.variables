@@ -1,0 +1,9 @@
+// Offset
+@sidepageScrollingTopOffset: -3.5rem;
+
+// Close button
+@sidepageCloseButtonMargin: 1.1em;
+@sidepageCloseButtonColor: @secondaryColor;
+@sidepageCloseButtonFontName: 'Crimean';
+@sidepageCloseButtonFontSize: 1.25em;
+@sidepageCloseButtonIcon: '\e806';
