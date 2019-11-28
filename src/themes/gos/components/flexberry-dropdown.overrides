@@ -15,7 +15,9 @@
   font-size: @fontSize;
 
   > .dropdown.icon {
+    color: @secondaryColor;
     font-family: @dropdownIconFontFamily;
+    right: 0.5em;
 
     &::before {
       content: @dropdownIcon;
@@ -29,8 +31,4 @@
 }
 .ui.upward.selection.active.dropdown:focus {
   box-shadow: @upwardSelectionVisibleBoxShadow;
-}
-
-.ui.selection.dropdown.compact > .dropdown.icon {
-  padding-right: 0;
 }
