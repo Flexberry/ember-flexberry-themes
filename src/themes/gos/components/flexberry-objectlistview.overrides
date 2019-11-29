@@ -228,6 +228,66 @@
 }
 
 .ui.secondary.menu.nav-bar .right.menu .flexberry-dropdown {
-  min-height: 40px;
-  height: 40px;
+     min-height: 40px;
+     height: 40px;
+}
+
+// Helper buttons in row
+.ui.object-list-view {
+     tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
+          color: @rowHelperCellHoverColor;
+     }
+
+     .object-list-view-helper-column-cell .cell {
+          display: @helperButtonInRowDisplay;
+          vertical-align: @helperButtonInRowVerticalAlign;
+
+          .button {
+               border: @helperButtonInRowBorder;
+               padding-top: @helperButtonInRowPaddingTop;
+               width: @helperButtonInRowWidth;
+
+               &:hover {
+                    background: @helperButtonInRowBackgroundHoverColor;
+               }
+
+               .icon {
+                    font-family: @iconFontFamily;
+                    font-size: @helperButtonInRowIconFontSize;
+               }
+          }
+
+          // select row button
+          .ui.flexberry-checkbox {
+               width: @selectRowHelperButtonWidth;
+               padding-top: @selectRowHelperButtonPaddingTop;
+               padding-bottom: @selectRowHelperButtonPaddingBottom;
+          }
+
+          .ui.button.object-list-view-row-edit-button {
+               .icon:before {
+                    content: @editHelperButtonInRowIcon;
+               }
+
+               &:hover {
+                    color: @editHelperButtonInRowHoverColor;
+               }
+          }
+
+          // Временные стили для кнопки "Создать на основе"
+          .object-list-view-row-prototype-button .icon {
+               font-family: Icons;
+               font-size: 18px;
+          }
+
+          .ui.button.object-list-view-row-delete-button {
+               .icon:before {
+                    content: @deleteHelperButtonInRowIcon;
+               }
+
+               &:hover {
+                    color: @deleteHelperButtonInRowHoverColor;
+               }
+          }
+     }
 }
