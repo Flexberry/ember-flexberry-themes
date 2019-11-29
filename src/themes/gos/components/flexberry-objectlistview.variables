@@ -39,3 +39,26 @@
 @editExcelIcon: "\e916";
 @editColumnsIcon: "\e90d";
 @editIconColor: @textColor;
+
+/*-----------------------
+   Helper buttons In Row
+------------------------*/
+
+/* Buttons */
+@helperButtonInRowDisplay: inline-block;
+@helperButtonInRowBorder: none;
+@helperButtonInRowVerticalAlign: top;
+@helperButtonInRowBackgroundHoverColor: transparent;
+@helperButtonInRowPaddingTop: 0.875em;
+@helperButtonInRowWidth: 2.571em;
+@rowHelperCellHoverColor: @blueZodiak;
+@selectRowHelperButtonWidth: 1.875em;
+@selectRowHelperButtonPaddingTop: 0.75em;
+@selectRowHelperButtonPaddingBottom:0.375em;
+@editHelperButtonInRowHoverColor: @mayaBlue;
+@deleteHelperButtonInRowHoverColor: @cinnabar;
+
+/* Icons */
+@helperButtonInRowIconFontSize: 1.7145em;
+@editHelperButtonInRowIcon: "\e914";
+@deleteHelperButtonInRowIcon: "\e911";
