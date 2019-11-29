@@ -1,4 +1,4 @@
-.flexberry-sidepage {
+.ui.modal.flexberry-sidepage {
   height: 100vh;
   left: auto;
   right: 0%;
