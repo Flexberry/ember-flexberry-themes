@@ -1,0 +1,24 @@
+.groupedit-toolbar {
+  .ui.button {
+    color: @textColor;
+
+    .icon {
+      margin: 0;
+
+      &.configure::before {
+        content: @groupeditToolbarConfigIcon;
+      }
+    }
+  }
+}
+
+.groupedit-container {
+  .object-list-view-helper-column-cell {
+    white-space: nowrap;
+
+    .cell {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
