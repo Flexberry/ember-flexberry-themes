@@ -67,6 +67,9 @@
 @solitude         : #E4EDF9;
 @whisper          : #E5E5E5;
 
+/* Negative */
+@negativeColor           : @cinnabar;
+
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
 @lightGrayishBlue : #848E99;

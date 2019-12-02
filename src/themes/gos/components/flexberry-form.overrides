@@ -114,3 +114,36 @@
 .ui.input textarea:active {
     border-color: @defaultFocusBorderColor;
 }
+
+.ui.form .fields.error .field,
+.ui.form .field.error {
+  .ui.basic.red.label {
+    background-color: @formErrorLabelBackground !important;
+    border: @formErrorLabelBorder;
+    color: @formErrorLabelColor !important;
+    font-size: @formErrorLabelFontSize;
+    font-weight: @formErrorLabelFontWeight;
+    padding: @formErrorLabelPadding;
+    &:before {
+      display: @formErrorLabelCornerDisplay;
+    }
+  }
+  
+  .flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input,
+  .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field {
+    &,
+    &:hover,
+    &:focus {
+      border-right-color: @formErrorBorder!important;
+    }
+  }
+
+  .flexberry-file .ui.action.input:not([class*="left action"]) {
+    border-right: none;
+    > .button.flexberry-file-add-button {
+      background-color: @formErrorBackground;
+      border-color: @formErrorBorder;
+      border-left: none;
+    }
+  }
+}

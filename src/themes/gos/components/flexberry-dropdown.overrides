@@ -32,3 +32,10 @@
 .ui.upward.selection.active.dropdown:focus {
   box-shadow: @upwardSelectionVisibleBoxShadow;
 }
+
+.ui.form .field.error {
+  .ui.dropdown:not(.button) > .default.text,
+  .ui.default.dropdown:not(.button) > .text{
+    color: @defaultTextColor;
+  }
+}
