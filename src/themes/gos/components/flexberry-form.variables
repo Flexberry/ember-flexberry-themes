@@ -23,7 +23,7 @@
 
 // General
 @editBackground: #fff;
-@flexEditFormPadding: 0 @distanceL;
+@flexEditFormPadding: 1px @distanceL;
 
 // Buttons
 @flexberryContentPadding: @distanceM 0 0 0;
@@ -64,3 +64,4 @@
 @formErrorLabelFontWeight: normal;
 @formErrorLabelPadding: 0;
 @formErrorLabelCornerDisplay: none;
+@formErrorLabelMargin: 0.5em;
