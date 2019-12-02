@@ -124,6 +124,11 @@
   border-left: none;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
+
+  // TODO: скачет в edge не работает в ie
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 .ui.table.object-list-view thead tr th:first-child {
@@ -228,66 +233,92 @@
 }
 
 .ui.secondary.menu.nav-bar .right.menu .flexberry-dropdown {
-     min-height: 40px;
-     height: 40px;
+  min-height: 40px;
+  height: 40px;
 }
 
 // Helper buttons in row
 .ui.object-list-view {
-     tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
-          color: @rowHelperCellHoverColor;
-     }
+  tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
+    color: @rowHelperCellHoverColor;
+  }
 
-     .object-list-view-helper-column-cell .cell {
-          display: @helperButtonInRowDisplay;
-          vertical-align: @helperButtonInRowVerticalAlign;
+  .object-list-view-helper-column-cell .cell {
+    display: @helperButtonInRowDisplay;
+    vertical-align: @helperButtonInRowVerticalAlign;
 
-          .button {
-               border: @helperButtonInRowBorder;
-               padding-top: @helperButtonInRowPaddingTop;
-               width: @helperButtonInRowWidth;
+    .button {
+      border: @helperButtonInRowBorder;
+      padding-top: @helperButtonInRowPaddingTop;
+      width: @helperButtonInRowWidth;
 
-               &:hover {
-                    background: @helperButtonInRowBackgroundHoverColor;
-               }
+      &:hover {
+        background: @helperButtonInRowBackgroundHoverColor;
+      }
 
-               .icon {
-                    font-family: @iconFontFamily;
-                    font-size: @helperButtonInRowIconFontSize;
-               }
-          }
+      .icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+      }
+    }
 
-          // select row button
-          .ui.flexberry-checkbox {
-               width: @selectRowHelperButtonWidth;
-               padding-top: @selectRowHelperButtonPaddingTop;
-               padding-bottom: @selectRowHelperButtonPaddingBottom;
-          }
+    // select row button
+    .ui.flexberry-checkbox {
+      width: @selectRowHelperButtonWidth;
+      padding-top: @selectRowHelperButtonPaddingTop;
+      padding-bottom: @selectRowHelperButtonPaddingBottom;
+    }
 
-          .ui.button.object-list-view-row-edit-button {
-               .icon:before {
-                    content: @editHelperButtonInRowIcon;
-               }
+    .ui.button.object-list-view-row-edit-button {
+      .icon:before {
+        content: @editHelperButtonInRowIcon;
+      }
 
-               &:hover {
-                    color: @editHelperButtonInRowHoverColor;
-               }
-          }
+      &:hover {
+        color: @editHelperButtonInRowHoverColor;
+      }
+    }
 
-          // Временные стили для кнопки "Создать на основе"
-          .object-list-view-row-prototype-button .icon {
-               font-family: Icons;
-               font-size: 18px;
-          }
+    // Временные стили для кнопки "Создать на основе"
+    .object-list-view-row-prototype-button .icon {
+      font-family: Icons;
+      font-size: 18px;
+    }
 
-          .ui.button.object-list-view-row-delete-button {
-               .icon:before {
-                    content: @deleteHelperButtonInRowIcon;
-               }
+    .ui.button.object-list-view-row-delete-button {
+      .icon:before {
+        content: @deleteHelperButtonInRowIcon;
+      }
 
-               &:hover {
-                    color: @deleteHelperButtonInRowHoverColor;
-               }
-          }
-     }
+      &:hover {
+        color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
+}
+
+.flexberry-objectlistview {
+  display: flex;
+  flex-direction: column;
+  // TODO: Другой способ?
+  max-height: calc(~'100vh - 11em');
+
+  .flexberry-olv-toolbar {
+    flex: 0 0 auto;
+  }
+
+  .object-list-view-container {
+    flex-grow: 3;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .ui.secondary.menu.no-margin.nav-bar {
+     margin-top: 0;
+     padding-top: 0;
+   }
+}
+
+.object-list-view-container .JCLRgrip .JColResizer {
+  width: 20px;
 }
