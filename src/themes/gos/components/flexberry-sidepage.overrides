@@ -12,6 +12,14 @@
     overflow-y: auto;
   }
 
+  .header {
+    border-bottom: none;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
   .close {
     top: 0;
     right: 0;

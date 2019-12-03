@@ -1,0 +1,91 @@
+.flexberry-sidepage .flexberry-colsconfig {
+  .ui.celled.table {
+    border: none;
+
+    thead th, tfoot th {
+      background: transparent;
+    }
+
+    thead th {
+      &:nth-child(2) {
+        width: 64px;
+      }
+
+      &:nth-child(3) {
+        text-align: left;
+      }
+    }
+
+    tfoot tr:first-child th {
+      border-top: none;
+    }
+
+    tr th, tr td {
+      border-left: none;
+    }
+
+    tr td {
+      border-top: none;
+      padding: @colsconfigCellPadding;
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &.disabled input {
+        color: @colsconfigDisabledColor;
+      }
+
+      .sort-direction-dropdown.disabled {
+        background: @inputBackground;
+        border-color: @inputBorderColor;
+
+        .dropdown.icon {
+          color: @colsconfigDisabledColor;
+        }
+
+        .text {
+          color: @colsconfigDisabledColor;
+        }
+      }
+    }
+
+    .large.icon, thead th {
+      color: @colsconfigLargeIconColor;
+    }
+
+    .cols-config-apply, .cols-config-save {
+      color: @colsconfigButtonColor;
+      background: @colsconfigButtonBackground;
+      padding-left: @colsconfigButtonHorizontalPadding;
+      padding-right: @colsconfigButtonHorizontalPadding;
+    }
+
+    .cols-config-save {
+      border-radius: @inputBorderRadius;
+      margin-left: 1em;
+
+      &.disabled {
+        color: @colsconfigDisabledButtonColor;
+        background: @colsconfigDisabledButtonBackground;
+      }
+    }
+
+    .setting-name-input {
+      border-radius: @inputBorderRadius !important;
+
+      &:hover {
+        border-color: @inputHoverBorderColor !important;
+      }
+
+      &:focus {
+        border-color: @focusedFormBorderColor !important;
+      }
+    }
+
+    .flexberry-checkbox {
+      margin-right: @colsconfigCheckboxMargin;
+      margin-bottom: 0.5em;
+    }    
+  }
+}
