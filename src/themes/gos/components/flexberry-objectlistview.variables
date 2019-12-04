@@ -34,6 +34,8 @@
 @editColumnsIcon: "\e90d";
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
+@searchButtonIcon: "\e927";
+@clearSearchButtonIcon: "\e90e";
 
 @createButtonBackgroundColor: @primaryColor;
 @createButtonBackground: @createButtonBackgroundColor;
@@ -46,7 +48,7 @@
 
 @toolbarButtonFocusBorder: none;
 @toolbarButtonHoverBackground: none;
-
+@toolbarButtonPadding: 0.4em 0 0.4em 0.5em; 
 @buttonsFontSize: 0px;
 
 @buttonIconsFontSize: 1rem;

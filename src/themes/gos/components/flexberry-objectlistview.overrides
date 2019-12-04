@@ -79,9 +79,13 @@ table.object-list-view.selectable {
   }
 }
 
-.ui.secondary.menu.no-margin:not(.nav-bar) {
+.ui.secondary.menu.no-margin.flexberry-olv-toolbar {
   padding-top: @menuPaddingTop;
   margin-bottom: @menuMarginBottom;
+
+  .ui.icon.button {
+    padding: @toolbarButtonPadding;
+  }
 
   .ui.button {
     &:focus {
@@ -91,14 +95,13 @@ table.object-list-view.selectable {
     &.refresh-button,
     &.delete-button {
       i.icon {
-        font-size: @buttonIconsFontSize;
-        line-height: @buttonIconsLineHeight;
+        line-height: 1;
       }
     }
   }
 
   i.icon {
-    &:not(.flask):before {
+    &:not(.flask) {
       color: @editIconColor;
       font-family: @iconFontFamily;
       font-size: @editIconFontSize;
@@ -123,8 +126,13 @@ table.object-list-view.selectable {
     &.delete:before {
       content: @deleteButtonIcon;
     }
-
-    &.flask:before {
+    &.search:before {
+      content: @searchButtonIcon;
+    }
+    &.remove:before {
+      content: @clearSearchButtonIcon;
+    }
+    &.flask {
       color: @editIconColor;
     }
   }
@@ -135,14 +143,13 @@ table.object-list-view.selectable {
 
       > .dropdown.icon:before {
         font-size: @dropdownIconFontSize;
-        line-height: @dropdownIconLineHeight;
-        content: "\e904";
+        content: "\e905";
       }
     }
+  }
 
-    .button {
-      padding-right: @buttonPaddingRight;
-    }
+  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+    margin: 0;
   }
 }
 
