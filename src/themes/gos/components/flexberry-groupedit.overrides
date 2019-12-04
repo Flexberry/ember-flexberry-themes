@@ -7,8 +7,8 @@
       color: @inputPlaceholderColor;
     }
 
-    .icon {
-      margin: 0 !important;
+    & > .icon:not(.button):not(.dropdown) {
+      margin: 0;
 
       &.configure::before {
         content: @groupeditToolbarConfigIcon;
@@ -17,19 +17,32 @@
   }
 }
 
-.groupedit-container {
-  .object-list-view-helper-column-cell {
-    white-space: nowrap;
-
-    .cell {
-      display: inline-block;
-      vertical-align: middle;
-    }
+.groupedit-container > .ui.table.object-list-view {
+  &.striped tbody tr:nth-child(2n) {
+    background: transparent;
   }
 
-  .field {
-    .flexberry-checkbox {
-      vertical-align: middle;
+  thead tr th div span{
+    padding-left: @inputVerticalPadding;
+  }
+
+  tbody {
+    .object-list-view-helper-column-cell {
+      white-space: nowrap;
+
+      .cell {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    tr td {
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+
+      &.field .flexberry-checkbox {
+        vertical-align: bottom;
+      }
     }
   }
 }
