@@ -90,6 +90,17 @@
 
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
+@olvHeaderOrderIconColor: @accentColor;
+@olvHeaderOrderIconHoverColor: @textColor;
+@olvHeaderOrderIconBackground: rgba(red(@olvHeaderOrderIconColor), green(@olvHeaderOrderIconColor), blue(@olvHeaderOrderIconColor), 0.2);
+@olvHeaderOrderIconBorderRadius: @inputBorderRadius;
+@olvHeaderOrderIconPadding: 0.2em;
+@olvHeaderOrderIconDisplay: inline-block;
+@olvHeaderOrderIconVerticalAlign: top;
+@olvHeaderOrderIconFontFamily: 'guideline-icons';
+@olvHeaderOrderIconAscendingContent: "\e92a";
+@olvHeaderOrderIconDescendingContent: "\e92c";
+
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 
