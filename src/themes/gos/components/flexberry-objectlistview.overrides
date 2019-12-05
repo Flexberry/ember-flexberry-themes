@@ -8,12 +8,16 @@
   overflow-x: hidden;
   overflow-y: visible;
 
-  &.overflowed-cell, &.object-list-view-menu {
+  &.overflowed-cell,
+  &.object-list-view-menu {
     overflow: visible;
   }
 }
 
 .object-list-view-container {
+  border: @olvContainerBorder;
+  border-radius: @olvContainerBorderRadius;
+  box-shadow: @olvContainerBoxShadow;
   margin: @olvContainerMargin;
   max-width: @olvContainerMaxWidth;
   overflow: auto;
@@ -30,66 +34,91 @@
 }
 
 table.object-list-view.selectable {
-  thead, tbody {
+  thead,
+  tbody {
     cursor: pointer;
   }
 }
 
-.right.pointing.ui.icon.dropdown {
-  &:hover i.icon.list.layout:before {
-    color: @olvDropdownMenuHoverBeforeColor;
+.flexberry-objectlistview {
+  display: flex;
+  flex-direction: column;
+  // TODO: Другой способ?
+  max-height: calc(~'100vh - 11em');
+
+  .flexberry-olv-toolbar {
+    flex: 0 0 auto;
   }
 
-  &.active:hover i.icon.list.layout:before {
-    color: @olvDropdownMenuActiveHoverBeforeColor;
+  .object-list-view-container {
+    flex-grow: 3;
+    overflow: auto;
+    height: 100%;
   }
+
+  .ui.secondary.menu.no-margin.nav-bar {
+     margin-top: 0;
+     padding-top: 0;
+   }
 }
 
-// Buttons
-.ui.button {
-  &,
-  &.refresh-button,
-  &.delete-button,
-  &.icon.export-button,
-  &.icon.flexberry-menu.dropdown,
-  &.icon.config-button.settings-enabled {
-    background: @defaultEditButtonColor;
-  }
-
-  &.refresh-button,
-  &.delete-button {
-    font-size: @buttonsFontSize;
-  }
-
-  &.create-button {
-    background: @createButtonBackground;
-    color: @createButtonColor;
-    margin: @createButtonMargin;
-    font-weight: @buttonFontWeight;
-  }
+.object-list-view-container .JCLRgrip .JColResizer {
+  width: 20px;
 }
 
-.ui.buttons {
-  &.filter-active {
-    border: @filterButtonsBorder;
-
-    &.icon button {
-      padding: @filterButtonPadding;
-    }
-  }
-}
-
+/*-------------------
+      Toolbar
+--------------------*/
 .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
   padding-top: @menuPaddingTop;
   margin-bottom: @menuMarginBottom;
+
+  /* Toolbar buttons */
+  .ui.button {
+    &.refresh-button,
+    &.delete-button,
+    &.icon.export-button,
+    &.icon.flexberry-menu.dropdown,
+    &.icon.config-button.settings-enabled,
+    &.adv-limit-button,
+    &.search-button,
+    &.clear-search-button {
+      background: @toolbarButtonBackground;
+    }
+
+    &.refresh-button,
+    &.delete-button {
+      font-size: @buttonsFontSize;
+    }
+
+    &.create-button {
+      background: @createButtonBackground;
+      color: @createButtonColor;
+      margin: @createButtonMargin;
+      font-weight: @buttonFontWeight;
+    }
+  }
+
+  .filter-active.icon button {
+    background: @toolbarButtonBackground;
+    padding: @filterButtonPadding;
+  }
 
   .ui.icon.button {
     padding: @toolbarButtonPadding;
   }
 
+  .ui.button.refresh-button,
+  .ui.button.delete-button,
+  .ui.buttons .button {
+    &:not(.disabled) {
+      color: @toolbarButtonIconColor;
+    }
+  }
+
   .ui.button {
     &:focus {
-      border: @toolbarButtonFocusBorder;
+      border-color: transparent;
     }
 
     &.refresh-button,
@@ -100,23 +129,79 @@ table.object-list-view.selectable {
     }
   }
 
-  i.icon {
-    &:not(.flask) {
-      color: @editIconColor;
-      font-family: @iconFontFamily;
-      font-size: @editIconFontSize;
+  .ui.action.input {
+    .search-button {
+      position: absolute;
+      right: @clearButtonRight;
+      height: 100%;
+    }
+    .clear-search-button {
+      position: absolute;
+      right: 0;
+      height: 100%;
+    }
+  }
+
+  > .buttons:not(.filter-active) {
+    > .ui.button:not(.dropdown) {
+      padding-right: @buttonsPaddingRight;
     }
 
+    .flexberry-menu.ui.dropdown {
+      padding-left: @buttonsDropdownPaddingLeft;
+
+      > .dropdown.icon:before {
+        font-size: @dropdownIconFontSize;
+        content: "\e905";
+      }
+    }
+  }
+
+  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+    margin: 0;
+  }
+
+  .ui.dropdown .menu > .item .icon:not(.dropdown) {
+    vertical-align: middle;
+
+    &.right.icon {
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .right.menu .dropdown:last-child > .menu,
+  .right.dropdown.item > .menu,
+  .ui.buttons > .ui.dropdown:last-child > .menu {
+    left: -2em;
+
+    i.icon {
+      &.file.excel.outline,
+      &.table:before,
+      &.flask:before {
+        content: @menuItemAddIcon;
+      }
+    }
+  }
+
+  .search-field {
+    margin: 0 1rem;
+  }
+
+  i.icon {
+    font-family: @iconFontFamily;
+    font-size: @toolbarButtonIconFontSize;
+
     &.filter:before {
-      content: @editFilterIcon;
+      content: @filterButtonIcon;
     }
 
     &.file.excel.outline:before {
-      content: @editExcelIcon;
+      content: @exportConfigButtonIcon;
     }
 
     &.table:before {
-      content: @editColumnsIcon;
+      content: @colsConfigButtonIcon;
     }
 
     &.refresh:before {
@@ -132,34 +217,32 @@ table.object-list-view.selectable {
     &.remove:before {
       content: @clearSearchButtonIcon;
     }
-    &.flask {
-      color: @editIconColor;
+    &.flask:before {
+      content: "\e930";
+    }
+
+    &.angle.right:before {
+      content: @menuItemRightIcon;
+    }
+
+    &.setting:before {
+      content: @menuItemEditIcon;
+    }
+    &.unhide:before {
+      content: @menuItemUnhideIcon;
+    }
+    &.checkmark.box:before {
+      content: @menuItemApplyIcon;
     }
   }
 
-  > .buttons {
-    .flexberry-menu.ui.dropdown {
-      padding-left: @buttonsDropdownPaddingLeft;
 
-      > .dropdown.icon:before {
-        font-size: @dropdownIconFontSize;
-        content: "\e905";
-      }
-    }
-  }
-
-  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-    margin: 0;
-  }
 }
 
-// Header
-.object-list-view-container {
-  border: @olvContainerBorder;
-  border-radius: @olvContainerBorderRadius;
-  box-shadow: @olvContainerBoxShadow;
-}
-
+/*-------------------
+        OLV
+--------------------*/
+/* Header */
 .ui.table.object-list-view {
   border: @olvBorder;
 
@@ -213,8 +296,7 @@ table.object-list-view.selectable {
   padding-left: 10px;
 }
 
-// Body
-
+/* Body */
 .ui.table.object-list-view tbody tr {
   background: @olvRowBackground;
 
@@ -250,10 +332,78 @@ table.object-list-view.selectable {
   }
 }
 
+/* Helper buttons in row */
+.ui.object-list-view {
+  tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
+    color: @rowHelperCellHoverColor;
+  }
 
-// Navigation bar
+  .object-list-view-helper-column-cell .cell {
+    display: @helperButtonInRowDisplay;
+    vertical-align: @helperButtonInRowVerticalAlign;
 
+    .ui.button {
+      background: @helperButtonInRowBackground;
+      border: @helperButtonInRowBorder;
+      line-height: 1;
+      padding: @helperButtonInRowPadding;
+
+      &:hover {
+        background: @helperButtonInRowBackgroundHoverColor;
+      }
+
+      .icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+        margin: 0;
+      }
+    }
+
+    // select row button
+    .ui.flexberry-checkbox {
+      padding-top: @selectRowHelperButtonPaddingTop;
+    }
+    .ui.checkbox .box,
+    .ui.checkbox label {
+      padding: 0;
+    }
+
+    .ui.button.object-list-view-row-edit-button {
+      .icon:before {
+        content: @editHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @editHelperButtonInRowHoverColor;
+      }
+    }
+
+    // Временные стили для кнопки "Создать на основе"
+    .ui.button.object-list-view-row-prototype-button .icon {
+      font-size: 1.4em;
+      &.copy::before {
+        content: @copyButtonInRowIcon;
+      }
+    }
+
+    .ui.button.object-list-view-row-delete-button {
+      .icon:before {
+        content: @deleteHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
+}
+
+/*-------------------
+        Navbar
+--------------------*/
 .ui.secondary.menu.nav-bar {
+  min-height: @navBarButtonSize;
+
   .ui.basic.buttons {
     margin: @navBarButtonsMargin;
     border: @navBarButtonsBorder;
@@ -293,101 +443,5 @@ table.object-list-view.selectable {
     .showing-entries {
       padding: @navBarShowingEntriesPadding;
     }
-
-    .flexberry-dropdown {
-      min-height: @navBarRowsPerPageDropdownMinHeight;
-      height: @navBarRowsPerPageDropdownHeight;
-    }
   }
-}
-
-.ui.secondary.menu.nav-bar .right.menu .flexberry-dropdown {
-  min-height: 40px;
-  height: 40px;
-}
-
-// Helper buttons in row
-.ui.object-list-view {
-  tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
-    color: @rowHelperCellHoverColor;
-  }
-
-  .object-list-view-helper-column-cell .cell {
-    display: @helperButtonInRowDisplay;
-    vertical-align: @helperButtonInRowVerticalAlign;
-
-    .button {
-      border: @helperButtonInRowBorder;
-      padding-top: @helperButtonInRowPaddingTop;
-      width: @helperButtonInRowWidth;
-
-      &:hover {
-        background: @helperButtonInRowBackgroundHoverColor;
-      }
-
-      .icon {
-        font-family: @iconFontFamily;
-        font-size: @helperButtonInRowIconFontSize;
-      }
-    }
-
-    // select row button
-    .ui.flexberry-checkbox {
-      width: @selectRowHelperButtonWidth;
-      padding-top: @selectRowHelperButtonPaddingTop;
-      padding-bottom: @selectRowHelperButtonPaddingBottom;
-    }
-
-    .ui.button.object-list-view-row-edit-button {
-      .icon:before {
-        content: @editHelperButtonInRowIcon;
-      }
-
-      &:hover {
-        color: @editHelperButtonInRowHoverColor;
-      }
-    }
-
-    // Временные стили для кнопки "Создать на основе"
-    .object-list-view-row-prototype-button .icon {
-      font-family: Icons;
-      font-size: 18px;
-    }
-
-    .ui.button.object-list-view-row-delete-button {
-      .icon:before {
-        content: @deleteHelperButtonInRowIcon;
-      }
-
-      &:hover {
-        color: @deleteHelperButtonInRowHoverColor;
-      }
-    }
-  }
-}
-
-.flexberry-objectlistview {
-  display: flex;
-  flex-direction: column;
-  // TODO: Другой способ?
-  max-height: calc(~'100vh - 11em');
-
-  .flexberry-olv-toolbar {
-    flex: 0 0 auto;
-  }
-
-  .object-list-view-container {
-    flex-grow: 3;
-    overflow: auto;
-    height: 100%;
-  }
-
-  .ui.secondary.menu.no-margin.nav-bar {
-     margin-top: 0;
-     padding-top: 0;
-   }
-}
-
-.object-list-view-container .JCLRgrip .JColResizer {
-  width: 20px;
 }

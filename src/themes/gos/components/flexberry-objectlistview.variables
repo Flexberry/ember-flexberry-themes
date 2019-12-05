@@ -18,51 +18,6 @@
 
 @selectableBackground: @anotherAliceBlue;
 
-@defaultEditButtonColor: transparent;
-@filterButtonsBorderWidth: @defaultBorderWidth;
-@filterButtonsBorderStyle: @defaultBorderStyle;
-@filterButtonsBorderColor: transparent;
-@filterButtonsBorder: @filterButtonsBorderWidth @filterButtonsBorderStyle @filterButtonsBorderColor;
-@buttonFontWeight: @defaultMediumFontWeight;
-
-@iconFontFamily: guideline-icons;
-@editIconFontSize: 1.5rem;
-@editIconColor: @textColor;
-
-@editFilterIcon: "\e91a";
-@editExcelIcon: "\e916";
-@editColumnsIcon: "\e90d";
-@refreshButtonIcon: "\e925";
-@deleteButtonIcon: "\e911";
-@searchButtonIcon: "\e927";
-@clearSearchButtonIcon: "\e90e";
-
-@createButtonBackgroundColor: @primaryColor;
-@createButtonBackground: @createButtonBackgroundColor;
-@createButtonColor: @white;
-@createButtonMargin: 0 @distanceS;
-
-@filterButtonVerticalPadding: 0em;
-@filterButtonHorizontalPadding: 0.5em;
-@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
-
-@toolbarButtonFocusBorder: none;
-@toolbarButtonHoverBackground: none;
-@toolbarButtonPadding: 0.4em 0 0.4em 0.5em; 
-@buttonsFontSize: 0px;
-
-@buttonIconsFontSize: 1rem;
-@buttonIconsLineHeight: unit(16 / 14, rem);
-@buttonPaddingRight: 0;
-
-@buttonsDropdownPaddingLeft: 0;
-
-@dropdownIconFontSize: 1em;
-@dropdownIconLineHeight: 1.5rem;
-
-@menuPaddingTop: @distanceS;
-@menuMarginBottom: 0;
-
 @olvContainerBorderWidth: @defaultBorderWidth;
 @olvContainerBorderStyle: @defaultBorderStyle;
 @olvContainerBorderColor: @whisper;
@@ -122,10 +77,63 @@
 
 @olvRowActiveBackground: @solitude;
 
+
+/*-------------------
+   Toolbar buttons
+--------------------*/
+@menuPaddingTop: @distanceS;
+@menuMarginBottom: 0;
+
+/* Buttons */
+@toolbarButtonBackground: transparent;
+@buttonFontWeight: @defaultMediumFontWeight;
+
+@createButtonBackground: @primaryColor;
+@createButtonColor: @white;
+@createButtonMargin: 0 @distanceS;
+
+@filterButtonVerticalPadding: 0em;
+@filterButtonHorizontalPadding: 0.5em;
+@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+
+@toolbarButtonFocusBorder: none;
+@toolbarButtonHoverBackground: none;
+@toolbarButtonPadding: 0.4em 0.5em; 
+@buttonsFontSize: 0px;
+
+@buttonsDropdownPaddingLeft: 0;
+@buttonsPaddingRight: 0;
+
+@dropdownIconFontSize: 1em;
+
+
+@clearButtonRight: @glyphWidth+0.5em;
+
+/* Icons */
+@iconFontFamily: guideline-icons;
+@toolbarButtonIconFontSize: @glyphWidth;
+@toolbarButtonIconColor: @textColor;
+
+@refreshButtonIcon: "\e925";
+@deleteButtonIcon: "\e911";
+@filterButtonIcon: "\e91a";
+@exportConfigButtonIcon: "\e916";
+@colsConfigButtonIcon: "\e90d";
+@searchButtonIcon: "\e927";
+@clearSearchButtonIcon: "\e90e";
+@menuItemRightIcon: "\e907";
+@menuItemEditIcon: "\e914";
+@menuItemUnhideIcon: "\e917";
+@menuItemApplyIcon: "\e92d";
+@menuItemAddIcon: "\e923";
+
+/*-------------------
+   Navbar buttons
+--------------------*/
 @navBarButtonsMargin: 0 0 0 1px;
 @navBarButtonsBorder: none;
 
-@navBarButtonSize: 40px;
+@navBarButtonSize: 2.5em;
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonHeight: @navBarButtonSize;
 @navBarButtonMargin: 0 0 0 unit(4 / 14, em);
@@ -149,10 +157,6 @@
 
 @navBarShowingEntriesPadding: 0.625em;
 
-@navBarRowsPerPageDropdownHeight: 40px;
-@navBarRowsPerPageDropdownMinHeight: 40px;
-
-@editIconColor: @textColor;
 
 /*-----------------------
    Helper buttons In Row
@@ -161,18 +165,17 @@
 /* Buttons */
 @helperButtonInRowDisplay: inline-block;
 @helperButtonInRowBorder: none;
+@helperButtonInRowBackground: transparent;
 @helperButtonInRowVerticalAlign: top;
 @helperButtonInRowBackgroundHoverColor: transparent;
-@helperButtonInRowPaddingTop: 0.875em;
-@helperButtonInRowWidth: 2.571em;
-@rowHelperCellHoverColor: @blueZodiak;
-@selectRowHelperButtonWidth: 1.875em;
-@selectRowHelperButtonPaddingTop: 0.75em;
-@selectRowHelperButtonPaddingBottom:0.375em;
-@editHelperButtonInRowHoverColor: @mayaBlue;
+@helperButtonInRowPadding: 0.5em;
+@rowHelperCellHoverColor: @textColor;
+@selectRowHelperButtonPaddingTop: 0.3em;
+@editHelperButtonInRowHoverColor: @accentColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
 
 /* Icons */
-@helperButtonInRowIconFontSize: 1.7145em;
+@helperButtonInRowIconFontSize: @glyphWidth;
 @editHelperButtonInRowIcon: "\e914";
 @deleteHelperButtonInRowIcon: "\e911";
+@copyButtonInRowIcon: "\e931";
