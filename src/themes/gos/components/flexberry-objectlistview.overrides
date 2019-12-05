@@ -1,233 +1,447 @@
-// Buttons
-.ui.refresh-button.button,
-.ui.delete-button.button,
-.ui.icon.button.config-button.settings-enabled,
-.flexberry-menu.ui.icon.dropdown.button,
-.ui.button,
-.ui.button.icon.export-button {
-  background: @defaultEditButtonColor;
+// Legacy
+
+.oveflow-text {
+  overflow: hidden;
 }
 
-.ui.button.refresh-button,
-.ui.button.delete-button {
-  font-size: 0px;
+.ui.table.object-list-view tr td {
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  &.overflowed-cell,
+  &.object-list-view-menu {
+    overflow: visible;
+  }
 }
 
-.ui.create-button.button {
-  background: @createButtonColor;
-  color: @white;
-  margin: 0 @distanceS;
-  font-weight: @buttonFontWeight;
-}
+.object-list-view-container {
+  border: @olvContainerBorder;
+  border-radius: @olvContainerBorderRadius;
+  box-shadow: @olvContainerBoxShadow;
+  margin: @olvContainerMargin;
+  max-width: @olvContainerMaxWidth;
+  overflow: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 
-.ui.buttons.filter-active {
-  border: @filterButtonBorderStyle;
-}
-
-.ui.icon.buttons.filter-active button {
-  padding: 0 0.5em;
-}
-
-.ui.secondary.menu.no-margin:not(.nav-bar) {
-  .ui.button:focus {
-    border: none;
+  .object-list-view {
+    margin: @olvMargin;
   }
 
-  .ui.buttons .ui.button:hover {
-    background: none;
+  &.groupedit-container {
+    overflow: auto;
+  }
+}
+
+table.object-list-view.selectable {
+  thead,
+  tbody {
+    cursor: pointer;
+  }
+}
+
+.flexberry-objectlistview {
+  display: flex;
+  flex-direction: column;
+  // TODO: Другой способ?
+  max-height: calc(~'100vh - 11em');
+
+  .flexberry-olv-toolbar {
+    flex: 0 0 auto;
+  }
+
+  .object-list-view-container {
+    flex-grow: 3;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .ui.secondary.menu.no-margin.nav-bar {
+     margin-top: 0;
+     padding-top: 0;
+   }
+}
+
+.object-list-view-container .JCLRgrip .JColResizer {
+  width: 20px;
+}
+
+/*-------------------
+      Toolbar
+--------------------*/
+.ui.secondary.menu.no-margin.flexberry-olv-toolbar {
+  padding-top: @menuPaddingTop;
+  margin-bottom: @menuMarginBottom;
+
+  /* Toolbar buttons */
+  .ui.button {
+    &.refresh-button,
+    &.delete-button,
+    &.icon.export-button,
+    &.icon.flexberry-menu.dropdown,
+    &.icon.config-button.settings-enabled,
+    &.adv-limit-button,
+    &.search-button,
+    &.clear-search-button {
+      background: @toolbarButtonBackground;
+    }
+
+    &.refresh-button,
+    &.delete-button {
+      font-size: @buttonsFontSize;
+    }
+
+    &.create-button {
+      background: @createButtonBackground;
+      color: @createButtonColor;
+      margin: @createButtonMargin;
+      font-weight: @buttonFontWeight;
+    }
+  }
+
+  .filter-active.icon button {
+    background: @toolbarButtonBackground;
+    padding: @filterButtonPadding;
+  }
+
+  .ui.icon.button {
+    padding: @toolbarButtonPadding;
   }
 
   .ui.button.refresh-button,
-  .ui.button.delete-button {
-    i.icon {
-      font-size: 1rem;
-      line-height: 1.42857143rem;
+  .ui.button.delete-button,
+  .ui.buttons .button {
+    &:not(.disabled) {
+      color: @toolbarButtonIconColor;
     }
   }
 
-  i.icon.filter:before {
-    content: @editFilterIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
+  .ui.button {
+    &:focus {
+      border-color: transparent;
+    }
 
-  i.icon.file.excel.outline:before {
-    content: @editExcelIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
-
-  i.icon.table::before {
-    content: @editColumnsIcon;
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
-
-  i.icon.refresh:before {
-    content: "\e925";
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
-
-  i.icon.delete:before {
-    content: "\e911";
-    color: @editIconColor;
-    font-family: @iconFontFamily;
-    font-size: @editIconFontSize;
-  }
-
-  i.icon.flask::before {
-    color: @editIconColor;
-  }
-
-  > .buttons {
-    .flexberry-menu.ui.dropdown {
-      padding-left: 0;
-      > .dropdown.icon {
-        color: @editIconColor;
-        font-size: 1em;
-        line-height: 1.5rem;
+    &.refresh-button,
+    &.delete-button {
+      i.icon {
+        line-height: 1;
       }
     }
-    .button {
-      padding-right: 0;
+  }
+
+  .ui.action.input {
+    .search-button {
+      position: absolute;
+      right: @clearButtonRight;
+      height: 100%;
+    }
+    .clear-search-button {
+      position: absolute;
+      right: 0;
+      height: 100%;
     }
   }
+
+  > .buttons:not(.filter-active) {
+    > .ui.button:not(.dropdown) {
+      padding-right: @buttonsPaddingRight;
+    }
+
+    .flexberry-menu.ui.dropdown {
+      padding-left: @buttonsDropdownPaddingLeft;
+
+      > .dropdown.icon:before {
+        font-size: @dropdownIconFontSize;
+        content: "\e905";
+      }
+    }
+  }
+
+  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+    margin: 0;
+  }
+
+  .ui.dropdown .menu > .item .icon:not(.dropdown) {
+    vertical-align: middle;
+
+    &.right.icon {
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .right.menu .dropdown:last-child > .menu,
+  .right.dropdown.item > .menu,
+  .ui.buttons > .ui.dropdown:last-child > .menu {
+    left: -2em;
+
+    i.icon {
+      &.file.excel.outline,
+      &.table:before,
+      &.flask:before {
+        content: @menuItemAddIcon;
+      }
+    }
+  }
+
+  .search-field {
+    margin: 0 1rem;
+  }
+
+  i.icon {
+    font-family: @iconFontFamily;
+    font-size: @toolbarButtonIconFontSize;
+
+    &.filter:before {
+      content: @filterButtonIcon;
+    }
+
+    &.file.excel.outline:before {
+      content: @exportConfigButtonIcon;
+    }
+
+    &.table:before {
+      content: @colsConfigButtonIcon;
+    }
+
+    &.refresh:before {
+      content: @refreshButtonIcon;
+    }
+
+    &.delete:before {
+      content: @deleteButtonIcon;
+    }
+    &.search:before {
+      content: @searchButtonIcon;
+    }
+    &.remove:before {
+      content: @clearSearchButtonIcon;
+    }
+    &.flask:before {
+      content: "\e930";
+    }
+
+    &.angle.right:before {
+      content: @menuItemRightIcon;
+    }
+
+    &.setting:before {
+      content: @menuItemEditIcon;
+    }
+    &.unhide:before {
+      content: @menuItemUnhideIcon;
+    }
+    &.checkmark.box:before {
+      content: @menuItemApplyIcon;
+    }
+  }
+
+
 }
 
-// Menu 
-.ui.secondary.menu.no-margin {
-  padding-top: @distanceS;
-  margin-bottom: 0;
-}
-
-// Header
-.object-list-view-container {
-  border: 1px solid @whisper;
-  border-radius: @defaultBorderRadius;
-  box-shadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
-}
-
+/*-------------------
+        OLV
+--------------------*/
+/* Header */
 .ui.table.object-list-view {
-  border: none;
-}
+  border: @olvBorder;
 
-.ui.table.object-list-view thead tr th {
-  background: white;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid @whisper;
-  border-left: none;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  thead tr th {
+    background: @olvHeaderBackground;
+    border-top: @olvHeaderBorderTop;
+    border-right: @olvHeaderBorderRight;
+    border-bottom: @olvHeaderBorderBottom;
+    border-left: @olvHeaderBorderLeft;
+    padding: @olvHeaderPadding;
+
+    // TODO: скачет в edge не работает в ie
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    &:first-child {
+      padding: @olvFirstHeaderPadding;
+    }
+
+    &.object-list-view-operations button {
+      background: @olvOperationsBackground;
+      padding: @olvOperationsPadding;
+
+      &.check-all-at-page-button {
+        padding: @olvOperationCheckAllAtPagePadding;
+
+        &:before {
+          font-family: @olvOperationCheckAllAtPageBeforeFontFamily;
+          font-size: @olvOperationCheckAllAtPageBeforeFontSize;
+          content: @olvOperationCheckAllAtPageBeforeContent;
+        }
+      }
+
+      &.check-all-at-page::before {
+        content: @olvOperationCheckAllBeforeContent;
+      }
+    }
+
+    div span {
+      padding: @olvHeaderTextPadding;
+      font-size: @olvHeaderTextFontSize;
+      font-weight: @olvHeaderTextFontWeight;
+      line-height: @olvHeaderTextLineHeight;
+      color: @lightGrayishBlue;
+    }
+  }
 }
 
 .ui.table.object-list-view thead tr th:first-child {
   padding-left: 10px;
 }
 
-.ui.table.object-list-view thead tr th.object-list-view-operations button {
-  background: transparent;
-  padding: 0px;
-}
-
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button {
-  padding-top: 10px;
-}
-
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page-button::before {
-  font-family: 'guideline-icons';
-  font-size: 2em;
-  content: "\e928";
-}
-
-.ui.table.object-list-view thead tr th.object-list-view-operations button.check-all-at-page::before {
-  content: none;
-}
-
-.ui.table.object-list-view thead tr th div span {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: @lightGrayishBlue;
-}
-
-
-// Body
-
+/* Body */
 .ui.table.object-list-view tbody tr {
-  background: white;
-}
+  background: @olvRowBackground;
 
-.ui.table.object-list-view tbody tr td {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  border: none;
-}
-
-.ui.table.object-list-view tbody tr:hover,
-.ui.striped.table.object-list-view tbody tr:nth-child(2n):hover,
-.ui.striped.selectable.selectable.selectable.table tbody tr.active:hover {
-  background: @solitude !important;
-}
-
-.ui.striped.table.object-list-view tbody tr:nth-child(2n) {
-  background: @aliceBlue;
+  td {
+    padding: @olvCellPadding;
+    border: @olvCellBorder;
+  }
 }
 
 .object-list-view-helper-column-cell {
-  line-height: 0;
+  line-height: @olvHelperCellLineHeight;
 }
 
-.ui.table.object-list-view tr.active,
-.ui.table.object-list-view td.active {
-  background: @solitude !important;
-}
-// Navigation bar
-
-.ui.secondary.menu.nav-bar .ui.basic.buttons {
-  margin-left: 1px;
-  border: none;
+// Hover
+.ui.table.object-list-view tbody tr,
+.ui.striped.table.object-list-view tbody tr:nth-child(2n),
+.ui.striped.selectable.selectable.selectable.table tbody tr.active {
+  &:hover {
+    background: @olvRowHoverBackground !important;
+  }
 }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button {
-  width: 40px;
-  height: 40px;
-  font-size: 0.875rem;
-  margin-left: 4px;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 12px;
+// Striped
+.ui.striped.table.object-list-view tbody tr:nth-child(2n) {
+  background: @olvRowStrippedBackground;
 }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.prev-page-button,
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.next-page-button {
-  padding: 0px 4px;
+// Active
+.ui.table.object-list-view {
+  tr.active,
+  td.active {
+    background: @olvRowActiveBackground !important;
+  }
 }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.prev-page-button::before {
-  font-family: 'guideline-icons';
-  font-size: 1.5em;
-  top: 1px;
-  content: "\e906";
+/* Helper buttons in row */
+.ui.object-list-view {
+  tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
+    color: @rowHelperCellHoverColor;
+  }
+
+  .object-list-view-helper-column-cell .cell {
+    display: @helperButtonInRowDisplay;
+    vertical-align: @helperButtonInRowVerticalAlign;
+
+    .ui.button {
+      background: @helperButtonInRowBackground;
+      border: @helperButtonInRowBorder;
+      line-height: 1;
+      padding: @helperButtonInRowPadding;
+
+      &:hover {
+        background: @helperButtonInRowBackgroundHoverColor;
+      }
+
+      .icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+        margin: 0;
+      }
+    }
+
+    // select row button
+    .ui.flexberry-checkbox {
+      padding-top: @selectRowHelperButtonPaddingTop;
+    }
+    .ui.checkbox .box,
+    .ui.checkbox label {
+      padding: 0;
+    }
+
+    .ui.button.object-list-view-row-edit-button {
+      .icon:before {
+        content: @editHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @editHelperButtonInRowHoverColor;
+      }
+    }
+
+    // Временные стили для кнопки "Создать на основе"
+    .ui.button.object-list-view-row-prototype-button .icon {
+      font-size: 1.4em;
+      &.copy::before {
+        content: @copyButtonInRowIcon;
+      }
+    }
+
+    .ui.button.object-list-view-row-delete-button {
+      .icon:before {
+        content: @deleteHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
 }
 
-.ui.secondary.menu.nav-bar .ui.basic.buttons .ui.button.next-page-button::before {
-  font-family: 'guideline-icons';
-  font-size: 1.5em;
-  top: 1px;
-  content: "\e908";
-}
+/*-------------------
+        Navbar
+--------------------*/
+.ui.secondary.menu.nav-bar {
+  min-height: @navBarButtonSize;
 
-.ui.secondary.menu.nav-bar .right.menu .showing-entries {
-  padding: 10px;
-}
+  .ui.basic.buttons {
+    margin: @navBarButtonsMargin;
+    border: @navBarButtonsBorder;
 
-.ui.secondary.menu.nav-bar .right.menu .flexberry-dropdown {
-  min-height: 40px;
-  height: 40px;
+    .ui.button {
+      width: @navBarButtonWidth;
+      height: @navBarButtonHeight;
+      margin: @navBarButtonMargin;
+      padding: @navBarButtonPadding;
+      font-size: @navBarButtonFontSize;
+      border: @navBarButtonBorder;
+      border-radius: @navBarButtonBorderRadius;
+
+      &.prev-page-button,
+      &.next-page-button {
+        padding: @navBarPrevNextButtonsPadding;
+
+        &:before {
+          position: relative;
+          top: @navBarPrevNextButtonsBeforeTop;
+          font-family: @navBarPrevNextButtonsBeforeFontFamily;
+          font-size: @navBarPrevNextButtonsBeforeFontSize
+        }
+      }
+
+      &.prev-page-button::before {
+        content: @navBarPrevButtonBeforeContent;
+      }
+
+      &.next-page-button::before {
+        content: @navBarNextButtonBeforeContent;
+      }
+    }
+  }
+
+  .right.menu {
+    .showing-entries {
+      padding: @navBarShowingEntriesPadding;
+    }
+  }
 }
