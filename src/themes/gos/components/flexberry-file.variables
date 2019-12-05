@@ -5,6 +5,8 @@
 /*---  Pseudo input  ---*/
 @fileBackgroundColor: @inputBackground;
 @fileBorderColor: @inputBorderColor;
+@fileReadonlyBackgroundColor: @inputReadonlyBackground;
+@fileReadonlyBorderColor: @inputReadonlyBorderColor;
 
 /*--- All controls  ---*/
 @fileControlButtonPadding: 0.5714em 0.35714em;
