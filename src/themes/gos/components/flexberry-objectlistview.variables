@@ -92,7 +92,7 @@
 
 @olvHeaderOrderIconColor: @accentColor;
 @olvHeaderOrderIconHoverColor: @textColor;
-@olvHeaderOrderIconBackground: rgba(red(@olvHeaderOrderIconColor), green(@olvHeaderOrderIconColor), blue(@olvHeaderOrderIconColor), 0.2);
+@olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
 @olvHeaderOrderIconBorderRadius: @inputBorderRadius;
 @olvHeaderOrderIconPadding: 0.2em;
 @olvHeaderOrderIconDisplay: inline-block;
