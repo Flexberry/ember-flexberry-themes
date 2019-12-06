@@ -8,3 +8,4 @@
 /* OLV */
 @olvHeaderTextPadding: @inputVerticalPadding*2;
 @olvCellVerticalPadding: 0.25em;
+@olvCheckboxCellVerticalPadding: 0.5em;

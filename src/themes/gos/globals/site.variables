@@ -71,6 +71,9 @@
 @anotherAliceBlue : #F5F8FF;
 
 
+/* Negative */
+@negativeColor           : @cinnabar;
+
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
 @lightGrayishBlue : #848E99;
@@ -185,8 +188,8 @@
 @inputBorderColor: @aliceBlue;
 @inputBackground: @aliceBlue;
 
-@inputPlaceholderColor : @lightGrayishBlue;
-@inputPlaceholderFocusColor: @lightGrayishBlue;
+@inputPlaceholderColor : @secondaryColor;
+@inputPlaceholderFocusColor: @secondaryColor;
 
 @inputBorderWidth: @defaultBorderWidth;
 @inputBorderStyle: @defaultBorderStyle;

@@ -1,0 +1,12 @@
+.flexberry-validationsummary.ui.red.message {
+  background-color: @background;
+  box-shadow: @boxShadow;
+  color: @textColor;
+  font-size: @defaultInputFontSize;
+  margin-top: @distanceS;
+
+  .header {
+    color: @textColor;
+    font-weight: @defaultFontWeight;
+  }
+}

@@ -60,7 +60,7 @@
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
 @olvHeaderTextLineHeight: 1.5em;
-@olvHeaderTextColor: @lightGrayishBlue;
+@olvHeaderTextColor: @secondaryColor;
 
 @olvRowBackground: @white;
 
