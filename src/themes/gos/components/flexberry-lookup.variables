@@ -38,11 +38,11 @@
 @lookupPreviewButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding + @lookupButtonHorizontalMargin;
 
 @lookupIconWidth: unit(20 / 14, em);
-@lookupIconHeight: unit(20 / 14, em);
+@lookupIconHeight: auto;
 @lookupIconMargin: 0em;
 
 @lookupBeforeIconTop: 0em;
-@lookupBeforeIconFontSize: 1.5em;
+@lookupBeforeIconFontSize: @inputIconFontSize;
 
 
 // Autocomplete

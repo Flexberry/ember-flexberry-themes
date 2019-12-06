@@ -1,0 +1,25 @@
+.flexberry-treenode-header.title:hover {
+  background: @treeHeaderColor;
+}
+
+/* Icon */
+.flexberry-tree.ui.accordion {
+  .title .dropdown.icon,
+  .accordion .title .dropdown.icon {
+    font-family: @treeIconFont;
+
+    &::before {
+      content: @treeIcon;
+    }
+  }
+
+  .active.title .dropdown.icon,
+  .accordion .active.title .dropdown.icon {
+    transform: rotate(180deg);
+  }
+
+  .title .dropdown.icon,
+  .accordion .title .dropdown.icon {
+    color: @treeIconColor;
+  }
+}

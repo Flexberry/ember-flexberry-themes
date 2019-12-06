@@ -15,7 +15,9 @@
   font-size: @fontSize;
 
   > .dropdown.icon {
+    color: @secondaryColor;
     font-family: @dropdownIconFontFamily;
+    right: 0.5em;
 
     &::before {
       content: @dropdownIcon;
@@ -31,6 +33,9 @@
   box-shadow: @upwardSelectionVisibleBoxShadow;
 }
 
-.ui.selection.dropdown.compact > .dropdown.icon {
-  padding-right: 0;
+.ui.form .field.error {
+  .ui.dropdown:not(.button) > .default.text,
+  .ui.default.dropdown:not(.button) > .text{
+    color: @defaultTextColor;
+  }
 }

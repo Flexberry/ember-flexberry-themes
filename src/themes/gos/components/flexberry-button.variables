@@ -15,7 +15,7 @@
 @buttonPrimaryFocusBorder: @buttonFocusBorderWidth @buttonFocusBorderStyle @buttonFocusBorderColor;
 
 @buttonPrimaryDisabledBackground: @gray;
-@buttonPrimaryDisabledColor: @lightGrayishBlue;
+@buttonPrimaryDisabledColor: @secondaryColor;
 
 // Secondary
 
@@ -38,7 +38,7 @@
 
 @buttonSecondaryDisabledBackground: @gray;
 @buttonSecondaryDisabledBorder: none;
-@buttonSecondaryDisabledColor: @lightGrayishBlue;
+@buttonSecondaryDisabledColor: @secondaryColor;
 
 
 // Basic
@@ -75,7 +75,7 @@
 @buttonBasicActiveBorder: @defaultBorderWidth @defaultBorderStyle @navyBlue;
 
 @buttonBasicDisabledBackground: @gray;
-@buttonBasicDisabledColor: @lightGrayishBlue;
+@buttonBasicDisabledColor: @secondaryColor;
 @buttonBasicDisableBorder: @defaultBorderWidth @defaultBorderStyle @linkWater;
 
 
@@ -123,7 +123,7 @@
 @buttonFocusBorder: @buttonFocusBorderWidth @buttonFocusBorderStyle @buttonFocusBorderColor;
 
 @buttonDisabledBackground: @gray;
-@buttonDisabledColor: @lightGrayishBlue;
+@buttonDisabledColor: @secondaryColor;
 
 
 // Sizes

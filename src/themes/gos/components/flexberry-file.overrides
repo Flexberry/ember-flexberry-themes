@@ -1,4 +1,12 @@
 .flexberry-file {
+    &.disabled {
+        input.flexberry-file-filename-input[readonly="readonly"] {
+            background: @fileReadonlyBackgroundColor;
+            border-color: @fileReadonlyBorderColor;
+            border-radius: @inputBorderRadius !important;
+        }
+    }
+
     input.flexberry-file-filename-input[readonly="readonly"] {
         background: @fileBackgroundColor;
         border-color: @fileBorderColor;
