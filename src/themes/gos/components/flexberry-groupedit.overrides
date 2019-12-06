@@ -1,0 +1,46 @@
+.groupedit-toolbar {
+  .ui.button {
+    background: @toolbarButtonBackground;
+    color: @textColor;
+
+    &:focus {
+      border-color: @toolbarButtonBackground;
+    }
+
+    &.disabled {
+      background: @toolbarButtonBackground;
+      color: @inputPlaceholderColor;
+    }
+
+    & > .icon:not(.button):not(.dropdown) {
+      margin: 0;
+
+      &.configure::before {
+        content: @groupeditToolbarConfigIcon;
+      }
+    }
+  }
+}
+
+.groupedit-container > .ui.table.object-list-view {
+  thead tr th div span {
+    padding-left: @olvHeaderTextPadding;
+  }
+
+  tbody {
+    .object-list-view-helper-column-cell {
+      .cell {
+        vertical-align: middle;
+      }
+    }
+
+    tr td {
+      padding-top: @olvCellVerticalPadding;
+      padding-bottom: @olvCellVerticalPadding;
+
+      &.field .flexberry-checkbox {
+        vertical-align: bottom;
+      }
+    }
+  }
+}

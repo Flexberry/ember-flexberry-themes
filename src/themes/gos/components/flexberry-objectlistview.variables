@@ -39,7 +39,7 @@
 @olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
 @olvHeaderBorderLeft: none;
 
-@olvHeaderVerticalPadding: 0.75em;
+@olvHeaderVerticalPadding: @inputVerticalPadding;
 @olvHeaderHorizontalPadding: 0;
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
@@ -56,7 +56,7 @@
 
 @olvOperationCheckAllBeforeContent: none;
 
-@olvHeaderTextPadding: 0 0 0 0.625em;
+@olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
 @olvHeaderTextLineHeight: 1.5em;
@@ -68,7 +68,7 @@
 
 @olvRowStrippedBackground: @aliceBlue;
 
-@olvCellVerticalPadding: 0.75em;
+@olvCellVerticalPadding: @olvHeaderVerticalPadding;
 @olvCellHorizontalPadding: 0;
 @olvCellPadding: @olvCellVerticalPadding @olvCellHorizontalPadding;
 @olvCellBorder: none;
@@ -111,7 +111,7 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: @glyphWidth;
+@toolbarButtonIconFontSize: 1.5rem;
 @toolbarButtonIconColor: @textColor;
 
 @refreshButtonIcon: "\e925";
@@ -168,9 +168,10 @@
 @helperButtonInRowBackground: transparent;
 @helperButtonInRowVerticalAlign: top;
 @helperButtonInRowBackgroundHoverColor: transparent;
-@helperButtonInRowPadding: 0.5em;
+@helperButtonInRowHorizontalPadding: 0;
+@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.5em;
 @rowHelperCellHoverColor: @textColor;
-@selectRowHelperButtonPaddingTop: 0.3em;
+@selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
 @editHelperButtonInRowHoverColor: @accentColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
 
