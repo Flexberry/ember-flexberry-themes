@@ -1,9 +1,14 @@
 .groupedit-toolbar {
   .ui.button {
+    background: @toolbarButtonBackground;
     color: @textColor;
 
+    &:focus {
+      border-color: @toolbarButtonBackground;
+    }
+
     &.disabled {
-      background: transparent;
+      background: @toolbarButtonBackground;
       color: @inputPlaceholderColor;
     }
 
@@ -18,27 +23,20 @@
 }
 
 .groupedit-container > .ui.table.object-list-view {
-  &.striped tbody tr:nth-child(2n) {
-    background: transparent;
-  }
-
-  thead tr th div span{
-    padding-left: @inputVerticalPadding;
+  thead tr th div span {
+    padding-left: @olvHeaderTextPadding;
   }
 
   tbody {
     .object-list-view-helper-column-cell {
-      white-space: nowrap;
-
       .cell {
-        display: inline-block;
         vertical-align: middle;
       }
     }
 
     tr td {
-      padding-top: 0.25em;
-      padding-bottom: 0.25em;
+      padding-top: @olvCellVerticalPadding;
+      padding-bottom: @olvCellVerticalPadding;
 
       &.field .flexberry-checkbox {
         vertical-align: bottom;
