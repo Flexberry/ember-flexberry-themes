@@ -289,6 +289,32 @@ table.object-list-view.selectable {
       line-height: @olvHeaderTextLineHeight;
       color: @olvHeaderTextColor;
     }
+
+    .object-list-view-order-icon {
+      color: @olvHeaderOrderIconColor;
+      background-color: @olvHeaderOrderIconBackground;
+      border-radius: @olvHeaderOrderIconBorderRadius;
+      padding-left: @olvHeaderOrderIconPadding;
+      display: @olvHeaderOrderIconDisplay;
+      cursor: pointer;
+
+      &:hover {
+        color: @olvHeaderOrderIconHoverColor;
+      }
+
+      .icon {
+        font-family: @olvHeaderOrderIconFontFamily;
+        vertical-align: @olvHeaderOrderIconVerticalAlign;
+
+        &.ascending:before {
+          content: @olvHeaderOrderIconAscendingContent;
+        }
+
+        &.descending:before {
+          content: @olvHeaderOrderIconDescendingContent;
+        }
+      }
+    }
   }
 }
 
