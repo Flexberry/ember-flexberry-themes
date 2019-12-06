@@ -28,7 +28,7 @@
 @monthControlPaddingTop: 0.909em;
 @monthControlSvgDisplay: none;
 @monthControlDefaultColor: @textColor;
-@monthControlHoverColor:  @mayaBlue;
+@monthControlHoverColor:  @accentColor;
 @prevMonthControlPaddingLeft: 0.909em;
 @nextMonthControlPaddingRight: 0.909em;
 @currentMonthPaddingTop: 0.105em;

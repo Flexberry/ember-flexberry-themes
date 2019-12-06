@@ -29,6 +29,11 @@
 .ui.buttons > .ui.dropdown:last-child .menu{
   left: 0;
   right: auto; 
+
+  .menu {
+    left: 100%;
+    right: auto;
+  }
 }
 
 .flexberry-menu .menu.transition {
