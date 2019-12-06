@@ -29,6 +29,7 @@
 
   tbody {
     .object-list-view-helper-column-cell {
+      padding-top: @olvCheckboxCellVerticalPadding;
       .cell {
         vertical-align: middle;
       }
@@ -37,9 +38,10 @@
     tr td {
       padding-top: @olvCellVerticalPadding;
       padding-bottom: @olvCellVerticalPadding;
+      vertical-align: top;
 
       &.field .flexberry-checkbox {
-        vertical-align: bottom;
+        padding-top: @olvCheckboxCellVerticalPadding;
       }
     }
   }

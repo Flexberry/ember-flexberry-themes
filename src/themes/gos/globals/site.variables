@@ -188,8 +188,8 @@
 @inputBorderColor: @aliceBlue;
 @inputBackground: @aliceBlue;
 
-@inputPlaceholderColor : @lightGrayishBlue;
-@inputPlaceholderFocusColor: @lightGrayishBlue;
+@inputPlaceholderColor : @secondaryColor;
+@inputPlaceholderFocusColor: @secondaryColor;
 
 @inputBorderWidth: @defaultBorderWidth;
 @inputBorderStyle: @defaultBorderStyle;

@@ -114,6 +114,7 @@
     border-color: @defaultFocusBorderColor;
 }
 
+/* Error field */
 .ui.form .fields.error .field,
 .ui.form .field.error {
   .ui.basic.red.label {
@@ -140,10 +141,14 @@
 
   .flexberry-file .ui.action.input:not([class*="left action"]) {
     border-right: none;
-    > .button.flexberry-file-add-button {
+    > .ui.button.flexberry-file-add-button {
       background-color: @formErrorBackground;
       border-color: @formErrorBorder;
       border-left: none;
+      color: @secondaryColor;
+      &:hover {
+        color: @textColor;
+      }
     }
   }
 }

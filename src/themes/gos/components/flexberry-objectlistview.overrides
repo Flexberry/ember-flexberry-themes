@@ -287,7 +287,7 @@ table.object-list-view.selectable {
       font-size: @olvHeaderTextFontSize;
       font-weight: @olvHeaderTextFontWeight;
       line-height: @olvHeaderTextLineHeight;
-      color: @lightGrayishBlue;
+      color: @olvHeaderTextColor;
     }
   }
 }
