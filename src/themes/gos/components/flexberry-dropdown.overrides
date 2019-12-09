@@ -32,3 +32,11 @@
 .ui.upward.selection.active.dropdown:focus {
   box-shadow: @upwardSelectionVisibleBoxShadow;
 }
+
+.groupedit-container .flexberry-dropdown.ui.dropdown {
+  transform: @dropdownWithinGroupeditTransform;
+
+  .menu {
+    min-width: @dropdownWithinGroupeditMinWidth;
+  }
+}
