@@ -32,7 +32,7 @@
 @checkboxReadonlyBorderStyle: @checkboxBorderStyle;
 @checkboxReadonlyBorderColor: @linkWater;
 @checkboxReadonlyBorder: @checkboxReadonlyBorderWidth @checkboxReadonlyBorderStyle @checkboxReadonlyBorderColor;
-@checkboxReadonlyLabelColor: @lightGrayishBlue;
+@checkboxReadonlyLabelColor: @secondaryColor;
 
 
 /* Radio */

@@ -1,0 +1,2 @@
+@background: fade(@negativeColor, 10%);
+@boxShadow: none;

@@ -35,7 +35,7 @@
     @fieldLabeledInsidePaddingBottom
     @fieldLabeledInsidePaddingLeft;
 
-@fieldLabeledInsideLabelColor: @lightGrayishBlue;
+@fieldLabeledInsideLabelColor: @secondaryColor;
 @fieldLabeledInsideLabelFontSize: 0.875em;
 @fieldLabeledInsideLabelLineHeight: @inputLineHeight;
 @fieldLabeledInsideLabelTop: unit(26 / 14, em);;
