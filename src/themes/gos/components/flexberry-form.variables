@@ -23,7 +23,7 @@
 
 // General
 @editBackground: #fff;
-@flexEditFormPadding: 0 @distanceL;
+@flexEditFormPadding: 1px @distanceL;
 
 // Buttons
 @flexberryContentPadding: @distanceM 0 0 0;
@@ -45,3 +45,23 @@
 @iconPadding: 10px;
 @iconFontSize: 16px;
 @closeButtonFontSize: 40px;
+
+/* Errored Input */
+@formErrorColor: @textColor;
+@formErrorBorder: @negativeColor;
+@formErrorBackground: @editBackground;
+
+/* Focused Error */
+@inputErrorFocusBackground: @formErrorBackground;
+@inputErrorFocusColor: @formErrorColor;
+@inputErrorFocusBorder: @negativeColor;
+
+/* Errored Input label*/
+@formErrorLabelBackground: transparent;
+@formErrorLabelBorder: none;
+@formErrorLabelColor: @negativeColor;
+@formErrorLabelFontSize: @inputFontSize;
+@formErrorLabelFontWeight: normal;
+@formErrorLabelPadding: 0;
+@formErrorLabelCornerDisplay: none;
+@formErrorLabelMargin: 0.5em;
