@@ -5,15 +5,11 @@
 
 // Large
 
-@inputLargeFontSize: unit(16 / 18, em);
-@inputLargeLineHeight: 1.5em;
-
 @inputLargeVerticalPadding: unit(11 / 16, em);
 @inputLargeHorizontalPadding: unit(15 / 16, em);
 
 @inputLargePadding: @inputLargeVerticalPadding @inputLargeHorizontalPadding;
 
-@fieldLargeLabelFontSize: 1em;
 @fieldLargeLabelLineHeight: 1.5em;
 
 @fieldLargeLabelMarginTop: 0em;
@@ -21,77 +17,3 @@
 @fieldLargeLabelMarginBottom: 0.5em;
 @fieldLargeLabelMarginLeft: 0em;
 @fieldLargeLabelMargin: @fieldLargeLabelMarginTop @fieldLargeLabelMarginRight @fieldLargeLabelMarginBottom @fieldLargeLabelMarginLeft;
-
-
-// Labeled inside
-
-@fieldLabeledInsidePaddingTop: unit(25 / 14, em);
-@fieldLabeledInsidePaddingRight: unit(21 / 14, em);
-@fieldLabeledInsidePaddingBottom: unit(9 / 14, em);
-@fieldLabeledInsidePaddingLeft: unit(11 / 14, em);
-@fieldLabeledInsidePadding:
-    @fieldLabeledInsidePaddingTop
-    @fieldLabeledInsidePaddingRight
-    @fieldLabeledInsidePaddingBottom
-    @fieldLabeledInsidePaddingLeft;
-
-@fieldLabeledInsideLabelColor: @lightGrayishBlue;
-@fieldLabeledInsideLabelFontSize: 0.875em;
-@fieldLabeledInsideLabelLineHeight: @inputLineHeight;
-@fieldLabeledInsideLabelTop: unit(26 / 14, em);;
-
-@fieldLabeledInsideLabelMarginTop: 0em;
-@fieldLabeledInsideLabelMarginRight: 0em;
-@fieldLabeledInsideLabelMarginBottom: 0em;
-@fieldLabeledInsideLabelMarginLeft: unit(12 / 14, em);
-@fieldLabeledInsideLabelMargin:
-    @fieldLabeledInsideLabelMarginTop
-    @fieldLabeledInsideLabelMarginRight
-    @fieldLabeledInsideLabelMarginBottom
-    @fieldLabeledInsideLabelMarginLeft;
-
-@fieldLabeledInsideLabelAwayFontSize: 0.75em;
-@fieldLabeledInsideLabelAwayTransform: scale(unit(@fieldLabeledInsideLabelAwayFontSize / @defaultInputFontSize)) translateY(-@inputLineHeight);
-@fieldLabeledInsideLabelAwayTransformOrigin: left bottom;
-
-@fieldLabeledInsideLabelTransitionProperty: @defaultTransitionProperty;
-@fieldLabeledInsideLabelTransitionDuration: @defaultTransitionDuration;
-@fieldLabeledInsideLabelTransitionTimingFunction: @defaultTransitionTimingFunction;
-@fieldLabeledInsideLabelTransitionDelay: @defaultTransitionDelay;
-@fieldLabeledInsideLabelTransition:
-    @fieldLabeledInsideLabelTransitionProperty
-    @fieldLabeledInsideLabelTransitionDuration
-    @fieldLabeledInsideLabelTransitionTimingFunction
-    @fieldLabeledInsideLabelTransitionDelay;
-
-
-// Large labeled inside
-
-@fieldLargeLabeledInsidePaddingTop: 1.8125em;
-@fieldLargeLabeledInsidePaddingRight: 0.9375em;
-@fieldLargeLabeledInsidePaddingBottom: 0.5625em;
-@fieldLargeLabeledInsidePaddingLeft: 0.9375em;
-@fieldLargeLabeledInsidePadding:
-    @fieldLargeLabeledInsidePaddingTop
-    @fieldLargeLabeledInsidePaddingRight
-    @fieldLargeLabeledInsidePaddingBottom
-    @fieldLargeLabeledInsidePaddingLeft;
-
-@fieldLargeLabeledInsideLabelFontSize: 1em;
-@fieldLargeLabeledInsideLabelLineHeight: @inputLargeLineHeight;
-@fieldLargeLabeledInsideLabelTop: 1.875em;
-
-@fieldLargeLabeledInsideLabelMarginTop: 0px;
-@fieldLargeLabeledInsideLabelMarginRight: 0px;
-@fieldLargeLabeledInsideLabelMarginBottom: 0px;
-@fieldLargeLabeledInsideLabelMarginLeft: 1em;
-@fieldLargeLabeledInsideLabelMargin:
-    @fieldLargeLabeledInsideLabelMarginTop
-    @fieldLargeLabeledInsideLabelMarginRight
-    @fieldLargeLabeledInsideLabelMarginBottom
-    @fieldLargeLabeledInsideLabelMarginLeft;
-
-@fieldLargeLabeledInsideLabelAwayFontSize: 0.875em;
-@fieldLargeLabeledInsideLabelAwayTransform:
-    scale(unit(@fieldLargeLabeledInsideLabelAwayFontSize / @fieldLargeLabelFontSize))
-    translateY(-@inputLargeLineHeight);

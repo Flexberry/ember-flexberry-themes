@@ -11,6 +11,13 @@
   }
 }
 
+.ui.dropdown > .text {
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  width: 100%;
+}
+
 .ui.dropdown.flexberry-dropdown {
   font-size: @fontSize;
 
@@ -31,4 +38,11 @@
 }
 .ui.upward.selection.active.dropdown:focus {
   box-shadow: @upwardSelectionVisibleBoxShadow;
+}
+
+.ui.form .field.error {
+  .ui.dropdown:not(.button) > .default.text,
+  .ui.default.dropdown:not(.button) > .text{
+    color: @defaultTextColor;
+  }
 }

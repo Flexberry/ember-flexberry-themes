@@ -25,7 +25,6 @@
 
 // Buttons
 .flexberry-edit-panel {
-  padding-top: @distanceS;
   .ui.button:first-child {
     padding-left: 0;
   }
@@ -113,4 +112,136 @@
 .ui.input textarea:focus,
 .ui.input textarea:active {
     border-color: @defaultFocusBorderColor;
+}
+
+/* Error field */
+.ui.form .fields.error .field,
+.ui.form .field.error {
+  .ui.basic.red.label {
+    background-color: @formErrorLabelBackground !important;
+    border: @formErrorLabelBorder;
+    color: @formErrorLabelColor !important;
+    font-size: @formErrorLabelFontSize;
+    font-weight: @formErrorLabelFontWeight;
+    margin-top: @formErrorLabelMargin;
+    padding: @formErrorLabelPadding;
+    &:before {
+      display: @formErrorLabelCornerDisplay;
+    }
+  }
+  
+  .flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input,
+  .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field {
+    &,
+    &:hover,
+    &:focus {
+      border-right-color: @formErrorBorder!important;
+    }
+  }
+
+  .flexberry-file .ui.action.input:not([class*="left action"]) {
+    border-right: none;
+    > .ui.button.flexberry-file-add-button {
+      background-color: @formErrorBackground;
+      border-color: @formErrorBorder;
+      border-left: none;
+      color: @secondaryColor;
+      &:hover {
+        color: @textColor;
+      }
+    }
+  }
+}
+
+.ui.form .field.error > .field {
+  margin-bottom: 0;
+}
+
+.ui.form .field > .ui.selection.dropdown {
+  min-width: 0;
+}
+
+.flexberry-vertical-form {
+  > .ui.two.column.grid {
+    max-width: 1098px;
+  }
+  
+  > .ui.one.column.grid {
+    max-width: 517px;
+  }
+}
+
+/*-------------------
+    Labeled inside
+--------------------*/
+.ui.form .labeled-inside.field {
+  textarea,
+  .ui.input > input {
+    padding-top: @fieldLabeledInsidePaddingTop;
+
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent !important; /* IE11 needs the !important flag */
+    }
+  }
+}
+
+.ui.form .labeled-inside.field .ui.selection.dropdown {
+  padding-top: @fieldLabeledInsidePaddingTop;
+  
+  > .default.text {
+    color: transparent;
+  }
+
+  > .dropdown.icon {
+    padding-top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.ui.form .labeled-inside.field > label {
+    height: 0px;
+    width: 0px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+    color: @fieldLabeledInsideLabelColor;
+    transition: @fieldLabeledInsideLabelTransition;
+    line-height: @fieldLabeledInsideLabelLineHeight;
+    top: @fieldLabeledInsideLabelTop;
+    margin: @fieldLabeledInsideLabelMargin;
+}
+
+.ui.form .labeled-inside.has-text.field > label {
+    transform-origin: @fieldLabeledInsideLabelAwayTransformOrigin;
+    transform: @fieldLabeledInsideLabelAwayTransform;
+}
+
+// Large labeled inside
+.ui.large.labeled-inside.field > .ui.input > input {
+    padding: @fieldLargeLabeledInsidePadding;
+}
+
+.ui.large.labeled-inside.field > label {
+    font-size: @fieldLargeLabeledInsideLabelFontSize;
+    line-height: @fieldLargeLabeledInsideLabelLineHeight;
+    top: @fieldLargeLabeledInsideLabelTop;
+    margin: @fieldLargeLabeledInsideLabelMargin;
+}
+
+.ui.large.labeled-inside.has-text.field > label,
+.ui.large.labeled-inside.field:focus-within > label {
+    transform: @fieldLargeLabeledInsideLabelAwayTransform;
 }

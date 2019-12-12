@@ -51,12 +51,8 @@
             border-radius: @fileInnerControlBorderRadius @defaultBorderRadius @defaultBorderRadius @fileInnerControlBorderRadius;
         }
     
-        &.flexberry-file-remove-button {
-            position: @fileInnerControlPosition;
-            right: @defaultBorderRadius;
-            &.disabled {
-                display: @fileRemoveControlDisplay;
-            }
+        &.flexberry-file-remove-button.disabled {
+            display: @fileRemoveControlDisplay;
         }
 
         &.flexberry-file-upload-button,

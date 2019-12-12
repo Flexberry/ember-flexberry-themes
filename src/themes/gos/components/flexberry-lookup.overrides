@@ -36,21 +36,20 @@
   border-top-right-radius: @lookupFieldBorderRadius !important;
   border-bottom-right-radius: @lookupFieldBorderRadius !important;
   border-right-color: @lookupFieldBorderColor !important;
+
+  &.disabled {
+    border-right-color: @lookupFieldDisabledBorderColor !important;
+  }
   &:focus {
     border-right-color: @lookupFieldBorderColor !important;
+  }
+  &:hover {
+    border-right-color: @lookupFieldHoverBorderColor !important;
   }
 }
 
 .flexberry-lookup.search>.ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
     border-right-color: @lookupFieldFocusBorderColor !important;
-}
-
-.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field:hover {
-    border-right-color: @lookupFieldHoverBorderColor !important;
-}
-
-.flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field.disabled {
-    border-right-color: @lookupFieldDisabledBorderColor !important;
 }
 
 /* Buttons */
@@ -132,4 +131,8 @@
     font-size: @autocompleteResultTitleFontSize;
     font-weight: @autocompleteResultTitleFontWeight;
   }
+}
+
+.flexberry-lookup .flexberry-dropdown {
+  width: 100%;
 }
