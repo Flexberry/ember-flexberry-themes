@@ -1,5 +1,6 @@
 @colsconfigLargeIconColor: @inputPlaceholderColor;
-@colsconfigCellPadding: 0.05em 0.8125em;
+@colsconfigHorizontalPadding: 0.5em;
+@colsconfigCellPadding: 0.25em @colsconfigHorizontalPadding;
 @colsconfigDisabledColor: @linkWater;
 @colsconfigCheckboxMargin: @distanceS;
 
@@ -8,3 +9,14 @@
 @colsconfigButtonHorizontalPadding: @distanceL;
 @colsconfigDisabledButtonColor: @inputPlaceholderColor;
 @colsconfigDisabledButtonBackground: @inputBackground;
+@colsconfigTinyButtonPadding: 0;
+// TODO :(
+@tbodyHeight: calc(~'100vh - 23em');
+
+/* Columns width */
+@showColumnsWidth: 55px;
+@columnsOrderWidth: 64px;
+@sortDirectionWidth: 175px;
+@sortPriorityWidth: 104px;
+@columnWidthWidth: 140px;
+@columnWidthHeaderWidth: @columnWidthWidth + 17px; //+scroll width

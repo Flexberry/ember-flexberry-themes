@@ -181,8 +181,8 @@
         Input
 --------------------*/
 
-@defaultInputFontSize: 0.875em;
-@defaultInputLabelFontSize: 0.875em;
+@defaultInputFontSize: 0.875rem;
+@defaultInputLabelFontSize: 0.875rem;
 @inputLineHeight: unit((20 / 14), em);
 
 @inputBorderColor: @aliceBlue;
