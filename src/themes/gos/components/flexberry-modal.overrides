@@ -1,0 +1,49 @@
+.scrolling.undetached.dimmable.dimmed {
+  overflow: hidden;
+}
+
+.ui.modal.flexberry-sidepage {
+  height: 100vh;
+  left: auto;
+  right: 0%;
+  top: 0%;
+  margin-top: 0 !important;
+  border-radius: 0;
+
+  &.scrolling {
+    left: auto !important;
+    top: @sidepageScrollingTopOffset !important;
+    overflow-y: auto;
+  }
+
+  .header {
+    border-bottom: none;
+    font-size: @sidepageHeaderFontSize;
+    font-weight: @defaultNormalFontWeight;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  .close {
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: @sidepageCloseButtonMargin;
+    color: @sidepageCloseButtonColor;
+    font-size: @sidepageCloseButtonFontSize;
+    font-family: @sidepageCloseButtonFontName;
+    
+    &::before {
+      content: @sidepageCloseButtonIcon;
+    }
+  }
+}
+
+// Style for responsive
+@media only screen and (min-width: 1920px) {
+  .ui.small.modal.flexberry-sidepage {
+    width: @sidepageWidth;
+  }
+}
