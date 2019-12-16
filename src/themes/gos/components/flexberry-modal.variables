@@ -1,0 +1,19 @@
+/*******************************
+             Modal
+*******************************/
+@boxShadow: none;
+
+/*******************************
+            Sidepage
+*******************************/
+
+@sidepageScrollingTopOffset: -3.5rem;
+@sidepageHeaderFontSize: 1.5em;
+@sidepageWidth: 885px;
+
+// Close button
+@sidepageCloseButtonMargin: 1.1em;
+@sidepageCloseButtonColor: @secondaryColor;
+@sidepageCloseButtonFontName: 'Crimean';
+@sidepageCloseButtonFontSize: 1.25em;
+@sidepageCloseButtonIcon: '\e806';

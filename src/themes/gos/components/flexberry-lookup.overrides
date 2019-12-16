@@ -132,3 +132,7 @@
     font-weight: @autocompleteResultTitleFontWeight;
   }
 }
+
+.flexberry-lookup .flexberry-dropdown {
+  width: 100%;
+}

@@ -150,9 +150,12 @@ table.object-list-view.selectable {
     .flexberry-menu.ui.dropdown {
       padding-left: @buttonsDropdownPaddingLeft;
 
-      > .dropdown.icon:before {
-        font-size: @dropdownIconFontSize;
-        content: "\e905";
+      > .dropdown.icon {
+        color: @toolbarButtonIconColor;
+
+        &::before {
+          content: "\e905";
+        }
       }
     }
   }
@@ -191,7 +194,7 @@ table.object-list-view.selectable {
   i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-
+    
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -259,8 +262,9 @@ table.object-list-view.selectable {
     top: 0px;
     z-index: 1;
 
-    &:first-child {
+    &.object-list-view-operations {
       padding: @olvFirstHeaderPadding;
+      padding-left: 10px;
     }
 
     &.object-list-view-operations button {
@@ -318,10 +322,6 @@ table.object-list-view.selectable {
   }
 }
 
-.ui.table.object-list-view thead tr th:first-child {
-  padding-left: 10px;
-}
-
 /* Body */
 .ui.table.object-list-view tbody tr {
   background: @olvRowBackground;
@@ -337,8 +337,10 @@ table.object-list-view.selectable {
 }
 
 // Hover
-.ui.table.object-list-view tbody tr,
-.ui.striped.table.object-list-view tbody tr:nth-child(2n),
+.ui.table tbody tr,
+.ui.selectable.table tbody tr,
+.ui.table tbody tr td.selectable,
+.ui.striped.table tbody tr:nth-child(2n),
 .ui.striped.selectable.selectable.selectable.table tbody tr.active {
   &:hover {
     background: @olvRowHoverBackground !important;
