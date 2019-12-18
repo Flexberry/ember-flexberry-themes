@@ -40,7 +40,7 @@
 @olvHeaderBorderLeft: none;
 
 @olvHeaderVerticalPadding: @inputVerticalPadding;
-@olvHeaderHorizontalPadding: 0;
+@olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
@@ -52,6 +52,8 @@
 @olvHeaderOrderIconPadding: 0.2em;
 @olvHeaderOrderIconDisplay: inline-block;
 @olvHeaderOrderIconVerticalAlign: top;
+
+/* Icons */
 @olvHeaderOrderIconFontFamily: 'guideline-icons';
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
@@ -59,13 +61,11 @@
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 
-@olvOperationCheckAllAtPagePadding: unit(10 / 14, em) 0 0 0;
-
-@olvOperationCheckAllAtPageBeforeFontFamily: 'guideline-icons';
-@olvOperationCheckAllAtPageBeforeFontSize: 2em;
+@olvOperationIconFontFamily: 'guideline-icons';
+@olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckAllAtPageBeforeContent: '\e928';
 
-@olvOperationCheckAllBeforeContent: none;
+@olvOperationCheckAllBeforeContent: '\e928';
 
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
