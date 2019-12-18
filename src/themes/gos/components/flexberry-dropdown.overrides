@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-.ui.form .ui.dropdown {
+.ui.dropdown {
   font-size: @fontSize;
 
   > .dropdown.icon {

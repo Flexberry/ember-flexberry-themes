@@ -136,3 +136,10 @@
 .flexberry-lookup .flexberry-dropdown {
   width: 100%;
 }
+
+#lookup-list .flexberry-objectlistview {
+  max-height: calc(~'100vh - 6em');
+  .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
+    padding-top: 0;
+  }
+}

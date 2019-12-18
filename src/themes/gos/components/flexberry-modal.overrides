@@ -41,6 +41,16 @@
   }
 }
 
+.ui.modal.preview-model .content {
+  .ui.form.flexberry-vertical-form {
+    padding: 0;
+  }
+
+  .close-button {
+    display: none;
+  }
+}
+
 // Style for responsive
 @media only screen and (min-width: 1920px) {
   .ui.small.modal.flexberry-sidepage {

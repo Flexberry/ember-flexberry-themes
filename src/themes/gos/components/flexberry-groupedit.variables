@@ -6,6 +6,6 @@
 @toolbarButtonBackground: transparent;
 
 /* OLV */
-@olvHeaderTextPadding: @inputVerticalPadding*2;
+@olvHeaderTextPadding: calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js
 @olvCellVerticalPadding: 0.25em;
 @olvCheckboxCellVerticalPadding: 0.5em;

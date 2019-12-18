@@ -200,7 +200,7 @@
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
 
-@inputIconFontSize: 1.5em;
+@inputIconFontSize: @glyphWidth;
 @inputReadonlyBackground: @hawkesBlue;
 @inputReadonlyBorderColor: @hawkesBlue;
 
