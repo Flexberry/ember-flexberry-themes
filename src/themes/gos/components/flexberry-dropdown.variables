@@ -2,6 +2,8 @@
             Dropdown
 *******************************/
 @fontSize: @defaultInputFontSize;
+@dropdownWithinGroupeditTransform: none;
+@dropdownWithinGroupeditMinWidth: 0.071em;
 
 /* Text */
 @textLineHeight: @inputLineHeight;
