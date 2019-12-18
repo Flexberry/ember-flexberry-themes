@@ -39,3 +39,11 @@
     color: @defaultTextColor;
   }
 }
+
+.groupedit-container .flexberry-dropdown.ui.dropdown {
+  transform: @dropdownWithinGroupeditTransform;
+
+  .menu {
+    min-width: @dropdownWithinGroupeditMinWidth;
+  }
+}

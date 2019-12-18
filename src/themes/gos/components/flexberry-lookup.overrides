@@ -106,8 +106,6 @@
 .flexberry-lookup.ui.search>.results {
   z-index: 1;
   margin: @autocompleteResultsMargin;
-  padding-top: @autocompleteResultsTopPadding;
-  top: @autocompleteResultsTop;
   width: @autocompleteResultsWidth;
   background: @autocompleteResultsBackground;
   border: @autocompleteResultsBorder;
