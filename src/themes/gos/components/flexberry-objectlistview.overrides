@@ -264,32 +264,46 @@ table.object-list-view.selectable {
       padding: @olvFirstHeaderPadding;
       text-overflow: clip;
       padding-left: 10px;
-    }
+      overflow: @olvOperationsOverflow;
+      z-index: @olvOperationsZIndex;
 
-    &.object-list-view-operations button {
-      background: @olvOperationsBackground;
-      padding: @olvOperationsPadding;
-      &:focus {
-        border-color: transparent;
+      .button {
+        background: @olvOperationsBackground;
+        padding: @olvOperationsPadding;
+        &:focus {
+          border-color: transparent;
+        }
       }
 
-      &.check-all-at-page-button i.icon,
-      &.check-all-button i.icon,
-      &.clear-sorting-button i.icon {
+      .check-rows-button i.icon,
+      .clear-sorting-button i.icon {
         font-family: @olvOperationIconFontFamily;
         font-size: @olvOperationIconFontSize;
       }
-      // TODO: убрать
-      &.check-all-button {
-        display: none;
-      }
 
       .check-square-o.icon::before {
-        content: @olvOperationCheckAllAtPageBeforeContent;
+        content: @olvOperationCheckRowBeforeContent;
       }
 
-      &.check-all-square-o.icon::before {
-        content: @olvOperationCheckAllBeforeContent;
+      .check-rows-button {
+        margin-right: @olvOperationCheckRowMarginRight;
+        
+        .check-square-o.icon {
+          margin: @olvOperationCheckRowIconMargin;
+        }
+
+        .flexberry-menu {
+          .dropdown.icon {
+            top: @olvOperationCheckRowDropdownIconTop;
+            &::before {
+              content: @olvOperationCheckRowDropdownBeforeContent;
+            }
+          }
+
+          .menu {
+            left: @olvOperationCheckRowMenuLeft;
+          }
+        }
       }
 
       .sort.icon::before {
