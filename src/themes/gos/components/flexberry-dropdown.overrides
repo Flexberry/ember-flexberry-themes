@@ -11,13 +11,19 @@
   }
 }
 
-.ui.dropdown.flexberry-dropdown {
+.ui.dropdown > .text {
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  width: 100%;
+}
+
+.ui.dropdown {
   font-size: @fontSize;
 
   > .dropdown.icon {
     color: @secondaryColor;
     font-family: @dropdownIconFontFamily;
-    right: 0.5em;
 
     &::before {
       content: @dropdownIcon;
@@ -37,5 +43,13 @@
   .ui.dropdown:not(.button) > .default.text,
   .ui.default.dropdown:not(.button) > .text{
     color: @defaultTextColor;
+  }
+}
+
+.groupedit-container .flexberry-dropdown.ui.dropdown {
+  transform: @dropdownWithinGroupeditTransform;
+
+  .menu {
+    min-width: @dropdownWithinGroupeditMinWidth;
   }
 }

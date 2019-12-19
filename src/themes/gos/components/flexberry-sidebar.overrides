@@ -12,6 +12,7 @@
   padding: @sidebarPadding;
 
   .item {
+    font-size: 1rem;
     padding: @itemPadding;
   }
 
@@ -26,6 +27,7 @@
     height: @subMenuHeight;
     padding: @subMenuPadding;
     position: @subMenuPosition;
+    margin: 0 !important;
   }
 
   /* main menu only */

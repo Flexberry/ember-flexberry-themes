@@ -27,10 +27,6 @@
   .object-list-view {
     margin: @olvMargin;
   }
-
-  &.groupedit-container {
-    overflow: auto;
-  }
 }
 
 table.object-list-view.selectable {
@@ -72,6 +68,8 @@ table.object-list-view.selectable {
 .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
   padding-top: @menuPaddingTop;
   margin-bottom: @menuMarginBottom;
+  align-items: center;
+  min-height: 0em;
 
   /* Toolbar buttons */
 
@@ -152,9 +150,12 @@ table.object-list-view.selectable {
     .flexberry-menu.ui.dropdown {
       padding-left: @buttonsDropdownPaddingLeft;
 
-      > .dropdown.icon:before {
-        font-size: @dropdownIconFontSize;
-        content: "\e905";
+      > .dropdown.icon {
+        color: @toolbarButtonIconColor;
+
+        &::before {
+          content: "\e905";
+        }
       }
     }
   }
@@ -193,7 +194,7 @@ table.object-list-view.selectable {
   i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-
+    
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -266,31 +267,44 @@ table.object-list-view.selectable {
     top: 0px;
     z-index: 1;
 
-    &:first-child {
+    &.object-list-view-operations {
       padding: @olvFirstHeaderPadding;
+      text-overflow: clip;
+      padding-left: 10px;
     }
 
     &.object-list-view-operations button {
       background: @olvOperationsBackground;
       padding: @olvOperationsPadding;
-
-      &.check-all-at-page-button {
-        padding: @olvOperationCheckAllAtPagePadding;
-
-        &:before {
-          font-family: @olvOperationCheckAllAtPageBeforeFontFamily;
-          font-size: @olvOperationCheckAllAtPageBeforeFontSize;
-          content: @olvOperationCheckAllAtPageBeforeContent;
-        }
+      &:focus {
+        border-color: transparent;
       }
 
-      &.check-all-at-page::before {
+      &.check-all-at-page-button i.icon,
+      &.check-all-button i.icon,
+      &.clear-sorting-button i.icon {
+        font-family: @olvOperationIconFontFamily;
+        font-size: @olvOperationIconFontSize;
+      }
+      // TODO: убрать
+      &.check-all-button {
+        display: none;
+      }
+
+      .check-square-o.icon::before {
+        content: @olvOperationCheckAllAtPageBeforeContent;
+      }
+
+      &.check-all-square-o.icon::before {
         content: @olvOperationCheckAllBeforeContent;
+      }
+
+      .sort.icon::before {
+        content: "\e92b";
       }
     }
 
     div span {
-      padding: @olvHeaderTextPadding;
       font-size: @olvHeaderTextFontSize;
       font-weight: @olvHeaderTextFontWeight;
       line-height: @olvHeaderTextLineHeight;
@@ -325,10 +339,6 @@ table.object-list-view.selectable {
   }
 }
 
-.ui.table.object-list-view thead tr th:first-child {
-  padding-left: 10px;
-}
-
 /* Body */
 .ui.table.object-list-view tbody tr {
   background: @olvRowBackground;
@@ -344,8 +354,10 @@ table.object-list-view.selectable {
 }
 
 // Hover
-.ui.table.object-list-view tbody tr:not(.object-list-view-filters),
-.ui.striped.table.object-list-view tbody tr:nth-child(2n):not(.object-list-view-filters),
+.ui.table tbody tr:not(.object-list-view-filters),
+.ui.selectable.table tbody tr:not(.object-list-view-filters),
+.ui.table tbody tr td.selectable:not(.object-list-view-filters),
+.ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
 .ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
   &:hover {
     background: @olvRowHoverBackground !important;

@@ -152,3 +152,98 @@
     }
   }
 }
+
+.ui.form .field.error > .field {
+  margin-bottom: 0;
+}
+
+.ui.form .field > .ui.selection.dropdown {
+  min-width: 0;
+}
+
+.flexberry-vertical-form {
+  > .ui.two.column.grid {
+    max-width: 1098px;
+    margin-bottom: 0;
+  }
+  
+  > .ui.one.column.grid {
+    max-width: 517px;
+    margin-bottom: 0;
+  }
+}
+
+/*-------------------
+    Labeled inside
+--------------------*/
+.ui.form .labeled-inside.field {
+  textarea,
+  .ui.input > input {
+    padding-top: @fieldLabeledInsidePaddingTop;
+
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent !important; /* IE11 needs the !important flag */
+    }
+  }
+}
+
+.ui.form .labeled-inside.field .ui.selection.dropdown {
+  padding-top: @fieldLabeledInsidePaddingTop;
+  
+  > .default.text {
+    color: transparent;
+  }
+
+  > .dropdown.icon {
+    padding-top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.ui.form .labeled-inside.field > label {
+    height: 0px;
+    width: 0px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+    color: @fieldLabeledInsideLabelColor;
+    transition: @fieldLabeledInsideLabelTransition;
+    line-height: @fieldLabeledInsideLabelLineHeight;
+    top: @fieldLabeledInsideLabelTop;
+    margin: @fieldLabeledInsideLabelMargin;
+}
+
+.ui.form .labeled-inside.has-text.field > label {
+    transform-origin: @fieldLabeledInsideLabelAwayTransformOrigin;
+    transform: @fieldLabeledInsideLabelAwayTransform;
+}
+
+// Large labeled inside
+.ui.large.labeled-inside.field > .ui.input > input {
+    padding: @fieldLargeLabeledInsidePadding;
+}
+
+.ui.large.labeled-inside.field > label {
+    font-size: @fieldLargeLabeledInsideLabelFontSize;
+    line-height: @fieldLargeLabeledInsideLabelLineHeight;
+    top: @fieldLargeLabeledInsideLabelTop;
+    margin: @fieldLargeLabeledInsideLabelMargin;
+}
+
+.ui.large.labeled-inside.has-text.field > label,
+.ui.large.labeled-inside.field:focus-within > label {
+    transform: @fieldLargeLabeledInsideLabelAwayTransform;
+}

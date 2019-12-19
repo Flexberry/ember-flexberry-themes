@@ -181,8 +181,8 @@
         Input
 --------------------*/
 
-@defaultInputFontSize: 0.875em;
-@defaultInputLabelFontSize: 0.875em;
+@defaultInputFontSize: 0.875rem;
+@defaultInputLabelFontSize: 0.875rem;
 @inputLineHeight: unit((20 / 14), em);
 
 @inputBorderColor: @aliceBlue;
@@ -200,7 +200,7 @@
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
 
-@inputIconFontSize: 1.5em;
+@inputIconFontSize: @glyphWidth;
 @inputReadonlyBackground: @hawkesBlue;
 @inputReadonlyBorderColor: @hawkesBlue;
 
@@ -209,6 +209,10 @@
 @labelMarginBottom: unit(4 / 14, em);
 @labelMarginLeft: 0em;
 
+// Large
+@inputLargeFontSize: unit(16 / 18, em);
+@inputLargeLineHeight: 1.5em;
+@fieldLargeLabelFontSize: 1em;
 /*---------------------
         Checkbox
 ----------------------*/
