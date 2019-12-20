@@ -106,6 +106,13 @@
 @filterButtonVerticalPadding: 0em;
 @filterButtonHorizontalPadding: 0.5em;
 @filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+@orDisplay: none;
+@removeFilterPosition: relative;
+@removeFilterPaddingLeft: 0.125em;
+@removeFilterAfterFontSize: 0.459em;
+@removeFilterAfterPosition: absolute;
+@removeFilterAfterTop: 0.091em;
+@removeFilterAfterRight: 0.364em;
 
 @toolbarButtonFocusBorder: none;
 @toolbarButtonHoverBackground: none;
@@ -121,6 +128,7 @@
 @iconFontFamily: guideline-icons;
 @toolbarButtonIconFontSize: 1.5rem;
 @toolbarButtonIconColor: @textColor;
+@removeFilterIconColor: #71BC90;
 
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";

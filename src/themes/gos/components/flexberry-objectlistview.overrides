@@ -97,6 +97,10 @@ table.object-list-view.selectable {
     }
   }
 
+  .filter-active .or {
+    display: @orDisplay;
+  }
+
   .filter-active.icon button {
     background: @toolbarButtonBackground;
     padding: @filterButtonPadding;
@@ -237,7 +241,33 @@ table.object-list-view.selectable {
     }
   }
 
+  .filter-active.icon button.removeFilter-button {
+    background: @inputBackground;
+    border-radius: @defaultBorderRadius;
+    position: @removeFilterPosition;
+    padding-left: @removeFilterPaddingLeft;
 
+    .remove.icon {
+      &:before {
+        content: @filterButtonIcon;
+        color: @removeFilterIconColor;
+      }
+
+      &:after {
+        content: @clearSearchButtonIcon;
+        color: @secondaryColor;
+        font-size: @removeFilterAfterFontSize;
+        top: @removeFilterAfterTop;
+        position: @removeFilterAfterPosition;
+        font-weight: @defaultBoldFontWeight;
+        right: @removeFilterAfterRight;
+      }
+
+      &:hover:after {
+        color: @negativeColor;
+      }
+    }
+  }
 }
 
 /*-------------------
@@ -352,9 +382,14 @@ table.object-list-view.selectable {
 .ui.table tbody tr td.selectable,
 .ui.striped.table tbody tr:nth-child(2n),
 .ui.striped.selectable.selectable.selectable.table tbody tr.active {
-  &:hover {
+  &:not(.object-list-view-filters):hover {
     background: @olvRowHoverBackground !important;
   }
+}
+
+.ui.selectable.table tbody tr.object-list-view-filters,
+.ui.table tbody tr.object-list-view-filters td.selectable {
+  background: @olvRowBackground !important;
 }
 
 // Striped
