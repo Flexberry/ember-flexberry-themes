@@ -455,6 +455,15 @@ table.object-list-view.selectable {
       border: @navBarButtonBorder;
       border-radius: @navBarButtonBorderRadius;
 
+      &.active {
+        background: @white !important;
+        color: @textColor !important;
+      }
+
+      &[data-ember-action]:hover {
+        color: @textColor !important;
+      }
+
       &.prev-page-button,
       &.next-page-button {
         padding: @navBarPrevNextButtonsPadding;

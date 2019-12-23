@@ -158,7 +158,7 @@
 
 @navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
-@navBarPrevNextButtonsBeforeTop: 0.1em;
+@navBarPrevNextButtonsBeforeTop: 0.15em;
 
 @navBarPrevButtonBeforeContent: "\e906";
 @navBarNextButtonBeforeContent: "\e908";
