@@ -53,9 +53,9 @@ table.object-list-view.selectable {
   }
 
   .ui.secondary.menu.no-margin.nav-bar {
-     margin-top: 0;
-     padding-top: 0;
-   }
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .object-list-view-container .JCLRgrip .JColResizer {
@@ -72,6 +72,7 @@ table.object-list-view.selectable {
   min-height: 0em;
 
   /* Toolbar buttons */
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -139,6 +140,7 @@ table.object-list-view.selectable {
       right: @clearButtonRight;
       height: 100%;
     }
+
     .clear-search-button {
       position: absolute;
       right: 0;
@@ -218,12 +220,15 @@ table.object-list-view.selectable {
     &.delete:before {
       content: @deleteButtonIcon;
     }
+
     &.search:before {
       content: @searchButtonIcon;
     }
+
     &.remove:before {
       content: @clearSearchButtonIcon;
     }
+
     &.flask:before {
       content: "\e930";
     }
@@ -235,9 +240,11 @@ table.object-list-view.selectable {
     &.setting:before {
       content: @menuItemEditIcon;
     }
+
     &.unhide:before {
       content: @menuItemUnhideIcon;
     }
+
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
     }
@@ -353,14 +360,23 @@ table.object-list-view.selectable {
 }
 
 // Hover
-.ui.table tbody tr,
-.ui.selectable.table tbody tr,
-.ui.table tbody tr td.selectable,
-.ui.striped.table tbody tr:nth-child(2n),
-.ui.striped.selectable.selectable.selectable.table tbody tr.active {
+.ui.table tbody tr:not(.object-list-view-filters),
+.ui.selectable.table tbody tr:not(.object-list-view-filters),
+.ui.table tbody tr td.selectable:not(.object-list-view-filters),
+.ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
+.ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
   &:hover {
     background: @olvRowHoverBackground !important;
   }
+}
+
+.ui.selectable.table tbody tr.object-list-view-filters:hover,
+.ui.table tbody tr.object-list-view-filters td.selectable:hover {
+  background: @olvRowBackground !important;
+}
+
+.ui.striped.table.object-list-view tbody tr.object-list-view-filters:nth-child(2n):hover {
+  background: @olvRowStrippedBackground !important;
 }
 
 // Striped
@@ -407,6 +423,7 @@ table.object-list-view.selectable {
     .ui.flexberry-checkbox {
       padding-top: @selectRowHelperButtonPaddingTop;
     }
+
     .ui.checkbox .box,
     .ui.checkbox label {
       padding: 0;
@@ -425,6 +442,7 @@ table.object-list-view.selectable {
     // Временные стили для кнопки "Создать на основе"
     .ui.button.object-list-view-row-prototype-button .icon {
       font-size: 1.4em;
+
       &.copy::before {
         content: @copyButtonInRowIcon;
       }
