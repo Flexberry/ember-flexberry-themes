@@ -276,6 +276,7 @@ table.object-list-view.selectable {
       }
 
       .check-rows-button i.icon,
+      .check-all-at-page-button i.icon,
       .clear-sorting-button i.icon {
         font-family: @olvOperationIconFontFamily;
         font-size: @olvOperationIconFontSize;
