@@ -84,6 +84,12 @@ table.object-list-view.selectable {
       background: @toolbarButtonBackground;
     }
 
+    // TODO: Удалить после отрисовки новых иконок.
+    &.hierarchical-button .icon {
+      font-family: @hierarchicalButtonFontFamily;
+      font-size: @hierarchicalButtonFontSize;
+    }
+
     &.refresh-button,
     &.delete-button {
       font-size: @buttonsFontSize;
@@ -431,6 +437,30 @@ table.object-list-view.selectable {
 
       &:hover {
         color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
+}
+
+// Hierarchy mode
+.ui.object-list-view {
+tbody tr td .icon.button.hierarchy-expand {
+    background: @hierarchyButtonBackground;
+    border: @hierarchyButtonBorder;
+    padding-right: @hierarchyButtonPaddingRight;
+    padding-left: @hierarchyButtonPaddingLeft;
+
+    .icon {
+      font-family: @iconFontFamily;
+      font-size: @hierarchyButtonIconFontSize;
+      width: @hierarchyButtonIconWidth;
+
+      &.plus:before {
+        content: @hierarchyOpenButtonIcon;
+      }
+
+      &.minus:before {
+        content: @hierarchyCloseButtonIcon;
       }
     }
   }
