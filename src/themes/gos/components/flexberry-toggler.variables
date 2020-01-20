@@ -3,6 +3,5 @@
 
 @accordionBackgroundColor: transparent;
 @accordionTitleColor: @secondaryColor;
-@accordionIcon: "\f107";
-@accordionIconFont: Icons;
-@accordionIconRotate: rotate(180deg);
+@accordionIcon: "\e907";
+@accordionIconFont: 'guideline-icons';

@@ -2,6 +2,8 @@
             Dropdown
 *******************************/
 @fontSize: @defaultInputFontSize;
+@dropdownWithinGroupeditTransform: none;
+@dropdownWithinGroupeditMinWidth: 0.071em;
 
 /* Text */
 @textLineHeight: @inputLineHeight;
@@ -37,7 +39,7 @@
 @selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 /* Visible */
 @selectionVisibleBorderColor: transparent;
-@selectionVisibleBackground: @defaultInputFocusBackground;
+@selectionVisibleBackground: transparent;
 @selectionVisibleBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
 @selectionVisibleMenuBoxShadow: 0px 9px 12px rgba(95, 95, 95, 0.153646);
 /* Visible Hover */

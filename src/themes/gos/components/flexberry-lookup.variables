@@ -48,8 +48,6 @@
 // Autocomplete
 
 @autocompleteResultsMargin: 0em;
-@autocompleteResultsTopPadding: @inputVerticalPadding * 2 + @inputLineHeight;
-@autocompleteResultsTop: 0em;
 @autocompleteResultsWidth: 100%;
 @autocompleteResultsBackground: @white;
 @autocompleteResultsBorder: none;

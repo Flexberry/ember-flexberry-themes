@@ -23,18 +23,32 @@
 }
 
 .groupedit-container > .ui.table.object-list-view {
-  thead tr th div span {
+  thead tr th {
     padding-left: @olvHeaderTextPadding;
+  }
+
+  tr.error,
+  td.error {
+    background: none !important;
   }
 
   tbody {
     .object-list-view-helper-column-cell {
       padding-top: @olvCheckboxCellVerticalPadding;
+
+      .asterisk.small.red.icon {
+        display: none;
+      }
+
       .cell {
         vertical-align: middle;
       }
     }
-
+    tr.flexberry-new-row,
+    tr.active {
+      background: #2196532e;
+      border: 1px solid #C7CCD1;
+    }
     tr td {
       padding-top: @olvCellVerticalPadding;
       padding-bottom: @olvCellVerticalPadding;

@@ -40,7 +40,7 @@
 @olvHeaderBorderLeft: none;
 
 @olvHeaderVerticalPadding: @inputVerticalPadding;
-@olvHeaderHorizontalPadding: 0;
+@olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
@@ -52,6 +52,8 @@
 @olvHeaderOrderIconPadding: 0.2em;
 @olvHeaderOrderIconDisplay: inline-block;
 @olvHeaderOrderIconVerticalAlign: top;
+
+/* Icons */
 @olvHeaderOrderIconFontFamily: 'guideline-icons';
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
@@ -59,13 +61,11 @@
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 
-@olvOperationCheckAllAtPagePadding: unit(10 / 14, em) 0 0 0;
-
-@olvOperationCheckAllAtPageBeforeFontFamily: 'guideline-icons';
-@olvOperationCheckAllAtPageBeforeFontSize: 2em;
+@olvOperationIconFontFamily: 'guideline-icons';
+@olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckAllAtPageBeforeContent: '\e928';
 
-@olvOperationCheckAllBeforeContent: none;
+@olvOperationCheckAllBeforeContent: '\e928';
 
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
@@ -115,15 +115,24 @@
 @buttonsDropdownPaddingLeft: 0;
 @buttonsPaddingRight: 0;
 
-@dropdownIconFontSize: 1em;
+@clearButtonRight: @glyphWidth + 0.5em;
 
-
-@clearButtonRight: @glyphWidth+0.5em;
+@hierarchyButtonBackground: transparent;
+@hierarchyButtonBorder: none;
+@hierarchyButtonPaddingRight: 0.308em;
+@hierarchyButtonPaddingLeft: 0;
 
 /* Icons */
 @iconFontFamily: guideline-icons;
 @toolbarButtonIconFontSize: 1.5rem;
 @toolbarButtonIconColor: @textColor;
+
+@hierarchyButtonIconFontSize: 1.538em;
+@hierarchyButtonIconWidth: 0.6em;
+
+// TODO: Удалить после отрисовки новых иконок.
+@hierarchicalButtonFontFamily: 'Icons';
+@hierarchicalButtonFontSize: 1.429em;
 
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
@@ -137,6 +146,8 @@
 @menuItemUnhideIcon: "\e917";
 @menuItemApplyIcon: "\e92d";
 @menuItemAddIcon: "\e923";
+@hierarchyOpenButtonIcon: "\e904";
+@hierarchyCloseButtonIcon: "\e90a";
 
 /*-------------------
    Navbar buttons
