@@ -97,13 +97,19 @@ table.object-list-view.selectable {
     }
   }
 
-  .filter-active .or {
-    display: @orDisplay;
-  }
+  .filter-active {
+    &.show-filter .button:first-child {
+      display: @filterButtonDisplayAfterFiltering;
+    }
 
-  .filter-active.icon button {
-    background: @toolbarButtonBackground;
-    padding: @filterButtonPadding;
+    &.icon button {
+      background: @toolbarButtonBackground;
+      padding: @filterButtonPadding;
+    }
+
+    .or {
+      display: @orDisplay;
+    }
   }
 
   .ui.icon.button {
@@ -196,7 +202,7 @@ table.object-list-view.selectable {
   i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-    
+
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -374,6 +380,10 @@ table.object-list-view.selectable {
 
 .object-list-view-helper-column-cell {
   line-height: @olvHelperCellLineHeight;
+}
+
+.ui.table tbody tr.object-list-view-filters:nth-child(2) td {
+  border-bottom: @olvFilterRowBorder;
 }
 
 // Hover

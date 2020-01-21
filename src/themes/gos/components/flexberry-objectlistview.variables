@@ -106,6 +106,8 @@
 @filterButtonVerticalPadding: 0em;
 @filterButtonHorizontalPadding: 0.5em;
 @filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+@olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @whisper;
+@filterButtonDisplayAfterFiltering: none;
 @orDisplay: none;
 @removeFilterPosition: relative;
 @removeFilterPaddingLeft: 0.125em;
