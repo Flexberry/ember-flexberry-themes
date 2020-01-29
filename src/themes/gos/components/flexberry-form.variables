@@ -26,7 +26,7 @@
 @flexEditFormPadding: 1px @distanceL;
 
 // Buttons
-@flexberryContentPadding: @distanceM 0 0 0;
+@flexberryContentPadding: @distanceS 0 0 0;
 @headerFontWeight: 400;
 
 // Toolbar buttons
