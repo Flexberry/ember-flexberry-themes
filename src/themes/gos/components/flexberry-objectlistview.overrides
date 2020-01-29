@@ -53,9 +53,9 @@ table.object-list-view.selectable {
   }
 
   .ui.secondary.menu.no-margin.nav-bar {
-     margin-top: 0;
-     padding-top: 0;
-   }
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .object-list-view-container .JCLRgrip .JColResizer {
@@ -72,6 +72,7 @@ table.object-list-view.selectable {
   min-height: 0em;
 
   /* Toolbar buttons */
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -82,6 +83,12 @@ table.object-list-view.selectable {
     &.search-button,
     &.clear-search-button {
       background: @toolbarButtonBackground;
+    }
+
+    // TODO: Удалить после отрисовки новых иконок.
+    &.hierarchical-button .icon {
+      font-family: @hierarchicalButtonFontFamily;
+      font-size: @hierarchicalButtonFontSize;
     }
 
     &.refresh-button,
@@ -143,6 +150,7 @@ table.object-list-view.selectable {
       right: @clearButtonRight;
       height: 100%;
     }
+
     .clear-search-button {
       position: absolute;
       right: 0;
@@ -222,12 +230,15 @@ table.object-list-view.selectable {
     &.delete:before {
       content: @deleteButtonIcon;
     }
+
     &.search:before {
       content: @searchButtonIcon;
     }
+
     &.remove:before {
       content: @clearSearchButtonIcon;
     }
+
     &.flask:before {
       content: "\e930";
     }
@@ -239,9 +250,11 @@ table.object-list-view.selectable {
     &.setting:before {
       content: @menuItemEditIcon;
     }
+
     &.unhide:before {
       content: @menuItemUnhideIcon;
     }
+
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
     }
@@ -300,32 +313,47 @@ table.object-list-view.selectable {
       padding: @olvFirstHeaderPadding;
       text-overflow: clip;
       padding-left: 10px;
-    }
+      overflow: @olvOperationsOverflow;
+      z-index: @olvOperationsZIndex;
 
-    &.object-list-view-operations button {
-      background: @olvOperationsBackground;
-      padding: @olvOperationsPadding;
-      &:focus {
-        border-color: transparent;
+      .button {
+        background: @olvOperationsBackground;
+        padding: @olvOperationsPadding;
+        &:focus {
+          border-color: transparent;
+        }
       }
 
-      &.check-all-at-page-button i.icon,
-      &.check-all-button i.icon,
-      &.clear-sorting-button i.icon {
+      .check-rows-button i.icon,
+      .check-all-at-page-button i.icon,
+      .clear-sorting-button i.icon {
         font-family: @olvOperationIconFontFamily;
         font-size: @olvOperationIconFontSize;
       }
-      // TODO: убрать
-      &.check-all-button {
-        display: none;
-      }
 
       .check-square-o.icon::before {
-        content: @olvOperationCheckAllAtPageBeforeContent;
+        content: @olvOperationCheckRowBeforeContent;
       }
 
-      &.check-all-square-o.icon::before {
-        content: @olvOperationCheckAllBeforeContent;
+      .check-rows-button {
+        margin-right: @olvOperationCheckRowMarginRight;
+        
+        .check-square-o.icon {
+          margin: @olvOperationCheckRowIconMargin;
+        }
+
+        .flexberry-menu {
+          .dropdown.icon {
+            top: @olvOperationCheckRowDropdownIconTop;
+            &::before {
+              content: @olvOperationCheckRowDropdownBeforeContent;
+            }
+          }
+
+          .menu {
+            left: @olvOperationCheckRowMenuLeft;
+          }
+        }
       }
 
       .sort.icon::before {
@@ -402,6 +430,15 @@ table.object-list-view.selectable {
   background: @olvRowBackground !important;
 }
 
+.ui.selectable.table tbody tr.object-list-view-filters:hover,
+.ui.table tbody tr.object-list-view-filters td.selectable:hover {
+  background: @olvRowBackground !important;
+}
+
+.ui.striped.table.object-list-view tbody tr.object-list-view-filters:nth-child(2n):hover {
+  background: @olvRowStrippedBackground !important;
+}
+
 // Striped
 .ui.striped.table.object-list-view tbody tr:nth-child(2n) {
   background: @olvRowStrippedBackground;
@@ -446,6 +483,7 @@ table.object-list-view.selectable {
     .ui.flexberry-checkbox {
       padding-top: @selectRowHelperButtonPaddingTop;
     }
+
     .ui.checkbox .box,
     .ui.checkbox label {
       padding: 0;
@@ -464,6 +502,7 @@ table.object-list-view.selectable {
     // Временные стили для кнопки "Создать на основе"
     .ui.button.object-list-view-row-prototype-button .icon {
       font-size: 1.4em;
+
       &.copy::before {
         content: @copyButtonInRowIcon;
       }
@@ -476,6 +515,30 @@ table.object-list-view.selectable {
 
       &:hover {
         color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
+}
+
+// Hierarchy mode
+.ui.object-list-view {
+tbody tr td .icon.button.hierarchy-expand {
+    background: @hierarchyButtonBackground;
+    border: @hierarchyButtonBorder;
+    padding-right: @hierarchyButtonPaddingRight;
+    padding-left: @hierarchyButtonPaddingLeft;
+
+    .icon {
+      font-family: @iconFontFamily;
+      font-size: @hierarchyButtonIconFontSize;
+      width: @hierarchyButtonIconWidth;
+
+      &.plus:before {
+        content: @hierarchyOpenButtonIcon;
+      }
+
+      &.minus:before {
+        content: @hierarchyCloseButtonIcon;
       }
     }
   }

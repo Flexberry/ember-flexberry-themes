@@ -60,13 +60,17 @@
 
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
+@olvOperationsZIndex: 5;
+@olvOperationCheckRowMenuLeft: -2.143em;
+@olvOperationsOverflow: visible;
 
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
-@olvOperationCheckAllAtPageBeforeContent: '\e928';
-
-@olvOperationCheckAllBeforeContent: '\e928';
-
+@olvOperationCheckRowBeforeContent: '\e928';
+@olvOperationCheckRowDropdownBeforeContent: '\e905';
+@olvOperationCheckRowMarginRight: 1.143em;
+@olvOperationCheckRowIconMargin: 0;
+@olvOperationCheckRowDropdownIconTop: -0.286em;
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
@@ -124,13 +128,25 @@
 @buttonsDropdownPaddingLeft: 0;
 @buttonsPaddingRight: 0;
 
-@clearButtonRight: @glyphWidth+0.5em;
+@clearButtonRight: @glyphWidth + 0.5em;
+
+@hierarchyButtonBackground: transparent;
+@hierarchyButtonBorder: none;
+@hierarchyButtonPaddingRight: 0.308em;
+@hierarchyButtonPaddingLeft: 0;
 
 /* Icons */
 @iconFontFamily: guideline-icons;
 @toolbarButtonIconFontSize: 1.5rem;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
+
+@hierarchyButtonIconFontSize: 1.538em;
+@hierarchyButtonIconWidth: 0.6em;
+
+// TODO: Удалить после отрисовки новых иконок.
+@hierarchicalButtonFontFamily: 'Icons';
+@hierarchicalButtonFontSize: 1.429em;
 
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
@@ -144,6 +160,8 @@
 @menuItemUnhideIcon: "\e917";
 @menuItemApplyIcon: "\e92d";
 @menuItemAddIcon: "\e923";
+@hierarchyOpenButtonIcon: "\e904";
+@hierarchyCloseButtonIcon: "\e90a";
 
 /*-------------------
    Navbar buttons
