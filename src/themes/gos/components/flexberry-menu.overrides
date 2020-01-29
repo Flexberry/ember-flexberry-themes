@@ -6,6 +6,14 @@
   font-weight: @flexberryMenuTextFontWeight;
   background: @flexberryMenuBackground; 
   border: @flexberryMenuBorder;
+  &:first-child {
+    border-top-left-radius: @defaultBorderRadius;
+    border-top-right-radius: @defaultBorderRadius;
+  }
+  &:last-child {
+    border-bottom-left-radius: @defaultBorderRadius;
+    border-bottom-right-radius: @defaultBorderRadius;
+  }
 }
 
 .ui.basic.buttons {

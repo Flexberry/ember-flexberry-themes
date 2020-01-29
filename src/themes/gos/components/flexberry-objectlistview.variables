@@ -60,13 +60,17 @@
 
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
+@olvOperationsZIndex: 5;
+@olvOperationCheckRowMenuLeft: -2.143em;
+@olvOperationsOverflow: visible;
 
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
-@olvOperationCheckAllAtPageBeforeContent: '\e928';
-
-@olvOperationCheckAllBeforeContent: '\e928';
-
+@olvOperationCheckRowBeforeContent: '\e928';
+@olvOperationCheckRowDropdownBeforeContent: '\e905';
+@olvOperationCheckRowMarginRight: 1.143em;
+@olvOperationCheckRowIconMargin: 0;
+@olvOperationCheckRowDropdownIconTop: -0.286em;
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
