@@ -31,7 +31,7 @@
 
 table.object-list-view.selectable {
   thead,
-  tbody {
+  tbody tr:not(.object-list-view-filters){
     cursor: pointer;
   }
 }
@@ -428,15 +428,6 @@ table.object-list-view.selectable {
 .ui.selectable.table tbody tr.object-list-view-filters,
 .ui.table tbody tr.object-list-view-filters td.selectable {
   background: @olvRowBackground !important;
-}
-
-.ui.selectable.table tbody tr.object-list-view-filters:hover,
-.ui.table tbody tr.object-list-view-filters td.selectable:hover {
-  background: @olvRowBackground !important;
-}
-
-.ui.striped.table.object-list-view tbody tr.object-list-view-filters:nth-child(2n):hover {
-  background: @olvRowStrippedBackground !important;
 }
 
 // Striped
