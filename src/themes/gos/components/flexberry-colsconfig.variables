@@ -11,7 +11,7 @@
 @colsconfigDisabledButtonBackground: @inputBackground;
 @colsconfigTinyButtonPadding: 0;
 // TODO :(
-@tbodyHeight: calc(~'100vh - 23em');
+@tbodyHeight: calc(~'100vh - 24em');
 
 /* Columns width */
 @showColumnsWidth: 55px;
