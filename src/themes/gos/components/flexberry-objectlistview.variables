@@ -156,32 +156,23 @@
 /*-------------------
    Navbar buttons
 --------------------*/
-@navBarButtonsMargin: 0 0 0 1px;
-@navBarButtonsBorder: none;
-
-@navBarButtonSize: 2.5em;
-@navBarButtonWidth: @navBarButtonSize;
-@navBarButtonHeight: @navBarButtonSize;
-@navBarButtonMargin: 0 0 0 unit(4 / 14, em);
-@navBarButtonVerticalPadding: unit(10 / 14, em);
-@navBarButtonPaddingHorizontal: unit(12 / 14, em);
-@navBarButtonPadding: @navBarButtonVerticalPadding @navBarButtonPaddingHorizontal;
+@navBarMargin: 0;
 @navBarButtonFontSize: 0.875rem;
 @navBarButtonBorder: none;
 @navBarButtonBorderRadius: @defaultBorderRadius;
 
-@navBarPrevNextButtonsVerticalPadding: 0;
-@navBarPrevNextButtonsHorizontalPadding: unit(4 / 14, em);
-@navBarPrevNextButtonsPadding: @navBarPrevNextButtonsVerticalPadding @navBarPrevNextButtonsHorizontalPadding;
+@navBarButtonSize: 2.5rem;
+@navBarButtonWidth: @navBarButtonSize;
+@navBarButtonMargin: 0 unit(4 / 14, em) 0 0;
+@navBarButtonPadding: 0 1rem;
 
 @navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
-@navBarPrevNextButtonsBeforeTop: 0.1em;
 
 @navBarPrevButtonBeforeContent: "\e906";
 @navBarNextButtonBeforeContent: "\e908";
 
-@navBarShowingEntriesPadding: 0.625em;
+@navBarShowingEntriesPadding: 0.5625rem;
 
 
 /*-----------------------

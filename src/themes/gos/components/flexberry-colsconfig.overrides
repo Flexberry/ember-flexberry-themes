@@ -171,3 +171,19 @@
   width: 100%;
   table-layout: fixed;
 }
+
+.ui.form .flexberry-colsconfig.content .message {
+  display: @messageDisplay;
+  margin-bottom: @messageMarginBottom;
+  padding: @messagePadding;
+  
+  .close.icon {
+    font-size: @messageFontSize;
+    margin: @messageCloseIconMargin;
+  }
+
+  .header {
+    font-family: @fontName;
+    font-size: @messageFontSize;
+  }
+}

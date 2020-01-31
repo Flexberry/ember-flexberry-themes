@@ -9,6 +9,16 @@
     background: @selectionReadonlyBackground;
     border-color: @selectionReadonlyBorderColor;
   }
+
+  &.loading {
+    .icon:before,
+    .icon:after {
+      width: @loadingIconWidth;
+      height: @loadingIconHeight;
+      top: @loadingIconTop;
+      left: @loadingIconLeft;
+    }
+  }
 }
 
 .ui.dropdown > .text {
