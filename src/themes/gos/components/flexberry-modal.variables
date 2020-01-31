@@ -2,6 +2,7 @@
              Modal
 *******************************/
 @boxShadow: none;
+@headerBorder: none;
 
 /*******************************
             Sidepage
