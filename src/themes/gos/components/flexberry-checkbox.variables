@@ -7,6 +7,9 @@
 @checkboxBorderColor: @inputHoverBorderColor;
 @checkboxBorder: @checkboxBorderWidth @checkboxBorderStyle @checkboxBorderColor;
 @checkboxBorderRadius: @defaultBorderRadius;
+
+/* Label */
+@labelFontSize: @defaultInputLabelFontSize;
 @labelColor: @textColor;
 @labelDistance: @checkboxSize + @distanceS * @remSize;
 @labelFontWeight: @defaultNormalFontWeight;

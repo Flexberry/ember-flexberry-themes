@@ -127,6 +127,10 @@ table.object-list-view.selectable {
         line-height: 1;
       }
     }
+
+    &.delete-button:hover {
+      color: @deleteHelperButtonInRowHoverColor;
+    }
   }
 
   .ui.action.input {
