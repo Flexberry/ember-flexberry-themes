@@ -9,7 +9,7 @@
 @checkboxBorderRadius: @defaultBorderRadius;
 @labelColor: @textColor;
 @labelDistance: @checkboxSize + @distanceS * @remSize;
-@labelFontWeight: @defaultMediumFontWeight;
+@labelFontWeight: @defaultNormalFontWeight;
 
 @checkboxHoverBackground: @inputBackground;
 @checkboxHoverBorderColor: @primaryColor;
