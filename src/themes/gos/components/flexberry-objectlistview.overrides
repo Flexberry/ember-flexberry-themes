@@ -127,6 +127,10 @@ table.object-list-view.selectable {
         line-height: 1;
       }
     }
+
+    &.delete-button:hover {
+      color: @deleteHelperButtonInRowHoverColor;
+    }
   }
 
   .ui.action.input {
@@ -370,13 +374,15 @@ table.object-list-view.selectable {
 }
 
 // Hover
-.ui.table tbody tr:not(.object-list-view-filters),
-.ui.selectable.table tbody tr:not(.object-list-view-filters),
-.ui.table tbody tr td.selectable:not(.object-list-view-filters),
-.ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
-.ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
-  &:hover {
-    background: @olvRowHoverBackground !important;
+.object-list-view-container:not(.groupedit-container) {
+  .ui.table tbody tr:not(.object-list-view-filters),
+  .ui.selectable.table tbody tr:not(.object-list-view-filters),
+  .ui.table tbody tr td.selectable:not(.object-list-view-filters),
+  .ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
+  .ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
+    &:hover {
+      background: @olvRowHoverBackground !important;
+    }
   }
 }
 
