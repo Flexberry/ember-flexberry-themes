@@ -147,3 +147,4 @@
 @buttonHugePadding: 1em unit(23 / 18, em);
 @buttonHugeLineHeight: unit(26 / 18, em);
 
+@basicGroupBorder: none;

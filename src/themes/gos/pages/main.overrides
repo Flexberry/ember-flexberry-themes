@@ -29,7 +29,21 @@
 
 .page-header-userbar {
   position: relative;
-  display: block;
+
+  img {
+    border-radius: 100%;
+    height: @userFotoImgSize;
+    width: @userFotoImgSize;
+  }
+  span {
+    margin-right: 1em;
+  }
+  .ui.dropdown > .dropdown.icon {
+    color: @textColor;
+    &::before {
+      content: "\e905";
+    }
+  }
 }
 
 .page-header-actions {

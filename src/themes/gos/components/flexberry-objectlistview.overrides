@@ -546,7 +546,7 @@ tbody tr td .icon.button.hierarchy-expand {
       &.next-page-button::before {
         content: @navBarNextButtonBeforeContent;
       }
-      &:not([data-ember-action]) {
+      &:not(.active):not([data-ember-action]) {
         padding-top: 0.5rem;
         background: transparent!important;
         pointer-events: none;
