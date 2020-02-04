@@ -114,6 +114,10 @@
     border-color: @defaultFocusBorderColor;
 }
 
+.ui.large.input > textarea {
+  font-size: @inputLargeFontSize;
+}
+
 /* Error field */
 .ui.form .fields.error .field,
 .ui.form .field.error {
