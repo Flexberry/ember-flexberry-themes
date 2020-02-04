@@ -51,11 +51,6 @@ table.object-list-view.selectable {
     overflow: auto;
     height: 100%;
   }
-
-  .ui.secondary.menu.no-margin.nav-bar {
-    margin-top: 0;
-    padding-top: 0;
-  }
 }
 
 .object-list-view-container .JCLRgrip .JColResizer {
@@ -131,6 +126,10 @@ table.object-list-view.selectable {
       i.icon {
         line-height: 1;
       }
+    }
+
+    &.delete-button:hover {
+      color: @deleteHelperButtonInRowHoverColor;
     }
   }
 
@@ -277,32 +276,47 @@ table.object-list-view.selectable {
       padding: @olvFirstHeaderPadding;
       text-overflow: clip;
       padding-left: 10px;
-    }
+      overflow: @olvOperationsOverflow;
+      z-index: @olvOperationsZIndex;
 
-    &.object-list-view-operations button {
-      background: @olvOperationsBackground;
-      padding: @olvOperationsPadding;
-      &:focus {
-        border-color: transparent;
+      .button {
+        background: @olvOperationsBackground;
+        padding: @olvOperationsPadding;
+        &:focus {
+          border-color: transparent;
+        }
       }
 
-      &.check-all-at-page-button i.icon,
-      &.check-all-button i.icon,
-      &.clear-sorting-button i.icon {
+      .check-rows-button i.icon,
+      .check-all-at-page-button i.icon,
+      .clear-sorting-button i.icon {
         font-family: @olvOperationIconFontFamily;
         font-size: @olvOperationIconFontSize;
       }
-      // TODO: убрать
-      &.check-all-button {
-        display: none;
-      }
 
       .check-square-o.icon::before {
-        content: @olvOperationCheckAllAtPageBeforeContent;
+        content: @olvOperationCheckRowBeforeContent;
       }
 
-      &.check-all-square-o.icon::before {
-        content: @olvOperationCheckAllBeforeContent;
+      .check-rows-button {
+        margin-right: @olvOperationCheckRowMarginRight;
+        
+        .check-square-o.icon {
+          margin: @olvOperationCheckRowIconMargin;
+        }
+
+        .flexberry-menu {
+          .dropdown.icon {
+            top: @olvOperationCheckRowDropdownIconTop;
+            &::before {
+              content: @olvOperationCheckRowDropdownBeforeContent;
+            }
+          }
+
+          .menu {
+            left: @olvOperationCheckRowMenuLeft;
+          }
+        }
       }
 
       .sort.icon::before {
@@ -360,13 +374,15 @@ table.object-list-view.selectable {
 }
 
 // Hover
-.ui.table tbody tr:not(.object-list-view-filters),
-.ui.selectable.table tbody tr:not(.object-list-view-filters),
-.ui.table tbody tr td.selectable:not(.object-list-view-filters),
-.ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
-.ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
-  &:hover {
-    background: @olvRowHoverBackground !important;
+.object-list-view-container:not(.groupedit-container) {
+  .ui.table tbody tr:not(.object-list-view-filters),
+  .ui.selectable.table tbody tr:not(.object-list-view-filters),
+  .ui.table tbody tr td.selectable:not(.object-list-view-filters),
+  .ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
+  .ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
+    &:hover {
+      background: @olvRowHoverBackground !important;
+    }
   }
 }
 
@@ -489,29 +505,37 @@ tbody tr td .icon.button.hierarchy-expand {
 --------------------*/
 .ui.secondary.menu.nav-bar {
   min-height: @navBarButtonSize;
-
+  margin: @navBarMargin;
+  padding-top: 0;
   .ui.basic.buttons {
-    margin: @navBarButtonsMargin;
-    border: @navBarButtonsBorder;
-
     .ui.button {
-      width: @navBarButtonWidth;
-      height: @navBarButtonHeight;
-      margin: @navBarButtonMargin;
-      padding: @navBarButtonPadding;
-      font-size: @navBarButtonFontSize;
       border: @navBarButtonBorder;
       border-radius: @navBarButtonBorderRadius;
+      color: @textColor!important;
+      font-size: @navBarButtonFontSize;
+      min-width: @navBarButtonWidth;
+      margin: @navBarButtonMargin;
+      padding: @navBarButtonPadding;
+
+      &:hover {
+        box-shadow: 0px 0px 0px 1px @navyBlue;
+      }
+
+      &.disabled {
+        color: @secondaryColor!important;
+      }
+
+      &.active {
+        background: @white !important;
+        color: @textColor !important;
+      }
 
       &.prev-page-button,
       &.next-page-button {
-        padding: @navBarPrevNextButtonsPadding;
-
         &:before {
-          position: relative;
-          top: @navBarPrevNextButtonsBeforeTop;
           font-family: @navBarPrevNextButtonsBeforeFontFamily;
-          font-size: @navBarPrevNextButtonsBeforeFontSize
+          font-size: @navBarPrevNextButtonsBeforeFontSize;
+          display: block;
         }
       }
 
@@ -521,6 +545,11 @@ tbody tr td .icon.button.hierarchy-expand {
 
       &.next-page-button::before {
         content: @navBarNextButtonBeforeContent;
+      }
+      &:not(.active):not([data-ember-action]) {
+        padding-top: 0.5rem;
+        background: transparent!important;
+        pointer-events: none;
       }
     }
   }

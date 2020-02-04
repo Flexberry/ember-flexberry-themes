@@ -2,6 +2,40 @@
   overflow: hidden;
 }
 
+/*******************************
+             Modal
+*******************************/
+
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+     Close
+---------------*/
+
+.ui.modal > .close {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.ui.modal i.icon.close:before {
+  content: "\e806";
+  font-family: 'Crimean';
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.modal .ui.header {
+  font-weight: normal;
+}
+
+/*******************************
+            Sidepage
+*******************************/
 .ui.modal.flexberry-sidepage {
   height: 100vh;
   left: auto;

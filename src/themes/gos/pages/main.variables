@@ -4,6 +4,7 @@
 @headerFontSize: 0.875rem;
 @pageHeaderCaptionColor: @headerTextColor;
 @pageBackgroundColor: @pageBackground;
+@userFotoImgSize:36px;
 
 @footerBackground: #eee;
 @flexberryContentPadding: @distanceM @distanceL;

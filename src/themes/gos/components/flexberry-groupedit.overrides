@@ -7,7 +7,8 @@
       border-color: @toolbarButtonBackground;
     }
 
-    &.disabled {
+    &.disabled,
+    &:disabled {
       background: @toolbarButtonBackground;
       color: @inputPlaceholderColor;
     }
