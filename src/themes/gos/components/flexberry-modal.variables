@@ -3,6 +3,40 @@
 *******************************/
 @boxShadow: none;
 
+/* Close Icon */
+@closeOpacity: 1;
+@closeColor: @linkWater;
+@closeSize: 1.5em;
+
+@closeHitbox: 2.25rem;
+@closePadding: 1.25rem 0rem 0rem;
+@closeTop: 0;
+@closeRight: 1.25rem;
+
+/* Header */
+@headerBorder:none;
+@headerColor: @textColor;
+@headerFontSize: 3em;
+@headerVerticalPadding: 2rem;
+@headerHorizontalPadding: 2rem;
+@headerPadding: @headerVerticalPadding @headerHorizontalPadding 0.5rem;
+@headerFontWeight: normal;
+
+/* Content */
+@contentPadding: 0.5rem 2rem 0.75rem;
+
+/* Modal Actions */
+@actionBorder: none;
+@actionBackground: @white;
+@actionPadding: 0.75rem 2rem 2rem;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Derived Responsive Sizes */
+@smallHeaderSize: 3em;
+
 /*******************************
             Sidepage
 *******************************/
