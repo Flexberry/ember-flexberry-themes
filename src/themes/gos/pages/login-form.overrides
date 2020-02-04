@@ -7,5 +7,21 @@
   .ui.header {
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  a {
+    color: @loginFormLinkColor;
+  }
+
+  .sign-up {
+    display: block;
+    margin-top: @loginFormSignUpLinkMarginTop;
+    margin-bottom: @loginFormSignUpLinkMarginBottom;
+  }
+
+  .reset-password {
+    display: block;
+    margin-top: @loginFormResetPasswordLinkMarginTop;
   }
 }

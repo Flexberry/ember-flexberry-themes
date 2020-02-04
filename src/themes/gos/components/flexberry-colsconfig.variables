@@ -11,7 +11,7 @@
 @colsconfigDisabledButtonBackground: @inputBackground;
 @colsconfigTinyButtonPadding: 0;
 // TODO :(
-@tbodyHeight: calc(~'100vh - 23em');
+@tbodyHeight: calc(~'100vh - 24em');
 
 /* Columns width */
 @showColumnsWidth: 55px;
@@ -20,3 +20,10 @@
 @sortPriorityWidth: 104px;
 @columnWidthWidth: 140px;
 @columnWidthHeaderWidth: @columnWidthWidth + 17px; //+scroll width
+
+/* Message */
+@messageDisplay: block;
+@messageMarginBottom: 0;
+@messagePadding: 0.75em 1.5em;
+@messageCloseIconMargin: 0.75em;
+@messageFontSize: 1em;

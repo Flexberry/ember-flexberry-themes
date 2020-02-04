@@ -75,3 +75,9 @@
 @upwardSelectionVisibleBoxShadow: 0px -4px 12px rgba(95, 95, 95, 0.153646);
 @upwardSelectionActiveHoverBoxShadow: @upwardSelectionVisibleBoxShadow;
 @upwardSelectionActiveHoverMenuBoxShadow: @upwardSelectionMenuBoxShadow;
+
+/* Loading */
+@loadingIconWidth: 1em;
+@loadingIconHeight: 1em;
+@loadingIconTop: 40%;
+@loadingIconLeft: 75%;

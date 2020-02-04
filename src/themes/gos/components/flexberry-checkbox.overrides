@@ -1,11 +1,5 @@
 /* Checkbox */
 
-// Label
-.ui.checkbox label,
-.ui.checkbox + label {
-  font-weight: @labelFontWeight;
-}
-
 // Box readonly
 .ui.checkbox.read-only .box:before,
 .ui.checkbox.read-only label:before,
