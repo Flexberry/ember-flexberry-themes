@@ -2,7 +2,6 @@
              Modal
 *******************************/
 @boxShadow: none;
-@headerBorder: none;
 
 /* Close Icon */
 @closeOpacity: 1;
