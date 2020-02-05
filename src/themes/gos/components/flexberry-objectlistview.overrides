@@ -31,7 +31,7 @@
 
 table.object-list-view.selectable {
   thead,
-  tbody {
+  tbody tr:not(.object-list-view-filters){
     cursor: pointer;
   }
 }
@@ -99,9 +99,42 @@ table.object-list-view.selectable {
     }
   }
 
-  .filter-active.icon button {
-    background: @toolbarButtonBackground;
-    padding: @filterButtonPadding;
+  .filter-active {
+    &.show-filter {
+      background-color: @inputBackground;
+      border-radius: @defaultBorderRadius;
+      .ui.button:first-child {
+        padding-right: 0;
+        &.active {
+          color: @removeFilterIconColor;
+        }
+      }
+    }
+
+    &.icon button {
+      background: @toolbarButtonBackground;
+      padding: @filterButtonPadding;
+    }
+
+    .or {
+      display: @orDisplay;
+    }
+
+    .ui.button.removeFilter-button {
+      padding-left: @removeFilterPaddingLeft;
+  
+      .remove.icon {
+        height: auto;
+        width: auto;  
+        color: @secondaryColor;
+        font-size: @removeFilterAfterFontSize;
+        font-weight: @defaultBoldFontWeight;
+  
+        &:hover:before {
+          color: @negativeColor;
+        }
+      }
+    }
   }
 
   .ui.icon.button {
@@ -125,7 +158,12 @@ table.object-list-view.selectable {
     &.delete-button {
       i.icon {
         line-height: 1;
+        margin: 0 0.5em;
       }
+    }
+
+    &.refresh-button i.icon {
+      margin-left: 0;
     }
 
     &.delete-button:hover {
@@ -165,10 +203,6 @@ table.object-list-view.selectable {
     }
   }
 
-  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-    margin: 0;
-  }
-
   .ui.dropdown .menu > .item .icon:not(.dropdown) {
     vertical-align: middle;
 
@@ -199,7 +233,7 @@ table.object-list-view.selectable {
   i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-    
+  
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -248,8 +282,6 @@ table.object-list-view.selectable {
       content: @menuItemApplyIcon;
     }
   }
-
-
 }
 
 /*-------------------
@@ -373,26 +405,26 @@ table.object-list-view.selectable {
   line-height: @olvHelperCellLineHeight;
 }
 
+.ui.table tbody tr.object-list-view-filters:nth-child(2) td {
+  border-bottom: @olvFilterRowBorder;
+}
+
 // Hover
 .object-list-view-container:not(.groupedit-container) {
-  .ui.table tbody tr:not(.object-list-view-filters),
-  .ui.selectable.table tbody tr:not(.object-list-view-filters),
-  .ui.table tbody tr td.selectable:not(.object-list-view-filters),
-  .ui.striped.table tbody tr:nth-child(2n):not(.object-list-view-filters),
-  .ui.striped.selectable.selectable.selectable.table tbody tr.active:not(.object-list-view-filters) {
-    &:hover {
+  .ui.table tbody tr,
+  .ui.selectable.table tbody tr,
+  .ui.table tbody tr td.selectable,
+  .ui.striped.table tbody tr:nth-child(2n),
+  .ui.striped.selectable.selectable.selectable.table tbody tr.active {
+    &:not(.object-list-view-filters):hover {
       background: @olvRowHoverBackground !important;
     }
   }
 }
 
-.ui.selectable.table tbody tr.object-list-view-filters:hover,
-.ui.table tbody tr.object-list-view-filters td.selectable:hover {
+.ui.selectable.table tbody tr.object-list-view-filters,
+.ui.table tbody tr.object-list-view-filters td.selectable {
   background: @olvRowBackground !important;
-}
-
-.ui.striped.table.object-list-view tbody tr.object-list-view-filters:nth-child(2n):hover {
-  background: @olvRowStrippedBackground !important;
 }
 
 // Striped
