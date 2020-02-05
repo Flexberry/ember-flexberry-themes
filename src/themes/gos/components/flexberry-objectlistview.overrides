@@ -100,8 +100,15 @@ table.object-list-view.selectable {
   }
 
   .filter-active {
-    &.show-filter .button:first-child {
-      display: @filterButtonDisplayAfterFiltering;
+    &.show-filter {
+      background-color: @inputBackground;
+      border-radius: @defaultBorderRadius;
+      .ui.button:first-child {
+        padding-right: 0;
+        &.active {
+          color: @removeFilterIconColor;
+        }
+      }
     }
 
     &.icon button {
@@ -111,6 +118,22 @@ table.object-list-view.selectable {
 
     .or {
       display: @orDisplay;
+    }
+
+    .ui.button.removeFilter-button {
+      padding-left: @removeFilterPaddingLeft;
+  
+      .remove.icon {
+        height: auto;
+        width: auto;  
+        color: @secondaryColor;
+        font-size: @removeFilterAfterFontSize;
+        font-weight: @defaultBoldFontWeight;
+  
+        &:hover:before {
+          color: @negativeColor;
+        }
+      }
     }
   }
 
@@ -135,7 +158,12 @@ table.object-list-view.selectable {
     &.delete-button {
       i.icon {
         line-height: 1;
+        margin: 0 0.5em;
       }
+    }
+
+    &.refresh-button i.icon {
+      margin-left: 0;
     }
 
     &.delete-button:hover {
@@ -175,10 +203,6 @@ table.object-list-view.selectable {
     }
   }
 
-  .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-    margin: 0;
-  }
-
   .ui.dropdown .menu > .item .icon:not(.dropdown) {
     vertical-align: middle;
 
@@ -209,7 +233,7 @@ table.object-list-view.selectable {
   i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-
+  
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -256,34 +280,6 @@ table.object-list-view.selectable {
 
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
-    }
-  }
-
-  .filter-active.icon button.removeFilter-button {
-    background: @inputBackground;
-    border-radius: @defaultBorderRadius;
-    position: @removeFilterPosition;
-    padding-left: @removeFilterPaddingLeft;
-
-    .remove.icon {
-      &:before {
-        content: @filterButtonIcon;
-        color: @removeFilterIconColor;
-      }
-
-      &:after {
-        content: @clearSearchButtonIcon;
-        color: @secondaryColor;
-        font-size: @removeFilterAfterFontSize;
-        top: @removeFilterAfterTop;
-        position: @removeFilterAfterPosition;
-        font-weight: @defaultBoldFontWeight;
-        right: @removeFilterAfterRight;
-      }
-
-      &:hover:after {
-        color: @negativeColor;
-      }
     }
   }
 }

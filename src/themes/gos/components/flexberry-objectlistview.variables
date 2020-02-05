@@ -105,20 +105,16 @@
 
 @createButtonBackground: @primaryColor;
 @createButtonColor: @white;
-@createButtonMargin: 0 @distanceS;
+@createButtonMargin: 0 0.5em;
 
-@filterButtonVerticalPadding: 0em;
-@filterButtonHorizontalPadding: 0.5em;
+@filterButtonVerticalPadding: 0.1em;
+@filterButtonHorizontalPadding: 0.3em;
 @filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
 @olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @whisper;
 @filterButtonDisplayAfterFiltering: none;
 @orDisplay: none;
-@removeFilterPosition: relative;
-@removeFilterPaddingLeft: 0.125em;
-@removeFilterAfterFontSize: 0.459em;
-@removeFilterAfterPosition: absolute;
-@removeFilterAfterTop: 0.091em;
-@removeFilterAfterRight: 0.364em;
+@removeFilterPaddingLeft: 0;
+@removeFilterAfterFontSize: 0.6em;
 
 @toolbarButtonFocusBorder: none;
 @toolbarButtonHoverBackground: none;
@@ -137,7 +133,7 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: 1.5rem;
+@toolbarButtonIconFontSize: 1.3rem;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
 

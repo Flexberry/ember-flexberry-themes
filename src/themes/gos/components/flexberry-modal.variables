@@ -16,7 +16,7 @@
 /* Header */
 @headerBorder:none;
 @headerColor: @textColor;
-@headerFontSize: 3em;
+@headerFontSize: 1.5em;
 @headerVerticalPadding: 2rem;
 @headerHorizontalPadding: 2rem;
 @headerPadding: @headerVerticalPadding @headerHorizontalPadding 0.5rem;
@@ -35,7 +35,7 @@
 --------------------*/
 
 /* Derived Responsive Sizes */
-@smallHeaderSize: 3em;
+@smallHeaderSize: 1.5em;
 
 /*******************************
             Sidepage
