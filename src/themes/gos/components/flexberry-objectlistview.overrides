@@ -548,6 +548,7 @@ tbody tr td .icon.button.hierarchy-expand {
       min-width: @navBarButtonWidth;
       margin: @navBarButtonMargin;
       padding: @navBarButtonPadding;
+      font-weight: 500;
 
       &:hover {
         box-shadow: 0px 0px 0px 1px @navyBlue;

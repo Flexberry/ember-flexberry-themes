@@ -1,7 +1,8 @@
-@flexberryMenuTextColor: @textColor !important;
-@flexberryMenuBackground: @white !important;
+@dropdownHoveredItemBackground: @aliceBlue;
+
+@flexberryMenuTextColor: @textColor;
+@flexberryMenuBackground: @white;
 @flexberryMenuBorder: 0 solid transparent;
 @flexberryMenuTextFontWeight: 450;
 
-@flexberryMenuButtonHover: @aliceBlue !important;
 @flexberryMenuBoxShadow: 0px 4px 12px @gray;

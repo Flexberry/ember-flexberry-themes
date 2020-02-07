@@ -46,7 +46,7 @@
   }
 }
 
-.page-header-actions {
+.ui.text.menu.page-header-actions {
   margin: 0 @distanceL 0 auto;
 }
 

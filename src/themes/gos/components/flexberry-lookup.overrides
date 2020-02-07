@@ -136,7 +136,7 @@
 }
 
 #lookup-list .flexberry-objectlistview {
-  max-height: calc(~'100vh - 6em');
+  max-height: calc(~'100vh - 6.5em');
   .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
     padding-top: 0;
   }
