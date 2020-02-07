@@ -75,6 +75,10 @@
 
 // Calendar
 .flatpickr-calendar {
+  &.open {
+    z-index: 10;
+  }
+
   .flatpickr-months {
       padding-top: @monthsBlockPaddingTop;
 

@@ -17,10 +17,13 @@
 }
 
 // Headers
-.ui.main.container > .stackable.grid.container > h3{
-  margin-top: 0;
-  font-weight: @headerFontWeight;
-  padding-left: @distanceL;
+.ui.main.container > .stackable.grid.container {
+  padding-top: 1rem;
+  > h3{
+    margin-top: 0;
+    font-weight: @headerFontWeight;
+    padding-left: @distanceL;
+  }
 }
 
 // Buttons
