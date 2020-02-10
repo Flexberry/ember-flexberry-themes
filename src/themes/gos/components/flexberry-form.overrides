@@ -1,4 +1,5 @@
 // Main
+.ui.main.container > .stackable.grid.container > .row,
 .ui.form.flexberry-vertical-form {
   background: @editBackground;
   padding: @flexEditFormPadding;
