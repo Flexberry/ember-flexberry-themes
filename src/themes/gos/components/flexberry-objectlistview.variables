@@ -96,7 +96,6 @@
 /*-------------------
    Toolbar buttons
 --------------------*/
-@menuPaddingTop: @distanceS;
 @menuMarginBottom: 0;
 
 /* Buttons */

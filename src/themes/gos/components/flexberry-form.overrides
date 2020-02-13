@@ -8,6 +8,11 @@
   min-height: calc(~'100% - 30px - 1em');
 }
 
+.ui.main.container > .stackable.grid.container > .row {
+  padding-top: @distanceS;
+  //height: calc(~'100% - 30px - 1em');
+}
+
 .flexberry-content.ui.attached.segment {
   padding: @flexberryContentPadding;
 }
@@ -19,7 +24,7 @@
 
 // Headers
 .ui.main.container > .stackable.grid.container {
-  padding-top: 1rem;
+  padding-top: @distanceS;
   > h3{
     margin-top: 0;
     font-weight: @headerFontWeight;

@@ -36,7 +36,7 @@
         Links
 --------------------*/
 
-@linkColor: @textColor;
+@linkColor: #2E79BD;
 
 /*-------------------
       Site Colors
@@ -254,6 +254,7 @@
 @inputHoverBorderColor : @chambray;
 
 @defaultInputFocusBackground   : @white;
+@defaultFocusBorderColor: @mayaBlue;
 @focusedFormBorderColor : @accentColor;
 
 // Buttons

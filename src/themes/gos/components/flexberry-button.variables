@@ -91,9 +91,6 @@
 @fontWeight: @defaultNormalFontWeight;
 @lineHeight: 1.25rem;
 
-@verticalMargin: 0em;
-@horizontalMargin: 0em;
-
 @iconOpacity: 1;
 
 @hoverBackgroundColor: @aliceBlue;

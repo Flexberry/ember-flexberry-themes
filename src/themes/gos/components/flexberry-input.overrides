@@ -1,0 +1,10 @@
+.ui.input input {
+  font-size: @defaultInputFontSize;
+  &:hover {
+    border-color: @inputHoverBorderColor;
+  }
+  &:focus {
+    background-color: @defaultInputFocusBackground;
+    border-color: @defaultFocusBorderColor;
+  }
+}

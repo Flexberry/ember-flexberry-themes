@@ -1,0 +1,2 @@
+@border: @defaultInputBorder;
+@padding: @inputVerticalPadding @inputHorizontalPadding;

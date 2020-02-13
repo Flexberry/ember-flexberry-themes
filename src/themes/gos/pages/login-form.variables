@@ -4,7 +4,6 @@
 @loginFormInnerBoxShadow:0px 4px 12px rgba(95, 95, 95, 0.153646);
 @loginFormInnerBorderRadius: @defaultBorderRadius;
 
-@loginFormLinkColor: @primaryColor;
 @loginFormSignUpLinkMarginTop: 4px;
 @loginFormSignUpLinkMarginBottom: 20px;
 @loginFormResetPasswordLinkMarginTop: 16px;

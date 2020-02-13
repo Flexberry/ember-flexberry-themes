@@ -61,7 +61,6 @@ table.object-list-view.selectable {
       Toolbar
 --------------------*/
 .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
-  padding-top: @menuPaddingTop;
   margin-bottom: @menuMarginBottom;
   align-items: center;
   min-height: 0em;
