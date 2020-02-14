@@ -25,5 +25,5 @@
 @messageDisplay: block;
 @messageMarginBottom: 0;
 @messagePadding: 0.75em 1.5em;
-@messageCloseIconMargin: 0.75em;
+@messageCloseIconMargin: 0.6em;
 @messageFontSize: 1em;

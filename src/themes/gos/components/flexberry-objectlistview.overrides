@@ -40,7 +40,7 @@ table.object-list-view.selectable {
   display: flex;
   flex-direction: column;
   // TODO: Другой способ?
-  max-height: calc(~'100vh - 11em');
+  max-height: calc(~'100vh - 11.5em');
 
   .flexberry-olv-toolbar {
     flex: 0 0 auto;
@@ -64,6 +64,7 @@ table.object-list-view.selectable {
   margin-bottom: @menuMarginBottom;
   align-items: center;
   min-height: 0em;
+  min-width: 100%;
 
   /* Toolbar buttons */
 
@@ -227,6 +228,7 @@ table.object-list-view.selectable {
 
   .search-field {
     margin: 0 1rem;
+    width: auto;
   }
 
   i.icon {
@@ -289,6 +291,7 @@ table.object-list-view.selectable {
 /* Header */
 .ui.table.object-list-view {
   border: @olvBorder;
+  min-width: 100%;
 
   thead tr th {
     background: @olvHeaderBackground;
@@ -538,6 +541,7 @@ tbody tr td .icon.button.hierarchy-expand {
   min-height: @navBarButtonSize;
   margin: @navBarMargin;
   padding-top: 0;
+  min-width: 100%;
   .ui.basic.buttons {
     .ui.button {
       border: @navBarButtonBorder;

@@ -39,7 +39,7 @@
 @olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
 @olvHeaderBorderLeft: none;
 
-@olvHeaderVerticalPadding: @inputVerticalPadding;
+@olvHeaderVerticalPadding: 0.75em;
 @olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 

@@ -1,5 +1,5 @@
 .ui.card .content{
-  .icon {
+  .card-icon.icon {
     color: #C7CCD1;
     font-size: 3em;
     line-height: 1;
