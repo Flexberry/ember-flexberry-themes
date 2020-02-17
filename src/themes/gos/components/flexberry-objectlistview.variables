@@ -24,7 +24,7 @@
 
 @olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
 @olvContainerBorderRadius: @defaultBorderRadius;
-@olvContainerBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@olvContainerBoxShadow: @defaultElementsBoxShadow;
 
 @olvBorder: none;
 
@@ -39,7 +39,7 @@
 @olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
 @olvHeaderBorderLeft: none;
 
-@olvHeaderVerticalPadding: @inputVerticalPadding;
+@olvHeaderVerticalPadding: 0.75em;
 @olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
 @olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
@@ -68,9 +68,8 @@
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowBeforeContent: '\e928';
 @olvOperationCheckRowDropdownBeforeContent: '\e905';
-@olvOperationCheckRowMarginRight: 1.143em;
+@olvOperationCheckRowMarginRight: 0.5em;
 @olvOperationCheckRowIconMargin: 0;
-@olvOperationCheckRowDropdownIconTop: -0.286em;
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
@@ -96,7 +95,6 @@
 /*-------------------
    Toolbar buttons
 --------------------*/
-@menuPaddingTop: @distanceS;
 @menuMarginBottom: 0;
 
 /* Buttons */

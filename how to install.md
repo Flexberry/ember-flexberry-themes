@@ -123,8 +123,38 @@
 
 1. Добавить папку `site` в app/styles
 2. Стили рассортированы по компонентам ember-flexberry
-3. Файл .variables для переменных, .overrides для добавления новых стилей.
+3. Файл `*.variables` для переменных, `*.overrides` для добавления новых стилей.
 4. В первую очередь нужно использовать переменные для изменения стилей.
+
+### Структура каталога
+
+```
+  app
+  ├── ...
+  ├── styles
+  |   ├── site
+  |   |   ├── components
+  |   |   |   ├── flexberry-button.variables/.overrides
+  |   |   |   ├── flexberry-checkbox.variables/.overrides
+  |   |   |   ├── flexberry-colsconfig.variables/.overrides
+  |   |   |   ├── flexberry-dropdown.variables/.overrides
+  |   |   |   ├── flexberry-field.variables/.overrides
+  |   |   |   ├── flexberry-file.variables/.overrides
+  |   |   |   ├── flexberry-groupedit.variables/.overrides
+  |   |   |   ├── flexberry-lookup.variables/.overrides
+  |   |   |   ├── flexberry-modal.variables/.overrides
+  |   |   |   ├── flexberry-objectlistview.variables/.overrides
+  |   |   |   ├── flexberry-sidebar.variables/.overrides
+  |   |   |   ├── flexberry-simpledatetime.variables/.overrides
+  |   |   |   └── flexberry-validationsummary.variables/.overrides
+  |   |   ├── globals
+  |   |   |   └── site.variables/.overrides
+  |   |   └── pages
+  |   |   |   ├── login-form.variables/.overrides
+  |   |   |   └── main.variables/.overrides
+  |   └── app.less
+  └──...
+```
 
 В теме используется цветовая схема, таким образом, если поменять основной цвет глобально, то он поменяется для кнопок и чекбокса и тд.
 Цветовая схема задается в `globals/site.variables`
@@ -153,6 +183,7 @@
   @defaultInputFocusBackground   : @white;
   @focusedFormBorderColor : @accentColor;
 ```
+### Список основных цветов
 
 | Свойство          | Описание                                               | Дефолтное значение                                                                     |
 |-------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -162,7 +193,9 @@
 | `@textColor`      | цвет текста                                            | @blueZodiak: ![#3B4256](https://placehold.it/15/3B4256/000000?text=+) `#3B4256`        |
 
 
-Настройка цветов полей на форме , применяется ко всем элементам управления 
+### Список цветов полей на форме
+
+Применяется ко всем элементам управления 
 flexberry-field, flexberry-dropdown, flexberry-lookup и тд.(проверить)
 
 | Свойство                       | Описание                              | Дефолтное значение                                                               |

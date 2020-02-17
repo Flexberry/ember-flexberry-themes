@@ -5,4 +5,4 @@
 @flexberryMenuBorder: 0 solid transparent;
 @flexberryMenuTextFontWeight: 450;
 
-@flexberryMenuBoxShadow: 0px 4px 12px @gray;
+@flexberryMenuBoxShadow: @defaultElementsBoxShadow;

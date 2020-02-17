@@ -10,10 +10,6 @@
     margin-bottom: 4px;
   }
 
-  a {
-    color: @loginFormLinkColor;
-  }
-
   .sign-up {
     display: block;
     margin-top: @loginFormSignUpLinkMarginTop;

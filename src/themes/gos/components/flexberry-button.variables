@@ -88,11 +88,8 @@
 @buttonBorder: @defaultBorderWidth @defaultBorderStyle transparent;
 
 @textColor: @secondaryColor;
-@fontWeight: @defaultNormalFontWeight;
+@fontWeight: @defaultMediumFontWeight;
 @lineHeight: 1.25rem;
-
-@verticalMargin: 0em;
-@horizontalMargin: 0em;
 
 @iconOpacity: 1;
 

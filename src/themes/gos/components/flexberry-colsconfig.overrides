@@ -180,6 +180,7 @@
   .close.icon {
     font-size: @messageFontSize;
     margin: @messageCloseIconMargin;
+    top: 0;
   }
 
   .header {
