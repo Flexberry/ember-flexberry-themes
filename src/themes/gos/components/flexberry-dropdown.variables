@@ -40,7 +40,7 @@
 /* Visible */
 @selectionVisibleBorderColor: transparent;
 @selectionVisibleBackground: transparent;
-@selectionVisibleBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@selectionVisibleBoxShadow: @defaultElementsBoxShadow;
 @selectionVisibleMenuBoxShadow: 0px 9px 12px rgba(95, 95, 95, 0.153646);
 /* Visible Hover */
 @selectionActiveHoverBorderColor: @selectionVisibleBorderColor;

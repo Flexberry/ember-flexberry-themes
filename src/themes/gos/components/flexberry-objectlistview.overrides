@@ -322,10 +322,10 @@ table.object-list-view.selectable {
       }
 
       .check-rows-button i.icon,
-      .check-all-at-page-button i.icon,
       .clear-sorting-button i.icon {
         font-family: @olvOperationIconFontFamily;
         font-size: @olvOperationIconFontSize;
+        vertical-align: top;
       }
 
       .check-square-o.icon::before {
@@ -340,11 +340,8 @@ table.object-list-view.selectable {
         }
 
         .flexberry-menu {
-          .dropdown.icon {
-            top: @olvOperationCheckRowDropdownIconTop;
-            &::before {
-              content: @olvOperationCheckRowDropdownBeforeContent;
-            }
+          .dropdown.icon::before {
+            content: @olvOperationCheckRowDropdownBeforeContent;
           }
 
           .menu {
@@ -594,5 +591,29 @@ tbody tr td .icon.button.hierarchy-expand {
     .showing-entries {
       padding: @navBarShowingEntriesPadding;
     }
+  }
+}
+
+/*-------------------
+      Menu in row
+--------------------*/
+.ui.table.object-list-view tr td.object-list-view-menu {
+  .ui.button {
+    background-color: transparent;
+    padding: 0;
+    &:focus {
+      border-color: transparent;
+    }
+  }
+  .ui.dropdown .menu {
+    box-shadow: @defaultElementsBoxShadow;
+  }
+  i.icon.edit:before {
+    font-family: guideline-icons;
+    content: "\e914";
+  }
+  i.icon.trash:before {
+    font-family: guideline-icons;
+    content: "\e911";
   }
 }

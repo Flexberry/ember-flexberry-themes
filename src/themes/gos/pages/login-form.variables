@@ -1,7 +1,7 @@
 @loginFormInnerHeight: auto;
 @loginFormInnerWidth: 424px;
 @loginFormInnerBackground: @white;
-@loginFormInnerBoxShadow:0px 4px 12px rgba(95, 95, 95, 0.153646);
+@loginFormInnerBoxShadow: @defaultElementsBoxShadow;
 @loginFormInnerBorderRadius: @defaultBorderRadius;
 
 @loginFormSignUpLinkMarginTop: 4px;
