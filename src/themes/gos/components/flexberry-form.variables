@@ -33,7 +33,6 @@
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @textColor;
 @closeButtonPaddingTop: unit(9 / 14, em);
-@toolbarButtonFocusBorder: none;
 
 //Icons
 @iconFontFamily: guideline-icons;

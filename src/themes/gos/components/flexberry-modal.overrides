@@ -53,7 +53,7 @@
   &.scrolling {
     left: auto !important;
     top: @sidepageScrollingTopOffset !important;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .content {

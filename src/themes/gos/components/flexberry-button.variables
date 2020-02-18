@@ -17,6 +17,8 @@
 @buttonPrimaryDisabledBackground: @gray;
 @buttonPrimaryDisabledColor: @secondaryColor;
 
+// @horizontalMargin: 1em;
+
 // Secondary
 
 @secondaryBackgroundImage: none;
