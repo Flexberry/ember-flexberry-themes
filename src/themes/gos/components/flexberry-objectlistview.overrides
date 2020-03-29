@@ -618,3 +618,18 @@ tbody tr td .icon.button.hierarchy-expand {
     content: "\e911";
   }
 }
+
+/*-------------------
+      Mobile
+--------------------*/
+
+/*-------------------
+      Toolbar
+--------------------*/
+.flexberry-olv-toolbar {
+  padding-left: 1em;
+}
+
+.pusher.mobile .ui.form .object-list-view .field > label {
+  float: left;
+}

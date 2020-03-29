@@ -260,3 +260,15 @@
 .ui.large.labeled-inside.field:focus-within > label {
     transform: @fieldLargeLabeledInsideLabelAwayTransform;
 }
+
+/*-------------------
+      Mobile
+--------------------*/
+.pusher.mobile .ui.main.container > .stackable.grid.container > .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pusher.mobile .ui.main.container > .stackable.grid.container > h3 {
+  padding-left: 1rem;
+}
