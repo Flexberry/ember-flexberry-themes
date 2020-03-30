@@ -20,8 +20,9 @@
   }
 
   .title-item-menu {
-    font-weight: 500;
-    line-height: 1.5em;
+    max-height: @itemLineHeight;
+    font-weight: @itemFontWeight;
+    line-height: @itemLineHeight;
     display: flex;
     align-items: flex-start;
   }
@@ -133,6 +134,10 @@
 
   &.sidebar-mini {
     width: @width-s;
+
+    .title-item-menu {
+      display: block;
+    }
 
     > div > .item {
       font-size: 0;

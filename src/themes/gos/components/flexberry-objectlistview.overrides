@@ -76,14 +76,25 @@ table.object-list-view.selectable {
     &.icon.config-button.settings-enabled,
     &.adv-limit-button,
     &.search-button,
-    &.clear-search-button {
+    &.clear-search-button,
+    &.hierarchical-button {
       background: @toolbarButtonBackground;
     }
 
     // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button .icon {
-      font-family: @hierarchicalButtonFontFamily;
-      font-size: @hierarchicalButtonFontSize;
+    &.hierarchical-button {
+      &.active {
+        color: @textColor;
+      }
+
+      .icon {
+        font-family: @hierarchicalButtonFontFamily;
+        font-size: @hierarchicalButtonFontSize;
+      }
+    }
+
+    &:focus.hierarchical-button:not(.active) {
+      color: @secondaryColor;
     }
 
     &.refresh-button,
