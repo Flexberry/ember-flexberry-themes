@@ -10,9 +10,14 @@
 @sidebarPadding: @distanceM 0;
 
 /* Items */
-@itemPadding: @distanceS;
+@itemVerticalPadding: 0.5rem;
+@itemRightPadding: 0.5rem;
+@itemLeftPadding: 1rem;
+@itemPadding: @itemVerticalPadding @itemRightPadding @itemVerticalPadding @itemLeftPadding;
 @itemHoveredBackground: none;
 @itemFontSize: 1rem;
+@itemLineHeight: 1.5rem;
+@itemFontWeight: 500;
 
 /* Item icons */
 @itemIconFontSize: 1.2rem;
@@ -32,12 +37,11 @@
 /* Sub Menu Items*/
 @subMenuItemHoveredBackground: rgba(0, 0, 0, 0.1);
 @subMenuItemFontSize: @itemFontSize;
-@subMenuItemTopPadding: 1em;
-@subMenuItemRightPadding: 0.5em;
-@subMenuItemBottomPadding: 1em;
+@subMenuItemVerticalPadding: @itemPadding;
+@subMenuItemRightPadding: @itemPadding;
 @subMenuItemLeftPadding: 1em;
-@subMenuItemPadding: @subMenuItemTopPadding @subMenuItemRightPadding @subMenuItemBottomPadding @subMenuItemLeftPadding !important;
-@subMenuItemMargin: -@subMenuItemTopPadding -@subMenuItemRightPadding -@subMenuItemBottomPadding -@subMenuItemLeftPadding;
+@subMenuItemPadding: @itemVerticalPadding @itemRightPadding @itemVerticalPadding @itemLeftPadding !important;
+@subMenuItemMargin: -@itemVerticalPadding -@itemRightPadding -@itemVerticalPadding -@itemLeftPadding;
 @subMenuItemMarginRight: 1.5em;
 
 /* Toggle button */

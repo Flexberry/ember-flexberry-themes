@@ -112,7 +112,7 @@
 
 @headerHeight: 72px;
 @footerHeight: 0px;
-@headerHeightMobile : 50px;
+@headerHeightMobile : 56px;
 @footerHeightMobile : 0px;
 
 @distanceL: 2rem;

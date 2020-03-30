@@ -8,6 +8,9 @@
 }
 
 .inverted.vertical.main.menu.sidebar {
+  height: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
+  background: @sidebarInvertedBackground;
+  top: @headerHeight;
   overflow: visible ! important;
   padding: @sidebarPadding;
 
@@ -17,7 +20,11 @@
   }
 
   .title-item-menu {
-    max-height: @itemFontSize;
+    max-height: @itemLineHeight;
+    font-weight: @itemFontWeight;
+    line-height: @itemLineHeight;
+    display: flex;
+    align-items: flex-start;
   }
 
   /* Sub Menu */
@@ -28,6 +35,11 @@
     padding: @subMenuPadding;
     position: @subMenuPosition;
     margin: 0 !important;
+    min-width: @width;
+    > .item .icon:not(.dropdown) {
+      float: @itemIconFloat;
+      min-width: 1.18em;
+    }
   }
 
   /* main menu only */
@@ -47,6 +59,7 @@
         float: @itemIconFloat;
         opacity: @itemIconOpacity;
         transition: @itemIconTransition;
+        height: 100%;
       }
 
       &::before {
@@ -93,7 +106,7 @@
 }
 
 
-.full.height {
+.pusher:not(.mobile) .full.height {
   margin-left: @width;
 
   &.content-opened {
@@ -101,10 +114,13 @@
   }
 }
 
-.ui.sidebar.main.menu {
-  display: flex !important;
+.ui.sidebar.main.menu:not(.mobile) {
   transform: translate3d(0, 0, 0);
   visibility: visible;
+}
+
+.ui.sidebar.main.menu {
+  display: flex !important;
 
   > div > .item > .dropdown.icon {
     display: @itemDropDownIconDisplay;
@@ -118,6 +134,10 @@
 
   &.sidebar-mini {
     width: @width-s;
+
+    .title-item-menu {
+      display: block;
+    }
 
     > div > .item {
       font-size: 0;
@@ -143,11 +163,11 @@
 }
 
 // Костыль для семантика
-.ui.visible.left.sidebar ~ .pusher {
+.ui.visible.left.sidebar ~ .pusher:not(.mobile) {
   transform: translate3d(0, 0, 0) !important;
 }
 
-.ui.uncover.sidebar {
+.ui.uncover.sidebar:not(.mobile) {
   z-index: 10;
 }
 
@@ -157,4 +177,46 @@
 // Footer
 .sitebar-footer {
   flex: 0 1 auto;
+}
+
+
+/*******************************
+            Mobile
+*******************************/
+
+/* Sidebar Menu */
+.inverted.vertical.main.menu.sidebar.mobile {
+  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeight}') !important;
+  top: @headerHeightMobile;
+}
+
+.ui.left.sidebar.mobile,
+.ui.right.sidebar.mobile {
+  width: 100%;
+}
+
+.ui.main.menu.sidebar.mobile {
+  /* Sub Menu */
+  .dropdown.item .menu {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.ui.menu .ui.dropdown .menu > .item.menu-back {
+  color: @secondaryColor !important;
+  .icon:not(.dropdown) {
+    float: left;
+    line-height: 1.5em;
+  } 
+}
+
+.ui.main.menu.sidebar.mobile {
+  .ui.dropdown .left.menu .item .dropdown.icon {
+    float: right;
+  }
+}
+
+.ui.sidebar.main.menu.mobile .ui.dropdown .menu > .item .title-item-menu {
+  white-space: normal;
 }

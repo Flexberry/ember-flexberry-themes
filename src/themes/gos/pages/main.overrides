@@ -30,6 +30,11 @@
 .page-header-userbar {
   position: relative;
 
+  i.icon {
+    line-height: @userIconLineHeight;
+    font-size: @userIconSize;
+  }
+
   img {
     border-radius: 100%;
     height: @userFotoImgSize;
@@ -77,4 +82,23 @@
     width: 100% !important;
     margin-left: 0 !important;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.main.container {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/*******************************
+            Mobile
+*******************************/
+.background-logo.mobile {
+  padding: 0;
+}
+
+
+.background-logo.mobile {
+  height: @headerHeightMobile;
 }
