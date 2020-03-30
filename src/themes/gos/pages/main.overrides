@@ -30,6 +30,11 @@
 .page-header-userbar {
   position: relative;
 
+  i.icon {
+    line-height: @userIconLineHeight;
+    font-size: @userIconSize;
+  }
+
   img {
     border-radius: 100%;
     height: @userFotoImgSize;

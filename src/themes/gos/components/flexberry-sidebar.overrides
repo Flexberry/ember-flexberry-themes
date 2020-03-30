@@ -34,6 +34,7 @@
     padding: @subMenuPadding;
     position: @subMenuPosition;
     margin: 0 !important;
+    min-width: @width;
     > .item .icon:not(.dropdown) {
       float: @itemIconFloat;
       min-width: 1.18em;
@@ -152,7 +153,6 @@
 
     .title-item-menu {
       margin-right: @subMenuItemMarginRight;
-      white-space: normal;
     }
   }
 }
@@ -210,4 +210,8 @@
   .ui.dropdown .left.menu .item .dropdown.icon {
     float: right;
   }
+}
+
+.ui.sidebar.main.menu.mobile .ui.dropdown .menu > .item .title-item-menu {
+  white-space: normal;
 }
