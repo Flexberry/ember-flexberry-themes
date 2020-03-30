@@ -288,10 +288,18 @@ table.object-list-view.selectable {
 /*-------------------
         OLV
 --------------------*/
+.object-list-view-container .JCLRgrip:last-child .JColResizer{
+  width: 4px;
+}
+
+.object-list-view-container .ui.table {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
 /* Header */
 .ui.table.object-list-view {
   border: @olvBorder;
-  min-width: 100%;
 
   thead tr th {
     background: @olvHeaderBackground;
