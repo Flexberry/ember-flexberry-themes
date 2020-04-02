@@ -56,8 +56,11 @@
 }
 
 .flexberry-container {
+  background-color: @pageBackgroundColor;
   padding: @flexberryContainerPadding;
+  min-height: calc(~"100vh - @{headerHeight}");
 }
+
 // TODO: Узнать, как должно быть норм и настроить нормально.
 .loading-message {
   color: #aaa;
@@ -91,9 +94,27 @@
   }
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .ui.container {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .ui.container {
+    width: 100%;
+  }
+}
+
+
 /*******************************
             Mobile
 *******************************/
+
+.pusher.mobile .full.height {
+  height: calc(~"100vh - @{headerHeightMobile} - @{footerHeight}");
+}
+
 .background-logo.mobile {
   padding: 0;
 }

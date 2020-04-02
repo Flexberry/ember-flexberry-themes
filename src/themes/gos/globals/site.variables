@@ -150,7 +150,6 @@
         Page
 --------------------*/
 
-@pageBackground      : @aliceBlue;
 @textColor           : @blueZodiak;
 
 
@@ -232,6 +231,11 @@
 @defaultBoxShadow: none;
 @defaultToggleOnBorder: none;
 
+/*---------------------
+        Mobile
+----------------------*/
+@h1Mobile : unit((18 / 16), rem);
+
 
 /*------------------------
         COLOR SCHEME
@@ -245,7 +249,7 @@
 @sidebarBackgroundColor: @textColor;
 
 // Page
-@pageBackground        : @aliceBlue;
+@simplePageBackground  : @aliceBlue;
 @textColor             : @blueZodiak;
 
 // Input
@@ -256,10 +260,3 @@
 @defaultInputFocusBackground   : @white;
 @defaultFocusBorderColor: @mayaBlue;
 @focusedFormBorderColor : @accentColor;
-
-// Buttons
-
-/*------------------------
-        PGMU
--------------------------*/
-// @primaryColor           : #E14059;

@@ -1,29 +1,16 @@
-/*-------------------
-        Input
---------------------*/
 
-@inputFontSize: @defaultInputFontSize;
-@inputPadding: @inputVerticalPadding @inputHorizontalPadding;
-@inputBorder: @defaultInputBorder;
-
-@inputFocusBackground: @defaultInputFocusBackground;
-
-@labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
-@labelFontWeight: @defaultFontWeight;
-@labelFontSize: @defaultInputLabelFontSize;
 
 /*-------------------
-        Textarea
+        General
 --------------------*/
+@formVerticalPadding: @distanceS;
+@formHorizontalPaddding: @distanceL;
+@formPadding: 1px @formHorizontalPaddding;
 
-@textareaLineHeight: @inputLineHeight;
-@textareaHoverBorderColor: @inputHoverBorderColor;
-@textareaReadonlyBackground: @inputReadonlyBackground;
-@textareaReadonlyBorderColor: @inputReadonlyBorderColor;
-
-// General
-@editBackground: #fff;
-@flexEditFormPadding: 1px @distanceL;
+// Header
+@formHeaderBackground: @simplePageBackground;
+@formHeaderPadding: @formVerticalPadding @formHorizontalPaddding;
+@formHeaderMargin: -@formVerticalPadding 0 0 0;
 
 // Buttons
 @flexberryContentPadding: 0;
@@ -48,7 +35,7 @@
 /* Errored Input */
 @formErrorColor: @textColor;
 @formErrorBorder: @negativeColor;
-@formErrorBackground: @editBackground;
+@formErrorBackground: @pageBackground;
 
 /* Focused Error */
 @inputErrorFocusBackground: @formErrorBackground;
@@ -65,6 +52,28 @@
 @formErrorLabelCornerDisplay: none;
 @formErrorLabelMargin: 0.5em;
 
+/*-------------------
+        Input
+--------------------*/
+
+@inputFontSize: @defaultInputFontSize;
+@inputPadding: @inputVerticalPadding @inputHorizontalPadding;
+@inputBorder: @defaultInputBorder;
+
+@inputFocusBackground: @defaultInputFocusBackground;
+
+@labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
+@labelFontWeight: @defaultFontWeight;
+@labelFontSize: @defaultInputLabelFontSize;
+
+/*-------------------
+        Textarea
+--------------------*/
+
+@textareaLineHeight: @inputLineHeight;
+@textareaHoverBorderColor: @inputHoverBorderColor;
+@textareaReadonlyBackground: @inputReadonlyBackground;
+@textareaReadonlyBorderColor: @inputReadonlyBorderColor;
 
 /*-------------------
     Labeled inside
@@ -130,3 +139,11 @@
 @fieldLargeLabeledInsideLabelAwayTransform:
     scale(unit(@fieldLargeLabeledInsideLabelAwayFontSize / @fieldLargeLabelFontSize))
     translateY(-@inputLargeLineHeight);
+
+/*-------------------
+        Mobile
+--------------------*/
+// Header
+@formHorizontalMobilePaddding: @distanceS;
+@formHeaderMobilePadding: 0.625rem @formHorizontalMobilePaddding 0.5rem;
+@formHeaderMobileLineHeight: 1.625rem;

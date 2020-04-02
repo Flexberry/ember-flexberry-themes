@@ -1,16 +1,12 @@
 // Main
 .ui.main.container > .stackable.grid.container > .row,
 .ui.form.flexberry-vertical-form {
-  background: @editBackground;
-  padding: @flexEditFormPadding;
-  padding-bottom: @distanceL;
-  // TODO: Сделать нормально
-  min-height: calc(~'100% - 30px - 1em');
+  padding: @formPadding;
+  padding-bottom: @formHorizontalPaddding;
 }
 
 .ui.main.container > .stackable.grid.container > .row {
-  padding-top: @distanceS;
-  //height: calc(~'100% - 30px - 1em');
+  padding-top: @formVerticalPadding;
 }
 
 .flexberry-content.ui.attached.segment {
@@ -24,11 +20,17 @@
 
 // Headers
 .ui.main.container > .stackable.grid.container {
-  padding-top: @distanceS;
-  > h3{
-    margin-top: 0;
+  padding-top: @formVerticalPadding;
+
+  > h3 {
     font-weight: @headerFontWeight;
-    padding-left: @distanceL;
+    padding-left: @formHorizontalPaddding;
+
+    &:first-of-type {
+      background: @formHeaderBackground;
+      padding: @formHeaderPadding;
+      margin: @formHeaderMargin;
+    }
   }
 }
 
@@ -43,7 +45,7 @@
 .flexberry-edit-panel .ui.button.save-close-button,
 .flexberry-edit-panel .ui.button.save-del-button,
 .flexberry-edit-panel .ui.button.close-button {
-  background: @editBackground;
+  background: @pageBackground;
   font-weight: @buttonFontWeight; 
   color: @editButtonsColor;
   &:focus {
@@ -267,8 +269,16 @@
 .pusher.mobile .ui.main.container > .stackable.grid.container > .row {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
 }
 
-.pusher.mobile .ui.main.container > .stackable.grid.container > h3 {
-  padding-left: 1rem;
+.pusher.mobile .ui.main.container > .stackable.grid.container {
+  > h3 {
+    padding-left: @formHorizontalMobilePaddding;
+
+    &:first-of-type {
+      padding: @formHeaderMobilePadding;
+      line-height: @formHeaderMobileLineHeight;
+    }
+  }
 }
