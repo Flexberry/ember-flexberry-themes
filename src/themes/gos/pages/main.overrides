@@ -102,3 +102,7 @@
 .background-logo.mobile {
   height: @headerHeightMobile;
 }
+
+.mobile .logo {
+  width: @logoMobile;
+}

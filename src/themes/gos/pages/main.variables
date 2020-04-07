@@ -13,3 +13,5 @@
 @flexberryContentPadding: @distanceM @distanceL;
 
 @flexberryContainerPadding: 0 @distanceL;
+
+@logoMobile: 36px;
