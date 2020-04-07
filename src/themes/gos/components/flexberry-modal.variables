@@ -41,3 +41,6 @@
 
 @sidepageScrollingTopOffset: -3.5rem;
 @sidepageWidth: 885px;
+
+// Mobile
+@mobileSidepageWidth: 100%;
