@@ -106,3 +106,8 @@
 .mobile .logo {
   width: @logoMobile;
 }
+
+.mobile .page-header-userbar {
+  margin-left: auto;
+  margin-right: @mobileUserbar;
+}
