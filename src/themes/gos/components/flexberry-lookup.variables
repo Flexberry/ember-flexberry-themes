@@ -23,7 +23,9 @@
 @lookupFieldDisabledBorderColor: @inputReadonlyBorderColor;
 @lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
 
-@lookupButtonPadding: 0em;
+
+@lookupButtonHorizontalPadding: 0.17em;
+@lookupButtonPadding: 0 @lookupButtonHorizontalPadding;
 @lookupButtonBackground: transparent;
 @lookupButtonVerticalMargin: unit(9 / 14, em);
 @lookupButtonWidth: unit(20 / 14, em);
@@ -31,18 +33,20 @@
 
 @lookupButtonHorizontalMargin: unit(11 / 14, em);
 @lookupHorizontalPadding: unit(11 / 14, em);
-@lookupClearButtonRight:  @lookupButtonWidth * 3 + @lookupButtonHorizontalMargin + @lookupHorizontalPadding;
-@lookupChangeButtonRight:  @lookupButtonWidth + @lookupHorizontalPadding;
-@lookupClearButtonRightWithPreview:  @lookupButtonWidth * 5 + @lookupHorizontalPadding + @lookupButtonHorizontalMargin * 2;
-@lookupChangeButtonRightWithPreview:  @lookupButtonWidth * 2 + @lookupHorizontalPadding;
-@lookupPreviewButtonRight: @lookupButtonWidth * 2 + @lookupHorizontalPadding + @lookupButtonHorizontalMargin;
 
-@lookupIconWidth: unit(20 / 14, em);
+@_lookupButtonWidth: @iconWidth + @lookupButtonHorizontalPadding * 2;
+@lookupChangeButtonPaddingRight: @lookupButtonHorizontalPadding * 2;
+@lookupChangeButtonRight:  @_lookupButtonWidth * 2 + @lookupChangeButtonPaddingRight;
+@lookupClearButtonRight:  @_lookupButtonWidth * 2 + @lookupChangeButtonPaddingRight;
+@lookupClearButtonRightWithPreview: @_lookupButtonWidth * 4 + @lookupChangeButtonPaddingRight;
+@lookupChangeButtonRightWithPreview:  @_lookupButtonWidth * 3 + @lookupChangeButtonPaddingRight;
+@lookupPreviewButtonRight: @_lookupButtonWidth * 2 + @lookupButtonHorizontalPadding;
+
+// Icons
+@lookupIconFont: 'guideline-icons';
 @lookupIconHeight: auto;
 @lookupIconMargin: 0em;
-
-@lookupBeforeIconTop: 0em;
-@lookupBeforeIconFontSize: @inputIconFontSize;
+@lookupIconFontSize: 1.3em;
 
 
 // Autocomplete

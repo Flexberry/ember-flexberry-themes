@@ -151,8 +151,16 @@
       border-right-color: @formErrorBorder!important;
     }
   }
+}
 
-  .flexberry-file .ui.action.input:not([class*="left action"]) {
+.flexberry-file.disabled .field.error.ui.action.input:not([class*="left action"]) > input {
+  border-right-color: @formErrorBorder !important;
+}
+
+.flexberry-file {
+  .field.field.error.ui.action.input:not([class*="left action"]),
+  .ui.form .fields.error .field & .ui.action.input:not([class*="left action"]),
+  .ui.form .field.error & .ui.action.input:not([class*="left action"]) {
     border-right: none;
     > .ui.button.flexberry-file-add-button {
       background-color: @formErrorBackground;
@@ -259,6 +267,12 @@
 .ui.large.labeled-inside.has-text.field > label,
 .ui.large.labeled-inside.field:focus-within > label {
     transform: @fieldLargeLabeledInsideLabelAwayTransform;
+}
+
+.ui.form .ui.input.error input {
+  background-color: @formErrorBackground;
+  border-color: @formErrorBorder;
+  color: @formErrorColor;
 }
 
 /*-------------------

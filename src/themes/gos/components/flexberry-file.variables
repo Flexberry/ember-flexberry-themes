@@ -14,10 +14,6 @@
 @fileControlColorHover: @textColor;
 @fileControlDisabledColor: @linkWater;
 
-/*--- Error input ---*/
-@errorFileControlBackgroundColor: #FFF6F6;
-@errorFileControlBorderColor: #E0B4B4; 
-
 /*---  Inner controls (add, remove)   ---*/
 @fileInnerControlBorderRadius: 0;
 

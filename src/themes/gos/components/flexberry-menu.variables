@@ -6,3 +6,5 @@
 @flexberryMenuTextFontWeight: 450;
 
 @flexberryMenuBoxShadow: @defaultElementsBoxShadow;
+
+@borderedSize: 2em;

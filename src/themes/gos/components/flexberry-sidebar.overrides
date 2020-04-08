@@ -17,6 +17,7 @@
   .item {
     font-size: 1rem;
     padding: @itemPadding;
+    position: static;
   }
 
   .title-item-menu {
