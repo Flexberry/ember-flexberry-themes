@@ -79,6 +79,6 @@
 }
 
 // Mobile
-.mobile .ui.small.modal.flexberry-sidepage  {
+.mobile .ui.modal.flexberry-sidepage  {
   width: @mobileSidepageWidth;
 }
