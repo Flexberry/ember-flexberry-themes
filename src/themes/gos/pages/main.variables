@@ -4,7 +4,7 @@
 @headerFontSize: 0.875rem;
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
-@pageBackgroundColor: @pageBackground;
+@pageBackgroundColor: @simplePageBackground;
 @userFotoImgSize:36px;
 @userIconSize: 1.5em;
 @userIconLineHeight: 1;

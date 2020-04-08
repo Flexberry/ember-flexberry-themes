@@ -21,7 +21,6 @@
   }
 
   .title-item-menu {
-    max-height: @itemLineHeight;
     font-weight: @itemFontWeight;
     line-height: @itemLineHeight;
     display: flex;
@@ -138,6 +137,7 @@
 
     .title-item-menu {
       display: block;
+      max-height: @itemLineHeight;
     }
 
     > div > .item {

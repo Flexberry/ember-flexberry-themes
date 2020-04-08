@@ -66,10 +66,7 @@
 
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
-@olvOperationCheckRowBeforeContent: '\e928';
-@olvOperationCheckRowDropdownBeforeContent: '\e905';
 @olvOperationCheckRowMarginRight: 0.5em;
-@olvOperationCheckRowIconMargin: 0;
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
@@ -201,3 +198,32 @@
 @editHelperButtonInRowIcon: "\e914";
 @deleteHelperButtonInRowIcon: "\e911";
 @copyButtonInRowIcon: "\e931";
+
+/*-------------------
+        Mobile
+--------------------*/
+@olvMobileMaxHeight: calc(~'100vh - 7.3em');
+@olvMobileHorizontalPadding: @distanceS;
+
+/* Toolbar */
+@olvMobileToolbarPadding: @olvMobileHorizontalPadding;
+
+/* Container */
+@olvMobileContainerBorderRadius: 0;
+@olvMobileContainerBoxShadow: none;
+@olvMobileContainerMargin: 0;
+
+@olvMobileFirstCellVerticalAligtn: top;
+
+/* Fields */
+@olvMobileFieldMargin: 0em 0em 0.7em;
+@olvMobileFieldLabelFloat: left;
+@olvMobileFieldLabelWidth: 60%;
+@olvMobileFieldLabelFontSize: 1rem;
+@olvMobileFieldLabelColor: @secondaryColor;
+
+/* Navbar */
+@navbarMobilePadding: 8px 1rem;
+@navbarMobileHeight: 3rem;
+@navbarMobileButtonWidth: 2rem;
+@navbarMobileButtonPadding: 0 0.625rem;

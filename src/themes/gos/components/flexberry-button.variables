@@ -2,8 +2,8 @@
 
 @buttonPrimaryBackground: @primaryColor;
 @primaryBackgroundImage: none;
-@primaryTextColor: @pageBackground;
-@lightPrimaryTextColor: @pageBackground;
+@primaryTextColor: @simplePageBackground;
+@lightPrimaryTextColor: @simplePageBackground;
 @primaryTextShadow: none;
 @primaryBoxShadow: none;
 @buttonPrimaryBorder: @defaultBorderWidth @defaultBorderStyle transparent;
