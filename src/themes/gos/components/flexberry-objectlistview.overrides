@@ -340,6 +340,15 @@ table.object-list-view.selectable {
         }
       }
 
+      .check-rows-button i.icon.icon-guideline-check-menu {
+        font-size: @toolbarButtonIconFontSize;
+        color: @olvHeaderTextColor;
+        width: auto;
+        &:hover {
+          color: @rowHelperCellHoverColor;
+        }
+      }
+
       .check-rows-button i.icon,
       .check-all-at-page-button i.icon,
       .clear-sorting-button i.icon {
@@ -348,25 +357,14 @@ table.object-list-view.selectable {
         vertical-align: top;
       }
 
-      .check-square-o.icon::before {
-        content: @olvOperationCheckRowBeforeContent;
+      .check-square-o {
+        display: none;
       }
-
       .check-rows-button {
         margin-right: @olvOperationCheckRowMarginRight;
-        
-        .check-square-o.icon {
-          margin: @olvOperationCheckRowIconMargin;
-        }
 
-        .flexberry-menu {
-          .dropdown.icon::before {
-            content: @olvOperationCheckRowDropdownBeforeContent;
-          }
-
-          .menu {
-            left: @olvOperationCheckRowMenuLeft;
-          }
+        .flexberry-menu .menu {
+          left: @olvOperationCheckRowMenuLeft;
         }
       }
 
@@ -642,13 +640,57 @@ tbody tr td .icon.button.hierarchy-expand {
       Mobile
 --------------------*/
 
-/*-------------------
-      Toolbar
---------------------*/
-.flexberry-olv-toolbar {
-  padding-left: 1em;
-}
+.pusher.mobile {
+  .flexberry-objectlistview {
+    max-height: @olvMobileMaxHeight;
+  }
 
-.pusher.mobile .ui.form .object-list-view .field > label {
-  float: left;
+  .flexberry-olv-toolbar {
+    padding-left: @olvMobileToolbarPadding;
+    padding-bottom: @olvMobileToolbarPadding;
+  }
+  
+  .object-list-view-container {
+    border-radius: @olvMobileContainerBorderRadius;
+    box-shadow: @olvMobileContainerBoxShadow;
+    margin: @olvMobileContainerMargin;
+  }
+
+  .ui.celled.object-list-view tr td:first-child {
+    padding-left: @olvMobileHorizontalPadding;
+  }
+
+  .ui.table.object-list-view tbody tr td:not(.object-list-view-helper-column) {
+    border-bottom: @olvContainerBorder;
+  }
+
+  .object-list-view-helper-column {
+    vertical-align: @olvMobileFirstCellVerticalAligtn;
+  }
+
+  .ui.form .object-list-view {
+    .inline.fields {
+      margin: @olvMobileFieldMargin;
+    }
+    .field {
+      margin: @olvMobileFieldMargin;
+      > label {
+        float: @olvMobileFieldLabelFloat;
+        width: @olvMobileFieldLabelWidth;
+        font-size: @olvMobileFieldLabelFontSize;
+        color: @olvMobileFieldLabelColor;
+      }
+    }
+  }
+
+  // navbar
+  .ui.secondary.menu.nav-bar {
+    border-top: @olvContainerBorder;
+    padding: @navbarMobilePadding;
+    min-height: @navbarMobileHeight;
+    .ui.basic.buttons .ui.button {
+      min-width: @navbarMobileButtonWidth;
+      padding: @navbarMobileButtonPadding;
+    }
+  }
 }
