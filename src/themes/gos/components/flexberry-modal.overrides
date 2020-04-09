@@ -77,3 +77,41 @@
     width: @sidepageWidth;
   }
 }
+
+.mobile .ui.modal.flexberry-modal.modal-support.tiny {
+  .contacts {
+    color: #848E99; 
+    line-height: 
+    20px; font-size:14px;
+  }
+  
+  i.close.icon {
+    padding: 0.5em 0.5em 0 0;
+  }
+
+  .header {
+    font-size: 1.25em;
+  }
+
+  .field.field-guideline-file {
+    padding: 18px 24px 18px 11px;
+  }
+
+  i.icon-guideline-file {
+    font-size: 16px; 
+    line-height: 24px; 
+    color: #0C49CD;
+  }
+
+  a.link-guideline-file {
+    font-size: 16px; 
+    line-height: 24px; 
+    color: #0C49CD;
+  }
+
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+  left: 0px;
+}
