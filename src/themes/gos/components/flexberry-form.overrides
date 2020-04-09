@@ -9,6 +9,18 @@
   padding-top: @formVerticalPadding;
 }
 
+// Fix for ie
+// https://github.com/philipwalton/flexbugs/issues/216#issuecomment-359042902
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ui.main.container > .stackable.grid.container > .row,
+  #lookup-list {
+    display: flex;
+  }
+  .flexberry-objectlistview {
+    width: 100%;
+  }
+}
+
 .flexberry-content.ui.attached.segment {
   padding: @flexberryContentPadding;
 }
