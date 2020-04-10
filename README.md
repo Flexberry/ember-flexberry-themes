@@ -39,7 +39,7 @@
 4. Добавить импорт стилей и настроек для иконок и шрифтов в `ember-cli-build.js`
 
 ```js
-  app.import('vendor/font.css');
+  app.import('vendor/fonts.css');
 
   // GOSTUI2
   app.import('vendor/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.eot', { destDir: 'assets/fonts' });
