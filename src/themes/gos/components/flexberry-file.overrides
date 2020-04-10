@@ -1,10 +1,10 @@
 .flexberry-file {
     &.disabled {
-        input.flexberry-file-filename-input[readonly="readonly"] {
-            background: @fileReadonlyBackgroundColor;
-            border-color: @fileReadonlyBorderColor;
-            border-radius: @inputBorderRadius !important;
-        }
+      input.flexberry-file-filename-input[readonly="readonly"] {
+        background: @fileReadonlyBackgroundColor;
+        border-color: @fileReadonlyBorderColor;
+        border-radius: @inputBorderRadius !important;
+      }
     }
 
     input.flexberry-file-filename-input[readonly="readonly"] {
@@ -12,26 +12,13 @@
         border-color: @fileBorderColor;
     }
 
-    .ui.error.action.input {
-        .button.flexberry-file-add-button,
-        .button.flexberry-file-remove-button {
-            background: @errorFileControlBackgroundColor;
-            border-top-color: @errorFileControlBorderColor;
-            border-bottom-color: @errorFileControlBorderColor;
-            border-right-color: @errorFileControlBorderColor;
-        }
-
-        .button.flexberry-file-upload-button,
-        .button.flexberry-file-download-button {
-            background: @errorFileControlBackgroundColor;
-            border-color: @errorFileControlBorderColor;
-        }
+    .ui.action.input:not([class*="left action"]) > .button::not(.positive):not(.negative):not(.colored) {    
+      background: @fileBackgroundColor;
     }
 
     .ui.action.input:not([class*="left action"]) > .button {    
-        padding: @fileControlButtonPadding;
-        background: @fileBackgroundColor;
-        border-color: @fileBorderColor;
+      border-color: @fileBorderColor;
+      padding: @fileControlButtonPadding;
 
         &:not(:first-child),
         &:last-child {

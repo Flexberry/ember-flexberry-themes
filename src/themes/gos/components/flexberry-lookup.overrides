@@ -53,58 +53,67 @@
 }
 
 /* Buttons */
-.flexberry-lookup>.ui.input>.ui.button {
+.flexberry-lookup > .ui.input > .ui.button:not(.positive):not(.negative):not(.colored) {
   background: @lookupButtonBackground;
+}
+
+.flexberry-lookup > .ui.input > .ui.button {
+  font-size: @lookupIconFontSize;
   position: relative;
   padding: @lookupButtonPadding;
-  width: @lookupButtonWidth;
+
   &:focus {
     border-color: transparent;
   }
+
+  &.ui-clear {
+    right: @lookupClearButtonRight;
+  }
+
+  &.ui-change {
+    padding-right: @lookupChangeButtonPaddingRight;
+    right: @lookupChangeButtonRight;
+  }
+  &.ui-preview {
+    right: @lookupPreviewButtonRight;
+
+    ~.ui-clear {
+      right: @lookupClearButtonRightWithPreview;
+    }
+
+    ~.ui-change {
+      right: @lookupChangeButtonRightWithPreview;
+    }
+  }  
 }
 
-.flexberry-lookup>.ui.input>.ui-clear {
-  right: @lookupClearButtonRight;
+// Icons
+.flexberry-lookup > .ui.input > {
+  .ui.button > .icon {
+    font-family: @lookupIconFont;
+    margin: @lookupIconMargin;
+    height: @lookupIconHeight;
+  }
+
+  .remove.icon::before {
+    content: "\e90e";
+  }
+  
+  .change.icon::before {
+    content: "\e91d";
+  }
+  
+  .eye.icon::before {
+    content: "\e917";
+  }
 }
 
-.flexberry-lookup>.ui.input>.ui-change {
-  right: @lookupChangeButtonRight;
-}
-
-.flexberry-lookup>.ui.input>.ui-preview {
-  right: @lookupPreviewButtonRight;
-}
-
-.flexberry-lookup>.ui.input>.ui-preview~.ui-clear {
-  right: @lookupClearButtonRightWithPreview;
-}
-
-.flexberry-lookup>.ui.input>.ui-preview~.ui-change {
-  right: @lookupChangeButtonRightWithPreview;
-}
-
-.flexberry-lookup>.ui.input>.ui.button>.icon {
-  font-family: 'guideline-icons';
-  font-size: @lookupBeforeIconFontSize;
-  margin: @lookupIconMargin;
-  height: @lookupIconHeight;
-}
-
-.flexberry-lookup>.ui.input>.ui-clear>.icon::before {
-  content: "\e90e";
-}
-
-.flexberry-lookup>.ui.input>.ui-change>.icon::before {
-  content: "\e91d";
-}
-
-.flexberry-lookup>.ui.input>.ui-preview>.icon::before {
-  content: "\e917";
+.flexberry-lookup .ui.action.input:not([class*="left action"]) > .button:last-child {
+  border-radius: 0;
 }
 
 /* Autocomplete */
 .flexberry-lookup.ui.search>.results {
-  z-index: 1;
   margin: @autocompleteResultsMargin;
   width: @autocompleteResultsWidth;
   background: @autocompleteResultsBackground;
