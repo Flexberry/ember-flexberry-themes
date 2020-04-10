@@ -649,11 +649,12 @@ tbody tr td .icon.button.hierarchy-expand {
     padding-left: @olvMobileToolbarPadding;
     padding-bottom: @olvMobileToolbarPadding;
   }
-  
+
   .object-list-view-container {
     border-radius: @olvMobileContainerBorderRadius;
     box-shadow: @olvMobileContainerBoxShadow;
     margin: @olvMobileContainerMargin;
+    position: @olvContainerPosition;
   }
 
   .ui.celled.object-list-view tr td:first-child {
@@ -691,6 +692,71 @@ tbody tr td .icon.button.hierarchy-expand {
     .ui.basic.buttons .ui.button {
       min-width: @navbarMobileButtonWidth;
       padding: @navbarMobileButtonPadding;
+    }
+  }
+
+  //check rows menu
+  .check-rows-container {
+    display: @checkRowsContainerDisplay;
+    position: @checkRowsContainerPosition;
+    left: @checkRowsContainerLeft;
+    right: @checkRowsContainerRight;
+    bottom: @checkRowsContainerBottom;
+    background: @background;
+    box-shadow: @checkRowsContainerBoxShadow;
+    z-index: @checkRowsContainerZIndex;
+
+    .check-rows-button,
+    .check-all-at-page-button {
+      background: @checkRowsButtonBackgroud;
+      margin: @checkRowsButtonMargin;
+      padding: @checkRowsButtonPadding;
+
+      i.icon.icon-guideline-check-menu,
+      i.icon.check-square-o {
+        font-family: @iconFontFamily;
+        font-size: @checkRowsButtonIconFontSize;
+        color: @secondaryColor;
+        width: @checkRowsButtonIconWidth;
+      }
+    }
+
+    .check-all-at-page-button {
+      padding: @checkRowsButtonGEPadding;
+      font-size: @checkRowsButtonGEFontSize;
+
+      i.icon.check-square-o::before {
+        content: @checkRowsButtonGEIcon;
+      }
+    }
+
+    .count-selected-rows {
+      margin-top: @countSelectedRowsMarginTop;
+      color: @countSelectedRowsColor;
+      line-height: @countSelectedRowsLineHeight;
+    }
+
+    .delete-button {
+      margin: @deleteRowsButtonMargin;
+      font-size: @deleteRowsButtonFontSize;
+      color: @deleteRowsButtonColor;
+      background: @deleteRowsButtonBackground;
+    }
+
+    .clear-select-button {
+      margin-left: @clearSelectButtonMarginLeft;
+      background: @clearSelectButtonBackground;
+      padding-top: @clearSelectButtonPaddingTop;
+
+      .remove.icon {
+        font-family: @iconFontFamily;
+        font-size: @clearSelectButtonFontSize;
+        margin: @clearSelectButtonMargin;
+
+        &::before {
+          content: @clearSelectButtonIcon;
+        }
+      }
     }
   }
 }
