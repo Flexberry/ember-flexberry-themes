@@ -80,9 +80,9 @@
 
 .ui.modal.flexberry-modal.modal-support.tiny {
   .contacts {
-    color: @lightGrayishBlue; 
+    color: @secondaryColor; 
     line-height: @modalContactsLineHeight; 
-    font-size: @modalContactsFontSiza;
+    font-size: @modalContactsFontSize;
   }
 
   .field.field-guideline-file {
