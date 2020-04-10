@@ -77,3 +77,8 @@
     width: @sidepageWidth;
   }
 }
+
+// Mobile
+.mobile .ui.modal.flexberry-sidepage  {
+  width: @mobileSidepageWidth;
+}
