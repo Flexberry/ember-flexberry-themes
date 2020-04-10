@@ -3,6 +3,11 @@
 *******************************/
 @modalPadding: 2rem;
 
+@modalContactsLineHeight: 20px;
+@modalContactsFontSiza: 14px;
+
+@modalFieldGuidelineFilePadding: 18px 24px 18px 11px; 
+
 /* Close Icon */
 @closeOpacity: 1;
 @closeColor: @linkWater;
@@ -41,3 +46,12 @@
 
 @sidepageScrollingTopOffset: -3.5rem;
 @sidepageWidth: 885px;
+
+@mobileModalTop: 0px;
+@mobileModalLeft: 0px;
+@mobileModalWidth: 100%;
+@mobileModalHeight: 100%;
+@mobileModalMargin: 0px;
+
+@mobileModalCloseIconPadding: 0.5em 0.5em 0 0;
+@mobileModalHeaderFontSize: 1.25em;
