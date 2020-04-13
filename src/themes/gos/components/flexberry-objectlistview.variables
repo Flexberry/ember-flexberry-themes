@@ -228,7 +228,7 @@
 @navbarMobileButtonWidth: 2rem;
 @navbarMobileButtonPadding: 0 0.625rem;
 
-/* Mobile selected row menu */
+/* Selected row menu */
 @olvContainerPosition: relative;
 @checkRowsContainerDisplay: flex;
 @checkRowsContainerPosition: fixed;
@@ -259,3 +259,10 @@
 @clearSelectButtonMargin: 0;
 @clearSelectButtonIcon: "\e90e";
 
+/* Row controls */
+@rowControlsBackground: @aliceBlue;
+@rowControlsMarginRight: 1em;
+@rowControlsPaddingLeft: 0.438em;
+@rowControlsButtonMargin: 0;
+@rowControlsButtonPadding: 0.643em 0.429em 0.214em;
+@helperButtonInRowBorderColorFocus: @aliceBlue;
