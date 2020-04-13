@@ -94,20 +94,29 @@
 /*******************************
             Mobile
 *******************************/
-.background-logo.mobile {
-  padding: 0;
-}
+.mobile {
+  a.item.logo {
+    margin-right: @mobileHeaderMargin;
+    
+    img {
+      width: @mobileItemLogoImgWidth;
+    }
+  }
 
+  a.launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
 
-.background-logo.mobile {
-  height: @headerHeightMobile;
-}
+  a.page-header-caption {
+    width: auto;
+  }
 
-.mobile .logo {
-  width: @logoMobile;
-}
+  div.background-logo {
+    padding: 0px;
+    height: @headerHeightMobile;
+  }
 
-.mobile .page-header-userbar {
-  margin-left: auto;
-  margin-right: @mobileUserbar;
+  div.page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+  }
 }

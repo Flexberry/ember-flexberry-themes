@@ -14,5 +14,6 @@
 
 @flexberryContainerPadding: 0 @distanceL;
 
-@logoMobile: 36px;
-@mobileUserbar: 1.5rem;
+@mobileHeaderMargin: 1rem;
+@mobileItemLogoImgWidth: 36px;
+@mobileLaunchIconItemPadding: 0px 1rem 0px 1rem;
