@@ -111,9 +111,14 @@
     font-size: @mobileModalHeaderFontSize;
   }
 
+  div.description {
+    padding-top: 0px !important;
+  }
+
   top: @mobileModalTop;
   left: @mobileModalLeft;
   width: @mobileModalWidth;
   height: @mobileModalHeight;
   margin: @mobileModalMargin !important;
+  border-radius: 0px;
 }
