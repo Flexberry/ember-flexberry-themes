@@ -1,8 +1,0 @@
-@headerColor      : #4f73b0;
-@headerTextColor: @textColor;
-@headerFontSize: 0.875rem;
-@headerBoxShadow       : 0px 1px 5px rgba(0, 0, 0, 0.1);
-@pageHeaderCaptionColor: #fff;
-
-@pageBackgroundColor: @pageBackground;
-@footerBackground: #eee;

@@ -1,6 +1,3 @@
-@olvContainerMargin: 1em 0;
-@olvMargin: 0;
-
 /*******************************
              Table
 *******************************/
@@ -24,3 +21,6 @@
 
 /* Selectable */
 @selectableBackground: #f5f8ff;
+
+
+@olvFiltersBackground: #fff;

@@ -26,6 +26,7 @@
 @brightBlue       : #3c87dc;
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
+@headerColor      : #4f73b0;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -36,7 +37,7 @@
 
 /* For source only. Modified in gulp for dist */
 @imagePath : 'themes/blue-sky/assets/images';
-@fontPath  : 'themes/default/assets/fonts';
+@fontPath  : 'fonts';
 
 /*-------------------
         Hover
@@ -53,42 +54,3 @@
 @footerHeight : 40px;
 @headerHeightMobile : 50px;
 @footerHeightMobile : 40px;
-
-@distanceL: 2rem;
-@distanceM: 1.5rem;
-@distanceS: 1rem;
-
-
-/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
-/*-------------------
-   Global Variables
---------------------*/
-
-@uiBorderColor: @blue;
-@uiHoveredPositiveBorderColor: @green;
-@uiHoveredPositiveBackgroundColor: @green;
-@uiHoveredPositiveTextColor: @green;
-@uiHoveredNegitveBorderColor: @red;
-@uiHoveredNegitveBackgroundColor: @red;
-@uiHoveredNegitveTextColor: @red;
-
-@flexberryButtonHoveredColor: @brightBlue;
-
-/*-------------------
-   Icon Variables
---------------------*/
-@cornerIconInvertedShadow: @blue;
-
-@colorIcon : @blue;
-@colorIconBorder: @blue;
-
-/*-------------------------------
-   GLOBAL ASSOCIATION VARIABLES
---------------------------------*/
-
-@buttonBackgroundColor: @white;
-
-
-
-// Sidebar
-@sidebarBackgroundColor: @textColor;
