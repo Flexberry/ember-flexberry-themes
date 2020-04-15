@@ -118,8 +118,31 @@
 .background-logo.mobile {
   padding: 0;
 }
+=======
+.mobile {
+  a.item.logo {
+    margin-right: @mobileHeaderMargin;
+    
+    img {
+      width: @mobileItemLogoImgWidth;
+    }
+  }
+>>>>>>> .merge_file_a26988
 
+  a.launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
 
-.background-logo.mobile {
-  height: @headerHeightMobile;
+  a.page-header-caption {
+    width: auto;
+  }
+
+  div.background-logo {
+    padding: 0px;
+    height: @headerHeightMobile;
+  }
+
+  div.page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+  }
 }

@@ -13,3 +13,7 @@
 @flexberryContentPadding: @distanceM @distanceL;
 
 @flexberryContainerPadding: 0 @distanceL;
+
+@mobileHeaderMargin: 1rem;
+@mobileItemLogoImgWidth: 36px;
+@mobileLaunchIconItemPadding: 0px 1rem 0px 1rem;
