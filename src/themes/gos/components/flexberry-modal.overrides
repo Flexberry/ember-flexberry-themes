@@ -81,6 +81,8 @@
 // Mobile
 .mobile .ui.modal.flexberry-sidepage  {
   width: @mobileSidepageWidth;
+}
+
 .ui.modal.flexberry-modal.modal-support.tiny {
   .contacts {
     color: @secondaryColor; 
