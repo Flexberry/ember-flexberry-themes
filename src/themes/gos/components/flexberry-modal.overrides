@@ -81,4 +81,47 @@
 // Mobile
 .mobile .ui.modal.flexberry-sidepage  {
   width: @mobileSidepageWidth;
+.ui.modal.flexberry-modal.modal-support.tiny {
+  .contacts {
+    color: @secondaryColor; 
+    line-height: @modalContactsLineHeight; 
+    font-size: @modalContactsFontSize;
+  }
+
+  .field.field-guideline-file {
+    padding: @modalFieldGuidelineFilePadding;
+  }
+
+  i.icon-guideline-file {
+    font-size: @fontSize; 
+    line-height: @defaultCheckboxSize; 
+    color: @blue;
+  }
+
+  a.link-guideline-file {
+    font-size: @fontSize; 
+    line-height: @defaultCheckboxSize; 
+    color: @blue;
+  }
+}
+
+.mobile .ui.modal.flexberry-modal.modal-support.tiny {
+  i.close.icon {
+    padding: @mobileModalCloseIconPadding;
+  }
+
+  .header {
+    font-size: @mobileModalHeaderFontSize;
+  }
+
+  div.description {
+    padding-top: 0px !important;
+  }
+
+  top: @mobileModalTop;
+  left: @mobileModalLeft;
+  width: @mobileModalWidth;
+  height: @mobileModalHeight;
+  margin: @mobileModalMargin !important;
+  border-radius: 0px;
 }
