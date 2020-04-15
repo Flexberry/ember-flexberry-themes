@@ -118,7 +118,11 @@
 .background-logo.mobile {
   padding: 0;
 }
-=======
+
+.background-logo.mobile {
+  height: @headerHeightMobile;
+}
+
 .mobile {
   a.item.logo {
     margin-right: @mobileHeaderMargin;
@@ -127,7 +131,6 @@
       width: @mobileItemLogoImgWidth;
     }
   }
->>>>>>> .merge_file_a26988
 
   a.launch.icon.item {
     padding: @mobileLaunchIconItemPadding;
