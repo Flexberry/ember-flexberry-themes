@@ -1,15 +1,26 @@
-/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
+/*-------------------
+   Global Variables
+--------------------*/
 
 @pageFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// @borderLeft: 1px solid @blue; //not used
+@borderLeft: 1px solid @blue;
 @iconButtonOpacity: 1;
+@uiBorderColor: @blue;
+@uiHoveredPositiveBorderColor: @green;
+@uiHoveredPositiveBackgroundColor: @green;
+@uiHoveredPositiveTextColor: @green;
+@uiHoveredNegitveBorderColor: @red;
+@uiHoveredNegitveBackgroundColor: @red;
+@uiHoveredNegitveTextColor: @red;
+
+@flexberryButtonHoveredColor: @brightBlue;
 
 /*-------------------
    Button Variables
 --------------------*/
 
-@backgroundColor: #fff;
-// @backgroundGreenColor: @green; //not used
+@backgroundColor: @white;
+@backgroundGreenColor: @green;
 @backgroundImage: linear-gradient(@white, @backgroundColor);
 @borderBoxShadowColor: #E1E8ED;
 @borderColor: 1px solid @blue;
@@ -23,6 +34,7 @@
 
 @activeBackgroundColor: rgba(0, 0, 0, 0.1);
 
+@primaryColor: @blue;
 @coloredBackgroundImage: @subtleGradient;
 
 
@@ -31,8 +43,10 @@
 --------------------*/
 
 @hoverBackgroundColor: @blue;
+@hoverGreenBackgroundColor: @green;
 @hoverBackgroundImage: none;
 @hoverColor: @white;
+@borderHover: 1px solid @green;
 
 @focusColor: @textColor;
 @focusBackgroundColor: @white;
@@ -67,6 +81,3 @@
 
 /* Attached */
 @attachedBoxShadow: none;
-
-/* variables from ember-flexberry\addon\styles\themes\blue-sky\elements\button.variables */
-@flexberryButtonHoveredColor: @brightBlue;

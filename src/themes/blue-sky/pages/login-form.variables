@@ -1,5 +1,0 @@
-@loginFormInnerHeight: auto;
-@loginFormInnerWidth: 424px;
-@loginFormInnerBackground: @white;
-@loginFormInnerBoxShadow: @defaultElementsBoxShadow;
-@loginFormInnerBorderRadius: @defaultBorderRadius;
