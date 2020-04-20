@@ -706,6 +706,10 @@ tbody tr td .icon.button.hierarchy-expand {
     box-shadow: @checkRowsContainerBoxShadow;
     z-index: @checkRowsContainerZIndex;
 
+    .check-rows-button .flexberry-menu .menu {
+      font-size: @checkRowsMenuFontSize;
+    }
+
     .check-rows-button,
     .check-all-at-page-button {
       background: @checkRowsButtonBackgroud;

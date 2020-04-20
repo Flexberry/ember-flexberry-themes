@@ -237,6 +237,7 @@
 @checkRowsContainerBottom: 0;
 @checkRowsContainerBoxShadow: 0 -0.063em 0.313em rgba(0, 0, 0, 0.1);
 @checkRowsContainerZIndex: 10;
+@checkRowsMenuFontSize: 1.31em;
 @checkRowsButtonBackgroud: transparent;
 @checkRowsButtonMargin: 0;
 @checkRowsButtonPadding: 0.5em 0.375em 0.5em 0.688em;
