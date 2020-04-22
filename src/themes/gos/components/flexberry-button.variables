@@ -91,7 +91,7 @@
 
 @textColor: @secondaryColor;
 @fontWeight: @defaultMediumFontWeight;
-@lineHeight: 1.25rem;
+@lineHeight: unit(20 / 14, em);
 
 @iconOpacity: 1;
 
@@ -133,9 +133,7 @@
 @buttonSmallFontSize: 0.875em;
 @buttonSmallPadding: unit(5 / 14, em) unit(9 / 14, em);
 @buttonSmallLineHeight: unit(20 / 14, em);
-@buttonMediumFontSize: 0.875em;
 @buttonMediumPadding: unit(9 / 14, em) unit(11 / 14, em);
-@buttonMediumLineHeight: unit(20 / 14, em);
 @buttonLargeFontSize: 1em;
 @buttonLargePadding: 0.6875em 0.9375em;
 @buttonLargeLineHeight: 1.5em;
@@ -147,3 +145,5 @@
 @buttonHugeLineHeight: unit(26 / 18, em);
 
 @basicGroupBorder: none;
+
+@medium: 0.875rem;
