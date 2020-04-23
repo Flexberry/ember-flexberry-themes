@@ -640,7 +640,7 @@ tbody tr td .icon.button.hierarchy-expand {
       Mobile
 --------------------*/
 
-.pusher.mobile {
+.mobile {
   .flexberry-objectlistview {
     max-height: @olvMobileMaxHeight;
   }
@@ -734,6 +734,24 @@ tbody tr td .icon.button.hierarchy-expand {
       margin-top: @countSelectedRowsMarginTop;
       color: @countSelectedRowsColor;
       line-height: @countSelectedRowsLineHeight;
+    }
+
+    .ui-move-up.button {
+      background: transparent;
+      padding-top: @mobileMoveButtonPaddingTop;
+
+      i.arrow.up.icon {
+        margin: 0;
+      }
+    }
+
+    .ui-move-down.button {
+      background: transparent;
+      padding-top: @mobileMoveButtonPaddingTop;
+
+      i.arrow.down.icon{
+        margin: 0;
+      }
     }
 
     .delete-button {

@@ -82,3 +82,35 @@
 .mobile .ui.modal.flexberry-sidepage  {
   width: @mobileSidepageWidth;
 }
+
+.mobile {
+  .ui.modal {
+    i.close {
+      padding: @mobileSidepageClosePadding !important;
+      left: 0 !important;
+      top: 0 !important;
+      right: unset ! important;
+    }
+
+    i.icon.close:before
+    {
+      content: @mobileSidepageCloseContent;
+      font-family: @mobileSidepageCloseFontFamaly;
+      font-size: @mobileSidepageCloseFontSize;
+    }
+
+    .header {
+      padding: @mobileSidepageHeaderPadding !important;
+      font-size: @mobileSidepageHeaderFontSize !important;
+      line-height: @mobileSidepageHeaderLineHeight !important;
+    }
+
+    .content {
+      padding: 0 !important;
+
+      .description {
+        padding: 0 !important;
+      }
+    }
+  }
+}

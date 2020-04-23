@@ -9,3 +9,6 @@
 @olvHeaderTextPadding: calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js
 @olvCellVerticalPadding: 0.25em;
 @olvCheckboxCellVerticalPadding: 0.5em;
+
+@groupeditContainerMarginTop: 0.85em;
+@checkRowsContainerTop: 3.025rem;

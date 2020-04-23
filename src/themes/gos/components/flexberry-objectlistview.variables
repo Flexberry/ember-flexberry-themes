@@ -259,3 +259,4 @@
 @clearSelectButtonMargin: 0;
 @clearSelectButtonIcon: "\e90e";
 
+@mobileMoveButtonPaddingTop: 0.75em;

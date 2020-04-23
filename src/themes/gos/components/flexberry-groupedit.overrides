@@ -61,3 +61,23 @@
     }
   }
 }
+
+.mobile .ui.modal {
+  .groupedit-toolbar {
+    .ui-move-up.button {
+      display: none;
+    }
+    .ui-move-down.button {
+      display: none;
+    }
+  }
+
+  .groupedit-container{
+    margin-top: @groupeditContainerMarginTop;
+  }
+
+  .check-rows-container {
+    top: @checkRowsContainerTop;
+    bottom: unset;
+  }
+}

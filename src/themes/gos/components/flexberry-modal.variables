@@ -44,3 +44,12 @@
 
 // Mobile
 @mobileSidepageWidth: 100%;
+
+@mobileSidepageClosePadding: 0.85rem 0 0.375rem 1rem;
+@mobileSidepageCloseContent: "\e906";
+@mobileSidepageCloseFontFamaly: 'guideline-icons';
+@mobileSidepageCloseFontSize: 1.5em;
+
+@mobileSidepageHeaderPadding: 0.75rem 1rem 0.375rem 2.5rem;
+@mobileSidepageHeaderFontSize: 1.125em;
+@mobileSidepageHeaderLineHeight: 1.625em;
