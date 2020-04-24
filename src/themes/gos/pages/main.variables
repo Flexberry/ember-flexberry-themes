@@ -17,3 +17,5 @@
 @mobileHeaderMargin: 1rem;
 @mobileItemLogoImgWidth: 36px;
 @mobileLaunchIconItemPadding: 0px 1rem 0px 1rem;
+@mobileBackgroundLogoPadding: 0;
+@mobileUserbarMarginLeft: auto;

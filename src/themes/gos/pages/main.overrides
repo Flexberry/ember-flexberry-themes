@@ -218,28 +218,26 @@
 }
 
 .mobile {
-  a.item.logo {
+  .item.logo {
     margin-right: @mobileHeaderMargin;
+    width: @mobileItemLogoImgWidth;
     
     img {
       width: @mobileItemLogoImgWidth;
     }
   }
 
-  a.launch.icon.item {
+  .launch.icon.item {
     padding: @mobileLaunchIconItemPadding;
   }
 
-  a.page-header-caption {
-    width: auto;
-  }
-
-  div.background-logo {
-    padding: 0px;
+  .background-logo {
+    padding: @mobileBackgroundLogoPadding;
     height: @headerHeightMobile;
   }
 
-  div.page-header-userbar {
+  .page-header-userbar {
     margin-right: @mobileHeaderMargin;
+    margin-left: @mobileUserbarMarginLeft;
   }
 }
