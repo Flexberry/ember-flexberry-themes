@@ -213,7 +213,33 @@
   padding: 0;
 }
 
-
 .background-logo.mobile {
   height: @headerHeightMobile;
+}
+
+.mobile {
+  a.item.logo {
+    margin-right: @mobileHeaderMargin;
+    
+    img {
+      width: @mobileItemLogoImgWidth;
+    }
+  }
+
+  a.launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
+
+  a.page-header-caption {
+    width: auto;
+  }
+
+  div.background-logo {
+    padding: 0px;
+    height: @headerHeightMobile;
+  }
+
+  div.page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+  }
 }
