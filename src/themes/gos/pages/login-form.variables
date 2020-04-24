@@ -10,6 +10,4 @@
 
 @mobileLoginFormPadding: 1.5rem 1rem;
 @mobileLoginFormTextAlign: center;
-@mobileLoginFormHeaderFontSize: 1.25rem;
 @mobileLoginFormLinkFontSize: 0.875rem;
-@mobileLoginFormButtonPadding: 0.6875em 0.9375em;
