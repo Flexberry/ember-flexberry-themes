@@ -217,3 +217,28 @@
 .background-logo.mobile {
   height: @headerHeightMobile;
 }
+
+.mobile {
+  .item.logo {
+    margin-right: @mobileHeaderMargin;
+    width: @mobileItemLogoImgWidth;
+    
+    img {
+      width: @mobileItemLogoImgWidth;
+    }
+  }
+
+  .launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
+
+  .background-logo {
+    padding: @mobileBackgroundLogoPadding;
+    height: @headerHeightMobile;
+  }
+
+  .page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+    margin-left: @mobileUserbarMarginLeft;
+  }
+}
