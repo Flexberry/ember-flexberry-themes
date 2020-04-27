@@ -71,6 +71,24 @@
   }
 }
 
+.ui.modal.flexberry-modal.modal-support.tiny {
+  .contacts {
+    color: @secondaryColor; 
+    line-height: @modalContactsLineHeight; 
+    font-size: @modalContactsFontSize;
+  }
+
+  .field.field-guideline-file {
+    padding: @modalFieldGuidelineFilePadding;
+  }
+
+  .icon-guideline-file, .link-guideline-file {
+    font-size: @fontSize; 
+    line-height: @defaultCheckboxSize; 
+    color: @blue;
+  }
+}
+
 // Style for responsive
 @media only screen and (min-width: 1920px) {
   .ui.small.modal.flexberry-sidepage {
@@ -81,4 +99,25 @@
 // Mobile
 .mobile .ui.modal.flexberry-sidepage  {
   width: @mobileSidepageWidth;
+}
+
+.mobile .ui.modal.flexberry-modal.modal-support.tiny {
+  top: @mobileModalTop;
+  left: @mobileModalLeft;
+  width: @mobileModalWidth;
+  height: @mobileModalHeight;
+  margin: @mobileModalMargin !important;
+  border-radius: 0px;
+
+  i.close.icon {
+    padding: @mobileModalCloseIconPadding;
+  }
+
+  .header {
+    font-size: @mobileModalHeaderFontSize;
+  }
+
+  .description {
+    padding-top: @mobileDescriptionPaddingTop !important;
+  }
 }
