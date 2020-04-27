@@ -213,18 +213,13 @@
   padding: 0;
 }
 
-
-.background-logo.mobile {
-  height: @headerHeightMobile;
-}
-
 .mobile {
   .item.logo {
     margin-right: @mobileHeaderMargin;
     width: @mobileItemLogoImgWidth;
     
     img {
-      width: @mobileItemLogoImgWidth;
+      min-width: @mobileItemLogoImgWidth;
     }
   }
 
