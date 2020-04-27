@@ -311,16 +311,18 @@
 
 .mobile {
   h3.ui.header {
-    font-size: @formHeaderMobileFontSize;
+    font-size: @h1Mobile;
   }
 
   .ui.form.flexberry-vertical-form {
     padding-left: @formMobilePaddingLeft;
     padding-right: @formMobilePaddingRight;
 
-    .ui.one.column.grid.stackable > .column {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+    @media only screen and (max-width: 767px) {
+      .ui.column.grid.stackable > .column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
     }
   }
 }
