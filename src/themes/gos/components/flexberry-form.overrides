@@ -290,7 +290,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .ui.column.grid.stackable > .column {
+  .flexberry-vertical-form > .ui.column.grid.stackable > .column {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
