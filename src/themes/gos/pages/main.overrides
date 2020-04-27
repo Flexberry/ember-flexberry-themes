@@ -209,11 +209,27 @@
   height: calc(~"100vh - @{headerHeightMobile} - @{footerHeight}");
 }
 
-.background-logo.mobile {
-  padding: 0;
-}
+.mobile {
+  .item.logo {
+    margin-right: @mobileHeaderMargin;
+    width: @mobileItemLogoImgWidth;
+    
+    img {
+      min-width: @mobileItemLogoImgWidth;
+    }
+  }
 
+  .launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
 
-.background-logo.mobile {
-  height: @headerHeightMobile;
+  .background-logo {
+    padding: @mobileBackgroundLogoPadding;
+    height: @headerHeightMobile;
+  }
+
+  .page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+    margin-left: @mobileUserbarMarginLeft;
+  }
 }
