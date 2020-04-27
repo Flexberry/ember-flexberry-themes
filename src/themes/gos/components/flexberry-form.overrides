@@ -289,6 +289,13 @@
   color: @formErrorColor;
 }
 
+@media only screen and (max-width: 767px) {
+  .ui.column.grid.stackable > .column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 /*-------------------
       Mobile
 --------------------*/
@@ -317,12 +324,5 @@
   .ui.form.flexberry-vertical-form {
     padding-left: @formMobilePaddingLeft;
     padding-right: @formMobilePaddingRight;
-
-    @media only screen and (max-width: 767px) {
-      .ui.column.grid.stackable > .column {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-    }
   }
 }
