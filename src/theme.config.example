@@ -99,8 +99,6 @@
 @login-form: 'gos';
 @main: 'gos';
 
-@flexberry-form: 'gos';
-
 /*******************************
             Folders
 *******************************/
@@ -118,6 +116,7 @@
          Import Theme
 *******************************/
 
+@import "src/flexberry-associations.config";
 @import "app/styles/theme.less";
 
 /* End Config */

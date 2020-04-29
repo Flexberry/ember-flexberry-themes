@@ -1,3 +1,36 @@
+// SemanticUI variables
+@background: @white;
+// @color: @textColor;
+@borderWidth: 0;
+@cellBorder: none;
+
+/* Table Row */
+@rowBorder: none;
+
+/* Table Cell */
+@cellVerticalPadding: 0.75em;
+@cellHorizontalPadding: 10px;
+
+/* Table Header */
+@headerBackground: @white;
+@headerColor: @secondaryColor;
+@headerFontWeight: @defaultMediumFontWeight;
+@headerVerticalPadding: @cellVerticalPadding;
+
+
+/* Striped */
+@stripedBackground: @aliceBlue;
+
+/* Selectable */
+@selectableBackground: @solitude;
+
+/* Active */
+@activeBackgroundColor: @solitude;
+@activeBackgroundHover: @solitude;
+
+//=============
+
+
 @olvContainerVerticalMargin: 1em;
 @olvContainerHorizontalMargin: 0;
 @olvContainerMargin: @olvContainerVerticalMargin @olvContainerHorizontalMargin;
@@ -6,18 +39,6 @@
 
 @olvMargin: 0;
 
-@olvDropdownMenuHoverBeforeColor: @white;
-@olvDropdownMenuActiveHoverBeforeColor: @primaryColor;
-
-@background: @white;
-@color: @davysGray;
-
-@headerColor: @grimmysGray;
-
-@activeBackgroundColor: @whiteBlue;
-
-@selectableBackground: @anotherAliceBlue;
-
 @olvContainerBorderWidth: @defaultBorderWidth;
 @olvContainerBorderStyle: @defaultBorderStyle;
 @olvContainerBorderColor: @whisper;
@@ -25,23 +46,6 @@
 @olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
 @olvContainerBorderRadius: @defaultBorderRadius;
 @olvContainerBoxShadow: @defaultElementsBoxShadow;
-
-@olvBorder: none;
-
-@olvHeaderBackground: @white;
-
-@olvHeaderBorderWidth: @defaultBorderWidth;
-@olvHeaderBorderStyle: @defaultBorderStyle;
-@olvHeaderBorderColor: @whisper;
-
-@olvHeaderBorderTop: none;
-@olvHeaderBorderRight: none;
-@olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
-@olvHeaderBorderLeft: none;
-
-@olvHeaderVerticalPadding: 0.75em;
-@olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
-@olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
 
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
@@ -68,25 +72,12 @@
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
-@olvHeaderTextFontSize: 1em;
-@olvHeaderTextFontWeight: @defaultMediumFontWeight;
 @olvHeaderTextLineHeight: 1.5em;
-@olvHeaderTextColor: @secondaryColor;
 
 @olvRowBackground: @white;
 
-@olvRowHoverBackground: @solitude;
-
-@olvRowStrippedBackground: @aliceBlue;
-
-@olvCellVerticalPadding: @olvHeaderVerticalPadding;
-@olvCellHorizontalPadding: 0;
-@olvCellPadding: @olvCellVerticalPadding @olvCellHorizontalPadding;
-@olvCellBorder: none;
-
 @olvHelperCellLineHeight: 0;
 
-@olvRowActiveBackground: @solitude;
 
 
 /*-------------------

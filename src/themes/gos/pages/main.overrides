@@ -210,7 +210,7 @@
 }
 
 .mobile {
-  .item.logo {
+  .logo {
     margin-right: @mobileHeaderMargin;
     width: @mobileItemLogoImgWidth;
     
