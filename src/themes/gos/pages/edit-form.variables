@@ -147,3 +147,6 @@
 @formHorizontalMobilePaddding: @distanceS;
 @formHeaderMobilePadding: 0.625rem @formHorizontalMobilePaddding 0.5rem;
 @formHeaderMobileLineHeight: 1.625rem;
+
+@formMobilePaddingLeft: 1rem;
+@formMobilePaddingRight: 1rem;

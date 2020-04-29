@@ -31,3 +31,23 @@
     margin-top: @loginFormResetPasswordLinkMarginTop;
   }
 }
+
+.mobile {
+  .login-form-inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    padding: @mobileLoginFormPadding;
+
+    .ui.header {
+      text-align: @mobileLoginFormTextAlign;
+    }
+
+    .reset-password, .sign-up {
+      text-align: @mobileLoginFormTextAlign;
+      font-size: @mobileLoginFormLinkFontSize;
+    }
+  }
+}

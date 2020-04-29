@@ -7,3 +7,7 @@
 @loginFormSignUpLinkMarginTop: 4px;
 @loginFormSignUpLinkMarginBottom: 20px;
 @loginFormResetPasswordLinkMarginTop: 16px;
+
+@mobileLoginFormPadding: 1.5rem 1rem;
+@mobileLoginFormTextAlign: center;
+@mobileLoginFormLinkFontSize: 0.875rem;
