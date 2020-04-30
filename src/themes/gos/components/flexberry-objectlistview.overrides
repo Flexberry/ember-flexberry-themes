@@ -610,6 +610,10 @@ tbody tr td .icon.button.hierarchy-expand {
       padding: @navBarShowingEntriesPadding;
     }
   }
+
+  .pages-total-count {
+    padding: @navBarShowingEntriesPadding;
+  }
 }
 
 /*-------------------
