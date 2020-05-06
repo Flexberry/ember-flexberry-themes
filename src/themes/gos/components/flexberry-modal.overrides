@@ -3,13 +3,6 @@
 }
 
 /*******************************
-             Modal
-*******************************/
-.ui.modal {
-  top: 50vh;
-}
-
-/*******************************
             Content
 *******************************/
 
@@ -18,13 +11,13 @@
 ---------------*/
 
 .ui.modal > .close {
-  width: auto;
-  height: auto;
+  line-height: 1;
   margin: 0;
 }
+
 .ui.modal i.icon.close:before {
-  content: "\e806";
-  font-family: 'Crimean';
+  content: @closeIcon;
+  font-family: @closeIconFontFamily;
 }
 
 /*--------------
@@ -43,21 +36,13 @@
             Sidepage
 *******************************/
 .ui.modal.flexberry-sidepage {
-  height: 100vh;
+  height: 100%;
   left: auto;
-  right: 0%;
-  top: 0%;
-  margin-top: 0 !important;
+  right: 0;
   border-radius: 0;
 
-  &.scrolling {
-    left: auto !important;
-    top: @sidepageScrollingTopOffset !important;
-    overflow-y: hidden;
-  }
-
-  .content {
-    padding-top: 0;
+  .scrolling.undetached.dimmable &.scrolling {
+    left: auto;
   }
 }
 
@@ -71,53 +56,48 @@
   }
 }
 
-.ui.modal.flexberry-modal.modal-support.tiny {
+/* Support form */
+.ui.modal.flexberry-modal.support-modal {
   .contacts {
-    color: @secondaryColor; 
-    line-height: @modalContactsLineHeight; 
+    color: @secondaryColor;
     font-size: @modalContactsFontSize;
   }
+}
 
-  .field.field-guideline-file {
-    padding: @modalFieldGuidelineFilePadding;
+/*  Mobile */
+.mobile {
+  .ui.modal.flexberry-sidepage  {
+    width: @mobileSidepageWidth;
   }
 
-  .icon-guideline-file, .link-guideline-file {
-    font-size: @fontSize; 
-    line-height: @defaultCheckboxSize; 
-    color: @blue;
+  .scrolling.undetached.dimmable .ui.modal.fullhight-mobile-modal.scrolling {
+    left: @mobileModalLeft;
+  }
+
+  .ui.modal.fullhight-mobile-modal {
+    left: @mobileModalLeft;
+    width: @mobileModalWidth;
+    height: @mobileModalHeight;
+    margin: @mobileModalMargin;
+    border-radius: 0px;
   }
 }
 
 // Style for responsive
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
   .ui.small.modal.flexberry-sidepage {
     width: @sidepageWidth;
   }
 }
 
-// Mobile
-.mobile .ui.modal.flexberry-sidepage  {
-  width: @mobileSidepageWidth;
-}
-
-.mobile .ui.modal.flexberry-modal.modal-support.tiny {
-  top: @mobileModalTop;
-  left: @mobileModalLeft;
-  width: @mobileModalWidth;
-  height: @mobileModalHeight;
-  margin: @mobileModalMargin !important;
-  border-radius: 0px;
-
-  i.close.icon {
-    padding: @mobileModalCloseIconPadding;
-  }
-
-  .header {
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.modal > .header:not(.ui) {
     font-size: @mobileModalHeaderFontSize;
   }
-
-  .description {
-    padding-top: @mobileDescriptionPaddingTop !important;
+  .ui.small.modal > .header:not(.ui) {
+    font-size: @mobileModalHeaderFontSize;
+  }
+  .ui.modal .scrolling.content {
+    max-height: @mobileScrollingContentMaxHeight;
   }
 }

@@ -174,27 +174,27 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: @largeMonitorBreakpoint) {
   .ui.main.container {
     width: 100% !important;
     margin-left: 0 !important;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: @largestMobileScreen) {
   .ui.main.container {
     width: 100% !important;
     margin-left: 0 !important;
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
   .ui.container {
     width: 100% !important;
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
+@media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
   .ui.container {
     width: 100%;
   }
