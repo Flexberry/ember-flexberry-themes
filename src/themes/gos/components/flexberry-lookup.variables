@@ -69,3 +69,11 @@
 @autocompleteResultTitleFont: @fontName;
 @autocompleteResultTitleFontSize: 0.875em;
 @autocompleteResultTitleFontWeight: @defaultMediumFontWeight;
+
+// Icons
+@lookupChangeButtonIcon: "\e91d";
+@lookupLoadingIconBefore: '';
+
+// Mobile
+@mobileLookupChangeButtonLoadingFontSize: @defaultInputFontSize;
+@mobileLookupChangeButtonLoadingRight: 0.5em;

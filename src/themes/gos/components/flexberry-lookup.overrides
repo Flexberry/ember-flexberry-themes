@@ -84,7 +84,7 @@
     ~.ui-change {
       right: @lookupChangeButtonRightWithPreview;
     }
-  }  
+  }
 }
 
 // Icons
@@ -98,11 +98,11 @@
   .remove.icon::before {
     content: "\e90e";
   }
-  
+
   .change.icon::before {
-    content: "\e91d";
+    content: @lookupChangeButtonIcon;
   }
-  
+
   .eye.icon::before {
     content: "\e917";
   }
@@ -148,5 +148,37 @@
   max-height: calc(~'100vh - 6.5em');
   .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
     padding-top: 0;
+  }
+}
+
+.mobile .flexberry-lookup>.ui.input {
+  >.ui.input {
+    background: @inputBackground;
+    border: @defaultInputBorder;
+    border-radius: @inputBorderRadius;
+    padding: @inputVerticalPadding @lookupFieldRightPadding @inputVerticalPadding @inputHorizontalPadding;
+    flex: 1 0 auto;
+
+    >.lookup-field {
+      font-size: @defaultInputFontSize;
+    }
+
+    >.chevron.right.icon {
+      font-family: @lookupIconFont;
+      font-size: @lookupIconFontSize;
+
+      &::before {
+        content: @lookupChangeButtonIcon;
+      }
+    }
+  }
+
+  >.ui.loading.input>.chevron.right.icon {
+    font-size: @mobileLookupChangeButtonLoadingFontSize;
+    right: @mobileLookupChangeButtonLoadingRight;
+
+    &::before {
+      content: @lookupLoadingIconBefore;
+    }
   }
 }
