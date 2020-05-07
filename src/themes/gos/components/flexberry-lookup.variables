@@ -75,14 +75,5 @@
 @lookupLoadingIconBefore: '';
 
 // Mobile
-@mobileLookupPadding: 0.5em 0.688em;
-@mobileLookupFieldFontSize: 0.875em;
-@mobileLookupChangeButtonHeight: 100%;
-@mobileLookupChangeButtonFontSize: 1.313em;
-@mobileLookupChangeButtonRight: 0.5em;
-@mobileLookupUiButtonPosition: absolute;
-@mobileLookupUiButtonTop: 0.714em;
-@mobileLookupButtonRight: 3.429em;
-@mobileLookupClearButtonRight: 5.714em;
-@mobileLookupChangeButtonLoadingFontSize: 0.875em;
-@mobileLookupChangeButtonLoadingRight: 1em;
+@mobileLookupChangeButtonLoadingFontSize: @defaultInputFontSize;
+@mobileLookupChangeButtonLoadingRight: 0.5em;

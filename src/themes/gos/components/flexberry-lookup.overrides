@@ -154,20 +154,18 @@
 .mobile .flexberry-lookup>.ui.input {
   >.ui.input {
     background: @inputBackground;
-    border: @defaultBorderWidth @defaultBorderStyle @inputBorderColor;
-    border-radius: @defaultBorderRadius;
-    padding: @mobileLookupPadding;
+    border: @defaultInputBorder;
+    border-radius: @inputBorderRadius;
+    padding: @inputVerticalPadding @lookupFieldRightPadding @inputVerticalPadding @inputHorizontalPadding;
+    flex: 1 0 auto;
 
     >.lookup-field {
-      font-size: @mobileLookupFieldFontSize;
+      font-size: @defaultInputFontSize;
     }
 
     >.chevron.right.icon {
-      font-family: 'guideline-icons';
-      height: @mobileLookupChangeButtonHeight;
-      font-size: @mobileLookupChangeButtonFontSize;
-      right: @mobileLookupChangeButtonRight;
-      margin: @lookupIconMargin;
+      font-family: @lookupIconFont;
+      font-size: @lookupIconFontSize;
 
       &::before {
         content: @lookupChangeButtonIcon;
@@ -182,16 +180,5 @@
     &::before {
       content: @lookupLoadingIconBefore;
     }
-  }
-
-  >.ui-preview,
-  >.ui-clear {
-    position: @mobileLookupUiButtonPosition;
-    top: @mobileLookupUiButtonTop;
-    right: @mobileLookupButtonRight;
-  }
-
-  >.ui-preview + .ui-clear {
-    right: @mobileLookupClearButtonRight;
   }
 }
