@@ -100,7 +100,7 @@
   }
 
   .change.icon::before {
-    content: "\e91d";
+    content: @lookupChangeButtonIcon;
   }
 
   .eye.icon::before {
