@@ -18,6 +18,10 @@
   align-items: center;
   width: 100%;
   z-index: 999;
+  i.icon.sidebar:before {
+    font-family: 'guideline-icons';
+    content: "\e920";
+  }
 }
 
 .background-logo a img {
@@ -73,23 +77,6 @@
   width: 100%;
 }
 
-// footer
-.ui.vertical.footer.segment > .flex-container > .ui.text.menu {
-  margin: 0px;
-  padding: 0px 30px;
-  background-color: @footerBackground;
-  display: flex;
-  justify-content: space-between;
-}
-
-.ui.vertical.footer.segment > .flex-container {
-  position: fixed;
-  bottom: 0px;
-  z-index: 99;
-  height: @footerHeight;
-  width: 100% !important;
-  margin: 0px !important;
-}
 /*==================================*/
 
 .background-logo {
@@ -231,5 +218,11 @@
   .page-header-userbar {
     margin-right: @mobileHeaderMargin;
     margin-left: @mobileUserbarMarginLeft;
+
+    .flexberry-menu.ui.icon.dropdown.button {
+      position: absolute;
+      background: transparent;
+      width: 100%;
+    }
   }
 }
