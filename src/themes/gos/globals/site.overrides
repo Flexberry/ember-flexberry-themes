@@ -7,3 +7,11 @@ body {
       font-size: @h1Mobile;
   }
 }
+
+[class*="secondary text"] {
+  color: @secondaryColor;
+}
+
+.small.text {
+  font-size: @smallText;
+}

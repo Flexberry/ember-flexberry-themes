@@ -72,12 +72,6 @@
 }
 
 .ui.modal.flexberry-modal.modal-support.tiny {
-  .contacts {
-    color: @secondaryColor; 
-    line-height: @modalContactsLineHeight; 
-    font-size: @modalContactsFontSize;
-  }
-
   .field.field-guideline-file {
     padding: @modalFieldGuidelineFilePadding;
   }

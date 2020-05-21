@@ -1,53 +1,38 @@
-.login-form-inner {
-  background: @loginFormInnerBackground;
-  box-shadow: @loginFormInnerBoxShadow;
-  border-radius: @loginFormInnerBorderRadius;
-  height: @loginFormInnerHeight;
-  margin: auto;
-  padding: @distanceL;
-  width: @loginFormInnerWidth;
-}
 
-.login-form-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, calc(~'-50% - @{headerHeight}'));
+.login-form {
+  &.ui.grid {
+    flex-direction: column;
+    margin: -1rem 0;
+
+    > .row > .column {
+      max-width: @formWidth;
+    }
+
+    > .row:first-child {
+      flex: 1 0 auto;
+    }
+  }
 
   .ui.header {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 4px;
+    margin: @headerMargin;
   }
+}
 
-  .sign-up {
-    display: block;
-    margin-top: @loginFormSignUpLinkMarginTop;
-    margin-bottom: @loginFormSignUpLinkMarginBottom;
-  }
-
-  .reset-password {
-    display: block;
-    margin-top: @loginFormResetPasswordLinkMarginTop;
-  }
+.pusher:not(.mobile) .login-form .ui.form {
+  text-align: left;
+  padding-top: 2rem;
 }
 
 .mobile {
-  .login-form-inner {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transform: none;
-    padding: @mobileLoginFormPadding;
+  .ui.grid.login-form {
+    background-color: @white;
 
-    .ui.header {
-      text-align: @mobileLoginFormTextAlign;
+    .row > .column {
+      padding: 0;
     }
+  }
 
-    .reset-password, .sign-up {
-      text-align: @mobileLoginFormTextAlign;
-      font-size: @mobileLoginFormLinkFontSize;
-    }
+  .login-form .ui.form.segment {
+    box-shadow: none;
   }
 }

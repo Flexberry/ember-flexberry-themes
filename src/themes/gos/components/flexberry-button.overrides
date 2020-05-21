@@ -96,6 +96,12 @@
     color: @buttonDisabledColor;
 }
 
+.ui.button.img {
+  line-height: 0;
+  img {
+    height: @lineHeight;
+  }
+}
 
 // Sizes
 

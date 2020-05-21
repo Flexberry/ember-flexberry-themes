@@ -28,9 +28,6 @@
 @actionBackground: @white;
 @actionPadding: 0.75rem @modalPadding @modalPadding;
 
-@modalContactsLineHeight: 20px;
-@modalContactsFontSize: 14px;
-
 @modalFieldGuidelineFilePadding: 18px 24px 18px 11px;
 
 /*-------------------
