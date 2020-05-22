@@ -1,3 +1,4 @@
+@colsconfigHeaderTextAlign:left;
 @colsconfigLargeIconColor: @inputPlaceholderColor;
 @colsconfigHorizontalPadding: 0.5em;
 @colsconfigCellPadding: 0.25em @colsconfigHorizontalPadding;

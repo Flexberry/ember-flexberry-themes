@@ -325,85 +325,11 @@ table.object-list-view.selectable {
     top: 0px;
     z-index: 1;
 
-    &.object-list-view-operations {
-      padding: @olvFirstHeaderPadding;
-      text-overflow: clip;
-      padding-left: 10px;
-      overflow: @olvOperationsOverflow;
-      z-index: @olvOperationsZIndex;
-
-      .button {
-        background: @olvOperationsBackground;
-        padding: @olvOperationsPadding;
-        &:focus {
-          border-color: transparent;
-        }
-      }
-
-      .check-rows-button i.icon.icon-guideline-check-menu {
-        font-size: @toolbarButtonIconFontSize;
-        color: @olvHeaderTextColor;
-        width: auto;
-        &:hover {
-          color: @rowHelperCellHoverColor;
-        }
-      }
-
-      .check-rows-button i.icon,
-      .check-all-at-page-button i.icon,
-      .clear-sorting-button i.icon {
-        font-family: @olvOperationIconFontFamily;
-        font-size: @olvOperationIconFontSize;
-        vertical-align: top;
-      }
-
-      .check-square-o {
-        display: none;
-      }
-      .check-rows-button {
-        margin-right: @olvOperationCheckRowMarginRight;
-
-        .flexberry-menu .menu {
-          left: @olvOperationCheckRowMenuLeft;
-        }
-      }
-
-      .sort.icon::before {
-        content: "\e92b";
-      }
-    }
-
     div span {
       font-size: @olvHeaderTextFontSize;
       font-weight: @olvHeaderTextFontWeight;
       line-height: @olvHeaderTextLineHeight;
       color: @olvHeaderTextColor;
-    }
-
-    .object-list-view-order-icon {
-      color: @olvHeaderOrderIconColor;
-      background-color: @olvHeaderOrderIconBackground;
-      border-radius: @olvHeaderOrderIconBorderRadius;
-      padding-left: @olvHeaderOrderIconPadding;
-      display: @olvHeaderOrderIconDisplay;
-      cursor: pointer;
-
-      &:hover {
-        color: @olvHeaderOrderIconHoverColor;
-      }
-
-      .icon {
-        font-family: @olvHeaderOrderIconFontFamily;
-        vertical-align: @olvHeaderOrderIconVerticalAlign;
-
-        &.ascending:before {
-          content: @olvHeaderOrderIconAscendingContent;
-        }
-
-        &.descending:before {
-          content: @olvHeaderOrderIconDescendingContent;
-        }
-      }
     }
   }
 }
@@ -557,6 +483,24 @@ tbody tr td .icon.button.hierarchy-expand {
   margin: @navBarMargin;
   padding-top: 0;
   min-width: 100%;
+
+  .prev-page-button,
+  .next-page-button {
+    &:before {
+      font-family: @navBarPrevNextButtonsBeforeFontFamily;
+      font-size: @navBarPrevNextButtonsBeforeFontSize;
+      display: block;
+    }
+  }
+
+  .prev-page-button::before {
+    content: @navBarPrevButtonBeforeContent;
+  }
+
+  .next-page-button::before {
+    content: @navBarNextButtonBeforeContent;
+  }
+
   .ui.basic.buttons {
     .ui.button {
       border: @navBarButtonBorder;
@@ -581,22 +525,6 @@ tbody tr td .icon.button.hierarchy-expand {
         color: @textColor !important;
       }
 
-      &.prev-page-button,
-      &.next-page-button {
-        &:before {
-          font-family: @navBarPrevNextButtonsBeforeFontFamily;
-          font-size: @navBarPrevNextButtonsBeforeFontSize;
-          display: block;
-        }
-      }
-
-      &.prev-page-button::before {
-        content: @navBarPrevButtonBeforeContent;
-      }
-
-      &.next-page-button::before {
-        content: @navBarNextButtonBeforeContent;
-      }
       &:not(.active):not([data-ember-action]) {
         padding-top: 0.5rem;
         background: transparent!important;

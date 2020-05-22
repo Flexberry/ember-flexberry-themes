@@ -1,0 +1,10 @@
+.background-logo a.logo {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #3f65a4;
+  margin: 5px;
+}
+
+.background-logo a img {
+  padding: 7px 0px;
+}

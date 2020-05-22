@@ -1,0 +1,50 @@
+/*-------------------
+      COMMON
+--------------------*/
+@toolbarButtonIconFontSize: 1.3rem;
+
+@olvHeaderTextColor: @secondaryColor;
+@olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
+
+/* Header order */
+@olvHeaderOrderIconColor: @accentColor;
+@olvHeaderOrderIconHoverColor: @textColor;
+@olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
+@olvHeaderOrderIconBorderRadius: 0.25rem;
+@olvHeaderOrderIconPadding: 0.2em;
+@olvHeaderOrderIconDisplay: inline-block;
+@olvHeaderOrderIconVerticalAlign: top;
+
+@olvHeaderOrderIconFontFamily: 'guideline-icons';
+@olvHeaderOrderIconAscendingContent: "\e92a";
+@olvHeaderOrderIconDescendingContent: "\e92c";
+
+/* Header operations */
+@olvOperationsBackground: transparent;
+@olvOperationsPadding: 0;
+@olvOperationsZIndex: 5;
+@olvOperationsOverflow: visible;
+
+@olvOperationIconFontFamily: 'guideline-icons';
+@olvOperationIconFontSize: @glyphWidth;
+@olvOperationCheckRowMarginRight: 0.5em;
+@checkRowsButtonGEIcon: "\e928";
+
+/*-----------------------
+   Helper buttons In Row
+------------------------*/
+
+/* Buttons */
+@rowHelperCellHoverColor: @textColor;
+
+/*-------------------
+   Navbar buttons
+--------------------*/
+@navBarSearchInputMaxWidth: 6.5rem;
+
+/*-------------------
+      BLUE-SKY
+--------------------*/
+@olvOperationsButtonLineHeight: unit(20 / 14, em);
+@olvOperationsButtonBorderColor: transparent;
+@olvOperationsButtonMargin: 0;

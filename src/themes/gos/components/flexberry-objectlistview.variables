@@ -45,6 +45,7 @@
 
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
+/* Header order */
 @olvHeaderOrderIconColor: @accentColor;
 @olvHeaderOrderIconHoverColor: @textColor;
 @olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
@@ -58,6 +59,7 @@
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
 
+/* Header operations */
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 @olvOperationsZIndex: 5;
@@ -67,6 +69,7 @@
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
+
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextFontSize: 1em;
 @olvHeaderTextFontWeight: @defaultMediumFontWeight;
@@ -174,6 +177,7 @@
 @navBarNextButtonBeforeContent: "\e908";
 
 @navBarShowingEntriesPadding: 0.5625rem;
+@navBarSearchInputMaxWidth: 6.5rem;
 
 
 /*-----------------------
