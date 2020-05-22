@@ -112,8 +112,6 @@
 }
 
 .ui.button {
-  font-size: @buttonMediumFontSize;
-  line-height: @buttonMediumLineHeight;
   padding: @buttonMediumPadding
 }
 
