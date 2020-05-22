@@ -27,11 +27,19 @@
   .object-list-view {
     margin: @olvMargin;
   }
+
+  .JCLRgrip .JColResizer {
+    width: 20px;
+  }
+
+  .JCLRgrip:last-child .JColResizer {
+    width: 4px;
+  }
 }
 
 table.object-list-view.selectable {
   thead,
-  tbody tr:not(.object-list-view-filters){
+  tbody tr:not(.object-list-view-filters) {
     cursor: pointer;
   }
 }
@@ -51,10 +59,6 @@ table.object-list-view.selectable {
     overflow: auto;
     height: 100%;
   }
-}
-
-.object-list-view-container .JCLRgrip .JColResizer {
-  width: 20px;
 }
 
 /*-------------------
@@ -108,6 +112,26 @@ table.object-list-view.selectable {
       margin: @createButtonMargin;
       font-weight: @buttonFontWeight;
     }
+
+    &:focus {
+      border-color: transparent;
+    }
+
+    &.refresh-button,
+    &.delete-button {
+      i.icon {
+        line-height: 1;
+        margin: 0 0.5em;
+      }
+    }
+
+    &.refresh-button i.icon {
+      margin-left: 0;
+    }
+
+    &.delete-button:hover {
+      color: @deleteHelperButtonInRowHoverColor;
+    }
   }
 
   .filter-active {
@@ -157,28 +181,6 @@ table.object-list-view.selectable {
   .ui.buttons .button {
     &:not(.disabled) {
       color: @toolbarButtonIconColor;
-    }
-  }
-
-  .ui.button {
-    &:focus {
-      border-color: transparent;
-    }
-
-    &.refresh-button,
-    &.delete-button {
-      i.icon {
-        line-height: 1;
-        margin: 0 0.5em;
-      }
-    }
-
-    &.refresh-button i.icon {
-      margin-left: 0;
-    }
-
-    &.delete-button:hover {
-      color: @deleteHelperButtonInRowHoverColor;
     }
   }
 
@@ -299,10 +301,6 @@ table.object-list-view.selectable {
 /*-------------------
         OLV
 --------------------*/
-.object-list-view-container .JCLRgrip:last-child .JColResizer{
-  width: 4px;
-}
-
 .object-list-view-container .ui.table {
   min-width: 100% !important;
   width: 100% !important;
@@ -310,26 +308,14 @@ table.object-list-view.selectable {
 
 /* Header */
 .ui.table.object-list-view {
-  border: @olvBorder;
-
   thead tr th {
-    background: @olvHeaderBackground;
-    border-top: @olvHeaderBorderTop;
-    border-right: @olvHeaderBorderRight;
-    border-bottom: @olvHeaderBorderBottom;
-    border-left: @olvHeaderBorderLeft;
-    padding: @olvHeaderPadding;
-
     // TODO: скачет в edge не работает в ie
     position: sticky;
     top: 0px;
     z-index: 1;
 
     div span {
-      font-size: @olvHeaderTextFontSize;
-      font-weight: @olvHeaderTextFontWeight;
       line-height: @olvHeaderTextLineHeight;
-      color: @olvHeaderTextColor;
     }
   }
 }
@@ -337,11 +323,6 @@ table.object-list-view.selectable {
 /* Body */
 .ui.table.object-list-view tbody tr {
   background: @olvRowBackground;
-
-  td {
-    padding: @olvCellPadding;
-    border: @olvCellBorder;
-  }
 }
 
 .object-list-view-helper-column-cell {
@@ -352,35 +333,9 @@ table.object-list-view.selectable {
   border-bottom: @olvFilterRowBorder;
 }
 
-// Hover
-.object-list-view-container:not(.groupedit-container) {
-  .ui.table tbody tr,
-  .ui.selectable.table tbody tr,
-  .ui.table tbody tr td.selectable,
-  .ui.striped.table tbody tr:nth-child(2n),
-  .ui.striped.selectable.selectable.selectable.table tbody tr.active {
-    &:not(.object-list-view-filters):hover {
-      background: @olvRowHoverBackground !important;
-    }
-  }
-}
-
 .ui.selectable.table tbody tr.object-list-view-filters,
 .ui.table tbody tr.object-list-view-filters td.selectable {
   background: @olvRowBackground !important;
-}
-
-// Striped
-.ui.striped.table.object-list-view tbody tr:nth-child(2n) {
-  background: @olvRowStrippedBackground;
-}
-
-// Active
-.ui.table.object-list-view {
-  tr.active,
-  td.active {
-    background: @olvRowActiveBackground !important;
-  }
 }
 
 /* Helper buttons in row */
@@ -569,6 +524,11 @@ tbody tr td .icon.button.hierarchy-expand {
 --------------------*/
 
 .pusher.mobile {
+  .ui.selectable.table tbody tr:not(.active):hover,
+  .ui.table tbody tr td.selectable:not(.active):hover {
+    background: @background!important;
+  }
+
   .flexberry-objectlistview {
     max-height: @olvMobileMaxHeight;
   }
