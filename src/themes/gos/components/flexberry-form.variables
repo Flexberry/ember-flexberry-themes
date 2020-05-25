@@ -33,24 +33,9 @@
 @closeButtonFontSize: 40px;
 
 /* Errored Input */
-@formErrorColor: @textColor;
-@formErrorBorder: @negativeColor;
-@formErrorBackground: @pageBackground;
-
-/* Focused Error */
-@inputErrorFocusBackground: @formErrorBackground;
-@inputErrorFocusColor: @formErrorColor;
-@inputErrorFocusBorder: @negativeColor;
-
-/* Errored Input label*/
-@formErrorLabelBackground: transparent;
-@formErrorLabelBorder: none;
-@formErrorLabelColor: @negativeColor;
-@formErrorLabelFontSize: @inputFontSize;
-@formErrorLabelFontWeight: normal;
-@formErrorLabelPadding: 0;
-@formErrorLabelCornerDisplay: none;
-@formErrorLabelMargin: 0.5em;
+@formErrorColor: @textColor;//remove after migrate
+@formErrorBorder: @negativeBorderColor;//remove after migrate
+@formErrorBackground: @negativeBackgroundColor;//remove after migrate
 
 /*-------------------
         Input
@@ -65,15 +50,6 @@
 @labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
-
-/*-------------------
-        Textarea
---------------------*/
-
-@textareaLineHeight: @inputLineHeight;
-@textareaHoverBorderColor: @inputHoverBorderColor;
-@textareaReadonlyBackground: @inputReadonlyBackground;
-@textareaReadonlyBorderColor: @inputReadonlyBorderColor;
 
 /*-------------------
     Labeled inside
