@@ -31,9 +31,9 @@
 @closeButtonFontSize: 40px;
 
 /* Errored Input */
-@formErrorColor: @textColor;//remove after migrate
-@formErrorBorder: @negativeBorderColor;//remove after migrate
-@formErrorBackground: @negativeBackgroundColor;//remove after migrate
+@formErrorColor: @textColor;
+@formErrorBorder: @negativeBorderColor;
+@formErrorBackground: @negativeBackgroundColor;
 
 /*-------------------
         Input
