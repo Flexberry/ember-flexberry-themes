@@ -1,0 +1,8 @@
+@background: transparent;
+@border: none;
+@textColor: @negativeColor;
+@fontSize: @defaultInputFontSize;
+@fontWeight: normal;
+@padding: 0;
+@cornerDisplay: none;
+@marginTop: 0.5em;
