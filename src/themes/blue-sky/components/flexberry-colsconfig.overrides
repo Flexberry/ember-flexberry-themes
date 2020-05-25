@@ -1,0 +1,4 @@
+.ui.modal .content .flexberry-colsconfig.content {
+  max-height: 585px;
+  overflow: auto;
+}

@@ -2,27 +2,6 @@
 /*==================================*/
 /*=====from main.less===============*/
 // header
-.background-logo {
-  background: @headerColor;
-  box-shadow: @headerBoxShadow;
-  color: @headerTextColor;
-  font-size: @headerFontSize;
-  height: @headerHeight;
-  position: fixed;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  z-index: 999;
-  i.icon.sidebar:before {
-    font-family: 'guideline-icons';
-    content: "\e920";
-  }
-}
 
 .background-logo a img {
   padding: 7px 0px;
@@ -40,23 +19,6 @@
 
 .page-header-caption a:hover {
   color: @pageHeaderCaptionColor !important;
-}
-
-.logo {
-  width: @logoWidth;
-}
-
-.page-header-userbar {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  align-items: center;
-}
-
-.page-header-userbar a {
-  background: none;
-  color: @headerTextColor;
-  box-shadow: none;
 }
 
 // content
@@ -87,54 +49,18 @@
   font-size: 0;
 }
 
-.page-header-caption {
-  color: @pageHeaderCaptionColor;
-
-  &:hover {
-    color: @pageHeaderCaptionColor;
-  }
-
-  > * {
-    display: block;
-  }
-}
-
-.page-header-caption-app-name {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
 .logo {
   margin-right: @distanceM;
+  width: @logoWidth;
 }
 
-.page-header-userbar {
-  position: relative;
-
-  i.icon {
-    line-height: @userIconLineHeight;
-    font-size: @userIconSize;
-  }
-
-  img {
-    border-radius: 100%;
-    height: @userFotoImgSize;
-    width: @userFotoImgSize;
-  }
-  span {
-    margin-right: 1em;
-  }
-  .ui.dropdown > .dropdown.icon {
-    color: @textColor;
-    &::before {
-      content: "\e905";
-    }
+.page-header-userbar .ui.dropdown > .dropdown.icon {
+  color: @textColor;
+  &::before {
+    content: "\e905";
   }
 }
 
-.ui.text.menu.page-header-actions {
-  margin: 0 @distanceL 0 auto;
-}
 
 .flexberry-container {
   background-color: @pageBackgroundColor;
@@ -197,7 +123,7 @@
 }
 
 .mobile {
-  .item.logo {
+  .logo {
     margin-right: @mobileHeaderMargin;
     width: @mobileItemLogoImgWidth;
     
