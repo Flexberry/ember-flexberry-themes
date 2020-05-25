@@ -144,6 +144,7 @@
   .page-header-userbar {
     margin-right: @mobileHeaderMargin;
     margin-left: @mobileUserbarMarginLeft;
+    position: relative;
 
     .flexberry-menu.ui.icon.dropdown.button {
       position: absolute;
