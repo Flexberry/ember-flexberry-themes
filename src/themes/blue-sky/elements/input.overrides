@@ -77,4 +77,8 @@ span.lookup-field {
       resize: none;
     }
   }
+
+  input[type="text"] {
+    width: auto;
+  }
 }
