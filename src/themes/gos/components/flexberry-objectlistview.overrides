@@ -434,10 +434,10 @@ tbody tr td .icon.button.hierarchy-expand {
         Navbar
 --------------------*/
 .ui.secondary.menu.nav-bar {
-  min-height: @navBarButtonSize;
   margin: @navBarMargin;
-  padding-top: 0;
+  min-height: @navBarButtonSize;
   min-width: 100%;
+  align-items: center;
 
   .prev-page-button,
   .next-page-button {
@@ -457,14 +457,12 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .ui.basic.buttons {
+    align-self: flex-start;
     .ui.button {
-      border: @navBarButtonBorder;
       border-radius: @navBarButtonBorderRadius;
       color: @textColor!important;
-      font-size: @navBarButtonFontSize;
       min-width: @navBarButtonWidth;
       margin: @navBarButtonMargin;
-      padding: @navBarButtonPadding;
       font-weight: 500;
 
       &:hover {
@@ -489,9 +487,23 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .right.menu {
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
     .showing-entries {
       padding: @navBarShowingEntriesPadding;
     }
+  }
+}
+
+.ui.input.nav-bar-search-page {
+  align-self: flex-start;
+  .ui.button {
+    margin: auto;
+    position: relative;
+    right: @navBarSearchButtonWidth + 0.3rem;
+    min-width: @navBarSearchButtonWidth;
   }
 }
 
