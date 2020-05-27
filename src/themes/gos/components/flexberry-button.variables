@@ -3,7 +3,7 @@
 
 @fontWeight: @defaultMediumFontWeight;
 @lineHeight: unit(22 / 14, em);
-
+@horizontalPadding: unit(11 / 14, em);
 @iconOpacity: 1;
 
 /* Hovered */
