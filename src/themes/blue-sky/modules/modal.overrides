@@ -21,11 +21,6 @@
     max-height: 300px;
 }
 
-.ui.modal .content .flexberry-colsconfig.content {
-    max-height: 585px;
-    overflow: auto;
-}
-
 .ui.modal > ui.table {
     margin-bottom: 0;
 }

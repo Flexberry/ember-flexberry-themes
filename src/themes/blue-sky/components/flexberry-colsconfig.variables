@@ -1,0 +1,9 @@
+@colsconfigHeaderTextAlign: left;
+
+/* Columns width */
+@showColumnsWidth: 55px;
+@columnsOrderWidth: 64px;
+@sortDirectionWidth: 177px;
+@sortPriorityWidth: 70px;
+@columnWidthWidth: 90px;
+@columnWidthHeaderWidth: @columnWidthWidth;

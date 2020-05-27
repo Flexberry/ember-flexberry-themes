@@ -3,5 +3,58 @@
 
 @import (multiple) '../../theme.config';
 
+.background-logo {
+  background: @headerColor;
+  box-shadow: @headerBoxShadow;
+  color: @headerTextColor;
+  font-size: @headerFontSize;
+  height: @headerHeight;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+}
+
+.page-header-caption {
+  color: @pageHeaderCaptionColor;
+
+  &:hover {
+    color: @pageHeaderCaptionColor;
+  }
+
+  &-app-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  > * {
+    display: block;
+  }
+}
+
+.ui.text.menu.page-header-actions {
+  margin: 0 2rem 0 auto;
+}
+
+.page-header-userbar {
+  display: flex;
+  align-items: center;
+
+  i.icon {
+    line-height: @userIconLineHeight;
+    font-size: @userIconSize;
+  }
+
+  img {
+    border-radius: 100%;
+    height: @userFotoImgSize;
+    width: @userFotoImgSize;
+  }
+  span {
+    margin-right: 1em;
+  }
+}
 
 .loadUIOverrides();
