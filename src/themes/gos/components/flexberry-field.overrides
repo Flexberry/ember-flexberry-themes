@@ -14,7 +14,6 @@
 
 
 // Large
-
 .ui.large.input > input {
     font-size: @inputLargeFontSize;
     line-height: @inputLargeLineHeight;
@@ -25,4 +24,9 @@
     font-size: @fieldLargeLabelFontSize;
     line-height: @fieldLargeLabelLineHeight;
     margin: @fieldLargeLabelMargin;
+}
+
+/* Error field */
+.error.flexberry-field.ui.field {
+  margin-bottom: 0;
 }

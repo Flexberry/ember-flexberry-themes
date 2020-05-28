@@ -112,6 +112,16 @@
   border-radius: 0;
 }
 
+.flexberry-lookup.error >.ui.action.input:not([class*="left action"]) > input.lookup-field {
+  &,
+  &:hover,
+  &:focus {
+    background-color: @negativeBackgroundColor;
+    border-color: @negativeBorderColor;
+    border-right-color: @negativeBorderColor!important;
+  }
+}
+
 /* Autocomplete */
 .flexberry-lookup.ui.search>.results {
   margin: @autocompleteResultsMargin;
