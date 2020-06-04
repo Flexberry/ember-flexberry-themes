@@ -64,14 +64,6 @@
   }
 }
 
-/* Support form */
-.ui.modal.flexberry-modal.support-modal {
-  .contacts {
-    color: @secondaryColor;
-    font-size: @modalContactsFontSize;
-  }
-}
-
 /*  Mobile */
 .mobile {
   .ui.modal.flexberry-sidepage  {
