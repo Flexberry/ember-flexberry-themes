@@ -1,5 +1,5 @@
 @headerColor           : #fff;
-@headerBoxShadow       : 0px 1px 5px rgba(0, 0, 0, 0.1);
+@headerBoxShadow       : @panelBoxShadow;
 @headerTextColor: @textColor;
 @headerFontSize: 0.875rem;
 @logoWidth: @headerHeight;
