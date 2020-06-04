@@ -30,6 +30,12 @@
 @actionBackground: @white;
 @actionPadding: 0.75rem @modalPadding @modalPadding;
 
+/* Mobile Positions */
+@mobileHeaderPaddingTop: 0.75rem;
+@mobileHeaderPaddingBottom: 0.5rem;
+@mobileHeaderPadding: @mobileHeaderPaddingTop 1rem @mobileHeaderPaddingBottom;
+@mobileContentPadding: 0.5rem 1rem 1rem;
+
 /* Scrolling Margin */
 @scrollingMargin: 0;
 
