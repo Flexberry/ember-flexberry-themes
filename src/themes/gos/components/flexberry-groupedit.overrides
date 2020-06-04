@@ -72,11 +72,6 @@ div:not(.groupedit-modal-content) {
       padding-left: @olvHeaderTextPadding;
     }
 
-    tr.error,
-    td.error {
-      background: none !important;
-    }
-
     tbody {
       .object-list-view-helper-column-cell {
         padding-top: @olvCheckboxCellVerticalPadding;
