@@ -1,7 +1,7 @@
 @headerColor           : #fff;
 @headerBoxShadow       : 0px 1px 5px rgba(0, 0, 0, 0.1);
 @headerTextColor: @textColor;
-@headerFontSize: 0.875rem;
+@headerFontSize: 1rem;
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
 @pageBackgroundColor: @simplePageBackground;
