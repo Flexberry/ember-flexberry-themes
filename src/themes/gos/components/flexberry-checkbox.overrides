@@ -90,3 +90,9 @@
     background: @toggleReadonlyHandleBackground;
     border: @toggleReadonlyHandleBorder;
 }
+
+.checkbox.error:not(.toggle):not(.slider) label:before,
+.checkbox.error:not(.toggle):not(.slider) .box:before {
+    background: @negativeBackgroundColor;
+    border-color: @negativeBorderColor;
+}

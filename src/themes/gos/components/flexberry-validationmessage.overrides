@@ -1,0 +1,12 @@
+.ui.label.red.flexberry-validationmessage {
+  background-color: @background !important;
+  border: @border;
+  color: @textColor !important;
+  font-size: @fontSize;
+  font-weight: @fontWeight;
+  margin-top: @marginTop;
+  padding: @padding;
+  &:before {
+    display: @cornerDisplay;
+  }
+}
