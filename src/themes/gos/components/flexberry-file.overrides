@@ -1,71 +1,95 @@
 .flexberry-file {
-    &.disabled {
-      input.flexberry-file-filename-input[readonly="readonly"] {
-        background: @fileReadonlyBackgroundColor;
-        border-color: @fileReadonlyBorderColor;
-        border-radius: @inputBorderRadius !important;
-      }
-    }
-
+  &.disabled {
     input.flexberry-file-filename-input[readonly="readonly"] {
-        background: @fileBackgroundColor;
-        border-color: @fileBorderColor;
+      background: @fileReadonlyBackgroundColor;
+      border-color: @fileReadonlyBorderColor;
+      border-radius: @inputBorderRadius !important;
+    }
+  }
+
+  input.flexberry-file-filename-input[readonly="readonly"] {
+    background: @fileBackgroundColor;
+    border-color: @fileBorderColor;
+  }
+
+  .ui.action.input:not([class*="left action"]) > .button::not(.positive):not(.negative):not(.colored) {
+    background: @fileBackgroundColor;
+  }
+
+  .ui.action.input:not([class*="left action"]) > .button {
+    border-color: @fileBorderColor;
+    padding: @fileControlButtonPadding;
+
+    &:not(:first-child),
+    &:last-child {
+      border-radius: @defaultBorderRadius;
     }
 
-    .ui.action.input:not([class*="left action"]) > .button::not(.positive):not(.negative):not(.colored) {    
-      background: @fileBackgroundColor;
+    &:hover {
+      color: @fileControlColorHover;
     }
 
-    .ui.action.input:not([class*="left action"]) > .button {    
-      border-color: @fileBorderColor;
-      padding: @fileControlButtonPadding;
+    &.disabled {
+      color: @fileControlDisabledColor;
+    }
 
-        &:not(:first-child),
-        &:last-child {
-            border-radius: @defaultBorderRadius;
-        }
+    &.flexberry-file-add-button,
+    &.flexberry-file-remove-button {
+      border-radius: @fileInnerControlBorderRadius @defaultBorderRadius @defaultBorderRadius @fileInnerControlBorderRadius;
+    }
 
-        &:hover {
-            color: @fileControlColorHover;
-        }
+    &.flexberry-file-remove-button.disabled {
+      display: @fileRemoveControlDisplay;
+    }
 
-        &.disabled {
-            color: @fileControlDisabledColor;
-        }
+    &.flexberry-file-upload-button,
+    &.flexberry-file-download-button {
+        margin-left: @fileControlMarginLeft;
+    }
+
+    .icon {
+      font-family: @iconFontName;
+      font-size: @iconFontSize;
+    }
+
+    &.flexberry-file-add-button .icon:before {
+      content: @fileAddIcon;
+    }
     
-        &.flexberry-file-add-button,
-        &.flexberry-file-remove-button {
-            border-radius: @fileInnerControlBorderRadius @defaultBorderRadius @defaultBorderRadius @fileInnerControlBorderRadius;
-        }
-    
-        &.flexberry-file-remove-button.disabled {
-            display: @fileRemoveControlDisplay;
-        }
-
-        &.flexberry-file-upload-button,
-        &.flexberry-file-download-button {
-            margin-left: @fileControlMarginLeft;
-        }
-
-        .icon {
-            font-family: @iconFontName;
-            font-size: @iconFontSize;
-        }
-
-        &.flexberry-file-add-button .icon:before {
-            content: @fileAddIcon;
-        }
-        
-        &.flexberry-file-remove-button .icon:before {
-            content: @fileRemoveIcon;
-        }
-        
-        &.flexberry-file-upload-button .icon:before {
-            content: @fileUploadIcon;
-        }
-        
-        &.flexberry-file-download-button .icon:before {
-            content: @fileDownloadIcon;
-        }
+    &.flexberry-file-remove-button .icon:before {
+      content: @fileRemoveIcon;
     }
+    
+    &.flexberry-file-upload-button .icon:before {
+      content: @fileUploadIcon;
+    }
+    
+    &.flexberry-file-download-button .icon:before {
+      content: @fileDownloadIcon;
+    }
+  }
+}
+
+/* Error */
+.flexberry-file.error .ui.action.input:not([class*="left action"]) {
+
+  input[type="text"] {
+    background-color: @negativeBackgroundColor;
+    border-color: @negativeBorderColor;
+  }
+
+  > .ui.button.flexberry-file-add-button {
+    background-color: @negativeBackgroundColor;
+    border-color: @negativeBorderColor;
+    border-left: none;
+    color: @secondaryColor;
+
+    &:hover {
+      color: @textColor;
+    }
+  }
+}
+
+.flexberry-file.disabled.error .ui.action.input:not([class*="left action"]) > input {
+  border-right-color: @negativeBorderColor !important;
 }

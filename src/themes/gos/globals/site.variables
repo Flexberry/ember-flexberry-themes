@@ -73,6 +73,9 @@
 
 /* Negative */
 @negativeColor           : @cinnabar;
+@negativeBackgroundColor : @pageBackground;
+@negativeBorderColor     : @negativeColor;
+@negativeTextColor       : @textColor;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;

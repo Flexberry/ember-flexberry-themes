@@ -39,6 +39,14 @@
   }
 }
 
+.flexberry-simpledatetime.error > .ui.action.input:not([class*="left action"]) > input {
+  &,
+  &:hover,
+  &:focus {
+    border-right-color: @negativeBorderColor!important;
+  }
+}
+
 // Button icons
 .flexberry-simpledatetime > .ui.input > .ui.button > .icon {
   font-family: @datetimeButtonFont;
