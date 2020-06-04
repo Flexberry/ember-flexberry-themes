@@ -45,7 +45,7 @@
 @subMenuItemMarginRight: 1.5em;
 
 /* Toggle button */
-@toggleButtonFontSize: 1.5rem;
+@toggleButtonFontSize: 1rem;
 @toggleButtonPadding: 0px @distanceL 0px @distanceS;
 
 @itemDropdownIconContent: "\e907";
