@@ -122,6 +122,8 @@
 @distanceM: 1.5rem;
 @distanceS: 1rem;
 
+@smallText: 0.875rem;
+
 /* Maximum Single Character Glyph Width, aka Capital "W" */
 @glyphWidth: 1.5em;
 

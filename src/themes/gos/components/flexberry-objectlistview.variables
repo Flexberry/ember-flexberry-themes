@@ -152,14 +152,11 @@
    Navbar buttons
 --------------------*/
 @navBarMargin: 0;
-@navBarButtonFontSize: 0.875rem;
-@navBarButtonBorder: none;
 @navBarButtonBorderRadius: @defaultBorderRadius;
 
 @navBarButtonSize: 2.5rem;
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonMargin: 0 unit(4 / 14, em) 0 0;
-@navBarButtonPadding: 0 1rem;
 
 @navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
@@ -170,6 +167,7 @@
 @navBarShowingEntriesPadding: 0.5625rem;
 @navBarSearchInputMaxWidth: 6.5rem;
 
+@navBarSearchButtonWidth: 2rem;
 
 /*-----------------------
    Helper buttons In Row
