@@ -126,6 +126,10 @@
   overflow-y: scroll;
 }
 
+.ui.modal:not(.flexberry-sidepage) .flexberry-colsconfig.content tbody {
+  max-height: @tbodyStaticHeight;
+}
+
 .flexberry-colsconfig.content tr {
   display: table;
   width: 100%;

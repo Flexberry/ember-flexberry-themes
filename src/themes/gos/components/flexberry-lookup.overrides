@@ -158,13 +158,17 @@
   }
 }
 
-#lookup-list .flexberry-objectlistview {
+.flexberry-sidepage #lookup-list .flexberry-objectlistview {
   max-height: calc(~'100vh - 6.5em');
   margin-left: -1em;
   margin-right: -1em;
   .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
     padding-top: 0;
   }
+}
+
+.ui.modal:not(.flexberry-sidepage) .content .object-list-view-container {
+  max-height: @maxModalContentHeight;
 }
 
 .mobile .flexberry-lookup>.ui.input {
