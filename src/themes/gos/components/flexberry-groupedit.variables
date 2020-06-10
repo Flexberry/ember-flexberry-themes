@@ -10,3 +10,5 @@
 @olvCellVerticalPadding: 0.25em;
 @olvCheckboxCellVerticalPadding: 0.5em;
 @olvCellTextPaddind: 0 0 0 @inputVerticalPadding;
+
+@newRowBackground: fade(#219653, 10%);
