@@ -347,6 +347,7 @@ table.object-list-view.selectable {
   .object-list-view-helper-column-cell .cell {
     display: @helperButtonInRowDisplay;
     vertical-align: @helperButtonInRowVerticalAlign;
+    float: left;
 
     .ui.button {
       background: @helperButtonInRowBackground;

@@ -28,6 +28,7 @@
 @activeBackgroundColor: @solitude;
 @activeBackgroundHover: @solitude;
 
+@errorBackgroundColor: transparent;
 //=============
 
 
