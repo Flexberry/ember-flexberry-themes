@@ -78,6 +78,21 @@
     }
   }
 
+  .cols-config-apply,
+  .cols-config-save {
+    color: @colsconfigButtonColor;
+    background: @colsconfigButtonBackground;
+    padding-left: @colsconfigButtonHorizontalPadding;
+    padding-right: @colsconfigButtonHorizontalPadding;
+  }
+
+  .large.icon,
+  thead th,
+  tfoot th {
+    color: @colsconfigLargeIconColor;
+    font-weight: 500;
+  }
+
   .ui.table {
     border: none;
     margin: 0;
@@ -118,21 +133,6 @@
           color: @colsconfigDisabledColor;
         }
       }
-    }
-
-    .large.icon,
-    thead th,
-    tfoot th {
-      color: @colsconfigLargeIconColor;
-      font-weight: 500;
-    }
-
-    .cols-config-apply,
-    .cols-config-save {
-      color: @colsconfigButtonColor;
-      background: @colsconfigButtonBackground;
-      padding-left: @colsconfigButtonHorizontalPadding;
-      padding-right: @colsconfigButtonHorizontalPadding;
     }
 
     .ui.action.input:not([class*="left action"]) > .button.cols-config-save:last-child {
@@ -186,5 +186,19 @@
   .header {
     font-family: @fontName;
     font-size: @messageFontSize;
+  }
+}
+
+/*  Mobile */
+
+.flexberry-colsconfig {
+  .colsconfig-prop {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
+  }
+
+  .colsconfig-actions {
+    background: @actionsBackground;
+    border-radius: @defaultBorderRadius;
   }
 }

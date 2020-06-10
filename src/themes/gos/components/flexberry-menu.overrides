@@ -1,6 +1,6 @@
 // Flexberry-menu
 .flexberry-menu.ui.icon.dropdown.button,
-.menu.transition.visible .flexberry-menuitem.item {
+.menu.transition .flexberry-menuitem.item {
   color: @flexberryMenuTextColor;
   font-weight: @flexberryMenuTextFontWeight;
   background: @flexberryMenuBackground; 
@@ -12,6 +12,24 @@
   &:last-child {
     border-bottom-left-radius: @defaultBorderRadius;
     border-bottom-right-radius: @defaultBorderRadius;
+  }
+}
+
+.menu .flexberry-menuitem.item {
+  &.dividing:after {
+    content: '';
+    height: 1px;
+    width: calc(~'100% - 2em');
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .ui.button.icon {
+    color: @secondaryColor;
+    padding: 0;
+    background-color: transparent;
+    line-height: 1;
   }
 }
 
@@ -41,8 +59,14 @@
   box-shadow: @flexberryMenuBoxShadow;
   border-radius: @defaultBorderRadius;
   border: @flexberryMenuBorder;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .ui.icon.button.flexberry-menu > i.icon.bordered {
   height: @borderedSize;
+}
+
+.mobile .ui.dropdown.flexberry-menu .menu {
+  width: calc(~'100vw - 2rem');
 }
