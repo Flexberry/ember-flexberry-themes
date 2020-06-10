@@ -42,6 +42,8 @@
 @lookupChangeButtonRightWithPreview:  @_lookupButtonWidth * 3 + @lookupChangeButtonPaddingRight;
 @lookupPreviewButtonRight: @_lookupButtonWidth * 2 + @lookupButtonHorizontalPadding;
 
+@maxModalContentHeight: 500px;
+
 // Icons
 @lookupIconFont: 'guideline-icons';
 @lookupIconHeight: auto;

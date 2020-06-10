@@ -6,7 +6,6 @@
 
 .ui.table.object-list-view tr td {
   overflow-x: hidden;
-  overflow-y: visible;
 
   &.overflowed-cell,
   &.object-list-view-menu {
@@ -72,6 +71,14 @@ table.object-list-view.selectable {
 
   /* Toolbar buttons */
 
+  .ui.button,
+  .ui.buttons .ui.button,
+  .ui.action.input {
+    > .ui.icon.button {
+      padding: @toolbarButtonPadding;
+    }
+  }
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -85,20 +92,18 @@ table.object-list-view.selectable {
       background: @toolbarButtonBackground;
     }
 
-    // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button {
-      &.active {
-        color: @textColor;
-      }
-
-      .icon {
-        font-family: @hierarchicalButtonFontFamily;
-        font-size: @hierarchicalButtonFontSize;
+    &.refresh-button,
+    &.delete-button,
+    &.hierarchical-button,
+    &s > .button {
+      &:not(.disabled) {
+        color: @toolbarButtonIconColor;
       }
     }
 
-    &:focus.hierarchical-button:not(.active) {
-      color: @secondaryColor;
+    // TODO: Удалить после отрисовки новых иконок.
+    &.hierarchical-button .icon {
+      font-family: @hierarchicalButtonFontFamily;
     }
 
     &.refresh-button,
@@ -114,7 +119,7 @@ table.object-list-view.selectable {
     }
 
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
 
     &.refresh-button,
@@ -172,35 +177,30 @@ table.object-list-view.selectable {
     }
   }
 
-  .ui.icon.button {
-    padding: @toolbarButtonPadding;
-  }
-
-  .ui.button.refresh-button,
-  .ui.button.delete-button,
-  .ui.buttons .button {
-    &:not(.disabled) {
-      color: @toolbarButtonIconColor;
-    }
-  }
-
   .ui.action.input {
     .search-button {
       position: absolute;
       right: @clearButtonRight;
       height: 100%;
+      line-height: 1;
     }
 
     .clear-search-button {
       position: absolute;
       right: 0;
       height: 100%;
+      .icon {
+        font-size: 1.3rem;
+      };
     }
   }
 
   > .buttons:not(.filter-active) {
-    > .ui.button:not(.dropdown) {
-      padding-right: @buttonsPaddingRight;
+    > .ui.button {
+      line-height: 1;
+      &:not(.dropdown) {
+        padding-right: @buttonsPaddingRight;
+      }
     }
 
     .flexberry-menu.ui.dropdown {
@@ -208,6 +208,7 @@ table.object-list-view.selectable {
 
       > .dropdown.icon {
         color: @toolbarButtonIconColor;
+        font-size: 1.3rem;
 
         &::before {
           content: "\e905";
@@ -351,7 +352,7 @@ table.object-list-view.selectable {
 
     .ui.button {
       background: @helperButtonInRowBackground;
-      border: @helperButtonInRowBorder;
+      box-shadow: none;
       line-height: 1;
       padding: @helperButtonInRowPadding;
 
@@ -388,10 +389,11 @@ table.object-list-view.selectable {
 
     // Временные стили для кнопки "Создать на основе"
     .ui.button.object-list-view-row-prototype-button .icon {
-      font-size: 1.4em;
-
       &.copy::before {
         content: @copyButtonInRowIcon;
+      }
+      &:hover {
+        color: @prototypeHelperButtonInRowHoverColor;
       }
     }
 
@@ -434,11 +436,26 @@ tbody tr td .icon.button.hierarchy-expand {
 /*-------------------
         Navbar
 --------------------*/
+.flexberry-objectlistview:not(.mobile) .ui.secondary.menu.nav-bar {
+  align-items: center;
+  .ui.basic.buttons {
+    align-self: flex-start;
+  }
+  .right.menu {
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    .showing-entries {
+      padding: @navBarShowingEntriesPadding;
+    }
+  }
+}
+
 .ui.secondary.menu.nav-bar {
   margin: @navBarMargin;
   min-height: @navBarButtonSize;
   min-width: 100%;
-  align-items: center;
 
   .prev-page-button,
   .next-page-button {
@@ -458,7 +475,6 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .ui.basic.buttons {
-    align-self: flex-start;
     .ui.button {
       border-radius: @navBarButtonBorderRadius;
       color: @textColor!important;
@@ -486,16 +502,6 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
-
-  .right.menu {
-    flex-basis: 0px;
-    flex-grow: 1;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    .showing-entries {
-      padding: @navBarShowingEntriesPadding;
-    }
-  }
 }
 
 .ui.input.nav-bar-search-page {
@@ -516,7 +522,7 @@ tbody tr td .icon.button.hierarchy-expand {
     background-color: transparent;
     padding: 0;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
   }
   .ui.dropdown .menu {
@@ -536,7 +542,7 @@ tbody tr td .icon.button.hierarchy-expand {
       Mobile
 --------------------*/
 
-.pusher.mobile {
+.mobile {
   .ui.selectable.table tbody tr:not(.active):hover,
   .ui.table tbody tr td.selectable:not(.active):hover {
     background: @background!important;
@@ -570,7 +576,7 @@ tbody tr td .icon.button.hierarchy-expand {
     vertical-align: @olvMobileFirstCellVerticalAligtn;
   }
 
-  .ui.form .object-list-view {
+  .object-list-view-single-column-cell {
     .inline.fields {
       margin: @olvMobileFieldMargin;
     }
@@ -612,14 +618,14 @@ tbody tr td .icon.button.hierarchy-expand {
       background: @checkRowsButtonBackgroud;
       margin: @checkRowsButtonMargin;
       padding: @checkRowsButtonPadding;
+    }
 
-      i.icon.icon-guideline-check-menu,
-      i.icon.check-square-o {
-        font-family: @iconFontFamily;
-        font-size: @checkRowsButtonIconFontSize;
-        color: @secondaryColor;
-        width: @checkRowsButtonIconWidth;
-      }
+    i.icon.icon-guideline-check-menu,
+    i.icon.check-square-o {
+      font-family: @iconFontFamily;
+      font-size: @checkRowsButtonIconFontSize;
+      color: @secondaryColor;
+      width: @checkRowsButtonIconWidth;
     }
 
     .check-all-at-page-button {
@@ -639,7 +645,6 @@ tbody tr td .icon.button.hierarchy-expand {
 
     .delete-button {
       margin: @deleteRowsButtonMargin;
-      font-size: @deleteRowsButtonFontSize;
       color: @deleteRowsButtonColor;
       background: @deleteRowsButtonBackground;
     }

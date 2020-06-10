@@ -4,7 +4,7 @@
     color: @textColor;
 
     &:focus {
-      border-color: @toolbarButtonBackground;
+      box-shadow: none;
     }
 
     &.disabled,
@@ -53,6 +53,9 @@ div:not(.groupedit-modal-content) {
           padding-top: @olvCheckboxCellVerticalPadding;
         }
       }
+    }
+    .oveflow-text {
+      padding: @olvCellTextPaddind;
     }
   }
 }

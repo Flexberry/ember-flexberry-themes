@@ -20,15 +20,14 @@
 @closeButtonPaddingTop: unit(9 / 14, em);
 
 //Icons
-@iconFontFamily: guideline-icons;
-@saveIcon: "\f0c7";
-@successIcon: "\e92d";
-@deleteIcon: "\e911";
-@errorIcon: "\e915";
-@closeIcon: "\e806";
-@iconPadding: 10px;
-@iconFontSize: 16px;
-@closeButtonFontSize: 40px;
+@iconFontFamily : guideline-icons;
+@saveIcon       : "\e936";
+@successIcon    : "\e92d";
+@deleteIcon     : "\e911";
+@errorIcon      : "\e915";
+@closeIcon      : "\e806";
+@iconPadding    : 0.625em;
+@iconFontSize   : 1rem;
 
 /* Errored Input */
 @formErrorColor: @textColor;

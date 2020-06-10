@@ -13,6 +13,7 @@
 @colsconfigTinyButtonPadding: 0;
 // TODO :(
 @tbodyHeight: calc(~'100vh - 24em');
+@tbodyStaticHeight: 400px;
 
 /* Columns width */
 @showColumnsWidth: 55px;

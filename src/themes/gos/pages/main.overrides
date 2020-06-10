@@ -6,7 +6,12 @@
 .background-logo a img {
   padding: 7px 0px;
 }
-
+.background-logo {
+  i.icon.sidebar:before {
+    font-family: @toggleIconFont;
+    content: @toggleIcon;
+  }
+}
 .page-header-caption a {
   background: none;
   color: @pageHeaderCaptionColor;
