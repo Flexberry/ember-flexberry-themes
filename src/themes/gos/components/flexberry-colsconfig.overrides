@@ -31,7 +31,7 @@
     padding: @colsconfigTinyButtonPadding;
     line-height: 1em;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
     i.icon {
       font-size: @glyphWidth;

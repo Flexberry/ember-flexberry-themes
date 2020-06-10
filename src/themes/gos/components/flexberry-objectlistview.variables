@@ -28,6 +28,7 @@
 @activeBackgroundColor: @solitude;
 @activeBackgroundHover: @solitude;
 
+@errorBackgroundColor: transparent;
 //=============
 
 
@@ -122,7 +123,7 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: 1.3rem;
+@toolbarButtonIconFontSize: 1rem;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
 
@@ -131,7 +132,6 @@
 
 // TODO: Удалить после отрисовки новых иконок.
 @hierarchicalButtonFontFamily: 'Icons';
-@hierarchicalButtonFontSize: 1.429em;
 
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
@@ -175,19 +175,19 @@
 
 /* Buttons */
 @helperButtonInRowDisplay: inline-block;
-@helperButtonInRowBorder: none;
 @helperButtonInRowBackground: transparent;
 @helperButtonInRowVerticalAlign: top;
 @helperButtonInRowBackgroundHoverColor: transparent;
 @helperButtonInRowHorizontalPadding: 0;
-@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.5em;
+@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.2em 0 0.5em;
 @rowHelperCellHoverColor: @textColor;
 @selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
 @editHelperButtonInRowHoverColor: @accentColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
+@prototypeHelperButtonInRowHoverColor: @green;
 
 /* Icons */
-@helperButtonInRowIconFontSize: @glyphWidth;
+@helperButtonInRowIconFontSize: 1rem;
 @editHelperButtonInRowIcon: "\e914";
 @deleteHelperButtonInRowIcon: "\e911";
 @copyButtonInRowIcon: "\e931";
@@ -233,7 +233,7 @@
 @checkRowsButtonBackgroud: transparent;
 @checkRowsButtonMargin: 0;
 @checkRowsButtonPadding: 0.5em 0.375em 0.5em 0.688em;
-@checkRowsButtonIconFontSize: 1.3em;
+@checkRowsButtonIconFontSize: 1.125rem;
 @checkRowsButtonIconWidth: auto;
 @checkRowsButtonGEPadding: 0.313em 0.857em 0 1.429em;
 @checkRowsButtonGEIcon: "\e928";
@@ -242,7 +242,6 @@
 @countSelectedRowsColor: #000;
 @countSelectedRowsLineHeight: 1.5em;
 @deleteRowsButtonMargin: 0.25em 1em;
-@deleteRowsButtonFontSize: 1em;
 @deleteRowsButtonColor: #7699B3;
 @deleteRowsButtonBackground: #F3F7FB;
 @clearSelectButtonMarginLeft: auto;

@@ -4,7 +4,7 @@
     color: @textColor;
 
     &:focus {
-      border-color: @toolbarButtonBackground;
+      box-shadow: none;
     }
 
     &.disabled,
@@ -26,6 +26,10 @@
 .groupedit-container > .ui.table.object-list-view {
   thead tr th {
     padding-left: @olvHeaderTextPadding;
+  }
+
+  .oveflow-text {
+    padding: @olvCellTextPaddind;
   }
 
   tr.error,

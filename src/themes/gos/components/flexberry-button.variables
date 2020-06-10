@@ -5,6 +5,7 @@
 @lineHeight: unit(22 / 14, em);
 @horizontalPadding: unit(12 / 14, em);
 @iconOpacity: 1;
+@textColor: @lightGrayishBlue;
 
 /* Hovered */
 @hoverBackgroundColor: @backgroundColor;
@@ -13,6 +14,7 @@
 
 /* Focused */
 @focusBackgroundColor: @backgroundColor;
+@buttonFocusBoxShadow: 0 0 0 1px @accentColor inset;
 @iconFocusOpacity: 1;
 
 /* Pressed Down */

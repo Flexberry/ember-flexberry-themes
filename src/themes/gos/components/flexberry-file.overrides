@@ -93,3 +93,7 @@
 .flexberry-file.disabled.error .ui.action.input:not([class*="left action"]) > input {
   border-right-color: @negativeBorderColor !important;
 }
+
+.flexberry-file.mobile {
+  padding: 0 1rem;
+}
