@@ -82,6 +82,7 @@
   margin: 0px;
   text-align: center;
   transform: translateX(-50%) translateY(-250%);
+  width: 250px;
 }
 
 .ui.inverted.dimmer.loading-pane {
