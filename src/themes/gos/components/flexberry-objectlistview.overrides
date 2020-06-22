@@ -1,0 +1,680 @@
+// Legacy
+
+.oveflow-text {
+  overflow: hidden;
+}
+
+.ui.table.object-list-view tr td {
+  overflow-x: hidden;
+
+  &.overflowed-cell,
+  &.object-list-view-menu {
+    overflow: visible;
+  }
+}
+
+.object-list-view-container {
+  border: @olvContainerBorder;
+  border-radius: @olvContainerBorderRadius;
+  box-shadow: @olvContainerBoxShadow;
+  margin: @olvContainerMargin;
+  max-width: @olvContainerMaxWidth;
+  overflow: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  .object-list-view {
+    margin: @olvMargin;
+  }
+
+  .JCLRgrip .JColResizer {
+    width: 20px;
+  }
+
+  .JCLRgrip:last-child .JColResizer {
+    width: 4px;
+  }
+}
+
+table.object-list-view.selectable {
+  thead,
+  tbody tr:not(.object-list-view-filters) {
+    cursor: pointer;
+  }
+}
+
+.flexberry-objectlistview {
+  display: flex;
+  flex-direction: column;
+  // TODO: Другой способ?
+  max-height: calc(~'100vh - 11.5em');
+
+  .flexberry-olv-toolbar {
+    flex: 0 0 auto;
+  }
+
+  .object-list-view-container {
+    flex-grow: 3;
+    overflow: auto;
+    height: 100%;
+  }
+}
+
+/*-------------------
+      Toolbar
+--------------------*/
+.ui.secondary.menu.no-margin.flexberry-olv-toolbar {
+  margin-bottom: @menuMarginBottom;
+  align-items: center;
+  min-height: 0em;
+  min-width: 100%;
+
+  /* Toolbar buttons */
+
+  .ui.button,
+  .ui.buttons .ui.button,
+  .ui.action.input {
+    > .ui.icon.button {
+      padding: @toolbarButtonPadding;
+    }
+  }
+
+  .ui.button {
+    &.refresh-button,
+    &.delete-button,
+    &.icon.export-button,
+    &.icon.flexberry-menu.dropdown,
+    &.icon.config-button.settings-enabled,
+    &.adv-limit-button,
+    &.search-button,
+    &.clear-search-button,
+    &.hierarchical-button {
+      background: @toolbarButtonBackground;
+    }
+
+    &.refresh-button,
+    &.delete-button,
+    &.hierarchical-button,
+    &s > .button {
+      &:not(.disabled) {
+        color: @toolbarButtonIconColor;
+      }
+    }
+
+    // TODO: Удалить после отрисовки новых иконок.
+    &.hierarchical-button .icon {
+      font-family: @hierarchicalButtonFontFamily;
+    }
+
+    &.refresh-button,
+    &.delete-button {
+      font-size: @buttonsFontSize;
+    }
+
+    &.create-button {
+      background: @createButtonBackground;
+      color: @createButtonColor;
+      margin: @createButtonMargin;
+      font-weight: @buttonFontWeight;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.refresh-button,
+    &.delete-button {
+      i.icon {
+        line-height: 1;
+        margin: 0 0.5em;
+      }
+    }
+
+    &.refresh-button i.icon {
+      margin-left: 0;
+    }
+
+    &.delete-button:hover {
+      color: @deleteHelperButtonInRowHoverColor;
+    }
+  }
+
+  .filter-active {
+    &.show-filter {
+      background-color: @inputBackground;
+      border-radius: @defaultBorderRadius;
+      .ui.button:first-child {
+        padding-right: 0;
+        &.active {
+          color: @removeFilterIconColor;
+        }
+      }
+    }
+
+    &.icon button {
+      background: @toolbarButtonBackground;
+      padding: @filterButtonPadding;
+    }
+
+    .or {
+      display: @orDisplay;
+    }
+
+    .ui.button.removeFilter-button {
+      padding-left: @removeFilterPaddingLeft;
+  
+      .remove.icon {
+        height: auto;
+        width: auto;  
+        color: @secondaryColor;
+        font-size: @removeFilterAfterFontSize;
+        font-weight: @defaultBoldFontWeight;
+  
+        &:hover:before {
+          color: @negativeColor;
+        }
+      }
+    }
+  }
+
+  .ui.action.input {
+    .search-button {
+      position: absolute;
+      right: @clearButtonRight;
+      height: 100%;
+      line-height: 1;
+    }
+
+    .clear-search-button {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      .icon {
+        font-size: 1.3rem;
+      };
+    }
+  }
+
+  > .buttons:not(.filter-active) {
+    > .ui.button {
+      line-height: 1;
+      &:not(.dropdown) {
+        padding-right: @buttonsPaddingRight;
+      }
+    }
+
+    .flexberry-menu.ui.dropdown {
+      padding-left: @buttonsDropdownPaddingLeft;
+
+      > .dropdown.icon {
+        color: @toolbarButtonIconColor;
+        font-size: 1.3rem;
+
+        &::before {
+          content: "\e905";
+        }
+      }
+    }
+  }
+
+  .ui.dropdown .menu > .item .icon:not(.dropdown) {
+    vertical-align: middle;
+
+    &.right.icon {
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .right.menu .dropdown:last-child > .menu,
+  .right.dropdown.item > .menu,
+  .ui.buttons > .ui.dropdown:last-child > .menu {
+    left: -2em;
+
+    i.icon {
+      &.file.excel.outline,
+      &.table:before,
+      &.flask:before {
+        content: @menuItemAddIcon;
+      }
+    }
+  }
+
+  .search-field {
+    margin: 0 1rem;
+    width: auto;
+  }
+
+  i.icon {
+    font-family: @iconFontFamily;
+    font-size: @toolbarButtonIconFontSize;
+  
+    &.filter:before {
+      content: @filterButtonIcon;
+    }
+
+    &.file.excel.outline:before {
+      content: @exportConfigButtonIcon;
+    }
+
+    &.table:before {
+      content: @colsConfigButtonIcon;
+    }
+
+    &.refresh:before {
+      content: @refreshButtonIcon;
+    }
+
+    &.delete:before {
+      content: @deleteButtonIcon;
+    }
+
+    &.search:before {
+      content: @searchButtonIcon;
+    }
+
+    &.remove:before {
+      content: @clearSearchButtonIcon;
+    }
+
+    &.flask:before {
+      content: "\e930";
+    }
+
+    &.angle.right:before {
+      content: @menuItemRightIcon;
+    }
+
+    &.setting:before {
+      content: @menuItemEditIcon;
+    }
+
+    &.unhide:before {
+      content: @menuItemUnhideIcon;
+    }
+
+    &.checkmark.box:before {
+      content: @menuItemApplyIcon;
+    }
+  }
+}
+
+/*-------------------
+        OLV
+--------------------*/
+.object-list-view-container .ui.table {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Header */
+.ui.table.object-list-view {
+  thead tr th {
+    // TODO: скачет в edge не работает в ie
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    div span {
+      line-height: @olvHeaderTextLineHeight;
+    }
+  }
+}
+
+/* Body */
+.ui.table.object-list-view tbody tr {
+  background: @olvRowBackground;
+}
+
+.object-list-view-helper-column-cell {
+  line-height: @olvHelperCellLineHeight;
+}
+
+.ui.table tbody tr.object-list-view-filters:nth-child(2) td {
+  border-bottom: @olvFilterRowBorder;
+}
+
+.ui.selectable.table tbody tr.object-list-view-filters,
+.ui.table tbody tr.object-list-view-filters td.selectable {
+  background: @olvRowBackground !important;
+}
+
+/* Helper buttons in row */
+.ui.object-list-view {
+  tbody tr:hover .object-list-view-helper-column-cell .cell .button:not(:hover) .icon {
+    color: @rowHelperCellHoverColor;
+  }
+
+  .object-list-view-helper-column-cell .cell {
+    display: @helperButtonInRowDisplay;
+    vertical-align: @helperButtonInRowVerticalAlign;
+    float: left;
+
+    .ui.button {
+      background: @helperButtonInRowBackground;
+      box-shadow: none;
+      line-height: 1;
+      padding: @helperButtonInRowPadding;
+
+      &:hover {
+        background: @helperButtonInRowBackgroundHoverColor;
+      }
+
+      .icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+        margin: 0;
+      }
+    }
+
+    // select row button
+    .ui.flexberry-checkbox {
+      padding-top: @selectRowHelperButtonPaddingTop;
+    }
+
+    .ui.checkbox .box,
+    .ui.checkbox label {
+      padding: 0;
+    }
+
+    .ui.button.object-list-view-row-edit-button {
+      .icon:before {
+        content: @editHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @editHelperButtonInRowHoverColor;
+      }
+    }
+
+    // Временные стили для кнопки "Создать на основе"
+    .ui.button.object-list-view-row-prototype-button .icon {
+      &.copy::before {
+        content: @copyButtonInRowIcon;
+      }
+      &:hover {
+        color: @prototypeHelperButtonInRowHoverColor;
+      }
+    }
+
+    .ui.button.object-list-view-row-delete-button {
+      .icon:before {
+        content: @deleteHelperButtonInRowIcon;
+      }
+
+      &:hover {
+        color: @deleteHelperButtonInRowHoverColor;
+      }
+    }
+  }
+}
+
+// Hierarchy mode
+.ui.object-list-view {
+tbody tr td .icon.button.hierarchy-expand {
+    background: @hierarchyButtonBackground;
+    border: @hierarchyButtonBorder;
+    padding-right: @hierarchyButtonPaddingRight;
+    padding-left: @hierarchyButtonPaddingLeft;
+
+    .icon {
+      font-family: @iconFontFamily;
+      font-size: @hierarchyButtonIconFontSize;
+      width: @hierarchyButtonIconWidth;
+
+      &.plus:before {
+        content: @hierarchyOpenButtonIcon;
+      }
+
+      &.minus:before {
+        content: @hierarchyCloseButtonIcon;
+      }
+    }
+  }
+}
+
+/*-------------------
+        Navbar
+--------------------*/
+.flexberry-objectlistview:not(.mobile) .ui.secondary.menu.nav-bar {
+  align-items: center;
+  .ui.basic.buttons {
+    align-self: flex-start;
+  }
+  .right.menu {
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    .showing-entries {
+      padding: @navBarShowingEntriesPadding;
+    }
+  }
+}
+
+.ui.secondary.menu.nav-bar {
+  margin: @navBarMargin;
+  min-height: @navBarButtonSize;
+  min-width: 100%;
+
+  .prev-page-button,
+  .next-page-button {
+    &:before {
+      font-family: @navBarPrevNextButtonsBeforeFontFamily;
+      font-size: @navBarPrevNextButtonsBeforeFontSize;
+      display: block;
+    }
+  }
+
+  .prev-page-button::before {
+    content: @navBarPrevButtonBeforeContent;
+  }
+
+  .next-page-button::before {
+    content: @navBarNextButtonBeforeContent;
+  }
+
+  .ui.basic.buttons {
+    .ui.button {
+      border-radius: @navBarButtonBorderRadius;
+      color: @textColor!important;
+      min-width: @navBarButtonWidth;
+      margin: @navBarButtonMargin;
+      font-weight: 500;
+
+      &:hover {
+        box-shadow: 0px 0px 0px 1px @navyBlue;
+      }
+
+      &.disabled {
+        color: @secondaryColor!important;
+      }
+
+      &.active {
+        background: @white !important;
+        color: @textColor !important;
+      }
+
+      &:not(.active):not([data-ember-action]) {
+        padding-top: 0.5rem;
+        background: transparent!important;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.ui.input.nav-bar-search-page {
+  align-self: flex-start;
+  .ui.button {
+    margin: auto;
+    position: relative;
+    right: @navBarSearchButtonWidth + 0.3rem;
+    min-width: @navBarSearchButtonWidth;
+  }
+}
+
+/*-------------------
+      Menu in row
+--------------------*/
+.ui.table.object-list-view tr td.object-list-view-menu {
+  .ui.button {
+    background-color: transparent;
+    padding: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .ui.dropdown .menu {
+    box-shadow: @defaultElementsBoxShadow;
+  }
+  i.icon.edit:before {
+    font-family: guideline-icons;
+    content: "\e914";
+  }
+  i.icon.trash:before {
+    font-family: guideline-icons;
+    content: "\e911";
+  }
+}
+
+/*-------------------
+      Mobile
+--------------------*/
+
+.mobile {
+  .ui.selectable.table tbody tr:not(.active):hover,
+  .ui.table tbody tr td.selectable:not(.active):hover {
+    background: @background!important;
+  }
+
+  .flexberry-objectlistview {
+    max-height: @olvMobileMaxHeight;
+  }
+
+  .flexberry-olv-toolbar {
+    padding-left: @olvMobileToolbarPadding;
+    padding-bottom: @olvMobileToolbarPadding;
+  }
+
+  .object-list-view-container {
+    border-radius: @olvMobileContainerBorderRadius;
+    box-shadow: @olvMobileContainerBoxShadow;
+    margin: @olvMobileContainerMargin;
+    position: @olvContainerPosition;
+  }
+
+  .ui.celled.object-list-view tr td:first-child {
+    padding-left: @olvMobileHorizontalPadding;
+  }
+
+  .ui.table.object-list-view tbody tr td:not(.object-list-view-helper-column) {
+    border-bottom: @olvContainerBorder;
+  }
+
+  .object-list-view-helper-column {
+    vertical-align: @olvMobileFirstCellVerticalAligtn;
+  }
+
+  .object-list-view-single-column-cell {
+    .inline.fields {
+      margin: @olvMobileFieldMargin;
+    }
+    .field {
+      margin: @olvMobileFieldMargin;
+      > label {
+        float: @olvMobileFieldLabelFloat;
+        width: @olvMobileFieldLabelWidth;
+        font-size: @olvMobileFieldLabelFontSize;
+        color: @olvMobileFieldLabelColor;
+      }
+    }
+  }
+
+  // navbar
+  .ui.secondary.menu.nav-bar {
+    border-top: @olvContainerBorder;
+    padding: @navbarMobilePadding;
+    min-height: @navbarMobileHeight;
+    .ui.basic.buttons .ui.button {
+      min-width: @navbarMobileButtonWidth;
+      padding: @navbarMobileButtonPadding;
+    }
+  }
+
+  // mobile navbar sorting
+  .ui.button.mobile-sorting-setting-button {
+    width: @navbarSortingMobileWidth;
+    white-space: @navbarSortingMobileWhiteSpace;
+    overflow: @navbarSortingMobileOverflow;
+    text-overflow: @navbarSortingMobileTextOverflow;
+    font-size:  @navbarSortingMobileFontSize;
+    font-weight: @navbarSortingMobileTextWeight;
+    display: @navbarSortingMobileDisplay;
+    align-items: @navbarSortingMobileAlignItems;
+  }
+
+  //check rows menu
+  .check-rows-container {
+    display: @checkRowsContainerDisplay;
+    position: @checkRowsContainerPosition;
+    left: @checkRowsContainerLeft;
+    right: @checkRowsContainerRight;
+    bottom: @checkRowsContainerBottom;
+    background: @background;
+    box-shadow: @checkRowsContainerBoxShadow;
+    z-index: @checkRowsContainerZIndex;
+
+    .check-rows-button,
+    .check-all-at-page-button {
+      background: @checkRowsButtonBackgroud;
+      margin: @checkRowsButtonMargin;
+      padding: @checkRowsButtonPadding;
+    }
+
+    i.icon.icon-guideline-check-menu,
+    i.icon.check-square-o {
+      font-family: @iconFontFamily;
+      font-size: @checkRowsButtonIconFontSize;
+      color: @secondaryColor;
+      width: @checkRowsButtonIconWidth;
+    }
+
+    .check-all-at-page-button {
+      padding: @checkRowsButtonGEPadding;
+      font-size: @checkRowsButtonGEFontSize;
+
+      i.icon.check-square-o::before {
+        content: @checkRowsButtonGEIcon;
+      }
+    }
+
+    .count-selected-rows {
+      margin-top: @countSelectedRowsMarginTop;
+      color: @countSelectedRowsColor;
+      line-height: @countSelectedRowsLineHeight;
+    }
+
+    .delete-button {
+      margin: @deleteRowsButtonMargin;
+      color: @deleteRowsButtonColor;
+      background: @deleteRowsButtonBackground;
+    }
+
+    .clear-select-button {
+      margin-left: @clearSelectButtonMarginLeft;
+      background: @clearSelectButtonBackground;
+      padding-top: @clearSelectButtonPaddingTop;
+
+      .remove.icon {
+        font-family: @iconFontFamily;
+        font-size: @clearSelectButtonFontSize;
+        margin: @clearSelectButtonMargin;
+
+        &::before {
+          content: @clearSelectButtonIcon;
+        }
+      }
+    }
+  }
+}
