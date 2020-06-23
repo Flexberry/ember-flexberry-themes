@@ -221,6 +221,16 @@
 @navbarMobileButtonWidth: 2rem;
 @navbarMobileButtonPadding: 0 0.625rem;
 
+/*Navbar sorting*/
+@navbarSortingMobileWidth: 180px;
+@navbarSortingMobileWhiteSpace: nowrap;
+@navbarSortingMobileOverflow: hidden;
+@navbarSortingMobileTextOverflow: ellipsis;
+@navbarSortingMobileFontSize: 1rem;
+@navbarSortingMobileTextWeight: bold;
+@navbarSortingMobileDisplay: flex;
+@navbarSortingMobileAlignItems: center;
+
 /* Mobile selected row menu */
 @olvContainerPosition: relative;
 @checkRowsContainerDisplay: flex;
