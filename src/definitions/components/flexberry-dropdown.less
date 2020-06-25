@@ -1,6 +1,17 @@
 @type    : 'component';
 @element : 'flexberry-dropdown';
 
+@dropdownWithinGroupeditTransform: none;
+@dropdownWithinGroupeditMinWidth: 0.071em;
+
 @import (multiple) '../../theme.config';
+
+.groupedit-container .flexberry-dropdown.ui.dropdown {
+  transform: @dropdownWithinGroupeditTransform;
+
+  .menu {
+    min-width: @dropdownWithinGroupeditMinWidth;
+  }
+}
 
 .loadUIOverrides();
