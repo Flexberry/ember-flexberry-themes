@@ -64,21 +64,6 @@
     cursor: pointer;
 }
 
-.page-header-userbar {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  align-items: center;
-  font-size: 14px;
-  color: #fff;
-}
-
-.page-header-userbar a {
-  background: none;
-  color: #fff;
-  box-shadow: none;
-}
-
 .page-header-caption a{
     background: none;
     color: #fff;

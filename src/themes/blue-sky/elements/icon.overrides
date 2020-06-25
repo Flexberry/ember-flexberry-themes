@@ -264,19 +264,6 @@ i.icon.download:before {
       Not categorized icons section
 *******************************************/
 
-.page-header-userbar a:after {
-    margin: 0 0 0 15px;
-    font-size: 16px;
-    visibility: visible;
-    vertical-align: middle;
-    font-family: 'Crimean';
-    content: "\e81e";
-}
-
-.page-header-userbar a {
-    margin: 0px 25px 0px 0px;
-}
-
 .remove.icon:before:hover {
     color: @red;
 }
