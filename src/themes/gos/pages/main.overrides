@@ -12,19 +12,6 @@
     content: @toggleIcon;
   }
 }
-.page-header-caption a {
-  background: none;
-  color: @pageHeaderCaptionColor;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: 24px;
-  border-radius: 0px;
-  box-shadow: none;
-}
-
-.page-header-caption a:hover {
-  color: @pageHeaderCaptionColor !important;
-}
 
 // content
 .full.height {
