@@ -64,11 +64,6 @@
     cursor: pointer;
 }
 
-.page-header-caption {
-  display: flex;
-  align-items: center;
-}
-
 lang {
     padding: 0px!important;
 }
