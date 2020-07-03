@@ -17,6 +17,10 @@
   z-index: 999;
 }
 
+.background-logo .ui.text.menu .item {
+  color: @headerTextColor;
+}
+
 .page-header-caption {
   color: @pageHeaderCaptionColor;
 
@@ -53,8 +57,22 @@
     width: @userFotoImgSize;
   }
   span {
-    margin-right: 1em;
+    margin-right: @userSpanMargin;
   }
 }
 
+.page-header-userbar {
+  .flexberry-menu.ui.dropdown.button {
+    background: @headerColor;
+    border: none;
+    color: @headerTextColor;
+  }
+}
+
+.loading-message {
+  color: @loadingMessageColor;
+  text-align: center;
+  position: relative;
+  top: @loadingMessageTop;
+}
 .loadUIOverrides();

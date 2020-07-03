@@ -9,6 +9,10 @@
   padding: 7px 0px;
 }
 
+.background-logo .ui.dropdown > .text {
+  color: @headerTextColor;
+}
+
 .page-header-userbar {
   display: flex;
   align-items: center;
@@ -29,4 +33,8 @@
   vertical-align: middle;
   font-family: 'Crimean';
   content: "\e81e";
+}
+
+.page-header-userbar .ui.dropdown > .dropdown.icon {
+  line-height: 0.5;
 }

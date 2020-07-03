@@ -8,11 +8,7 @@
 }
 
 .inverted.vertical.main.menu.sidebar {
-  height: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
-  background: @sidebarInvertedBackground;
-  top: @headerHeight;
   overflow: visible ! important;
-  padding: @sidebarPadding;
 
   .item {
     font-size: 1rem;

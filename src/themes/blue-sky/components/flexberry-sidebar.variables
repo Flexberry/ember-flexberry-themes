@@ -1,0 +1,10 @@
+@width: 260px;
+@width-s: 0;
+
+@sidebarPadding: 0;
+
+@canvasBackground: @white;
+@sidebarInvertedBackground: @whiteBlue;
+
+@textMenuColor: @white;
+@textMenuHideColor: #91a7cd;

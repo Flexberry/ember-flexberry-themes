@@ -60,25 +60,6 @@
   min-height: calc(~"100vh - @{headerHeight}");
 }
 
-// TODO: Узнать, как должно быть норм и настроить нормально.
-.loading-message {
-  color: #aaa;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0px;
-  text-align: center;
-  transform: translateX(-50%) translateY(-250%);
-}
-
-.ui.inverted.dimmer.loading-pane {
-  .ui.loader {
-    color: #aaa;
-    display: flex;
-    transform: translateX(-50%) translateY(-30%);
-  }
-}
-
 @media only screen and (min-width: @largeMonitorBreakpoint) {
   .ui.main.container {
     width: 100% !important;

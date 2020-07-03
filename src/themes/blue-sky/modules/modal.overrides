@@ -12,7 +12,7 @@
     right: -0.2rem;
 }
 
-.ui.modal > .content {
+.ui.modal > .scrolling.content {
     overflow: initial;
     max-height: 618px;
 }
