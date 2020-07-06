@@ -33,8 +33,8 @@
 
 ## Настройка шрифтов
 
-1. Скопировать шрифты в папку `vendor/fonts` из папки `assets/fonts` ([src/themes/gos/assets/fonts](src/themes/gos/assets/fonts))
-2. Скопировать в папку `vendor` `.css` с объявлением стиилей из папки `assets` ([src/themes/gos/assets](src/themes/gos/assets))
+1. Скопировать шрифты в папку `vendor/fonts` из папки `assets/fonts` ([src/themes/ghost/assets/fonts](src/themes/ghost/assets/fonts))
+2. Скопировать в папку `vendor` `.css` с объявлением стиилей из папки `assets` ([src/themes/ghost/assets](src/themes/ghost/assets))
 3. Добавить импорт шрифтов `GOSTUI2`, `guideline-icons` в `ember-cli-build.js`
 4. Добавить импорт стилей и настроек для иконок и шрифтов в `ember-cli-build.js`
 
