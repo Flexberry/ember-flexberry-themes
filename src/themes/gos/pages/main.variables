@@ -10,11 +10,14 @@
 @userFotoImgSize:36px;
 @userIconSize: 1.5em;
 @userIconLineHeight: 1;
+@userSpanMargin: 1em;
 
 @footerBackground: #eee;
 @flexberryContentPadding: @distanceM @distanceL;
 
 @flexberryContainerPadding: 0 @distanceL;
+@loadingMessageColor: #aaa;
+@loadingMessageTop: -3em;
 
 @mobileHeaderMargin: 1rem;
 @mobileItemLogoImgWidth: 36px;

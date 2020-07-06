@@ -52,13 +52,28 @@
 --------------------*/
 
 @headerHeight : 80px;
-@footerHeight : 40px;
+@footerHeight : 0px;
 @headerHeightMobile : 50px;
-@footerHeightMobile : 40px;
+@footerHeightMobile : 0px;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
 @glyphWidth: 1.5em;
 
+/*-------------------
+    Scroll Bars
+--------------------*/
+
+// @useCustomScrollbars: true;
+
+@customScrollbarWidth: 9px;
+@customScrollbarHeight: 8px;
+
+@trackBackground: transparent;
+@thumbBorderRadius: 1ex;
+@thumbBackground: @blue;
+
+@thumbInactiveBackground: @blue;
+@thumbHoverBackground: @blue;
 /*------------------------
         COLOR SCHEME
 -------------------------*/

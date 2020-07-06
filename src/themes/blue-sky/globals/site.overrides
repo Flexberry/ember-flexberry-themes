@@ -37,65 +37,18 @@
     background-color: #dcebfc;
 }
 
-/**ScrollBar**/
-::-webkit-scrollbar {
-    height: 8px;
-    width: 9px;
-    /*background: #dcebfc!important;*/
-    cursor: pointer !important;
-    /*border:1px solid rgba(34, 36, 38, 0.1);*/
-    -webkit-border-radius: 1ex;
+/* Inverted UI */
+body .ui.inverted.main.menu::-webkit-scrollbar-track {
+  background: @trackBackground;
 }
-
-::-webkit-scrollbar-thumb {
-    background: @blue;
-    -webkit-border-radius: 1ex;
-    cursor: pointer;
+body .ui.inverted.main.menu::-webkit-scrollbar-thumb {
+  background: @thumbBackground;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: @blue;
-    -webkit-border-radius: 1ex;
-    cursor: pointer;
+body .ui.inverted.main.menu::-webkit-scrollbar-thumb:window-inactive {
+  background: @thumbInactiveBackground;
 }
-
-::-webkit-scrollbar-corner {
-    background: white;
-    cursor: pointer;
-}
-
-.page-header-userbar {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  align-items: center;
-  font-size: 14px;
-  color: #fff;
-}
-
-.page-header-userbar a {
-  background: none;
-  color: #fff;
-  box-shadow: none;
-}
-
-.page-header-caption a{
-    background: none;
-    color: #fff;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 24px;
-    border-radius: 0px;
-    box-shadow: none;
-}
-
-.page-header-caption a:hover{
-    color: #fff!important;
-}
-
-.page-header-caption {
-  display: flex;
-  align-items: center;
+body .ui.inverted.main.menu::-webkit-scrollbar-thumb:hover {
+  background: @thumbHoverBackground;
 }
 
 lang {
@@ -112,11 +65,6 @@ lang {
   height: 140px;
   width: 175px;
   margin: 0 auto;
-}
-
-.loading-message {
-  text-align: center;
-  color: #aaa;
 }
 
 // Examples application template
@@ -152,7 +100,7 @@ lang {
   }
 
   .full.height {
-    width: 100%;
+    // width: 100%;
     transition: width 0.3s ease-in-out 0s;
   }
 }

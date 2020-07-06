@@ -137,10 +137,9 @@
 }
 
 .ui.form .flexberry-colsconfig.content .message {
-  display: @messageDisplay;
   margin-bottom: @messageMarginBottom;
   padding: @messagePadding;
-  
+
   .close.icon {
     font-size: @messageFontSize;
     margin: @messageCloseIconMargin;

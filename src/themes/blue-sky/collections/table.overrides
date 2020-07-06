@@ -90,6 +90,3 @@ table.object-list-view.selectable thead {
     padding-left:5px;
 }
 
-.inline.fields.filter .ui {
-    width: 100%;
-}

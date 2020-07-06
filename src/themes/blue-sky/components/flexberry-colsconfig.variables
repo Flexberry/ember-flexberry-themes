@@ -7,3 +7,5 @@
 @sortPriorityWidth: 70px;
 @columnWidthWidth: 90px;
 @columnWidthHeaderWidth: @columnWidthWidth;
+
+@messageDisplay: block;

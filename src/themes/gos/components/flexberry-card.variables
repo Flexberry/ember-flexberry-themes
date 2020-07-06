@@ -1,6 +1,4 @@
 /* Card */
-@width: 380px;
-@widthBig: 510px;
 @boxShadow: none;
 
 /* Content */

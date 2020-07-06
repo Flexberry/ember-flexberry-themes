@@ -311,6 +311,7 @@ div.ui.secondary.menu.no-margin {
     content: '';
 }
 
+.flexberry-simpledatetime,
 .flexberry-lookup {
     .ui.action.input .ui.button.ui-change, .ui.action.input .ui.button.ui-clear,  .ui.action.input .ui.ui-preview.button {
         padding: 0em 0.3em 0em 0.3em;
@@ -327,21 +328,12 @@ div.ui.secondary.menu.no-margin {
     opacity: 1;
 }
 
-html.mobile .overflowed-cell .flexberry-simpledatetime .flatpickr .ui.ui-clear.button {
-    width: 20px;
-    margin-right: 3px;
-    .remove.icon {
-      margin-left: 0px;
-    }
-}
-
 .ui.fluid.action.input:hover {
     background: none;
 }
 
 .ui.fluid.action.input > button {
     border: none;
-    background: none;
     padding: 0px;
     &:hover {
         color: @blue
@@ -657,7 +649,7 @@ html.mobile .overflowed-cell .flexberry-simpledatetime .flatpickr .ui.ui-clear.b
     padding: 0.7400em 1.284em 0.8571em!important;
 }
 
-.ui.action.input > button {
+.ui.action.input > button:not(.positive):not(.negative):not(.colored) {
     background: none;
 }
 
