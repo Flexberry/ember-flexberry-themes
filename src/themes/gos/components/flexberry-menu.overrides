@@ -5,6 +5,7 @@
   font-weight: @flexberryMenuTextFontWeight;
   background: @flexberryMenuBackground; 
   border: @flexberryMenuBorder;
+  box-shadow: none;
   &:first-child {
     border-top-left-radius: @defaultBorderRadius;
     border-top-right-radius: @defaultBorderRadius;

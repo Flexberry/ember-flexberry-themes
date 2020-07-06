@@ -13,7 +13,7 @@
   }
 
   &:focus {
-    border-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -36,6 +36,14 @@
     cursor: default;
     opacity: 1;
     pointer-events: none;
+  }
+}
+
+.flexberry-simpledatetime.error > .ui.action.input:not([class*="left action"]) > input {
+  &,
+  &:hover,
+  &:focus {
+    border-right-color: @negativeBorderColor!important;
   }
 }
 

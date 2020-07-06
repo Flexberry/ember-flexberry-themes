@@ -58,11 +58,8 @@ Ember-flexberry-themes variables
 /*  Mobile */
 @mobileSidepageWidth: 100%;
 
-@mobileModalTop: 0px;
-@mobileModalLeft: 0px;
 @mobileModalWidth: 100%;
 @mobileModalHeight: 100%;
-@mobileModalMargin: 0px;
 
 @mobileModalHeaderFontSize: 1.125em;
 @mobileScrollingContentMaxHeight: calc(~"100vh - @{mobileHeaderPaddingBottom} - @{mobileHeaderPaddingTop} - @{headerLineHeight}");

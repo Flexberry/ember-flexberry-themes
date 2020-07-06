@@ -9,9 +9,6 @@
 /* Menu */
 @background: @whiteBlue;
 
-/* Sub Menu */
-@subMenuIndent: @white;
-
 /* Pointing */
 @secondaryPointingActiveBorderColor: none;
 

@@ -42,6 +42,8 @@
 @lookupChangeButtonRightWithPreview:  @_lookupButtonWidth * 3 + @lookupChangeButtonPaddingRight;
 @lookupPreviewButtonRight: @_lookupButtonWidth * 2 + @lookupButtonHorizontalPadding;
 
+@maxModalContentHeight: 500px;
+
 // Icons
 @lookupIconFont: 'guideline-icons';
 @lookupIconHeight: auto;
@@ -69,3 +71,11 @@
 @autocompleteResultTitleFont: @fontName;
 @autocompleteResultTitleFontSize: 0.875em;
 @autocompleteResultTitleFontWeight: @defaultMediumFontWeight;
+
+// Icons
+@lookupChangeButtonIcon: "\e91d";
+@lookupLoadingIconBefore: '';
+
+// Mobile
+@mobileLookupChangeButtonLoadingFontSize: @defaultInputFontSize;
+@mobileLookupChangeButtonLoadingRight: 0.5em;

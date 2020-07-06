@@ -63,7 +63,7 @@
   padding: @lookupButtonPadding;
 
   &:focus {
-    border-color: transparent;
+    box-shadow: none;
   }
 
   &.ui-clear {
@@ -84,7 +84,7 @@
     ~.ui-change {
       right: @lookupChangeButtonRightWithPreview;
     }
-  }  
+  }
 }
 
 // Icons
@@ -98,11 +98,11 @@
   .remove.icon::before {
     content: "\e90e";
   }
-  
+
   .change.icon::before {
-    content: "\e91d";
+    content: @lookupChangeButtonIcon;
   }
-  
+
   .eye.icon::before {
     content: "\e917";
   }
@@ -110,6 +110,16 @@
 
 .flexberry-lookup .ui.action.input:not([class*="left action"]) > .button:last-child {
   border-radius: 0;
+}
+
+.flexberry-lookup.error >.ui.action.input:not([class*="left action"]) > input.lookup-field {
+  &,
+  &:hover,
+  &:focus {
+    background-color: @negativeBackgroundColor;
+    border-color: @negativeBorderColor;
+    border-right-color: @negativeBorderColor!important;
+  }
 }
 
 /* Autocomplete */
@@ -140,13 +150,55 @@
   }
 }
 
-.flexberry-lookup .flexberry-dropdown {
+.flexberry-lookup .ui.selection.dropdown {
   width: 100%;
+  > input {
+    height: 100%;
+    font-size: 1em;
+  }
 }
 
-#lookup-list .flexberry-objectlistview {
+.flexberry-sidepage #lookup-list .flexberry-objectlistview {
   max-height: calc(~'100vh - 6.5em');
+  margin-left: -1em;
+  margin-right: -1em;
   .ui.secondary.menu.no-margin.flexberry-olv-toolbar {
     padding-top: 0;
+  }
+}
+
+.ui.modal:not(.flexberry-sidepage) .content .object-list-view-container {
+  max-height: @maxModalContentHeight;
+}
+
+.mobile .flexberry-lookup>.ui.input {
+  >.ui.input {
+    background: @inputBackground;
+    border: @defaultInputBorder;
+    border-radius: @inputBorderRadius;
+    padding: @inputVerticalPadding @lookupFieldRightPadding @inputVerticalPadding @inputHorizontalPadding;
+    flex: 1 0 auto;
+
+    >.lookup-field {
+      font-size: @defaultInputFontSize;
+    }
+
+    >.chevron.right.icon {
+      font-family: @lookupIconFont;
+      font-size: @lookupIconFontSize;
+
+      &::before {
+        content: @lookupChangeButtonIcon;
+      }
+    }
+  }
+
+  >.ui.loading.input>.chevron.right.icon {
+    font-size: @mobileLookupChangeButtonLoadingFontSize;
+    right: @mobileLookupChangeButtonLoadingRight;
+
+    &::before {
+      content: @lookupLoadingIconBefore;
+    }
   }
 }

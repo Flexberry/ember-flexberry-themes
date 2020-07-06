@@ -49,17 +49,8 @@
   box-shadow: @upwardSelectionVisibleBoxShadow;
 }
 
-.ui.form .field.error {
-  .ui.dropdown:not(.button) > .default.text,
-  .ui.default.dropdown:not(.button) > .text{
-    color: @defaultTextColor;
-  }
-}
 
-.groupedit-container .flexberry-dropdown.ui.dropdown {
-  transform: @dropdownWithinGroupeditTransform;
-
-  .menu {
-    min-width: @dropdownWithinGroupeditMinWidth;
-  }
+.ui.dropdown.error:not(.button) > .default.text,
+.ui.default.dropdown.error:not(.button) > .text{
+  color: @defaultTextColor;
 }

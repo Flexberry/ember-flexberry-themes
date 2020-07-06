@@ -1,41 +1,4 @@
 .flexberry-colsconfig {
-  thead th {
-    text-align: left;
-  }
-  thead th.show-columns,
-  &.content tbody td:nth-child(1) {
-    width: @showColumnsWidth;
-    text-align: center;
-  }
-  thead th.columns-order,
-  &.content tbody td:nth-child(2) {
-    width: @columnsOrderWidth;
-    text-align: center;
-  }
-  .sort-direction,
-  &.content tbody td:nth-child(4) {
-    width: @sortDirectionWidth;
-  }
-  .sort-priority,
-  &.content tbody td:nth-child(5) {
-    width: @sortPriorityWidth;
-  }
-  .column-width{
-    width: @columnWidthHeaderWidth;
-  }
-  &.content tbody td:nth-child(6) {
-    width: @columnWidthWidth;
-  }
-  &.content tfoot th:nth-child(2) {
-    width: @columnWidthHeaderWidth;
-  }
-  .sort-direction-cell {
-    overflow: visible !important;
-  }
-  .sort-direction-dropdown,
-  td > .input {
-    width: 100%;
-  }
   th {
     > .input {
       input.setting-name {
@@ -49,9 +12,6 @@
 
   i.icon:not(.sort) {
     font-family: guideline-icons;
-    &.unhide::before {
-      content: "\e917";
-    }
     &.unhide::before {
       content: "\e917";
     }
@@ -71,7 +31,7 @@
     padding: @colsconfigTinyButtonPadding;
     line-height: 1em;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
     i.icon {
       font-size: @glyphWidth;
@@ -166,6 +126,10 @@
   overflow-y: scroll;
 }
 
+.ui.modal:not(.flexberry-sidepage) .flexberry-colsconfig.content tbody {
+  max-height: @tbodyStaticHeight;
+}
+
 .flexberry-colsconfig.content tr {
   display: table;
   width: 100%;
@@ -173,10 +137,9 @@
 }
 
 .ui.form .flexberry-colsconfig.content .message {
-  display: @messageDisplay;
   margin-bottom: @messageMarginBottom;
   padding: @messagePadding;
-  
+
   .close.icon {
     font-size: @messageFontSize;
     margin: @messageCloseIconMargin;

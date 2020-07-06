@@ -3,3 +3,12 @@
 
 @placeholderErrorColor: @inputPlaceholderColor;
 @placeholderErrorFocusColor: @inputPlaceholderFocusColor;
+
+/*-------------------
+        Textarea
+--------------------*/
+
+@textareaLineHeight: @inputLineHeight;
+@textareaHoverBorderColor: @inputHoverBorderColor;
+@textareaReadonlyBackground: @inputReadonlyBackground;
+@textareaReadonlyBorderColor: @inputReadonlyBorderColor;

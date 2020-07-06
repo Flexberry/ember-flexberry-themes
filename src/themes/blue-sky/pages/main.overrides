@@ -1,0 +1,40 @@
+.background-logo a.logo {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #3f65a4;
+  margin: 5px;
+}
+
+.background-logo a img {
+  padding: 7px 0px;
+}
+
+.background-logo .ui.dropdown > .text {
+  color: @headerTextColor;
+}
+
+.page-header-userbar {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.page-header-userbar a {
+  background: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+.page-header-userbar a:after {
+  margin: 0 0 0 15px;
+  font-size: 16px;
+  visibility: visible;
+  vertical-align: middle;
+  font-family: 'Crimean';
+  content: "\e81e";
+}
+
+.page-header-userbar .ui.dropdown > .dropdown.icon {
+  line-height: 0.5;
+}

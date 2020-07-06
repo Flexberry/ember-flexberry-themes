@@ -1,0 +1,14 @@
+@headerColor      : #4f73b0;
+@headerBoxShadow  : none;
+@headerTextColor  : #fff;
+@headerFontSize   : 1rem;
+
+@pageHeaderCaptionColor: @headerTextColor;
+
+@userFotoImgSize:36px;
+@userIconSize: 1.5em;
+@userIconLineHeight: 1;
+@userSpanMargin: 0.5em;
+
+@loadingMessageColor: #aaa;
+@loadingMessageTop: -3em;

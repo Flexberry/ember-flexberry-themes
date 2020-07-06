@@ -1,3 +1,37 @@
+// SemanticUI variables
+@background: @white;
+// @color: @textColor;
+@borderWidth: 0;
+@cellBorder: none;
+
+/* Table Row */
+@rowBorder: none;
+
+/* Table Cell */
+@cellVerticalPadding: 0.75em;
+@cellHorizontalPadding: 10px;
+
+/* Table Header */
+@headerBackground: @white;
+@headerColor: @secondaryColor;
+@headerFontWeight: @defaultMediumFontWeight;
+@headerVerticalPadding: @cellVerticalPadding;
+
+
+/* Striped */
+@stripedBackground: @aliceBlue;
+
+/* Selectable */
+@selectableBackground: @solitude;
+
+/* Active */
+@activeBackgroundColor: @solitude;
+@activeBackgroundHover: @solitude;
+
+@errorBackgroundColor: transparent;
+//=============
+
+
 @olvContainerVerticalMargin: 1em;
 @olvContainerHorizontalMargin: 0;
 @olvContainerMargin: @olvContainerVerticalMargin @olvContainerHorizontalMargin;
@@ -5,18 +39,6 @@
 @olvContainerMaxWidth: 100%;
 
 @olvMargin: 0;
-
-@olvDropdownMenuHoverBeforeColor: @white;
-@olvDropdownMenuActiveHoverBeforeColor: @primaryColor;
-
-@background: @white;
-@color: @davysGray;
-
-@headerColor: @grimmysGray;
-
-@activeBackgroundColor: @whiteBlue;
-
-@selectableBackground: @anotherAliceBlue;
 
 @olvContainerBorderWidth: @defaultBorderWidth;
 @olvContainerBorderStyle: @defaultBorderStyle;
@@ -26,25 +48,9 @@
 @olvContainerBorderRadius: @defaultBorderRadius;
 @olvContainerBoxShadow: @defaultElementsBoxShadow;
 
-@olvBorder: none;
-
-@olvHeaderBackground: @white;
-
-@olvHeaderBorderWidth: @defaultBorderWidth;
-@olvHeaderBorderStyle: @defaultBorderStyle;
-@olvHeaderBorderColor: @whisper;
-
-@olvHeaderBorderTop: none;
-@olvHeaderBorderRight: none;
-@olvHeaderBorderBottom: @olvHeaderBorderWidth @olvHeaderBorderStyle @olvHeaderBorderColor;
-@olvHeaderBorderLeft: none;
-
-@olvHeaderVerticalPadding: 0.75em;
-@olvHeaderHorizontalPadding: 10px; //defaultLeftPadding in object-list-view-row.js
-@olvHeaderPadding: @olvHeaderVerticalPadding @olvHeaderHorizontalPadding;
-
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
+/* Header order */
 @olvHeaderOrderIconColor: @accentColor;
 @olvHeaderOrderIconHoverColor: @textColor;
 @olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
@@ -58,35 +64,24 @@
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
 
+/* Header operations */
 @olvOperationsBackground: transparent;
 @olvOperationsPadding: 0;
 @olvOperationsZIndex: 5;
-@olvOperationCheckRowMenuLeft: -2.143em;
+@olvOperationCheckRowMenuLeft: 0;
 @olvOperationsOverflow: visible;
 
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
+
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
-@olvHeaderTextFontSize: 1em;
-@olvHeaderTextFontWeight: @defaultMediumFontWeight;
 @olvHeaderTextLineHeight: 1.5em;
-@olvHeaderTextColor: @secondaryColor;
 
 @olvRowBackground: @white;
 
-@olvRowHoverBackground: @solitude;
-
-@olvRowStrippedBackground: @aliceBlue;
-
-@olvCellVerticalPadding: @olvHeaderVerticalPadding;
-@olvCellHorizontalPadding: 0;
-@olvCellPadding: @olvCellVerticalPadding @olvCellHorizontalPadding;
-@olvCellBorder: none;
-
 @olvHelperCellLineHeight: 0;
 
-@olvRowActiveBackground: @solitude;
 
 
 /*-------------------
@@ -128,7 +123,7 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: 1.3rem;
+@toolbarButtonIconFontSize: 1rem;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
 
@@ -137,7 +132,6 @@
 
 // TODO: Удалить после отрисовки новых иконок.
 @hierarchicalButtonFontFamily: 'Icons';
-@hierarchicalButtonFontSize: 1.429em;
 
 @refreshButtonIcon: "\e925";
 @deleteButtonIcon: "\e911";
@@ -158,14 +152,11 @@
    Navbar buttons
 --------------------*/
 @navBarMargin: 0;
-@navBarButtonFontSize: 0.875rem;
-@navBarButtonBorder: none;
 @navBarButtonBorderRadius: @defaultBorderRadius;
 
 @navBarButtonSize: 2.5rem;
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonMargin: 0 unit(4 / 14, em) 0 0;
-@navBarButtonPadding: 0 1rem;
 
 @navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
@@ -174,7 +165,9 @@
 @navBarNextButtonBeforeContent: "\e908";
 
 @navBarShowingEntriesPadding: 0.5625rem;
+@navBarSearchInputMaxWidth: 6.5rem;
 
+@navBarSearchButtonWidth: 2rem;
 
 /*-----------------------
    Helper buttons In Row
@@ -182,19 +175,19 @@
 
 /* Buttons */
 @helperButtonInRowDisplay: inline-block;
-@helperButtonInRowBorder: none;
 @helperButtonInRowBackground: transparent;
 @helperButtonInRowVerticalAlign: top;
 @helperButtonInRowBackgroundHoverColor: transparent;
 @helperButtonInRowHorizontalPadding: 0;
-@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.5em;
+@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.2em 0 0.5em;
 @rowHelperCellHoverColor: @textColor;
 @selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
 @editHelperButtonInRowHoverColor: @accentColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
+@prototypeHelperButtonInRowHoverColor: @green;
 
 /* Icons */
-@helperButtonInRowIconFontSize: @glyphWidth;
+@helperButtonInRowIconFontSize: 1rem;
 @editHelperButtonInRowIcon: "\e914";
 @deleteHelperButtonInRowIcon: "\e911";
 @copyButtonInRowIcon: "\e931";
@@ -240,7 +233,7 @@
 @checkRowsButtonBackgroud: transparent;
 @checkRowsButtonMargin: 0;
 @checkRowsButtonPadding: 0.5em 0.375em 0.5em 0.688em;
-@checkRowsButtonIconFontSize: 1.3em;
+@checkRowsButtonIconFontSize: 1.125rem;
 @checkRowsButtonIconWidth: auto;
 @checkRowsButtonGEPadding: 0.313em 0.857em 0 1.429em;
 @checkRowsButtonGEIcon: "\e928";
@@ -249,7 +242,6 @@
 @countSelectedRowsColor: #000;
 @countSelectedRowsLineHeight: 1.5em;
 @deleteRowsButtonMargin: 0.25em 1em;
-@deleteRowsButtonFontSize: 1em;
 @deleteRowsButtonColor: #7699B3;
 @deleteRowsButtonBackground: #F3F7FB;
 @clearSelectButtonMarginLeft: auto;

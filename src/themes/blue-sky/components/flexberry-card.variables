@@ -1,0 +1,7 @@
+/* Content */
+@contentPadding: 2rem;
+
+/* Header */
+@headerColor: @textColor;
+@headerFontSize: 1.5em;
+@headerFontWeight: 500;

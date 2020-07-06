@@ -73,6 +73,9 @@
 
 /* Negative */
 @negativeColor           : @cinnabar;
+@negativeBackgroundColor : @pageBackground;
+@negativeBorderColor     : @negativeColor;
+@negativeTextColor       : @textColor;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -118,6 +121,8 @@
 @distanceL: 2rem;
 @distanceM: 1.5rem;
 @distanceS: 1rem;
+
+@smallText: 0.875rem;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
 @glyphWidth: 1.5em;

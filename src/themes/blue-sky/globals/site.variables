@@ -27,6 +27,7 @@
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
 @headerColor      : #4f73b0;
+@mayaBlue         : #62B0FF;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
@@ -51,6 +52,30 @@
 --------------------*/
 
 @headerHeight : 80px;
-@footerHeight : 40px;
+@footerHeight : 0px;
 @headerHeightMobile : 50px;
-@footerHeightMobile : 40px;
+@footerHeightMobile : 0px;
+
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+@glyphWidth: 1.5em;
+
+/*-------------------
+    Scroll Bars
+--------------------*/
+
+// @useCustomScrollbars: true;
+
+@customScrollbarWidth: 9px;
+@customScrollbarHeight: 8px;
+
+@trackBackground: transparent;
+@thumbBorderRadius: 1ex;
+@thumbBackground: @blue;
+
+@thumbInactiveBackground: @blue;
+@thumbHoverBackground: @blue;
+/*------------------------
+        COLOR SCHEME
+-------------------------*/
+// main
+@accentColor           : @mayaBlue;

@@ -4,7 +4,7 @@
     color: @textColor;
 
     &:focus {
-      border-color: @toolbarButtonBackground;
+      box-shadow: none;
     }
 
     &.disabled,
@@ -23,41 +23,39 @@
   }
 }
 
-.groupedit-container > .ui.table.object-list-view {
-  thead tr th {
-    padding-left: @olvHeaderTextPadding;
+.groupedit-container .ui.table.object-list-view {
+  .groupedit-new-row {
+    background: @newRowBackground;
+  }
+}
+
+div:not(.groupedit-modal-content) {
+  > .groupedit-toolbar .ui.button:first-child {
+    padding-left: 0;
   }
 
-  tr.error,
-  td.error {
-    background: none !important;
-  }
-
-  tbody {
-    .object-list-view-helper-column-cell {
-      padding-top: @olvCheckboxCellVerticalPadding;
-
-      .asterisk.small.red.icon {
-        display: none;
-      }
-
-      .cell {
-        vertical-align: middle;
-      }
+  > .groupedit-container > .ui.table.object-list-view {
+    thead tr th {
+      padding-left: @olvHeaderTextPadding;
     }
-    tr.flexberry-new-row,
-    tr.active {
-      background: #2196532e;
-      border: 1px solid #C7CCD1;
-    }
-    tr td {
-      padding-top: @olvCellVerticalPadding;
-      padding-bottom: @olvCellVerticalPadding;
-      vertical-align: top;
 
-      &.field .flexberry-checkbox {
+    tbody {
+      .object-list-view-helper-column-cell {
         padding-top: @olvCheckboxCellVerticalPadding;
       }
+
+      tr td {
+        padding-top: @olvCellVerticalPadding;
+        padding-bottom: @olvCellVerticalPadding;
+        vertical-align: top;
+
+        &.field .flexberry-checkbox {
+          padding-top: @olvCheckboxCellVerticalPadding;
+        }
+      }
+    }
+    .oveflow-text {
+      padding: @olvCellTextPaddind;
     }
   }
 }

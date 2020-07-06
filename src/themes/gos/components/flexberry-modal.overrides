@@ -3,6 +3,14 @@
 }
 
 /*******************************
+             Modal
+*******************************/
+.ui.modal,
+.ui.legacy.modal {
+  top: 50vh;
+}
+
+/*******************************
             Content
 *******************************/
 
@@ -40,6 +48,7 @@
   left: auto;
   right: 0;
   border-radius: 0;
+  top: 0;
 
   .scrolling.undetached.dimmable &.scrolling {
     left: auto;
@@ -56,30 +65,17 @@
   }
 }
 
-/* Support form */
-.ui.modal.flexberry-modal.support-modal {
-  .contacts {
-    color: @secondaryColor;
-    font-size: @modalContactsFontSize;
-  }
-}
-
 /*  Mobile */
 .mobile {
   .ui.modal.flexberry-sidepage  {
     width: @mobileSidepageWidth;
   }
 
-  .scrolling.undetached.dimmable .ui.modal.fullhight-mobile-modal.scrolling {
-    left: @mobileModalLeft;
-  }
-
   .ui.modal.fullhight-mobile-modal {
-    left: @mobileModalLeft;
     width: @mobileModalWidth;
     height: @mobileModalHeight;
-    margin: @mobileModalMargin;
     border-radius: 0px;
+    top: 0;
   }
 }
 

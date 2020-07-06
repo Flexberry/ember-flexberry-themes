@@ -1,27 +1,125 @@
-/*******************************
-             Form
-*******************************/
+/*-------------------
+        General
+--------------------*/
+@formVerticalPadding: @distanceS;
+@formHorizontalPaddding: @distanceL;
+@formPadding: 1px @formHorizontalPaddding;
+
+// Header
+@formHeaderBackground: @simplePageBackground;
+@formHeaderPadding: @formVerticalPadding @formHorizontalPaddding;
+@formHeaderMargin: -@formVerticalPadding 0 0 0;
+
+// Buttons
+@flexberryContentPadding: 0;
+@headerFontWeight: 400;
+
+// Toolbar buttons
+@buttonFontWeight: @defaultMediumFontWeight;
+@editButtonsColor: @textColor;
+@closeButtonPaddingTop: unit(9 / 14, em);
+
+//Icons
+@iconFontFamily : guideline-icons;
+@saveIcon       : "\e936";
+@successIcon    : "\e92d";
+@deleteIcon     : "\e911";
+@errorIcon      : "\e915";
+@closeIcon      : "\e806";
+@iconPadding    : 0.625em;
+@iconFontSize   : 1rem;
+
+/* Errored Input */
+@formErrorColor: @textColor;
+@formErrorBorder: @negativeBorderColor;
+@formErrorBackground: @negativeBackgroundColor;
 
 /*-------------------
-       Elements
+        Input
 --------------------*/
 
-/* Input */
-@inputBorderColor: none;
-@inputBorder: 1px solid @inputBorderColor;
-@inputBackground: transparent;
+@inputFontSize: @defaultInputFontSize;
+@inputPadding: @inputVerticalPadding @inputHorizontalPadding;
+@inputBorder: @defaultInputBorder;
 
-/* Select */
-@hoveredSelectItemBackground: @dropdownHoveredItemColor;
-@hoveredSelectColor: @brightBlue;
+@inputFocusBackground: @defaultInputFocusBackground;
 
-/* Checkbox */
-@checkboxBackground: #f1f8ff;
+@labelMargin: @labelMarginTop @labelMarginRight @labelMarginBottom @labelMarginLeft;
+@labelFontWeight: @defaultFontWeight;
+@labelFontSize: @defaultInputLabelFontSize;
 
 /*-------------------
-        States
+    Labeled inside
 --------------------*/
+@fieldLabeledInsidePaddingTop: unit(25 / 14, em);
 
-/* Input Focus */
-@inputFocusBorderColor: @inputBorderColor;
-@inputFocusBorderRadius: 0px;
+@fieldLabeledInsideLabelColor: @secondaryColor;
+@fieldLabeledInsideLabelLineHeight: @inputLineHeight;
+@fieldLabeledInsideLabelTop: unit(26 / 14, em);;
+
+@fieldLabeledInsideLabelMarginTop: 0em;
+@fieldLabeledInsideLabelMarginRight: 0em;
+@fieldLabeledInsideLabelMarginBottom: 0em;
+@fieldLabeledInsideLabelMarginLeft: @inputHorizontalPadding;
+@fieldLabeledInsideLabelMargin:
+    @fieldLabeledInsideLabelMarginTop
+    @fieldLabeledInsideLabelMarginRight
+    @fieldLabeledInsideLabelMarginBottom
+    @fieldLabeledInsideLabelMarginLeft;
+
+@fieldLabeledInsideLabelAwayFontSize: 0.75em;
+@fieldLabeledInsideLabelAwayTransform: scale(unit(@fieldLabeledInsideLabelAwayFontSize / @defaultInputFontSize)) translateY(-@inputLineHeight);
+@fieldLabeledInsideLabelAwayTransformOrigin: left bottom;
+
+@fieldLabeledInsideLabelTransitionProperty: @defaultTransitionProperty;
+@fieldLabeledInsideLabelTransitionDuration: @defaultTransitionDuration;
+@fieldLabeledInsideLabelTransitionTimingFunction: @defaultTransitionTimingFunction;
+@fieldLabeledInsideLabelTransitionDelay: @defaultTransitionDelay;
+@fieldLabeledInsideLabelTransition:
+    @fieldLabeledInsideLabelTransitionProperty
+    @fieldLabeledInsideLabelTransitionDuration
+    @fieldLabeledInsideLabelTransitionTimingFunction
+    @fieldLabeledInsideLabelTransitionDelay;
+
+
+// Large labeled inside
+
+@fieldLargeLabeledInsidePaddingTop: 1.8125em;
+@fieldLargeLabeledInsidePaddingRight: 0.9375em;
+@fieldLargeLabeledInsidePaddingBottom: 0.5625em;
+@fieldLargeLabeledInsidePaddingLeft: 0.9375em;
+@fieldLargeLabeledInsidePadding:
+    @fieldLargeLabeledInsidePaddingTop
+    @fieldLargeLabeledInsidePaddingRight
+    @fieldLargeLabeledInsidePaddingBottom
+    @fieldLargeLabeledInsidePaddingLeft;
+
+@fieldLargeLabeledInsideLabelFontSize: 1em;
+@fieldLargeLabeledInsideLabelLineHeight: @inputLargeLineHeight;
+@fieldLargeLabeledInsideLabelTop: 1.875em;
+
+@fieldLargeLabeledInsideLabelMarginTop: 0px;
+@fieldLargeLabeledInsideLabelMarginRight: 0px;
+@fieldLargeLabeledInsideLabelMarginBottom: 0px;
+@fieldLargeLabeledInsideLabelMarginLeft: 1em;
+@fieldLargeLabeledInsideLabelMargin:
+    @fieldLargeLabeledInsideLabelMarginTop
+    @fieldLargeLabeledInsideLabelMarginRight
+    @fieldLargeLabeledInsideLabelMarginBottom
+    @fieldLargeLabeledInsideLabelMarginLeft;
+
+@fieldLargeLabeledInsideLabelAwayFontSize: 0.875em;
+@fieldLargeLabeledInsideLabelAwayTransform:
+    scale(unit(@fieldLargeLabeledInsideLabelAwayFontSize / @fieldLargeLabelFontSize))
+    translateY(-@inputLargeLineHeight);
+
+/*-------------------
+        Mobile
+--------------------*/
+// Header
+@formHorizontalMobilePaddding: @distanceS;
+@formHeaderMobilePadding: 0.625rem @formHorizontalMobilePaddding 0.5rem;
+@formHeaderMobileLineHeight: 1.625rem;
+
+@formMobilePaddingLeft: 1rem;
+@formMobilePaddingRight: 1rem;

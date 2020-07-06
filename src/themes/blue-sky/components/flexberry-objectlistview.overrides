@@ -1,0 +1,44 @@
+/*-------------------
+        OLV
+--------------------*/
+
+
+/* Header operations */
+.ui.table.object-list-view thead tr th.object-list-view-operations {
+  .button {
+    border-color: @olvOperationsButtonBorderColor;
+    height: auto;
+    margin: @olvOperationsButtonMargin;
+    line-height: @olvOperationsButtonLineHeight;
+    &:hover {
+      opacity: 1;
+    }
+    &.active {
+        box-shadow: none;
+    }
+  }
+}
+
+/*-------------------
+        Navbar
+--------------------*/
+.ui.secondary.menu.nav-bar {
+  .search-field .next-page-button {
+    color: @blue;
+    border: none;
+    &:hover {
+      background: none;
+    }
+  }
+  .block-action-input input {
+    min-width: auto;
+  }
+}
+
+// Fix for ie
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ui.action.input.search-field,
+  .ui.buttons.filter-active {
+    flex-shrink: 0;
+  }
+}

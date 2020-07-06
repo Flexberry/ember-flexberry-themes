@@ -22,8 +22,7 @@
 @backgroundColor: @white;
 @backgroundGreenColor: @green;
 @backgroundImage: linear-gradient(@white, @backgroundColor);
-@borderBoxShadowColor: #E1E8ED;
-@borderColor: 1px solid @blue;
+@borderColor: @blue;
 
 @textColor: #4f73b0;
 @textTransform: none;
