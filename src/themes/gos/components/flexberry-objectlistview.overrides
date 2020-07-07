@@ -219,11 +219,6 @@ table.object-list-view.selectable {
 
   .ui.dropdown .menu > .item .icon:not(.dropdown) {
     vertical-align: middle;
-
-    &.right.icon {
-      float: right;
-      margin: 0;
-    }
   }
 
   .right.menu .dropdown:last-child > .menu,

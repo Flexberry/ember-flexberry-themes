@@ -98,7 +98,16 @@
     Scroll Bars
 --------------------*/
 
-@useCustomScrollbars: false;
+@customScrollbarWidth: 12px;
+@customScrollbarHeight: 4px;
+
+@trackBackground: transparent;
+@thumbBorderRadius: 1ex;
+@thumbBackground: #848E99;
+
+@thumbInactiveBackground: #848E99;
+@thumbHoverBackground: #848E99;
+
 
 
 /*-------------------

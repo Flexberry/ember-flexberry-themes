@@ -6,5 +6,10 @@
 @flexberryMenuTextFontWeight: 450;
 
 @flexberryMenuBoxShadow: @defaultElementsBoxShadow;
+@menuMaxHeight: 400px;
 
 @borderedSize: 2em;
+
+// fix for item buttons
+@dropdownItemIconMargin: '';
+@dropdownItemPadding: 13px 12px;
