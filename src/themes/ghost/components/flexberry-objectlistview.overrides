@@ -667,13 +667,9 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .ui.button.mobile-sorting-setting-button {
-    width: @navbarSortingMobileWidth;
+    max-width: @navbarSortingMobileMaxWidth;
     white-space: @navbarSortingMobileWhiteSpace;
     overflow: @navbarSortingMobileOverflow;
     text-overflow: @navbarSortingMobileTextOverflow;
-    font-size:  @navbarSortingMobileFontSize;
-    font-weight: @navbarSortingMobileTextWeight;
-    display: @navbarSortingMobileDisplay;
-    align-items: @navbarSortingMobileAlignItems;
   }
 }
