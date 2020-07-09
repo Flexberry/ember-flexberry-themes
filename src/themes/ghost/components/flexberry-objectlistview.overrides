@@ -602,7 +602,7 @@ tbody tr td .icon.button.hierarchy-expand {
     }
   }
 
-  //check rows menu
+  // check rows menu
   .check-rows-container {
     display: @checkRowsContainerDisplay;
     position: @checkRowsContainerPosition;
@@ -661,6 +661,40 @@ tbody tr td .icon.button.hierarchy-expand {
 
         &::before {
           content: @clearSelectButtonIcon;
+        }
+      }
+    }
+  }
+
+  // row controls
+  .object-list-view .row-controls {
+    background: @rowControlsBackground;
+    border-radius: @defaultBorderRadius;
+    margin-right: @rowControlsMarginRight;
+    padding-left: @rowControlsPaddingLeft;
+
+    .ui.mobile.button {
+      margin: @rowControlsButtonMargin;
+      padding: @rowControlsButtonPadding;
+
+      &:focus {
+        border-color: @helperButtonInRowBorderColorFocus;
+      }
+
+      i.icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+
+        &.edit::before {
+          content: @editHelperButtonInRowIcon;
+        }
+
+        &.copy::before {
+          content: @copyButtonInRowIcon;
+        }
+
+        &.minus::before {
+          content: @deleteHelperButtonInRowIcon;
         }
       }
     }
