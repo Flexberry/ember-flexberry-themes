@@ -35,6 +35,13 @@
   }
 }
 
+.ui.button.mobile-sorting-setting-button {
+  max-width: @navbarSortingMobileMaxWidth;
+  white-space: @navbarSortingMobileWhiteSpace;
+  overflow: @navbarSortingMobileOverflow;
+  text-overflow: @navbarSortingMobileTextOverflow;
+}
+
 // Fix for ie
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .ui.action.input.search-field,

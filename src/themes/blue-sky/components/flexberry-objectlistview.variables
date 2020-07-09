@@ -47,3 +47,9 @@
 @olvOperationsButtonLineHeight: unit(20 / 14, em);
 @olvOperationsButtonBorderColor: transparent;
 @olvOperationsButtonMargin: 0;
+
+/*Navbar sorting*/
+@navbarSortingMobileMaxWidth: 180px;
+@navbarSortingMobileWhiteSpace: nowrap;
+@navbarSortingMobileOverflow: hidden;
+@navbarSortingMobileTextOverflow: ellipsis;

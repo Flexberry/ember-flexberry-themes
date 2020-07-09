@@ -665,4 +665,11 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
+
+  .ui.button.mobile-sorting-setting-button {
+    max-width: @navbarSortingMobileMaxWidth;
+    white-space: @navbarSortingMobileWhiteSpace;
+    overflow: @navbarSortingMobileOverflow;
+    text-overflow: @navbarSortingMobileTextOverflow;
+  }
 }
