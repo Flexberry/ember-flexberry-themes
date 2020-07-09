@@ -1,0 +1,51 @@
+
+// Standart
+.ui.button.disabled {
+  background: @buttonDisabledBackground;
+  color: @buttonDisabledColor;
+}
+
+// Secondary
+.ui.secondary.button:hover {
+  box-shadow: @secondaryHoverBoxShadow;
+}
+
+.ui.secondary.button:active,
+.ui.secondary.active.button:active {
+  box-shadow: @secondaryHoverBoxShadow;
+}
+
+.ui.button.img {
+  line-height: 0;
+  img {
+    height: @lineHeight;
+  }
+}
+
+.ui.button:focus {
+  box-shadow: @buttonFocusBoxShadow;
+}
+
+// Sizes
+.ui.tiny.button {
+  padding: @buttonTinyPadding
+}
+
+.ui.small.button {
+  padding: @buttonSmallPadding;
+}
+
+.ui.large.button {
+  line-height: @buttonLargeLineHeight;
+  padding: @buttonLargePadding;
+}
+
+.ui.big.button {
+  line-height: @buttonBigLineHeight;
+  padding: @buttonBigPadding;
+}
+
+.ui.huge.button {
+  line-height: @buttonHugeLineHeight;
+  padding: @buttonHugePadding;
+}

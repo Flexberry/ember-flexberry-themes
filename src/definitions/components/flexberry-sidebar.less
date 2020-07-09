@@ -3,6 +3,13 @@
 
 @import (multiple) '../../theme.config';
 
+.inverted.vertical.main.menu.sidebar {
+  height: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
+  background: @sidebarInvertedBackground;
+  top: @headerHeight;
+  padding: @sidebarPadding;
+}
+
 .ui.attached.menu:not(.tabular) {
   border: none;
 }

@@ -1,0 +1,43 @@
+.ui.input input {
+  font-size: @defaultInputFontSize;
+  &:hover {
+    border-color: @inputHoverBorderColor;
+  }
+  &:focus {
+    background-color: @defaultInputFocusBackground;
+    border-color: @defaultFocusBorderColor;
+  }
+}
+
+.ui.input textarea {
+  line-height: @textareaLineHeight;
+  font-family: @pageFont;
+}
+
+.ui.input textarea:hover {
+  border-color: @textareaHoverBorderColor;
+}
+
+.ui.input textarea[readonly],
+.ui.input textarea[disabled] {
+  pointer-events: none;
+  background: @textareaReadonlyBackground;
+  border-color: @textareaReadonlyBorderColor;
+}
+
+.ui.input textarea:focus,
+.ui.input textarea:active {
+  border-color: @defaultFocusBorderColor;
+}
+
+.ui.large.input > textarea {
+  font-size: @inputLargeFontSize;
+}
+
+/* Error */
+.error > .ui.input > input[type="text"],
+.ui.input.flexberry-textarea.error > textarea {
+  background-color: @negativeBackgroundColor;
+  border-color: @negativeBorderColor;
+  color: @textColor;
+}

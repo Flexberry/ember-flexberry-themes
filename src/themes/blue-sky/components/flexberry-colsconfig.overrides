@@ -1,0 +1,12 @@
+.ui.modal .content .flexberry-colsconfig.content {
+  max-height: 585px;
+  overflow: auto;
+}
+
+.flexberry-colsconfig.content tbody td:nth-child(2) .ui.button {
+  margin: 0
+}
+
+.flexberry-colsconfig .ui.action.input input {
+  width: auto;
+}

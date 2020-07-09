@@ -1,0 +1,128 @@
+
+/*==================================*/
+/*=====from main.less===============*/
+// header
+
+.background-logo a img {
+  padding: 7px 0px;
+}
+.background-logo {
+  i.icon.sidebar:before {
+    font-family: @toggleIconFont;
+    content: @toggleIcon;
+  }
+}
+
+// content
+.full.height {
+  height: calc(~"100vh - @{headerHeight} - @{footerHeight}");
+  overflow: auto;
+}
+
+.pushable {
+  overflow: hidden;
+}
+
+#example {
+  padding-top: @headerHeight;
+}
+
+.flexberry-content.ui.attached.segment {
+  width: 100%;
+}
+
+/*==================================*/
+
+.background-logo {
+  padding-right: @distanceL;
+}
+
+.text_menu {
+  font-size: 0;
+}
+
+.logo {
+  margin-right: @distanceM;
+  width: @logoWidth;
+}
+
+.page-header-userbar .ui.dropdown > .dropdown.icon {
+  color: @textColor;
+  &::before {
+    content: "\e905";
+  }
+}
+
+
+.flexberry-container {
+  background-color: @pageBackgroundColor;
+  padding: @flexberryContainerPadding;
+  min-height: calc(~"100vh - @{headerHeight}");
+}
+
+@media only screen and (min-width: @largeMonitorBreakpoint) {
+  .ui.main.container {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.main.container {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.container {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
+  .ui.container {
+    width: 100%;
+  }
+}
+
+
+/*******************************
+            Mobile
+*******************************/
+
+.pusher.mobile .full.height {
+  height: calc(~"100vh - @{headerHeightMobile} - @{footerHeight}");
+}
+
+.mobile {
+  .logo {
+    margin-right: @mobileHeaderMargin;
+    width: @mobileItemLogoImgWidth;
+    
+    img {
+      min-width: @mobileItemLogoImgWidth;
+    }
+  }
+
+  .launch.icon.item {
+    padding: @mobileLaunchIconItemPadding;
+  }
+
+  .background-logo {
+    padding: @mobileBackgroundLogoPadding;
+    height: @headerHeightMobile;
+  }
+
+  .page-header-userbar {
+    margin-right: @mobileHeaderMargin;
+    margin-left: @mobileUserbarMarginLeft;
+    position: relative;
+
+    .flexberry-menu.ui.icon.dropdown.button {
+      position: absolute;
+      background: transparent;
+      width: 100%;
+    }
+  }
+}

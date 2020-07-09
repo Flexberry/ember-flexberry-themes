@@ -1,0 +1,17 @@
+body {
+  overflow: hidden;
+}
+
+.pusher.mobile {
+  h3 {
+      font-size: @h1Mobile;
+  }
+}
+
+[class*="secondary text"] {
+  color: @secondaryColor;
+}
+
+.small.text {
+  font-size: @smallText;
+}

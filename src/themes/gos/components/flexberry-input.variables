@@ -1,5 +1,0 @@
-@border: @defaultInputBorder;
-@padding: @inputVerticalPadding @inputHorizontalPadding;
-
-@placeholderErrorColor: @inputPlaceholderColor;
-@placeholderErrorFocusColor: @inputPlaceholderFocusColor;

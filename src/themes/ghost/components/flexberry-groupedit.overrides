@@ -1,0 +1,61 @@
+.groupedit-toolbar {
+  .ui.button {
+    background: @toolbarButtonBackground;
+    color: @textColor;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.disabled,
+    &:disabled {
+      background: @toolbarButtonBackground;
+      color: @inputPlaceholderColor;
+    }
+
+    & > .icon:not(.button):not(.dropdown) {
+      margin: 0;
+
+      &.configure::before {
+        content: @groupeditToolbarConfigIcon;
+      }
+    }
+  }
+}
+
+.groupedit-container .ui.table.object-list-view {
+  .groupedit-new-row {
+    background: @newRowBackground;
+  }
+}
+
+div:not(.groupedit-modal-content) {
+  > .groupedit-toolbar .ui.button:first-child {
+    padding-left: 0;
+  }
+
+  > .groupedit-container > .ui.table.object-list-view {
+    thead tr th {
+      padding-left: @olvHeaderTextPadding;
+    }
+
+    tbody {
+      .object-list-view-helper-column-cell {
+        padding-top: @olvCheckboxCellVerticalPadding;
+      }
+
+      tr td {
+        padding-top: @olvCellVerticalPadding;
+        padding-bottom: @olvCellVerticalPadding;
+        vertical-align: top;
+
+        &.field .flexberry-checkbox {
+          padding-top: @olvCheckboxCellVerticalPadding;
+        }
+      }
+    }
+    .oveflow-text {
+      padding: @olvCellTextPaddind;
+    }
+  }
+}

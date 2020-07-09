@@ -1,0 +1,31 @@
+@colsconfigHeaderTextAlign:left;
+@colsconfigLargeIconColor: @inputPlaceholderColor;
+@colsconfigHorizontalPadding: 0.5em;
+@colsconfigCellPadding: 0.25em @colsconfigHorizontalPadding;
+@colsconfigDisabledColor: @linkWater;
+@colsconfigCheckboxMargin: @distanceS;
+
+@colsconfigButtonColor: @white;
+@colsconfigButtonBackground: @primaryColor;
+@colsconfigButtonHorizontalPadding: @distanceL;
+@colsconfigDisabledButtonColor: @inputPlaceholderColor;
+@colsconfigDisabledButtonBackground: @inputBackground;
+@colsconfigTinyButtonPadding: 0;
+// TODO :(
+@tbodyHeight: calc(~'100vh - 24em');
+@tbodyStaticHeight: 400px;
+
+/* Columns width */
+@showColumnsWidth: 55px;
+@columnsOrderWidth: 64px;
+@sortDirectionWidth: 175px;
+@sortPriorityWidth: 104px;
+@columnWidthWidth: 140px;
+@columnWidthHeaderWidth: @columnWidthWidth + 17px; //+scroll width
+
+/* Message */
+@messageDisplay: block;
+@messageMarginBottom: 0;
+@messagePadding: 0.75em 1.5em;
+@messageCloseIconMargin: 0.6em;
+@messageFontSize: 1em;

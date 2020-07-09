@@ -1,0 +1,251 @@
+// Main
+.ui.main.container > .stackable.grid.container > .row,
+.ui.form.flexberry-vertical-form {
+  padding: @formPadding;
+  padding-bottom: @formHorizontalPaddding;
+}
+
+.ui.main.container > .stackable.grid.container > .row {
+  padding-top: @formVerticalPadding;
+}
+
+// Fix for ie
+// https://github.com/philipwalton/flexbugs/issues/216#issuecomment-359042902
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ui.main.container > .stackable.grid.container > .row,
+  #lookup-list {
+    display: flex;
+  }
+  .flexberry-objectlistview {
+    width: 100%;
+  }
+}
+
+.flexberry-content.ui.attached.segment {
+  padding: @flexberryContentPadding;
+}
+
+.ui.main.container,
+.stackable.grid.container {
+  height: 100%
+}
+
+// Headers
+.ui.main.container > .stackable.grid.container {
+  padding-top: @formVerticalPadding;
+
+  > h3 {
+    font-weight: @headerFontWeight;
+    padding-left: @formHorizontalPaddding;
+
+    &:first-of-type {
+      background: @formHeaderBackground;
+      padding: @formHeaderPadding;
+      margin: @formHeaderMargin;
+    }
+  }
+}
+
+// Buttons
+.flexberry-edit-panel {
+  .ui.button:first-child {
+    padding-left: 0;
+  }
+
+  .ui.button.close-button {
+    font-size: 0;
+    float: right;
+    line-height: @distanceM;
+    padding-top: @closeButtonPaddingTop;
+    &::before {
+      // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
+      content: @closeIcon;
+      font-family: 'Crimean';
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  .ui.button.save-button,
+  .ui.button.save-close-button,
+  .ui.button.save-del-button,
+  .ui.button.close-button {
+    background: @pageBackground;
+    font-weight: @buttonFontWeight; 
+    color: @editButtonsColor;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+// Icons
+.flexberry-edit-panel {
+  .ui.button::before {
+    font-family: @iconFontFamily;
+    font-size: @iconFontSize;
+    padding-right: @iconPadding;
+    vertical-align: middle;
+  }
+
+  .ui.button.save-button::before,
+  .ui.button.save-close-button::before {
+    content: @saveIcon;
+  }
+  .ui.button.save-del-button::before {
+    content: @deleteIcon;
+  }
+}
+
+.flexberry-edit-panel .ui.button.save-close-button,
+.flexberry-olv-toolbar .ui.button.hierarchical-button.active {
+  position: relative;
+}
+
+.flexberry-edit-panel .ui.button.save-close-button::after,
+.flexberry-olv-toolbar .ui.button.hierarchical-button.active .sitemap.icon::after {
+  background-color: @pageBackground;
+  border-radius: 50%;
+  content: @successIcon;
+  font-family: @iconFontFamily;
+  font-size: 11px;
+  position: absolute;
+  left: 2em;
+  top: 1.2em;
+  line-height: 1;
+}
+
+.ui.form .field > .ui.selection.dropdown {
+  min-width: 0;
+}
+
+.flexberry-vertical-form {
+  > .ui.two.column.grid {
+    max-width: 1098px;
+    margin-bottom: 0;
+  }
+  
+  > .ui.one.column.grid {
+    max-width: 517px;
+    margin-bottom: 0;
+  }
+}
+
+/*-------------------
+    Labeled inside
+--------------------*/
+.ui.form .labeled-inside.field {
+  textarea,
+  .ui.input > input {
+    padding-top: @fieldLabeledInsidePaddingTop;
+
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent !important; /* IE11 needs the !important flag */
+    }
+  }
+}
+
+.ui.form .labeled-inside.field .ui.selection.dropdown {
+  padding-top: @fieldLabeledInsidePaddingTop;
+  
+  > .default.text {
+    color: transparent;
+  }
+
+  > .dropdown.icon {
+    padding-top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.ui.form .labeled-inside.field > label {
+    height: 0px;
+    width: 0px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+    color: @fieldLabeledInsideLabelColor;
+    transition: @fieldLabeledInsideLabelTransition;
+    line-height: @fieldLabeledInsideLabelLineHeight;
+    top: @fieldLabeledInsideLabelTop;
+    margin: @fieldLabeledInsideLabelMargin;
+}
+
+.ui.form .labeled-inside.has-text.field > label {
+    transform-origin: @fieldLabeledInsideLabelAwayTransformOrigin;
+    transform: @fieldLabeledInsideLabelAwayTransform;
+}
+
+// Large labeled inside
+.ui.large.labeled-inside.field > .ui.input > input {
+    padding: @fieldLargeLabeledInsidePadding;
+}
+
+.ui.large.labeled-inside.field > label {
+    font-size: @fieldLargeLabeledInsideLabelFontSize;
+    line-height: @fieldLargeLabeledInsideLabelLineHeight;
+    top: @fieldLargeLabeledInsideLabelTop;
+    margin: @fieldLargeLabeledInsideLabelMargin;
+}
+
+.ui.large.labeled-inside.has-text.field > label,
+.ui.large.labeled-inside.field:focus-within > label {
+    transform: @fieldLargeLabeledInsideLabelAwayTransform;
+}
+
+.ui.form .ui.input.error input {
+  background-color: @formErrorBackground;
+  border-color: @formErrorBorder;
+  color: @formErrorColor;
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .flexberry-vertical-form > .ui.column.grid.stackable > .column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/*-------------------
+      Mobile
+--------------------*/
+.pusher.mobile .ui.main.container > .stackable.grid.container > .row {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.pusher.mobile .ui.main.container > .stackable.grid.container {
+  > h3 {
+    padding-left: @formHorizontalMobilePaddding;
+
+    &:first-of-type {
+      padding: @formHeaderMobilePadding;
+      line-height: @formHeaderMobileLineHeight;
+    }
+  }
+}
+
+.mobile {
+  h3.ui.header {
+    font-size: @h1Mobile;
+  }
+
+  .ui.form.flexberry-vertical-form {
+    padding-left: @formMobilePaddingLeft;
+    padding-right: @formMobilePaddingRight;
+  }
+}

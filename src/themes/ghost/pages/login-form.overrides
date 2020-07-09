@@ -1,0 +1,38 @@
+
+.login-form {
+  &.ui.grid {
+    flex-direction: column;
+    margin: -1rem 0;
+
+    > .row > .column {
+      max-width: @formWidth;
+    }
+
+    > .row:first-child {
+      flex: 1 0 auto;
+    }
+  }
+
+  .ui.header {
+    margin: @headerMargin;
+  }
+}
+
+.pusher:not(.mobile) .login-form .ui.form {
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.mobile {
+  .ui.grid.login-form {
+    background-color: @white;
+
+    .row > .column {
+      padding: 0;
+    }
+  }
+
+  .login-form .ui.form.segment {
+    box-shadow: none;
+  }
+}

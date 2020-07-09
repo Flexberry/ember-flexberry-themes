@@ -33,8 +33,8 @@
 
 ## Настройка шрифтов
 
-1. Скопировать шрифты в папку `vendor/fonts` из папки `assets/fonts` ([src/themes/gos/assets/fonts](src/themes/gos/assets/fonts))
-2. Скопировать в папку `vendor` `.css` с объявлением стиилей из папки `assets` ([src/themes/gos/assets](src/themes/gos/assets))
+1. Скопировать шрифты в папку `vendor/fonts` из папки `assets/fonts` ([src/themes/ghost/assets/fonts](src/themes/ghost/assets/fonts))
+2. Скопировать в папку `vendor` `.css` с объявлением стиилей из папки `assets` ([src/themes/ghost/assets](src/themes/ghost/assets))
 3. Добавить импорт шрифтов `GOSTUI2`, `guideline-icons` в `ember-cli-build.js`
 4. Добавить импорт стилей и настроек для иконок и шрифтов в `ember-cli-build.js`
 
@@ -66,31 +66,8 @@
 
 ## Настройка приложения
 
-1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L15).
-2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L16)
-2. Для установки иконок в пункты меню при объявлении `sitemap'а` добавить для узла параметр `icon`
 
-```js
-  sitemap: computed('i18n.locale', function() {
-    let i18n = this.get('i18n');
-
-    return {
-      nodes: [{
-        link: 'index',
-        caption: i18n.t('forms.application.sitemap.index.caption'),
-        title: i18n.t('forms.application.sitemap.index.title'),
-        icon: 'home',
-        children: null
-      }, {
-        link: null,
-        caption: i18n.t('forms.application.sitemap.application.caption'),
-        title: i18n.t('forms.application.sitemap.application.title'),
-        icon: 'clock outline',
-        ...
-```
-
-3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/controllers/application.js#L43) 
-4. Установить пакет `autoprefixer` и добавить настройку в `ember-cli-build.js`
+Установить пакет `autoprefixer` и добавить настройку в `ember-cli-build.js`
 
 ```js
   const autoprefixer = require('autoprefixer');
@@ -118,6 +95,63 @@
     ...
   }
 ```
+### Основное меню приложения
+
+1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L15).
+2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L16)
+2. Для установки иконок в пункты меню при объявлении `sitemap'а` добавить для узла параметр `icon`
+
+```js
+  sitemap: computed('i18n.locale', function() {
+    let i18n = this.get('i18n');
+
+    return {
+      nodes: [{
+        link: 'index',
+        caption: i18n.t('forms.application.sitemap.index.caption'),
+        title: i18n.t('forms.application.sitemap.index.title'),
+        icon: 'home',
+        children: null
+      }, {
+        link: null,
+        caption: i18n.t('forms.application.sitemap.application.caption'),
+        title: i18n.t('forms.application.sitemap.application.title'),
+        icon: 'clock outline',
+        ...
+```
+
+3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/controllers/application.js#L43) 
+
+### Модальные окна в режиме `Sidepage`
+
+В новой теме добавлен дополнительный режим открытия модального окна `sidepage`.
+В данном режиме модальное окно открывается справа во всю высоту страницы а на мобильных устройствах распахивается на весь экран.
+Чтобы модальное окно открылось в режиме `sidepage`, необходимо в разметку добавить класс `flexberry-sidepage`, а также использовать анимацию `transition:'slide left'`.
+
+При использовании компоеннта `modal-dialog` достаточно указать `useSidePageMode=true`.
+
+Для того, чтобы модальные окна `lookup`'a и настройки столбцов открывались в режиме `sidepage`, необходимо добавить следующие настройки в environment.js:
+
+```js
+components: {
+  ...
+  // For guideline theme
+  // Settings for flexberry-objectlistview component.
+  flexberryObjectlistview: {
+    // Flag indicates whether to side page or usually mode.
+    useSidePageMode: true,
+  },
+
+  // Settings for flexberry-lookup component.
+  flexberryLookup: {
+    // Flag: indicates whether to side page or usually mode.
+    useSidePageMode: true,
+  }
+  ...
+}
+```
+### Некоторые классы
+Чтобы модальное окно распахивалось на мобильнольном устройстве на весь экран необходимо использовать класс `fullhight-mobile-modal`. 
 
 ## Доработка стилей в приложении
 

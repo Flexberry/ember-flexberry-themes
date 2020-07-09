@@ -1,0 +1,99 @@
+.scrolling.undetached.dimmable.dimmed {
+  overflow: hidden;
+}
+
+/*******************************
+             Modal
+*******************************/
+.ui.modal,
+.ui.legacy.modal {
+  top: 50vh;
+}
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+     Close
+---------------*/
+
+.ui.modal > .close {
+  line-height: 1;
+  margin: 0;
+}
+
+.ui.modal i.icon.close:before {
+  content: @closeIcon;
+  font-family: @closeIconFontFamily;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.modal .ui.header {
+  font-weight: normal;
+}
+
+.ui.modal > .content:last-child {
+  padding-bottom: @modalPadding;
+}
+
+/*******************************
+            Sidepage
+*******************************/
+.ui.modal.flexberry-sidepage {
+  height: 100%;
+  left: auto;
+  right: 0;
+  border-radius: 0;
+  top: 0;
+
+  .scrolling.undetached.dimmable &.scrolling {
+    left: auto;
+  }
+}
+
+.ui.modal.preview-model .content {
+  .ui.form.flexberry-vertical-form {
+    padding: 0;
+  }
+
+  .close-button {
+    display: none;
+  }
+}
+
+/*  Mobile */
+.mobile {
+  .ui.modal.flexberry-sidepage  {
+    width: @mobileSidepageWidth;
+  }
+
+  .ui.modal.fullhight-mobile-modal {
+    width: @mobileModalWidth;
+    height: @mobileModalHeight;
+    border-radius: 0px;
+    top: 0;
+  }
+}
+
+// Style for responsive
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
+  .ui.small.modal.flexberry-sidepage {
+    width: @sidepageWidth;
+  }
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.modal > .header:not(.ui) {
+    font-size: @mobileModalHeaderFontSize;
+  }
+  .ui.small.modal > .header:not(.ui) {
+    font-size: @mobileModalHeaderFontSize;
+  }
+  .ui.modal .scrolling.content {
+    max-height: @mobileScrollingContentMaxHeight;
+  }
+}

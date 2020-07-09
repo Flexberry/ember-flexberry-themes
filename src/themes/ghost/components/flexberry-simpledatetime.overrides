@@ -1,0 +1,337 @@
+// Buttons
+.flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.button {
+  background: transparent;
+  padding: @datetimeButtonPadding;
+  width: @datetimeButtonWidth;
+
+  &.ui-clear {
+    margin-left: -@clearButtonMargin;
+  }
+
+  &.ui-open {
+    margin-left: -@openButtonMargin;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// Date input
+.flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
+  border-radius: @datetimeInputBorderRadius;
+  padding: @datetimeInputPadding;
+
+  &:hover {
+    border-right-color: @inputHoverBorderColor !important;
+  }
+
+  &:focus {
+    border-right-color: @focusedFormBorderColor !important;
+  }
+
+  &[readonly=""] {
+    background: @inputReadonlyBackground;
+    border-color: @inputReadonlyBorderColor;
+    cursor: default;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.flexberry-simpledatetime.error > .ui.action.input:not([class*="left action"]) > input {
+  &,
+  &:hover,
+  &:focus {
+    border-right-color: @negativeBorderColor!important;
+  }
+}
+
+// Button icons
+.flexberry-simpledatetime > .ui.input > .ui.button > .icon {
+  font-family: @datetimeButtonFont;
+  font-size: @inputIconFontSize;
+  height: @datetimeButtonIconHeight;
+  margin: @datetimeButtonIconMargin;
+}
+
+.flexberry-simpledatetime .ui-clear > .icon {
+  &::before {
+    content: @clearButtonIcon;
+  }
+}
+
+.flexberry-simpledatetime .ui-open {
+  .date.icon {
+    &::before {
+      content: @openDateButtonIcon;
+    }
+  }
+
+  .datetime.icon {
+    &::before {
+      content: @openDatetimeButtonIcon;
+    }
+  }
+
+  .datetime-local.icon {
+    &::before {
+      content: @openDatetimeButtonIcon;
+    }
+  }
+}
+
+// Calendar
+.flatpickr-calendar {
+  &.open {
+    z-index: 10;
+  }
+
+  .flatpickr-months {
+    padding-top: @monthsBlockPaddingTop;
+
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+      padding-top: @monthControlPaddingTop;
+      font-family: @iconFontName;
+      font-size: @iconFontSize;
+      color: @monthControlDefaultColor;
+
+      svg {
+        display: @monthControlSvgDisplay;
+      }
+
+      &:hover {
+        color: @monthControlHoverColor;
+      }
+    }
+
+    .flatpickr-prev-month {
+      padding-left: @prevMonthControlPaddingLeft;
+
+      &:before {
+        content: @prevMonthIcon;
+      }
+    }
+    
+    .flatpickr-next-month {
+      padding-right: @nextMonthControlPaddingRight;
+
+      &:before {
+        content: @nextMonthIcon;
+      }
+    }
+
+    .flatpickr-month .flatpickr-current-month {
+      padding-top: @currentMonthPaddingTop;
+
+      .flatpickr-monthDropdown-months:hover {
+        background: @monthDropdownBackground;
+      }
+
+      .numInputWrapper {
+        &:hover {
+          background: @yearBlockBackground;
+        }
+
+        .cur-year {
+          color: @yearControlColor;
+        }
+
+        .arrowUp,
+        .arrowDown {
+          border: @arrowBorderDefault;
+          color: @arrowYearControlColor;
+          padding-left: @arrowYearControlPaddingLeft;
+
+          &:hover {
+            background: @arrowYearControlBackgroundHover;
+          }
+
+          &:after {
+            border-radius: @arrowYearControlBorderRadius;
+            border-left-width: @arrowYearControlBorderWidth;
+            border-right-width: @arrowYearControlBorderWidth;
+          }
+        }
+
+        .arrowUp:after {
+          border-bottom-width: @arrowUpYearControlBorderBottomWidth;
+          border-bottom-color: @arrowYearControlBorderColor;
+        }
+
+        .arrowDown {
+          top: @arrowDownYearControlTop;
+
+          &:after {
+            border-top-color: @arrowYearControlBorderColor;
+            border-top-width: @arrowDownYearControlBorderTopWidth;
+          }
+        }
+      }
+    }
+  }
+
+  .flatpickr-innerContainer {
+    .flatpickr-weekdays {
+      height: @weekdaysBlockHeight;
+
+      .flatpickr-weekdaycontainer {
+        margin: @weekdayContainerMargin;
+        padding-top: @weekdayContainerPaddingTop;
+        padding-bottom: @weekdayContainerPaddingBottom;
+        border-bottom: @weekdayContainerBottomBorder;
+
+        .flatpickr-weekday {
+          color: @weekdayColor;
+          font-size: @weekdayFontSize;
+          font-weight: @weekdayFontWeight;
+
+          &:first-child {
+            margin-left: @firstWeekdayMarginLeft;
+          }
+
+          &:last-child {
+            margin-right: @lastWeekdayMarginRight;
+          }
+        }
+      }
+    }
+
+    .flatpickr-days {
+      display: @daysBlockDisplay;
+
+      .dayContainer {
+        display: @daysBlockDisplay;
+        margin: @daysContainerMargin;
+
+        .flatpickr-day {
+          color: @dayColor;
+          
+          &.today {
+            border-color: @todayBorderColor;                  
+          }
+
+          &:hover {
+            background: @dayBackgroundHover;
+            border-color: @dayBorderColorHover;
+          }
+
+          &.prevMonthDay,
+          &.nextMonthDay {
+            color: @prevAndNextMonthDayColor;
+
+            &:hover {
+              color: @prevAndNextMonthDayColorHover;
+            }
+          }
+
+          &.selected {
+            color: @selectedDayColor;
+            background: @selectedBackgroundColor;
+            border-color: @selectedBorderColor;
+          }
+        }
+      }
+    }
+  }
+
+  &.showTimeInput.hasTime {
+    .flatpickr-time {
+      margin: @timeBlockMargin;
+      border-top: @timeBlockBorderTop;
+      height: @timeBlockHeight;
+      max-height: @timeBlockHeight;
+
+      .flatpickr-time-separator {
+        height: @timeSeparatorHeight;
+      }
+
+      .numInputWrapper {
+        border: @timeControlBorder;
+        background: @timeControlBackground;
+        border-radius: @timeControlBorderRadius;
+        flex: @timeControlFlex;
+        width: @timeControlWidth;
+        margin-top: @timeControlMarginTop;
+
+        &:first-child {
+          margin-left:  @hourTimeControlMarginLeft;
+          margin-right: @hourTimeControlMarginRight;
+        }
+
+        &:last-child {
+          margin-left: @minuteTimeControlMarginLeft;
+        }
+
+        &:hover {
+          background: @timeControlBackgroundHover;
+          border: @timeControlBorderHover;
+
+          .numInput {
+            background: @timeControlInputBackgroundHover;
+          }
+
+          .arrowUp {
+            top: @arrowUpTimeControlTop;
+
+            &:after {
+              border-bottom-color: @arrowTimeControlBorderColor;
+              border-bottom-width: @arrowUpTimeControlBorderBottomWidth;
+            }
+
+            &:hover::after {
+              border-bottom-color: @arrowTimeControlBorderColorHover;
+            }
+          }
+          
+          .arrowDown {
+            top: @arrowDownTimeControlTop;
+
+            &:after {
+              border-top-color: @arrowTimeControlBorderColor;
+              border-top-width: @arrowDownTimeControlBorderTopWidth;
+            }
+
+            &:hover::after {
+              border-top-color: @arrowTimeControlBorderColorHover;
+            }
+          }
+        }
+
+        .numInput {
+          font-weight: @timeControlFontWeight;
+          color: @timeControlColor;
+          border-radius: @timeControlBorderRadius;
+
+          &:active,
+          &:focus {
+            border: @timeControlBorderFocus;
+            background: @timeControlBackgroundFocus;
+          }
+        }
+        
+        .arrowUp,
+        .arrowDown {
+          right: @arrowTimeControlRight;
+          border: @arrowTimeControlBorder;
+          height: @arrowTimeControlHeight;
+
+          &:hover {
+            background: @arrowTimeControlBackgroundHover;
+          }
+
+          &:after {
+            border-radius: @arrowTimeControlBorderRadius;
+            border-left-width: @arrowTimeControlBorderWidth;
+            border-right-width: @arrowTimeControlBorderWidth;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ui.dimmer.modals ~ .flatpickr-calendar.open {
+  z-index: 1001;
+}

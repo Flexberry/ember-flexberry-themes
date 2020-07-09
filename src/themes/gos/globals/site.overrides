@@ -1,9 +1,0 @@
-body {
-  overflow: hidden;
-}
-
-.pusher.mobile {
-  h3 {
-      font-size: @h1Mobile;
-  }
-}

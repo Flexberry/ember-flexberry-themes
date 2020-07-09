@@ -1,0 +1,56 @@
+.ui.selection.dropdown {
+  line-height: @textLineHeight;
+
+  &.active {
+    background: @selectionVisibleBackground;
+  }
+
+  &.disabled {
+    background: @selectionReadonlyBackground;
+    border-color: @selectionReadonlyBorderColor;
+  }
+
+  &.loading {
+    .icon:before,
+    .icon:after {
+      width: @loadingIconWidth;
+      height: @loadingIconHeight;
+      top: @loadingIconTop;
+      left: @loadingIconLeft;
+    }
+  }
+}
+
+.ui.dropdown > .text {
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  width: 100%;
+}
+
+.ui.dropdown {
+  font-size: @fontSize;
+
+  > .dropdown.icon {
+    color: @secondaryColor;
+    font-family: @dropdownIconFontFamily;
+
+    &::before {
+      content: @dropdownIcon;
+    }
+  }
+}
+
+/* Focus */
+.ui.selection.active.dropdown:focus {
+  box-shadow: @selectionActiveFocusBoxShadow;
+}
+.ui.upward.selection.active.dropdown:focus {
+  box-shadow: @upwardSelectionVisibleBoxShadow;
+}
+
+
+.ui.dropdown.error:not(.button) > .default.text,
+.ui.default.dropdown.error:not(.button) > .text{
+  color: @defaultTextColor;
+}
