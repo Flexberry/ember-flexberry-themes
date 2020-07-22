@@ -1,0 +1,9 @@
+/* Primary */
+@uimessageFont: 'GOSTUI2', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+@uimessageFontWeight: 500 !important;
+@uimessageBoxShadow: 0 0 0 0 transparent !important;
+
+/* Icon */
+@uiMessageIconFont: guideline-icons;
+@uimessageCloseIcon: "\e90e";
+@uimessageIconPositionRight: 1em;

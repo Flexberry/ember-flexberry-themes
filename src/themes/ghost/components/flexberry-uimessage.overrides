@@ -1,0 +1,19 @@
+/* Primary */
+.ui.message {
+    box-shadow: @uimessageBoxShadow;
+}
+
+.ui.message .header {
+    font-family: @uimessageFont;
+    font-weight: @uimessageFontWeight;
+}
+
+/* Icon */
+.ui.message > .close.icon {
+    font-family: @uiMessageIconFont;
+    right: @uimessageIconPositionRight;
+
+    &::before {
+        content: @uimessageCloseIcon;
+    }
+}
