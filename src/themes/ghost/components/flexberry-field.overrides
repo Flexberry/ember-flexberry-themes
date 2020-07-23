@@ -8,6 +8,10 @@
     border-color: @fieldReadonlyBorderColor;
 }
 
+.ui.form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .ui.field > label {
     line-height: @fieldLabelLineHeight;
 }
