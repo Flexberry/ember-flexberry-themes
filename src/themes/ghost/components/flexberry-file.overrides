@@ -80,7 +80,7 @@
 
   > .ui.button.flexberry-file-add-button {
     background-color: @negativeBackgroundColor;
-    border-color: @negativeBorderColor;
+    border: 1px solid @negativeBorderColor;
     border-left: none;
     color: @secondaryColor;
 

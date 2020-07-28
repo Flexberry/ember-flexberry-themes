@@ -195,7 +195,7 @@
 /*-------------------
         Mobile
 --------------------*/
-@olvMobileMaxHeight: calc(~'100vh - 7.3em');
+@olvMobileMaxHeight: none;
 @olvMobileHorizontalPadding: @distanceS;
 
 /* Toolbar */

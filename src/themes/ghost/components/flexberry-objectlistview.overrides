@@ -68,6 +68,7 @@ table.object-list-view.selectable {
   align-items: center;
   min-height: 0em;
   min-width: 100%;
+  margin-left: 0;
 
   /* Toolbar buttons */
 
@@ -102,8 +103,13 @@ table.object-list-view.selectable {
     }
 
     // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button .icon {
-      font-family: @hierarchicalButtonFontFamily;
+    &.hierarchical-button {
+      &:first-child {
+        padding-left: 0;
+      }
+      .icon {
+        font-family: @hierarchicalButtonFontFamily;
+      }
     }
 
     &.refresh-button,
@@ -550,6 +556,8 @@ tbody tr td .icon.button.hierarchy-expand {
 
   .flexberry-objectlistview {
     max-height: @olvMobileMaxHeight;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .flexberry-olv-toolbar {
