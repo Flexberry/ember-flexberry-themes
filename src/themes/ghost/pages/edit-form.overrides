@@ -249,3 +249,9 @@
     padding-right: @formMobilePaddingRight;
   }
 }
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.form .fields.unstackable {
+    margin-bottom: @rowDistance;
+  }
+}
