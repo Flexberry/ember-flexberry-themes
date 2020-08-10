@@ -99,23 +99,12 @@ table.object-list-view.selectable {
       background: @toolbarButtonBackground;
     }
 
-<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
-    // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button {
-      &.active {
-        color: @textColor;
-      }
-
-      .icon {
-        font-family: @hierarchicalButtonFontFamily;
-=======
     &.refresh-button,
     &.delete-button,
     &.hierarchical-button,
     &s > .button {
       &:not(.disabled) {
         color: @toolbarButtonIconColor;
->>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
       }
     }
 
@@ -195,17 +184,6 @@ table.object-list-view.selectable {
     }
   }
 
-<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
-  .ui.button.refresh-button,
-  .ui.button.delete-button,
-  .ui.buttons > .button {
-    &:not(.disabled) {
-      color: @toolbarButtonIconColor;
-    }
-  }
-
-=======
->>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
   .ui.action.input {
     .search-button {
       position: absolute;
@@ -417,10 +395,6 @@ table.object-list-view.selectable {
     }
 
     // Временные стили для кнопки "Создать на основе"
-<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
-    .ui.button.object-list-view-row-prototype-button .icon.copy::before {
-      content: @copyButtonInRowIcon;
-=======
     .ui.button.object-list-view-row-prototype-button .icon {
       &.copy::before {
         content: @copyButtonInRowIcon;
@@ -428,7 +402,6 @@ table.object-list-view.selectable {
       &:hover {
         color: @prototypeHelperButtonInRowHoverColor;
       }
->>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
     }
 
     .ui.button.object-list-view-row-delete-button {
@@ -609,22 +582,19 @@ tbody tr td .icon.button.hierarchy-expand {
   .object-list-view-helper-column {
     vertical-align: @olvMobileFirstCellVerticalAligtn;
   }
-
-<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
-  .ui.form .object-list-view-container:not(.groupedit-container) {
-=======
-  .object-list-view-single-column-cell {
->>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
-    .inline.fields {
-      margin: @olvMobileFieldMargin;
-    }
-    .field {
-      margin: @olvMobileFieldMargin;
-      > label {
-        float: @olvMobileFieldLabelFloat;
-        width: @olvMobileFieldLabelWidth;
-        font-size: @olvMobileFieldLabelFontSize;
-        color: @olvMobileFieldLabelColor;
+  .object-list-view-container:not(.groupedit-container) {
+    .object-list-view-single-column-cell {
+      .inline.fields {
+        margin: @olvMobileFieldMargin;
+      }
+      .field {
+        margin: @olvMobileFieldMargin;
+        > label {
+          float: @olvMobileFieldLabelFloat;
+          width: @olvMobileFieldLabelWidth;
+          font-size: @olvMobileFieldLabelFontSize;
+          color: @olvMobileFieldLabelColor;
+        }
       }
     }
   }
