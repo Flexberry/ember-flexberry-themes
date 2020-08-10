@@ -22,11 +22,8 @@
   }
 }
 
-.ui.button.img {
-  line-height: 0;
-  img {
-    height: @lineHeight;
-  }
+.ui.button:focus {
+  box-shadow: @buttonFocusBoxShadow;
 }
 
 // Sizes

@@ -74,7 +74,7 @@
     font-weight: @buttonFontWeight; 
     color: @editButtonsColor;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
   }
 }
@@ -95,22 +95,24 @@
   .ui.button.save-del-button::before {
     content: @deleteIcon;
   }
+}
 
-  .ui.button.save-close-button {
-    position: relative;
-  
-    &::after {
-      background-color: @pageBackground;
-      border-radius: 50%;
-      content: @successIcon;
-      font-family: @iconFontFamily;
-      font-size: 11px;
-      position: absolute;
-      left: 2em;
-      top: 1.1em;
-      line-height: 1;
-    }
-  }
+.flexberry-edit-panel .ui.button.save-close-button,
+.flexberry-olv-toolbar .ui.button.hierarchical-button.active {
+  position: relative;
+}
+
+.flexberry-edit-panel .ui.button.save-close-button::after,
+.flexberry-olv-toolbar .ui.button.hierarchical-button.active .sitemap.icon::after {
+  background-color: @pageBackground;
+  border-radius: 50%;
+  content: @successIcon;
+  font-family: @iconFontFamily;
+  font-size: 11px;
+  position: absolute;
+  left: 2em;
+  top: 1.2em;
+  line-height: 1;
 }
 
 .ui.form .field > .ui.selection.dropdown {

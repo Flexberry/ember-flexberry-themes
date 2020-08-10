@@ -2,17 +2,22 @@
 @headerBoxShadow       : @panelBoxShadow;
 @headerTextColor: @textColor;
 @headerFontSize: 1rem;
+@toggleIconFont: guideline-icons;
+@toggleIcon: "\e920";
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
 @pageBackgroundColor: @simplePageBackground;
 @userFotoImgSize:36px;
 @userIconSize: 1.5em;
 @userIconLineHeight: 1;
+@userSpanMargin: 1em;
 
 @footerBackground: #eee;
 @flexberryContentPadding: @distanceM @distanceL;
 
 @flexberryContainerPadding: 0 @distanceL;
+@loadingMessageColor: #aaa;
+@loadingMessageTop: -3em;
 
 @mobileHeaderMargin: 1rem;
 @mobileItemLogoImgWidth: 36px;

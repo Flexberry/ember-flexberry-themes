@@ -6,7 +6,6 @@
 
 .ui.table.object-list-view tr td {
   overflow-x: hidden;
-  overflow-y: visible;
 
   &.overflowed-cell,
   &.object-list-view-menu {
@@ -79,6 +78,14 @@ table.object-list-view.selectable {
     }
   }
 
+  .ui.button,
+  .ui.buttons .ui.button,
+  .ui.action.input {
+    > .ui.icon.button {
+      padding: @toolbarButtonPadding;
+    }
+  }
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -92,6 +99,7 @@ table.object-list-view.selectable {
       background: @toolbarButtonBackground;
     }
 
+<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
     // TODO: Удалить после отрисовки новых иконок.
     &.hierarchical-button {
       &.active {
@@ -100,11 +108,20 @@ table.object-list-view.selectable {
 
       .icon {
         font-family: @hierarchicalButtonFontFamily;
+=======
+    &.refresh-button,
+    &.delete-button,
+    &.hierarchical-button,
+    &s > .button {
+      &:not(.disabled) {
+        color: @toolbarButtonIconColor;
+>>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
       }
     }
 
-    &:focus.hierarchical-button:not(.active) {
-      color: @secondaryColor;
+    // TODO: Удалить после отрисовки новых иконок.
+    &.hierarchical-button .icon {
+      font-family: @hierarchicalButtonFontFamily;
     }
 
     &.refresh-button,
@@ -120,7 +137,7 @@ table.object-list-view.selectable {
     }
 
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
 
     &.refresh-button,
@@ -178,6 +195,7 @@ table.object-list-view.selectable {
     }
   }
 
+<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
   .ui.button.refresh-button,
   .ui.button.delete-button,
   .ui.buttons > .button {
@@ -186,6 +204,8 @@ table.object-list-view.selectable {
     }
   }
 
+=======
+>>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
   .ui.action.input {
     .search-button {
       position: absolute;
@@ -361,7 +381,7 @@ table.object-list-view.selectable {
 
     .ui.button {
       background: @helperButtonInRowBackground;
-      border: @helperButtonInRowBorder;
+      box-shadow: none;
       line-height: 1;
       padding: @helperButtonInRowPadding;
 
@@ -397,8 +417,18 @@ table.object-list-view.selectable {
     }
 
     // Временные стили для кнопки "Создать на основе"
+<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
     .ui.button.object-list-view-row-prototype-button .icon.copy::before {
       content: @copyButtonInRowIcon;
+=======
+    .ui.button.object-list-view-row-prototype-button .icon {
+      &.copy::before {
+        content: @copyButtonInRowIcon;
+      }
+      &:hover {
+        color: @prototypeHelperButtonInRowHoverColor;
+      }
+>>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
     }
 
     .ui.button.object-list-view-row-delete-button {
@@ -440,11 +470,26 @@ tbody tr td .icon.button.hierarchy-expand {
 /*-------------------
         Navbar
 --------------------*/
+.flexberry-objectlistview:not(.mobile) .ui.secondary.menu.nav-bar {
+  align-items: center;
+  .ui.basic.buttons {
+    align-self: flex-start;
+  }
+  .right.menu {
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    .showing-entries {
+      padding: @navBarShowingEntriesPadding;
+    }
+  }
+}
+
 .ui.secondary.menu.nav-bar {
   margin: @navBarMargin;
   min-height: @navBarButtonSize;
   min-width: 100%;
-  align-items: center;
 
   .prev-page-button,
   .next-page-button {
@@ -464,7 +509,6 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .ui.basic.buttons {
-    align-self: flex-start;
     .ui.button {
       border-radius: @navBarButtonBorderRadius;
       color: @textColor!important;
@@ -492,16 +536,6 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
-
-  .right.menu {
-    flex-basis: 0px;
-    flex-grow: 1;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    .showing-entries {
-      padding: @navBarShowingEntriesPadding;
-    }
-  }
 }
 
 .ui.input.nav-bar-search-page {
@@ -522,7 +556,7 @@ tbody tr td .icon.button.hierarchy-expand {
     background-color: transparent;
     padding: 0;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
   }
   .ui.dropdown .menu {
@@ -576,7 +610,11 @@ tbody tr td .icon.button.hierarchy-expand {
     vertical-align: @olvMobileFirstCellVerticalAligtn;
   }
 
+<<<<<<< HEAD:src/themes/gos/components/flexberry-objectlistview.overrides
   .ui.form .object-list-view-container:not(.groupedit-container) {
+=======
+  .object-list-view-single-column-cell {
+>>>>>>> develop:src/themes/ghost/components/flexberry-objectlistview.overrides
     .inline.fields {
       margin: @olvMobileFieldMargin;
     }
@@ -602,7 +640,7 @@ tbody tr td .icon.button.hierarchy-expand {
     }
   }
 
-  //check rows menu
+  // check rows menu
   .check-rows-container {
     display: @checkRowsContainerDisplay;
     position: @checkRowsContainerPosition;
@@ -661,6 +699,40 @@ tbody tr td .icon.button.hierarchy-expand {
 
         &::before {
           content: @clearSelectButtonIcon;
+        }
+      }
+    }
+  }
+
+  // row controls
+  .object-list-view .row-controls {
+    background: @rowControlsBackground;
+    border-radius: @defaultBorderRadius;
+    margin-right: @rowControlsMarginRight;
+    padding-left: @rowControlsPaddingLeft;
+
+    .ui.mobile.button {
+      margin: @rowControlsButtonMargin;
+      padding: @rowControlsButtonPadding;
+
+      &:focus {
+        border-color: @helperButtonInRowBorderColorFocus;
+      }
+
+      i.icon {
+        font-family: @iconFontFamily;
+        font-size: @helperButtonInRowIconFontSize;
+
+        &.edit::before {
+          content: @editHelperButtonInRowIcon;
+        }
+
+        &.copy::before {
+          content: @copyButtonInRowIcon;
+        }
+
+        &.minus::before {
+          content: @deleteHelperButtonInRowIcon;
         }
       }
     }

@@ -21,7 +21,7 @@
     background: @olvOperationsBackground;
     padding: @olvOperationsPadding;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
   }
 
@@ -81,12 +81,24 @@
   }
 }
 
-
+.inline.fields.filter {
+  .ui.form & > label,
+  .filter-operation,
+  .filter-value{
+    margin-bottom: 1rem;
+  }
+  .filter-operation {
+    margin-right: 0.5rem;
+  }
+  .filter-value {
+    width: 95%;
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*-------------------

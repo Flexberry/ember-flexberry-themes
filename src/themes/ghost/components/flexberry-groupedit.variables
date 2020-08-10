@@ -20,6 +20,7 @@
 @olvHeaderTextPadding           : calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js
 @olvCellVerticalPadding         : 0.25em;
 @olvCheckboxCellVerticalPadding : 0.5em;
+@olvCellTextPaddind             : 0 0 0 @inputVerticalPadding;
 
 @groupeditContainerMarginTop    : 0.5em;
 @newRowBackground               : fade(#219653, 10%);
@@ -43,3 +44,4 @@
 @labelOpenSidePageLineHeight    : 1.8;
 @labelOpenSidePagePadding       : 0 0 1em 0;
 @labelOpenSidePageIconMargin    : 0 0.5em 0 0;
+

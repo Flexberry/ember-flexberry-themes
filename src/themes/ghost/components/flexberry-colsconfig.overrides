@@ -31,7 +31,7 @@
     padding: @colsconfigTinyButtonPadding;
     line-height: 1em;
     &:focus {
-      border-color: transparent;
+      box-shadow: none;
     }
     i.icon {
       font-size: @glyphWidth;
@@ -126,6 +126,10 @@
   overflow-y: scroll;
 }
 
+.ui.modal:not(.flexberry-sidepage) .flexberry-colsconfig.content tbody {
+  max-height: @tbodyStaticHeight;
+}
+
 .flexberry-colsconfig.content tr {
   display: table;
   width: 100%;
@@ -133,10 +137,9 @@
 }
 
 .ui.form .flexberry-colsconfig.content .message {
-  display: @messageDisplay;
   margin-bottom: @messageMarginBottom;
   padding: @messagePadding;
-  
+
   .close.icon {
     font-size: @messageFontSize;
     margin: @messageCloseIconMargin;

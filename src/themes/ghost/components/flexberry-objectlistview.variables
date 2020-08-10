@@ -175,16 +175,16 @@
 
 /* Buttons */
 @helperButtonInRowDisplay: inline-block;
-@helperButtonInRowBorder: none;
 @helperButtonInRowBackground: transparent;
 @helperButtonInRowVerticalAlign: top;
 @helperButtonInRowBackgroundHoverColor: transparent;
 @helperButtonInRowHorizontalPadding: 0;
-@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.5em;
+@helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.2em 0 0.5em;
 @rowHelperCellHoverColor: @textColor;
 @selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
 @editHelperButtonInRowHoverColor: @accentColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
+@prototypeHelperButtonInRowHoverColor: @green;
 
 /* Icons */
 @helperButtonInRowIconFontSize: 1rem;
@@ -221,7 +221,7 @@
 @navbarMobileButtonWidth: 2rem;
 @navbarMobileButtonPadding: 0 0.625rem;
 
-/* Mobile selected row menu */
+/* Selected row menu */
 @olvContainerPosition: relative;
 @checkRowsContainerDisplay: flex;
 @checkRowsContainerPosition: fixed;
@@ -251,3 +251,10 @@
 @clearSelectButtonMargin: 0;
 @clearSelectButtonIcon: "\e90e";
 
+/* Row controls */
+@rowControlsBackground: @aliceBlue;
+@rowControlsMarginRight: 1em;
+@rowControlsPaddingLeft: 0.438em;
+@rowControlsButtonMargin: 0;
+@rowControlsButtonPadding: 0.643em 0.429em 0.214em;
+@helperButtonInRowBorderColorFocus: @aliceBlue;
