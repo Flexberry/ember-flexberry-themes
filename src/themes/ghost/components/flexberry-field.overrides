@@ -8,8 +8,13 @@
     border-color: @fieldReadonlyBorderColor;
 }
 
-.ui.form input[type="number"] {
+.object-list-view-container~.ui.secondary.menu .ui.input.nav-bar-search-page input[type="number"] {
     -moz-appearance: textfield;
+}
+
+.ui.input.nav-bar-search-page input[type="number"]::-webkit-outer-spin-button,
+.ui.input.nav-bar-search-page input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .ui.field > label {
