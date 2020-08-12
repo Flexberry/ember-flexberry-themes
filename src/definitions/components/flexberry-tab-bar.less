@@ -1,0 +1,75 @@
+@type    : 'component';
+@element : 'flexberry-tab-bar';
+
+@import (multiple) '../../theme.config';
+
+/*******************************
+               Tab 
+*******************************/
+
+.ui.tabular.menu.flexberry-tab-bar {
+    float: none;
+    //Grid is needed for proper dropdown functionality
+    grid-template-rows: @tabsContainerGridRows;
+    grid-template-columns: @tabsContainerGridColumns;
+    overflow: visible;
+    border: none;
+    background: @tabsContainerBackground;
+}
+  
+.ui.compact.attached.dropdown.link.item {
+    padding: 0;
+    &&.active {
+      background: @tabsContainerBackground;
+    }
+}
+  
+.ui.tabular.menu .item {
+    color: @tabsContainerTextColor;
+}
+  
+.ui.top.attached.tabular.menu.dragscroll {
+    border: none;
+  }
+  
+.flexberry-tab-bar-tab.tab.item {
+    border: @tabsBorder;
+    border-bottom: none;
+  
+    &&.active {
+      background: @tabsContainerBackground;
+      font-weight: @tabsActiveFontWeight;
+      border: none;
+      border-bottom: @tabsActiveBorderBottom;
+    }
+  }
+  
+.ui.compact.attached.dropdown.link.item > .menu.transition.visible {
+    background: @dropdownBackground;
+  }
+  
+@supports(display: grid) {
+    .ui.tabular.menu {
+      overflow-y: hidden;
+  
+      /* Hide scrollbar */
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      
+      &&::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  
+.ui.right.sidebar.tabbar {
+    background: @rightSidebarTabbarBackground;
+  }
+  
+  /* Icons */
+.clone.outline.icon::before {
+    content: @dropdownIcon;
+  }
+  
+
+.loadUIOverrides();
