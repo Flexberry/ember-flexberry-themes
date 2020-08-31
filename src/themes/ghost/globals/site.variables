@@ -156,10 +156,7 @@
 /*-------------------
    Icon Variables
 --------------------*/
-@cornerIconInvertedShadow: @blue;
-
-@colorIcon : @blue;
-@colorIconBorder: @blue;
+@iconFont: 'guideline-icons';
 
 /*-------------------
         Page

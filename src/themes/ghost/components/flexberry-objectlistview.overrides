@@ -464,7 +464,8 @@ tbody tr td .icon.button.hierarchy-expand {
   min-width: 100%;
 
   .prev-page-button,
-  .next-page-button {
+  .next-page-button,
+  .goto-page-button {
     &:before {
       font-family: @navBarPrevNextButtonsBeforeFontFamily;
       font-size: @navBarPrevNextButtonsBeforeFontSize;
@@ -476,7 +477,8 @@ tbody tr td .icon.button.hierarchy-expand {
     content: @navBarPrevButtonBeforeContent;
   }
 
-  .next-page-button::before {
+  .next-page-button::before,
+  .goto-page-button::before {
     content: @navBarNextButtonBeforeContent;
   }
 
@@ -512,6 +514,7 @@ tbody tr td .icon.button.hierarchy-expand {
 
 .ui.input.nav-bar-search-page {
   align-self: flex-start;
+  width: 100%;
   .ui.button {
     margin: auto;
     position: relative;
@@ -707,4 +710,11 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
+}
+
+.ui.button.mobile-sorting-setting-button {
+  white-space: @navbarSortingMobileWhiteSpace;
+  overflow: @navbarSortingMobileOverflow;
+  text-overflow: @navbarSortingMobileTextOverflow;
+  padding: @navbarSortingMobilePaddind;
 }

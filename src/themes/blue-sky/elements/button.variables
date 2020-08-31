@@ -80,3 +80,13 @@
 
 /* Attached */
 @attachedBoxShadow: none;
+
+/*-------------------
+        Navbar
+--------------------*/
+/*Navbar sorting*/
+@navbarSortingMobileWhiteSpace: nowrap;
+@navbarSortingMobileOverflow: hidden;
+@navbarSortingMobileTextOverflow: ellipsis;
+@navbarSortingMobilePaddind: 0.5em;
+@navbarSearchPageInputWidth: 100px;
