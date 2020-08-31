@@ -183,7 +183,7 @@
 
 /* Sidebar Menu */
 .inverted.vertical.main.menu.sidebar.mobile {
-  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeight}') !important;
+  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeightMobile}') !important;
   top: @headerHeightMobile;
 }
 

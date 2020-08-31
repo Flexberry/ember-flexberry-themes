@@ -15,3 +15,20 @@ body {
 .small.text {
   font-size: @smallText;
 }
+
+body ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb:window-inactive,
+body ::-webkit-scrollbar-thumb:hover {
+  background-clip: content-box;
+  border: @thumbBorder;
+}
+
+body ::-webkit-scrollbar-track {
+  box-shadow: @trackBooxShadow;
+  border: @thumbBorder;
+}
+
+// for adressbar hide
+.mobile body {
+  height: 100vh;
+}
