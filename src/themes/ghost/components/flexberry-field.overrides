@@ -8,19 +8,19 @@
     border-color: @fieldReadonlyBorderColor;
 }
 
-.object-list-view-container~.ui.secondary.menu .ui.input.nav-bar-search-page input[type="number"] {
-    -moz-appearance: textfield;
-}
+.ui.input.nav-bar-search-page input[type='number'] {
+  -moz-appearance: textfield;/*For FireFox*/
 
-.ui.input.nav-bar-search-page input[type="number"]::-webkit-outer-spin-button,
-.ui.input.nav-bar-search-page input[type="number"]::-webkit-inner-spin-button {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button { /*For Webkits like Chrome and Safari*/
     -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 .ui.field > label {
     line-height: @fieldLabelLineHeight;
 }
-
 
 // Large
 .ui.large.input > input {

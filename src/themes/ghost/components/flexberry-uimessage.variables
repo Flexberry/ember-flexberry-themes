@@ -1,7 +1,5 @@
 /* Primary */
-@uimessageFont: 'GOSTUI2', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
-@uimessageFontWeight: 500 !important;
-@uimessageBoxShadow: 0 0 0 0 transparent !important;
+@borderWidth: 0;
 
 /* Icon */
 @uiMessageIconFont: guideline-icons;
