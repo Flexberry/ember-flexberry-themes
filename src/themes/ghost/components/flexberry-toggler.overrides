@@ -21,3 +21,16 @@
     }
   }
 }
+
+.toggler-has-border {
+	border: @togglerBorder;
+	border-color: @togglerBorderColor;
+	border-radius: @togglerBorderRadius;
+  box-sizing: border-box;
+  padding: @togglerPadding;
+}
+
+.toggler-has-shadow {
+  box-shadow: @togglerShadow;
+  padding: @togglerPadding;
+}
