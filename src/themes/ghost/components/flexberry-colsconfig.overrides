@@ -26,6 +26,10 @@
     }
   }
 
+  .object-list-view-filters i.icon.trash:before{
+    content: "\e90e";
+  }
+
   .ui.tiny.button {
     background: transparent;
     padding: @colsconfigTinyButtonPadding;

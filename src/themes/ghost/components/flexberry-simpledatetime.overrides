@@ -62,22 +62,13 @@
 }
 
 .flexberry-simpledatetime .ui-open {
-  .date.icon {
-    &::before {
-      content: @openDateButtonIcon;
-    }
+  .date.icon::before {
+    content: @openDateButtonIcon;
   }
 
-  .datetime.icon {
-    &::before {
-      content: @openDatetimeButtonIcon;
-    }
-  }
-
-  .datetime-local.icon {
-    &::before {
-      content: @openDatetimeButtonIcon;
-    }
+  .datetime.icon::before,
+  .datetime-local.icon::before {
+    content: @openDatetimeButtonIcon;
   }
 }
 
@@ -206,25 +197,10 @@
         margin: @daysContainerMargin;
 
         .flatpickr-day {
-          color: @dayColor;
-          
-          &.today {
-            border-color: @todayBorderColor;                  
-          }
-
-          &:hover {
-            background: @dayBackgroundHover;
-            border-color: @dayBorderColorHover;
-          }
-
-          &.prevMonthDay,
-          &.nextMonthDay {
-            color: @prevAndNextMonthDayColor;
-
-            &:hover {
-              color: @prevAndNextMonthDayColorHover;
-            }
-          }
+          // &:hover {
+          //   background: @dayBackgroundHover;
+          //   border-color: @dayBorderColorHover;
+          // }
 
           &.selected {
             color: @selectedDayColor;
@@ -330,6 +306,49 @@
       }
     }
   }
+}
+
+.flatpickr-day,
+.flatpickr-day.today:hover,
+.flatpickr-day.today:focus {
+  color: @dayColor;
+}
+
+.flatpickr-day.today {
+  border-color: @todayBorderColor;
+  &:hover,
+  &:focus {
+    background: @dayBackgroundHover;
+    border-color: @dayBorderColorHover;
+  }
+}
+
+.flatpickr-day.inRange,
+.flatpickr-day.prevMonthDay.inRange,
+.flatpickr-day.nextMonthDay.inRange,
+.flatpickr-day.today.inRange,
+.flatpickr-day.prevMonthDay.today.inRange,
+.flatpickr-day.nextMonthDay.today.inRange,
+.flatpickr-day:hover,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover,
+.flatpickr-day:focus,
+.flatpickr-day.prevMonthDay:focus,
+.flatpickr-day.nextMonthDay:focus {
+  background: @dayBackgroundHover;
+  border-color: @dayBorderColorHover;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+  color: @prevAndNextMonthDayColor;
+  background: transparent;
+  border-color: transparent;
 }
 
 .ui.dimmer.modals ~ .flatpickr-calendar.open {
