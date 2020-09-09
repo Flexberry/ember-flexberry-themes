@@ -1,5 +1,5 @@
 // Primary
-@treeIconColor: @secondaryColor;
+@treeIconColor: @iconColor;
 @treeHeaderColor: @simplePageBackground;
 
 /* Icon */

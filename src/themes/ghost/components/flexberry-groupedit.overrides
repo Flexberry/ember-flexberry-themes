@@ -1,7 +1,6 @@
 .groupedit-toolbar {
   .ui.button {
     background: @toolbarButtonBackground;
-    color: @textColor;
 
     &:focus {
       box-shadow: none;

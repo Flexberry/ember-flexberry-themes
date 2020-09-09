@@ -1,4 +1,4 @@
-@dropdownHoveredItemBackground: @aliceBlue;
+@dropdownHoveredItemBackground: @defaultColor;
 
 @flexberryMenuTextColor: @textColor;
 @flexberryMenuBackground: @white;

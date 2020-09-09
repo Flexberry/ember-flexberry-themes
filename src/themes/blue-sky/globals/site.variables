@@ -78,4 +78,4 @@
         COLOR SCHEME
 -------------------------*/
 // main
-@accentColor           : @mayaBlue;
+@activeColor: @mayaBlue;

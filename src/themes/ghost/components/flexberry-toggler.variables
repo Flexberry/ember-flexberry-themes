@@ -2,6 +2,6 @@
 @accordionContentPaddingLeft: @inputIconFontSize;
 
 @accordionBackgroundColor: transparent;
-@accordionTitleColor: @secondaryColor;
+@accordionTitleColor: @lightGrayishBlue;
 @accordionIcon: "\e907";
 @accordionIconFont: 'guideline-icons';

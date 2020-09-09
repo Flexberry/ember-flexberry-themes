@@ -172,7 +172,7 @@ table.object-list-view.selectable {
       .remove.icon {
         height: auto;
         width: auto;  
-        color: @secondaryColor;
+        color: @iconColor;
         font-size: @removeFilterAfterFontSize;
         font-weight: @defaultBoldFontWeight;
   
@@ -252,6 +252,7 @@ table.object-list-view.selectable {
   }
 
   i.icon {
+    color: @textColor;
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
   
@@ -481,19 +482,22 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .ui.basic.buttons {
+    border: none;
     .ui.button {
+      background: @defaultColor !important;
+      border: none;
       border-radius: @navBarButtonBorderRadius;
-      color: @textColor!important;
-      min-width: @navBarButtonWidth;
-      margin: @navBarButtonMargin;
+      color: @textColor !important;
       font-weight: 500;
+      margin: @navBarButtonMargin;
+      min-width: @navBarButtonWidth;
 
       &:hover {
-        box-shadow: 0px 0px 0px 1px @navyBlue;
+        box-shadow: 0px 0px 0px 1px @activeColor;
       }
 
       &.disabled {
-        color: @secondaryColor!important;
+        color: @disabledColor !important;
       }
 
       &.active {
@@ -632,7 +636,7 @@ tbody tr td .icon.button.hierarchy-expand {
     i.icon.check-square-o {
       font-family: @iconFontFamily;
       font-size: @checkRowsButtonIconFontSize;
-      color: @secondaryColor;
+      color: @iconColor;
       width: @checkRowsButtonIconWidth;
     }
 

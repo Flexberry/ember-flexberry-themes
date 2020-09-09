@@ -82,7 +82,7 @@
     background-color: @negativeBackgroundColor;
     border: 1px solid @negativeBorderColor;
     border-left: none;
-    color: @secondaryColor;
+    color: @iconColor;
 
     &:hover {
       color: @textColor;

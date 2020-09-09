@@ -53,7 +53,7 @@
 --------------------*/
 @fieldLabeledInsidePaddingTop: unit(25 / 14, em);
 
-@fieldLabeledInsideLabelColor: @secondaryColor;
+@fieldLabeledInsideLabelColor: @lightGrayishBlue;
 @fieldLabeledInsideLabelLineHeight: @inputLineHeight;
 @fieldLabeledInsideLabelTop: unit(26 / 14, em);;
 

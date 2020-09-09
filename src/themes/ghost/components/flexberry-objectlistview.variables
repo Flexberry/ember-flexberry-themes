@@ -13,13 +13,13 @@
 
 /* Table Header */
 @headerBackground: @white;
-@headerColor: @secondaryColor;
+@headerColor: @iconColor;
 @headerFontWeight: @defaultMediumFontWeight;
 @headerVerticalPadding: @cellVerticalPadding;
 
 
 /* Striped */
-@stripedBackground: @aliceBlue;
+@stripedBackground: @defaultColor;
 
 /* Selectable */
 @selectableBackground: @solitude;
@@ -51,7 +51,7 @@
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
 /* Header order */
-@olvHeaderOrderIconColor: @accentColor;
+@olvHeaderOrderIconColor: @activeColor;
 @olvHeaderOrderIconHoverColor: @textColor;
 @olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
 @olvHeaderOrderIconBorderRadius: @inputBorderRadius;
@@ -182,7 +182,7 @@
 @helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.2em 0 0.5em;
 @rowHelperCellHoverColor: @textColor;
 @selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
-@editHelperButtonInRowHoverColor: @accentColor;
+@editHelperButtonInRowHoverColor: @activeColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
 @prototypeHelperButtonInRowHoverColor: @green;
 
@@ -213,7 +213,7 @@
 @olvMobileFieldLabelFloat: left;
 @olvMobileFieldLabelWidth: 60%;
 @olvMobileFieldLabelFontSize: 1rem;
-@olvMobileFieldLabelColor: @secondaryColor;
+@olvMobileFieldLabelColor: @lightGrayishBlue;
 
 /* Navbar */
 @navbarMobilePadding: 8px 1rem;
@@ -252,9 +252,9 @@
 @clearSelectButtonIcon: "\e90e";
 
 /* Row controls */
-@rowControlsBackground: @aliceBlue;
+@rowControlsBackground: @defaultColor;
 @rowControlsMarginRight: 1em;
 @rowControlsPaddingLeft: 0.438em;
 @rowControlsButtonMargin: 0;
 @rowControlsButtonPadding: 0.643em 0.429em 0.214em;
-@helperButtonInRowBorderColorFocus: @aliceBlue;
+@helperButtonInRowBorderColorFocus: @defaultColor;
