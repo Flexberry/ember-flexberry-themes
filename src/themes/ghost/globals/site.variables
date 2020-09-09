@@ -124,6 +124,11 @@
 @disabledOpacity: 1;
 
 /*-------------------
+   Icon Variables
+--------------------*/
+@iconFont: 'guideline-icons';
+
+/*-------------------
         Page
 --------------------*/
 

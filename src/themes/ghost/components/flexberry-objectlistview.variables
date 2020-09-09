@@ -60,7 +60,7 @@
 @olvHeaderOrderIconVerticalAlign: top;
 
 /* Icons */
-@olvHeaderOrderIconFontFamily: 'guideline-icons';
+@olvHeaderOrderIconFontFamily: @iconFont;
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
 
@@ -71,7 +71,7 @@
 @olvOperationCheckRowMenuLeft: 0;
 @olvOperationsOverflow: visible;
 
-@olvOperationIconFontFamily: 'guideline-icons';
+@olvOperationIconFontFamily: @iconFont;
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
 
@@ -158,7 +158,7 @@
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonMargin: 0 unit(4 / 14, em) 0 0;
 
-@navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
+@navBarPrevNextButtonsBeforeFontFamily: @iconFont;
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
 
 @navBarPrevButtonBeforeContent: "\e906";
@@ -258,3 +258,9 @@
 @rowControlsButtonMargin: 0;
 @rowControlsButtonPadding: 0.643em 0.429em 0.214em;
 @helperButtonInRowBorderColorFocus: @defaultColor;
+
+/*Navbar sorting*/
+@navbarSortingMobileWhiteSpace: nowrap;
+@navbarSortingMobileOverflow: hidden;
+@navbarSortingMobileTextOverflow: ellipsis;
+@navbarSortingMobilePaddind: 0 10px;

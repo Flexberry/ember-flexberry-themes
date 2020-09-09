@@ -249,6 +249,7 @@ i.icon.download:before {
         color: @red;
     }
 }
+.goto-page-button,
 .next-page-button {
     &:before {
         content: "\e81b";
@@ -256,6 +257,10 @@ i.icon.download:before {
         font-size: 14px;
         opacity: 1;
     }
+}
+
+.prev-page-button,
+.next-page-button {
     &:hover:before {
         color: @red;
     }
