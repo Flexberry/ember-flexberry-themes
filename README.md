@@ -199,11 +199,12 @@ components: {
   *******************************/
 
   // Main
-  @defaultColor                   : @aliceBlue;
+  @defaultColor                   : #ECF2FB;
   @primaryColor                   : @cobaltBlue;
   @activeColor                    : @mayaBlue;
   @accentColor                    : #E94B3D;
-  @secondaryColor                 : @aliceBlue;
+  @secondaryColor                 : #7699B3;
+  @disabledColor                  : @lightGrayishBlue;
 
   // Sidebar
   @sidebarBackgroundColor         : @textColor;
@@ -211,6 +212,7 @@ components: {
   // Page
   @simplePageBackground           : @defaultColor;
   @textColor                      : @blueZodiak;
+  @iconColor                      : @lightGrayishBlue;
 
   // Input
   @inputBorderColor               : @defaultColor;
@@ -228,9 +230,10 @@ components: {
 | `@defaultColor`   | Основной цвет (заливка полей, фон, кнопки по умолчанию)| ![#ECF2FB](https://placehold.it/15/ECF2FB/000000?text=+) `#ECF2FB`                     |
 | `@primaryColor`   | Основной цвет (кнопки с классом `primary`, чекбоксы)   | @cobaltBlue: ![#0C49CD](https://placehold.it/15/0C49CD/000000?text=+) `#0C49CD`        |
 | `@accentColor`    | Акцентный цвет (акцентные элементы управления)         | ![#E94B3D](https://placehold.it/15/E94B3D/000000?text=+) `#E94B3D`                     |
-| `@secondaryColor` | Вспомогательный цвет (кнопка secondary, ссылки)        | @aliceBlue:  ![#F4F7FB](https://placehold.it/15/F4F7FB/000000?text=+) `#F4F7FB`        |
+| `@secondaryColor` | Вспомогательный цвет (кнопка secondary, ссылки)        | ![#7699B3](https://placehold.it/15/7699B3/000000?text=+) `#7699B3`                     |
 | `@textColor`      | Цвет текста                                            | @blueZodiak: ![#3B4256](https://placehold.it/15/3B4256/000000?text=+) `#3B4256`        |
 | `@iconColor`      | Иконки в полях                                         | @lightGrayishBlue: ![#848E99](https://placehold.it/15/848E99/000000?text=+) `#848E99`  |
+| `@disabledColor`  | Недоступные элементы управления                        | @lightGrayishBlue: ![#848E99](https://placehold.it/15/848E99/000000?text=+) `#848E99`  |
 
 ### Интерактивные
 
