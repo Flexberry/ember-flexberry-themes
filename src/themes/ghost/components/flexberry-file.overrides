@@ -50,6 +50,7 @@
     .icon {
       font-family: @iconFontName;
       font-size: @iconFontSize;
+      height: auto;
     }
 
     &.flexberry-file-add-button .icon:before {

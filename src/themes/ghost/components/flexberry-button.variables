@@ -31,7 +31,7 @@
 // Accent
 @accentTextColor          : @invertedTextColor;
 // Lined
-@linedBoxShadow           : 0 0 0 1px @hawkesBluel inset;
+@linedBoxShadow           : 0 0 0 1px @hawkesBlue inset;
 // Empty
 @emptyBackgroundColor     : transparent;
 @emptyColor               : @lightGrayishBlue;
