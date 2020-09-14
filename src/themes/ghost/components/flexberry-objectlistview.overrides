@@ -718,11 +718,10 @@ tbody tr td .icon.button.hierarchy-expand {
     }
   }
   .ui.form .ui.input.nav-bar-search-page {
-    width: 53px;
+    width: @mobileSearchPageButtonWidth;
     input {
-      font-size: 12px;
-      padding-top: 7px;
-      padding-bottom: 6px;
+      font-size: @mobilesSarchPageButtonFontSize;
+      padding: @mobileSearchPageButtonPadding;
     }
   }
 }
@@ -736,12 +735,12 @@ tbody tr td .icon.button.hierarchy-expand {
 
   i.icon.sort.content.descending:before {
     font-family: @iconFontFamily;
-    content: "\e92c";
-    font-size: 12px;
+    content: @mobileSortingSettingButtonDescIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
   }
   i.icon.sort.content.ascending:before {
     font-family: @iconFontFamily;
-    content: "\e92a";
-    font-size: 12px;
+    content: @mobileSortingSettingButtonAscIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
   }
 }
