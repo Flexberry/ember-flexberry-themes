@@ -1,0 +1,9 @@
+/* Close Icon */
+.ui.message > .close.icon {
+    font-family: @uiMessageIconFont;
+    right: @uimessageIconPositionRight;
+
+    &::before {
+        content: @uimessageCloseIcon;
+    }
+}

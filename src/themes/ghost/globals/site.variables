@@ -98,7 +98,17 @@
     Scroll Bars
 --------------------*/
 
-@useCustomScrollbars: false;
+@customScrollbarWidth: 12px;
+@customScrollbarHeight: 4px;
+
+@trackBackground: transparent;
+@trackBooxShadow: inset 0 0 10px 10px @hawkesBlue;
+@thumbBorderRadius: 1ex;
+@thumbBackground: @lightGrayishBlue;
+
+@thumbInactiveBackground: @lightGrayishBlue;
+@thumbHoverBackground: @lightGrayishBlue;
+@thumbBorder: 4px solid transparent;
 
 
 /*-------------------
@@ -146,10 +156,7 @@
 /*-------------------
    Icon Variables
 --------------------*/
-@cornerIconInvertedShadow: @blue;
-
-@colorIcon : @blue;
-@colorIconBorder: @blue;
+@iconFont: 'guideline-icons';
 
 /*-------------------
         Page

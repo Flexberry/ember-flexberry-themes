@@ -48,7 +48,7 @@
   }
 }
 
-.flexberry-lookup.search>.ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
+.flexberry-lookup.search:not(.error) > .ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
     border-right-color: @lookupFieldFocusBorderColor !important;
 }
 
@@ -200,5 +200,9 @@
     &::before {
       content: @lookupLoadingIconBefore;
     }
+  }
+
+  .flexberry-sidepage #lookup-list .flexberry-objectlistview {
+    max-height: none;
   }
 }

@@ -92,7 +92,7 @@
 *******************************/
 
 .pusher.mobile .full.height {
-  height: calc(~"100vh - @{headerHeightMobile} - @{footerHeight}");
+  height: calc(~"100vh - @{headerHeightMobile} - @{footerHeightMobile}");
 }
 
 .mobile {

@@ -3,4 +3,16 @@
 
 @import (multiple) '../../theme.config';
 
+.dimmable:not(body) {
+  min-height: calc(~'100vh - @{headerHeight}');
+  > .dimmer {
+    position: fixed;
+  }
+}
+
+.mobile {
+  .dimmable:not(body) {
+    min-height: calc(~'100vh - @{headerHeightMobile}');
+  }
+}
 .loadUIOverrides();

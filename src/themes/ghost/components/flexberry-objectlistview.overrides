@@ -68,6 +68,7 @@ table.object-list-view.selectable {
   align-items: center;
   min-height: 0em;
   min-width: 100%;
+  margin-left: 0;
 
   /* Toolbar buttons */
 
@@ -102,8 +103,13 @@ table.object-list-view.selectable {
     }
 
     // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button .icon {
-      font-family: @hierarchicalButtonFontFamily;
+    &.hierarchical-button {
+      &:first-child {
+        padding-left: 0;
+      }
+      .icon {
+        font-family: @hierarchicalButtonFontFamily;
+      }
     }
 
     &.refresh-button,
@@ -458,7 +464,8 @@ tbody tr td .icon.button.hierarchy-expand {
   min-width: 100%;
 
   .prev-page-button,
-  .next-page-button {
+  .next-page-button,
+  .goto-page-button {
     &:before {
       font-family: @navBarPrevNextButtonsBeforeFontFamily;
       font-size: @navBarPrevNextButtonsBeforeFontSize;
@@ -470,7 +477,8 @@ tbody tr td .icon.button.hierarchy-expand {
     content: @navBarPrevButtonBeforeContent;
   }
 
-  .next-page-button::before {
+  .next-page-button::before,
+  .goto-page-button::before {
     content: @navBarNextButtonBeforeContent;
   }
 
@@ -506,6 +514,7 @@ tbody tr td .icon.button.hierarchy-expand {
 
 .ui.input.nav-bar-search-page {
   align-self: flex-start;
+  width: 100%;
   .ui.button {
     margin: auto;
     position: relative;
@@ -550,6 +559,8 @@ tbody tr td .icon.button.hierarchy-expand {
 
   .flexberry-objectlistview {
     max-height: @olvMobileMaxHeight;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .flexberry-olv-toolbar {
@@ -699,4 +710,11 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
+}
+
+.ui.button.mobile-sorting-setting-button {
+  white-space: @navbarSortingMobileWhiteSpace;
+  overflow: @navbarSortingMobileOverflow;
+  text-overflow: @navbarSortingMobileTextOverflow;
+  padding: @navbarSortingMobilePaddind;
 }
