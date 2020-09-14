@@ -4,6 +4,7 @@
 @formVerticalPadding: @distanceS;
 @formHorizontalPaddding: @distanceL;
 @formPadding: 1px @formHorizontalPaddding;
+@rowDistance: 1em;
 
 // Header
 @formHeaderBackground: @simplePageBackground;

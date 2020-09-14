@@ -1,28 +1,18 @@
 .flexberry-colsconfig {
-  th {
-    > .input {
-      input.setting-name {
-        width: 250px;
-      }
-    }
-    .ui.action.input .ui.button {
-      display: inline-flex;
-    }
-  }
 
   i.icon:not(.sort) {
-    font-family: guideline-icons;
+    font-family: @iconsFontFamily;
     &.unhide::before {
-      content: "\e917";
+      content: @unhideIcon;
     }
     &.hide::before {
-      content: "\e918";
+      content: @hideIcon;
     }
     &.chevron.up::before {
-      content: "\e90a";
+      content: @chevronUpIcon;
     }
     &.chevron.down::before {
-      content: "\e904";
+      content: @chevronDownIcon;
     }
   }
 
@@ -36,6 +26,21 @@
     i.icon {
       font-size: @glyphWidth;
     }
+  }
+
+  .cols-config-apply,
+  .cols-config-save {
+    color: @colsconfigButtonColor;
+    background: @colsconfigButtonBackground;
+    padding-left: @colsconfigButtonHorizontalPadding;
+    padding-right: @colsconfigButtonHorizontalPadding;
+  }
+
+  .large.icon,
+  thead th,
+  tfoot th {
+    color: @colsconfigLargeIconColor;
+    font-weight: 500;
   }
 
   .ui.table {
@@ -78,21 +83,6 @@
           color: @colsconfigDisabledColor;
         }
       }
-    }
-
-    .large.icon,
-    thead th,
-    tfoot th {
-      color: @colsconfigLargeIconColor;
-      font-weight: 500;
-    }
-
-    .cols-config-apply,
-    .cols-config-save {
-      color: @colsconfigButtonColor;
-      background: @colsconfigButtonBackground;
-      padding-left: @colsconfigButtonHorizontalPadding;
-      padding-right: @colsconfigButtonHorizontalPadding;
     }
 
     .ui.action.input:not([class*="left action"]) > .button.cols-config-save:last-child {
@@ -149,5 +139,42 @@
   .header {
     font-family: @fontName;
     font-size: @messageFontSize;
+  }
+}
+
+/*  Mobile */
+
+.flexberry-colsconfig {
+  .colsconfig-prop {
+    border-top: @propDividerMobile;
+    padding: @propPaddingMobile;
+  }
+
+  .colsconfig-actions {
+    background: @actionsBackground;
+    border-radius: @defaultBorderRadius;
+    .ui.button.disabled {
+      background: none;
+    }
+  }
+
+  .flexberry-menu i.icon.ellipsis.vertical {
+    width: auto;
+    &::before {
+      content: @ellipsisVerticalIconMobile;
+    }
+  }
+
+  .flexberry-menu i.icon.plus:before {
+    content: @plusIconMobile;
+  }
+}
+
+.colsconfig-actions .ui.button .icon {
+  &.chevron.up::before {
+    content: @chevronUpIconMobile;
+  }
+  &.chevron.down::before {
+    content: @chevronDownIconMobile;
   }
 }

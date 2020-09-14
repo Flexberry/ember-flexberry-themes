@@ -63,8 +63,6 @@
     Scroll Bars
 --------------------*/
 
-// @useCustomScrollbars: true;
-
 @customScrollbarWidth: 9px;
 @customScrollbarHeight: 8px;
 
