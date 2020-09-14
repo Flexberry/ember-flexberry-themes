@@ -615,23 +615,39 @@ tbody tr td .icon.button.hierarchy-expand {
 
   // check rows menu
   .check-rows-container {
+    background: @background;
+    bottom: @checkRowsContainerBottom;
+    box-shadow: @checkRowsContainerBoxShadow;
     display: @checkRowsContainerDisplay;
+    align-items: center;
+    min-height: @checkRowsContainerHeight;
+    padding: 0 9px;
     position: @checkRowsContainerPosition;
     left: @checkRowsContainerLeft;
     right: @checkRowsContainerRight;
-    bottom: @checkRowsContainerBottom;
-    background: @background;
-    box-shadow: @checkRowsContainerBoxShadow;
     z-index: @checkRowsContainerZIndex;
 
-    .check-rows-button,
-    .check-all-at-page-button {
-      background: @checkRowsButtonBackgroud;
-      margin: @checkRowsButtonMargin;
-      padding: @checkRowsButtonPadding;
+    .flexberry-menu {
+      height: auto;
+      border: none;
+      &::before {
+        content: @checkRowsButtonIcon;
+        font-family: @iconFontFamily;
+        font-size: @checkRowsButtonIconFontSize;
+        color: @secondaryColor;
+      }
+      &.ui.dropdown > .dropdown.icon::before {
+        content: "\e905";
+      }
     }
 
-    i.icon.icon-guideline-check-menu,
+    .check-all-at-page-button {
+      background: @checkRowsButtonBackgroud;
+      i.icon.check-square-o::before {
+        content: @checkRowsButtonIcon;
+      }
+    }
+
     i.icon.check-square-o {
       font-family: @iconFontFamily;
       font-size: @checkRowsButtonIconFontSize;
@@ -639,36 +655,25 @@ tbody tr td .icon.button.hierarchy-expand {
       width: @checkRowsButtonIconWidth;
     }
 
-    .check-all-at-page-button {
-      padding: @checkRowsButtonGEPadding;
-      font-size: @checkRowsButtonGEFontSize;
-
-      i.icon.check-square-o::before {
-        content: @checkRowsButtonGEIcon;
-      }
-    }
-
     .count-selected-rows {
-      margin-top: @countSelectedRowsMarginTop;
       color: @countSelectedRowsColor;
       line-height: @countSelectedRowsLineHeight;
     }
 
     .delete-button {
-      margin: @deleteRowsButtonMargin;
       color: @deleteRowsButtonColor;
       background: @deleteRowsButtonBackground;
     }
 
     .clear-select-button {
-      margin-left: @clearSelectButtonMarginLeft;
       background: @clearSelectButtonBackground;
-      padding-top: @clearSelectButtonPaddingTop;
+      margin-left: @clearSelectButtonMarginLeft;
+      line-height: 1;
 
       .remove.icon {
         font-family: @iconFontFamily;
         font-size: @clearSelectButtonFontSize;
-        margin: @clearSelectButtonMargin;
+        width: @checkRowsButtonIconWidth;
 
         &::before {
           content: @clearSelectButtonIcon;
