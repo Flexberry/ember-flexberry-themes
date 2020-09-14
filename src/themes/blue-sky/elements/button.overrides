@@ -721,3 +721,7 @@ div.ui.secondary.menu.no-margin {
 .ui.right.floated.tiny.primary.compact.button:hover {
     border: 1px solid @uiBorderColor;
 }
+
+.colsconfig-actions .ui.button{
+    font-size: @tiny;
+}

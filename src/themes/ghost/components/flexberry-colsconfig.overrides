@@ -186,21 +186,8 @@
       order: 1;
     }
   }
+}
 
-  .ui.form .two.fields.unstackable > .field {
-    width: 50% !important;
-  }
-  .ui.form .flexberry-colsconfig .fields.object-list-view-filters,
-  .ui.form .fields.unstackable {
-    margin: 0 -0.5em;
-  }
-  .ui.form .fields.unstackable > .field {
-    padding: 0 0.5em;
-    > .field {
-      padding: 0 0.5em;
-    }
-  }
-} 
 /*  Mobile */
 
 .flexberry-colsconfig {

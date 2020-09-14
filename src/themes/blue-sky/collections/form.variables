@@ -25,3 +25,6 @@
 /* Input Focus */
 @inputFocusBorderColor: @inputBorderColor;
 @inputFocusBorderRadius: 0px;
+
+@filterMobileConditionWidth: 150px;
+@filterMobilePropWidth: calc(~'100% - 55px')!important;
