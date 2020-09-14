@@ -43,7 +43,7 @@
 @form       : 'ghost';
 @grid       : 'default';
 @menu       : 'ghost';
-@message    : 'default';
+@message    : 'ghost';
 @table      : 'ghost';
 
 /* Modules */
@@ -93,6 +93,7 @@
 @flexberry-validationsummary: 'ghost';
 @flexberry-colsconfig: 'ghost';
 @flexberry-input: 'ghost';
+@flexberry-uimessage: 'ghost';
 @flexberry-validationmessage: 'ghost';
 
 /* Forms */
