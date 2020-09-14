@@ -161,9 +161,12 @@ option {
     > .field {
         width: @oneWide;
     }
-    .button {
+    > .button {
         padding-top: 0;
         padding-bottom: 0;
+        &:hover i.icon::before {
+            color: #FFFFFF;
+        }
     }
 }
 
