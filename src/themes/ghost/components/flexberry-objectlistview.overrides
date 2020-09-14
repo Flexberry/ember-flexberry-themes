@@ -630,6 +630,7 @@ tbody tr td .icon.button.hierarchy-expand {
     .flexberry-menu {
       height: auto;
       border: none;
+      margin: 0;
       &::before {
         content: @checkRowsButtonIcon;
         font-family: @iconFontFamily;
@@ -658,11 +659,15 @@ tbody tr td .icon.button.hierarchy-expand {
     .count-selected-rows {
       color: @countSelectedRowsColor;
       line-height: @countSelectedRowsLineHeight;
+      margin: 0 1em;
     }
 
     .delete-button {
       color: @deleteRowsButtonColor;
       background: @deleteRowsButtonBackground;
+      .icon {
+        display: none;
+      }
     }
 
     .clear-select-button {
