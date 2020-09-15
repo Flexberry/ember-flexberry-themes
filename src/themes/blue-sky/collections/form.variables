@@ -29,6 +29,8 @@
 @filterMobileConditionWidth: 150px;
 @filterMobilePropWidth: calc(~'100% - 55px')!important;
 
+@background: @white;
+
 /* Selected row menu */
 @checkRowsContainerDisplay      : flex;
 @checkRowsContainerPosition     : fixed;
