@@ -27,7 +27,7 @@
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
-@checkRowsButtonGEIcon: "\e928";
+@checkRowsButtonIcon: "\e928";
 
 /*-----------------------
    Helper buttons In Row

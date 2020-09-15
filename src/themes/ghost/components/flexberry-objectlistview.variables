@@ -229,34 +229,28 @@
 
 
 /* Selected row menu */
-@olvContainerPosition: relative;
-@checkRowsContainerDisplay: flex;
-@checkRowsContainerPosition: fixed;
-@checkRowsContainerLeft: 0;
-@checkRowsContainerRight: 0;
-@checkRowsContainerBottom: 0;
-@checkRowsContainerBoxShadow: 0 -0.063em 0.313em rgba(0, 0, 0, 0.1);
-@checkRowsContainerZIndex: 10;
-@checkRowsButtonBackgroud: transparent;
-@checkRowsButtonMargin: 0;
-@checkRowsButtonPadding: 0.5em 0.375em 0.5em 0.688em;
-@checkRowsButtonIconFontSize: 1.125rem;
-@checkRowsButtonIconWidth: auto;
-@checkRowsButtonGEPadding: 0.313em 0.857em 0 1.429em;
-@checkRowsButtonGEIcon: "\e928";
-@checkRowsButtonGEFontSize: 1em;
-@countSelectedRowsMarginTop: 1em;
-@countSelectedRowsColor: #000;
-@countSelectedRowsLineHeight: 1.5em;
-@deleteRowsButtonMargin: 0.25em 1em;
-@deleteRowsButtonColor: #7699B3;
-@deleteRowsButtonBackground: #F3F7FB;
-@clearSelectButtonMarginLeft: auto;
-@clearSelectButtonBackground: transparent;
-@clearSelectButtonPaddingTop: 1.214em;
-@clearSelectButtonFontSize: 1.5em;
-@clearSelectButtonMargin: 0;
-@clearSelectButtonIcon: "\e90e";
+@checkRowsContainerHeight        : 56px;
+@checkRowsContainerPadding        : 56px;
+@olvContainerPosition            : relative;
+@checkRowsContainerDisplay       : flex;
+@checkRowsContainerPosition      : fixed;
+@checkRowsContainerLeft          : 0;
+@checkRowsContainerRight         : 0;
+@checkRowsContainerBottom        : 0;
+@checkRowsContainerBoxShadow     : 0 -0.063em 0.313em rgba(0, 0, 0, 0.1);
+@checkRowsContainerZIndex        : 10;
+@checkRowsButtonBackgroud        : transparent;
+@checkRowsButtonIconFontSize     : 1.125rem;
+@checkRowsButtonIconWidth        : auto;
+@countSelectedRowsColor          : #000;
+@countSelectedRowsLineHeight     : 1.5em;
+@deleteRowsButtonColor           : #7699B3;
+@deleteRowsButtonBackground      : #F3F7FB;
+@clearSelectButtonMarginLeft     : auto;
+@clearSelectButtonBackground     : transparent;
+@clearSelectButtonFontSize       : 1.5em;
+@checkRowsButtonIcon             : "\e928";
+@clearSelectButtonIcon           : "\e90e";
 
 /* Row controls */
 @rowControlsBackground: @aliceBlue;
