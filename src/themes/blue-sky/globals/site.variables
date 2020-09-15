@@ -45,6 +45,7 @@
 --------------------*/
 
 /*---  Colors  ---*/
+@primaryColorHover    : saturate(darken(@primaryColor, 5), 10, relative);
 @dropdownHoveredItemColor: #dcebfc;
 
 /*-------------------

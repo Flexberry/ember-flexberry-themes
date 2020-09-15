@@ -74,7 +74,6 @@
   border-radius: @defaultBorderRadius;
   border: @flexberryMenuBorder;
   max-height: @menuMaxHeight;
-  overflow-y: auto;
 }
 
 .ui.icon.button.flexberry-menu > i.icon.bordered {

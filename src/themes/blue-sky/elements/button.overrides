@@ -19,12 +19,16 @@
     }
 }
 
-.ui.small.button:not(.goto-page-button) {
+.ui.small.button {
     border: none;
     font-size: 14px;
     &:hover {
         background: #d01919;
     }
+}
+
+.ui.small.button.goto-page-button:hover {
+    background-color: @primaryColorHover;
 }
 
 .ui.buttons .disabled.button {
