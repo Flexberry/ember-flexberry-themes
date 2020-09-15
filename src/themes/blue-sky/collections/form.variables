@@ -26,6 +26,9 @@
 @inputFocusBorderColor: @inputBorderColor;
 @inputFocusBorderRadius: 0px;
 
+@filterMobileConditionWidth: 150px;
+@filterMobilePropWidth: calc(~'100% - 55px')!important;
+
 /* Selected row menu */
 @checkRowsContainerDisplay      : flex;
 @checkRowsContainerPosition     : fixed;

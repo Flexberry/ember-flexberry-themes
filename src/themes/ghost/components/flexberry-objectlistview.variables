@@ -220,6 +220,13 @@
 @navbarMobileHeight: 3rem;
 @navbarMobileButtonWidth: 2rem;
 @navbarMobileButtonPadding: 0 0.625rem;
+@mobilesSarchPageButtonFontSize: 12px;
+@mobileSearchPageButtonWidth: 53px;
+@mobileSearchPageButtonPadding: 7px @inputHorizontalPadding 6px;
+@mobileSortingSettingButtonDescIcon: "\e92c";
+@mobileSortingSettingButtonAscIcon: "\e92a";
+@mobileSortingSettingButtonFontSize: 12px;
+
 
 /* Selected row menu */
 @checkRowsContainerHeight        : 56px;

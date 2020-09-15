@@ -99,7 +99,7 @@
 --------------------*/
 
 @customScrollbarWidth: 12px;
-@customScrollbarHeight: 4px;
+@customScrollbarHeight: 12px;
 
 @trackBackground: transparent;
 @trackBooxShadow: inset 0 0 10px 10px @hawkesBlue;

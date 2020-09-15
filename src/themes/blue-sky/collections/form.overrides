@@ -137,6 +137,63 @@ option {
     padding-top: 20px;
 }
 
+.flexberry-colsconfig {
+    .colsconfig-prop {
+        padding: 1em 0;
+    }
+
+    .colsconfig-prop-name span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .mobile & .colsconfig-actions .ui.button:first-child {
+        margin-left: 0;
+    }
+}
+
+.flexberry-colsconfig .fields.object-list-view-filters > .field:nth-child(2) {
+    max-width: @filterMobileConditionWidth;
+}
+
+.ui[class*="equal width"].form .flexberry-colsconfig .fields.object-list-view-filters {
+    margin-bottom: 1em;
+
+    > .field {
+        width: @oneWide;
+    }
+    > .button {
+        padding-top: 0;
+        padding-bottom: 0;
+        &:hover i.icon::before {
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.form .fields.unstackable {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+    .ui[class*="equal width"].form .flexberry-colsconfig .fields.object-list-view-filters > .field {
+        &:nth-child(1){
+            width: @filterMobilePropWidth;
+        }
+        &:nth-child(3) {
+            width: auto !important;
+          }
+        &:nth-child(2),
+        &:nth-child(3) {
+            order: 1;
+        }
+    }
+
+    .ui.form .two.fields.unstackable > .field {
+        width: 50% !important;
+    }
+}
 .check-rows-container {
     background: @background;
     bottom: @checkRowsContainerBottom;

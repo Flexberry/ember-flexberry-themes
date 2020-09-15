@@ -588,6 +588,13 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 
   .object-list-view-single-column-cell {
+    &::after {
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
     .inline.fields {
       margin: @olvMobileFieldMargin;
     }
@@ -720,6 +727,13 @@ tbody tr td .icon.button.hierarchy-expand {
       }
     }
   }
+  .ui.form .ui.input.nav-bar-search-page {
+    width: @mobileSearchPageButtonWidth;
+    input {
+      font-size: @mobilesSarchPageButtonFontSize;
+      padding: @mobileSearchPageButtonPadding;
+    }
+  }
 }
 
 .ui.button.mobile-sorting-setting-button {
@@ -727,4 +741,16 @@ tbody tr td .icon.button.hierarchy-expand {
   overflow: @navbarSortingMobileOverflow;
   text-overflow: @navbarSortingMobileTextOverflow;
   padding: @navbarSortingMobilePaddind;
+  margin-right: 20px;
+
+  i.icon.sort.content.descending:before {
+    font-family: @iconFontFamily;
+    content: @mobileSortingSettingButtonDescIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
+  }
+  i.icon.sort.content.ascending:before {
+    font-family: @iconFontFamily;
+    content: @mobileSortingSettingButtonAscIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
+  }
 }

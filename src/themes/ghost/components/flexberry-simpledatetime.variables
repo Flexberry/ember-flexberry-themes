@@ -67,7 +67,7 @@
 @dayBackgroundHover: @inputBackground;
 @dayBorderColorHover: @inputBorderColor;
 @prevAndNextMonthDayColor: @linkWater;
-@prevAndNextMonthDayColorHover: @textColor;
+// @prevAndNextMonthDayColorHover: @textColor;
 @selectedDayColor: #FFFFFF;
 @selectedBackgroundColor: @defaultFocusBorderColor;
 @selectedBorderColor: @defaultFocusBorderColor;

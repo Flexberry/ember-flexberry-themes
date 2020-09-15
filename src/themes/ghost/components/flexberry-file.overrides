@@ -70,6 +70,10 @@
   }
 }
 
+.flexberry-file-image-preview-wrapper.ui.small.image .flexberry-file-image-preview {
+  max-width: 100%;
+}
+
 /* Error */
 .flexberry-file.error .ui.action.input:not([class*="left action"]) {
 
@@ -96,4 +100,7 @@
 
 .flexberry-file.mobile {
   padding: 0 1rem;
+  .flexberry-file-add-button {
+    align-self: start;
+  }
 }

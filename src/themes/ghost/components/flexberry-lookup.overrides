@@ -90,21 +90,23 @@
 // Icons
 .flexberry-lookup > .ui.input > {
   .ui.button > .icon {
-    font-family: @lookupIconFont;
     margin: @lookupIconMargin;
     height: @lookupIconHeight;
   }
 
   .remove.icon::before {
-    content: "\e90e";
+    font-family: @lookupIconFont;
+    content: @removeButtonIcon;
   }
 
   .change.icon::before {
-    content: @lookupChangeButtonIcon;
+    font-family: @lookupIconFont;
+    content: @changeButtonIcon;
   }
 
   .eye.icon::before {
-    content: "\e917";
+    font-family: @lookupIconFont;
+    content: @showPreviewButton;
   }
 }
 
@@ -188,7 +190,7 @@
       font-size: @lookupIconFontSize;
 
       &::before {
-        content: @lookupChangeButtonIcon;
+        content: @changeButtonIcon;
       }
     }
   }
