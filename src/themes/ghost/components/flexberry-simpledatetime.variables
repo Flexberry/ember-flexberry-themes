@@ -28,13 +28,13 @@
 @monthControlPaddingTop: 0.909em;
 @monthControlSvgDisplay: none;
 @monthControlDefaultColor: @textColor;
-@monthControlHoverColor:  @accentColor;
+@monthControlHoverColor:  @activeColor;
 @prevMonthControlPaddingLeft: 0.909em;
 @nextMonthControlPaddingRight: 0.909em;
 @currentMonthPaddingTop: 0.105em;
 @monthDropdownBackground: none;
 @yearBlockBackground: none;
-@yearControlColor: @secondaryColor;
+@yearControlColor: @lightGrayishBlue;
 @arrowBorderDefault: none;
 @arrowYearControlColor: @textColor;
 @arrowYearControlPaddingLeft: 0.263em;
@@ -52,7 +52,7 @@
 @weekdayContainerPaddingTop: 0.5em;
 @weekdayContainerPaddingBottom: 0.571em;
 @weekdayContainerBottomBorder: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;
-@weekdayColor: @secondaryColor;
+@weekdayColor: @lightGrayishBlue;
 @weekdayFontSize: 1em;
 @weekdayFontWeight: @defaultNormalFontWeight;
 @firstWeekdayMarginLeft: -0.714em;
@@ -86,7 +86,7 @@
 @timeControlBackgroundHover: @inputBackground;
 @timeControlBorderHover: 0.071em @defaultBorderStyle @inputHoverBorderColor;
 @timeControlInputBackgroundHover: transparent;
-@arrowTimeControlBorderColor: @secondaryColor;
+@arrowTimeControlBorderColor: @lightGrayishBlue;
 @arrowTimeControlBorderColorHover: @textColor;
 @hourTimeControlMarginLeft: 3.214em;
 @hourTimeControlMarginRight: 0.286em;

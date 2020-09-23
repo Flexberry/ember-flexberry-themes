@@ -194,49 +194,64 @@ components: {
 Цветовая схема задается в `globals/site.variables`
 
 ```less
-  /*------------------------
-          COLOR SCHEME
-  -------------------------*/
-  // main
-  @primaryColor          : @cobaltBlue;
-  @accentColor           : @mayaBlue;
-  @secondaryColor        : @lightGrayishBlue;
+  /*******************************
+            COLOR SCHEME
+  *******************************/
+
+  // Main
+  @defaultColor                   : #ECF2FB;
+  @primaryColor                   : @cobaltBlue;
+  @activeColor                    : @mayaBlue;
+  @accentColor                    : #E94B3D;
+  @secondaryColor                 : #7699B3;
+  @disabledColor                  : @lightGrayishBlue;
 
   // Sidebar
-  @sidebarBackgroundColor: @textColor;
+  @sidebarBackgroundColor         : @textColor;
 
   // Page
-  @pageBackground        : @aliceBlue;
-  @textColor             : @blueZodiak;
+  @simplePageBackground           : @defaultColor;
+  @textColor                      : @blueZodiak;
+  @iconColor                      : @lightGrayishBlue;
 
   // Input
-  @inputBorderColor      : @aliceBlue;
-  @inputBackground       : @aliceBlue;
-  @inputHoverBorderColor : @chambray;
+  @inputBorderColor               : @defaultColor;
+  @inputBackground                : @defaultColor;
+  @inputHoverBorderColor          : @chambray;
 
-  @defaultInputFocusBackground   : @white;
-  @focusedFormBorderColor : @accentColor;
+  @defaultInputFocusBackground    : @white;
+  @defaultFocusBorderColor        : @activeColor;
+  @focusedFormBorderColor         : @activeColor;
 ```
 ### Список основных цветов
 
 | Свойство          | Описание                                               | Дефолтное значение                                                                     |
 |-------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------|
-| `@primaryColor`   | Основной цвет (кнопки с классом primary, чекбоксы)     | @cobaltBlue: ![#0C49CD](https://placehold.it/15/0C49CD/000000?text=+) `#0C49CD`        |
-| `@accentColor`    | акцентный цвет (цвет поля в фокусе, значек сортировки) | @mayaBlue: ![#62B0FF](https://placehold.it/15/62B0FF/000000?text=+) `#62B0FF`          |
-| `@secondaryColor` | вспомогательный цвет (недоступные элементы управления) | @lightGrayishBlue: ![#848E99](https://placehold.it/15/848E99/000000?text=+) `#848E99`  |
-| `@textColor`      | цвет текста                                            | @blueZodiak: ![#3B4256](https://placehold.it/15/3B4256/000000?text=+) `#3B4256`        |
+| `@defaultColor`   | Основной цвет (заливка полей, фон, кнопки по умолчанию)| ![#ECF2FB](https://placehold.it/15/ECF2FB/000000?text=+) `#ECF2FB`                     |
+| `@primaryColor`   | Основной цвет (кнопки с классом `primary`, чекбоксы)   | @cobaltBlue: ![#0C49CD](https://placehold.it/15/0C49CD/000000?text=+) `#0C49CD`        |
+| `@accentColor`    | Акцентный цвет (акцентные элементы управления)         | ![#E94B3D](https://placehold.it/15/E94B3D/000000?text=+) `#E94B3D`                     |
+| `@secondaryColor` | Вспомогательный цвет (кнопка secondary, ссылки)        | ![#7699B3](https://placehold.it/15/7699B3/000000?text=+) `#7699B3`                     |
+| `@textColor`      | Цвет текста                                            | @blueZodiak: ![#3B4256](https://placehold.it/15/3B4256/000000?text=+) `#3B4256`        |
+| `@iconColor`      | Иконки в полях                                         | @lightGrayishBlue: ![#848E99](https://placehold.it/15/848E99/000000?text=+) `#848E99`  |
+| `@disabledColor`  | Недоступные элементы управления                        | @lightGrayishBlue: ![#848E99](https://placehold.it/15/848E99/000000?text=+) `#848E99`  |
 
+### Интерактивные
+
+| Свойство          | Описание                                               | Дефолтное значение                                                                     |
+|-------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `@activeColor`    | Активный элемент (focus)                               | @mayaBlue:   ![#62B0FF](https://placehold.it/15/62B0FF/000000?text=+) `#62B0FF`        |
+| `@negativeColor`  | Ошибка (error)                                         | @cinnabar:   ![#E53935](https://placehold.it/15/E53935/000000?text=+) `#E53935`        |
 
 ### Список цветов полей на форме
 
-Применяется ко всем элементам управления 
-flexberry-field, flexberry-dropdown, flexberry-lookup и тд.(проверить)
+Применяется ко всем компонентам для ввода данных
+`flexberry-field`, `flexberry-dropdown`, `flexberry-lookup` и тд.
 
-| Свойство                       | Описание                              | Дефолтное значение                                                               |
-|--------------------------------|---------------------------------------|----------------------------------------------------------------------------------|
-| `@inputBorderColor`            | цвет бордера поля                     | @aliceBlue: ![#F4F7FB](https://placehold.it/15/F4F7FB/000000?text=+) `#F4F7FB`   |
-| `@inputHoverBorderColor`       | цвет бордера поля при наведении       | @chambray: ![#B3BBC3](https://placehold.it/15/B3BBC3/000000?text=+) `#B3BBC3`    |
-| `@inputBackground`             | цвет заливки поля                     | @aliceBlue: ![#F4F7FB](https://placehold.it/15/F4F7FB/000000?text=+) `#F4F7FB`   |
-| `@defaultInputFocusBackground` | цвет заливки поля, когда оно в фокусе | @white: ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF`       |
-| `@focusedFormBorderColor`      | цвет бордера поля, когда оно в фокусе | @accentColor: ![#62B0FF](https://placehold.it/15/62B0FF/000000?text=+) `#62B0FF` |
+| Свойство                       | Описание                              | Дефолтное значение                                                                |
+|--------------------------------|---------------------------------------|-----------------------------------------------------------------------------------|
+| `@inputBorderColor`            | Цвет бордера поля                     | @defaultColor: ![#ECF2FB](https://placehold.it/15/ECF2FB/000000?text=+) `#ECF2FB` |
+| `@inputHoverBorderColor`       | Цвет бордера поля при наведении       | @chambray:     ![#B3BBC3](https://placehold.it/15/B3BBC3/000000?text=+) `#B3BBC3` |
+| `@inputBackground`             | Цвет заливки поля                     | @defaultColor: ![#ECF2FB](https://placehold.it/15/ECF2FB/000000?text=+) `#ECF2FB` |
+| `@defaultInputFocusBackground` | Цвет заливки поля, когда оно в фокусе | @white:        ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF` |
+| `@focusedFormBorderColor`      | Цвет бордера поля, когда оно в фокусе | @activeColor:  ![#62B0FF](https://placehold.it/15/62B0FF/000000?text=+) `#62B0FF` |
 

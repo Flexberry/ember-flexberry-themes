@@ -1,73 +1,53 @@
 // Standart
-@backgroundColor: @aliceBlue;
+@backgroundColor: @defaultColor;
 
 @fontWeight: @defaultMediumFontWeight;
-@lineHeight: unit(22 / 14, em);
+@verticalPadding: unit(13 / 14, em);
 @horizontalPadding: unit(12 / 14, em);
+@textColor: @blueZodiak;
+
+/* Icon */
 @iconOpacity: 1;
-@textColor: @lightGrayishBlue;
 
 /* Hovered */
-@hoverBackgroundColor: @backgroundColor;
-@secondaryHoverBoxShadow: 0 0 0 1px @primaryColor inset;
+@hoverBackgroundColor: saturate(darken(@backgroundColor, 5), 10, relative);
+@secondaryHoverBoxShadow: 0 0 0 1px @secondaryColor inset;
 @iconHoverOpacity: 1;
 
 /* Focused */
 @focusBackgroundColor: @backgroundColor;
-@buttonFocusBoxShadow: 0 0 0 1px @accentColor inset;
+@buttonFocusBoxShadow: 0 0 0 1px @activeColor inset;
 @iconFocusOpacity: 1;
 
 /* Pressed Down */
-@downBackgroundColor: @hoverBackgroundColor;
-@downColor: @textColor;
+@downBackgroundColor      : @hoverBackgroundColor;
+@downColor                : @textColor;
 
 /* Disabled */
-@buttonDisabledBackground: @gray;
-@buttonDisabledColor: @lightGrayishBlue;
-@disabledBorderColor: @basicBackground;
+@buttonDisabledBackground : @gray;
+@buttonDisabledColor      : @disabledColor;
 
-// Primary
-@primaryColorFocus: @primaryColor;
-
-// Secondary
-@secondaryTextColor: @textColor;
-@secondaryColor: @backgroundColor;
-@secondaryColorHover: @secondaryColor;
-@secondaryColorActive: @secondaryColor;
-@secondaryColorFocus: @secondaryColor;
-
-
-// Basic
-
-@basicBackground: @backgroundColor;
-@borderColor: @hawkesBlue;
-
-@basicHoverBackground: @backgroundColor;
-@basicHoverTextColor: @textColor;
-@selectedBorderColor: @primaryColor;
-
-@basicDownBackground: @basicHoverBackground;
-@basicDownTextColor: @textColor;
-@basicDownBoxShadow: @secondaryHoverBoxShadow;
-
-@basicActiveBackground: @basicHoverBackground;
-@basicActiveTextColor: @textColor;
-@basicActiveBoxShadow: none;
-
-@basicGroupBorder: none;
+/* Ordinality */
+// Accent
+@accentTextColor          : @invertedTextColor;
+// Lined
+@linedBoxShadow           : 0 0 0 1px @hawkesBlue inset;
+// Empty
+@emptyBackgroundColor     : transparent;
+@emptyColor               : @lightGrayishBlue;
 
 /* Sizing */
-@buttonTinyPadding: unit(3 / 14, em) unit(7 / 14, em);
-@buttonSmallPadding: unit(5 / 14, em) unit(9 / 14, em);
-@buttonLargePadding: @relative12px 0.9375em;
-@buttonLargeLineHeight: 1.5em;
-@buttonBigPadding: @relative17px 1.1875em;
-@buttonBigLineHeight: 1.375em;
-@buttonHugePadding: unit(19 / 18, em) unit(23 / 18, em);
-@buttonHugeLineHeight: unit(26 / 18, em);
+@buttonTinyPadding        : unit(7 / 14, em) unit(7 / 14, em);
+@buttonSmallPadding       : unit(9 / 14, em) unit(9 / 14, em);
+@buttonLargePadding       : @relative12px 0.9375em;
+@buttonLargeLineHeight    : 1.5em;
+@buttonBigPadding         : @relative17px 1.1875em;
+@buttonBigLineHeight      : 1.375em;
+@buttonHugePadding        : unit(19 / 18, em) unit(23 / 18, em);
+@buttonHugeLineHeight     : unit(26 / 18, em);
 
-@small: @medium;
-@medium: 0.875rem;
-@large: 1rem;
-@big: 1rem;
-@huge: 1.125rem;
+@small  : @medium;
+@medium : 0.875rem;
+@large  : 1rem;
+@big    : 1rem;
+@huge   : 1.125rem;

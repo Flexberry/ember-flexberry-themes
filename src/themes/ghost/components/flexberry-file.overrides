@@ -50,6 +50,7 @@
     .icon {
       font-family: @iconFontName;
       font-size: @iconFontSize;
+      height: auto;
     }
 
     &.flexberry-file-add-button .icon:before {
@@ -86,7 +87,7 @@
     background-color: @negativeBackgroundColor;
     border: 1px solid @negativeBorderColor;
     border-left: none;
-    color: @secondaryColor;
+    color: @iconColor;
 
     &:hover {
       color: @textColor;

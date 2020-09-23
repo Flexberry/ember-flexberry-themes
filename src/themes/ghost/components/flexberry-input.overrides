@@ -9,6 +9,10 @@
   }
 }
 
+.ui.action.input .ui.button:not(.disabled):hover .icon {
+  color: @textColor;
+}
+
 .ui.input textarea {
   line-height: @textareaLineHeight;
   font-family: @pageFont;

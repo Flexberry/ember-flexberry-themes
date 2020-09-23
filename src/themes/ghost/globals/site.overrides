@@ -9,7 +9,7 @@ body {
 }
 
 [class*="secondary text"] {
-  color: @secondaryColor;
+  color: @lightGrayishBlue;
 }
 
 .small.text {
@@ -31,4 +31,8 @@ body ::-webkit-scrollbar-track {
 // for adressbar hide
 .mobile body {
   height: 100vh;
+}
+
+.object-list-view-helper-column .hidden {
+  display: none;
 }
