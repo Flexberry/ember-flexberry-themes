@@ -22,7 +22,7 @@
   }
 }
 
-.toggler-has-border {
+.has-border {
 	border: @togglerBorder;
 	border-color: @togglerBorderColor;
 	border-radius: @togglerBorderRadius;
@@ -30,7 +30,7 @@
   padding: @togglerPadding;
 }
 
-.toggler-has-shadow {
+.has-shadow {
   box-shadow: @togglerShadow;
   padding: @togglerPadding;
 }
