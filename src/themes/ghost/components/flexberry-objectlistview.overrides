@@ -220,6 +220,10 @@ table.object-list-view.selectable {
           content: "\e905";
         }
       }
+
+      .menu.transition {
+        overflow-y: auto;
+      }
     }
   }
 
@@ -282,6 +286,7 @@ table.object-list-view.selectable {
 
     &.remove:before {
       content: @clearSearchButtonIcon;
+      font-size: 21px;
     }
 
     &.flask:before {
