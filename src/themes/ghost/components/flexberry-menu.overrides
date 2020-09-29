@@ -16,7 +16,7 @@
   }
 }
 
-.menu .flexberry-menuitem.item {
+.ui.menu .flexberry-menuitem.item {
   &.dividing:after {
     content: '';
     height: @itemDividingHeight;
@@ -27,7 +27,7 @@
     background-color: @itemDividingBackground;
   }
 
-  .ui.button.icon {
+  .ui.button.icon:not(.dropdown) {
     background-color: @itemButtonHoverBackground;
     box-shadow: none;
     padding: @itemButtonPadding;
@@ -37,8 +37,11 @@
     margin: @itemButtonMargin;
     float: @itemButtonFloat;
     width: auto;
-    &:hover {
-      color: @textColor !important;
+    i.icon {
+      color: @iconColor;
+      &:hover {
+        color: @textColor;
+      }
     }
   }
 }
