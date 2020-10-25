@@ -527,6 +527,12 @@ tbody tr td .icon.button.hierarchy-expand {
   }
 }
 
+/* Hide second OLV input in 3rd version */
+/* TODO: Fix submit event bubbling when OLV is wrapped in <form> */
+.ui.input.nav-bar-search-page .hidden {
+  display: none;
+}
+
 /*-------------------
       Menu in row
 --------------------*/
@@ -736,6 +742,7 @@ tbody tr td .icon.button.hierarchy-expand {
     input {
       font-size: @mobilesSarchPageButtonFontSize;
       padding: @mobileSearchPageButtonPadding;
+      text-align: center;
     }
   }
 }
