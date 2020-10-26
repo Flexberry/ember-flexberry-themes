@@ -11,4 +11,4 @@
 @togglerBorderColor: #eaecef;
 @togglerBorderRadius: 0.25rem;
 @togglerPadding: 1rem;
-@togglerShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@togglerShadow: @defaultElementsBoxShadow;

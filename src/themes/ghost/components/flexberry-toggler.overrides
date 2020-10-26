@@ -22,15 +22,15 @@
   }
 }
 
-.has-border {
-	border: @togglerBorder;
-	border-color: @togglerBorderColor;
-	border-radius: @togglerBorderRadius;
+.flexberry-toggler.has-border {
+  border: @togglerBorder;
+  border-color: @togglerBorderColor;
+  border-radius: @togglerBorderRadius;
   box-sizing: border-box;
   padding: @togglerPadding;
 }
 
-.has-shadow {
+.flexberry-toggler.has-shadow {
   box-shadow: @togglerShadow;
   padding: @togglerPadding;
 }
