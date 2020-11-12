@@ -16,9 +16,13 @@
 @headerFontWeight: 400;
 
 // Toolbar buttons
+@editPanelMinWidth: 15em;
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @textColor;
-@closeButtonPaddingTop: unit(9 / 14, em);
+@closeButtonPaddingTop: unit(9 / 14, rem);
+@buttonIconIndentation: 0;
+@saveAndCloseButtonLeft: 0.625em;
+@saveAndCloseButtonTop: -0.375em;
 
 //Icons
 @iconFontFamily : guideline-icons;
