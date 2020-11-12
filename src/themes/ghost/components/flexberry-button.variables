@@ -51,3 +51,30 @@
 @large  : 1rem;
 @big    : 1rem;
 @huge   : 1.125rem;
+
+/*--------------------------
+  Flexberry button dropdown
+----------------------------*/
+@buttonDropdownPosition: relative;
+@buttonDropdownZIndex: 5;
+@buttonDropdownDisplay: inline-block;
+@buttonDropdownPadding: 0.643em 0.786em;
+
+@dropdownPadding: 0;
+@dropdownMinHeight: 1.714em;
+@dropdownMinWidth: 14.286em;
+@dropdownTextPaddingTop: 0.071em;
+@dropdownTextPaddingLeft: 0.357em;
+@dropdownIconPadding: 0 0.190em 0 0;
+@dropdownIcon: "\e905";
+@dropdownBorder: @defaultBorderWidth @defaultBorderStyle @inputBorderColor;
+@dropdownHoverMenuMaxHeight: none;
+
+@dropdownMenuItemPaddingBottom: 0;
+@menuItemPaddingBottom: 0.929em;
+@menuItemTextPaddingLeft: 0.357em;
+@menuItemIconAndTextPaddingLeft: 2.071em;
+@menuItemIconTop: 0.688em;
+@menuItemIconFontSize: 1.143em;
+@menuItemIconPosition: absolute;
+@menuItemBorderBottom: @defaultBorderWidth @defaultBorderStyle @hawkesBlue;

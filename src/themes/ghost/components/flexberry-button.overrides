@@ -84,3 +84,68 @@
   line-height: @buttonHugeLineHeight;
   padding: @buttonHugePadding;
 }
+
+// Button dropdown for edit-form
+.button-dropdown {
+  position: @buttonDropdownPosition;
+  z-index: @buttonDropdownZIndex;
+  display: @buttonDropdownDisplay;
+  padding: @buttonDropdownPadding;
+
+  .ui.dropdown {
+    padding: @dropdownPadding;
+    min-height: @dropdownMinHeight;
+    min-width: @dropdownMinWidth;
+
+    > .text {
+      padding-top: @dropdownTextPaddingTop;
+      padding-left: @dropdownTextPaddingLeft;
+      font-weight: @defaultMediumFontWeight;
+    }
+
+    > .dropdown.icon {
+      color: @textColor;
+      padding: @dropdownIconPadding;
+
+      &:before {
+        content: @dropdownIcon;
+      }
+    }
+
+    &:hover {
+      border: @dropdownBorder;
+
+      .button-dropdown-menu.menu {
+        max-height: @dropdownHoverMenuMaxHeight;
+      }
+    }
+
+    .button-dropdown-menu .item {
+      padding-bottom: @dropdownMenuItemPaddingBottom !important;
+
+      .menu-item {
+        padding-bottom: @menuItemPaddingBottom;
+
+        span.text {
+          padding-left: @menuItemTextPaddingLeft;
+          font-weight: @defaultMediumFontWeight;
+        }
+
+        i.icon + span.text {
+          padding-left: @menuItemIconAndTextPaddingLeft;
+        }
+
+        .icon {
+          top: @menuItemIconTop;
+          font-size: @menuItemIconFontSize;
+          position: @menuItemIconPosition;
+        }
+      }
+
+      &:not(:last-child) .menu-item {
+        border-bottom: @menuItemBorderBottom;
+      }
+    }
+  }
+}
+
