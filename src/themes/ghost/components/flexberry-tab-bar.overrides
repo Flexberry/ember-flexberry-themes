@@ -1,0 +1,53 @@
+/*******************************
+         Tab Overrides
+*******************************/
+
+.ui.tabular.menu.dragscroll .item.active {
+    color: @tabsActiveTextColor;
+    background: @dropdownBackground;
+    border: @tabsBorder;
+}
+
+.ui.tabular.menu.dragscroll .item {
+    color: @tabsContainerTextColor;
+    background: @aliceBlue;
+    border: @tabsBorder;
+    border-radius: @tabsBorderRadius;
+}
+
+.ui.compact.attached.dropdown.link.item {
+    border: none;
+    border-radius: 0;
+    color: @dropdownButtonColor;
+    padding: @dropdownButtonPadding;
+    background: @dropdownButtonBackground;
+}
+
+.ui.compact.attached.dropdown.link.item.active {
+    color: @tabsActiveTextColor;
+}
+
+.ui.compact.attached.dropdown.link.item.dropdown .menu {
+    max-width: @dropdownMaxWidth;
+    max-height: @dropdownMaxHeight;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+/* Dropdown scrollbar */
+.ui.compact.attached.dropdown.link.item.dropdown .menu::-webkit-scrollbar {
+    width: @chromeScrollbarWidth;
+}
+
+.ui.compact.attached.dropdown.link.item.dropdown .menu::-webkit-scrollbar-track {
+    background: @chromeScrollbarTrackColor;
+}
+
+.ui.compact.attached.dropdown.link.item.dropdown .menu::-webkit-scrollbar-thumb {
+    background: @chromeScrollbarButtonColor; 
+}
+
+.ui.menu.dragscroll .ui.compact.attached.dropdown.link.item.dropdown .menu > .item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
