@@ -27,6 +27,10 @@
     }
 }
 
+.ui.small.button.goto-page-button:hover {
+    background-color: @primaryColorHover;
+}
+
 .ui.buttons .disabled.button {
     color: #999;
 }
@@ -563,6 +567,20 @@ div.ui.secondary.menu.no-margin {
     color: @primaryColor;
 }
 
+.ui.button.mobile-sorting-setting-button {
+    white-space: @navbarSortingMobileWhiteSpace;
+    overflow: @navbarSortingMobileOverflow;
+    text-overflow: @navbarSortingMobileTextOverflow;
+    padding: @navbarSortingMobilePaddind;
+}
+
+.ui.form .field .ui.input.nav-bar-search-page {
+    max-width: @navbarSearchPageInputWidth;
+}
+
+.mobile .ui.form .field .ui.input.nav-bar-search-page {
+    max-width: 50px;
+}
 
 /******************************************
       Positive/negative buttons section
@@ -706,4 +724,8 @@ div.ui.secondary.menu.no-margin {
 
 .ui.right.floated.tiny.primary.compact.button:hover {
     border: 1px solid @uiBorderColor;
+}
+
+.colsconfig-actions .ui.button{
+    font-size: @tiny;
 }

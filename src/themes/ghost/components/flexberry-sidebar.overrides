@@ -183,7 +183,7 @@
 
 /* Sidebar Menu */
 .inverted.vertical.main.menu.sidebar.mobile {
-  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeight}') !important;
+  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeightMobile}') !important;
   top: @headerHeightMobile;
 }
 
@@ -201,7 +201,7 @@
 }
 
 .ui.menu .ui.dropdown .menu > .item.menu-back {
-  color: @secondaryColor !important;
+  color: @iconColor !important;
   .icon:not(.dropdown) {
     float: left;
     line-height: 1.5em;

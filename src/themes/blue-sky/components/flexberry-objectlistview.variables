@@ -6,7 +6,7 @@
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
 /* Header order */
-@olvHeaderOrderIconColor: @accentColor;
+@olvHeaderOrderIconColor: @activeColor;
 @olvHeaderOrderIconHoverColor: @textColor;
 @olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
 @olvHeaderOrderIconBorderRadius: 0.25rem;
@@ -27,7 +27,7 @@
 @olvOperationIconFontFamily: 'guideline-icons';
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
-@checkRowsButtonGEIcon: "\e928";
+@checkRowsButtonIcon: "\e928";
 
 /*-----------------------
    Helper buttons In Row

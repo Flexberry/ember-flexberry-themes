@@ -1,15 +1,6 @@
 
-// Standart
-.ui.button.disabled {
-  background: @buttonDisabledBackground;
-  color: @buttonDisabledColor;
-}
-
 // Secondary
-.ui.secondary.button:hover {
-  box-shadow: @secondaryHoverBoxShadow;
-}
-
+.ui.secondary.button:hover,
 .ui.secondary.button:active,
 .ui.secondary.active.button:active {
   box-shadow: @secondaryHoverBoxShadow;
@@ -22,8 +13,52 @@
   }
 }
 
+// Accent
+.ui.accent.button {
+  background-color: @accentColor;
+  color: @accentTextColor;
+  &:hover {
+    background-color: @accentColorHover;
+  }
+  &:active {
+    background-color: @accentColorDown;
+  }
+}
+
+// Lined
+.ui.lined.button {
+  box-shadow: @linedBoxShadow;
+  &:hover,
+  &:active {
+    background-color: @backgroundColor;
+    box-shadow: @secondaryHoverBoxShadow;
+  }
+}
+
+// Empty
+.ui.empty.button {
+  background-color: @emptyBackgroundColor;
+  color: @emptyColor;
+  &:hover {
+    color: @textColor;
+  }
+  &:active {
+    color: @textColor;
+    background-color: @backgroundColor;
+  }
+}
+
 .ui.button:focus {
   box-shadow: @buttonFocusBoxShadow;
+}
+
+.ui.button.disabled {
+  background: @buttonDisabledBackground;
+  color: @buttonDisabledColor;
+}
+
+.ui.button:not(.disabled) i.icon {
+  color: @iconColor;
 }
 
 // Sizes

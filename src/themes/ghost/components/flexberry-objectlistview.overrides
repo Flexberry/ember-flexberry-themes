@@ -68,6 +68,7 @@ table.object-list-view.selectable {
   align-items: center;
   min-height: 0em;
   min-width: 100%;
+  margin-left: 0;
 
   /* Toolbar buttons */
   .ui.button,
@@ -109,8 +110,13 @@ table.object-list-view.selectable {
     }
 
     // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button .icon {
-      font-family: @hierarchicalButtonFontFamily;
+    &.hierarchical-button {
+      &:first-child {
+        padding-left: 0;
+      }
+      .icon {
+        font-family: @hierarchicalButtonFontFamily;
+      }
     }
 
     &.refresh-button,
@@ -173,7 +179,7 @@ table.object-list-view.selectable {
       .remove.icon {
         height: auto;
         width: auto;  
-        color: @secondaryColor;
+        color: @iconColor;
         font-size: @removeFilterAfterFontSize;
         font-weight: @defaultBoldFontWeight;
   
@@ -253,6 +259,7 @@ table.object-list-view.selectable {
   }
 
   i.icon {
+    color: @textColor;
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
   
@@ -465,7 +472,8 @@ tbody tr td .icon.button.hierarchy-expand {
   min-width: 100%;
 
   .prev-page-button,
-  .next-page-button {
+  .next-page-button,
+  .goto-page-button {
     &:before {
       font-family: @navBarPrevNextButtonsBeforeFontFamily;
       font-size: @navBarPrevNextButtonsBeforeFontSize;
@@ -477,24 +485,28 @@ tbody tr td .icon.button.hierarchy-expand {
     content: @navBarPrevButtonBeforeContent;
   }
 
-  .next-page-button::before {
+  .next-page-button::before,
+  .goto-page-button::before {
     content: @navBarNextButtonBeforeContent;
   }
 
   .ui.basic.buttons {
+    border: none;
     .ui.button {
+      background: @defaultColor !important;
+      border: none;
       border-radius: @navBarButtonBorderRadius;
-      color: @textColor!important;
-      min-width: @navBarButtonWidth;
-      margin: @navBarButtonMargin;
+      color: @textColor !important;
       font-weight: 500;
+      margin: @navBarButtonMargin;
+      min-width: @navBarButtonWidth;
 
       &:hover {
-        box-shadow: 0px 0px 0px 1px @navyBlue;
+        box-shadow: 0px 0px 0px 1px @activeColor;
       }
 
       &.disabled {
-        color: @secondaryColor!important;
+        color: @disabledColor !important;
       }
 
       &.active {
@@ -513,6 +525,7 @@ tbody tr td .icon.button.hierarchy-expand {
 
 .ui.input.nav-bar-search-page {
   align-self: flex-start;
+  width: 100%;
   .ui.button {
     margin: auto;
     position: relative;
@@ -557,6 +570,8 @@ tbody tr td .icon.button.hierarchy-expand {
 
   .flexberry-objectlistview {
     max-height: @olvMobileMaxHeight;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .flexberry-olv-toolbar {
@@ -584,6 +599,13 @@ tbody tr td .icon.button.hierarchy-expand {
   }
   .object-list-view-container:not(.groupedit-container) {
     .object-list-view-single-column-cell {
+      &::after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
       .inline.fields {
         margin: @olvMobileFieldMargin;
       }
@@ -612,60 +634,70 @@ tbody tr td .icon.button.hierarchy-expand {
 
   // check rows menu
   .check-rows-container {
+    background: @background;
+    bottom: @checkRowsContainerBottom;
+    box-shadow: @checkRowsContainerBoxShadow;
     display: @checkRowsContainerDisplay;
+    align-items: center;
+    min-height: @checkRowsContainerHeight;
+    padding: 0 9px;
     position: @checkRowsContainerPosition;
     left: @checkRowsContainerLeft;
     right: @checkRowsContainerRight;
-    bottom: @checkRowsContainerBottom;
-    background: @background;
-    box-shadow: @checkRowsContainerBoxShadow;
     z-index: @checkRowsContainerZIndex;
 
-    .check-rows-button,
-    .check-all-at-page-button {
-      background: @checkRowsButtonBackgroud;
-      margin: @checkRowsButtonMargin;
-      padding: @checkRowsButtonPadding;
-    }
-
-    i.icon.icon-guideline-check-menu,
-    i.icon.check-square-o {
-      font-family: @iconFontFamily;
-      font-size: @checkRowsButtonIconFontSize;
-      color: @secondaryColor;
-      width: @checkRowsButtonIconWidth;
-    }
-
-    .check-all-at-page-button {
-      padding: @checkRowsButtonGEPadding;
-      font-size: @checkRowsButtonGEFontSize;
-
-      i.icon.check-square-o::before {
-        content: @checkRowsButtonGEIcon;
+    .flexberry-menu {
+      height: auto;
+      border: none;
+      margin: 0;
+      &::before {
+        content: @checkRowsButtonIcon;
+        font-family: @iconFontFamily;
+        font-size: @checkRowsButtonIconFontSize;
+        color: @secondaryColor;
+      }
+      &.ui.dropdown > .dropdown.icon::before {
+        content: "\e905";
       }
     }
 
+    .check-all-at-page-button {
+      background: @checkRowsButtonBackgroud;
+      i.icon.check-square-o::before {
+        content: @checkRowsButtonIcon;
+      }
+    }
+
+    i.icon.check-square-o {
+      font-family: @iconFontFamily;
+      font-size: @checkRowsButtonIconFontSize;
+      color: @iconColor;
+      width: @checkRowsButtonIconWidth;
+    }
+
     .count-selected-rows {
-      margin-top: @countSelectedRowsMarginTop;
       color: @countSelectedRowsColor;
       line-height: @countSelectedRowsLineHeight;
+      margin: 0 1em;
     }
 
     .delete-button {
-      margin: @deleteRowsButtonMargin;
       color: @deleteRowsButtonColor;
       background: @deleteRowsButtonBackground;
+      .icon {
+        display: none;
+      }
     }
 
     .clear-select-button {
-      margin-left: @clearSelectButtonMarginLeft;
       background: @clearSelectButtonBackground;
-      padding-top: @clearSelectButtonPaddingTop;
+      margin-left: @clearSelectButtonMarginLeft;
+      line-height: 1;
 
       .remove.icon {
         font-family: @iconFontFamily;
         font-size: @clearSelectButtonFontSize;
-        margin: @clearSelectButtonMargin;
+        width: @checkRowsButtonIconWidth;
 
         &::before {
           content: @clearSelectButtonIcon;
@@ -706,5 +738,31 @@ tbody tr td .icon.button.hierarchy-expand {
         }
       }
     }
+  }
+  .ui.form .ui.input.nav-bar-search-page {
+    width: @mobileSearchPageButtonWidth;
+    input {
+      font-size: @mobilesSarchPageButtonFontSize;
+      padding: @mobileSearchPageButtonPadding;
+    }
+  }
+}
+
+.ui.button.mobile-sorting-setting-button {
+  white-space: @navbarSortingMobileWhiteSpace;
+  overflow: @navbarSortingMobileOverflow;
+  text-overflow: @navbarSortingMobileTextOverflow;
+  padding: @navbarSortingMobilePaddind;
+  margin-right: 20px;
+
+  i.icon.sort.content.descending:before {
+    font-family: @iconFontFamily;
+    content: @mobileSortingSettingButtonDescIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
+  }
+  i.icon.sort.content.ascending:before {
+    font-family: @iconFontFamily;
+    content: @mobileSortingSettingButtonAscIcon;
+    font-size: @mobileSortingSettingButtonFontSize;
   }
 }

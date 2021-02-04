@@ -73,7 +73,9 @@
 @autocompleteResultTitleFontWeight: @defaultMediumFontWeight;
 
 // Icons
-@lookupChangeButtonIcon: "\e91d";
+@changeButtonIcon: "\e91d";
+@removeButtonIcon: "\e90e";
+@showPreviewButton: "\e917";
 @lookupLoadingIconBefore: '';
 
 // Mobile

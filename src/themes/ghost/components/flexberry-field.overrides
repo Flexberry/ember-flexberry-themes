@@ -8,10 +8,19 @@
     border-color: @fieldReadonlyBorderColor;
 }
 
+.ui.input.nav-bar-search-page input[type='number'] {
+  -moz-appearance: textfield;/*For FireFox*/
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button { /*For Webkits like Chrome and Safari*/
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
 .ui.field > label {
     line-height: @fieldLabelLineHeight;
 }
-
 
 // Large
 .ui.large.input > input {

@@ -223,8 +223,8 @@
       Mobile
 --------------------*/
 .pusher.mobile .ui.main.container > .stackable.grid.container > .row {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 0;
 }
 
@@ -247,5 +247,11 @@
   .ui.form.flexberry-vertical-form {
     padding-left: @formMobilePaddingLeft;
     padding-right: @formMobilePaddingRight;
+  }
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.form .fields.unstackable {
+    margin-bottom: @rowDistance;
   }
 }

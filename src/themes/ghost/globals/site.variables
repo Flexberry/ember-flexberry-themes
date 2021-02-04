@@ -43,14 +43,8 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColor     : @cobaltBlue;
-@secondaryColor   : @lightGrayishBlue;
 
-@red              : #FF7500;
-@brightRed        : #FF4800;
 @green            : #7dd4b4;
-@blue             : #0C49CD;
-@brightBlue       : #3c87dc;
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
 @white            : #FFFFFF;
@@ -66,10 +60,6 @@
 @gray             : #EBEBEB;
 @solitude         : #E4EDF9;
 @whisper          : #E5E5E5;
-@davysGray        : #555555;
-@grimmysGray      : #777777;
-@anotherAliceBlue : #F5F8FF;
-
 
 /* Negative */
 @negativeColor           : @cinnabar;
@@ -81,12 +71,6 @@
 @lightGreen       : #a4e1cb;
 @lightGrayishBlue : #848E99;
 
-/*-------------------
-        Hover
---------------------*/
-
-/*---  Colors  ---*/
-@dropdownHoveredItemColor: #dcebfc;
 
 /*-------------------
         Grid
@@ -98,7 +82,17 @@
     Scroll Bars
 --------------------*/
 
-@useCustomScrollbars: false;
+@customScrollbarWidth: 12px;
+@customScrollbarHeight: 12px;
+
+@trackBackground: transparent;
+@trackBooxShadow: inset 0 0 10px 10px @hawkesBlue;
+@thumbBorderRadius: 1ex;
+@thumbBackground: @lightGrayishBlue;
+
+@thumbInactiveBackground: @lightGrayishBlue;
+@thumbHoverBackground: @lightGrayishBlue;
+@thumbBorder: 4px solid transparent;
 
 
 /*-------------------
@@ -127,29 +121,12 @@
 /* Maximum Single Character Glyph Width, aka Capital "W" */
 @glyphWidth: 1.5em;
 
-/*-------------------
-   Global Variables
---------------------*/
-
-@uiBorderColor: @blue;
-@uiHoveredPositiveBorderColor: @green;
-@uiHoveredPositiveBackgroundColor: @green;
-@uiHoveredPositiveTextColor: @green;
-@uiHoveredNegitveBorderColor: @red;
-@uiHoveredNegitveBackgroundColor: @red;
-@uiHoveredNegitveTextColor: @red;
-
-@flexberryButtonHoveredColor: @brightBlue;
-
 @disabledOpacity: 1;
 
 /*-------------------
    Icon Variables
 --------------------*/
-@cornerIconInvertedShadow: @blue;
-
-@colorIcon : @blue;
-@colorIconBorder: @blue;
+@iconFont: 'guideline-icons';
 
 /*-------------------
         Page
@@ -173,8 +150,6 @@
 @defaultBorderWidth: 1px;
 @defaultBorderStyle: solid;
 
-@defaultFocusBorderColor: @mayaBlue;
-
 @defaultTransitionProperty: all;
 @defaultTransitionDuration: 0.3s;
 @defaultTransitionTimingFunction: ease-in-out;
@@ -189,16 +164,12 @@
 @defaultInputLabelFontSize: 0.875em;
 @inputLineHeight: unit((20 / 14), em);
 
-@inputBorderColor: @aliceBlue;
-@inputBackground: @aliceBlue;
-
-@inputPlaceholderColor : @secondaryColor;
-@inputPlaceholderFocusColor: @secondaryColor;
+@inputPlaceholderColor: @lightGrayishBlue;
+@inputPlaceholderFocusColor: @lightGrayishBlue;
 
 @inputBorderWidth: @defaultBorderWidth;
 @inputBorderStyle: @defaultBorderStyle;
 @inputBorderRadius: @defaultBorderRadius;
-@inputBorderColor: @aliceBlue;
 @defaultInputBorder: @inputBorderWidth @inputBorderStyle @inputBorderColor;
 
 @inputVerticalPadding: unit((9 / 14), em);
@@ -242,26 +213,47 @@
 @h1Mobile : unit((18 / 16), rem);
 
 
-/*------------------------
-        COLOR SCHEME
--------------------------*/
-// main
-@primaryColor          : @cobaltBlue;
-@accentColor           : @mayaBlue;
-@secondaryColor        : @lightGrayishBlue;
+/*******************************
+          COLOR SCHEME
+*******************************/
+
+// Main
+@defaultColor                   : #ECF2FB;
+@primaryColor                   : @cobaltBlue;
+@activeColor                    : @mayaBlue;
+@accentColor                    : #E94B3D;
+@secondaryColor                 : #7699B3;
+@disabledColor                  : @lightGrayishBlue;
 
 // Sidebar
-@sidebarBackgroundColor: @textColor;
+@sidebarBackgroundColor         : @textColor;
 
 // Page
-@simplePageBackground  : @aliceBlue;
-@textColor             : @blueZodiak;
+@simplePageBackground           : @defaultColor;
+@textColor                      : @blueZodiak;
+@iconColor                      : @lightGrayishBlue;
 
 // Input
-@inputBorderColor      : @aliceBlue;
-@inputBackground       : @aliceBlue;
-@inputHoverBorderColor : @chambray;
+@inputBorderColor               : @defaultColor;
+@inputBackground                : @defaultColor;
+@inputHoverBorderColor          : @chambray;
 
-@defaultInputFocusBackground   : @white;
-@defaultFocusBorderColor: @mayaBlue;
-@focusedFormBorderColor : @accentColor;
+@defaultInputFocusBackground    : @white;
+@defaultFocusBorderColor        : @activeColor;
+@focusedFormBorderColor         : @activeColor;
+
+
+/*******************************
+             States
+*******************************/
+
+/*---  Hover  ---*/
+@accentColorHover               : saturate(darken(@accentColor, 5), 10, relative);
+
+@dropdownHoveredItemColor       : #dcebfc;
+
+/*---  Focus  ---*/
+@primaryColorFocus              : @primaryColor;
+
+/*---  Down (:active)  ---*/
+@accentColorDown                : darken(@accentColor, 10);

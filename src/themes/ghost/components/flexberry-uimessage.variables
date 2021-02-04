@@ -1,0 +1,7 @@
+/* Primary */
+@borderWidth: 0;
+
+/* Icon */
+@uiMessageIconFont: guideline-icons;
+@uimessageCloseIcon: "\e90e";
+@uimessageIconPositionRight: 1em;

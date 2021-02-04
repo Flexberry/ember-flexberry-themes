@@ -48,7 +48,7 @@
   }
 }
 
-.flexberry-lookup.search>.ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
+.flexberry-lookup.search:not(.error) > .ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
     border-right-color: @lookupFieldFocusBorderColor !important;
 }
 
@@ -90,21 +90,23 @@
 // Icons
 .flexberry-lookup > .ui.input > {
   .ui.button > .icon {
-    font-family: @lookupIconFont;
     margin: @lookupIconMargin;
     height: @lookupIconHeight;
   }
 
   .remove.icon::before {
-    content: "\e90e";
+    font-family: @lookupIconFont;
+    content: @removeButtonIcon;
   }
 
   .change.icon::before {
-    content: @lookupChangeButtonIcon;
+    font-family: @lookupIconFont;
+    content: @changeButtonIcon;
   }
 
   .eye.icon::before {
-    content: "\e917";
+    font-family: @lookupIconFont;
+    content: @showPreviewButton;
   }
 }
 
@@ -188,7 +190,7 @@
       font-size: @lookupIconFontSize;
 
       &::before {
-        content: @lookupChangeButtonIcon;
+        content: @changeButtonIcon;
       }
     }
   }
@@ -200,5 +202,9 @@
     &::before {
       content: @lookupLoadingIconBefore;
     }
+  }
+
+  .flexberry-sidepage #lookup-list .flexberry-objectlistview {
+    max-height: none;
   }
 }

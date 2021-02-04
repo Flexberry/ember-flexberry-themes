@@ -4,6 +4,7 @@
 @formVerticalPadding: @distanceS;
 @formHorizontalPaddding: @distanceL;
 @formPadding: 1px @formHorizontalPaddding;
+@rowDistance: 1em;
 
 // Header
 @formHeaderBackground: @simplePageBackground;
@@ -53,7 +54,7 @@
 --------------------*/
 @fieldLabeledInsidePaddingTop: unit(25 / 14, em);
 
-@fieldLabeledInsideLabelColor: @secondaryColor;
+@fieldLabeledInsideLabelColor: @lightGrayishBlue;
 @fieldLabeledInsideLabelLineHeight: @inputLineHeight;
 @fieldLabeledInsideLabelTop: unit(26 / 14, em);;
 

@@ -1,2 +1,6 @@
 @border: none;
 @boxShadow: @defaultElementsBoxShadow;
+
+@borderWidth: 1px;
+@attachedHorizontalOffset: -@borderWidth;
+@attachedWidth: calc(~'100% - (@{attachedHorizontalOffset} * 2)');

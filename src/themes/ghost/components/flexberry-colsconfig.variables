@@ -23,9 +23,29 @@
 @columnWidthWidth: 140px;
 @columnWidthHeaderWidth: @columnWidthWidth + 17px; //+scroll width
 
+/* Icons */
+@iconsFontFamily: 'guideline-icons';
+@hideIcon: "\e918";
+@unhideIcon: "\e917";
+@chevronUpIcon: "\e90a";
+@chevronDownIcon: "\e904";
+
 /* Message */
 @messageDisplay: block;
 @messageMarginBottom: 0;
 @messagePadding: 0.75em 1.5em;
 @messageCloseIconMargin: 0.6em;
 @messageFontSize: 1em;
+
+@filterMobileConditionWidth: 150px;
+@filterMobilePropWidth: calc(~'100% - 55px')!important;
+
+/*  Mobile */
+@actionsBackground: @simplePageBackground;
+@propDividerMobile: 1px solid rgba(0, 0, 0, 0.1);
+@propPaddingMobile: 1em 0;
+/* Icons */
+@ellipsisVerticalIconMobile: "\e933";
+@plusIconMobile: "\e923";
+@chevronUpIconMobile: "\e903";
+@chevronDownIconMobile: "\e900";

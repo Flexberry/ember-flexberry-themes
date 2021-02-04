@@ -13,13 +13,13 @@
 
 /* Table Header */
 @headerBackground: @white;
-@headerColor: @secondaryColor;
+@headerColor: @iconColor;
 @headerFontWeight: @defaultMediumFontWeight;
 @headerVerticalPadding: @cellVerticalPadding;
 
 
 /* Striped */
-@stripedBackground: @aliceBlue;
+@stripedBackground: @defaultColor;
 
 /* Selectable */
 @selectableBackground: @solitude;
@@ -51,7 +51,7 @@
 @olvFirstHeaderPadding: 0 0 0 unit(10 / 16, em);
 
 /* Header order */
-@olvHeaderOrderIconColor: @accentColor;
+@olvHeaderOrderIconColor: @activeColor;
 @olvHeaderOrderIconHoverColor: @textColor;
 @olvHeaderOrderIconBackground: fade(@olvHeaderOrderIconColor, 20%);
 @olvHeaderOrderIconBorderRadius: @inputBorderRadius;
@@ -60,7 +60,7 @@
 @olvHeaderOrderIconVerticalAlign: top;
 
 /* Icons */
-@olvHeaderOrderIconFontFamily: 'guideline-icons';
+@olvHeaderOrderIconFontFamily: @iconFont;
 @olvHeaderOrderIconAscendingContent: "\e92a";
 @olvHeaderOrderIconDescendingContent: "\e92c";
 
@@ -71,7 +71,7 @@
 @olvOperationCheckRowMenuLeft: 0;
 @olvOperationsOverflow: visible;
 
-@olvOperationIconFontFamily: 'guideline-icons';
+@olvOperationIconFontFamily: @iconFont;
 @olvOperationIconFontSize: @glyphWidth;
 @olvOperationCheckRowMarginRight: 0.5em;
 
@@ -158,7 +158,7 @@
 @navBarButtonWidth: @navBarButtonSize;
 @navBarButtonMargin: 0 unit(4 / 14, em) 0 0;
 
-@navBarPrevNextButtonsBeforeFontFamily: 'guideline-icons';
+@navBarPrevNextButtonsBeforeFontFamily: @iconFont;
 @navBarPrevNextButtonsBeforeFontSize: unit(20 / 14, em);
 
 @navBarPrevButtonBeforeContent: "\e906";
@@ -182,7 +182,7 @@
 @helperButtonInRowPadding: @helperButtonInRowHorizontalPadding 0.2em 0 0.5em;
 @rowHelperCellHoverColor: @textColor;
 @selectRowHelperButtonPaddingTop: @helperButtonInRowHorizontalPadding;
-@editHelperButtonInRowHoverColor: @accentColor;
+@editHelperButtonInRowHoverColor: @activeColor;
 @deleteHelperButtonInRowHoverColor: @cinnabar;
 @prototypeHelperButtonInRowHoverColor: @green;
 
@@ -195,7 +195,7 @@
 /*-------------------
         Mobile
 --------------------*/
-@olvMobileMaxHeight: calc(~'100vh - 7.3em');
+@olvMobileMaxHeight: none;
 @olvMobileHorizontalPadding: @distanceS;
 
 /* Toolbar */
@@ -213,48 +213,55 @@
 @olvMobileFieldLabelFloat: left;
 @olvMobileFieldLabelWidth: 60%;
 @olvMobileFieldLabelFontSize: 1rem;
-@olvMobileFieldLabelColor: @secondaryColor;
+@olvMobileFieldLabelColor: @lightGrayishBlue;
 
 /* Navbar */
 @navbarMobilePadding: 8px 1rem;
 @navbarMobileHeight: 3rem;
 @navbarMobileButtonWidth: 2rem;
 @navbarMobileButtonPadding: 0 0.625rem;
+@mobilesSarchPageButtonFontSize: 12px;
+@mobileSearchPageButtonWidth: 53px;
+@mobileSearchPageButtonPadding: 7px @inputHorizontalPadding 6px;
+@mobileSortingSettingButtonDescIcon: "\e92c";
+@mobileSortingSettingButtonAscIcon: "\e92a";
+@mobileSortingSettingButtonFontSize: 12px;
+
 
 /* Selected row menu */
-@olvContainerPosition: relative;
-@checkRowsContainerDisplay: flex;
-@checkRowsContainerPosition: fixed;
-@checkRowsContainerLeft: 0;
-@checkRowsContainerRight: 0;
-@checkRowsContainerBottom: 0;
-@checkRowsContainerBoxShadow: 0 -0.063em 0.313em rgba(0, 0, 0, 0.1);
-@checkRowsContainerZIndex: 10;
-@checkRowsButtonBackgroud: transparent;
-@checkRowsButtonMargin: 0;
-@checkRowsButtonPadding: 0.5em 0.375em 0.5em 0.688em;
-@checkRowsButtonIconFontSize: 1.125rem;
-@checkRowsButtonIconWidth: auto;
-@checkRowsButtonGEPadding: 0.313em 0.857em 0 1.429em;
-@checkRowsButtonGEIcon: "\e928";
-@checkRowsButtonGEFontSize: 1em;
-@countSelectedRowsMarginTop: 1em;
-@countSelectedRowsColor: #000;
-@countSelectedRowsLineHeight: 1.5em;
-@deleteRowsButtonMargin: 0.25em 1em;
-@deleteRowsButtonColor: #7699B3;
-@deleteRowsButtonBackground: #F3F7FB;
-@clearSelectButtonMarginLeft: auto;
-@clearSelectButtonBackground: transparent;
-@clearSelectButtonPaddingTop: 1.214em;
-@clearSelectButtonFontSize: 1.5em;
-@clearSelectButtonMargin: 0;
-@clearSelectButtonIcon: "\e90e";
+@checkRowsContainerHeight        : 56px;
+@checkRowsContainerPadding        : 56px;
+@olvContainerPosition            : relative;
+@checkRowsContainerDisplay       : flex;
+@checkRowsContainerPosition      : fixed;
+@checkRowsContainerLeft          : 0;
+@checkRowsContainerRight         : 0;
+@checkRowsContainerBottom        : 0;
+@checkRowsContainerBoxShadow     : 0 -0.063em 0.313em rgba(0, 0, 0, 0.1);
+@checkRowsContainerZIndex        : 10;
+@checkRowsButtonBackgroud        : transparent;
+@checkRowsButtonIconFontSize     : 1.125rem;
+@checkRowsButtonIconWidth        : auto;
+@countSelectedRowsColor          : #000;
+@countSelectedRowsLineHeight     : 1.5em;
+@deleteRowsButtonColor           : #7699B3;
+@deleteRowsButtonBackground      : #F3F7FB;
+@clearSelectButtonMarginLeft     : auto;
+@clearSelectButtonBackground     : transparent;
+@clearSelectButtonFontSize       : 1.5em;
+@checkRowsButtonIcon             : "\e928";
+@clearSelectButtonIcon           : "\e90e";
 
 /* Row controls */
-@rowControlsBackground: @aliceBlue;
+@rowControlsBackground: @defaultColor;
 @rowControlsMarginRight: 1em;
 @rowControlsPaddingLeft: 0.438em;
 @rowControlsButtonMargin: 0;
 @rowControlsButtonPadding: 0.643em 0.429em 0.214em;
-@helperButtonInRowBorderColorFocus: @aliceBlue;
+@helperButtonInRowBorderColorFocus: @defaultColor;
+
+/*Navbar sorting*/
+@navbarSortingMobileWhiteSpace: nowrap;
+@navbarSortingMobileOverflow: hidden;
+@navbarSortingMobileTextOverflow: ellipsis;
+@navbarSortingMobilePaddind: 0 10px;

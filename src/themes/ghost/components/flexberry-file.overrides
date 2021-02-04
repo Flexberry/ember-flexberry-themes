@@ -50,6 +50,7 @@
     .icon {
       font-family: @iconFontName;
       font-size: @iconFontSize;
+      height: auto;
     }
 
     &.flexberry-file-add-button .icon:before {
@@ -70,6 +71,10 @@
   }
 }
 
+.flexberry-file-image-preview-wrapper.ui.small.image .flexberry-file-image-preview {
+  max-width: 100%;
+}
+
 /* Error */
 .flexberry-file.error .ui.action.input:not([class*="left action"]) {
 
@@ -80,9 +85,9 @@
 
   > .ui.button.flexberry-file-add-button {
     background-color: @negativeBackgroundColor;
-    border-color: @negativeBorderColor;
+    border: 1px solid @negativeBorderColor;
     border-left: none;
-    color: @secondaryColor;
+    color: @iconColor;
 
     &:hover {
       color: @textColor;
@@ -96,4 +101,7 @@
 
 .flexberry-file.mobile {
   padding: 0 1rem;
+  .flexberry-file-add-button {
+    align-self: start;
+  }
 }

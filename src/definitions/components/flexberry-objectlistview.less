@@ -34,11 +34,15 @@
   }
 
   .check-rows-button i.icon,
-  .check-all-at-page-button i.icon,
-  .clear-sorting-button i.icon {
+  .check-all-at-page-button i.icon{
     font-family: @olvOperationIconFontFamily;
     font-size: @olvOperationIconFontSize;
     vertical-align: top;
+  }
+  .clear-sorting-button i.icon {
+    font-family: @olvOperationIconFontFamily;
+    font-size: 1rem;
+    vertical-align: middle;
   }
 
   .check-rows-button.button {
@@ -46,7 +50,7 @@
   }
 
   .check-square-o.icon::before {
-    content: @checkRowsButtonGEIcon;
+    content: @checkRowsButtonIcon;
   }
 
   .sort.icon::before {
@@ -59,7 +63,8 @@
   color: @olvHeaderOrderIconColor;
   background-color: @olvHeaderOrderIconBackground;
   border-radius: @olvHeaderOrderIconBorderRadius;
-  padding-left: @olvHeaderOrderIconPadding;
+  // padding-left: @olvHeaderOrderIconPadding;
+  padding: 0 5px;
   display: @olvHeaderOrderIconDisplay;
   cursor: pointer;
 
@@ -70,6 +75,8 @@
   .icon {
     font-family: @olvHeaderOrderIconFontFamily;
     vertical-align: @olvHeaderOrderIconVerticalAlign;
+    font-size: 10px;
+    margin: 0 0 0 5px;
 
     &.ascending:before {
       content: @olvHeaderOrderIconAscendingContent;
@@ -93,12 +100,6 @@
   .filter-value {
     width: 95%;
   }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 /*-------------------

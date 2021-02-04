@@ -32,7 +32,7 @@
   font-size: @fontSize;
 
   > .dropdown.icon {
-    color: @secondaryColor;
+    color: @iconColor;
     font-family: @dropdownIconFontFamily;
 
     &::before {
