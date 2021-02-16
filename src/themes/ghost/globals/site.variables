@@ -155,7 +155,7 @@
 @defaultTransitionTimingFunction: ease-in-out;
 @defaultTransitionDelay: 0s;
 @defaultElementsBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
-
+@panelBoxShadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 /*-------------------
         Input
 --------------------*/
