@@ -5,7 +5,7 @@
 }
 
 .ui.table.object-list-view tr td {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   &.overflowed-cell,
   &.object-list-view-menu {

@@ -69,6 +69,7 @@
 .mobile {
   .ui.modal.flexberry-sidepage  {
     width: @mobileSidepageWidth;
+    height: 100vh;
   }
 
   .ui.modal.fullhight-mobile-modal {
