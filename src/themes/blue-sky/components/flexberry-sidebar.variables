@@ -1,10 +1,53 @@
+/*******************************
+        flexberry-sidebar
+*******************************/
+
+@sidebarInvertedBackground: @sidebarBackgroundColor;
+
 @width: 260px;
-@width-s: 0;
+@width-s: 56px;
 
-@sidebarPadding: 0;
+@sidebarPadding: 1.5rem 0;
+@sidebarHeight: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
 
-@canvasBackground: @white;
-@sidebarInvertedBackground: @whiteBlue;
+/* Items */
+@itemVerticalPadding: 0.5rem;
+@itemRightPadding: 0.5rem;
+@itemLeftPadding: 1rem;
+@itemPadding: @itemVerticalPadding @itemRightPadding @itemVerticalPadding @itemLeftPadding;
+@itemHoveredBackground: none;
+@itemFontSize: 1rem;
+@itemLineHeight: 1.5rem;
+@itemFontWeight: 500;
 
-@textMenuColor: @white;
-@textMenuHideColor: #91a7cd;
+/* Item icons */
+@itemIconFontSize: 1.2rem;
+@itemIconFloat: left;
+@itemIconOpacity: 0.6;
+@itemIconTransition: opacity 0.3s;
+@itemIconHoverOpacity: 1;
+@itemDropDownIconDisplay: none;
+
+/* Sub Menu */
+@subMenuBordetRadius: 0;
+@subMenuBorderTop: 0;
+@subMenuHeight: calc(~'100vh - @{headerHeight} - @{footerHeight}');
+@subMenuPadding: @sidebarPadding;
+@subMenuPosition: absolute;
+
+/* Sub Menu Items*/
+@subMenuItemHoveredBackground: rgba(0, 0, 0, 0.1);
+@subMenuItemFontSize: @itemFontSize;
+@subMenuItemVerticalPadding: @itemPadding;
+@subMenuItemRightPadding: @itemPadding;
+@subMenuItemLeftPadding: 1em;
+@subMenuItemPadding: @itemVerticalPadding @itemRightPadding @itemVerticalPadding @itemLeftPadding !important;
+@subMenuItemMargin: -@itemVerticalPadding -@itemRightPadding -@itemVerticalPadding -@itemLeftPadding;
+@subMenuItemMarginRight: 1.5em;
+
+/* Toggle button */
+@toggleButtonFontSize: 1rem;
+@toggleButtonPadding: 0px;
+
+@itemDropdownIconContent: "\e907";
+@itemDropdownIconFont: 'guideline-icons';

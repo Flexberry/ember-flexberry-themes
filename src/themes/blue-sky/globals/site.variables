@@ -32,6 +32,11 @@
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
 
+// Sidebar
+@sidebarBackgroundColor         : @whiteBlue;
+
+// Page
+@iconColor                      : @primaryColor;
 /*-------------------
         Paths
 --------------------*/

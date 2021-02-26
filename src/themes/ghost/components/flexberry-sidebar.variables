@@ -7,7 +7,8 @@
 @width: 240px;
 @width-s: 56px;
 
-@sidebarPadding: @distanceM 0;
+@sidebarPadding: 1.5rem 0;
+@sidebarHeight: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
 
 /* Items */
 @itemVerticalPadding: 0.5rem;
@@ -46,7 +47,7 @@
 
 /* Toggle button */
 @toggleButtonFontSize: 1rem;
-@toggleButtonPadding: 0px @distanceL 0px @distanceS;
+@toggleButtonPadding: 0px 2rem 0px 1rem;
 
 @itemDropdownIconContent: "\e907";
 @itemDropdownIconFont: 'guideline-icons';

@@ -4,10 +4,9 @@
 @import (multiple) '../../theme.config';
 
 .inverted.vertical.main.menu.sidebar {
-  height: calc(~'100vh - @{headerHeight} - @{footerHeight}') !important;
+  height: @sidebarHeight;
   background: @sidebarInvertedBackground;
   top: @headerHeight;
-  padding: @sidebarPadding;
 }
 
 .ui.attached.menu:not(.tabular) {
@@ -25,6 +24,237 @@
 
 .ui.menu .item:before {
   background: none;
+}
+
+.pusher:not(.mobile) .full.height {
+  margin-left: @width;
+
+  &.content-opened {
+    margin-left: 0;
+  }
+}
+
+.ui.uncover.sidebar.visible:not(.mobile):not(.animating) {
+  z-index: 10;
+}
+
+// Костыль для семантика
+.ui.visible.left.sidebar ~ .pusher:not(.mobile) {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.launch.icon.item {
+  font-size: @toggleButtonFontSize;
+  padding: @toggleButtonPadding;
+}
+
+.ui.main.menu.sidebar.submenu-full {
+  .dropdown.item .menu {
+    width: 100vw;
+    /* for table animation */
+    left: 0 !important;
+  }
+}
+
+/* Flexberry-main-menu */
+.ui.sidebar.flexberry-main-menu ~  .pusher:not(.mobile) .full.height.content-opened {
+  margin-left: @width-s;
+}
+
+.inverted.vertical.main.menu.sidebar.flexberry-main-menu {
+  padding: @sidebarPadding;
+  overflow: visible ! important;
+
+  .item {
+    font-size: 1rem;
+    padding: @itemPadding;
+    position: static;
+  }
+
+  .title-item-menu {
+    font-weight: @itemFontWeight;
+    line-height: @itemLineHeight;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* Sub Menu */
+  .dropdown.item .menu {
+    border-radius: @subMenuBordetRadius;
+    border-top: @subMenuBorderTop;
+    height: @subMenuHeight;
+    padding: @subMenuPadding;
+    position: @subMenuPosition;
+    margin: 0 !important;
+    min-width: @width;
+    > .item .icon:not(.dropdown) {
+      float: @itemIconFloat;
+      min-width: 1.18em;
+    }
+  }
+
+  /* main menu only */
+  > div {
+    > .active.item {
+      background: @itemHoveredBackground;
+
+      &:hover,
+      &:active {
+        background: @itemHoveredBackground;
+      }
+    }
+
+    > .item {
+      > .title-item-menu .icon,
+      > a > .title-item-menu .icon {
+        float: @itemIconFloat;
+        opacity: @itemIconOpacity;
+        transition: @itemIconTransition;
+        height: 100%;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &:active,
+      &:hover{
+        background: @itemHoveredBackground;
+
+        .title-item-menu .icon {
+          opacity: @itemIconHoverOpacity;
+        }
+      }
+    }
+  }
+
+  .title-item-menu {
+    .icon {
+      font-size: @itemIconFontSize;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+// Submenu items
+.ui.vertical.inverted.menu.flexberry-main-menu {
+  .menu .item,
+  .menu .item a:not(.ui) {
+    color: @textColor;
+    display: block;
+    font-size: @subMenuItemFontSize;
+    line-height: 1;
+  }
+  .menu .item a:not(.ui) {
+    padding: @subMenuItemPadding;
+    margin: @subMenuItemMargin;
+  }
+  .item .menu a.item:hover,
+  .item .menu .link.item:hover {
+    color: @textColor;
+    background: @subMenuItemHoveredBackground;
+  }
+}
+
+.ui.sidebar.main.menu.flexberry-main-menu {
+  display: flex !important;
+
+  &:not(.mobile) {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  > div > .item > .dropdown.icon {
+    display: @itemDropDownIconDisplay;
+  }
+
+  //icon-guideline-arrow-short-right-l
+  .ui.dropdown .menu .item .dropdown.icon:before {
+    content: @itemDropdownIconContent;
+    font-family: @itemDropdownIconFont;
+  }
+
+  &.sidebar-mini {
+    width: @width-s;
+
+    .title-item-menu {
+      display: block;
+      max-height: @itemLineHeight;
+    }
+
+    > div > .item {
+      font-size: 0;
+
+      > .title-item-menu .icon,
+      > a > .title-item-menu .icon {
+        float: none;
+      }
+
+      .menu.transition {
+        font-size: @subMenuItemFontSize;
+      }
+    }
+  }
+
+  .ui.dropdown .menu > .item {
+    padding: @subMenuItemPadding;
+
+    .title-item-menu {
+      margin-right: @subMenuItemMarginRight;
+    }
+  }
+}
+
+.flexberry-sitemap {
+  flex: 1 1 auto;
+}
+
+// Footer
+.sitebar-footer {
+  flex: 0 1 auto;
+}
+
+
+/*******************************
+            Mobile
+*******************************/
+
+/* Sidebar Menu */
+.inverted.vertical.main.menu.sidebar.mobile:not(.submenu-full) {
+  height: calc(~'100vh - @{headerHeightMobile} - @{footerHeightMobile}') !important;
+  top: @headerHeightMobile;
+}
+
+.ui.left.sidebar.mobile,
+.ui.right.sidebar.mobile {
+  width: 100%;
+}
+
+.ui.main.menu.sidebar.mobile {
+  /* Sub Menu */
+  .dropdown.item .menu {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.ui.menu .ui.dropdown .menu > .item.menu-back {
+  color: @iconColor !important;
+  .icon:not(.dropdown) {
+    float: left;
+    line-height: 1.5em;
+  } 
+}
+
+.ui.main.menu.sidebar.mobile {
+  .ui.dropdown .left.menu .item .dropdown.icon {
+    float: right;
+  }
+}
+
+.ui.sidebar.main.menu.mobile .ui.dropdown .menu > .item .title-item-menu {
+  white-space: normal;
 }
 
 .loadUIOverrides();

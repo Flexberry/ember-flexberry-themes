@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-#example {
+#example:not(.mobile) {
   padding-top: @headerHeight;
 }
 

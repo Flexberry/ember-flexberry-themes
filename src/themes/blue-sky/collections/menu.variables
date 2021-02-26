@@ -27,7 +27,7 @@
 ---------------*/
 
 /* Dropdown in Menu */
-@dropdownBackground: none;
+// @dropdownBackground: none;
 @dropdownHoveredItemBackground: #dcebfc;
 @dropdownActiveItemBackground: @whiteBlue;
 

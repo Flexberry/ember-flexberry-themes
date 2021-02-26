@@ -15,7 +15,7 @@
     min-height: auto;
 }
 
-.background-logo.mobile {
+.mobile .background-logo {
     height: @headerHeightMobile;
 }
 
@@ -100,8 +100,7 @@ lang {
   }
 
   .full.height {
-    // width: 100%;
-    transition: width 0.3s ease-in-out 0s;
+    transition: margin-left 0.3s ease-in-out 0s;
   }
 }
 
