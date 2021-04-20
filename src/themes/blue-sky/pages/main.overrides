@@ -38,3 +38,9 @@
 .page-header-userbar .ui.dropdown > .dropdown.icon {
   line-height: 0.5;
 }
+
+.flexberry-home-sitemap i.icon {
+  font-size: 62px;
+  line-height: 1;
+  margin: 0px 0 1rem;
+}
