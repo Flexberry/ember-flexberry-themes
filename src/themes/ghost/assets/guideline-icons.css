@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?2oekmu');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?2oekmu#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?2oekmu') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?2oekmu') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?2oekmu#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?ttiro7');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?ttiro7#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons/guideline-icons.ttf?ttiro7') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?ttiro7') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?ttiro7#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,105 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-navigate-arrow-down:before {
+  content: "\e980";
+}
+.icon-guideline-archive:before {
+  content: "\e960";
+}
+.icon-guideline-Arrows-max-left:before {
+  content: "\e961";
+}
+.icon-guideline-Arrows-max-right:before {
+  content: "\e962";
+}
+.icon-guideline-bookmark:before {
+  content: "\e963";
+}
+.icon-guideline-bookmark-filled:before {
+  content: "\e964";
+}
+.icon-guideline-chart:before {
+  content: "\e965";
+}
+.icon-guideline-circle:before {
+  content: "\e966";
+}
+.icon-guideline-clock:before {
+  content: "\e967";
+}
+.icon-guideline-compare:before {
+  content: "\e968";
+}
+.icon-guideline-compass:before {
+  content: "\e969";
+}
+.icon-guideline-coordinates:before {
+  content: "\e96a";
+}
+.icon-guideline-copy-map:before {
+  content: "\e96b";
+}
+.icon-guideline-cross-arrow:before {
+  content: "\e96c";
+}
+.icon-guideline-cut:before {
+  content: "\e96d";
+}
+.icon-guideline-eraser:before {
+  content: "\e96e";
+}
+.icon-guideline-grid:before {
+  content: "\e96f";
+}
+.icon-guideline-hand:before {
+  content: "\e970";
+}
+.icon-guideline-intersection:before {
+  content: "\e971";
+}
+.icon-guideline-layer-all:before {
+  content: "\e972";
+}
+.icon-guideline-layer-first:before {
+  content: "\e973";
+}
+.icon-guideline-layers-info:before {
+  content: "\e974";
+}
+.icon-guideline-layer-visible:before {
+  content: "\e975";
+}
+.icon-guideline-marker-point:before {
+  content: "\e976";
+}
+.icon-guideline-marker:before {
+  content: "\e977";
+}
+.icon-guideline-measure:before {
+  content: "\e978";
+}
+.icon-guideline-plus-min:before {
+  content: "\e979";
+}
+.icon-guideline-points:before {
+  content: "\e97a";
+}
+.icon-guideline-print:before {
+  content: "\e97b";
+}
+.icon-guideline-rectangle:before {
+  content: "\e97c";
+}
+.icon-guideline-scissors:before {
+  content: "\e97d";
+}
+.icon-guideline-search-plus:before {
+  content: "\e97e";
+}
+.icon-guideline-table:before {
+  content: "\e97f";
+}
 .icon-guideline-arrow-long-next:before {
   content: "\e95f";
 }
