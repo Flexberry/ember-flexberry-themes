@@ -5,3 +5,10 @@
 @accordionTitleColor: @lightGrayishBlue;
 @accordionIcon: "\e907";
 @accordionIconFont: 'guideline-icons';
+
+// Border
+@togglerBorder: 1px solid;
+@togglerBorderColor: #eaecef;
+@togglerBorderRadius: 0.25rem;
+@togglerPadding: 1rem;
+@togglerShadow: @defaultElementsBoxShadow;
