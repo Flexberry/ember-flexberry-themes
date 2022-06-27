@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?fx991d');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?fx991d#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?fx991d') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?fx991d') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?fx991d#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?50yab6');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?50yab6#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons/guideline-icons.ttf?50yab6') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?50yab6') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?50yab6#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-line:before {
+  content: "\e985";
+}
+.icon-guideline-line-plus:before {
+  content: "\e986";
+}
+.icon-guideline-copy-doc:before {
+  content: "\e984";
+}
 .icon-guideline-share:before {
   content: "\e983";
 }
