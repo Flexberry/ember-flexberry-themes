@@ -97,8 +97,8 @@
 ```
 ### Основное меню приложения
 
-1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L15).
-2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L16)
+1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/templates/application.hbs#L15).
+2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/templates/application.hbs#L16)
 2. Для установки иконок в пункты меню при объявлении `sitemap'а` добавить для узла параметр `icon`
 
 ```js
@@ -120,7 +120,7 @@
         ...
 ```
 
-3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/controllers/application.js#L43) 
+3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/controllers/application.js#L43) 
 
 ### Модальные окна в режиме `Sidepage`
 
