@@ -1,0 +1,66 @@
+@type    : 'component';
+@element : 'flexberry-highloadedmenu';
+
+@import (multiple) '../../theme.config';
+
+.ui.two.column.grid.highloaded-menu {
+  margin-bottom: @highloadedMenuMarginBottom;
+
+  h3.ui.header {
+  font-size: @highloadedMenuHeaderFontSize;
+  line-height: @highloadedMenuHeaderLineHeight;
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+
+  h3.ui.header.number {
+    font-size: @highloadedMenuNumberFontSize;
+    font-weight: normal;
+    line-height: @highloadedMenuNumberLineHeight;
+  }
+
+  .tab.item {
+    font-size: @highloadedMenuLinkFontSize;
+    color: @blueZodiak;
+  }
+
+  .tab.item.active {
+    color: @highloadedMenuGreen;
+  }
+
+  .cell.asterisk-cell {
+    display: flex;
+    align-items: start;
+  }
+
+  i.small.icon, i.small.icons {
+    line-height: @highloadedMenuIconLineHeight;
+    font-size: @highloadedMenuIconFontSize;
+  }
+
+  .list {
+    padding: 0;
+    padding-bottom: @highloadedMenuListPaddingBottom;
+    margin: 0;
+    position: relative;
+  }
+
+  .list::after {
+    content: "";
+    position: absolute;
+    width: @highloadedMenuLineWidth;
+    background-color: @highloadedMenuGrey;
+    height: 100%;
+    left: @highloadedMenuLinePositionLeft;
+    top: 0;
+  }
+}
+
+.highloaded-menu.ui.grid > .column:not(.row) {
+  padding-top: 0;
+  padding-bottom: @highloadedMenuColumnPaddingBottom;
+}
+
+.tab-item-container {
+  display: flex;
+}
