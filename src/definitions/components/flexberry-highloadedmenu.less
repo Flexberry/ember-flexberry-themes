@@ -3,8 +3,15 @@
 
 @import (multiple) '../../theme.config';
 
+.ui.grid.highloaded-menu-container {
+  max-width: 1167px;
+  margin-bottom: 0;
+}
+
 .ui.two.column.grid.highloaded-menu {
+  margin: 0;
   margin-bottom: @highloadedMenuMarginBottom;
+  column-gap: 10px;
 
   h3.ui.header {
   font-size: @highloadedMenuHeaderFontSize;
@@ -22,10 +29,13 @@
   .tab.item {
     font-size: @highloadedMenuLinkFontSize;
     color: @blueZodiak;
+    cursor: pointer;
   }
 
   .tab.item.active {
     color: @highloadedMenuGreen;
+    font-weight: 600;
+    cursor: default;
   }
 
   .cell.asterisk-cell {
@@ -58,6 +68,7 @@
 
 .highloaded-menu.ui.grid > .column:not(.row) {
   padding-top: 0;
+  padding: 0;
   padding-bottom: @highloadedMenuColumnPaddingBottom;
 }
 
