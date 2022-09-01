@@ -8,9 +8,14 @@
   margin-bottom: 0;
 }
 
+.ui.fixed {
+  position: sticky;
+  top: 20px;
+}
+
 .ui.two.column.grid.highloaded-menu {
   margin: 0;
-  margin-bottom: @highloadedMenuMarginBottom;
+  // margin-bottom: @highloadedMenuMarginBottom;
   column-gap: 10px;
 
   h3.ui.header {
@@ -32,7 +37,7 @@
     cursor: pointer;
   }
 
-  .tab.item.active {
+  .list.active .tab.item.active {
     color: @highloadedMenuGreen;
     font-weight: 600;
     cursor: default;
@@ -55,7 +60,7 @@
     position: relative;
   }
 
-  .list::after {
+  .list.active::after {
     content: "";
     position: absolute;
     width: @highloadedMenuLineWidth;
@@ -74,4 +79,75 @@
 
 .tab-item-container {
   display: flex;
+}
+
+.highloaded-menu-container .show-all.ui.empty.button  {
+  font-size: 1.125rem;
+  min-height: 30px;
+  padding-left: 0;
+
+  &.active, &.active .icon {
+    color: @highloadedMenuGreen;
+  }
+
+  &:hover, :focus {
+    background-color: transparent;
+    color: #2f3545;
+  }
+
+  &:hover .icon {
+    color: #2f3545;
+  }
+
+  .icon {
+    font-size: 1.25em;
+    vertical-align: middle;
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 13px;
+}
+
+.button-container .ui.button.pink-btn {
+  background-color:#E14059;
+  color: @white;
+
+  .icon {
+    color: @white;
+    vertical-align: middle;
+    font-size: 1.4em;
+  }
+
+  &:hover {
+    background-color: #cb3a50;
+  }
+}
+
+.button-container .tabsNavigation {
+  font-size: 1rem;
+  padding: 0.7em;
+}
+
+.button-container .empty.button {
+  color: @secondaryColor;
+
+  .icon {
+    color: @secondaryColor;
+    vertical-align: middle;
+    font-size: 1.4em;
+  }
+
+  &:hover {
+    color: #5e7a8f;
+  }
+
+  &:hover .icon {
+    color: #5e7a8f;
+  }
+}
+
+.button-container .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+  margin-right: 2px;
 }

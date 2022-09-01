@@ -11,4 +11,4 @@
 @highloadedMenuGrey: #c4c4c4;
 @highloadedMenuLineWidth: 2px;
 @highloadedMenuLinePositionLeft: -25px;
-@highloadedMenuColumnPaddingBottom: 0.938rem;
+@highloadedMenuColumnPaddingBottom: 0.8rem;
