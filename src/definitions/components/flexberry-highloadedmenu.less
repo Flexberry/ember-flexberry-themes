@@ -15,7 +15,6 @@
 
 .ui.two.column.grid.highloaded-menu {
   margin: 0;
-  // margin-bottom: @highloadedMenuMarginBottom;
   column-gap: 10px;
 
   h3.ui.header {
@@ -82,8 +81,8 @@
 }
 
 .highloaded-menu-container .show-all.ui.empty.button  {
-  font-size: 1.125rem;
-  min-height: 30px;
+  font-size: @highloadedMenuShowAllFontSize;
+  min-height: @highloadedMenuBtnMinHeight;
   padding-left: 0;
 
   &.active, &.active .icon {
@@ -91,42 +90,42 @@
   }
 
   &:hover, :focus {
-    background-color: transparent;
-    color: #2f3545;
+    background-color: @highloadedMenuTransparent;
+    color: @highloadedMenuShowAllColor;
   }
 
   &:hover .icon {
-    color: #2f3545;
+    color: @highloadedMenuShowAllColor;
   }
 
   .icon {
-    font-size: 1.25em;
+    font-size: @highloadedMenuListIconSIze;
     vertical-align: middle;
   }
 }
 
 .button-container {
   display: flex;
-  gap: 13px;
+  gap: @highloadedMenuButtonGap;
 }
 
 .button-container .ui.button.pink-btn {
-  background-color:#E14059;
+  background-color: @highloadedMenuNextBtnColor;
   color: @white;
 
   .icon {
     color: @white;
     vertical-align: middle;
-    font-size: 1.4em;
+    font-size: @highloadedMenuNextBtnIconSize;
   }
 
   &:hover {
-    background-color: #cb3a50;
+    background-color: @highloadedMenuNextBtnColorHover;
   }
 }
 
 .button-container .tabsNavigation {
-  font-size: 1rem;
+  font-size: @highloadedMenuBtnSize;
   padding: 0.7em;
 }
 
@@ -136,15 +135,15 @@
   .icon {
     color: @secondaryColor;
     vertical-align: middle;
-    font-size: 1.4em;
+    font-size: @highloadedMenuBackBtn;
   }
 
   &:hover {
-    color: #5e7a8f;
+    color: @highloadedMenuBackBtnColorHover;
   }
 
   &:hover .icon {
-    color: #5e7a8f;
+    color: @highloadedMenuBackBtnColorHover;
   }
 }
 
