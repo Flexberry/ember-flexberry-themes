@@ -23,3 +23,4 @@
 @highloadedMenuBtnSize: 1rem;
 @highloadedMenuBackBtn: 1.4em;
 @highloadedMenuBackBtnColorHover: #5e7a8f;
+@highloadedMenuBtnMinHeight: 30px;
