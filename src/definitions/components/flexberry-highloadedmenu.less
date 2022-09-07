@@ -37,7 +37,7 @@
   }
 
   .list.active .tab.item.active {
-    color: @highloadedMenuGreen;
+    color: @green;
     font-weight: 600;
     cursor: default;
   }
@@ -63,7 +63,7 @@
     content: "";
     position: absolute;
     width: @highloadedMenuLineWidth;
-    background-color: @highloadedMenuGrey;
+    background-color: @linkWater;
     height: 100%;
     left: @highloadedMenuLinePositionLeft;
     top: 0;
@@ -86,16 +86,15 @@
   padding-left: 0;
 
   &.active, &.active .icon {
-    color: @highloadedMenuGreen;
+    color: @green;
   }
 
   &:hover, :focus {
-    background-color: @highloadedMenuTransparent;
-    color: @highloadedMenuShowAllColor;
+    background-color: transparent;
   }
 
   &:hover .icon {
-    color: @highloadedMenuShowAllColor;
+    color: @blueZodiak;
   }
 
   .icon {
@@ -104,49 +103,20 @@
   }
 }
 
-.button-container {
-  display: flex;
-  gap: @highloadedMenuButtonGap;
-}
 
-.button-container .ui.button.pink-btn {
-  background-color: @highloadedMenuNextBtnColor;
+.primary.ui.button:not(.disabled) i.icon {
   color: @white;
-
-  .icon {
-    color: @white;
-    vertical-align: middle;
-    font-size: @highloadedMenuNextBtnIconSize;
-  }
-
-  &:hover {
-    background-color: @highloadedMenuNextBtnColorHover;
-  }
+  vertical-align: middle;
+  font-size: @highloadedMenuNextBtnIconSize;
 }
 
-.button-container .tabsNavigation {
-  font-size: @highloadedMenuBtnSize;
-  padding: 0.7em;
-}
 
-.button-container .empty.button {
+.secondary.ui.button:not(.disabled) i.icon {
   color: @secondaryColor;
-
-  .icon {
-    color: @secondaryColor;
-    vertical-align: middle;
-    font-size: @highloadedMenuBackBtn;
-  }
-
-  &:hover {
-    color: @highloadedMenuBackBtnColorHover;
-  }
-
-  &:hover .icon {
-    color: @highloadedMenuBackBtnColorHover;
-  }
+  vertical-align: middle;
+  font-size: @highloadedMenuBackBtn;
 }
 
-.button-container .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
   margin-right: 2px;
 }
