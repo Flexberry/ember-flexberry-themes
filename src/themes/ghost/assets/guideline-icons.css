@@ -433,3 +433,6 @@
 .icon-guideline-save:before {
   content: "\e936";
 }
+.icon-guideline-download-layer:before {
+  content: "\e988";
+}
