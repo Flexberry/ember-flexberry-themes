@@ -1,7 +1,7 @@
-@highloadedMenuHeaderFontSize   : 1rem;
-@highloadedMenuHeaderLineHeight: 2.5em;
+@highloadedMenuHeaderFontSize   : 1.125rem;
+@highloadedMenuHeaderLineHeight: 24px;
 @highloadedMenuNumberFontSize: 1.75rem;
-@highloadedMenuNumberLineHeight: 1.5em;
+@highloadedMenuNumberLineHeight: 24px;
 @highloadedMenuLinkFontSize: 0.875rem;
 @highloadedMenuIconFontSize: 0.4em;
 @highloadedMenuIconLineHeight: 0.75;
