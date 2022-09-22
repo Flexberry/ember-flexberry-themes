@@ -442,3 +442,12 @@
 .icon-guideline-save:before {
   content: "\e936";
 }
+.icon-guideline-group-plus-audit:before {
+  content: "\e98b";
+}
+.icon-guideline-group-edit-audit:before {
+  content: "\e98c";
+}
+.icon-guideline-group-minus-audit:before {
+  content: "\e98d";
+}
