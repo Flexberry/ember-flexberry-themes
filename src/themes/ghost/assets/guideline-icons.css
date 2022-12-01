@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?2ju3bh');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?2ju3bh#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?2ju3bh') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?2ju3bh') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?2ju3bh#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons.eot?mbrtbg');
+  src:  url('fonts/guideline-icons.eot?mbrtbg#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons.ttf?mbrtbg') format('truetype'),
+    url('fonts/guideline-icons.woff?mbrtbg') format('woff'),
+    url('fonts/guideline-icons.svg?mbrtbg#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-clear-layers:before {
+  content: "\e98f";
+}
 .icon-guideline-earth-zu:before {
   content: "\e98e";
 }
