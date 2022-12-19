@@ -39,6 +39,8 @@
 @formErrorBorder: @negativeBorderColor;
 @formErrorBackground: @negativeBackgroundColor;
 
+@loaderDimmerColor: @dimmerBackgroundColor;
+
 /*-------------------
         Input
 --------------------*/

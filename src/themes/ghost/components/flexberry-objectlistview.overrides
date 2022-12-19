@@ -329,10 +329,6 @@ table.object-list-view.selectable {
 }
 
 /* Body */
-.ui.table.object-list-view tbody tr {
-  background: @olvRowBackground;
-}
-
 .object-list-view-helper-column-cell {
   line-height: @olvHelperCellLineHeight;
 }
@@ -343,7 +339,7 @@ table.object-list-view.selectable {
 
 .ui.selectable.table tbody tr.object-list-view-filters,
 .ui.table tbody tr.object-list-view-filters td.selectable {
-  background: @olvRowBackground !important;
+  background: @pageBackground !important;
 }
 
 /* Helper buttons in row */
@@ -503,7 +499,7 @@ tbody tr td .icon.button.hierarchy-expand {
       }
 
       &.active {
-        background: @white !important;
+        background: @pageBackground !important;
         color: @textColor !important;
       }
 

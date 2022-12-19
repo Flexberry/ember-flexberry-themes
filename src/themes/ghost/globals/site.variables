@@ -224,6 +224,7 @@
 @accentColor                    : #E94B3D;
 @secondaryColor                 : #7699B3;
 @disabledColor                  : @lightGrayishBlue;
+@dimmerBackgroundColor: rgba(255, 255, 255, 0.85);
 
 // Sidebar
 @sidebarBackgroundColor         : @textColor;
@@ -242,6 +243,9 @@
 @defaultFocusBorderColor        : @activeColor;
 @focusedFormBorderColor         : @activeColor;
 
+// OLV
+@olvRowActiveBackground: @solitude;
+@olvContainerBorderColorDefault: @whisper;
 
 /*******************************
              States
