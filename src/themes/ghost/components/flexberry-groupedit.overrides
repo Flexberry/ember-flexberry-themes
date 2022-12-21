@@ -144,8 +144,13 @@ div:not(.groupedit-modal-content) {
 }
 
 .groupedit-open {
-  padding: @labelOpenSidePagePadding;
+  background: transparent;
+  border: 0;
   border-bottom: @labelOpenSidePageBorderBottom;
+  color: @textColor;
+  padding: @labelOpenSidePagePadding;
+  width: 100%;
+  text-align: left;
   h3 {
     line-height: @labelOpenSidePageLineHeight;
   }
