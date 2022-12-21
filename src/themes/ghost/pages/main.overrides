@@ -131,10 +131,6 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 .mobile .dimmable:not(body) {
   position: static;
 }
