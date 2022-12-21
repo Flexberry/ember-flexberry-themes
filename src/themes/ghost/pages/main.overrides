@@ -130,3 +130,7 @@
     }
   }
 }
+
+.mobile .dimmable:not(body) {
+  position: static;
+}

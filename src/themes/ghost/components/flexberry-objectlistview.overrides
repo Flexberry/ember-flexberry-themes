@@ -5,7 +5,7 @@
 }
 
 .ui.table.object-list-view tr td {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   &.overflowed-cell,
   &.object-list-view-menu {
@@ -71,6 +71,13 @@ table.object-list-view.selectable {
   margin-left: 0;
 
   /* Toolbar buttons */
+  .ui.button,
+  .ui.buttons .ui.button,
+  .ui.action.input {
+    > .ui.icon.button {
+      padding: @toolbarButtonPadding;
+    }
+  }
 
   .ui.button,
   .ui.buttons .ui.button,
@@ -586,25 +593,26 @@ tbody tr td .icon.button.hierarchy-expand {
   .object-list-view-helper-column {
     vertical-align: @olvMobileFirstCellVerticalAligtn;
   }
-
-  .object-list-view-single-column-cell {
-    &::after {
-      content: ".";
-      visibility: hidden;
-      display: block;
-      height: 0;
-      clear: both;
-    }
-    .inline.fields {
-      margin: @olvMobileFieldMargin;
-    }
-    .field {
-      margin: @olvMobileFieldMargin;
-      > label {
-        float: @olvMobileFieldLabelFloat;
-        width: @olvMobileFieldLabelWidth;
-        font-size: @olvMobileFieldLabelFontSize;
-        color: @olvMobileFieldLabelColor;
+  .object-list-view-container:not(.groupedit-container) {
+    .object-list-view-single-column-cell {
+      &::after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+      .inline.fields {
+        margin: @olvMobileFieldMargin;
+      }
+      .field {
+        margin: @olvMobileFieldMargin;
+        > label {
+          float: @olvMobileFieldLabelFloat;
+          width: @olvMobileFieldLabelWidth;
+          font-size: @olvMobileFieldLabelFontSize;
+          color: @olvMobileFieldLabelColor;
+        }
       }
     }
   }

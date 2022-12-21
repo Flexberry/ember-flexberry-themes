@@ -1,14 +1,47 @@
 /*******************************
             Groupedit
 *******************************/
+/* Label */
+@labelFontWeight: 500;
+@labelLineHeight: 2;
+
 /* Toolbar */
-@groupeditToolbarConfigIcon: '\f013';
-@toolbarButtonBackground: transparent;
+@toolbarButtonBackground        : transparent;
+
+// Icons
+@toolbarButtonFont              : 'guideline-icons';
+@toolbarAddButtonIcon           : "\e923";
+@toolbarDeelteButtonIcon        : "\e934";
+@toolbarClearSettingsButtonIcon : "\e935";
+@toolbarMoveUpButtonIcon        : "\e903";
+@toolbarMoveDownButtonIcon      : "\e900";
 
 /* OLV */
-@olvHeaderTextPadding: calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js
-@olvCellVerticalPadding: 0.25em;
-@olvCheckboxCellVerticalPadding: 0.5em;
-@olvCellTextPaddind: 0 0 0 @inputVerticalPadding;
+@olvHeaderTextPadding           : calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js
+@olvCellVerticalPadding         : 0.25em;
+@olvCheckboxCellVerticalPadding : 0.5em;
+@olvCellTextPaddind             : 0 0 0 @inputVerticalPadding;
 
-@newRowBackground: fade(#219653, 10%);
+@groupeditContainerMarginTop    : 0.5em;
+@newRowBackground               : fade(#219653, 10%);
+
+/* Mobile */
+@mobileToolbarBoxShadow         : @panelBoxShadow;
+@mobileToolbarLineHeight        : 3.5rem;
+@mobileToolbarPadding           : 0 0 0 0.5em;
+
+@mobileSidepageCloseContent     : "\e906";
+@mobileSidepageCloseFontFamaly  : 'guideline-icons';
+@mobileSidepageCloseFontSize    : 1.5em;
+@mobileSidepageClosePadding     : 0 1em 0 0;
+
+@mobileSidepageHeaderFontSize   : 1.125rem;
+@mobileSidepageHeaderFontWeight : 500;
+@mobileSidepageHeaderPadding    : 0.5em 1em 0.5em 1.5em;
+@mobileSidepageHeaderLineHeight : 1.1;
+
+@labelOpenSidePageBorderBottom  : 1px solid @hawkesBlue;
+@labelOpenSidePageLineHeight    : 1.8;
+@labelOpenSidePagePadding       : 0 0 1em 0;
+@labelOpenSidePageIconMargin    : 0 0.5em 0 0;
+
