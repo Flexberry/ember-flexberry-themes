@@ -10,6 +10,7 @@
 @defaultTextColor: @textColor;
 @defaultTextFocusColor: @textColor;
 
+@menuBackground: @pageBackground;
 @menuBorder: none;
 
 /*-------------------

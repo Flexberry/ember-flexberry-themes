@@ -1,4 +1,4 @@
-@headerColor           : #fff;
+@headerColor           : @pageBackground;
 @headerBoxShadow       : @panelBoxShadow;
 @headerTextColor: @textColor;
 @headerFontSize: 1rem;
@@ -6,7 +6,6 @@
 @toggleIcon: "\e920";
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
-@pageBackgroundColor: @simplePageBackground;
 @userFotoImgSize:36px;
 @userIconSize: 1.5em;
 @userIconLineHeight: 1;

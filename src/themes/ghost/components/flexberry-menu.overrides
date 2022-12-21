@@ -1,3 +1,7 @@
+.ui.menu {
+  background: @pageBackground;
+}
+
 // Flexberry-menu
 .flexberry-menu.ui.icon.dropdown.button,
 .menu.transition.visible .flexberry-menuitem.item {

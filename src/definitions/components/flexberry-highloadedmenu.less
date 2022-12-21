@@ -1,0 +1,132 @@
+@type    : 'component';
+@element : 'flexberry-highloadedmenu';
+
+@import (multiple) '../../theme.config';
+
+.highloaded-menu-container {
+  max-width: 1167px;
+  margin-bottom: 0;
+}
+
+.ui.fixed {
+  position: sticky;
+  top: 20px;
+}
+
+.ui.two.column.grid.highloaded-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  .highloaded-menu-number.ui.header {
+    font-size: @highloadedMenuNumberFontSize;
+    font-weight: normal;
+    line-height: @highloadedMenuNumberLineHeight;
+    min-width: 32px;
+    padding: 0;
+  }
+
+  h3.ui.header.title {
+    font-size: @highloadedMenuHeaderFontSize;
+    line-height: @highloadedMenuHeaderLineHeight;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-bottom: 9px;
+  }
+
+  .tab.item {
+    font-size: @highloadedMenuLinkFontSize;
+    color: @textColor;
+    cursor: pointer;
+  }
+
+  .list.active .tab.item.active {
+    color: @green;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .cell.asterisk-cell {
+    display: flex;
+    align-items: start;
+  }
+
+  i.small.icon.asterisk {
+    line-height: @highloadedMenuIconLineHeight;
+    font-size: @highloadedMenuIconFontSize;
+  }
+
+  .list {
+    padding: 0;
+    padding-bottom: @highloadedMenuListPaddingBottom;
+    margin: 0;
+    position: relative;
+  }
+
+  .list.active {
+    margin-bottom: 18px;
+  }
+
+  .list.active::after {
+    content: "";
+    position: absolute;
+    width: @highloadedMenuLineWidth;
+    background-color: @linkWater;
+    height: 100%;
+    left: @highloadedMenuLinePositionLeft;
+    top: 0;
+  }
+}
+
+.highloaded-menu-cell {
+  display: flex;
+}
+
+.highloaded-menu.ui.grid > .column:not(.row) {
+  padding-top: 0;
+  padding: 0;
+  padding-bottom: @highloadedMenuColumnPaddingBottom;
+}
+
+.tab-item-container {
+  display: flex;
+}
+
+.highloaded-menu-container .show-all.ui.empty.button  {
+  font-size: @highloadedMenuShowAllFontSize;
+  min-height: @highloadedMenuBtnMinHeight;
+  padding-left: 0;
+
+  &.active, &.active .icon {
+    color: @green;
+  }
+
+  &:hover, :focus {
+    background-color: transparent;
+  }
+
+  &:hover .icon {
+    color: @blueZodiak;
+  }
+
+  .icon {
+    font-size: @highloadedMenuListIconSIze;
+    vertical-align: middle;
+  }
+}
+
+.primary.ui.button:not(.disabled) i.icon {
+  color: @white;
+  vertical-align: middle;
+  font-size: @highloadedMenuNextBtnIconSize;
+}
+
+.empty.ui.button:not(.disabled) i.icon {
+  color: @secondaryColor;
+  vertical-align: middle;
+  font-size: @highloadedMenuBackBtn;
+}
+
+.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+  margin-right: 2px;
+}

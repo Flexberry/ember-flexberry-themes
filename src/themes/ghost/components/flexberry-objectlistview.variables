@@ -1,5 +1,5 @@
 // SemanticUI variables
-@background: @white;
+@background: @pageBackground;
 // @color: @textColor;
 @borderWidth: 0;
 @cellBorder: none;
@@ -12,7 +12,7 @@
 @cellHorizontalPadding: 10px;
 
 /* Table Header */
-@headerBackground: @white;
+@headerBackground: @pageBackground;
 @headerColor: @iconColor;
 @headerFontWeight: @defaultMediumFontWeight;
 @headerVerticalPadding: @cellVerticalPadding;
@@ -22,11 +22,11 @@
 @stripedBackground: @defaultColor;
 
 /* Selectable */
-@selectableBackground: @solitude;
+@selectableBackground: @olvRowActiveBackground;
 
 /* Active */
-@activeBackgroundColor: @solitude;
-@activeBackgroundHover: @solitude;
+@activeBackgroundColor: @olvRowActiveBackground;
+@activeBackgroundHover: @olvRowActiveBackground;
 
 @errorBackgroundColor: transparent;
 //=============
@@ -42,7 +42,7 @@
 
 @olvContainerBorderWidth: @defaultBorderWidth;
 @olvContainerBorderStyle: @defaultBorderStyle;
-@olvContainerBorderColor: @whisper;
+@olvContainerBorderColor: @olvContainerBorderColorDefault;
 
 @olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
 @olvContainerBorderRadius: @defaultBorderRadius;
@@ -78,8 +78,6 @@
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextLineHeight: 1.5em;
 
-@olvRowBackground: @white;
-
 @olvHelperCellLineHeight: 0;
 
 
@@ -100,7 +98,7 @@
 @filterButtonVerticalPadding: 0.1em;
 @filterButtonHorizontalPadding: 0.3em;
 @filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
-@olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @whisper;
+@olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @olvContainerBorderColorDefault;
 @filterButtonDisplayAfterFiltering: none;
 @orDisplay: none;
 @removeFilterPaddingLeft: 0;

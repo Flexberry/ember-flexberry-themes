@@ -1,6 +1,10 @@
 /*******************************
     SemanticUI variables Modal
 *******************************/
+@background: @pageBackground;
+@contentBackground: @pageBackground;
+@headerBackground: @pageBackground;
+
 @boxShadow: @defaultElementsBoxShadow;
 @scrollingContentMaxHeight: calc(~"100vh - @{modalPadding} - @{headerPaddingBottom} - @{headerLineHeight}");;
 
