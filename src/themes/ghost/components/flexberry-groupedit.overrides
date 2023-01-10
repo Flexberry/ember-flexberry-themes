@@ -26,6 +26,7 @@
 
   & > .icon:not(.button):not(.dropdown) {
     margin: 0;
+    font-size: 16px;
   }
 
   i.icon::before {

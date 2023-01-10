@@ -46,6 +46,6 @@
 @propPaddingMobile: 1em 0;
 /* Icons */
 @ellipsisVerticalIconMobile: "\e933";
-@plusIconMobile: "\e923";
-@chevronUpIconMobile: "\e903";
-@chevronDownIconMobile: "\e900";
+@plusIconMobile: "\e94b";
+@chevronUpIconMobile: "\e982";
+@chevronDownIconMobile: "\e981";

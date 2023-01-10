@@ -10,11 +10,11 @@
 
 // Icons
 @toolbarButtonFont              : 'guideline-icons';
-@toolbarAddButtonIcon           : "\e923";
-@toolbarDeelteButtonIcon        : "\e934";
-@toolbarClearSettingsButtonIcon : "\e935";
-@toolbarMoveUpButtonIcon        : "\e903";
-@toolbarMoveDownButtonIcon      : "\e900";
+@toolbarAddButtonIcon           : "\e94b";
+@toolbarDeelteButtonIcon        : "\e949";
+@toolbarClearSettingsButtonIcon : "\e929";
+@toolbarMoveUpButtonIcon        : "\e982";
+@toolbarMoveDownButtonIcon      : "\e981";
 
 /* OLV */
 @olvHeaderTextPadding           : calc(~'@{inputVerticalPadding} + 10px'); //defaultLeftPadding in object-list-view-row.js

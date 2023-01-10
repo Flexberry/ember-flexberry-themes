@@ -95,9 +95,7 @@
 @createButtonColor: @white;
 @createButtonMargin: 0 0.5em;
 
-@filterButtonVerticalPadding: 0.1em;
-@filterButtonHorizontalPadding: 0.3em;
-@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
+@filterButtonPadding: 0 0.3em;
 @olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @olvContainerBorderColorDefault;
 @filterButtonDisplayAfterFiltering: none;
 @orDisplay: none;
@@ -121,28 +119,31 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: 1rem;
+@toolbarButtonIconFontSize: 24px;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
 
 @hierarchyButtonIconFontSize: 1.538em;
 @hierarchyButtonIconWidth: 0.6em;
 
-// TODO: Удалить после отрисовки новых иконок.
-@hierarchicalButtonFontFamily: 'Icons';
 
 @refreshButtonIcon: "\e925";
-@deleteButtonIcon: "\e911";
+@deleteButtonIcon: "\e93c";
 @filterButtonIcon: "\e91a";
 @exportConfigButtonIcon: "\e916";
 @colsConfigButtonIcon: "\e90d";
-@searchButtonIcon: "\e927";
+@searchButtonIcon: "\e94c";
 @clearSearchButtonIcon: "\e90e";
 @menuItemRightIcon: "\e907";
-@menuItemEditIcon: "\e914";
+@menuItemEditIcon: "\e940";
 @menuItemUnhideIcon: "\e917";
 @menuItemApplyIcon: "\e92d";
-@menuItemAddIcon: "\e923";
+@menuItemAddIcon: "\e94b";
+@limitEditorButtonIcon: "\e930";
+@hierarchicalButtonIcon: "\e900";
+@hierarchicalExpandButtonIcon: "\e902";
+@hierarchicalCollapceButtonIcon: "\e903";
+
 @hierarchyOpenButtonIcon: "\e904";
 @hierarchyCloseButtonIcon: "\e90a";
 
@@ -185,10 +186,10 @@
 @prototypeHelperButtonInRowHoverColor: @green;
 
 /* Icons */
-@helperButtonInRowIconFontSize: 1rem;
-@editHelperButtonInRowIcon: "\e914";
-@deleteHelperButtonInRowIcon: "\e911";
-@copyButtonInRowIcon: "\e931";
+@helperButtonInRowIconFontSize: 1.25rem;
+@editHelperButtonInRowIcon: "\e940";
+@deleteHelperButtonInRowIcon: "\e93c";
+@copyButtonInRowIcon: "\e93a";
 
 /*-------------------
         Mobile

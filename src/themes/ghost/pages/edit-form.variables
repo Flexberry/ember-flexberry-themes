@@ -28,7 +28,7 @@
 @saveIcon       : "\e936";
 @saveCloseIcon  : "\e958";
 @successIcon    : "\e92d";
-@deleteIcon     : "\e911";
+@deleteIcon     : "\e93c";
 @errorIcon      : "\e915";
 @closeIcon      : "\e806";
 @iconPadding    : 0.625em;

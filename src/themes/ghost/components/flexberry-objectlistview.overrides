@@ -109,16 +109,6 @@ table.object-list-view.selectable {
       }
     }
 
-    // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button {
-      &:first-child {
-        padding-left: 0;
-      }
-      .icon {
-        font-family: @hierarchicalButtonFontFamily;
-      }
-    }
-
     &.refresh-button,
     &.delete-button {
       font-size: @buttonsFontSize;
@@ -153,9 +143,14 @@ table.object-list-view.selectable {
   }
 
   .filter-active {
+    i.icon {
+      line-height: 1;
+    }
     &.show-filter {
       background-color: @inputBackground;
       border-radius: @defaultBorderRadius;
+      margin-right: 0.5rem;
+
       .ui.button:first-child {
         padding-right: 0;
         &.active {
@@ -182,6 +177,7 @@ table.object-list-view.selectable {
         color: @iconColor;
         font-size: @removeFilterAfterFontSize;
         font-weight: @defaultBoldFontWeight;
+        vertical-align: middle;
   
         &:hover:before {
           color: @negativeColor;
@@ -266,6 +262,8 @@ table.object-list-view.selectable {
     color: @textColor;
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
+    height: auto;
+    width: auto;
   
     &.filter:before {
       content: @filterButtonIcon;
@@ -293,11 +291,10 @@ table.object-list-view.selectable {
 
     &.remove:before {
       content: @clearSearchButtonIcon;
-      font-size: 21px;
     }
 
     &.flask:before {
-      content: "\e930";
+      content: @limitEditorButtonIcon;
     }
 
     &.angle.right:before {
@@ -314,6 +311,15 @@ table.object-list-view.selectable {
 
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
+    }
+    &.sitemap:before {
+      content: @hierarchicalButtonIcon;
+    }
+    &.expand:before {
+      content: @hierarchicalExpandButtonIcon;
+    }
+    &.compress:before {
+      content: @hierarchicalCollapceButtonIcon;
     }
   }
 }
@@ -551,11 +557,11 @@ tbody tr td .icon.button.hierarchy-expand {
   }
   i.icon.edit:before {
     font-family: guideline-icons;
-    content: "\e914";
+    content: "\e940";
   }
   i.icon.trash:before {
     font-family: guideline-icons;
-    content: "\e911";
+    content: "\e93c";
   }
 }
 
