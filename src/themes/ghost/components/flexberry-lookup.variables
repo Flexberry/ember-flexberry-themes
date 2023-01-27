@@ -74,8 +74,8 @@
 
 // Icons
 @changeButtonIcon: "\e91d";
-@removeButtonIcon: "\e90e";
-@showPreviewButton: "\e917";
+@removeButtonIcon: "\e93b";
+@showPreviewButton: "\e957";
 @lookupLoadingIconBefore: '';
 
 // Mobile

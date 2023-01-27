@@ -3,7 +3,7 @@
 @openDatetimeButtonIcon: "\e910";
 @openButtonMargin: @datetimeInputHorizontalPadding + @datetimeButtonWidth;
 
-@clearButtonIcon: "\e90e";
+@clearButtonIcon: "\e93b";
 @clearButtonMargin: @datetimeInputHorizontalPadding + @datetimeButtonWidth * 2;
 
 @datetimeButtonIconHeight: auto;
