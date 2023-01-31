@@ -119,7 +119,7 @@
 @smallText: 0.875rem;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
-@glyphWidth: 1.5em;
+@glyphWidth: 1.7em;
 
 @disabledOpacity: 1;
 
