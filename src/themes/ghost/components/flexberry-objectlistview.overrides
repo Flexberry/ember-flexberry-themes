@@ -129,6 +129,7 @@ table.object-list-view.selectable {
     &.delete-button {
       i.icon {
         line-height: 1;
+        font-size: 1.4rem;
         margin: 0 0.5em;
       }
     }
@@ -170,15 +171,15 @@ table.object-list-view.selectable {
 
     .ui.button.removeFilter-button {
       padding-left: @removeFilterPaddingLeft;
-  
+
       .remove.icon {
         height: auto;
-        width: auto;  
+        width: auto;
         color: @iconColor;
         font-size: @removeFilterAfterFontSize;
         font-weight: @defaultBoldFontWeight;
         vertical-align: middle;
-  
+
         &:hover:before {
           color: @negativeColor;
         }
@@ -264,7 +265,7 @@ table.object-list-view.selectable {
     font-size: @toolbarButtonIconFontSize;
     height: auto;
     width: auto;
-  
+
     &.filter:before {
       content: @filterButtonIcon;
     }

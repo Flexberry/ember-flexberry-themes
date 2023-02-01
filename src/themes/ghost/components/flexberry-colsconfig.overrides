@@ -109,7 +109,7 @@
   }
 
   .object-list-view-filters i.icon.trash:before {
-    content: "\e90e";
+    content: "\e93b";
     font-size: 21px;
   }
 

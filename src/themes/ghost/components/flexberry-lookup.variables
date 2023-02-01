@@ -24,7 +24,7 @@
 @lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
 
 
-@lookupButtonHorizontalPadding: 0.17em;
+@lookupButtonHorizontalPadding: 0.3em;
 @lookupButtonPadding: 0 @lookupButtonHorizontalPadding;
 @lookupButtonBackground: transparent;
 @lookupButtonVerticalMargin: unit(9 / 14, em);
@@ -74,8 +74,8 @@
 
 // Icons
 @changeButtonIcon: "\e91d";
-@removeButtonIcon: "\e90e";
-@showPreviewButton: "\e917";
+@removeButtonIcon: "\e93b";
+@showPreviewButton: "\e957";
 @lookupLoadingIconBefore: '';
 
 // Mobile

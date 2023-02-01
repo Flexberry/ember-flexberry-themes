@@ -24,6 +24,6 @@
 @iconFontName: 'guideline-icons';
 @iconFontSize: 1.5em;
 @fileAddIcon: "\e919";
-@fileRemoveIcon: "\e90e";
+@fileRemoveIcon: "\e93b";
 @fileUploadIcon: "\e92e";
 @fileDownloadIcon: "\e912";
