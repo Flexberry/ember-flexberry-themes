@@ -49,22 +49,22 @@
 
     .icon {
       font-family: @iconFontName;
-      font-size: @iconFontSize;
+      font-size: @iconSize;
       height: auto;
     }
 
     &.flexberry-file-add-button .icon:before {
       content: @fileAddIcon;
     }
-    
+
     &.flexberry-file-remove-button .icon:before {
       content: @fileRemoveIcon;
     }
-    
+
     &.flexberry-file-upload-button .icon:before {
       content: @fileUploadIcon;
     }
-    
+
     &.flexberry-file-download-button .icon:before {
       content: @fileDownloadIcon;
     }

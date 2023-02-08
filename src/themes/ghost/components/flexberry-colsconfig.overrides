@@ -24,7 +24,7 @@
       box-shadow: none;
     }
     i.icon {
-      font-size: @glyphWidth;
+      font-size: @iconSize;
     }
   }
 

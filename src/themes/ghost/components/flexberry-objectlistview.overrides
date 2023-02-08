@@ -129,7 +129,6 @@ table.object-list-view.selectable {
     &.delete-button {
       i.icon {
         line-height: 1;
-        font-size: 1.4rem;
         margin: 0 0.5em;
       }
     }

@@ -119,9 +119,12 @@
 @smallText: 0.875rem;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
-@glyphWidth: 1.7em;
+@glyphWidth: 1.5em;
 
 @disabledOpacity: 1;
+
+// Icons size
+@iconSize         : 1.5rem;
 
 /*-------------------
    Icon Variables
