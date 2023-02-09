@@ -24,7 +24,7 @@
 @lookupFieldDisabledBorder: @lookupFieldDisabledBorderWidth @lookupFieldDisabledBorderStyle @lookupFieldDisabledBorderColor;
 
 
-@lookupButtonHorizontalPadding: 0.3em;
+@lookupButtonHorizontalPadding: 0.09em;
 @lookupButtonPadding: 0 @lookupButtonHorizontalPadding;
 @lookupButtonBackground: transparent;
 @lookupButtonVerticalMargin: unit(9 / 14, em);
@@ -48,7 +48,7 @@
 @lookupIconFont: 'guideline-icons';
 @lookupIconHeight: auto;
 @lookupIconMargin: 0em;
-@lookupIconFontSize: 1.3em;
+@lookupIconFontSize: @iconSize;
 
 
 // Autocomplete

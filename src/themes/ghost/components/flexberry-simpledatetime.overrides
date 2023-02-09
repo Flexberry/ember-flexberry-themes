@@ -50,7 +50,7 @@
 // Button icons
 .flexberry-simpledatetime > .ui.input > .ui.button > .icon {
   font-family: @datetimeButtonFont;
-  font-size: @iconSize;
+  font-size: @inputIconFontSize;
   height: @datetimeButtonIconHeight;
   margin: @datetimeButtonIconMargin;
 }

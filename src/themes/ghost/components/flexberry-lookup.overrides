@@ -58,7 +58,7 @@
 }
 
 .flexberry-lookup > .ui.input > .ui.button {
-  font-size: @iconSize;
+  font-size: @lookupIconFontSize;
   position: relative;
   padding: @lookupButtonPadding;
 
@@ -92,7 +92,6 @@
   .ui.button > .icon {
     margin: @lookupIconMargin;
     height: @lookupIconHeight;
-    font-size: @iconSize;
   }
 
   .icon::before {
@@ -192,7 +191,7 @@
 
     >.chevron.right.icon {
       font-family: @lookupIconFont;
-      font-size: @iconSize;
+      font-size: @lookupIconFontSize;
 
       &::before {
         content: @changeButtonIcon;

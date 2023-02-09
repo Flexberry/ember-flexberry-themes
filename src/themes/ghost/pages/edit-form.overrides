@@ -92,7 +92,7 @@
 .flexberry-edit-panel {
   .ui.button::before {
     font-family: @iconFontFamily;
-    font-size: @iconSize;
+    font-size: @iconFontSize;
     padding-right: @iconPadding;
     vertical-align: middle;
   }

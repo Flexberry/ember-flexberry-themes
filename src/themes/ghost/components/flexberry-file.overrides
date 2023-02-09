@@ -49,7 +49,7 @@
 
     .icon {
       font-family: @iconFontName;
-      font-size: @iconSize;
+      font-size: @iconFontSize;
       height: auto;
     }
 

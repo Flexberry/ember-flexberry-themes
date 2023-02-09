@@ -32,7 +32,7 @@
 @errorIcon      : "\e915";
 @closeIcon      : "\e806";
 @iconPadding    : 0.625em;
-@iconFontSize   : @iconSize;
+@iconFontSize   : 1rem;
 
 /* Errored Input */
 @formErrorColor: @textColor;

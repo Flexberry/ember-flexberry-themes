@@ -7,7 +7,7 @@
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
 @userFotoImgSize:36px;
-@userIconSize: 1.5em;
+@userIconSize: @iconSize;
 @userIconLineHeight: 1;
 @userSpanMargin: 1em;
 
