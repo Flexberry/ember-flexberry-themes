@@ -85,7 +85,7 @@
     .flatpickr-next-month {
       padding-top: @monthControlPaddingTop;
       font-family: @iconFontName;
-      font-size: @iconFontSize;
+      font-size: @iconSize;
       color: @monthControlDefaultColor;
 
       svg {
@@ -104,7 +104,7 @@
         content: @prevMonthIcon;
       }
     }
-    
+
     .flatpickr-next-month {
       padding-right: @nextMonthControlPaddingRight;
 
@@ -260,7 +260,7 @@
               border-bottom-color: @arrowTimeControlBorderColorHover;
             }
           }
-          
+
           .arrowDown {
             top: @arrowDownTimeControlTop;
 
@@ -286,7 +286,7 @@
             background: @timeControlBackgroundFocus;
           }
         }
-        
+
         .arrowUp,
         .arrowDown {
           right: @arrowTimeControlRight;

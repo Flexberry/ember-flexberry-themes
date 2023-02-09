@@ -94,6 +94,10 @@
     height: @lookupIconHeight;
   }
 
+  .icon::before {
+    vertical-align: middle
+  }
+
   .remove.icon::before {
     font-family: @lookupIconFont;
     content: @removeButtonIcon;

@@ -61,8 +61,9 @@
       // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
       content: @closeIcon;
       font-family: 'Crimean';
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 700;
+      padding-right: 0;
     }
   }
 
@@ -70,7 +71,7 @@
   .ui.button.save-close-button,
   .ui.button.save-del-button {
     background: @toolbarFormButtonBackgroundColor;
-    font-weight: @buttonFontWeight; 
+    font-weight: @buttonFontWeight;
     color: @editButtonsColor;
     &:focus {
       box-shadow: none;
@@ -79,7 +80,7 @@
 
   .ui.button.close-button {
     background: @toolbarFormCloseButtonBackgroundColor;
-    font-weight: @buttonFontWeight; 
+    font-weight: @buttonFontWeight;
     color: @editCloseButtonColor;
     &:focus {
       box-shadow: none;
@@ -132,7 +133,7 @@
     max-width: 1098px;
     margin-bottom: 0;
   }
-  
+
   > .ui.one.column.grid {
     max-width: 517px;
     margin-bottom: 0;
@@ -164,7 +165,7 @@
 
 .ui.form .labeled-inside.field .ui.selection.dropdown {
   padding-top: @fieldLabeledInsidePaddingTop;
-  
+
   > .default.text {
     color: transparent;
   }

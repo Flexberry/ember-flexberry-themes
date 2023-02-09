@@ -133,10 +133,10 @@
 @exportConfigButtonIcon: "\e916";
 @colsConfigButtonIcon: "\e90d";
 @searchButtonIcon: "\e94c";
-@clearSearchButtonIcon: "\e90e";
+@clearSearchButtonIcon: "\e93b";
 @menuItemRightIcon: "\e907";
 @menuItemEditIcon: "\e940";
-@menuItemUnhideIcon: "\e917";
+@menuItemUnhideIcon: "\e957";
 @menuItemApplyIcon: "\e92d";
 @menuItemAddIcon: "\e94b";
 @limitEditorButtonIcon: "\e930";
@@ -249,7 +249,7 @@
 @clearSelectButtonBackground     : transparent;
 @clearSelectButtonFontSize       : 1.5em;
 @checkRowsButtonIcon             : "\e928";
-@clearSelectButtonIcon           : "\e90e";
+@clearSelectButtonIcon           : "\e93b";
 
 /* Row controls */
 @rowControlsBackground: @defaultColor;
