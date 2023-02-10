@@ -6,7 +6,6 @@
   border-radius: @lookupFieldBorderRadius;
   padding-right: @lookupFieldRightPadding;
   pointer-events: all;
-  width: 100% !important;
 
   &:focus {
     background: @lookupFieldBackground;
@@ -35,21 +34,21 @@
 .flexberry-lookup>.ui.action.input:not([class*="left action"]) > input.lookup-field {
   border-top-right-radius: @lookupFieldBorderRadius !important;
   border-bottom-right-radius: @lookupFieldBorderRadius !important;
-  border-right-color: @lookupFieldBorderColor !important;
+  border-right-color: @inputBorderColor!important;
 
   &.disabled {
-    border-right-color: @lookupFieldDisabledBorderColor !important;
+    border-right-color: @inputReadonlyBorderColor !important;
   }
   &:focus {
-    border-right-color: @lookupFieldBorderColor !important;
+    border-right-color: @inputBorderColor !important;
   }
   &:hover {
-    border-right-color: @lookupFieldHoverBorderColor !important;
+    border-right-color: @inputHoverBorderColor !important;
   }
 }
 
 .flexberry-lookup.search:not(.error) > .ui.action.input:not([class*="left action"]) > input.lookup-field.prompt:focus {
-    border-right-color: @lookupFieldFocusBorderColor !important;
+    border-right-color: @focusedFormBorderColor !important;
 }
 
 /* Buttons */
@@ -58,8 +57,8 @@
 }
 
 .flexberry-lookup > .ui.input > .ui.button {
-  font-size: @lookupIconFontSize;
-  position: relative;
+  font-size: @inputIconFontSize;
+  position: absolute;
   padding: @lookupButtonPadding;
 
   &:focus {
@@ -67,22 +66,17 @@
   }
 
   &.ui-clear {
-    right: @lookupClearButtonRight;
+    right: @inputSecondButtonRight;
   }
 
   &.ui-change {
-    padding-right: @lookupChangeButtonPaddingRight;
-    right: @lookupChangeButtonRight;
+    right: @inputFirstButtonRight;
   }
   &.ui-preview {
-    right: @lookupPreviewButtonRight;
+    right: @inputSecondButtonRight;
 
     ~.ui-clear {
-      right: @lookupClearButtonRightWithPreview;
-    }
-
-    ~.ui-change {
-      right: @lookupChangeButtonRightWithPreview;
+      right: @inputThirdButtonRight;
     }
   }
 }
@@ -90,26 +84,21 @@
 // Icons
 .flexberry-lookup > .ui.input > {
   .ui.button > .icon {
+    font-family: @lookupIconFont;
     margin: @lookupIconMargin;
     height: @lookupIconHeight;
-  }
-
-  .icon::before {
-    vertical-align: middle
+    width: auto;
   }
 
   .remove.icon::before {
-    font-family: @lookupIconFont;
     content: @removeButtonIcon;
   }
 
   .change.icon::before {
-    font-family: @lookupIconFont;
     content: @changeButtonIcon;
   }
 
   .eye.icon::before {
-    font-family: @lookupIconFont;
     content: @showPreviewButton;
   }
 }
@@ -191,7 +180,7 @@
 
     >.chevron.right.icon {
       font-family: @lookupIconFont;
-      font-size: @lookupIconFontSize;
+      font-size: @inputIconFontSize;
 
       &::before {
         content: @changeButtonIcon;

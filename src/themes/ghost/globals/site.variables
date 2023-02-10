@@ -178,7 +178,6 @@
 @inputVerticalPadding: unit((9 / 14), em);
 @inputHorizontalPadding: unit((11 / 14), em);
 
-@inputIconFontSize: @iconSize;
 @inputReadonlyBackground: @hawkesBlue;
 @inputReadonlyBorderColor: @hawkesBlue;
 
@@ -186,6 +185,16 @@
 @labelMarginRight: 0em;
 @labelMarginBottom: unit(4 / 14, em);
 @labelMarginLeft: 0em;
+
+// input buttons
+@inputIconFontSize: @iconSize;
+@inputButtonPadding: 0.5rem 0.25rem;
+@inputButtonWidth: @iconSize + 0.5rem;
+@inputLastButtonRight: 0.375rem;
+
+@inputFirstButtonRight: 0.375rem;
+@inputSecondButtonRight: @inputButtonWidth + @inputFirstButtonRight;
+@inputThirdButtonRight: @inputSecondButtonRight + @inputButtonWidth;
 
 // Large
 @inputLargeFontSize: unit(16 / 18, em);
