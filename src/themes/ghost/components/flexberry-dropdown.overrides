@@ -28,6 +28,11 @@
   width: 100%;
 }
 
+.ui.selection.dropdown > .dropdown.icon {
+  top: 13px;
+  right: 13px;
+}
+
 .ui.dropdown {
   font-size: @fontSize;
 
