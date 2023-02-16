@@ -19,7 +19,7 @@
 /* Icon */
 @dropdownIconSize: @inputIconFontSize;
 @dropdownIconFontFamily: 'guideline-icons';
-@dropdownIcon: "\e904";
+@dropdownIcon: "\e980";
 
 /* Menu Item */
 @itemFontSize: 1em;

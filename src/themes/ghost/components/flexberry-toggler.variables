@@ -3,5 +3,5 @@
 
 @accordionBackgroundColor: transparent;
 @accordionTitleColor: @lightGrayishBlue;
-@accordionIcon: "\e907";
+@accordionIcon: "\e94a";
 @accordionIconFont: 'guideline-icons';
