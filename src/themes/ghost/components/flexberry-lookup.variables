@@ -45,7 +45,7 @@
 
 // Icons
 @changeButtonIcon: "\e91d";
-@removeButtonIcon: "\e93b";
+@removeButtonIcon: "\e90e";
 @showPreviewButton: "\e957";
 @lookupLoadingIconBefore: '';
 

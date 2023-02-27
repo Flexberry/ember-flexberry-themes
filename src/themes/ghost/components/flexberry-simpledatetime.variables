@@ -104,6 +104,6 @@
 @iconFontSize: 1.571em;
 @openDateButtonIcon: "\e90f";
 @openDatetimeButtonIcon: "\e910";
-@clearButtonIcon: "\e93b";
+@clearButtonIcon: "\e90e";
 @prevMonthIcon: "\e906";
 @nextMonthIcon: "\e908";

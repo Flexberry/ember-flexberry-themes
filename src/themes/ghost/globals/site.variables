@@ -188,7 +188,7 @@
 
 // input buttons
 @inputIconFontSize: @iconSize;
-@inputButtonPadding: 0.5rem 0.25rem;
+@inputButtonPadding: 0.5em 0.25em;
 @inputButtonWidth: @iconSize + 0.5rem;
 @inputLastButtonRight: 0.375rem;
 
