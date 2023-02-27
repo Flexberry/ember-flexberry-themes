@@ -57,7 +57,7 @@
   color: @buttonDisabledColor;
 }
 
-.ui.button:not(.disabled) i.icon {
+.ui.button:not(.disabled) i.icon:not(.primary):not(.empty) {
   color: @iconColor;
 }
 
