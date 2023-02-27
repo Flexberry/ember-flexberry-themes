@@ -6,7 +6,7 @@
 @headerBackground: @pageBackground;
 
 @boxShadow: @defaultElementsBoxShadow;
-@scrollingContentMaxHeight: calc(~"100vh - @{modalPadding} - @{headerPaddingBottom} - @{headerLineHeight}");;
+@scrollingContentMaxHeight: calc(~"100vh - @{modalPadding} - @{headerPaddingBottom} - @{headerLineHeight}");
 
 /* Close Icon */
 @closeOpacity: 1;
@@ -33,6 +33,7 @@
 @actionBorder: none;
 @actionBackground: @white;
 @actionPadding: 0.75rem @modalPadding @modalPadding;
+@actionHeight: 84px;
 
 /* Mobile Positions */
 @mobileHeaderPaddingTop: 0.75rem;
@@ -47,7 +48,7 @@
 @smallHeaderSize: 1.5em;
 
 /*******************************
-Ember-flexberry-themes variables 
+Ember-flexberry-themes variables
 *******************************/
 @modalPadding: 2rem;
 
@@ -67,3 +68,4 @@ Ember-flexberry-themes variables
 
 @mobileModalHeaderFontSize: 1.125em;
 @mobileScrollingContentMaxHeight: calc(~"100vh - @{mobileHeaderPaddingBottom} - @{mobileHeaderPaddingTop} - @{headerLineHeight}");
+@buttonPannelScrollingContentMaxHeight: calc(~"100vh - @{modalPadding} - @{headerPaddingBottom} - @{headerLineHeight} - @{actionHeight}");
