@@ -4,6 +4,7 @@
   font-size: @inputIconFontSize;
   padding: @datetimeButtonPadding;
   position: absolute;
+  height: 100%;
 
   &.ui-clear {
     right: @inputSecondButtonRight;
