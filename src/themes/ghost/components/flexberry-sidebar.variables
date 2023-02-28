@@ -48,5 +48,5 @@
 @toggleButtonFontSize: 1rem;
 @toggleButtonPadding: 0px @distanceL 0px @distanceS;
 
-@itemDropdownIconContent: "\e907";
+@itemDropdownIconContent: "\e94a";
 @itemDropdownIconFont: 'guideline-icons';

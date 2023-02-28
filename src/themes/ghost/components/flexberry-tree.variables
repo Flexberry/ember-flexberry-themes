@@ -3,5 +3,5 @@
 @treeHeaderColor: @simplePageBackground;
 
 /* Icon */
-@treeIcon: "\f107";
-@treeIconFont: Icons;
+@treeIcon: "\e980";
+@treeIconFont: 'guideline-icons';

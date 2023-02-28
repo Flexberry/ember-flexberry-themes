@@ -13,6 +13,5 @@
 @highloadedMenuShowAllMinHeight: 30px;
 @highloadedMenuListIconSIze: 1.25em;
 @highloadedMenuButtonGap: 13px;
-@highloadedMenuNextBtnIconSize: 1.4em;
-@highloadedMenuBackBtn: 1.4em;
+@highloadedMenuBtnIcon: @iconSize;
 @highloadedMenuBtnMinHeight: 30px;

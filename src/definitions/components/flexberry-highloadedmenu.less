@@ -115,19 +115,17 @@
   }
 }
 
-.primary.ui.button:not(.disabled) i.icon {
-  color: @white;
+.highloaded-menu-container .empty.ui.button:not(.disabled) i.icon,
+.highloaded-menu-container .primary.ui.button:not(.disabled) i.icon {
   vertical-align: middle;
-  font-size: @highloadedMenuNextBtnIconSize;
+  font-size: @highloadedMenuBtnIcon;
+  margin: 0 2px 0 -2px;
+  height: auto;
+  width: auto;
 }
 
-.empty.ui.button:not(.disabled) i.icon {
-  color: @secondaryColor;
-  vertical-align: middle;
-  font-size: @highloadedMenuBackBtn;
-}
-
-.highloaded-menu-container .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-  margin-right: 2px;
-  margin-bottom: 4px;
+.highloaded-menu-container .primary.ui.button:not(.disabled),
+.highloaded-menu-container .empty.ui.button:not(.disabled) {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
