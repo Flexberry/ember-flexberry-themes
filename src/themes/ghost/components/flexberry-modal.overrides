@@ -98,3 +98,7 @@
     max-height: @mobileScrollingContentMaxHeight;
   }
 }
+
+.ui.modal .scrolling.content.smallerContentSize {
+  max-height: @buttonPannelScrollingContentMaxHeight;
+}
