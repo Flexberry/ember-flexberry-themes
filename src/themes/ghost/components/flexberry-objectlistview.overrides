@@ -224,9 +224,9 @@ table.object-list-view.selectable {
         }
       }
 
-      .menu.transition {
-        overflow-y: auto;
-      }
+      // .menu.transition {
+      //   overflow-y: auto;
+      // }
     }
   }
 
