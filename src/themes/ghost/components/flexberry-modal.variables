@@ -33,7 +33,7 @@
 @actionBorder: none;
 @actionBackground: @white;
 @actionPadding: 0.75rem @modalPadding @modalPadding;
-@actionHeight: 84px;
+@actionHeight: 5.25em;
 
 /* Mobile Positions */
 @mobileHeaderPaddingTop: 0.75rem;
@@ -68,4 +68,4 @@ Ember-flexberry-themes variables
 
 @mobileModalHeaderFontSize: 1.125em;
 @mobileScrollingContentMaxHeight: calc(~"100vh - @{mobileHeaderPaddingBottom} - @{mobileHeaderPaddingTop} - @{headerLineHeight}");
-@buttonPannelScrollingContentMaxHeight: calc(~"100vh - @{modalPadding} - @{headerPaddingBottom} - @{headerLineHeight} - @{actionHeight}");
+@buttonPannelScrollingContentMaxHeight: calc(~"@{scrollingContentMaxHeight} - @{actionHeight}");
