@@ -34,7 +34,7 @@
 @linedBoxShadow           : 0 0 0 1px @hawkesBlue inset;
 // Empty
 @emptyBackgroundColor     : transparent;
-@emptyColor               : @lightGrayishBlue;
+@emptyColor               : @secondaryColor;
 
 /* Sizing */
 @buttonTinyPadding        : unit(7 / 14, em) unit(7 / 14, em);

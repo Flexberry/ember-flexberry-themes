@@ -1,5 +1,5 @@
 // SemanticUI variables
-@background: @white;
+@background: @pageBackground;
 // @color: @textColor;
 @borderWidth: 0;
 @cellBorder: none;
@@ -12,7 +12,7 @@
 @cellHorizontalPadding: 10px;
 
 /* Table Header */
-@headerBackground: @white;
+@headerBackground: @pageBackground;
 @headerColor: @iconColor;
 @headerFontWeight: @defaultMediumFontWeight;
 @headerVerticalPadding: @cellVerticalPadding;
@@ -22,11 +22,11 @@
 @stripedBackground: @defaultColor;
 
 /* Selectable */
-@selectableBackground: @solitude;
+@selectableBackground: @olvRowActiveBackground;
 
 /* Active */
-@activeBackgroundColor: @solitude;
-@activeBackgroundHover: @solitude;
+@activeBackgroundColor: @olvRowActiveBackground;
+@activeBackgroundHover: @olvRowActiveBackground;
 
 @errorBackgroundColor: transparent;
 //=============
@@ -42,7 +42,7 @@
 
 @olvContainerBorderWidth: @defaultBorderWidth;
 @olvContainerBorderStyle: @defaultBorderStyle;
-@olvContainerBorderColor: @whisper;
+@olvContainerBorderColor: @olvContainerBorderColorDefault;
 
 @olvContainerBorder: @olvContainerBorderWidth @olvContainerBorderStyle @olvContainerBorderColor;
 @olvContainerBorderRadius: @defaultBorderRadius;
@@ -78,8 +78,6 @@
 @olvHeaderTextPadding: 0 0 0 @inputVerticalPadding;
 @olvHeaderTextLineHeight: 1.5em;
 
-@olvRowBackground: @white;
-
 @olvHelperCellLineHeight: 0;
 
 
@@ -97,10 +95,8 @@
 @createButtonColor: @white;
 @createButtonMargin: 0 0.5em;
 
-@filterButtonVerticalPadding: 0.1em;
-@filterButtonHorizontalPadding: 0.3em;
-@filterButtonPadding: @filterButtonVerticalPadding @filterButtonHorizontalPadding;
-@olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @whisper;
+@filterButtonPadding: 0 0.3em;
+@olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @olvContainerBorderColorDefault;
 @filterButtonDisplayAfterFiltering: none;
 @orDisplay: none;
 @removeFilterPaddingLeft: 0;
@@ -123,28 +119,31 @@
 
 /* Icons */
 @iconFontFamily: guideline-icons;
-@toolbarButtonIconFontSize: 1rem;
+@toolbarButtonIconFontSize: 24px;
 @toolbarButtonIconColor: @textColor;
 @removeFilterIconColor: #71BC90;
 
 @hierarchyButtonIconFontSize: 1.538em;
 @hierarchyButtonIconWidth: 0.6em;
 
-// TODO: Удалить после отрисовки новых иконок.
-@hierarchicalButtonFontFamily: 'Icons';
 
 @refreshButtonIcon: "\e925";
-@deleteButtonIcon: "\e911";
+@deleteButtonIcon: "\e93c";
 @filterButtonIcon: "\e91a";
 @exportConfigButtonIcon: "\e916";
 @colsConfigButtonIcon: "\e90d";
-@searchButtonIcon: "\e927";
-@clearSearchButtonIcon: "\e90e";
+@searchButtonIcon: "\e94c";
+@clearSearchButtonIcon: "\e93b";
 @menuItemRightIcon: "\e907";
-@menuItemEditIcon: "\e914";
-@menuItemUnhideIcon: "\e917";
+@menuItemEditIcon: "\e940";
+@menuItemUnhideIcon: "\e957";
 @menuItemApplyIcon: "\e92d";
-@menuItemAddIcon: "\e923";
+@menuItemAddIcon: "\e94b";
+@limitEditorButtonIcon: "\e930";
+@hierarchicalButtonIcon: "\e900";
+@hierarchicalExpandButtonIcon: "\e902";
+@hierarchicalCollapceButtonIcon: "\e903";
+
 @hierarchyOpenButtonIcon: "\e904";
 @hierarchyCloseButtonIcon: "\e90a";
 
@@ -187,10 +186,10 @@
 @prototypeHelperButtonInRowHoverColor: @green;
 
 /* Icons */
-@helperButtonInRowIconFontSize: 1rem;
-@editHelperButtonInRowIcon: "\e914";
-@deleteHelperButtonInRowIcon: "\e911";
-@copyButtonInRowIcon: "\e931";
+@helperButtonInRowIconFontSize: 1.25rem;
+@editHelperButtonInRowIcon: "\e940";
+@deleteHelperButtonInRowIcon: "\e93c";
+@copyButtonInRowIcon: "\e93a";
 
 /*-------------------
         Mobile
@@ -250,7 +249,7 @@
 @clearSelectButtonBackground     : transparent;
 @clearSelectButtonFontSize       : 1.5em;
 @checkRowsButtonIcon             : "\e928";
-@clearSelectButtonIcon           : "\e90e";
+@clearSelectButtonIcon           : "\e93b";
 
 /* Row controls */
 @rowControlsBackground: @defaultColor;

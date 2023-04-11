@@ -5,25 +5,27 @@
 
 ## Настройка импорта стилей
 
-1. Прописать в `bower.json` пакет `ember-flexberry-themes`
-2. Проверить, что в `ember-cli-build.js` прописаны пути до пакетов с темами (`semantic-ui` и `ember-flexberry-themes`)
+1. Обновить semantic-ui до версии 2.4.1
+2. Установить с помощью команды ```npm i ember-flexberry-themes```
+
+3. Проверить, что в `ember-cli-build.js` прописаны пути до пакетов с темами (`semantic-ui` и `ember-flexberry-themes`)
 
 ```js
   lessOptions: {
     paths: [
       'bower_components/semantic-ui',
-      'bower_components/ember-flexberry-themes',
+      'node_modules/ember-flexberry-themes',
     ]
   }
 ```
 
-3. Настроить файл `theme.config` (можно скопировать из [примера](src/theme.config.example))
+4. Настроить файл `theme.config` (можно скопировать из [примера](src/theme.config.example))
 
 `@semanticUiThemesFolder` - путь до папки с темой `semantic-ui`
 `@emberFlexberryThemesFolder` - путь до папки с темой `ember-flexberry-themes`
 `@siteFolder` - папака с локальными стилями приложения
 
-4. Настроить файл `app/styles/theme.less` (можно скопировать из [примера](src/theme.less))
+5. Настроить файл `app/styles/theme.less` (можно скопировать из [примера](src/theme.less))
 
 Прописать в `app/styles/app.less` импорт стилей (помимо импорта локальных стилей должна остаться одна строка, `semantic` импортировать не нужно)
 
@@ -33,35 +35,33 @@
 
 ## Настройка шрифтов
 
-1. Скопировать шрифты в папку `vendor/fonts` из папки `assets/fonts` ([src/themes/ghost/assets/fonts](src/themes/ghost/assets/fonts))
-2. Скопировать в папку `vendor` `.css` с объявлением стиилей из папки `assets` ([src/themes/ghost/assets](src/themes/ghost/assets))
-3. Добавить импорт шрифтов `GOSTUI2`, `guideline-icons` в `ember-cli-build.js`
-4. Добавить импорт стилей и настроек для иконок и шрифтов в `ember-cli-build.js`
+1. Добавить импорт шрифтов `GOSTUI2`, `guideline-icons` в `ember-cli-build.js`
+2. Добавить импорт стилей и настроек для иконок и шрифтов в `ember-cli-build.js`
 
 ```js
-  app.import('vendor/fonts.css');
-
   // GOSTUI2
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.eot', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.ttf', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.woff', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.woff2', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.eot', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.ttf', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.woff', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.woff2', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.eot', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.ttf', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.woff', { destDir: 'assets/fonts' });
-  app.import('vendor/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.woff2', { destDir: 'assets/fonts' });
+  const ghostThemeAssetsDir = 'node_modules/ember-flexberry-themes/src/themes/ghost/assets';
+  app.import(`${ghostThemeAssetsDir}/fonts.css`);
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.eot`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.ttf`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.woff`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w170-regular_g_temp.woff2`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.eot`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.ttf`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.woff`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w450-medium_g_temp.woff2`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.eot`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.ttf`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.woff`, { destDir: 'assets/fonts' });
+  app.import(`${ghostThemeAssetsDir}/fonts/GOSTUI2/GOSTUI2-w706-bold_g_temp.woff2`, { destDir: 'assets/fonts' });
 
   // guideline-icons
-  app.import('vendor/guideline-icons.css');
-  app.import('vendor/fonts/guideline-icons/guideline-icons.eot', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.ttf', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.woff', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.woff2', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.svg', { destDir: 'assets/fonts/guideline-icons' });
+  app.import(`${ghostThemeAssetsDir}/guideline-icons.css`);
+  app.import(`${ghostThemeAssetsDir}/fonts/guideline-icons/guideline-icons.eot`, { destDir: 'assets/fonts/guideline-icons' });
+  app.import(`${ghostThemeAssetsDir}/fonts/guideline-icons/guideline-icons.ttf`, { destDir: 'assets/fonts/guideline-icons' });
+  app.import(`${ghostThemeAssetsDir}/fonts/guideline-icons/guideline-icons.woff`, { destDir: 'assets/fonts/guideline-icons' });
+  app.import(`${ghostThemeAssetsDir}/fonts/guideline-icons/guideline-icons.woff2`, { destDir: 'assets/fonts/guideline-icons' });
+  app.import(`${ghostThemeAssetsDir}/fonts/guideline-icons/guideline-icons.svg`, { destDir: 'assets/fonts/guideline-icons' });
 ```
 
 ## Настройка приложения
@@ -97,8 +97,8 @@
 ```
 ### Основное меню приложения
 
-1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L15).
-2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/templates/application.hbs#L16)
+1. Чтобы отображать новое меню нужно использовать компонент `flexberry-sitemap-guideline`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/templates/application.hbs#L15).
+2. Чтобы отображать элементы в подвале сайдбара, их нужно поместить в блок с классом `sitebar-footer`. [Пример на стенде](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/templates/application.hbs#L16)
 2. Для установки иконок в пункты меню при объявлении `sitemap'а` добавить для узла параметр `icon`
 
 ```js
@@ -120,7 +120,7 @@
         ...
 ```
 
-3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-new-theme/tests/dummy/app/controllers/application.js#L43) 
+3. toggleSidebar скопировать [отсюда](https://github.com/Flexberry/ember-flexberry/blob/feature-ember-update/tests/dummy/app/controllers/application.js#L43) 
 
 ### Модальные окна в режиме `Sidepage`
 

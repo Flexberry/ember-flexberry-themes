@@ -61,18 +61,27 @@
       // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
       content: @closeIcon;
       font-family: 'Crimean';
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 700;
+      padding-right: 0;
     }
   }
 
   .ui.button.save-button,
   .ui.button.save-close-button,
-  .ui.button.save-del-button,
-  .ui.button.close-button {
-    background: @pageBackground;
-    font-weight: @buttonFontWeight; 
+  .ui.button.save-del-button {
+    background: @toolbarFormButtonBackgroundColor;
+    font-weight: @buttonFontWeight;
     color: @editButtonsColor;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .ui.button.close-button {
+    background: @toolbarFormCloseButtonBackgroundColor;
+    font-weight: @buttonFontWeight;
+    color: @editCloseButtonColor;
     &:focus {
       box-shadow: none;
     }
@@ -88,21 +97,21 @@
     vertical-align: middle;
   }
 
-  .ui.button.save-button::before,
-  .ui.button.save-close-button::before {
+  .ui.button.save-button::before {
     content: @saveIcon;
+  }
+  .ui.button.save-close-button::before {
+    content: @saveCloseIcon;
   }
   .ui.button.save-del-button::before {
     content: @deleteIcon;
   }
 }
 
-.flexberry-edit-panel .ui.button.save-close-button,
 .flexberry-olv-toolbar .ui.button.hierarchical-button.active {
   position: relative;
 }
 
-.flexberry-edit-panel .ui.button.save-close-button::after,
 .flexberry-olv-toolbar .ui.button.hierarchical-button.active .sitemap.icon::after {
   background-color: @pageBackground;
   border-radius: 50%;
@@ -124,7 +133,7 @@
     max-width: 1098px;
     margin-bottom: 0;
   }
-  
+
   > .ui.one.column.grid {
     max-width: 517px;
     margin-bottom: 0;
@@ -156,7 +165,7 @@
 
 .ui.form .labeled-inside.field .ui.selection.dropdown {
   padding-top: @fieldLabeledInsidePaddingTop;
-  
+
   > .default.text {
     color: transparent;
   }

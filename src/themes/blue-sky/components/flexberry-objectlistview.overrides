@@ -2,6 +2,9 @@
         OLV
 --------------------*/
 
+.fluid.action.input.ui .flexberry-simpledatetime {
+  flex-grow: 1;
+}
 
 /* Header operations */
 .ui.table.object-list-view thead tr th.object-list-view-operations {

@@ -1,15 +1,17 @@
 // Buttons
 .flexberry-simpledatetime > .ui.fluid.action.input.flatpickr > .ui.button {
   background: transparent;
+  font-size: @inputIconFontSize;
   padding: @datetimeButtonPadding;
-  width: @datetimeButtonWidth;
+  position: absolute;
+  height: 100%;
 
   &.ui-clear {
-    margin-left: -@clearButtonMargin;
+    right: @inputSecondButtonRight;
   }
 
   &.ui-open {
-    margin-left: -@openButtonMargin;
+    right: @inputFirstButtonRight;
   }
 
   &:focus {
@@ -20,7 +22,7 @@
 // Date input
 .flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
   border-radius: @datetimeInputBorderRadius;
-  padding: @datetimeInputPadding;
+  padding-right: @datetimeInputPaddingRight;
 
   &:hover {
     border-right-color: @inputHoverBorderColor !important;
@@ -50,9 +52,13 @@
 // Button icons
 .flexberry-simpledatetime > .ui.input > .ui.button > .icon {
   font-family: @datetimeButtonFont;
-  font-size: @inputIconFontSize;
   height: @datetimeButtonIconHeight;
   margin: @datetimeButtonIconMargin;
+  width: auto;
+}
+
+.flexberry-simpledatetime > .ui.input > .ui.button > .remove.icon{
+  width: @iconSize;
 }
 
 .flexberry-simpledatetime .ui-clear > .icon {
@@ -85,7 +91,7 @@
     .flatpickr-next-month {
       padding-top: @monthControlPaddingTop;
       font-family: @iconFontName;
-      font-size: @iconFontSize;
+      font-size: @iconSize;
       color: @monthControlDefaultColor;
 
       svg {
@@ -104,7 +110,7 @@
         content: @prevMonthIcon;
       }
     }
-    
+
     .flatpickr-next-month {
       padding-right: @nextMonthControlPaddingRight;
 
@@ -260,7 +266,7 @@
               border-bottom-color: @arrowTimeControlBorderColorHover;
             }
           }
-          
+
           .arrowDown {
             top: @arrowDownTimeControlTop;
 
@@ -286,7 +292,7 @@
             background: @timeControlBackgroundFocus;
           }
         }
-        
+
         .arrowUp,
         .arrowDown {
           right: @arrowTimeControlRight;

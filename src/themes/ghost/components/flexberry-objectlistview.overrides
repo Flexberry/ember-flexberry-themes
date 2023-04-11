@@ -5,7 +5,7 @@
 }
 
 .ui.table.object-list-view tr td {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   &.overflowed-cell,
   &.object-list-view-menu {
@@ -71,6 +71,13 @@ table.object-list-view.selectable {
   margin-left: 0;
 
   /* Toolbar buttons */
+  .ui.button,
+  .ui.buttons .ui.button,
+  .ui.action.input {
+    > .ui.icon.button {
+      padding: @toolbarButtonPadding;
+    }
+  }
 
   .ui.button,
   .ui.buttons .ui.button,
@@ -99,16 +106,6 @@ table.object-list-view.selectable {
     &s > .button {
       &:not(.disabled) {
         color: @toolbarButtonIconColor;
-      }
-    }
-
-    // TODO: Удалить после отрисовки новых иконок.
-    &.hierarchical-button {
-      &:first-child {
-        padding-left: 0;
-      }
-      .icon {
-        font-family: @hierarchicalButtonFontFamily;
       }
     }
 
@@ -146,9 +143,14 @@ table.object-list-view.selectable {
   }
 
   .filter-active {
+    i.icon {
+      line-height: 1;
+    }
     &.show-filter {
       background-color: @inputBackground;
       border-radius: @defaultBorderRadius;
+      margin-right: 0.5rem;
+
       .ui.button:first-child {
         padding-right: 0;
         &.active {
@@ -168,14 +170,15 @@ table.object-list-view.selectable {
 
     .ui.button.removeFilter-button {
       padding-left: @removeFilterPaddingLeft;
-  
+
       .remove.icon {
         height: auto;
-        width: auto;  
+        width: auto;
         color: @iconColor;
         font-size: @removeFilterAfterFontSize;
         font-weight: @defaultBoldFontWeight;
-  
+        vertical-align: middle;
+
         &:hover:before {
           color: @negativeColor;
         }
@@ -220,6 +223,10 @@ table.object-list-view.selectable {
           content: "\e905";
         }
       }
+
+      // .menu.transition {
+      //   overflow-y: auto;
+      // }
     }
   }
 
@@ -255,7 +262,9 @@ table.object-list-view.selectable {
     color: @textColor;
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
-  
+    height: auto;
+    width: auto;
+
     &.filter:before {
       content: @filterButtonIcon;
     }
@@ -285,7 +294,7 @@ table.object-list-view.selectable {
     }
 
     &.flask:before {
-      content: "\e930";
+      content: @limitEditorButtonIcon;
     }
 
     &.angle.right:before {
@@ -302,6 +311,15 @@ table.object-list-view.selectable {
 
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
+    }
+    &.sitemap:before {
+      content: @hierarchicalButtonIcon;
+    }
+    &.expand:before {
+      content: @hierarchicalExpandButtonIcon;
+    }
+    &.compress:before {
+      content: @hierarchicalCollapceButtonIcon;
     }
   }
 }
@@ -329,10 +347,6 @@ table.object-list-view.selectable {
 }
 
 /* Body */
-.ui.table.object-list-view tbody tr {
-  background: @olvRowBackground;
-}
-
 .object-list-view-helper-column-cell {
   line-height: @olvHelperCellLineHeight;
 }
@@ -343,7 +357,7 @@ table.object-list-view.selectable {
 
 .ui.selectable.table tbody tr.object-list-view-filters,
 .ui.table tbody tr.object-list-view-filters td.selectable {
-  background: @olvRowBackground !important;
+  background: @pageBackground !important;
 }
 
 /* Helper buttons in row */
@@ -503,7 +517,7 @@ tbody tr td .icon.button.hierarchy-expand {
       }
 
       &.active {
-        background: @white !important;
+        background: @pageBackground !important;
         color: @textColor !important;
       }
 
@@ -543,11 +557,11 @@ tbody tr td .icon.button.hierarchy-expand {
   }
   i.icon.edit:before {
     font-family: guideline-icons;
-    content: "\e914";
+    content: "\e940";
   }
   i.icon.trash:before {
     font-family: guideline-icons;
-    content: "\e911";
+    content: "\e93c";
   }
 }
 
@@ -590,25 +604,26 @@ tbody tr td .icon.button.hierarchy-expand {
   .object-list-view-helper-column {
     vertical-align: @olvMobileFirstCellVerticalAligtn;
   }
-
-  .object-list-view-single-column-cell {
-    &::after {
-      content: ".";
-      visibility: hidden;
-      display: block;
-      height: 0;
-      clear: both;
-    }
-    .inline.fields {
-      margin: @olvMobileFieldMargin;
-    }
-    .field {
-      margin: @olvMobileFieldMargin;
-      > label {
-        float: @olvMobileFieldLabelFloat;
-        width: @olvMobileFieldLabelWidth;
-        font-size: @olvMobileFieldLabelFontSize;
-        color: @olvMobileFieldLabelColor;
+  .object-list-view-container:not(.groupedit-container) {
+    .object-list-view-single-column-cell {
+      &::after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+      .inline.fields {
+        margin: @olvMobileFieldMargin;
+      }
+      .field {
+        margin: @olvMobileFieldMargin;
+        > label {
+          float: @olvMobileFieldLabelFloat;
+          width: @olvMobileFieldLabelWidth;
+          font-size: @olvMobileFieldLabelFontSize;
+          color: @olvMobileFieldLabelColor;
+        }
       }
     }
   }

@@ -3,5 +3,5 @@
 
 /* Icon */
 @uiMessageIconFont: guideline-icons;
-@uimessageCloseIcon: "\e90e";
+@uimessageCloseIcon: "\e93b";
 @uimessageIconPositionRight: 1em;

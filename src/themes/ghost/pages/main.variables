@@ -1,14 +1,13 @@
-@headerColor           : #fff;
-@headerBoxShadow       : 0px 1px 5px rgba(0, 0, 0, 0.1);
+@headerColor           : @pageBackground;
+@headerBoxShadow       : @panelBoxShadow;
 @headerTextColor: @textColor;
 @headerFontSize: 1rem;
 @toggleIconFont: guideline-icons;
 @toggleIcon: "\e920";
 @logoWidth: @headerHeight;
 @pageHeaderCaptionColor: @headerTextColor;
-@pageBackgroundColor: @simplePageBackground;
 @userFotoImgSize:36px;
-@userIconSize: 1.5em;
+@userIconSize: @iconSize;
 @userIconLineHeight: 1;
 @userSpanMargin: 1em;
 

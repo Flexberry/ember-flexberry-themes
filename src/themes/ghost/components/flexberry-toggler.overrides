@@ -10,11 +10,13 @@
 .flexberry-toggler.ui.accordion {
   .title:not(.ui) {
     // color: @accordionTitleColor;
+    display: flex;
   }
 
   .title .dropdown.icon,
   .accordion .title .dropdown.icon {
     font-family: @accordionIconFont;
+    font-size: @iconSize;
 
     &::before {
       content: @accordionIcon;

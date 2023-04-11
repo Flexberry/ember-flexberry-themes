@@ -4,9 +4,15 @@
 
 /* Icon */
 .flexberry-tree.ui.accordion {
+  .flexberry-treenode-header.title {
+    display: flex;
+    align-items: center;
+  }
+
   .title .dropdown.icon,
   .accordion .title .dropdown.icon {
     font-family: @treeIconFont;
+    font-size: @iconSize;
 
     &::before {
       content: @treeIcon;

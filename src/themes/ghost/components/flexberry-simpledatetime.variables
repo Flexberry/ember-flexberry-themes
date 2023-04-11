@@ -1,23 +1,14 @@
 // Buttons
-@openDateButtonIcon: "\e90f";
-@openDatetimeButtonIcon: "\e910";
-@openButtonMargin: @datetimeInputHorizontalPadding + @datetimeButtonWidth;
-
-@clearButtonIcon: "\e90e";
-@clearButtonMargin: @datetimeInputHorizontalPadding + @datetimeButtonWidth * 2;
-
 @datetimeButtonIconHeight: auto;
 @datetimeButtonIconMargin: 0;
-@datetimeButtonFont: 'guideline-icons';
-@datetimeButtonPadding: 0;
-@datetimeButtonWidth: unit(20 / 14, em);
+
+@datetimeButtonPadding: @inputButtonPadding;
 
 // Input
 @datetimeInputBorderRadius: @defaultBorderRadius !important;
 @datetimeInputVerticalPadding: @inputVerticalPadding;
 @datetimeInputHorizontalPadding: @inputHorizontalPadding;
-@datetimeInputIconDistance: @inputHorizontalPadding + @glyphWidth + @datetimeButtonWidth * 2;
-@datetimeInputPadding: @datetimeInputVerticalPadding @datetimeInputIconDistance @datetimeInputVerticalPadding @datetimeInputHorizontalPadding;
+@datetimeInputPaddingRight: @inputButtonWidth *2 + @inputLastButtonRight;
 
 /*---------------
     Calendar
@@ -109,6 +100,10 @@
 
 // Calendar icons
 @iconFontName: guideline-icons;
+@datetimeButtonFont: 'guideline-icons';
 @iconFontSize: 1.571em;
+@openDateButtonIcon: "\e90f";
+@openDatetimeButtonIcon: "\e910";
+@clearButtonIcon: "\e90e";
 @prevMonthIcon: "\e906";
 @nextMonthIcon: "\e908";

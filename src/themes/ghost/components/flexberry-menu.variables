@@ -1,7 +1,7 @@
 @dropdownHoveredItemBackground: @defaultColor;
 
 @flexberryMenuTextColor: @textColor;
-@flexberryMenuBackground: @white;
+@flexberryMenuBackground: @pageBackground;
 @flexberryMenuBorder: 0 solid transparent;
 @flexberryMenuTextFontWeight: 450;
 
@@ -9,6 +9,8 @@
 @menuMaxHeight: 400px;
 
 @borderedSize: 2em;
+
+@dropdownBackground: @pageBackground;
 
 // fix for item buttons
 @dropdownItemIconMargin: '';
@@ -19,7 +21,7 @@
 @itemDividingWidth: calc(~'100% - 2em');
 @itemDividingPosition: absolute;
 @itemDividingLeft: 1em;
-@itemDividingBottom: 1em;
+@itemDividingBottom: 0;
 @itemDividingBackground: rgba(0, 0, 0, 0.1);
 
 // Menu item buttons

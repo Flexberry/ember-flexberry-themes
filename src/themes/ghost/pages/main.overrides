@@ -55,9 +55,13 @@
 
 
 .flexberry-container {
-  background-color: @pageBackgroundColor;
+  background-color: @simplePageBackground;
   padding: @flexberryContainerPadding;
   min-height: calc(~"100vh - @{headerHeight}");
+}
+
+.flexberry-content.ui.segment {
+  background: @pageBackground;
 }
 
 @media only screen and (min-width: @largeMonitorBreakpoint) {
@@ -125,4 +129,8 @@
       width: 100%;
     }
   }
+}
+
+.mobile .dimmable:not(body) {
+  position: static;
 }

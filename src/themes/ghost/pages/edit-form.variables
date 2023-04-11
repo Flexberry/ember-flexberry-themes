@@ -18,13 +18,17 @@
 // Toolbar buttons
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @textColor;
+@editCloseButtonColor: @textColor;
+@toolbarFormButtonBackgroundColor: @pageBackground;
+@toolbarFormCloseButtonBackgroundColor: @pageBackground;
 @closeButtonPaddingTop: unit(9 / 14, em);
 
 //Icons
 @iconFontFamily : guideline-icons;
 @saveIcon       : "\e936";
+@saveCloseIcon  : "\e958";
 @successIcon    : "\e92d";
-@deleteIcon     : "\e911";
+@deleteIcon     : "\e93c";
 @errorIcon      : "\e915";
 @closeIcon      : "\e806";
 @iconPadding    : 0.625em;
@@ -34,6 +38,8 @@
 @formErrorColor: @textColor;
 @formErrorBorder: @negativeBorderColor;
 @formErrorBackground: @negativeBackgroundColor;
+
+@loaderDimmerColor: @dimmerBackgroundColor;
 
 /*-------------------
         Input
