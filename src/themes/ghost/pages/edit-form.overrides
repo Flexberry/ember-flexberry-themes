@@ -48,22 +48,23 @@
 
 // Buttons
 .flexberry-edit-panel {
+  display: flex;
+  align-items: center;
   .ui.button:first-child {
     padding-left: 0;
   }
 
   .ui.button.close-button {
+    background: @toolbarFormCloseButtonBackgroundColor;
+    font-weight: @buttonFontWeight;
     font-size: 0;
-    float: right;
+    color: @editCloseButtonColor;
+    margin-left: auto;
     line-height: @distanceM;
     padding-top: @closeButtonPaddingTop;
-    &::before {
-      // TODO: Нужно исправить иконку крестика в шрифте guideline-icons, сейчас с большими полями
-      content: @closeIcon;
-      font-family: 'Crimean';
-      font-size: 15px;
-      font-weight: 700;
-      padding-right: 0;
+
+    &:focus {
+      box-shadow: none;
     }
   }
 
@@ -71,40 +72,54 @@
   .ui.button.save-close-button,
   .ui.button.save-del-button {
     background: @toolbarFormButtonBackgroundColor;
+    font-size: @buttonFontSize;
     font-weight: @buttonFontWeight;
     color: @editButtonsColor;
+    white-space: nowrap;
     &:focus {
       box-shadow: none;
     }
   }
 
-  .ui.button.close-button {
-    background: @toolbarFormCloseButtonBackgroundColor;
-    font-weight: @buttonFontWeight;
-    color: @editCloseButtonColor;
-    &:focus {
-      box-shadow: none;
-    }
+  .ui.dropdown.group-toolbar {
+    font-size: @buttonFontSize;
+    white-space: nowrap;
   }
 }
 
 // Icons
 .flexberry-edit-panel {
-  .ui.button::before {
+  .ui.button::before,
+  .button-dropdown-menu .item .menu-item::before {
     font-family: @iconFontFamily;
-    font-size: @iconFontSize;
+    font-size: @iconSize;
     padding-right: @iconPadding;
     vertical-align: middle;
   }
 
-  .ui.button.save-button::before {
+  .button-dropdown-menu .item .menu-item i:not(.dropdown),
+  .button-dropdown-menu .item .menu-item::before {
+    padding-right: 8px;
+  }
+  .ui.button.save-button::before,
+  .button-dropdown-menu .item.save-button .menu-item::before {
     content: @saveIcon;
   }
-  .ui.button.save-close-button::before {
+  .ui.button.save-close-button::before,
+  .button-dropdown-menu .item.save-close-button .menu-item::before {
     content: @saveCloseIcon;
   }
-  .ui.button.save-del-button::before {
+  .ui.button.save-del-button::before,
+  .button-dropdown-menu .item.save-del-button .menu-item::before {
     content: @deleteIcon;
+  }
+  .button-dropdown-menu .item .menu-item i:not(.dropdown) {
+    font-size: @iconSize;
+    vertical-align: middle;
+  }
+  .ui.button.close-button::before {
+    content: @closeIcon;
+    padding-right: 0;
   }
 }
 

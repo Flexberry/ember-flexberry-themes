@@ -41,6 +41,10 @@
   }
 }
 
+.ui.dropdown:not(.selection) > .dropdown.icon::before {
+  content: @dropdownNotSelectionIcon;
+}
+
 /* Focus */
 .ui.selection.active.dropdown:focus {
   box-shadow: @selectionActiveFocusBoxShadow;
@@ -54,3 +58,48 @@
 .ui.default.dropdown.error:not(.button) > .text{
   color: @defaultTextColor;
 }
+
+// edit-panel dropdown
+.ui.dropdown.group-toolbar {
+  border-radius: @defaultBorderRadius;
+  padding-left: 5px;
+}
+
+.ui.dropdown.group-toolbar:first-child {
+  margin-left: -5px;
+}
+
+.ui.dropdown.group-toolbar.active.visible {
+  background-color: @defaultColor;
+}
+
+.ui.dropdown.group-toolbar > .text {
+  font-weight: 500;
+  width: auto;
+}
+
+.ui.dropdown.group-toolbar > .dropdown.icon {
+  color: @textColor;
+  margin: 0;
+  vertical-align: middle;
+  line-height: @iconSize;
+}
+
+.ui.dropdown.group-toolbar .menu > .item {
+  position: relative;
+}
+.ui.dropdown.group-toolbar .menu > .item:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  width: calc(~'100% - 24px');
+  height: 1px;
+  background-color: @hawkesBlue;
+  bottom: 0;
+  left: 12px;
+}
+
+.ui.dropdown.group-toolbar .menu > .item .text {
+  font-weight: 500;
+  vertical-align: middle;
+}
+

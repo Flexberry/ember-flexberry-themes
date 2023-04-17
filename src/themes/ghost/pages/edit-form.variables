@@ -16,6 +16,7 @@
 @headerFontWeight: 400;
 
 // Toolbar buttons
+@buttonFontSize: 1rem;
 @buttonFontWeight: @defaultMediumFontWeight;
 @editButtonsColor: @textColor;
 @editCloseButtonColor: @textColor;
@@ -30,9 +31,8 @@
 @successIcon    : "\e92d";
 @deleteIcon     : "\e93c";
 @errorIcon      : "\e915";
-@closeIcon      : "\e806";
-@iconPadding    : 0.625em;
-@iconFontSize   : 1rem;
+@closeIcon      : "\e90e";
+@iconPadding    : 0.25em;
 
 /* Errored Input */
 @formErrorColor: @textColor;

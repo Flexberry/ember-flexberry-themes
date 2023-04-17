@@ -5,6 +5,9 @@
 @dropdownWithinGroupeditTransform: none;
 @dropdownWithinGroupeditMinWidth: 0.071em;
 
+/* Menu */
+@menuBoxShadow: @defaultElementsBoxShadow;
+
 /* Text */
 @textLineHeight: @inputLineHeight;
 @defaultTextColor: @textColor;
@@ -20,6 +23,7 @@
 @dropdownIconSize: @inputIconFontSize;
 @dropdownIconFontFamily: 'guideline-icons';
 @dropdownIcon: "\e980";
+@dropdownNotSelectionIcon: "\e905";
 
 /* Menu Item */
 @itemFontSize: 1em;
