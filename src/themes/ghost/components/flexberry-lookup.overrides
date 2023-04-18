@@ -72,7 +72,12 @@
 
   &.ui-change {
     right: @inputFirstButtonRight;
+
+    &.loading {
+      position: absolute;
+    }
   }
+
   &.ui-preview {
     right: @inputSecondButtonRight;
 
