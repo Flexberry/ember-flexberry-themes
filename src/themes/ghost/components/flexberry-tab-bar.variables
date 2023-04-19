@@ -10,32 +10,32 @@
 @loaderSize: 2.5em;
 
 /* Sidebar tabbar */
-@rightSidebarTabbarBackground: @white;
+@rightSidebarTabbarBackground: @pageBackground;
 
 /* Tabs container */
 @tabsContainerGridColumns: 10fr 1fr;
 @tabsContainerGridRows: 1fr;
-@tabsContainerBackground: @white;
-@tabsContainerTextColor: @blueZodiak;
+@tabsContainerBackground: @pageBackground;
+@tabsContainerTextColor: @textColor;
 @tabsContainerLockedBackground: @hawkesBlue;
-@tabsContainerLockedTextColor: @blueZodiak;
+@tabsContainerLockedTextColor: @textColor;
 
 /* Tabs */
 @tabsBorder: 1px solid #e6e6e6;
 @tabsBorderRadius: 5px 5px 0 0;
 @tabsBackground: @aliceBlue;
-@tabsActiveTextColor: #e14059;
+@tabsActiveTextColor: @primaryColor;
 @tabsActiveBorderBottom: none;
 @tabsActiveFontWeight: bold;
 
 /* DropdownMenu */
-@dropdownBackground: @white;
+@dropdownBackground: @pageBackground;
 @dropdownIcon: "\f24d";
 @dropdownMaxWidth: 13em;
 @dropdownMaxHeight: 25em;
-@dropdownButtonBackground: @white;
+@dropdownButtonBackground: @pageBackground;
 @dropdownButtonPadding: 0 1em;
-@dropdownButtonColor: @blueZodiak;
+@dropdownButtonColor: @textColor;
 
 /* Dropdown Scrollbar */
 @chromeScrollbarButtonColor: @lightGrayishBlue;
