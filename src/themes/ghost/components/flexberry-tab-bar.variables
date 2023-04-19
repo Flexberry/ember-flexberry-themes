@@ -1,0 +1,43 @@
+/*******************************
+        Tab Variables
+*******************************/
+/* Loading */
+@loadingMinHeight: 250px;
+@loadingContentPosition: relative;
+@loadingContentOffset: -10000px;
+
+@loaderDistanceFromTop: 100px;
+@loaderSize: 2.5em;
+
+/* Sidebar tabbar */
+@rightSidebarTabbarBackground: @pageBackground;
+
+/* Tabs container */
+@tabsContainerGridColumns: 10fr 1fr;
+@tabsContainerGridRows: 1fr;
+@tabsContainerBackground: @pageBackground;
+@tabsContainerTextColor: @textColor;
+@tabsContainerLockedBackground: @hawkesBlue;
+@tabsContainerLockedTextColor: @textColor;
+
+/* Tabs */
+@tabsBorder: 1px solid #e6e6e6;
+@tabsBorderRadius: 5px 5px 0 0;
+@tabsBackground: @aliceBlue;
+@tabsActiveTextColor: @primaryColor;
+@tabsActiveBorderBottom: none;
+@tabsActiveFontWeight: bold;
+
+/* DropdownMenu */
+@dropdownBackground: @pageBackground;
+@dropdownIcon: "\f24d";
+@dropdownMaxWidth: 13em;
+@dropdownMaxHeight: 25em;
+@dropdownButtonBackground: @pageBackground;
+@dropdownButtonPadding: 0 1em;
+@dropdownButtonColor: @textColor;
+
+/* Dropdown Scrollbar */
+@chromeScrollbarButtonColor: @lightGrayishBlue;
+@chromeScrollbarTrackColor: #ddd;
+@chromeScrollbarWidth: 5px;
