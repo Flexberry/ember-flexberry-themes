@@ -73,8 +73,9 @@
   &.ui-change {
     right: @inputFirstButtonRight;
 
-    &.loading {
+    &.loading.loading.loading.loading.loading.loading {
       position: absolute;
+      font-size: 20px;
     }
   }
 
