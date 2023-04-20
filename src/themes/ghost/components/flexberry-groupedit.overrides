@@ -160,3 +160,7 @@ div:not(.groupedit-modal-content) {
     margin: @labelOpenSidePageIconMargin;
   }
 }
+
+.groupedit-container .object-list-view-single-column-cell .inline.fields {
+  display: block;
+}
