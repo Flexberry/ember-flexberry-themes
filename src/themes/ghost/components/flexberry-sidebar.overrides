@@ -33,8 +33,11 @@
     margin: 0 !important;
     min-width: @width;
     > .item .icon:not(.dropdown) {
+      font-size: @itemIconFontSize!important;
+      margin-right: 1rem;
       float: @itemIconFloat;
-      min-width: 1.18em;
+      width: auto;
+      min-width: @itemIconFontSize;
     }
   }
 
@@ -52,10 +55,14 @@
     > .item {
       > .title-item-menu .icon,
       > a > .title-item-menu .icon {
+        font-size: @itemIconFontSize;
         float: @itemIconFloat;
         opacity: @itemIconOpacity;
         transition: @itemIconTransition;
         height: 100%;
+        width: auto;
+        min-width: @itemIconFontSize;
+        margin-right: 1rem;
       }
 
       &::before {
@@ -71,13 +78,6 @@
         }
       }
     }
-  }
-}
-
-.title-item-menu {
-  .icon {
-    font-size: @itemIconFontSize;
-    margin-right: @distanceS;
   }
 }
 
@@ -196,19 +196,18 @@
   width: 100%;
 }
 
-.ui.main.menu.sidebar.mobile {
-  /* Sub Menu */
-  .dropdown.item .menu {
-    width: 100%;
-    left: 0;
-  }
+ /* Sub Menu */
+.ui.main.menu.sidebar.mobile .dropdown.item .menu {
+  width: 100%;
+  left: 0;
 }
 
-.ui.menu .ui.dropdown .menu > .item.menu-back {
+.ui.menu .flexberry-sitemap .ui.dropdown .menu > .item.menu-back {
   color: @iconColor !important;
-  .icon:not(.dropdown) {
+  i:not(.dropdown) {
+    font-size: @iconSize;
     float: left;
-    line-height: 1.5em;
+    margin-right: 1rem;
   }
 }
 

@@ -20,7 +20,7 @@
 @itemFontWeight: 500;
 
 /* Item icons */
-@itemIconFontSize: 1.2rem;
+@itemIconFontSize: @iconSize;
 @itemIconFloat: left;
 @itemIconOpacity: 0.2;
 @itemIconTransition: opacity 0.3s;
