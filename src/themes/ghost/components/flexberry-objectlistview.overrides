@@ -435,8 +435,12 @@ table.object-list-view.selectable {
 tbody tr td .icon.button.hierarchy-expand {
     background: @hierarchyButtonBackground;
     border: @hierarchyButtonBorder;
-    padding-right: @hierarchyButtonPaddingRight;
-    padding-left: @hierarchyButtonPaddingLeft;
+    padding: 0;
+    margin-right: 14px;
+
+    &:focus {
+      outline: none;
+    }
 
     .icon {
       font-family: @iconFontFamily;
