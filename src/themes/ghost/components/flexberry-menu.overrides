@@ -94,7 +94,3 @@
 .ui.menu .ui.dropdown .menu > .item button > .icon:not(.dropdown) {
   margin: 0 !important;
 }
-
-.mobile .ui.dropdown.flexberry-menu .menu {
-  width: calc(~'100vw - 2rem');
-} 
