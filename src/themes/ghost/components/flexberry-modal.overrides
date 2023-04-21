@@ -65,6 +65,16 @@
   }
 }
 
+/*  editrecord-dialog */
+.ui.modal.editrecord-dialog .scrolling.content {
+  padding-top: @modalPadding;
+}
+
+.ui.modal.editrecord-dialog .ui.form.flexberry-vertical-form {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*  Mobile */
 .mobile {
   .ui.modal.flexberry-sidepage  {
