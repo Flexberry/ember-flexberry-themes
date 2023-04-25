@@ -438,6 +438,10 @@ tbody tr td .icon.button.hierarchy-expand {
     padding-right: @hierarchyButtonPaddingRight;
     padding-left: @hierarchyButtonPaddingLeft;
 
+    &:focus {
+      box-shadow: none;
+    }
+
     .icon {
       font-family: @iconFontFamily;
       font-size: @hierarchyButtonIconFontSize;
