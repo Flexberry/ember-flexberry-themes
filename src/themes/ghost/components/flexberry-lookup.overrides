@@ -34,7 +34,7 @@
   pointer-events: none;
 }
 
-.ui.disabled.search.disabled {
+.flexberry-lookup .ui.disabled.search {
   opacity: 1;
 }
 
