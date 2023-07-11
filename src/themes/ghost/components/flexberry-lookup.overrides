@@ -28,6 +28,16 @@
   }
 }
 
+.flexberry-lookup>.ui.input.disabled>.lookup-field {
+  background: @lookupFieldDisabledBackground;
+  border: @lookupFieldDisabledBorder;
+  pointer-events: none;
+}
+
+.flexberry-lookup .ui.disabled.search {
+  opacity: 1;
+}
+
 // Workaround for old themes compatibility
 // Overriding "action" class
 
