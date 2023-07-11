@@ -59,6 +59,11 @@
   color: @defaultTextColor;
 }
 
+.error .ui.selection.dropdown {
+  background: @errorBackgroundColor;
+  border-color: @errorBorderColor;
+}
+
 // edit-panel dropdown
 .ui.dropdown.group-toolbar {
   border-radius: @defaultBorderRadius;
