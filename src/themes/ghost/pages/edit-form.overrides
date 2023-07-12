@@ -313,8 +313,8 @@
   font-size: 1rem;
   position: absolute;
   color: @negativeColor;
-  top: -1.7em;
-  left: -8px;
+  top: @requiredMarkerTop;
+  left: @requiredMarkerLeft;
 }
 
 .ui.form .groupedit-container .error.ui.input::before,
