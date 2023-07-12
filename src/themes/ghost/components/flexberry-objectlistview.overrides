@@ -351,6 +351,31 @@ table.object-list-view.selectable {
   line-height: @olvHelperCellLineHeight;
 }
 
+.ui.table tbody tr.object-list-view-filters {
+  .ui.input {
+    width: 100%;
+  }
+
+  .ui.button:not(.icon) > .remove.icon:not(.button):not(.dropdown) {
+    margin: 0;
+  }
+
+  .clear-filter {
+    padding: 8px 10px;
+  }
+
+  .remove.icon {
+    height: auto;
+    width: auto;
+    font-size: @iconSize;
+    font-family: @iconFontFamily;
+
+    &:before {
+      content: "\e93b";
+    }
+  }
+}
+
 .ui.table tbody tr.object-list-view-filters:nth-child(2) td {
   border-bottom: @olvFilterRowBorder;
 }
