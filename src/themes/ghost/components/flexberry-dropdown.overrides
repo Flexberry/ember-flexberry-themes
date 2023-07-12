@@ -59,7 +59,7 @@
   color: @defaultTextColor;
 }
 
-.error .ui.selection.dropdown {
+.ui.form:not(.validation-hide) .ui.form .error .ui.selection.dropdown {
   background: @errorBackgroundColor;
   border-color: @errorBorderColor;
 }

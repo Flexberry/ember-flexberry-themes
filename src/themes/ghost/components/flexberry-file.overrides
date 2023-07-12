@@ -76,7 +76,7 @@
 }
 
 /* Error */
-.flexberry-file.error .ui.action.input:not([class*="left action"]) {
+.ui.form:not(.validation-hide) .ui.form .flexberry-file.error .ui.action.input:not([class*="left action"]) {
 
   input[type="text"] {
     background-color: @negativeBackgroundColor;
@@ -95,7 +95,7 @@
   }
 }
 
-.flexberry-file.disabled.error .ui.action.input:not([class*="left action"]) > input {
+.ui.form:not(.validation-hide) .ui.form .flexberry-file.disabled.error .ui.action.input:not([class*="left action"]) > input {
   border-right-color: @negativeBorderColor !important;
 }
 

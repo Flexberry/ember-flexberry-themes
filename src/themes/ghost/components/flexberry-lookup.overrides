@@ -128,7 +128,7 @@
   border-radius: 0;
 }
 
-.flexberry-lookup.error >.ui.action.input:not([class*="left action"]) > input.lookup-field {
+.ui.form:not(.validation-hide) .ui.form .flexberry-lookup.error >.ui.action.input:not([class*="left action"]) > input.lookup-field {
   &,
   &:hover,
   &:focus {

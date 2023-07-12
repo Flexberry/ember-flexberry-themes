@@ -41,7 +41,7 @@
   }
 }
 
-.flexberry-simpledatetime.error > .ui.action.input:not([class*="left action"]) > input {
+.ui.form:not(.validation-hide) .ui.form .flexberry-simpledatetime.error > .ui.action.input:not([class*="left action"]) > input {
   &,
   &:hover,
   &:focus {

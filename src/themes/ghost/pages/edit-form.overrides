@@ -279,3 +279,47 @@
     margin-bottom: @rowDistance;
   }
 }
+
+
+.ui.form.validation-hide .ui.input.error input,
+.ui.form.validation-hide .error > .ui.input > input[type="text"],
+.ui.form.validation-hide .ui.input.flexberry-textarea.error > textarea,
+.ui.form.validation-hide .ui.selection.dropdown.error {
+  background-color: @inputBackground;
+  border-color: @inputBorderColor;
+  &:hover{
+    border-color: @inputHoverBorderColor;
+  }
+  &:focus {
+    border-color: @focusedFormBorderColor;
+    background: @defaultInputFocusBackground;
+  }
+}
+
+.ui.form.validation-hide .flexberry-validationsummary-container {
+  display: none;
+}
+
+.ui.form.validation-hide .flexberry-validationmessage {
+  display: none;
+}
+
+.ui.form .error.ui.input::before,
+.ui.form .error > .ui.input::before,
+.ui.form .error.ui.dropdown::before,
+.ui.form .error > .ui.dropdown::before,
+.ui.form .error.ui.checkbox::before {
+  content: '*';
+  font-size: 1rem;
+  position: absolute;
+  color: @negativeColor;
+  top: -1.7em;
+  left: -8px;
+}
+
+.ui.form .groupedit-container .error.ui.input::before,
+.ui.form .groupedit-container .error > .ui.input::before,
+.ui.form .groupedit-container .error.ui.dropdown::before,
+.ui.form .groupedit-container .error > .ui.dropdown::before {
+  top:0
+}
