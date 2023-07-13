@@ -117,6 +117,10 @@
 @hierarchyButtonPaddingRight: 0.308em;
 @hierarchyButtonPaddingLeft: 0;
 
+@olvToolbarSubmenuWidth: 250px;
+@olvToolbarSubmenuButtonFontSize: 20px;
+@olvToolbarSubmenuItemVericalPadding: 10px;
+
 /* Icons */
 @iconFontFamily: guideline-icons;
 @toolbarButtonIconFontSize: 24px;
