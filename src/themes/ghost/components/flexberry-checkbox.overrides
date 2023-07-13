@@ -91,8 +91,8 @@
     border: @toggleReadonlyHandleBorder;
 }
 
-.checkbox.error:not(.toggle):not(.slider) label:before,
-.checkbox.error:not(.toggle):not(.slider) .box:before {
+.ui.form:not(.validation-hide) .ui.form .checkbox.error:not(.toggle):not(.slider) label:before,
+.ui.form:not(.validation-hide) .ui.form .checkbox.error:not(.toggle):not(.slider) .box:before {
     background: @negativeBackgroundColor;
     border-color: @negativeBorderColor;
 }

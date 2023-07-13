@@ -55,6 +55,8 @@
 @labelFontWeight: @defaultFontWeight;
 @labelFontSize: @defaultInputLabelFontSize;
 
+@requiredMarkerTop: -1.7em;
+@requiredMarkerLeft: -8px;
 /*-------------------
     Labeled inside
 --------------------*/
