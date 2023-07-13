@@ -70,6 +70,12 @@ table.object-list-view.selectable {
   min-width: 100%;
   margin-left: 0;
 
+  .export-config .ui.dropdown .item > .icon.file.excel.outline,
+  .cols-config .ui.dropdown .item > .icon.table,
+  .cols-config .ui.dropdown .item > .remove.circle,
+  .cols-config .ui.dropdown .item > .unhide {
+    display: none;
+  }
   /* Toolbar buttons */
   .ui.button,
   .ui.buttons .ui.button,
@@ -252,14 +258,6 @@ table.object-list-view.selectable {
   .right.dropdown.item > .menu,
   .ui.buttons > .ui.dropdown:last-child > .menu {
     left: -2em;
-
-    i.icon {
-      &.file.excel.outline,
-      &.table:before,
-      &.flask:before {
-        content: @menuItemAddIcon;
-      }
-    }
   }
 
   .search-field {
