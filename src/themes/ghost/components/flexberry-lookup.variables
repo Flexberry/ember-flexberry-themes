@@ -2,6 +2,7 @@
 @lookupFieldBackground: @inputBackground;
 @lookupFieldBorder: @defaultBorderWidth @defaultBorderStyle @inputBorderColor;
 @lookupFieldRightPadding: @inputButtonWidth *2 + @inputLastButtonRight;
+@lookupFieldRightPaddingForThreeButtons: @inputButtonWidth *3 + @inputLastButtonRight;
 
 @lookupFieldHoverBorder: @defaultBorderWidth @defaultBorderStyle @inputHoverBorderColor;
 @lookupFieldFocusBorder: @defaultBorderWidth @defaultBorderStyle @focusedFormBorderColor;
