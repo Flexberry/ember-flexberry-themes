@@ -93,7 +93,6 @@
 
 @createButtonBackground: @primaryColor;
 @createButtonColor: @white;
-@createButtonMargin: 0 0.5em;
 
 @filterButtonPadding: 0 0.3em;
 @olvFilterRowBorder: @defaultBorderWidth @defaultBorderStyle @olvContainerBorderColorDefault;
@@ -107,7 +106,6 @@
 @toolbarButtonPadding: 0.4em 0.5em;
 @buttonsFontSize: 0px;
 
-@buttonsDropdownPaddingLeft: 0;
 @buttonsPaddingRight: 0;
 
 @clearButtonRight: @glyphWidth + 0.5em;
@@ -116,6 +114,10 @@
 @hierarchyButtonBorder: none;
 @hierarchyButtonPaddingRight: 0.308em;
 @hierarchyButtonPaddingLeft: 0;
+
+@olvToolbarButtonsMargin: 10px;
+@olvToolbarButtonsPadding: 0;
+@createButtonMargin: 0 @olvToolbarButtonsMargin;
 
 @olvToolbarSubmenuWidth: 250px;
 @olvToolbarSubmenuButtonFontSize: 20px;
@@ -142,7 +144,6 @@
 @menuItemEditIcon: "\e940";
 @menuItemUnhideIcon: "\e957";
 @menuItemApplyIcon: "\e92d";
-@menuItemAddIcon: "\e94b";
 @limitEditorButtonIcon: "\e930";
 @hierarchicalButtonIcon: "\e900";
 @hierarchicalExpandButtonIcon: "\e902";

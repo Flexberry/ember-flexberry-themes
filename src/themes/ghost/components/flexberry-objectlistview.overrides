@@ -93,6 +93,18 @@ table.object-list-view.selectable {
     }
   }
 
+  .ui.buttons.export-config,
+  .ui.buttons.cols-config {
+    margin-right: @olvToolbarButtonsMargin;
+  }
+  .ui.buttons.cols-config + .ui.button{
+    margin-left: 0;
+  }
+
+  .ui.button.icon.flexberry-menu.dropdown {
+    margin-left: -5px;
+  }
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -104,6 +116,7 @@ table.object-list-view.selectable {
     &.clear-search-button,
     &.hierarchical-button {
       background: @toolbarButtonBackground;
+      padding: @olvToolbarButtonsPadding;
     }
 
     &.refresh-button,
@@ -131,16 +144,28 @@ table.object-list-view.selectable {
       box-shadow: none;
     }
 
+    &.hierarchical-button.active,
+    &.refresh-button,
+    &.delete-button {
+      margin-right: @olvToolbarButtonsMargin;
+      position: relative;
+      &::after {
+        content: '';
+        height: @iconSize;
+        width: 1px;
+        position: absolute;
+        right: -@olvToolbarButtonsMargin;
+        background-color: @hawkesBlue;
+      }
+    }
+
+    &.hierarchical-button,
     &.refresh-button,
     &.delete-button {
       i.icon {
         line-height: 1;
-        margin: 0 0.5em;
+        margin: 0;
       }
-    }
-
-    &.refresh-button i.icon {
-      margin-left: 0;
     }
 
     &.delete-button:hover {
@@ -149,17 +174,20 @@ table.object-list-view.selectable {
   }
 
   .filter-active {
+    margin: 0 @olvToolbarButtonsMargin;
     i.icon {
       line-height: 1;
     }
     &.show-filter {
       background-color: @inputBackground;
       border-radius: @defaultBorderRadius;
-      margin-right: 0.5rem;
 
+      .ui.button {
+        padding: @filterButtonPadding;
+      }
       .ui.button:first-child {
         padding-right: 0;
-        &.active {
+        &.active i.icon {
           color: @removeFilterIconColor;
         }
       }
@@ -167,7 +195,7 @@ table.object-list-view.selectable {
 
     &.icon button {
       background: @toolbarButtonBackground;
-      padding: @filterButtonPadding;
+      padding: @olvToolbarButtonsPadding;
     }
 
     .or {
@@ -218,22 +246,17 @@ table.object-list-view.selectable {
       }
     }
 
-    .flexberry-menu.ui.dropdown {
-      padding-left: @buttonsDropdownPaddingLeft;
+    .flexberry-menu.ui.dropdown > .dropdown.icon {
+      color: @toolbarButtonIconColor;
 
-      > .dropdown.icon {
-        color: @toolbarButtonIconColor;
-        font-size: 1.3rem;
-
-        &::before {
-          content: "\e905";
-        }
+      &::before {
+        content: "\e905";
       }
+    }
 
-      .menu.transition {
-        overflow-y: auto;
-        width: @olvToolbarSubmenuWidth;
-      }
+    .menu.transition {
+      overflow-y: auto;
+      width: @olvToolbarSubmenuWidth;
     }
   }
 
@@ -281,6 +304,13 @@ table.object-list-view.selectable {
     flex-grow: 1;
   }
 
+  .ui.action.input.olv-search {
+    margin-right: @olvToolbarButtonsMargin;
+  }
+
+  .ui.button.hierarchical-button:not(.active) {
+    margin: 0 @olvToolbarButtonsMargin;
+  }
 
   i.icon {
     color: @textColor;
