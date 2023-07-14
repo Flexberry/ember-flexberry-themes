@@ -360,15 +360,22 @@ table.object-list-view.selectable {
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
     }
-    &.sitemap:before {
-      content: @hierarchicalButtonIcon;
-    }
-    &.expand:before {
-      content: @hierarchicalExpandButtonIcon;
-    }
-    &.compress:before {
-      content: @hierarchicalCollapceButtonIcon;
-    }
+  }
+
+  .hierarchical-button i.icon.sitemap:before {
+    content: @hierarchicalButtonIcon;
+  }
+
+  .hierarchical-button.active i.icon.sitemap:before {
+    content: @hierarchicalActiveButtonIcon;
+  }
+
+  .hierarchical-button i.icon.compress:before {
+    content: @hierarchicalCollapceButtonIcon;
+  }
+
+  .hierarchical-button i.icon.expand:before {
+    content: @hierarchicalExpandButtonIcon;
   }
 }
 

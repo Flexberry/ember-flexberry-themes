@@ -146,8 +146,9 @@
 @menuItemApplyIcon: "\e92d";
 @limitEditorButtonIcon: "\e930";
 @hierarchicalButtonIcon: "\e900";
-@hierarchicalExpandButtonIcon: "\e902";
-@hierarchicalCollapceButtonIcon: "\e903";
+@hierarchicalActiveButtonIcon: "\e991";
+@hierarchicalExpandButtonIcon: "\e998";
+@hierarchicalCollapceButtonIcon: "\e999";
 
 @hierarchyOpenButtonIcon: "\e904";
 @hierarchyCloseButtonIcon: "\e90a";

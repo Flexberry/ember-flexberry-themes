@@ -1,11 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?er28ut');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?er28ut#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?er28ut') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?er28ut') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.woff2?ccj3w7') format('woff2'),
-    url('fonts/guideline-icons/guideline-icons.svg?er28ut#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?ko9itr');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?ko9itr#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons.ttf?ko9itr') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?ko9itr') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?ko9itr#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +25,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-box:before {
+  content: "\e923";
+}
+.icon-guideline-setting-star-filled:before {
+  content: "\e927";
+}
+.icon-guideline-setting-star:before {
+  content: "\e931";
+}
+.icon-guideline-marker-list:before {
+  content: "\e934";
+}
+.icon-guideline-hierarchical-list-check:before {
+  content: "\e991";
+}
+.icon-guideline-group-minus-audit-fill:before {
+  content: "\e992";
+}
+.icon-guideline-group-edit-audit-fill:before {
+  content: "\e993";
+}
+.icon-guideline-plus-video:before {
+  content: "\e994";
+}
+.icon-guideline-file-upload:before {
+  content: "\e995";
+}
+.icon-guideline-arrows-max-up:before {
+  content: "\e996";
+}
+.icon-guideline-arrows-max-down:before {
+  content: "\e997";
+}
+.icon-guideline-icon-guideline-arrows-resize:before {
+  content: "\e998";
+}
+.icon-guideline-icon-guideline-arrows-resize-minus:before {
+  content: "\e999";
+}
 .icon-guideline-map-link:before {
   content: "\e91b";
 }
