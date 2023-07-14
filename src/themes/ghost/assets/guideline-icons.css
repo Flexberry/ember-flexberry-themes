@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?ko9itr');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?ko9itr#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons.ttf?ko9itr') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?ko9itr') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?ko9itr#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?8qqz32');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?8qqz32#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons/guideline-icons.ttf?8qqz32') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?8qqz32') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?8qqz32#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,10 +58,10 @@
 .icon-guideline-arrows-max-down:before {
   content: "\e997";
 }
-.icon-guideline-icon-guideline-arrows-resize:before {
+.icon-guideline-arrows-resize:before {
   content: "\e998";
 }
-.icon-guideline-icon-guideline-arrows-resize-minus:before {
+.icon-guideline-arrows-resize-minus:before {
   content: "\e999";
 }
 .icon-guideline-map-link:before {
