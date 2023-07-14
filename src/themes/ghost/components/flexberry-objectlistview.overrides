@@ -70,6 +70,12 @@ table.object-list-view.selectable {
   min-width: 100%;
   margin-left: 0;
 
+  .export-config .ui.dropdown .item > .icon.file.excel.outline,
+  .cols-config .ui.dropdown .item > .icon.table,
+  .cols-config .ui.dropdown .item > .remove.circle,
+  .cols-config .ui.dropdown .item > .unhide {
+    display: none;
+  }
   /* Toolbar buttons */
   .ui.button,
   .ui.buttons .ui.button,
@@ -224,14 +230,16 @@ table.object-list-view.selectable {
         }
       }
 
-      // .menu.transition {
-      //   overflow-y: auto;
-      // }
+      .menu.transition {
+        overflow-y: auto;
+        width: @olvToolbarSubmenuWidth;
+      }
     }
   }
 
   .ui.dropdown .menu > .item .icon:not(.dropdown) {
     vertical-align: middle;
+    font-size: @olvToolbarSubmenuButtonFontSize !important;
 
     &.right.icon {
       float: right;
@@ -239,24 +247,40 @@ table.object-list-view.selectable {
     }
   }
 
+  .flexberry-menuitem.item .ui.button.icon:not(.dropdown) {
+    margin-left: 0.4em;
+    flex-grow: 0;
+    &.delete {
+      order: 1;
+    }
+  }
   .right.menu .dropdown:last-child > .menu,
   .right.dropdown.item > .menu,
   .ui.buttons > .ui.dropdown:last-child > .menu {
     left: -2em;
-
-    i.icon {
-      &.file.excel.outline,
-      &.table:before,
-      &.flask:before {
-        content: @menuItemAddIcon;
-      }
-    }
   }
 
   .search-field {
     margin: 0 1rem;
     width: auto;
   }
+  .flexberry-menu.ui.dropdown .flexberry-menuitem.item {
+    padding-top: @olvToolbarSubmenuItemVericalPadding !important;
+    padding-bottom: @olvToolbarSubmenuItemVericalPadding !important;
+    line-height: @olvToolbarSubmenuButtonFontSize;
+    display: flex;
+  }
+
+  .flexberry-menu.ui.dropdown .flexberry-menuitem.item span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .flexberry-menu.ui.dropdown .flexberry-menuitem.item:not(.dividing) span {
+    max-width: calc(~'100% - @{iconSize}*2 - 1em');
+    flex-grow: 1;
+  }
+
 
   i.icon {
     color: @textColor;
