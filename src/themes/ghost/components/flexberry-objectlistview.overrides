@@ -93,6 +93,17 @@ table.object-list-view.selectable {
     }
   }
 
+  .ui.button.create-button,
+  .ui.buttons.export-config,
+  .ui.buttons.cols-config,
+  .ui.action.input.olv-search {
+    margin-right: @olvToolbarButtonsMargin;
+  }
+
+  .ui.button.icon.flexberry-menu.dropdown {
+    margin-left: -5px;
+  }
+
   .ui.button {
     &.refresh-button,
     &.delete-button,
@@ -104,6 +115,7 @@ table.object-list-view.selectable {
     &.clear-search-button,
     &.hierarchical-button {
       background: @toolbarButtonBackground;
+      padding: @olvToolbarButtonsPadding;
     }
 
     &.refresh-button,
@@ -123,7 +135,6 @@ table.object-list-view.selectable {
     &.create-button {
       background: @createButtonBackground;
       color: @createButtonColor;
-      margin: @createButtonMargin;
       font-weight: @buttonFontWeight;
     }
 
@@ -131,16 +142,28 @@ table.object-list-view.selectable {
       box-shadow: none;
     }
 
+    &.hierarchical-button.active:last-of-type,
+    &.refresh-button,
+    &.delete-button {
+      margin-right: @olvToolbarButtonsMargin*2;
+      position: relative;
+      &::after {
+        content: '';
+        height: @iconSize;
+        width: 1px;
+        position: absolute;
+        right: -@olvToolbarButtonsMargin;
+        background-color: @hawkesBlue;
+      }
+    }
+
+    &.hierarchical-button,
     &.refresh-button,
     &.delete-button {
       i.icon {
         line-height: 1;
-        margin: 0 0.5em;
+        margin: 0;
       }
-    }
-
-    &.refresh-button i.icon {
-      margin-left: 0;
     }
 
     &.delete-button:hover {
@@ -149,17 +172,20 @@ table.object-list-view.selectable {
   }
 
   .filter-active {
+    margin-right: @olvToolbarButtonsMargin;
     i.icon {
       line-height: 1;
     }
     &.show-filter {
       background-color: @inputBackground;
       border-radius: @defaultBorderRadius;
-      margin-right: 0.5rem;
 
+      .ui.button {
+        padding: @filterButtonPadding;
+      }
       .ui.button:first-child {
         padding-right: 0;
-        &.active {
+        &.active i.icon {
           color: @removeFilterIconColor;
         }
       }
@@ -167,7 +193,7 @@ table.object-list-view.selectable {
 
     &.icon button {
       background: @toolbarButtonBackground;
-      padding: @filterButtonPadding;
+      padding: @olvToolbarButtonsPadding;
     }
 
     .or {
@@ -218,22 +244,17 @@ table.object-list-view.selectable {
       }
     }
 
-    .flexberry-menu.ui.dropdown {
-      padding-left: @buttonsDropdownPaddingLeft;
+    .flexberry-menu.ui.dropdown > .dropdown.icon {
+      color: @toolbarButtonIconColor;
 
-      > .dropdown.icon {
-        color: @toolbarButtonIconColor;
-        font-size: 1.3rem;
-
-        &::before {
-          content: "\e905";
-        }
+      &::before {
+        content: "\e905";
       }
+    }
 
-      .menu.transition {
-        overflow-y: auto;
-        width: @olvToolbarSubmenuWidth;
-      }
+    .menu.transition {
+      overflow-y: auto;
+      width: @olvToolbarSubmenuWidth;
     }
   }
 
@@ -281,6 +302,9 @@ table.object-list-view.selectable {
     flex-grow: 1;
   }
 
+  .ui.button.hierarchical-button {
+    margin-right: @olvToolbarButtonsMargin;
+  }
 
   i.icon {
     color: @textColor;
@@ -336,15 +360,22 @@ table.object-list-view.selectable {
     &.checkmark.box:before {
       content: @menuItemApplyIcon;
     }
-    &.sitemap:before {
-      content: @hierarchicalButtonIcon;
-    }
-    &.expand:before {
-      content: @hierarchicalExpandButtonIcon;
-    }
-    &.compress:before {
-      content: @hierarchicalCollapceButtonIcon;
-    }
+  }
+
+  .hierarchical-button i.icon.sitemap:before {
+    content: @hierarchicalButtonIcon;
+  }
+
+  .hierarchical-button.active i.icon.sitemap:before {
+    content: @hierarchicalActiveButtonIcon;
+  }
+
+  .hierarchical-button i.icon.compress:before {
+    content: @hierarchicalCollapceButtonIcon;
+  }
+
+  .hierarchical-button i.icon.expand:before {
+    content: @hierarchicalExpandButtonIcon;
   }
 }
 

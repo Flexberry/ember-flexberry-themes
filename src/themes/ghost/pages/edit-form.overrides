@@ -127,18 +127,6 @@
   position: relative;
 }
 
-.flexberry-olv-toolbar .ui.button.hierarchical-button.active .sitemap.icon::after {
-  background-color: @pageBackground;
-  border-radius: 50%;
-  content: @successIcon;
-  font-family: @iconFontFamily;
-  font-size: 11px;
-  position: absolute;
-  left: 2em;
-  top: 1.2em;
-  line-height: 1;
-}
-
 .ui.form .field > .ui.selection.dropdown {
   min-width: 0;
 }
