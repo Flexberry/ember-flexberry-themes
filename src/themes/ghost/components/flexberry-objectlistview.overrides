@@ -166,7 +166,7 @@ table.object-list-view.selectable {
       }
     }
 
-    &.delete-button:hover {
+    &.delete-button:hover i.icon {
       color: @deleteHelperButtonInRowHoverColor;
     }
   }
@@ -306,8 +306,11 @@ table.object-list-view.selectable {
     margin-right: @olvToolbarButtonsMargin;
   }
 
-  i.icon {
+  .button:not(.disabled) i.icon {
     color: @textColor;
+  }
+
+  i.icon {
     font-family: @iconFontFamily;
     font-size: @toolbarButtonIconFontSize;
     height: auto;
