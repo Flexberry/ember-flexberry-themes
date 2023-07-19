@@ -28,6 +28,10 @@
   }
 }
 
+.flexberry-lookup>.ui.input>.lookup-field:has(+ .ui-preview) {
+  padding-right: @lookupFieldRightPaddingForThreeButtons;
+}
+
 .flexberry-lookup>.ui.input.disabled>.lookup-field {
   background: @lookupFieldDisabledBackground;
   border: @lookupFieldDisabledBorder;
