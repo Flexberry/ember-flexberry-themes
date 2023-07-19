@@ -659,6 +659,11 @@ tbody tr td .icon.button.hierarchy-expand {
     padding-left: @olvMobileHorizontalPadding !important;
   }
 
+  .JColResizer > tbody > tr > td:first-child,
+  .JColResizer > tbody > tr > td.object-list-view-menu {
+    padding-left: @olvMobileHorizontalPadding !important;
+  }
+
   .ui.table.object-list-view tbody tr td:not(.object-list-view-helper-column) {
     border-bottom: @olvContainerBorder;
   }
