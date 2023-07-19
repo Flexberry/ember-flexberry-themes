@@ -655,8 +655,8 @@ tbody tr td .icon.button.hierarchy-expand {
     position: @olvContainerPosition;
   }
 
-  .ui.celled.object-list-view tr td {
-    padding-left: @olvMobileHorizontalPadding !important;
+  .ui.celled.object-list-view tr td:first-child {
+    padding-left: @olvMobileHorizontalPadding;
   }
 
   .JColResizer > tbody > tr > td:first-child,
