@@ -292,7 +292,7 @@
   display: none;
 }
 
-.ui.form .error.ui.input::before,
+.ui.form .error.ui.input:not(.nav-bar-search-page)::before,
 .ui.form .error > .ui.input::before,
 .ui.form .error.ui.dropdown::before,
 .ui.form .error > .ui.dropdown::before,
