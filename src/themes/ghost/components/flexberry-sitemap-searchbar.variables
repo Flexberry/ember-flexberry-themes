@@ -1,0 +1,25 @@
+/* Sitemap Searchbar*/
+@searchbarPlaceholderColor: #caccd1;
+@searchbarWidth: 86%;
+@searchbarWidth: 86%;
+@searchbarWidthMiniSidebar: 208px;
+
+
+@searchbarTextIndent: 20px;
+@searchbarBgColor: #4D5466;
+
+@resultsListBorderRadius: 4px;
+@resultsListShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+@resultsListFontSize: 14px;
+@resultsListFontWeight: 400;
+@resultsListLineHeight: 20px;
+@resultsListMarginTop: 2.4rem;
+@resultsListMaxHeight: 700px;
+
+@matchCardLinkHoverColor: #0C49CD;
+
+@matchCardLinkMarginLeft: 20px;
+
+@matchCardTitleColor:  #848e99;
+
+@matchCardPadding: 0.5rem;

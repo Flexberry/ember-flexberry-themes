@@ -1,0 +1,127 @@
+@type    : 'component';
+@element : 'flexberry-sitemap-searchbar';
+
+@import (multiple) '../../theme.config';
+
+
+.sitemap-searchbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sitemap-search-results-list {
+  align-self: center;
+  background:@white;
+  border-bottom-left-radius: @resultsListBorderRadius;
+  border-bottom-right-radius: @resultsListBorderRadius;
+  box-shadow: @resultsListShadow;
+  display: block;
+  font-size: @resultsListFontSize;
+  font-weight: @resultsListFontWeight;
+  line-height: @resultsListLineHeight;
+  margin-top: @resultsListMarginTop;
+  max-height: @resultsListMaxHeight;
+  overflow-y: auto;
+  position: absolute;
+  scrollbar-width: thin;
+  width: @searchbarWidth;
+  z-index: 1;
+  padding-top: 10px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+}
+
+.sitemap-search-results-list .match-card a {
+  color: @textColor;
+  margin-left: @matchCardLinkMarginLeft;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: @resultsListFontSize;
+  font-weight: 500;
+
+  &:hover {
+    color: @matchCardLinkHoverColor;
+  }
+}
+
+.match-card {
+  padding: 0.5rem;
+}
+
+.sitemap-search-results-list .match-card .flexberry-toggler .title {
+  display: flex;
+  align-items: center;
+  color: @matchCardTitleColor;
+  font-size: @resultsListFontSize;
+  line-height: @resultsListLineHeight;
+}
+
+.sitemap-search-results-list .match-card .flexberry-toggler.ui.accordion.fluid .content.flexberry-toggler-content div {
+  margin-bottom: 5px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.sitemap-search-results-list .match-card .flexberry-toggler {
+  padding-left: 0.5em;
+}
+
+.sitemap-search-results-list .ui.message {
+  box-shadow: none;
+}
+
+.sitemap-search-results-list .ui.message .header {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sitemap-search-input {
+  align-self: center;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background-color: @searchbarBgColor;
+  border: 1px solid @searchbarBgColor;
+  color: @textColor;
+  width: @searchbarWidth;
+  z-index: 2;
+
+  &::placeholder {
+    color: @searchbarPlaceholderColor;
+    font-family: @fontName;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.sitemap-search-input:focus {
+  border-color: @activeColor;
+  background-color: @aliceBlue;
+  outline: none;
+
+  &::placeholder {
+    color: @lightGrayishBlue;
+  }
+}
+
+
+/*******************************
+            Mini sidebar
+*******************************/
+.ui.sidebar.main.menu.sidebar-mini {
+  & .sitemap-search-input, .sitemap-search-results-list {
+    margin-left: 261px;
+    width: @searchbarWidthMiniSidebar;
+  }
+}

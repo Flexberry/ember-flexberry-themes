@@ -97,6 +97,7 @@
 @flexberry-validationmessage: 'ghost';
 @flexberry-tab-bar: 'ghost';
 @flexberry-highloadedmenu: 'ghost';
+@flexberry-sitemap-searchbar: 'ghost';
 
 /* Forms */
 @edit-form: 'ghost';
