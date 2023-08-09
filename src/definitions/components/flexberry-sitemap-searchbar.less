@@ -27,7 +27,7 @@
   scrollbar-width: thin;
   width: @searchbarWidth;
   z-index: 1;
-  padding-top: 10px;
+  padding-top: 2px;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -44,14 +44,11 @@
 
 .sitemap-search-results-list .match-card a {
   color: @textColor;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-size: @resultsListFontSize;
   font-weight: 500;
 
   &:hover {
-    color: @matchCardLinkHoverColor;
+    color: @primaryColor;
   }
 }
 
@@ -80,7 +77,7 @@
 .sitemap-search-results-list .match-card .flexberry-toggler .title {
   display: flex;
   align-items: center;
-  color: @matchCardTitleColor;
+  color: @lightGrayishBlue;
   font-size: @resultsListFontSize;
   line-height: @resultsListLineHeight;
 }
@@ -90,7 +87,6 @@
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-
 
 .sitemap-search-results-list .ui.message {
   box-shadow: none;
@@ -105,24 +101,29 @@
   align-self: center;
   padding: 10px 12px;
   border-radius: 4px;
-  background-color: @searchbarBgColor;
-  border: 1px solid @searchbarBgColor;
+  background-color: lighten(@sidebarBackgroundColor, 10%);
+  border: 1px solid lighten(@sidebarBackgroundColor, 10%);
   color: @textColor;
   width: @searchbarWidth;
   z-index: 2;
 
+  .hidden {
+    display: none;
+  }
+
   &::placeholder {
-    color: @searchbarPlaceholderColor;
+    color: @linkWater;
     font-family: @fontName;
     font-size: 14px;
     line-height: 20px;
   }
 }
 
+.sitemap-searchbar:has(.sitemap-search-results-list) .sitemap-search-input,
 .sitemap-search-input:focus {
-  border-color: @activeColor;
-  background-color: @aliceBlue;
+  background-color: @white;
   outline: none;
+  border-color: @activeColor;
 
   &::placeholder {
     color: @lightGrayishBlue;
@@ -134,8 +135,24 @@
             Mini sidebar
 *******************************/
 .ui.sidebar.main.menu.sidebar-mini {
-  & .sitemap-search-input, .sitemap-search-results-list {
-    margin-left: 261px;
+  .sitemap-search-input, .sitemap-search-results-list {
+    margin-left: 263px;
+    position: absolute;
     width: @searchbarWidthMiniSidebar;
+  }
+
+  .sitemap-search-icon {
+    opacity: 0.2;
+    color: @white;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    margin-bottom: 24px;
+
+    &:active,
+    &:hover {
+      opacity: 1;
+    }
   }
 }
