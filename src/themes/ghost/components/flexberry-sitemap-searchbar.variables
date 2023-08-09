@@ -18,7 +18,6 @@
 
 @matchCardLinkHoverColor: #0C49CD;
 
-@matchCardLinkMarginLeft: 20px;
 
 @matchCardTitleColor:  #848e99;
 

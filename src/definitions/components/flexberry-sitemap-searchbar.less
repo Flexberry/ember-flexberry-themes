@@ -44,7 +44,6 @@
 
 .sitemap-search-results-list .match-card a {
   color: @textColor;
-  margin-left: @matchCardLinkMarginLeft;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -56,9 +55,27 @@
   }
 }
 
-.match-card {
-  padding: 0.5rem;
+.sitemap-search-results-list .ui.accordion:not(.styled) .title ~ .content:not(.ui) {
+  padding-top: 0;
+  margin-left: 43px;
 }
+
+.sitemap-search-results-list .ui.accordion:not(.styled) .ui.fluid.accordion .title ~ .content:not(.ui) {
+  margin-left: 30px;
+}
+
+.sitemap-search-results-list .ui.accordion:not(.styled) .title ~ .content:not(.ui) .title {
+  margin-left: -30px;
+}
+
+.sitemap-search-results-list .ui.accordion .title:not(.ui) {
+  padding: 0.6em 0.1em;
+}
+
+.sitemap-search-results-list .match-card:has(> a) {
+  padding: 10px 12px;
+}
+
 
 .sitemap-search-results-list .match-card .flexberry-toggler .title {
   display: flex;
@@ -68,15 +85,12 @@
   line-height: @resultsListLineHeight;
 }
 
-.sitemap-search-results-list .match-card .flexberry-toggler.ui.accordion.fluid .content.flexberry-toggler-content div {
+.sitemap-search-results-list .match-card .flexberry-toggler.ui.accordion.fluid .content.flexberry-toggler-content div:has(> a) {
   margin-bottom: 5px;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
 
-.sitemap-search-results-list .match-card .flexberry-toggler {
-  padding-left: 0.5em;
-}
 
 .sitemap-search-results-list .ui.message {
   box-shadow: none;
