@@ -31,7 +31,7 @@
 @successIcon    : "\e92d";
 @deleteIcon     : "\e93c";
 @errorIcon      : "\e915";
-@closeIcon      : "\e90e";
+@closeIcon      : "\e99a";
 @iconPadding    : 0.25em;
 
 /* Errored Input */

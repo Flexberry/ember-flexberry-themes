@@ -37,8 +37,8 @@
 @selectionBorderRadius: @inputBorderRadius;
 @selectionItemDivider: none;
 @selectBorder: none;
-@selectionIconPadding: 8px 6px;
-@selectionHorizontalPadding: 10px;
+@selectionIconPadding: 8px @inputButtonHorizontalPadding;
+@selectionIconOpacity: 1;
 /* Hover */
 @selectionHoverBorderColor: @inputHoverBorderColor;
 /* Focus */

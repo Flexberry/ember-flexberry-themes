@@ -45,6 +45,11 @@
   content: @dropdownNotSelectionIcon;
 }
 
+
+.ui.selection.dropdown > .dropdown.icon:hover {
+  color: @textColor;
+}
+
 /* Focus */
 .ui.selection.active.dropdown:focus {
   box-shadow: @selectionActiveFocusBoxShadow;

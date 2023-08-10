@@ -4,7 +4,7 @@
   background: @lookupFieldBackground;
   border: @lookupFieldBorder;
   border-radius: @lookupFieldBorderRadius;
-  padding-right: @lookupFieldRightPadding;
+  padding-right: @inputPaddingRightForTwoButtons;
   pointer-events: all;
 
   &:focus {
@@ -29,7 +29,7 @@
 }
 
 .flexberry-lookup>.ui.input>.lookup-field:has(+ .ui-preview) {
-  padding-right: @lookupFieldRightPaddingForThreeButtons;
+  padding-right: @inputPaddingRightForThreeButtons;
 }
 
 .flexberry-lookup>.ui.input.disabled>.lookup-field {
@@ -85,7 +85,7 @@
   }
 
   &.ui-change {
-    right: @inputFirstButtonRight;
+    right: @inputLastButtonRight;
 
     &.loading.loading.loading.loading.loading.loading {
       position: absolute;
@@ -196,7 +196,7 @@
     background: @inputBackground;
     border: @defaultInputBorder;
     border-radius: @inputBorderRadius;
-    padding: @inputVerticalPadding @lookupFieldRightPadding @inputVerticalPadding @inputHorizontalPadding;
+    padding: @inputVerticalPadding @inputPaddingRightForTwoButtons @inputVerticalPadding @inputHorizontalPadding;
     flex: 1 0 auto;
 
     >.lookup-field {
