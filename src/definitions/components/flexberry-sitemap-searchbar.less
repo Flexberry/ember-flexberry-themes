@@ -8,14 +8,15 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .sitemap-search-results-list {
   align-self: center;
-  background:@white;
-  border-bottom-left-radius: @resultsListBorderRadius;
-  border-bottom-right-radius: @resultsListBorderRadius;
-  box-shadow: @resultsListShadow;
+  background: @pageBackground;
+  border-bottom-left-radius: @defaultBorderRadius;
+  border-bottom-right-radius: @defaultBorderRadius;
+  box-shadow: @defaultElementsBoxShadow;
   display: block;
   font-size: @resultsListFontSize;
   font-weight: @resultsListFontWeight;
@@ -27,25 +28,27 @@
   scrollbar-width: thin;
   width: @searchbarWidth;
   z-index: 1;
-  padding-top: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
+.sitemap-search-results-list  .ui.message {
+  padding: 0;
+  padding-left: 12px;
+  color: @linkWater;
+  background-color: transparent;
 
-  &::-webkit-scrollbar-track {
-    background: #ddd;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #666;
+  .header:not(.ui) {
+    font-size: @resultsListFontSize;
+    font-weight: @resultsListFontWeight;
+    line-height: @resultsListLineHeight;
   }
 }
 
 .sitemap-search-results-list .match-card a {
   color: @textColor;
   font-size: @resultsListFontSize;
-  font-weight: 500;
+  font-weight: @resultsListFontWeight;
 
   &:hover {
     color: @primaryColor;
@@ -54,25 +57,32 @@
 
 .sitemap-search-results-list .ui.accordion:not(.styled) .title ~ .content:not(.ui) {
   padding-top: 0;
-  margin-left: 43px;
+  margin-left: 40px;
+
+  a {
+    font-size: @resultsListFontSize;
+    font-weight: 400;
+  }
+
+  .title {
+    margin-left: -35px;
+  }
 }
 
 .sitemap-search-results-list .ui.accordion:not(.styled) .ui.fluid.accordion .title ~ .content:not(.ui) {
-  margin-left: 30px;
-}
-
-.sitemap-search-results-list .ui.accordion:not(.styled) .title ~ .content:not(.ui) .title {
-  margin-left: -30px;
+  margin-left: 20px;
 }
 
 .sitemap-search-results-list .ui.accordion .title:not(.ui) {
-  padding: 0.6em 0.1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.83em;
 }
 
 .sitemap-search-results-list .match-card:has(> a) {
-  padding: 10px 12px;
+  padding: 0.17em 0.857em;
 }
-
 
 .sitemap-search-results-list .match-card .flexberry-toggler .title {
   display: flex;
@@ -83,7 +93,6 @@
 }
 
 .sitemap-search-results-list .match-card .flexberry-toggler.ui.accordion.fluid .content.flexberry-toggler-content div:has(> a) {
-  margin-bottom: 5px;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
@@ -99,11 +108,12 @@
 
 .sitemap-search-input {
   align-self: center;
-  padding: 10px 12px;
-  border-radius: 4px;
+  padding: @inputPadding;
+  border-radius: @inputBorderRadius;
   background-color: lighten(@sidebarBackgroundColor, 10%);
   border: 1px solid lighten(@sidebarBackgroundColor, 10%);
-  color: @textColor;
+  color: @white;
+  font-size: @resultsListFontSize;
   width: @searchbarWidth;
   z-index: 2;
 
@@ -114,8 +124,6 @@
   &::placeholder {
     color: @linkWater;
     font-family: @fontName;
-    font-size: 14px;
-    line-height: 20px;
   }
 }
 
@@ -124,10 +132,18 @@
   background-color: @white;
   outline: none;
   border-color: @activeColor;
+  color: @textColor;
 
   &::placeholder {
     color: @lightGrayishBlue;
   }
+}
+
+.sitemap-search-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 
@@ -136,15 +152,19 @@
 *******************************/
 .ui.sidebar.main.menu.sidebar-mini {
   .sitemap-search-input, .sitemap-search-results-list {
-    margin-left: 263px;
+    margin-left: @searchBarMarginLeftMini;
     position: absolute;
     width: @searchbarWidthMiniSidebar;
+  }
+
+  .sitemap-searchbar {
+    margin: 0;
   }
 
   .sitemap-search-icon {
     opacity: 0.2;
     color: @white;
-    margin-left: 15px;
+    margin: auto;
     font-size: 1.5rem;
     transition: opacity 0.3s;
     cursor: pointer;
@@ -154,5 +174,9 @@
     &:hover {
       opacity: 1;
     }
+  }
+
+  .sitemap-search-button {
+    display: block;
   }
 }

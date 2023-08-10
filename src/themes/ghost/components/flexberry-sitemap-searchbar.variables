@@ -2,15 +2,14 @@
 @searchbarWidth: 86%;
 @searchbarWidth: 86%;
 @searchbarWidthMiniSidebar: 208px;
+@searchBarMarginLeftMini: calc(@searchbarWidthMiniSidebar + 56px);
 
 @searchbarTextIndent: 20px;
 
-@resultsListBorderRadius: 4px;
-@resultsListShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
-@resultsListFontSize: 14px;
-@resultsListFontWeight: 400;
+@resultsListFontSize: 0.875em;
+@resultsListFontWeight: 500;
 @resultsListLineHeight: 20px;
-@resultsListMarginTop: 2.4rem;
+@resultsListMarginTop: 2.2rem;
 @resultsListMaxHeight: 700px;
 
 
