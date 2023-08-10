@@ -8,7 +8,6 @@
 @datetimeInputBorderRadius: @defaultBorderRadius !important;
 @datetimeInputVerticalPadding: @inputVerticalPadding;
 @datetimeInputHorizontalPadding: @inputHorizontalPadding;
-@datetimeInputPaddingRight: @inputButtonWidth *2 + @inputLastButtonRight;
 
 /*---------------
     Calendar
@@ -104,6 +103,6 @@
 @iconFontSize: 1.571em;
 @openDateButtonIcon: "\e90f";
 @openDatetimeButtonIcon: "\e910";
-@clearButtonIcon: "\e90e";
+@clearButtonIcon: "\e99a";
 @prevMonthIcon: "\e906";
 @nextMonthIcon: "\e908";

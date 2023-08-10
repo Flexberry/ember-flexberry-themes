@@ -11,7 +11,7 @@
   }
 
   &.ui-open {
-    right: @inputFirstButtonRight;
+    right: @inputLastButtonRight;
   }
 
   &:focus {
@@ -22,7 +22,7 @@
 // Date input
 .flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
   border-radius: @datetimeInputBorderRadius;
-  padding-right: @datetimeInputPaddingRight;
+  padding-right: @inputPaddingRightForTwoButtons;
 
   &:hover {
     border-right-color: @inputHoverBorderColor !important;

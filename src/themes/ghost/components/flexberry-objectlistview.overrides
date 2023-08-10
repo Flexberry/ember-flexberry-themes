@@ -43,6 +43,50 @@ table.object-list-view.selectable {
   }
 }
 
+.object-list-view-filters .ui.button.clear-filter {
+  font-size: @iconSize;
+  position: absolute;
+  background: transparent;
+  height: 100%;
+  top: 0;
+  right: @inputLastButtonRight;
+  padding: @inputButtonPadding;
+  margin: 0;
+}
+
+.object-list-view-filters .ui.button.clear-filter > .icon {
+  font-family: @iconFont;
+  height: auto;
+  width: @iconSize;
+  line-height: @iconSize;
+  opacity: 1;
+}
+
+.object-list-view-filters .clear-filter > .icon::before {
+  content: "\e99a";
+}
+
+.ui.form .object-list-view-filters input {
+  padding-right: @inputPaddingRightForOneButtons;
+}
+
+.object-list-view-filters .ui.action.input .ui.selection.dropdown {
+  padding-right: @inputPaddingRightForTwoButtons;
+}
+
+.object-list-view-filters .flexberry-simpledatetime + .ui.button.clear-filter,
+.object-list-view-filters .flexberry-dropdown + .ui.button.clear-filter {
+  right: @inputSecondButtonRight;
+}
+
+.object-list-view-filters > td > .ui.action.input {
+  display: block;
+}
+
+.object-list-view-filters .ui.input {
+  width: 100%;
+}
+
 .flexberry-objectlistview {
   display: flex;
   flex-direction: column;
