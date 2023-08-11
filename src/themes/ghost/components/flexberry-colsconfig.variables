@@ -2,7 +2,7 @@
 @colsconfigLargeIconColor: @inputPlaceholderColor;
 @colsconfigHorizontalPadding: 0.5em;
 @colsconfigCellPadding: 0.25em @colsconfigHorizontalPadding;
-@colsconfigDisabledColor: @linkWater;
+@colsconfigDisabledColor: @controlColor;
 @colsconfigCheckboxMargin: @distanceS;
 
 @colsconfigButtonColor: @white;

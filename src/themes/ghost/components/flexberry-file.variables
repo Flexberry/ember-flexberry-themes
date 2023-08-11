@@ -12,7 +12,7 @@
 @fileControlButtonPadding: 0.5714em 0.35714em;
 @fileControlMarginLeft: 0.5714em;
 @fileControlColorHover: @textColor;
-@fileControlDisabledColor: @linkWater;
+@fileControlDisabledColor: @controlColor;
 
 /*---  Inner controls (add, remove)   ---*/
 @fileInnerControlBorderRadius: 0;

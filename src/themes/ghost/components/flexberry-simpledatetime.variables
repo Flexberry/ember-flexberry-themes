@@ -53,10 +53,10 @@
 @daysContainerDisplay: block;
 @daysContainerMargin: 0.571em 0 0.571em 1.071em;
 @dayColor: @textColor;
-@todayBorderColor: @linkWater;
+@todayBorderColor: @controlColor;
 @dayBackgroundHover: @inputBackground;
 @dayBorderColorHover: @inputBorderColor;
-@prevAndNextMonthDayColor: @linkWater;
+@prevAndNextMonthDayColor: @controlColor;
 // @prevAndNextMonthDayColorHover: @textColor;
 @selectedDayColor: #FFFFFF;
 @selectedBackgroundColor: @defaultFocusBorderColor;

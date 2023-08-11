@@ -179,7 +179,7 @@
 @inputHorizontalPadding: unit((11 / 14), em);
 
 @inputReadonlyBackground: @hawkesBlue;
-@inputReadonlyBorderColor: @hawkesBlue;
+@inputReadonlyBorderColor: @inputReadonlyBackground;
 
 @labelMarginTop: 0em;
 @labelMarginRight: 0em;
@@ -240,6 +240,7 @@
 @accentColor                    : #E94B3D;
 @secondaryColor                 : #7699B3;
 @disabledColor                  : @lightGrayishBlue;
+@controlColor                   : @linkWater;
 @dimmerBackgroundColor: rgba(255, 255, 255, 0.85);
 
 // Sidebar
