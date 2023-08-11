@@ -225,7 +225,7 @@ Icon Variables
 /*---------------------
         Scrollbar
 ----------------------*/
-@scrollbarMiniWidth: 56px;
+@sidebarMiniWidth: 56px;
 
 /*******************************
           COLOR SCHEME

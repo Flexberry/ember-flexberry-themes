@@ -1,7 +1,7 @@
 /* Sitemap Searchbar*/
 @searchbarWidth: 86%;
 @searchbarWidthMiniSidebar: 208px;
-@searchBarMarginLeftMini: @searchbarWidthMiniSidebar + @scrollbarMiniWidth;
+@searchBarMarginLeftMini: @searchbarWidthMiniSidebar + @sidebarMiniWidth;
 
 @resultsListFontSize: 0.875em;
 @resultsListFontWeight: 500;

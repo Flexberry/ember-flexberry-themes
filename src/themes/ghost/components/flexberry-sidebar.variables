@@ -5,7 +5,7 @@
 @sidebarInvertedBackground: @sidebarBackgroundColor;
 
 @width: 240px;
-@width-s: @scrollbarMiniWidth;
+@width-s: @sidebarMiniWidth;
 
 @sidebarPadding: @distanceM 0;
 
@@ -43,8 +43,6 @@
 @subMenuItemPadding: @itemVerticalPadding @itemRightPadding @itemVerticalPadding @itemLeftPadding !important;
 @subMenuItemMargin: -@itemVerticalPadding -@itemRightPadding -@itemVerticalPadding -@itemLeftPadding;
 @subMenuItemMarginRight: 1.5em;
-
-
 
 /* Toggle button */
 @toggleButtonFontSize: 1rem;
