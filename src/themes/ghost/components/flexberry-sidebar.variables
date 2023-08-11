@@ -5,7 +5,7 @@
 @sidebarInvertedBackground: @sidebarBackgroundColor;
 
 @width: 240px;
-@width-s: 56px;
+@width-s: @scrollbarMiniWidth;
 
 @sidebarPadding: @distanceM 0;
 

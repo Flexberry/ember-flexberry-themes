@@ -92,18 +92,8 @@
   line-height: @resultsListLineHeight;
 }
 
-.sitemap-search-results-list .match-card .flexberry-toggler.ui.accordion.fluid .content.flexberry-toggler-content div:has(> a) {
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-
 .sitemap-search-results-list .ui.message {
   box-shadow: none;
-}
-
-.sitemap-search-results-list .ui.message .header {
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .sitemap-search-input {
@@ -112,7 +102,7 @@
   border-radius: @inputBorderRadius;
   background-color: lighten(@sidebarBackgroundColor, 10%);
   border: 1px solid lighten(@sidebarBackgroundColor, 10%);
-  color: @white;
+  color: @invertedTextColor;
   font-size: @resultsListFontSize;
   width: @searchbarWidth;
   z-index: 2;
@@ -129,9 +119,9 @@
 
 .sitemap-searchbar:has(.sitemap-search-results-list) .sitemap-search-input,
 .sitemap-search-input:focus {
-  background-color: @white;
+  background-color: @defaultInputFocusBackground;
   outline: none;
-  border-color: @activeColor;
+  border-color: @defaultFocusBorderColor;
   color: @textColor;
 
   &::placeholder {
@@ -145,6 +135,12 @@
   border: none;
   padding: 0;
 }
+
+.sitemap-searchbar i.icon.sitemap-search-icon,
+.inverted.vertical.main.menu.sidebar .sitemap-searchbar .item {
+  display: none;
+}
+
 
 
 /*******************************
@@ -161,22 +157,16 @@
     margin: 0;
   }
 
-  .sitemap-search-icon {
-    opacity: 0.2;
-    color: @white;
-    margin: auto;
-    font-size: 1.5rem;
-    transition: opacity 0.3s;
-    cursor: pointer;
-    margin-bottom: 24px;
-
-    &:active,
-    &:hover {
-      opacity: 1;
-    }
+  i.icon.sitemap-search-icon {
+    display: inline-block;
   }
 
   .sitemap-search-button {
+    margin-bottom: 20px;
     display: block;
   }
+}
+
+.inverted.vertical.main.menu.sidebar.sidebar-mini .sitemap-searchbar .item {
+  display: block;
 }

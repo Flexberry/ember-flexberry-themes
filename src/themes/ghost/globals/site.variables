@@ -123,13 +123,11 @@
 
 @disabledOpacity: 1;
 
-// Icons size
-@iconSize         : 1.5rem;
-
 /*-------------------
-   Icon Variables
+Icon Variables
 --------------------*/
 @iconFont: 'guideline-icons';
+@iconSize         : 1.5rem;
 
 /*-------------------
         Page
@@ -224,6 +222,10 @@
 ----------------------*/
 @h1Mobile : unit((18 / 16), rem);
 
+/*---------------------
+        Scrollbar
+----------------------*/
+@scrollbarMiniWidth: 56px;
 
 /*******************************
           COLOR SCHEME
