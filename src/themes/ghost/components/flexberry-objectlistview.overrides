@@ -45,11 +45,8 @@ table.object-list-view.selectable {
 
 .object-list-view-filters .ui.button.clear-filter {
   font-size: @iconSize;
-  position: absolute;
   background: transparent;
   height: 100%;
-  top: 0;
-  right: @inputLastButtonRight;
   padding: @inputButtonPadding;
   margin: 0;
 }
@@ -66,24 +63,19 @@ table.object-list-view.selectable {
   content: "\e99a";
 }
 
-.ui.form .object-list-view-filters input {
+.object-list-view-filters .flexberry-simpledatetime > .ui.action.input:not([class*="left action"]) > input {
   padding-right: @inputPaddingRightForOneButtons;
 }
 
-.object-list-view-filters .ui.action.input .ui.selection.dropdown {
-  padding-right: @inputPaddingRightForTwoButtons;
-}
-
-.object-list-view-filters .flexberry-simpledatetime + .ui.button.clear-filter,
-.object-list-view-filters .flexberry-dropdown + .ui.button.clear-filter {
-  right: @inputSecondButtonRight;
-}
-
 .object-list-view-filters > td > .ui.action.input {
-  display: block;
+  align-items: center;
+}
+.object-list-view-filters > td > .ui.action.input > .fields {
+  margin-bottom: 0;
 }
 
-.object-list-view-filters .ui.input {
+.object-list-view-filters .ui.input,
+.object-list-view-filters .ui.action.input > div {
   width: 100%;
 }
 
