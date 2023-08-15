@@ -28,6 +28,9 @@ body ::-webkit-scrollbar-track {
   border: @thumbBorder;
 }
 
+body ::-webkit-scrollbar-corner {
+  background: @pageBackground;
+}
 // for adressbar hide
 .mobile body {
   height: 100vh;

@@ -1,5 +1,6 @@
 /* Card */
 @boxShadow: 0px 0px 0px 1px @defaultColor;
+@background: @pageBackground;
 
 /* Content */
 @contentPadding: @distanceL;
@@ -20,3 +21,4 @@
 /* Link */
 @linkHoverBoxShadow: 0px 2px 4px rgba(0, 7, 123, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.06);
 @linkHoverTransform: none;
+@linkHoverBackground: @pageBackground;

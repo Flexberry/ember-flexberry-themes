@@ -29,11 +29,11 @@
 @checkboxActiveFocusBorderColor: @focusedFormBorderColor;
 @checkboxActiveFocusCheckColor: @white;
 
-@checkboxReadonlyBackgroundColor: @linkWater;
+@checkboxReadonlyBackgroundColor: @controlColor;
 @checkboxReadonlyBackground: @checkboxReadonlyBackgroundColor;
 @checkboxReadonlyBorderWidth: @checkboxBorderWidth;
 @checkboxReadonlyBorderStyle: @checkboxBorderStyle;
-@checkboxReadonlyBorderColor: @linkWater;
+@checkboxReadonlyBorderColor: @controlColor;
 @checkboxReadonlyBorder: @checkboxReadonlyBorderWidth @checkboxReadonlyBorderStyle @checkboxReadonlyBorderColor;
 @checkboxReadonlyLabelColor: @disabledColor;
 
@@ -117,11 +117,11 @@
 
 @toggleHoverLabelColor: @primaryColor;
 
-@toggleReadonlyLaneBackgroundColor: @linkWater;
+@toggleReadonlyLaneBackgroundColor: @controlColor;
 @toggleReadonlyLaneBackground: @toggleReadonlyLaneBackgroundColor;
 @toggleReadonlyLaneBorderWidth: @defaultBorderWidth;
 @toggleReadonlyLaneBorderStyle: @defaultBorderStyle;
-@toggleReadonlyLaneBorderColor: @linkWater;
+@toggleReadonlyLaneBorderColor: @controlColor;
 @toggleReadonlyLaneBorder: @toggleReadonlyLaneBorderWidth @toggleReadonlyLaneBorderStyle @toggleReadonlyLaneBorderColor;
 
 @toggleReadonlyHandleBackgroundColor: @white;

@@ -10,7 +10,7 @@
 
 /* Close Icon */
 @closeOpacity: 1;
-@closeColor: @linkWater;
+@closeColor: @controlColor;
 @closeSize: 1rem;
 @closeHitbox: 1rem;
 @closeDistance: -2.25rem;
