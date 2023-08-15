@@ -175,6 +175,7 @@
 .flexberry-sitemap {
   flex: 1 1 auto;
 }
+
 // Footer
 .sitebar-footer {
   flex: 0 1 auto;

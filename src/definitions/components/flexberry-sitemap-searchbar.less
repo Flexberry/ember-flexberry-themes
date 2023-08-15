@@ -1,0 +1,163 @@
+@type    : 'component';
+@element : 'flexberry-sitemap-searchbar';
+
+@import (multiple) '../../theme.config';
+
+
+.sitemap-searchbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.sitemap-search-results-list {
+  align-self: center;
+  background: @pageBackground;
+  border-bottom-left-radius: @defaultBorderRadius;
+  border-bottom-right-radius: @defaultBorderRadius;
+  box-shadow: @defaultElementsBoxShadow;
+  display: block;
+  font-size: @resultsListFontSize;
+  font-weight: @resultsListFontWeight;
+  line-height: @resultsListLineHeight;
+  margin-top: @resultsListMarginTop;
+  max-height: @resultsListMaxHeight;
+  overflow-y: auto;
+  position: absolute;
+  scrollbar-width: thin;
+  width: @searchbarWidth;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sitemap-search-results-list  .ui.message {
+  padding: 0;
+  padding-left: 12px;
+  color: @linkWater;
+  background-color: transparent;
+
+  .header:not(.ui) {
+    font-size: @resultsListFontSize;
+    font-weight: @resultsListFontWeight;
+    line-height: @resultsListLineHeight;
+  }
+}
+
+.sitemap-search-results-list .match-card a {
+  color: @textColor;
+  font-size: @resultsListFontSize;
+  font-weight: @resultsListFontWeight;
+
+  &:hover {
+    color: @primaryColor;
+  }
+}
+
+.sitemap-search-results-list .ui.accordion:not(.styled) .title ~ .content:not(.ui) {
+  padding-top: 0;
+  margin-left: 40px;
+
+  a {
+    font-size: @resultsListFontSize;
+    font-weight: 400;
+  }
+
+  .title {
+    margin-left: -35px;
+  }
+}
+
+.sitemap-search-results-list .ui.accordion:not(.styled) .ui.fluid.accordion .title ~ .content:not(.ui) {
+  margin-left: 20px;
+}
+
+.sitemap-search-results-list .ui.accordion .title:not(.ui) {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.83em;
+}
+
+.sitemap-search-results-list .match-card:has(> a) {
+  padding: 0.17em 0.857em;
+}
+
+.sitemap-search-results-list .match-card .flexberry-toggler .title {
+  display: flex;
+  align-items: center;
+  color: @lightGrayishBlue;
+  font-size: @resultsListFontSize;
+  line-height: @resultsListLineHeight;
+}
+
+.sitemap-search-results-list .ui.message {
+  box-shadow: none;
+}
+
+.sitemap-search-input {
+  align-self: center;
+  padding: @inputPadding;
+  border-radius: @inputBorderRadius;
+  background-color: lighten(@sidebarBackgroundColor, 10%);
+  border: 1px solid lighten(@sidebarBackgroundColor, 10%);
+  color: @invertedTextColor;
+  font-size: @resultsListFontSize;
+  width: @searchbarWidth;
+  z-index: 2;
+
+  .hidden {
+    display: none;
+  }
+
+  &::placeholder {
+    color: @linkWater;
+    font-family: @fontName;
+  }
+}
+
+.sitemap-searchbar:has(.sitemap-search-results-list) .sitemap-search-input,
+.sitemap-search-input:focus {
+  background-color: @defaultInputFocusBackground;
+  outline: none;
+  border-color: @defaultFocusBorderColor;
+  color: @textColor;
+
+  &::placeholder {
+    color: @lightGrayishBlue;
+  }
+}
+
+.sitemap-search-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.inverted.vertical.main.menu.sidebar .sitemap-searchbar .sitemap-search-button {
+  display: none;
+}
+
+
+
+/*******************************
+            Mini sidebar
+*******************************/
+.ui.sidebar.main.menu.sidebar-mini {
+  .sitemap-search-input, .sitemap-search-results-list {
+    margin-left: @searchBarMarginLeftMini;
+    position: absolute;
+    width: @searchbarWidthMiniSidebar;
+  }
+
+  .sitemap-searchbar {
+    margin: 0;
+  }
+}
+
+.inverted.vertical.main.menu.sidebar.sidebar-mini .sitemap-searchbar .sitemap-search-button {
+  display: block;
+  margin-bottom: 20px;
+}
