@@ -49,6 +49,9 @@ table.object-list-view.selectable {
   height: 100%;
   padding: @inputButtonPadding;
   margin: 0;
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .object-list-view-filters .ui.button.clear-filter > .icon {
@@ -67,10 +70,12 @@ table.object-list-view.selectable {
   padding-right: @inputPaddingRightForOneButtons;
 }
 
+.flexberry-colsconfig .fields.object-list-view-filters,
 .object-list-view-filters > td > .ui.action.input {
   align-items: center;
 }
-.object-list-view-filters > td > .ui.action.input > .fields {
+
+.ui.form .object-list-view-filters .fields {
   margin-bottom: 0;
 }
 
