@@ -107,18 +107,6 @@
       }
     }
   }
-
-  .object-list-view-filters i.icon.trash:before {
-    content: "\e93b";
-    font-size: 21px;
-  }
-
-  .object-list-view-filters .ui.button {
-    background-color: transparent;
-    &:focus {
-      box-shadow: none;
-    }
-  }
 }
 
 .flexberry-colsconfig.content tbody {
@@ -160,17 +148,8 @@
   }
 }
 
-.ui[class*="equal width"].form .flexberry-colsconfig .fields.object-list-view-filters {
-  margin-bottom: 1em;
-
-  > .field {
+.ui[class*="equal width"].form .flexberry-colsconfig .fields.object-list-view-filters > .field {
     width: @oneWide;
-  }
-  > .button {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 1em;
-  }
 }
 
 @media only screen and (max-width: @largestMobileScreen) {
