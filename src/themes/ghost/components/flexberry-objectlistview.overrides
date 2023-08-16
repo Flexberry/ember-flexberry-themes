@@ -714,13 +714,6 @@ tbody tr td .icon.button.hierarchy-expand {
   }
   .object-list-view-container:not(.groupedit-container) {
     .object-list-view-single-column-cell {
-      &::after {
-        content: ".";
-        visibility: hidden;
-        display: block;
-        height: 0;
-        clear: both;
-      }
       .inline.fields {
         margin: @olvMobileFieldMargin;
       }
@@ -827,6 +820,7 @@ tbody tr td .icon.button.hierarchy-expand {
     border-radius: @defaultBorderRadius;
     margin-right: @rowControlsMarginRight;
     padding-left: @rowControlsPaddingLeft;
+    clear: both;
 
     .ui.mobile.button {
       margin: @rowControlsButtonMargin;
