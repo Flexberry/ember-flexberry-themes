@@ -30,9 +30,9 @@
 /* Sub Menu */
 @subMenuBordetRadius: 0;
 @subMenuBorderTop: 0;
-@subMenuHeight: 100vh;
+@subMenuHeight: calc(~'100vh - @{headerHeight}');
 @subMenuPadding: @sidebarPadding;
-@subMenuPosition: absolute;
+@subMenuPosition: fixed;
 
 /* Sub Menu Items*/
 @subMenuItemHoveredBackground: rgba(0, 0, 0, 0.1);
