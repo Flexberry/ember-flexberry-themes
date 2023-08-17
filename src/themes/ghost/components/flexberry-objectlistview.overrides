@@ -119,20 +119,12 @@ table.object-list-view.selectable {
   }
   /* Toolbar buttons */
   .ui.button,
-  .ui.buttons .ui.button,
-  .ui.action.input {
+  .ui.buttons .ui.button {
     > .ui.icon.button {
       padding: @toolbarButtonPadding;
     }
   }
 
-  .ui.button,
-  .ui.buttons .ui.button,
-  .ui.action.input {
-    > .ui.icon.button {
-      padding: @toolbarButtonPadding;
-    }
-  }
 
   .ui.button.create-button,
   .ui.buttons.export-config,
@@ -212,6 +204,7 @@ table.object-list-view.selectable {
     }
   }
 
+  /* Filter start */
   .filter-active {
     margin-right: @olvToolbarButtonsMargin;
     i.icon {
@@ -258,24 +251,31 @@ table.object-list-view.selectable {
       }
     }
   }
+  /* Filter end*/
+
+  /* Search start */
+  .ui.action.input.olv-search input {
+    min-width: 10em;
+    padding-right: @inputPaddingRightForTwoButtons;
+  }
+  .ui.action.input.olv-search > .ui.icon.button {
+    padding: @inputButtonPadding;
+  }
 
   .ui.action.input {
     .search-button {
       position: absolute;
-      right: @clearButtonRight;
+      right: @inputSecondButtonRight;
       height: 100%;
-      line-height: 1;
     }
 
     .clear-search-button {
       position: absolute;
-      right: 0;
+      right: @inputLastButtonRight;
       height: 100%;
-      .icon {
-        font-size: 1.3rem;
-      };
     }
   }
+  /* Search end */
 
   > .buttons:not(.filter-active) {
     > .ui.button {
