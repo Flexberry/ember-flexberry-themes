@@ -88,3 +88,6 @@
 @loadingIconHeight: 1em;
 @loadingIconTop: 40%;
 @loadingIconLeft: 75%;
+
+/* Responsive */
+@selectionMobileMaxItems: 5;
