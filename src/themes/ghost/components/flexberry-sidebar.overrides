@@ -32,6 +32,10 @@
     position: @subMenuPosition;
     margin: 0 !important;
     min-width: @width;
+    will-change: auto;
+    width: fit-content;
+    overflow: auto;
+
     > .item .icon:not(.dropdown) {
       font-size: @itemIconFontSize!important;
       margin-right: 1rem;
@@ -201,6 +205,7 @@
 .ui.main.menu.sidebar.mobile .dropdown.item .menu {
   width: 100%;
   left: 0;
+  height: calc(~'100vh - @{headerHeightMobile}');
 }
 
 .ui.menu .flexberry-sitemap .ui.dropdown .menu > .item.menu-back {
