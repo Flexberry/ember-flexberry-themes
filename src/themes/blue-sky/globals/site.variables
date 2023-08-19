@@ -27,10 +27,23 @@
 @paleBlue         : #b1cae8;
 @whiteBlue        : #f1f7ff;
 @headerColor      : #4f73b0;
+@white            : #FFFFFF;
+@aliceBlue        : #F4F7FB;
 @mayaBlue         : #62B0FF;
+@hawkesBlue       : #DDE1E6;
+@chambray         : #B3BBC3;
+@cinnabar         : #E53935;
+@cobaltBlue       : #0C49CD;
+@blueZodiak       : #3B4256;
+@linkWater        : #C7CCD1;
+@navyBlue         : #0962AF;
+@gray             : #EBEBEB;
+@solitude         : #E4EDF9;
+@whisper          : #E5E5E5;
 
 /*---  Light Colors  ---*/
 @lightGreen       : #a4e1cb;
+@lightGrayishBlue : #848E99;
 
 /*-------------------
         Paths
@@ -73,8 +86,54 @@
 
 @thumbInactiveBackground: @blue;
 @thumbHoverBackground: @blue;
-/*------------------------
-        COLOR SCHEME
--------------------------*/
-// main
-@activeColor: @mayaBlue;
+
+/*-------------------
+Icon Variables
+--------------------*/
+@iconSize         : 1.5rem;
+
+/*-------------------
+        Page
+--------------------*/
+
+@textColor           : @blueZodiak;
+
+
+/*---------------------
+        Defaults
+----------------------*/
+
+@defaultBorderRadius: 0.25rem;
+@defaultElementsBoxShadow: 0px 4px 12px rgba(95, 95, 95, 0.153646);
+
+/*-------------------
+        Input
+--------------------*/
+
+@inputBorderRadius: @defaultBorderRadius;
+
+/*---------------------
+        Scrollbar
+----------------------*/
+@sidebarMiniWidth: 56px;
+
+/*******************************
+          COLOR SCHEME
+*******************************/
+
+// Main
+
+@activeColor                    : @mayaBlue;
+@controlColor                   : @linkWater;
+
+// Sidebar
+@sidebarBackgroundColor         : @textColor;
+
+// Page
+@textColor                      : @blueZodiak;
+@iconColor                      : @lightGrayishBlue;
+
+// Input
+@defaultInputFocusBackground    : @white;
+@defaultFocusBorderColor        : @activeColor;
+
