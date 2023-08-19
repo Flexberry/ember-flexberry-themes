@@ -1,0 +1,17 @@
+@highloadedMenuHeaderFontSize   : 1.125rem;
+@highloadedMenuHeaderLineHeight: 24px;
+@highloadedMenuNumberFontSize: 1.75rem;
+@highloadedMenuNumberLineHeight: 24px;
+@highloadedMenuLinkFontSize: 0.875rem;
+@highloadedMenuIconFontSize: 0.4em;
+@highloadedMenuIconLineHeight: 0.75;
+@highloadedMenuListPaddingBottom: 22px;
+@highloadedMenuLineWidth: 2px;
+@highloadedMenuLinePositionLeft: -25px;
+@highloadedMenuColumnPaddingBottom: 0.8rem;
+@highloadedMenuShowAllFontSize: 1.125rem;
+@highloadedMenuShowAllMinHeight: 30px;
+@highloadedMenuListIconSIze: 1.25em;
+@highloadedMenuButtonGap: 13px;
+@highloadedMenuBtnIcon: @iconSize;
+@highloadedMenuBtnMinHeight: 30px;
