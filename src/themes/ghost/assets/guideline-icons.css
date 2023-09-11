@@ -307,6 +307,9 @@
 .icon-guideline-delete:before {
   content: "\e93c";
 }
+.icon-guideline-delete-basket:before {
+  content: "\e99a";
+}
 .icon-guideline-earth:before {
   content: "\e93d";
 }
