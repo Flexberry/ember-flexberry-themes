@@ -30,7 +30,6 @@
 @saveCloseIcon    : "\e958";
 @successIcon      : "\e92d";
 @deleteIcon       : "\e93c";
-@deleteBasketIcon : "\e99a";
 @errorIcon        : "\e915";
 @closeIcon        : "\e99a";
 @iconPadding      : 0.25em;
