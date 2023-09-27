@@ -25,15 +25,14 @@
 @closeButtonPaddingTop: unit(9 / 14, em);
 
 //Icons
-@iconFontFamily   : guideline-icons;
-@saveIcon         : "\e936";
-@saveCloseIcon    : "\e958";
-@successIcon      : "\e92d";
-@deleteIcon       : "\e93c";
-@deleteBasketIcon : "\e99a";
-@errorIcon        : "\e915";
-@closeIcon        : "\e99a";
-@iconPadding      : 0.25em;
+@iconFontFamily : guideline-icons;
+@saveIcon       : "\e936";
+@saveCloseIcon  : "\e958";
+@successIcon    : "\e92d";
+@deleteIcon     : "\e93c";
+@errorIcon      : "\e915";
+@closeIcon      : "\e99a";
+@iconPadding    : 0.25em;
 
 /* Errored Input */
 @formErrorColor: @textColor;
