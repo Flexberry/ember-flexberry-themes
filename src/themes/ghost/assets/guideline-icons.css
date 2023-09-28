@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?5g962b');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?5g962b#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?5g962b') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?5g962b') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?5g962b#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?nvw5yq');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?nvw5yq#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons/guideline-icons.ttf?nvw5yq') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?nvw5yq') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?nvw5yq#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-chamfered-corner:before {
+  content: "\e99b";
+}
+.icon-guideline-right-corner:before {
+  content: "\e99c";
+}
+.icon-guideline-rounded-corner:before {
+  content: "\e99d";
+}
+.icon-guideline-semicircle:before {
+  content: "\e99e";
+}
+.icon-guideline-circle-filled:before {
+  content: "\e99f";
+}
+.icon-guideline-rectangle-filled:before {
+  content: "\e9a0";
+}
+.icon-guideline-point-filled:before {
+  content: "\e9a1";
+}
+.icon-guideline-treangle-filled:before {
+  content: "\e9a2";
+}
+.icon-guideline-treangle-filled-right:before {
+  content: "\e9a3";
+}
 .icon-guideline-icon-guideline-cross-control:before {
   content: "\e99a";
 }
