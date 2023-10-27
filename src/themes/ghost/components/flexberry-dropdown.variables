@@ -46,7 +46,7 @@
 @selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 /* Visible */
 @selectionVisibleBorderColor: transparent;
-@selectionVisibleBackground: transparent;
+@selectionVisibleBackground: @pageBackground;
 @selectionVisibleBoxShadow: @defaultElementsBoxShadow;
 @selectionVisibleMenuBoxShadow: 0px 9px 12px rgba(95, 95, 95, 0.153646);
 /* Visible Hover */
