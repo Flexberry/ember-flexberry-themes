@@ -531,7 +531,11 @@ table.object-list-view.selectable {
 
 // Hierarchy mode
 .ui.object-list-view {
-tbody tr td .icon.button.hierarchy-expand {
+  tbody tr td .icon.button.hierarchy-expand.hidden {
+    visibility: hidden;
+  }
+
+  tbody tr td .icon.button.hierarchy-expand {
     background: @hierarchyButtonBackground;
     border: @hierarchyButtonBorder;
     padding-right: @hierarchyButtonPaddingRight;
