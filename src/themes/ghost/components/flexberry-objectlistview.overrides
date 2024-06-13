@@ -648,6 +648,12 @@ table.object-list-view.selectable {
   }
 }
 
+/* Hide second OLV input in 3rd version */
+/* TODO: Fix submit event bubbling when OLV is wrapped in <form> */
+.ui.input.nav-bar-search-page .hidden {
+  display: none;
+}
+
 /*-------------------
       Menu in row
 --------------------*/
@@ -857,6 +863,7 @@ table.object-list-view.selectable {
     input {
       font-size: @mobilesSarchPageButtonFontSize;
       padding: @mobileSearchPageButtonPadding;
+      text-align: center;
     }
   }
 }
