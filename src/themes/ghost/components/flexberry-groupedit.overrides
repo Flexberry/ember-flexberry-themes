@@ -82,6 +82,7 @@ div:not(.groupedit-modal-content) {
         padding-top: @olvCellVerticalPadding;
         padding-bottom: @olvCellVerticalPadding;
         vertical-align: top;
+        overflow: visible;
 
         &.field .flexberry-checkbox {
           padding-top: @olvCheckboxCellVerticalPadding;
