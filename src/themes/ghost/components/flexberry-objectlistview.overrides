@@ -263,6 +263,12 @@ table.object-list-view.selectable {
   }
 
   .ui.action.input {
+    .voice-button {
+      position: absolute;
+      right: @inputThirdButtonRight;
+      height: 100%;
+    }
+
     .search-button {
       position: absolute;
       right: @inputSecondButtonRight;
