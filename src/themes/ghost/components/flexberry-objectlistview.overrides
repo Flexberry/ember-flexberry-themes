@@ -125,7 +125,7 @@ table.object-list-view.selectable {
     }
   }
 
-  .i.icon.microphone {
+  i.icon.microphone {
     font-family: 'Icons'
   }
 
