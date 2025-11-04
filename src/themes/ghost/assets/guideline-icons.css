@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'guideline-icons';
-  src:  url('fonts/guideline-icons/guideline-icons.eot?d3yeej');
-  src:  url('fonts/guideline-icons/guideline-icons.eot?d3yeej#iefix') format('embedded-opentype'),
-    url('fonts/guideline-icons/guideline-icons.ttf?d3yeej') format('truetype'),
-    url('fonts/guideline-icons/guideline-icons.woff?d3yeej') format('woff'),
-    url('fonts/guideline-icons/guideline-icons.svg?d3yeej#guideline-icons') format('svg');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?jw6lqu');
+  src:  url('fonts/guideline-icons/guideline-icons.eot?jw6lqu#iefix') format('embedded-opentype'),
+    url('fonts/guideline-icons/guideline-icons.ttf?jw6lqu') format('truetype'),
+    url('fonts/guideline-icons/guideline-icons.woff?jw6lqu') format('woff'),
+    url('fonts/guideline-icons/guideline-icons.svg?jw6lqu#guideline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-guideline-navigate-arrows-right:before {
+  content: "\e9aa";
+}
+.icon-guideline-navigate-arrows-left:before {
+  content: "\e9ab";
+}
+.icon-guideline-filter-settings:before {
+  content: "\e9a7";
+}
+.icon-guideline-link:before {
+  content: "\e9a8";
+}
+.icon-guideline-link-off:before {
+  content: "\e9a9";
+}
 .icon-guideline-document-text:before {
   content: "\e9a5";
 }
