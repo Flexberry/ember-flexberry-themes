@@ -1,0 +1,22 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+# Binary font files must never be touched by whitespace/Final-Newline processing,
+# otherwise their trailing padding bytes get stripped and the browser (OTS)
+# rejects them with "Failed to convert WOFF 2.0 font to SFNT" / "incorrect file size in WOFF header".
+[*.{woff,woff2,eot,otf,ttf}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+end_of_line = unset
